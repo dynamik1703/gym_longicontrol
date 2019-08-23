@@ -13,8 +13,18 @@ Please use this bibtex if you want to cite this repository in your publications:
   year = {2019},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/XXX/gym-longicontrol}},
+  howpublished = {\url{https://github.com/dynamik1703/gym-longicontrol}},
 }
+
+and
+@misc{gym_longicontrol_abstract,
+  author = {Liessner, Roman and Dohmen, Jan T. and Friebel, Christoph and Bäker, Bernard},
+  title = {LongiControl: A New Reinforcement Learning Environment},
+  year = {2019},
+  publisher = {5th World Congress on Electrical Engineering and Computer Systems and Science (EECSS'19)},
+  doi = {10.11159/cist19.118},
+}
+
 ```
 
 
