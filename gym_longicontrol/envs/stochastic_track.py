@@ -61,10 +61,10 @@ class StochasticTrack(DeterministicTrack):
         self.action_space = spaces.Box(low=-1.0,
                                        high=1.0,
                                        shape=(1, ),
-                                       dtype=np.float32)
+                                       dtype=np.float64)
         self.observation_space = spaces.Box(low=self.state_min,
                                             high=self.state_max,
-                                            dtype=np.float32)
+                                            dtype=np.float64)
 
         self.viewer = None
 
