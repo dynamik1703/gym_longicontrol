@@ -17,12 +17,16 @@ Please use this bibtex if you want to cite this repository in your publications:
 }
 
 and
-@misc{gym_longicontrol_abstract,
-  author = {Liessner, Roman and Dohmen, Jan T. and Friebel, Christoph and Bäker, Bernard},
-  title = {LongiControl: A New Reinforcement Learning Environment},
-  year = {2019},
-  publisher = {5th World Congress on Electrical Engineering and Computer Systems and Science (EECSS'19)},
-  doi = {10.11159/cist19.118},
+@conference{icaart21,
+  author={Dohmen, Jan T. and Liessner, Roman and Friebel, Christoph and Bäker, Bernard},
+  title={LongiControl: A Reinforcement Learning Environment for Longitudinal Vehicle Control},
+  booktitle={Proceedings of the 13th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART,},
+  year={2021},
+  pages={1030-1037},
+  publisher={SciTePress},
+  organization={INSTICC},
+  doi={10.5220/0010305210301037},
+  isbn={978-989-758-484-8},
 }
 
 ```
