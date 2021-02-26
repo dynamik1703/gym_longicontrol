@@ -18,7 +18,7 @@ Please use this bibtex if you want to cite this repository in your publications:
 
 and
 @conference{icaart21,
-  author={Jan Dohmen and Roman Liessner and Christoph Friebel and Bernard BÃ¤ker},
+  author={Dohmen, Jan T. and Liessner, Roman and Friebel, Christoph and Bäker, Bernard},
   title={LongiControl: A Reinforcement Learning Environment for Longitudinal Vehicle Control},
   booktitle={Proceedings of the 13th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART,},
   year={2021},
