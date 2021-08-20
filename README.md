@@ -1,24 +1,14 @@
 # gym-longicontrol
 We aim to combine real-world motivated RL with easy accessibility within a highly relevant problem: the stochastic longitudinal control of an autonomous vehicle.
-The LongiControl environment consists of a data based electric vehicle model (the Downloadable Dynamometer Database [D3](https://www.anl.gov/es/downloadable-dynamometer-database) of the Argonne National Laboratory is used here) and a single-lane track with stochastic speed restrictions. The state of the agent includes the actual speed, previous acceleration, current speed limit and the next speed limit as long as it is within a visual range of 150m. The agent selects the acceleration of the vehicle and receives as a reward a combination of speed, energy consumption, jerk and a measure for speeding. 
-LongiControl could be used to elaborate various challenges within Reinforcement Learning. E.g. MORL due to excplicitly contradictory reward terms (minimize energy consumption, travel time, jerk) or SafeRL (comply with speed limits).
+The [LongiControl](https://doi.org/10.5220/0010305210301037) environment consists of a data based electric vehicle model (the Downloadable Dynamometer Database [D3](https://www.anl.gov/es/downloadable-dynamometer-database) of the Argonne National Laboratory is used here) and a single-lane track with stochastic speed restrictions. The state of the agent includes the actual speed, previous acceleration, current speed limit and the next speed limit as long as it is within a visual range of 150m. The agent selects the acceleration of the vehicle and receives as a reward a combination of speed, energy consumption, jerk and a measure for speeding. 
+LongiControl could be used to elaborate various challenges within Reinforcement Learning. E.g. MORL due to excplicitly contradictory reward terms (minimize energy consumption, travel time, jerk), SafeRL (comply with speed limits) or Explainable AI (as the problem is quite easy to grasp; also see our study on this [here](https://doi.org/10.5220/0010256208740881)).
 
 
 Please use this bibtex if you want to cite this repository in your publications:
 
 ```
-@misc{gym_longicontrol,
-  author = {Dohmen, Jan T. and Liessner, Roman and Friebel, Christoph and Bäker, Bernard},
-  title = {LongiControl Environment for OpenAI Gym},
-  year = {2019},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/dynamik1703/gym-longicontrol}},
-}
-
-and
 @conference{icaart21,
-  author={Dohmen, Jan T. and Liessner, Roman and Friebel, Christoph and Bäker, Bernard},
+  author={Dohmen, Jan and Liessner, Roman and Friebel, Christoph and Bäker, Bernard},
   title={LongiControl: A Reinforcement Learning Environment for Longitudinal Vehicle Control},
   booktitle={Proceedings of the 13th International Conference on Agents and Artificial Intelligence - Volume 2: ICAART,},
   year={2021},
