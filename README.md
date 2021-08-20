@@ -81,8 +81,29 @@ cd /gym-longicontrol/rl/pytorch
 python main.py --load_id 9 --env_id DeterministicTrack-v0 -vis -rec
 ```
 
-<p align="center">
-<img src="/img/trained_agent.gif" width=600 height=270>
-</p>
+#### Examples
+<details>
+  <summary>Agent right after initialisation</summary>
+  
+  <p align="center">
+  <img src="/img/after_init.gif" width=600 height=270>
+  </p>
+</details>
+
+<details>
+  <summary>Early stage agent has learned to complete the track</summary>
+  
+  <p align="center">
+  <img src="/img/early_stage_agent.gif" width=600 height=270>
+  </p>
+</details>
+
+<details open>
+  <summary>Well trained agent</summary>
+  
+  <p align="center">
+  <img src="/img/trained_agent.gif" width=600 height=270>
+  </p>
+</details>
 
 
