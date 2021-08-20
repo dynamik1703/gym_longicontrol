@@ -58,26 +58,26 @@ Instances of the environment can be created and handled similar to other Gym env
 
 ### Training
 ```
-cd /gym-longicontrol/rl/pytorch
+cd gym-longicontrol/rl/pytorch
 python main.py --save_id 99
 ```
 
-A trained agent is given in `/gym-longicontrol/rl/pytorch/out`:
+A trained agent is given in `gym-longicontrol/rl/pytorch/out`:
 - .tar ... model and weights
 - .out ... quick overview of the training results
-- .npy ... more detailed information about the course of training (can be used within the jupyter notebook `/gym_longicontrol/rl/pytorch/monitor.ipynb`)
+- .npy ... more detailed information about the course of training (can be used within the jupyter notebook `gym-longicontrol/rl/pytorch/monitor.ipynb`)
 
 
 ### Visualize
 Load the trained model an visualize an example track:
 ```
-cd /gym-longicontrol/rl/pytorch
+cd gym-longicontrol/rl/pytorch
 python main.py --load_id 9 --env_id StochasticTrack-v0 -vis
 ```
 
 It is also possible to save it as mp4 video:
 ```
-cd /gym-longicontrol/rl/pytorch
+cd gym-longicontrol/rl/pytorch
 python main.py --load_id 9 --env_id DeterministicTrack-v0 -vis -rec
 ```
 
@@ -86,7 +86,7 @@ python main.py --load_id 9 --env_id DeterministicTrack-v0 -vis -rec
   <summary>Agent right after initialisation</summary>
   
   <p align="center">
-  <img src="/img/after_init.gif" width=600 height=270>
+  <img src="img/after_init.gif" width=600 height=270>
   </p>
 </details>
 
@@ -94,7 +94,7 @@ python main.py --load_id 9 --env_id DeterministicTrack-v0 -vis -rec
   <summary>Early stage agent has learned to complete the track</summary>
   
   <p align="center">
-  <img src="/img/early_stage_agent.gif" width=600 height=270>
+  <img src="img/early_stage_agent.gif" width=600 height=270>
   </p>
 </details>
 
@@ -102,7 +102,7 @@ python main.py --load_id 9 --env_id DeterministicTrack-v0 -vis -rec
   <summary>Well trained agent</summary>
   
   <p align="center">
-  <img src="/img/trained_agent.gif" width=600 height=270>
+  <img src="img/trained_agent.gif" width=600 height=270>
   </p>
 </details>
 
