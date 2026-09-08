@@ -1,0 +1,31 @@
+{
+  "artifact_format": 1,
+  "source": "BMW_electric_i3_2014.pkl",
+  "source_sha256": "19eb5742c6d927c4a71f7e1b0aadf2d3b201aaaa5962df9b9f38099f28c4b17c",
+  "source_sklearn_version": "0.21.2",
+  "feature_order": [
+    "velocity_m_s",
+    "acceleration_m_s2"
+  ],
+  "output": "power_kW",
+  "hidden_activation": "relu",
+  "output_activation": "identity",
+  "layer_shapes": [
+    [
+      2,
+      10
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      1
+    ]
+  ]
+}

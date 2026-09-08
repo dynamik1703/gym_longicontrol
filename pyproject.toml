@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gym-longicontrol"
+version = "1.0.0"
+description = "Gymnasium environments for longitudinal vehicle control"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+dependencies = [
+    "gymnasium>=1.0,<2",
+    "numpy>=1.24,<3",
+]
+keywords = [
+    "autonomous-driving",
+    "gymnasium",
+    "reinforcement-learning",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+render = [
+    "matplotlib>=3.7,<4",
+]
+video = ["matplotlib>=3.7,<4", "moviepy>=2,<3"]
+legacy = ["gym==0.23.1"]
+train = [
+    "torch>=2.0",
+]
+dev = [
+    "build>=1.2,<2",
+    "pytest>=8,<9",
+    "pytest-cov>=5,<7",
+    "ruff>=0.9,<1",
+]
+
+[project.urls]
+Repository = "https://github.com/dynamik1703/gym_longicontrol"
+Issues = "https://github.com/dynamik1703/gym_longicontrol/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gym_longicontrol = [
+    "assets/*",
+    "assets/*/*",
+    "assets/*/*/*",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+extend-exclude = ["Jupyter", "legacy", "rl/ddpg", "*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.coverage.run]
+branch = true
+source = ["gym_longicontrol"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
