@@ -16,6 +16,10 @@ class Renderer:
         self._plt = None
         self.figure = Figure(figsize=(10, 4.5), dpi=100)
         self.canvas = FigureCanvasAgg(self.figure)
+        self._subplot_params = {
+            name: getattr(self.figure.subplotpars, name)
+            for name in ("left", "right", "bottom", "top", "wspace", "hspace")
+        }
         self.history = []
 
     def reset(self):
@@ -33,6 +37,9 @@ class Renderer:
                 )
             )
         self.figure.clear()
+        # Before Matplotlib 3.11, clear() preserves the previous tight_layout
+        # result. Start from the same margins to avoid frame-to-frame drift.
+        self.figure.subplots_adjust(**self._subplot_params)
         axis, acceleration = self.figure.subplots(2, 1, sharex=True)
         positions = np.r_[track.positions_m, config.track_length_m]
         limits = np.r_[track.limits_m_s, track.limits_m_s[-1]] * 3.6

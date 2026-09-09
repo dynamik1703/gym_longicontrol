@@ -199,3 +199,24 @@ def test_rgb_rendering_does_not_change_dynamics():
     env.reset()
     assert env.render().shape == frame.shape
     env.close()
+
+
+def test_rgb_layout_is_stable_across_steps_and_resets():
+    pytest.importorskip("matplotlib")
+    env = DeterministicTrack(render_mode="rgb_array")
+    try:
+        env.reset(seed=42)
+        initial_frame = env.render()
+        for action in (0.5, -1.0, 0.3):
+            env.step([action])
+            state = env.state
+            frame = env.render()
+            history_length = len(env._renderer.history)
+            for _ in range(3):
+                np.testing.assert_array_equal(frame, env.render())
+            assert env.state == state
+            assert len(env._renderer.history) == history_length
+        env.reset(seed=42)
+        np.testing.assert_array_equal(initial_frame, env.render())
+    finally:
+        env.close()
