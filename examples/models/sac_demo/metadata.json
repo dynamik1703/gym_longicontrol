@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-08T11:40:30.174167+00:00",
+  "algorithm": "stable_baselines3.SAC",
+  "env_id": "StochasticTrack-v1",
+  "environment_kwargs": {},
+  "training_seed": 42,
+  "training_steps": 20000,
+  "training_seconds": 37.485455374990124,
+  "learning_starts": 500,
+  "settings": {
+    "learning_rate": 0.0003,
+    "buffer_size": 50000,
+    "batch_size": 64,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "ent_coef": "auto_0.1",
+    "policy_kwargs": {
+      "net_arch": [
+        64,
+        64
+      ]
+    }
+  },
+  "device": "cpu",
+  "torch_threads": 1,
+  "python": "3.11.13",
+  "platform": "Darwin arm64",
+  "versions": {
+    "gym-longicontrol": "1.0.0",
+    "gymnasium": "1.3.0",
+    "numpy": "2.4.6",
+    "torch": "2.14.0",
+    "stable-baselines3": "2.9.0"
+  },
+  "source_base_revision": "d77f5e1cdb1cab935dd6d746d0280bf0fcea23eb",
+  "training_script_sha256": "62702d3da6b127cdb280a3184315d0fb59eb9daace0e7f9cffbf4a5aeb1c817e",
+  "model_sha256": "d610bed23c232056649dcaef8a38c9a6b8eea0af8613e7beefd187439a06a20d",
+  "purpose": "Getting-started demonstration, not an optimized controller"
+}
