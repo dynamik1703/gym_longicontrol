@@ -2,11 +2,24 @@
 
 import sys
 
-from .envs import DeterministicTrack, LongiControlEnv, StochasticTrack
+from .envs import (
+    DeterministicTrack,
+    LongiControlEnv,
+    MODeterministicTrack,
+    MOStochasticTrack,
+    StochasticTrack,
+)
 from .registration import register_envs
 
 __version__ = "1.0.0"
-__all__ = ["DeterministicTrack", "StochasticTrack", "LongiControlEnv", "register_envs"]
+__all__ = [
+    "DeterministicTrack",
+    "StochasticTrack",
+    "LongiControlEnv",
+    "MODeterministicTrack",
+    "MOStochasticTrack",
+    "register_envs",
+]
 
 register_envs()
 

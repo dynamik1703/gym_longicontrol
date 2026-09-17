@@ -43,6 +43,14 @@ examples = [
     "matplotlib>=3.7,<4",
     "jupyterlab>=4,<5",
 ]
+morl = [
+    "morl-baselines==1.3.0",
+    "mo-gymnasium>=1.3.2,<1.4",
+    "stable-baselines3>=2.9,<3",
+    "matplotlib>=3.7,<4",
+    # Upstream MORL-Baselines imports distutils, absent in Python >=3.12.
+    "setuptools>=70,<82",
+]
 dev = [
     "build>=1.2,<2",
     "pytest>=8,<9",

@@ -123,9 +123,51 @@ jobs:
           MPLBACKEND: Agg
         run: python -m examples.sb3_quickstart demo --episodes 1
 
+  morl:
+    name: MORL integration (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install native dependency for MORL-Baselines
+        run: sudo apt-get update && sudo apt-get install -y libgmp-dev
+
+      - name: Install optional MORL and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev,morl]"
+          python -m pip check
+
+      - name: Test MO contract, CAPQL updates, and scalarized SAC comparison
+        env:
+          MPLBACKEND: Agg
+          WANDB_MODE: disabled
+        run: python -m pytest tests/test_multi_objective.py tests/morl
+
+      - name: Run documented offline smoke comparison
+        env:
+          MPLBACKEND: Agg
+          WANDB_MODE: disabled
+        run: >-
+          python -m examples.morl_baselines --output runs/morl-smoke
+          --steps 125 --train-seeds 42 --eval-seeds 1001
+          --learning-starts 8 --batch-size 8 --max-episode-steps 8
+
   build:
     name: Build and install smoke test
-    needs: [test, lint, training-smoke, examples]
+    needs: [test, lint, training-smoke, examples, morl]
     runs-on: ubuntu-latest
 
     steps:
