@@ -29,8 +29,27 @@ Install optional features explicitly:
 python -m pip install ".[render]"  # visualization
 python -m pip install ".[video]"   # video recording
 python -m pip install ".[train]"   # bundled PyTorch SAC example
+python -m pip install ".[examples]"  # SB3 demo, pretrained policy, Jupyter notebook
 python -m pip install ".[dev]"     # tests, linting, and package builds
 ```
+
+## Try a trained agent without training
+
+From a repository checkout or extracted source distribution:
+
+```bash
+python -m pip install -e ".[examples]"
+python -m examples.sb3_quickstart demo
+python -m jupyterlab examples/quickstart.ipynb
+```
+
+The [getting-started guide](examples/README.md) includes a tested
+Stable-Baselines3 SAC example, a **Run All** notebook, and a small bundled CPU
+demonstration policy. The notebook plots a drive and compares the agent with a
+random policy on identical seeded tracks. No model download or training is needed.
+See the [model card](examples/models/sac_demo/README.md) for measured simulation
+results and limitations; this is not an optimized or safety-validated controller.
+Examples and demo weights are not installed by the wheel.
 
 ## Quick start
 

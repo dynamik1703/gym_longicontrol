@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## Next - Unreleased
+
+- Add an optional `examples` extra with Stable-Baselines3 and JupyterLab.
+- Add a CPU SAC quickstart, a runnable introductory notebook, and a bundled
+  demonstration checkpoint with provenance and recorded simulation results.
+- Check example training, loading, evaluation, and notebook execution in CI.
+- Keep example dependencies and weights outside the core wheel.
+
 ## 1.0.0 - Unreleased
 
 ### Added

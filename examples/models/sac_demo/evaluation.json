@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "sac": {
+    "env_id": "StochasticTrack-v1",
+    "episodes": [
+      {
+        "seed": 1001,
+        "return": -1474.2183426800154,
+        "completed": true,
+        "truncated": false,
+        "steps": 1750,
+        "distance_m": 1000.3237488309381,
+        "elapsed_time_s": 174.99999999999434,
+        "energy_kwh": 0.5202442704994847,
+        "mean_abs_jerk_m_s3": 1.6985220004855672,
+        "overspeed_time_s": 23.5
+      },
+      {
+        "seed": 1002,
+        "return": -1420.4470580948982,
+        "completed": true,
+        "truncated": false,
+        "steps": 1774,
+        "distance_m": 1000.2715588389801,
+        "elapsed_time_s": 177.3999999999942,
+        "energy_kwh": 0.5371003140769277,
+        "mean_abs_jerk_m_s3": 1.7073152093596462,
+        "overspeed_time_s": 14.8
+      },
+      {
+        "seed": 1003,
+        "return": -1294.238820396433,
+        "completed": true,
+        "truncated": false,
+        "steps": 1736,
+        "distance_m": 1000.2396397231513,
+        "elapsed_time_s": 173.59999999999442,
+        "energy_kwh": 0.5224310618301197,
+        "mean_abs_jerk_m_s3": 1.7107645990941125,
+        "overspeed_time_s": 1.1
+      },
+      {
+        "seed": 1004,
+        "return": -1285.528376967875,
+        "completed": true,
+        "truncated": false,
+        "steps": 1736,
+        "distance_m": 1000.1569803169167,
+        "elapsed_time_s": 173.59999999999442,
+        "energy_kwh": 0.5285981591821344,
+        "mean_abs_jerk_m_s3": 1.677447832400829,
+        "overspeed_time_s": 6.4
+      },
+      {
+        "seed": 1005,
+        "return": -1548.9576816717217,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 961.4257317689812,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.524275647237337,
+        "mean_abs_jerk_m_s3": 1.7147486188415755,
+        "overspeed_time_s": 0.0
+      }
+    ],
+    "summary": {
+      "episodes": 5,
+      "completion_rate": 0.8,
+      "mean_return": -1404.6780559621886,
+      "mean_distance_m": 992.4835318957936,
+      "mean_elapsed_time_s": 175.9199999999943,
+      "mean_energy_kwh": 0.5265298905652006,
+      "mean_abs_jerk_m_s3": 1.7017596520363463,
+      "mean_overspeed_time_s": 9.16
+    }
+  },
+  "random": {
+    "env_id": "StochasticTrack-v1",
+    "episodes": [
+      {
+        "seed": 1001,
+        "return": -2060.854584329639,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 153.55516314956031,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.13563189107005205,
+        "mean_abs_jerk_m_s3": 14.825738953052443,
+        "overspeed_time_s": 0.0
+      },
+      {
+        "seed": 1002,
+        "return": -2140.2037489951476,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 209.0620853945605,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.1426296092991644,
+        "mean_abs_jerk_m_s3": 15.364413299911927,
+        "overspeed_time_s": 0.0
+      },
+      {
+        "seed": 1003,
+        "return": -2133.3919120820606,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 150.08770804293948,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.13222012541401995,
+        "mean_abs_jerk_m_s3": 14.558675667843183,
+        "overspeed_time_s": 0.0
+      },
+      {
+        "seed": 1004,
+        "return": -2138.3478123649425,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 362.37942086912034,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.17051285818296547,
+        "mean_abs_jerk_m_s3": 18.502722458335224,
+        "overspeed_time_s": 0.0
+      },
+      {
+        "seed": 1005,
+        "return": -2249.257514383651,
+        "completed": false,
+        "truncated": true,
+        "steps": 1800,
+        "distance_m": 343.77691598116604,
+        "elapsed_time_s": 179.99999999999406,
+        "energy_kwh": 0.1679507266894861,
+        "mean_abs_jerk_m_s3": 18.057334161185793,
+        "overspeed_time_s": 0.0
+      }
+    ],
+    "summary": {
+      "episodes": 5,
+      "completion_rate": 0.0,
+      "mean_return": -2144.411114431088,
+      "mean_distance_m": 243.77225868746933,
+      "mean_elapsed_time_s": 179.99999999999406,
+      "mean_energy_kwh": 0.14978904213113758,
+      "mean_abs_jerk_m_s3": 16.261776908065716,
+      "mean_overspeed_time_s": 0.0
+    }
+  },
+  "limitations": "Illustrative comparison, not a benchmark: one training seed, five evaluation seeds by default. Means include timed-out episodes; compare completion and travel time before drawing energy-efficiency conclusions. Energy is a simulation-model estimate, not a measurement.",
+  "model_sha256": "d610bed23c232056649dcaef8a38c9a6b8eea0af8613e7beefd187439a06a20d"
+}
