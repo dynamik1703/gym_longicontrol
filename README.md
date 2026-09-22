@@ -30,6 +30,7 @@ python -m pip install ".[render]"  # visualization
 python -m pip install ".[video]"   # video recording
 python -m pip install ".[train]"   # bundled PyTorch SAC example
 python -m pip install ".[examples]"  # SB3 demo, pretrained policy, Jupyter notebook
+python -m pip install ".[morl]"    # CAPQL + SAC comparison (GMP; see guide below)
 python -m pip install ".[dev]"     # tests, linting, and package builds
 ```
 
@@ -127,6 +128,28 @@ The info mapping supplies explicit-unit keys such as `position_m`,
 `velocity_m_s`, `velocity_km_h`, `acceleration_m_s2`, `elapsed_time_s`, and
 `total_energy_kwh`. Short keys used by version 0.0.1 remain as transitional
 aliases.
+
+## Multi-objective RL
+
+`MODeterministicTrack-v1` and `MOStochasticTrack-v1` expose the same dynamics
+with four unweighted rewards in the order `forward, energy, jerk, shock`.
+`reward_space` and `reward_dim` are available on the unwrapped environment.
+These IDs work with MO-Gymnasium; scalar v1 IDs are unchanged. The vector
+environments themselves need no extra dependency.
+
+The optional [MORL guide](examples/morl/README.md) provides CAPQL and an SB3 SAC
+weight sweep with equal total training budgets, separate seeded evaluation,
+Pareto/hypervolume metrics, local checkpoints and headless plots. It explains
+the GMP prerequisite for the `morl` extra. After installation, from a checkout:
+
+```bash
+python -m examples.morl_baselines --output runs/morl-comparison \
+  --steps 50000 --train-seeds 42 43 44 --eval-seeds 1001 1002 1003
+```
+
+This is a reproducible starting point, not a tuned benchmark. Inspect completion
+and speed-limit violations alongside rewards. `forward` measures speed-limit
+tracking, not travel time; `shock` is not a collision-safety objective.
 
 ## Rendering
 

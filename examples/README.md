@@ -1,5 +1,8 @@
 # Start with a trained LongiControl agent
 
+For vector rewards, CAPQL and a multi-objective comparison, see the
+[MORL guide](morl/README.md). The scalar examples below are unchanged.
+
 These examples run from a **repository checkout or extracted source distribution**.
 The wheel contains the environment, not the examples or demonstration policy.
 Use Python 3.10 or newer and run all commands below from the checkout root.

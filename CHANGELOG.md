@@ -4,6 +4,11 @@ All notable changes to this project are documented in this file.
 
 ## Next - Unreleased
 
+- Add MO-Gymnasium-compatible vector rewards without changing scalar v1.
+- Add optional CAPQL / SAC weight-sweep comparison with equal total budgets,
+  local artifacts and per-seed fixed-reference Pareto/hypervolume reports.
+- Add MORL integration tests and Python 3.10/3.13 CI; document native dependencies.
+
 - Add an optional `examples` extra with Stable-Baselines3 and JupyterLab.
 - Add a CPU SAC quickstart, a runnable introductory notebook, and a bundled
   demonstration checkpoint with provenance and recorded simulation results.
