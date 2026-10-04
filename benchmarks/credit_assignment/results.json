@@ -1,0 +1,3255 @@
+{
+  "benchmark_name": "scalar-credit-assignment-v1-stochastic-v1",
+  "configuration_sha256": "79f269ac6b0eb9fc2a49fc30267c57332f6f1a267d01452f3c14bb887a800481",
+  "decision_gate": {
+    "case": "E",
+    "conclusion": "No intervention materially improves robustness.",
+    "scores": {
+      "a-baseline": {
+        "improved_training_seed_count": 0,
+        "material_improvement": false,
+        "maximum_rsr": 0.4444444444444444,
+        "mean_rsr": 0.1851851851851852,
+        "mean_rsr_gain_vs_a": 0.0,
+        "minimum_rsr": 0.0,
+        "robust": false,
+        "rsr_delta_vs_a_by_training_seed": {
+          "11": 0.0,
+          "29": 0.0,
+          "47": 0.0
+        },
+        "rsr_range": 0.4444444444444444,
+        "simplicity_rank": 0
+      },
+      "b-discount-only": {
+        "improved_training_seed_count": 0,
+        "material_improvement": false,
+        "maximum_rsr": 0.0,
+        "mean_rsr": 0.0,
+        "mean_rsr_gain_vs_a": -0.1851851851851852,
+        "minimum_rsr": 0.0,
+        "robust": false,
+        "rsr_delta_vs_a_by_training_seed": {
+          "11": -0.4444444444444444,
+          "29": 0.0,
+          "47": -0.1111111111111111
+        },
+        "rsr_range": 0.0,
+        "simplicity_rank": 1
+      },
+      "c-horizon-only": {
+        "improved_training_seed_count": 2,
+        "material_improvement": false,
+        "maximum_rsr": 0.5555555555555556,
+        "mean_rsr": 0.3333333333333333,
+        "mean_rsr_gain_vs_a": 0.1481481481481481,
+        "minimum_rsr": 0.0,
+        "robust": false,
+        "rsr_delta_vs_a_by_training_seed": {
+          "11": -0.4444444444444444,
+          "29": 0.5555555555555556,
+          "47": 0.3333333333333333
+        },
+        "rsr_range": 0.5555555555555556,
+        "simplicity_rank": 2
+      },
+      "d-horizon-discount": {
+        "improved_training_seed_count": 1,
+        "material_improvement": false,
+        "maximum_rsr": 0.1111111111111111,
+        "mean_rsr": 0.037037037037037035,
+        "mean_rsr_gain_vs_a": -0.14814814814814817,
+        "minimum_rsr": 0.0,
+        "robust": false,
+        "rsr_delta_vs_a_by_training_seed": {
+          "11": -0.4444444444444444,
+          "29": 0.1111111111111111,
+          "47": -0.1111111111111111
+        },
+        "rsr_range": 0.1111111111111111,
+        "simplicity_rank": 3
+      }
+    },
+    "selected_condition_id": "c-horizon-only"
+  },
+  "effective_discount": [
+    {
+      "action_repeat": 1,
+      "condition_id": "a-baseline",
+      "continuous_time_constant_s": 9.949916247342209,
+      "decision_frequency_hz": 10.0,
+      "decision_interval_s": 0.1,
+      "gamma_per_decision": 0.99,
+      "weights": {
+        "10": 0.3660323412732292,
+        "140": 7.749477765951684e-07,
+        "30": 0.04904089407128572,
+        "60": 0.0024050092913110673
+      }
+    },
+    {
+      "action_repeat": 1,
+      "condition_id": "b-discount-only",
+      "continuous_time_constant_s": 99.94999166249728,
+      "decision_frequency_hz": 10.0,
+      "decision_interval_s": 0.1,
+      "gamma_per_decision": 0.999,
+      "weights": {
+        "10": 0.9047921471137089,
+        "140": 0.2464242913846615,
+        "30": 0.7407070321560992,
+        "60": 0.5486469074854967
+      }
+    },
+    {
+      "action_repeat": 5,
+      "condition_id": "c-horizon-only",
+      "continuous_time_constant_s": 49.74958123671104,
+      "decision_frequency_hz": 2.0,
+      "decision_interval_s": 0.5,
+      "gamma_per_decision": 0.99,
+      "weights": {
+        "10": 0.8179069375972308,
+        "140": 0.05995901467146544,
+        "30": 0.5471566423907612,
+        "60": 0.2993803913123313
+      }
+    },
+    {
+      "action_repeat": 5,
+      "condition_id": "d-horizon-discount",
+      "continuous_time_constant_s": 499.74995831248634,
+      "decision_frequency_hz": 2.0,
+      "decision_interval_s": 0.5,
+      "gamma_per_decision": 0.999,
+      "weights": {
+        "10": 0.9801888648295347,
+        "140": 0.755677868555379,
+        "30": 0.9417362622231682,
+        "60": 0.8868671875860638
+      }
+    }
+  ],
+  "energy_after_feasibility": {
+    "a-baseline": {
+      "11": {
+        "eligible": false,
+        "feasible_track_count": 4,
+        "mean_feasible_energy_kwh": 0.19559566646420676,
+        "median_feasible_energy_kwh": 0.19688598867014684,
+        "per_track_kwh": {
+          "3000": 0.20737585350250606,
+          "3001": 0.1812348350140273,
+          "3004": 0.19057612008981722,
+          "3005": 0.20319585725047648
+        }
+      },
+      "29": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      },
+      "47": {
+        "eligible": false,
+        "feasible_track_count": 1,
+        "mean_feasible_energy_kwh": 0.21273828656405208,
+        "median_feasible_energy_kwh": 0.21273828656405208,
+        "per_track_kwh": {
+          "3004": 0.21273828656405208
+        }
+      }
+    },
+    "b-discount-only": {
+      "11": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      },
+      "29": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      },
+      "47": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      }
+    },
+    "c-horizon-only": {
+      "11": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      },
+      "29": {
+        "eligible": false,
+        "feasible_track_count": 5,
+        "mean_feasible_energy_kwh": 0.190789123260625,
+        "median_feasible_energy_kwh": 0.1877033635756519,
+        "per_track_kwh": {
+          "3000": 0.20306622225435897,
+          "3001": 0.19748157936741462,
+          "3002": 0.1877033635756519,
+          "3004": 0.18708404377679666,
+          "3005": 0.1786104073289029
+        }
+      },
+      "47": {
+        "eligible": false,
+        "feasible_track_count": 4,
+        "mean_feasible_energy_kwh": 0.17299348178106555,
+        "median_feasible_energy_kwh": 0.17526096430939178,
+        "per_track_kwh": {
+          "3000": 0.17506573494319388,
+          "3001": 0.17545619367558968,
+          "3004": 0.17621114391269782,
+          "3005": 0.16524085459278076
+        }
+      }
+    },
+    "d-horizon-discount": {
+      "11": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      },
+      "29": {
+        "eligible": false,
+        "feasible_track_count": 1,
+        "mean_feasible_energy_kwh": 0.21721736912647618,
+        "median_feasible_energy_kwh": 0.21721736912647618,
+        "per_track_kwh": {
+          "3000": 0.21721736912647618
+        }
+      },
+      "47": {
+        "eligible": false,
+        "feasible_track_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "median_feasible_energy_kwh": null,
+        "per_track_kwh": {}
+      }
+    }
+  },
+  "final_summaries": {
+    "a-baseline/development-2000-2008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.3333333333333333,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.7034467699999998,
+            "train/actor_loss": -0.0566389299929142,
+            "train/critic_loss": 1.803091072360985e-05,
+            "train/ent_coef": 7.32739717932418e-05,
+            "train/ent_coef_loss": 0.42967963218688965,
+            "train/n_updates": 298968.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 3,
+            "incomplete+time": 6
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 0.6666666666666666,
+          "mean_abs_jerk_m_s3": 2.1996447096152347,
+          "mean_action_total_variation": 127.33021744754579,
+          "mean_feasible_energy_kwh": 0.166069044616779,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 37.12873583453656,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.03490686560625017,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.1700700179278191,
+          "mean_travel_time_s": 158.08888888888418,
+          "median_feasible_energy_kwh": 0.1623247799594325,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.3333333333333333,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.3333333333333333,
+          "time_violation_rate": 0.6666666666666666
+        },
+        "29": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.1111111111111111,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.29908896999999995,
+            "train/actor_loss": 0.011174272745847702,
+            "train/critic_loss": 3.775524237425998e-05,
+            "train/ent_coef": 0.00012035860709147528,
+            "train/ent_coef_loss": 1.3203669786453247,
+            "train/n_updates": 299412.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "time": 1
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 1.7000773739491766,
+          "mean_action_total_variation": 100.60557786623637,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 31.168210501526517,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.020567442185900783,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.12582855977308538,
+          "mean_travel_time_s": 176.25555555554982,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "47": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.1111111111111111,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.13922373999999998,
+            "train/actor_loss": -0.0021326341666281223,
+            "train/critic_loss": 0.00026721059111878276,
+            "train/ent_coef": 6.350799230858684e-05,
+            "train/ent_coef_loss": -1.2559871673583984,
+            "train/n_updates": 299255.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 8
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 2.536072060610026,
+          "mean_action_total_variation": 152.78673824999066,
+          "mean_feasible_energy_kwh": 0.21213692638684728,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 24.971553976755445,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.02220797175823429,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.14028641559407007,
+          "mean_travel_time_s": 173.54444444443888,
+          "median_feasible_energy_kwh": 0.21213692638684728,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.1111111111111111,
+          "time_violation_rate": 0.8888888888888888
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 4,
+        "incomplete+time": 22,
+        "time": 1
+      },
+      "feasible_episode_count": 4,
+      "maximum_rsr": 0.3333333333333333,
+      "mean_completion_rate": 0.1851851851851852,
+      "mean_feasible_energy_kwh": 0.17758601505929605,
+      "mean_rsr": 0.14814814814814814,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.14814814814814814,
+      "mean_training_wall_time_s": 1623.2022148053122,
+      "median_feasible_energy_kwh": 0.16915466680142177,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.3333333333333333
+    },
+    "a-baseline/validation-3000-3008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.4444444444444444,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.7034467699999998,
+            "train/actor_loss": -0.0566389299929142,
+            "train/critic_loss": 1.803091072360985e-05,
+            "train/ent_coef": 7.32739717932418e-05,
+            "train/ent_coef_loss": 0.42967963218688965,
+            "train/n_updates": 298968.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+time": 5
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 0.5555555555555556,
+          "mean_abs_jerk_m_s3": 1.7767679114128045,
+          "mean_action_total_variation": 74.95418261157141,
+          "mean_feasible_energy_kwh": 0.19559566646420676,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 29.444779166535184,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.032240011576099896,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.14822106066347737,
+          "mean_travel_time_s": 151.36666666666235,
+          "median_feasible_energy_kwh": 0.19688598867014684,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.4444444444444444,
+          "time_violation_rate": 0.5555555555555556
+        },
+        "29": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.29908896999999995,
+            "train/actor_loss": 0.011174272745847702,
+            "train/critic_loss": 3.775524237425998e-05,
+            "train/ent_coef": 0.00012035860709147528,
+            "train/ent_coef_loss": 1.3203669786453247,
+            "train/n_updates": 299412.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.7830075329497717,
+          "mean_action_total_variation": 53.3789285686281,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.186788447657785,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.004926022140964586,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.06019121041385009,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "47": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.1111111111111111,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.13922373999999998,
+            "train/actor_loss": -0.0021326341666281223,
+            "train/critic_loss": 0.00026721059111878276,
+            "train/ent_coef": 6.350799230858684e-05,
+            "train/ent_coef_loss": -1.2559871673583984,
+            "train/n_updates": 299255.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 8
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 1.0406071183011274,
+          "mean_action_total_variation": 61.202899561987984,
+          "mean_feasible_energy_kwh": 0.21273828656405208,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 13.363220195012302,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.021537636994904755,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.11211602171576944,
+          "mean_travel_time_s": 171.12222222221678,
+          "median_feasible_energy_kwh": 0.21273828656405208,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.1111111111111111,
+          "time_violation_rate": 0.8888888888888888
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 5,
+        "incomplete+time": 22
+      },
+      "feasible_episode_count": 5,
+      "maximum_rsr": 0.4444444444444444,
+      "mean_completion_rate": 0.1851851851851852,
+      "mean_feasible_energy_kwh": 0.19902419048417583,
+      "mean_rsr": 0.1851851851851852,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.18518518518518517,
+      "mean_training_wall_time_s": 1623.2022148053122,
+      "median_feasible_energy_kwh": 0.20319585725047648,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.4444444444444444
+    },
+    "b-discount-only/development-2000-2008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.37382205,
+            "train/actor_loss": -2.3596606254577637,
+            "train/critic_loss": 1.1393416571081616e-05,
+            "train/ent_coef": 0.00010230221960227937,
+            "train/ent_coef_loss": -0.2258543074131012,
+            "train/n_updates": 299848.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.30905576751826364,
+          "mean_action_total_variation": 19.648081090715195,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.787618542989382,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0029653930222998965,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.049252530312761146,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "29": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.38965993000000004,
+            "train/actor_loss": -2.0857248306274414,
+            "train/critic_loss": 5.9161375247640535e-06,
+            "train/ent_coef": 0.00018495801487006247,
+            "train/ent_coef_loss": 0.6594445705413818,
+            "train/n_updates": 298832.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "47": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.4355621599999999,
+            "train/actor_loss": -2.2351627349853516,
+            "train/critic_loss": 1.3865203072782606e-05,
+            "train/ent_coef": 0.00012683242675848305,
+            "train/ent_coef_loss": 1.3190447092056274,
+            "train/n_updates": 298699.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "incomplete+time+speed": 1
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.013253448916646234,
+          "mean_action_total_variation": 0.7595662540859647,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.02869078635804377,
+          "mean_max_abs_jerk_m_s3": 3.0402482112504323,
+          "mean_max_speed_violation_m_s": 0.11422608803619402,
+          "mean_regenerative_energy_kwh": 0.0038256497709404586,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.05016070314837129,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 26,
+        "incomplete+time+speed": 1
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 0.9629629629629629,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 1545.6157837363814,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.0
+    },
+    "b-discount-only/validation-3000-3008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.37382205,
+            "train/actor_loss": -2.3596606254577637,
+            "train/critic_loss": 1.1393416571081616e-05,
+            "train/ent_coef": 0.00010230221960227937,
+            "train/ent_coef_loss": -0.2258543074131012,
+            "train/n_updates": 299848.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.7668562746391658,
+          "mean_action_total_variation": 47.4549797574679,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 16.162294701391033,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0022908964751802165,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.0517969102935123,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "29": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.38965993000000004,
+            "train/actor_loss": -2.0857248306274414,
+            "train/critic_loss": 5.9161375247640535e-06,
+            "train/ent_coef": 0.00018495801487006247,
+            "train/ent_coef_loss": 0.6594445705413818,
+            "train/n_updates": 298832.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "47": {
+          "agent_decisions": 300000,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.4355621599999999,
+            "train/actor_loss": -2.2351627349853516,
+            "train/critic_loss": 1.3865203072782606e-05,
+            "train/ent_coef": 0.00012683242675848305,
+            "train/ent_coef_loss": 1.3190447092056274,
+            "train/n_updates": 298699.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 299899,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 1545.6157837363814,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.0
+    },
+    "c-horizon-only/development-2000-2008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 60038,
+          "completion_rate": 0.2222222222222222,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 1.3102281500000001,
+            "train/actor_loss": -0.7049242854118347,
+            "train/critic_loss": 0.0024849488399922848,
+            "train/ent_coef": 0.0013305209577083588,
+            "train/ent_coef_loss": 0.10894855856895447,
+            "train/n_updates": 59752.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 2,
+            "incomplete+time+speed": 5,
+            "speed": 1
+          },
+          "gradient_updates": 59937,
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 0.7604833579611372,
+          "mean_action_total_variation": 37.033215979735054,
+          "mean_feasible_energy_kwh": 0.20489287876557605,
+          "mean_integrated_speed_violation_m": 2.9713415793887963,
+          "mean_max_abs_jerk_m_s3": 40.92912179719627,
+          "mean_max_speed_violation_m_s": 1.742370926538383,
+          "mean_regenerative_energy_kwh": 0.051689057140825896,
+          "mean_speed_violation_count": 2.111111111111111,
+          "mean_traction_energy_kwh": 0.20791067741562533,
+          "mean_travel_time_s": 160.42222222221739,
+          "median_feasible_energy_kwh": 0.20489287876557605,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.3333333333333333,
+          "speed_violation_rate": 0.6666666666666666,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778
+        },
+        "29": {
+          "agent_decisions": 60043,
+          "completion_rate": 1.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 1.93405614,
+            "train/actor_loss": -0.7958091497421265,
+            "train/critic_loss": 0.0005331435240805149,
+            "train/ent_coef": 0.000701568671502173,
+            "train/ent_coef_loss": -1.0066803693771362,
+            "train/n_updates": 59794.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 5,
+            "speed": 1,
+            "time": 1,
+            "time+speed": 2
+          },
+          "gradient_updates": 59942,
+          "incomplete_rate": 0.0,
+          "mean_abs_jerk_m_s3": 0.470014568748254,
+          "mean_action_total_variation": 17.52181257141961,
+          "mean_feasible_energy_kwh": 0.17810545183475437,
+          "mean_integrated_speed_violation_m": 0.7839964167705387,
+          "mean_max_abs_jerk_m_s3": 31.422281671321418,
+          "mean_max_speed_violation_m_s": 0.5642258779738678,
+          "mean_regenerative_energy_kwh": 0.03785094454129903,
+          "mean_speed_violation_count": 0.5555555555555556,
+          "mean_traction_energy_kwh": 0.21531939921155402,
+          "mean_travel_time_s": 122.5888888888862,
+          "median_feasible_energy_kwh": 0.168262354382683,
+          "median_travel_time_s": 117.29999999999761,
+          "requirement_satisfaction_rate": 0.5555555555555556,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.6666666666666666,
+          "speed_violation_rate": 0.3333333333333333,
+          "time_compliance_rate": 0.6666666666666666,
+          "time_violation_rate": 0.3333333333333333
+        },
+        "47": {
+          "agent_decisions": 60047,
+          "completion_rate": 0.7777777777777778,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 2.039164,
+            "train/actor_loss": -0.7268349528312683,
+            "train/critic_loss": 0.00028750335332006216,
+            "train/ent_coef": 0.001510912668891251,
+            "train/ent_coef_loss": 0.421805739402771,
+            "train/n_updates": 59910.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 3,
+            "incomplete+time": 2,
+            "speed": 3,
+            "time+speed": 1
+          },
+          "gradient_updates": 59946,
+          "incomplete_rate": 0.2222222222222222,
+          "mean_abs_jerk_m_s3": 0.5420564267263399,
+          "mean_action_total_variation": 26.547501736217075,
+          "mean_feasible_energy_kwh": 0.1618922095594436,
+          "mean_integrated_speed_violation_m": 0.764072872973507,
+          "mean_max_abs_jerk_m_s3": 20.638535307708562,
+          "mean_max_speed_violation_m_s": 0.5950263237033071,
+          "mean_regenerative_energy_kwh": 0.016277220564992624,
+          "mean_speed_violation_count": 0.6666666666666666,
+          "mean_traction_energy_kwh": 0.19007308352766977,
+          "mean_travel_time_s": 125.66666666666382,
+          "median_feasible_energy_kwh": 0.16110267626139005,
+          "median_travel_time_s": 107.39999999999817,
+          "requirement_satisfaction_rate": 0.3333333333333333,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.5555555555555556,
+          "speed_violation_rate": 0.4444444444444444,
+          "time_compliance_rate": 0.6666666666666666,
+          "time_violation_rate": 0.3333333333333333
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 9,
+        "incomplete+time": 4,
+        "incomplete+time+speed": 5,
+        "speed": 5,
+        "time": 1,
+        "time+speed": 3
+      },
+      "feasible_episode_count": 9,
+      "maximum_rsr": 0.5555555555555556,
+      "mean_completion_rate": 0.6666666666666666,
+      "mean_feasible_energy_kwh": 0.17567741851307542,
+      "mean_rsr": 0.3333333333333333,
+      "mean_speed_compliance_rate": 0.5185185185185185,
+      "mean_time_compliance_rate": 0.5185185185185185,
+      "mean_training_wall_time_s": 317.29145386137924,
+      "median_feasible_energy_kwh": 0.1660833509310186,
+      "minimum_rsr": 0.1111111111111111,
+      "rsr_range": 0.4444444444444445
+    },
+    "c-horizon-only/validation-3000-3008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 60038,
+          "completion_rate": 0.2222222222222222,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 1.3102281500000001,
+            "train/actor_loss": -0.7049242854118347,
+            "train/critic_loss": 0.0024849488399922848,
+            "train/ent_coef": 0.0013305209577083588,
+            "train/ent_coef_loss": 0.10894855856895447,
+            "train/n_updates": 59752.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 4,
+            "incomplete+time+speed": 3,
+            "speed": 2
+          },
+          "gradient_updates": 59937,
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 0.3751034842809605,
+          "mean_action_total_variation": 16.187523749139572,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 3.464337369713691,
+          "mean_max_abs_jerk_m_s3": 30.041895582817418,
+          "mean_max_speed_violation_m_s": 1.3688889070158687,
+          "mean_regenerative_energy_kwh": 0.02989777214023908,
+          "mean_speed_violation_count": 2.4444444444444446,
+          "mean_traction_energy_kwh": 0.1640124062299704,
+          "mean_travel_time_s": 157.81111111110644,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.4444444444444444,
+          "speed_violation_rate": 0.5555555555555556,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778
+        },
+        "29": {
+          "agent_decisions": 60043,
+          "completion_rate": 1.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 1.93405614,
+            "train/actor_loss": -0.7958091497421265,
+            "train/critic_loss": 0.0005331435240805149,
+            "train/ent_coef": 0.000701568671502173,
+            "train/ent_coef_loss": -1.0066803693771362,
+            "train/n_updates": 59794.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 5,
+            "speed": 2,
+            "time": 1,
+            "time+speed": 1
+          },
+          "gradient_updates": 59942,
+          "incomplete_rate": 0.0,
+          "mean_abs_jerk_m_s3": 0.6143446507390637,
+          "mean_action_total_variation": 21.91138670179579,
+          "mean_feasible_energy_kwh": 0.190789123260625,
+          "mean_integrated_speed_violation_m": 0.564898985189402,
+          "mean_max_abs_jerk_m_s3": 35.03740100452617,
+          "mean_max_speed_violation_m_s": 0.640552032207023,
+          "mean_regenerative_energy_kwh": 0.04845265866852559,
+          "mean_speed_violation_count": 0.3333333333333333,
+          "mean_traction_energy_kwh": 0.23989048474529465,
+          "mean_travel_time_s": 118.244444444442,
+          "median_feasible_energy_kwh": 0.1877033635756519,
+          "median_travel_time_s": 124.5999999999972,
+          "requirement_satisfaction_rate": 0.5555555555555556,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.6666666666666666,
+          "speed_violation_rate": 0.3333333333333333,
+          "time_compliance_rate": 0.7777777777777778,
+          "time_violation_rate": 0.2222222222222222
+        },
+        "47": {
+          "agent_decisions": 60047,
+          "completion_rate": 0.8888888888888888,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 2.039164,
+            "train/actor_loss": -0.7268349528312683,
+            "train/critic_loss": 0.00028750335332006216,
+            "train/ent_coef": 0.001510912668891251,
+            "train/ent_coef_loss": 0.421805739402771,
+            "train/n_updates": 59910.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+time": 1,
+            "speed": 4
+          },
+          "gradient_updates": 59946,
+          "incomplete_rate": 0.1111111111111111,
+          "mean_abs_jerk_m_s3": 0.577369011351328,
+          "mean_action_total_variation": 21.13824388715956,
+          "mean_feasible_energy_kwh": 0.17299348178106555,
+          "mean_integrated_speed_violation_m": 0.35424627307463535,
+          "mean_max_abs_jerk_m_s3": 23.366779882554106,
+          "mean_max_speed_violation_m_s": 0.45132387797390955,
+          "mean_regenerative_energy_kwh": 0.019094183662415175,
+          "mean_speed_violation_count": 0.5555555555555556,
+          "mean_traction_energy_kwh": 0.19846065241557914,
+          "mean_travel_time_s": 113.34444444444229,
+          "median_feasible_energy_kwh": 0.17526096430939178,
+          "median_travel_time_s": 114.49999999999777,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.5555555555555556,
+          "speed_violation_rate": 0.4444444444444444,
+          "time_compliance_rate": 0.8888888888888888,
+          "time_violation_rate": 0.1111111111111111
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 9,
+        "incomplete+time": 5,
+        "incomplete+time+speed": 3,
+        "speed": 8,
+        "time": 1,
+        "time+speed": 1
+      },
+      "feasible_episode_count": 9,
+      "maximum_rsr": 0.5555555555555556,
+      "mean_completion_rate": 0.7037037037037037,
+      "mean_feasible_energy_kwh": 0.18287994926970969,
+      "mean_rsr": 0.3333333333333333,
+      "mean_speed_compliance_rate": 0.5555555555555555,
+      "mean_time_compliance_rate": 0.6296296296296297,
+      "mean_training_wall_time_s": 317.29145386137924,
+      "median_feasible_energy_kwh": 0.1786104073289029,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.5555555555555556
+    },
+    "d-horizon-discount/development-2000-2008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 60006,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.27339416000000005,
+            "train/actor_loss": -7.111282825469971,
+            "train/critic_loss": 0.20094719529151917,
+            "train/ent_coef": 0.0006458990974351764,
+            "train/ent_coef_loss": 1.1619679927825928,
+            "train/n_updates": 59797.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "gradient_updates": 59905,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.16632423433601087,
+          "mean_action_total_variation": 9.692269994152916,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 13.349840830465748,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.01262910478410168,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.07996675376511882,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "29": {
+          "agent_decisions": 60007,
+          "completion_rate": 0.2222222222222222,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.14366395,
+            "train/actor_loss": -7.473394393920898,
+            "train/critic_loss": 0.0010788693325594068,
+            "train/ent_coef": 0.0006018771091476083,
+            "train/ent_coef_loss": 0.7620174288749695,
+            "train/n_updates": 59594.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 2,
+            "incomplete+time": 6,
+            "incomplete+time+speed": 1
+          },
+          "gradient_updates": 59906,
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 2.003533261764021,
+          "mean_action_total_variation": 82.1606331732538,
+          "mean_feasible_energy_kwh": 0.3159872101495159,
+          "mean_integrated_speed_violation_m": 0.25957445082471886,
+          "mean_max_abs_jerk_m_s3": 31.8893994137497,
+          "mean_max_speed_violation_m_s": 0.3498157485875119,
+          "mean_regenerative_energy_kwh": 0.07899877160454857,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.2382622406254905,
+          "mean_travel_time_s": 161.63333333332844,
+          "median_feasible_energy_kwh": 0.3159872101495159,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.2222222222222222,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778
+        },
+        "47": {
+          "agent_decisions": 60004,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.54477187,
+            "train/actor_loss": -6.981378078460693,
+            "train/critic_loss": 0.0009224367677234113,
+            "train/ent_coef": 0.0008566273027099669,
+            "train/ent_coef_loss": -0.3118426203727722,
+            "train/n_updates": 59573.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "incomplete+time+speed": 1
+          },
+          "gradient_updates": 59903,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.17573475066069685,
+          "mean_action_total_variation": 10.34904412428538,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.02801151317285681,
+          "mean_max_abs_jerk_m_s3": 12.551769519642885,
+          "mean_max_speed_violation_m_s": 0.10907788563849409,
+          "mean_regenerative_energy_kwh": 0.007731714662414331,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_traction_energy_kwh": 0.0794696222398194,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 2,
+        "incomplete+time": 23,
+        "incomplete+time+speed": 2
+      },
+      "feasible_episode_count": 2,
+      "maximum_rsr": 0.2222222222222222,
+      "mean_completion_rate": 0.07407407407407407,
+      "mean_feasible_energy_kwh": 0.3159872101495159,
+      "mean_rsr": 0.07407407407407407,
+      "mean_speed_compliance_rate": 0.9259259259259259,
+      "mean_time_compliance_rate": 0.07407407407407407,
+      "mean_training_wall_time_s": 299.6972795682959,
+      "median_feasible_energy_kwh": 0.3159872101495159,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.2222222222222222
+    },
+    "d-horizon-discount/validation-3000-3008-v1/simulator-target-300000": {
+      "by_training_seed": {
+        "11": {
+          "agent_decisions": 60006,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.27339416000000005,
+            "train/actor_loss": -7.111282825469971,
+            "train/critic_loss": 0.20094719529151917,
+            "train/ent_coef": 0.0006458990974351764,
+            "train/ent_coef_loss": 1.1619679927825928,
+            "train/n_updates": 59797.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "incomplete+time+speed": 1
+          },
+          "gradient_updates": 59905,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.21984233126410027,
+          "mean_action_total_variation": 12.67200662030114,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.1269995201900874,
+          "mean_max_abs_jerk_m_s3": 28.953211851524877,
+          "mean_max_speed_violation_m_s": 0.20434768209052181,
+          "mean_regenerative_energy_kwh": 0.018670624495310775,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.122024197624514,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        },
+        "29": {
+          "agent_decisions": 60007,
+          "completion_rate": 0.1111111111111111,
+          "diagnostics": {
+            "rollout/ep_rew_mean": 0.14366395,
+            "train/actor_loss": -7.473394393920898,
+            "train/critic_loss": 0.0010788693325594068,
+            "train/ent_coef": 0.0006018771091476083,
+            "train/ent_coef_loss": 0.7620174288749695,
+            "train/n_updates": 59594.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 7,
+            "incomplete+time+speed": 1
+          },
+          "gradient_updates": 59906,
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.9159355236935611,
+          "mean_action_total_variation": 48.02237668302324,
+          "mean_feasible_energy_kwh": 0.21721736912647618,
+          "mean_integrated_speed_violation_m": 0.029019746071608794,
+          "mean_max_abs_jerk_m_s3": 33.71981112894216,
+          "mean_max_speed_violation_m_s": 0.05828256137101137,
+          "mean_regenerative_energy_kwh": 0.042417714278163196,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_traction_energy_kwh": 0.17806013580466398,
+          "mean_travel_time_s": 171.8666666666612,
+          "median_feasible_energy_kwh": 0.21721736912647618,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.1111111111111111,
+          "time_violation_rate": 0.8888888888888888
+        },
+        "47": {
+          "agent_decisions": 60004,
+          "completion_rate": 0.0,
+          "diagnostics": {
+            "rollout/ep_rew_mean": -0.54477187,
+            "train/actor_loss": -6.981378078460693,
+            "train/critic_loss": 0.0009224367677234113,
+            "train/ent_coef": 0.0008566273027099669,
+            "train/ent_coef_loss": -0.3118426203727722,
+            "train/n_updates": 59573.0
+          },
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 7,
+            "incomplete+time+speed": 2
+          },
+          "gradient_updates": 59903,
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.4238831114468948,
+          "mean_action_total_variation": 24.76374450657103,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.6570966653168123,
+          "mean_max_abs_jerk_m_s3": 26.34518872398204,
+          "mean_max_speed_violation_m_s": 0.24354248243971335,
+          "mean_regenerative_energy_kwh": 0.01843241456177104,
+          "mean_speed_violation_count": 0.4444444444444444,
+          "mean_traction_energy_kwh": 0.11038024134820278,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "simulator_steps": 300000,
+          "speed_compliance_rate": 0.7777777777777778,
+          "speed_violation_rate": 0.2222222222222222,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 1,
+        "incomplete+time": 22,
+        "incomplete+time+speed": 4
+      },
+      "feasible_episode_count": 1,
+      "maximum_rsr": 0.1111111111111111,
+      "mean_completion_rate": 0.037037037037037035,
+      "mean_feasible_energy_kwh": 0.21721736912647618,
+      "mean_rsr": 0.037037037037037035,
+      "mean_speed_compliance_rate": 0.8518518518518517,
+      "mean_time_compliance_rate": 0.037037037037037035,
+      "mean_training_wall_time_s": 299.6972795682959,
+      "median_feasible_energy_kwh": 0.21721736912647618,
+      "minimum_rsr": 0.0,
+      "rsr_range": 0.1111111111111111
+    }
+  },
+  "interaction_accounting": {
+    "agent_decisions_and_gradient_updates_recorded_separately": true,
+    "primary_budget_unit": "underlying simulator transitions",
+    "simulator_step_budget_per_condition_and_seed": 300000
+  },
+  "learning_curves": [
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.6666666666666666,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 249899,
+      "rsr": 0.4444444444444444,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.4444444444444444,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.4444444444444444,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 299899,
+      "rsr": 0.4444444444444444,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.4444444444444444,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.5555555555555556,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 0.4444444444444444,
+      "time_compliance_rate": 0.5555555555555556,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 249899,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 299899,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.0,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 249899,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "a-baseline",
+      "condition_label": "A. baseline",
+      "gradient_updates": 299899,
+      "rsr": 0.1111111111111111,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 0.6666666666666666,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 249899,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 299899,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.6666666666666666,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 0.1111111111111111,
+      "time_compliance_rate": 0.6666666666666666,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 249899,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 299899,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 50000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 49899,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 100000,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 99899,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 150000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 149899,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 200000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 199899,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 250000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 249899,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 300000,
+      "completion_rate": 0.0,
+      "condition_id": "b-discount-only",
+      "condition_label": "B. discount only",
+      "gradient_updates": 299899,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 10002,
+      "completion_rate": 0.0,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 9901,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50002,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 20002,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 19901,
+      "rsr": 0.1111111111111111,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 30005,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 29904,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150001,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 40013,
+      "completion_rate": 0.6666666666666666,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 39912,
+      "rsr": 0.2222222222222222,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200004,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.3333333333333333,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 50023,
+      "completion_rate": 0.2222222222222222,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 49922,
+      "rsr": 0.2222222222222222,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.2222222222222222,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 60038,
+      "completion_rate": 0.2222222222222222,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 59937,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.4444444444444444,
+      "time_compliance_rate": 0.2222222222222222,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 10001,
+      "completion_rate": 0.0,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 9900,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 20002,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 19901,
+      "rsr": 0.1111111111111111,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100002,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 30005,
+      "completion_rate": 0.4444444444444444,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 29904,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150001,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 40012,
+      "completion_rate": 0.8888888888888888,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 39911,
+      "rsr": 0.5555555555555556,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.5555555555555556,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 50030,
+      "completion_rate": 0.8888888888888888,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 49929,
+      "rsr": 0.6666666666666666,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250003,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.8888888888888888,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 60043,
+      "completion_rate": 1.0,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 59942,
+      "rsr": 0.5555555555555556,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.6666666666666666,
+      "time_compliance_rate": 0.7777777777777778,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 10002,
+      "completion_rate": 0.0,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 9901,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50002,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 20002,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 19901,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100002,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 30004,
+      "completion_rate": 0.5555555555555556,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 29903,
+      "rsr": 0.1111111111111111,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.2222222222222222,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 40013,
+      "completion_rate": 0.8888888888888888,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 39912,
+      "rsr": 0.3333333333333333,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200000,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.4444444444444444,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 50029,
+      "completion_rate": 0.8888888888888888,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 49928,
+      "rsr": 0.4444444444444444,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250003,
+      "speed_compliance_rate": 0.5555555555555556,
+      "time_compliance_rate": 0.8888888888888888,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 60047,
+      "completion_rate": 0.8888888888888888,
+      "condition_id": "c-horizon-only",
+      "condition_label": "C. horizon only",
+      "gradient_updates": 59946,
+      "rsr": 0.4444444444444444,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.5555555555555556,
+      "time_compliance_rate": 0.8888888888888888,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 10002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 9901,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 20002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 19901,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 30002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 29901,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150002,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 40003,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 39902,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 50003,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 49902,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 60006,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 59905,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "agent_decisions": 10001,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 9900,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50004,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 20001,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 19900,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 30002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 29901,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150001,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 40002,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 39901,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200001,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 50005,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 49904,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250004,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 60007,
+      "completion_rate": 0.1111111111111111,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 59906,
+      "rsr": 0.1111111111111111,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.1111111111111111,
+      "training_seed": 29
+    },
+    {
+      "agent_decisions": 10002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 9901,
+      "rsr": 0.0,
+      "simulator_step_target": 50000,
+      "simulator_steps": 50003,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 20002,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 19901,
+      "rsr": 0.0,
+      "simulator_step_target": 100000,
+      "simulator_steps": 100003,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 30003,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 29902,
+      "rsr": 0.0,
+      "simulator_step_target": 150000,
+      "simulator_steps": 150004,
+      "speed_compliance_rate": 0.8888888888888888,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 40003,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 39902,
+      "rsr": 0.0,
+      "simulator_step_target": 200000,
+      "simulator_steps": 200002,
+      "speed_compliance_rate": 1.0,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 50004,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 49903,
+      "rsr": 0.0,
+      "simulator_step_target": 250000,
+      "simulator_steps": 250003,
+      "speed_compliance_rate": 0.6666666666666666,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    },
+    {
+      "agent_decisions": 60004,
+      "completion_rate": 0.0,
+      "condition_id": "d-horizon-discount",
+      "condition_label": "D. horizon + discount",
+      "gradient_updates": 59903,
+      "rsr": 0.0,
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.7777777777777778,
+      "time_compliance_rate": 0.0,
+      "training_seed": 47
+    }
+  ],
+  "learning_stability": [
+    {
+      "condition_id": "a-baseline",
+      "final_rsr": 0.4444444444444444,
+      "peak_rsr": 0.4444444444444444,
+      "peak_simulator_step_target": 250000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 11
+    },
+    {
+      "condition_id": "a-baseline",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 29
+    },
+    {
+      "condition_id": "a-baseline",
+      "final_rsr": 0.1111111111111111,
+      "peak_rsr": 0.1111111111111111,
+      "peak_simulator_step_target": 300000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 47
+    },
+    {
+      "condition_id": "b-discount-only",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 11
+    },
+    {
+      "condition_id": "b-discount-only",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 29
+    },
+    {
+      "condition_id": "b-discount-only",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 47
+    },
+    {
+      "condition_id": "c-horizon-only",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.2222222222222222,
+      "peak_simulator_step_target": 200000,
+      "peak_to_final_change": -0.2222222222222222,
+      "training_seed": 11
+    },
+    {
+      "condition_id": "c-horizon-only",
+      "final_rsr": 0.5555555555555556,
+      "peak_rsr": 0.6666666666666666,
+      "peak_simulator_step_target": 250000,
+      "peak_to_final_change": -0.11111111111111105,
+      "training_seed": 29
+    },
+    {
+      "condition_id": "c-horizon-only",
+      "final_rsr": 0.4444444444444444,
+      "peak_rsr": 0.4444444444444444,
+      "peak_simulator_step_target": 250000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 47
+    },
+    {
+      "condition_id": "d-horizon-discount",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 11
+    },
+    {
+      "condition_id": "d-horizon-discount",
+      "final_rsr": 0.1111111111111111,
+      "peak_rsr": 0.1111111111111111,
+      "peak_simulator_step_target": 300000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 29
+    },
+    {
+      "condition_id": "d-horizon-discount",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_simulator_step_target": 50000,
+      "peak_to_final_change": 0.0,
+      "training_seed": 47
+    }
+  ],
+  "paired_feasible_energy": {
+    "a-baseline__vs__b-discount-only": {
+      "11": null,
+      "29": null,
+      "47": null
+    },
+    "a-baseline__vs__c-horizon-only": {
+      "11": null,
+      "29": null,
+      "47": {
+        "max_delta_energy_kwh": 0.03652714265135426,
+        "mean_delta_energy_kwh": 0.03652714265135426,
+        "median_delta_energy_kwh": 0.03652714265135426,
+        "min_delta_energy_kwh": 0.03652714265135426,
+        "paired_track_count": 1,
+        "tracks": [
+          {
+            "delta_energy_kwh": 0.03652714265135426,
+            "evaluation_seed": 3004,
+            "left_energy_kwh": 0.21273828656405208,
+            "right_energy_kwh": 0.17621114391269782
+          }
+        ]
+      }
+    },
+    "a-baseline__vs__d-horizon-discount": {
+      "11": null,
+      "29": null,
+      "47": null
+    },
+    "b-discount-only__vs__c-horizon-only": {
+      "11": null,
+      "29": null,
+      "47": null
+    },
+    "b-discount-only__vs__d-horizon-discount": {
+      "11": null,
+      "29": null,
+      "47": null
+    },
+    "c-horizon-only__vs__d-horizon-discount": {
+      "11": null,
+      "29": {
+        "max_delta_energy_kwh": -0.014151146872117215,
+        "mean_delta_energy_kwh": -0.014151146872117215,
+        "median_delta_energy_kwh": -0.014151146872117215,
+        "min_delta_energy_kwh": -0.014151146872117215,
+        "paired_track_count": 1,
+        "tracks": [
+          {
+            "delta_energy_kwh": -0.014151146872117215,
+            "evaluation_seed": 3000,
+            "left_energy_kwh": 0.20306622225435897,
+            "right_energy_kwh": 0.21721736912647618
+          }
+        ]
+      },
+      "47": null
+    }
+  },
+  "paired_track_outcomes_vs_a": {
+    "b-discount-only": {
+      "counts": {
+        "regressed": 5,
+        "unchanged": 22
+      },
+      "tracks": [
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        }
+      ]
+    },
+    "c-horizon-only": {
+      "counts": {
+        "improved": 8,
+        "regressed": 4,
+        "unchanged": 15
+      },
+      "tracks": [
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3000,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3001,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3002,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3004,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3005,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3000,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3001,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3004,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": -0.03652714265135426,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3005,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        }
+      ]
+    },
+    "d-horizon-discount": {
+      "counts": {
+        "improved": 1,
+        "regressed": 5,
+        "unchanged": 21
+      },
+      "tracks": [
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 11
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "feasible",
+          "condition_feasible": true,
+          "evaluation_seed": 3000,
+          "feasibility_change": "improved",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 29
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3000,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3001,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3002,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3003,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "feasible",
+          "baseline_feasible": true,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3004,
+          "feasibility_change": "regressed",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3005,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3006,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time+speed",
+          "condition_feasible": false,
+          "evaluation_seed": 3007,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        },
+        {
+          "baseline_failure_mode": "incomplete+time",
+          "baseline_feasible": false,
+          "condition_failure_mode": "incomplete+time",
+          "condition_feasible": false,
+          "evaluation_seed": 3008,
+          "feasibility_change": "unchanged",
+          "paired_feasible_energy_delta_kwh": null,
+          "training_seed": 47
+        }
+      ]
+    }
+  },
+  "physical_time_matched_repeat_5_gamma_from_0_99": 0.9509900498999999,
+  "reserved_final_test_evaluated": false,
+  "result_file_count": 144,
+  "schema_version": 1
+}

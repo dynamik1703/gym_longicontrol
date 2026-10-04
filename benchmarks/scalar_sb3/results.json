@@ -1,0 +1,4372 @@
+{
+  "acceptance": {
+    "ppo": {
+      "accepted": false,
+      "by_training_seed": {
+        "11": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": false,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": null,
+          "paired_track_count": 0
+        },
+        "29": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": false,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": null,
+          "paired_track_count": 0
+        },
+        "47": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": false,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": null,
+          "paired_track_count": 0
+        }
+      },
+      "rsr_range_across_training_seeds": 0.0,
+      "seed_stability_accepted": true
+    },
+    "sac": {
+      "accepted": false,
+      "by_training_seed": {
+        "11": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": true,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": 1.0017678377647827,
+          "paired_track_count": 4
+        },
+        "29": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": false,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": null,
+          "paired_track_count": 0
+        },
+        "47": {
+          "accepted": false,
+          "checks": {
+            "completion": false,
+            "energy": true,
+            "rsr": false,
+            "speed_compliance": true
+          },
+          "mean_energy_ratio_to_fast_reference": 1.0650156775577035,
+          "paired_track_count": 1
+        }
+      },
+      "rsr_range_across_training_seeds": 0.4444444444444444,
+      "seed_stability_accepted": false
+    }
+  },
+  "acceptance_criteria": {
+    "maximum_mean_energy_ratio_to_fast_reference": 1.25,
+    "maximum_rsr_range_across_training_seeds": 0.1111111111111111,
+    "minimum_completion_rate_per_training_seed": 0.8888888888888888,
+    "minimum_rsr_per_training_seed": 0.8888888888888888,
+    "minimum_speed_compliance_rate_per_training_seed": 0.8888888888888888
+  },
+  "benchmark_name": "scalar-sb3-v1-stochastic-v1",
+  "configuration_sha256": "5e22fc3a6b8936a051a973c47b49e78789d5097c76f9a4e1fa0b0171931266fe",
+  "decision_case": "D",
+  "learning_curves": [
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "ppo",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.8888888888888888,
+      "training_seed": 11,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.6666666666666666,
+      "rsr": 0.4444444444444444,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.4444444444444444,
+      "rsr": 0.4444444444444444,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.5555555555555556,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.4444444444444444,
+      "training_seed": 29,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.8888888888888888,
+      "training_seed": 47,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.8888888888888888,
+      "training_seed": 47,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.7777777777777778,
+      "training_seed": 47,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "sac",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.1111111111111111,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.1111111111111111,
+      "rsr": 0.1111111111111111,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.8888888888888888,
+      "rsr": 0.4444444444444444,
+      "speed_compliance_rate": 0.4444444444444444,
+      "training_seed": 29,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 1.0,
+      "rsr": 0.5555555555555556,
+      "speed_compliance_rate": 0.5555555555555556,
+      "training_seed": 29,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.8888888888888888,
+      "rsr": 0.1111111111111111,
+      "speed_compliance_rate": 0.1111111111111111,
+      "training_seed": 29,
+      "training_steps": 300000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.2222222222222222,
+      "rsr": 0.1111111111111111,
+      "speed_compliance_rate": 0.6666666666666666,
+      "training_seed": 47,
+      "training_steps": 50000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.6666666666666666,
+      "rsr": 0.5555555555555556,
+      "speed_compliance_rate": 0.8888888888888888,
+      "training_seed": 47,
+      "training_steps": 100000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.5555555555555556,
+      "rsr": 0.4444444444444444,
+      "speed_compliance_rate": 0.6666666666666666,
+      "training_seed": 47,
+      "training_steps": 150000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.8888888888888888,
+      "rsr": 0.5555555555555556,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 200000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.8888888888888888,
+      "rsr": 0.5555555555555556,
+      "speed_compliance_rate": 0.7777777777777778,
+      "training_seed": 47,
+      "training_steps": 250000
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "completion_rate": 0.6666666666666666,
+      "rsr": 0.1111111111111111,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 300000
+    }
+  ],
+  "learning_stability": [
+    {
+      "algorithm": "custom-sac-v2b",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 11
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "final_rsr": 0.1111111111111111,
+      "peak_rsr": 0.5555555555555556,
+      "peak_to_final_change": -0.4444444444444445,
+      "peak_training_steps": 250000,
+      "training_seed": 29
+    },
+    {
+      "algorithm": "custom-sac-v2b",
+      "final_rsr": 0.1111111111111111,
+      "peak_rsr": 0.5555555555555556,
+      "peak_to_final_change": -0.4444444444444445,
+      "peak_training_steps": 100000,
+      "training_seed": 47
+    },
+    {
+      "algorithm": "ppo",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 11
+    },
+    {
+      "algorithm": "ppo",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 29
+    },
+    {
+      "algorithm": "ppo",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 47
+    },
+    {
+      "algorithm": "sac",
+      "final_rsr": 0.4444444444444444,
+      "peak_rsr": 0.4444444444444444,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 250000,
+      "training_seed": 11
+    },
+    {
+      "algorithm": "sac",
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 29
+    },
+    {
+      "algorithm": "sac",
+      "final_rsr": 0.1111111111111111,
+      "peak_rsr": 0.1111111111111111,
+      "peak_to_final_change": 0.0,
+      "peak_training_steps": 300000,
+      "training_seed": 47
+    }
+  ],
+  "paired_sac_ppo_energy": [],
+  "reference_summaries": {
+    "conservative-oracle": {
+      "description": "3.0 m/s margin; full future-track access",
+      "failure_mode_counts": {
+        "feasible": 7,
+        "incomplete+time": 1,
+        "time": 1
+      },
+      "privileged_track_access": true,
+      "summary": {
+        "completion_rate": 0.8888888888888888,
+        "episode_count": 9,
+        "incomplete_rate": 0.1111111111111111,
+        "mean_abs_jerk_m_s3": 0.23459955391824927,
+        "mean_action_total_variation": 7.023346196941656,
+        "mean_feasible_energy_kwh": 0.19686131159167883,
+        "mean_integrated_speed_violation_m": 0.0,
+        "mean_max_abs_jerk_m_s3": 27.777777840321672,
+        "mean_max_speed_violation_m_s": 0.0,
+        "mean_regenerative_energy_kwh": 0.03160280727652993,
+        "mean_speed_violation_count": 0.0,
+        "mean_traction_energy_kwh": 0.22239973907903407,
+        "mean_travel_time_s": 113.07777777777564,
+        "median_feasible_energy_kwh": 0.18235904718166812,
+        "median_travel_time_s": 124.3999999999972,
+        "requirement_satisfaction_rate": 0.7777777777777778,
+        "speed_compliance_rate": 1.0,
+        "speed_violation_rate": 0.0,
+        "time_violation_rate": 0.2222222222222222
+      }
+    },
+    "fast-compliant-oracle": {
+      "description": "0.5 m/s margin; full future-track access",
+      "failure_mode_counts": {
+        "feasible": 9
+      },
+      "privileged_track_access": true,
+      "summary": {
+        "completion_rate": 1.0,
+        "episode_count": 9,
+        "incomplete_rate": 0.0,
+        "mean_abs_jerk_m_s3": 0.29114081428342653,
+        "mean_action_total_variation": 6.960507627342585,
+        "mean_feasible_energy_kwh": 0.19804511620977483,
+        "mean_integrated_speed_violation_m": 0.0,
+        "mean_max_abs_jerk_m_s3": 27.745790175147572,
+        "mean_max_speed_violation_m_s": 0.0,
+        "mean_regenerative_energy_kwh": 0.034804119170995275,
+        "mean_speed_violation_count": 0.0,
+        "mean_traction_energy_kwh": 0.23284923538077015,
+        "mean_travel_time_s": 85.68888888888826,
+        "median_feasible_energy_kwh": 0.1870635557776899,
+        "median_travel_time_s": 88.69999999999924,
+        "requirement_satisfaction_rate": 1.0,
+        "speed_compliance_rate": 1.0,
+        "speed_violation_rate": 0.0,
+        "time_violation_rate": 0.0
+      }
+    },
+    "random": {
+      "description": "uniform actions in [-1, 1]; no privileged track access",
+      "failure_mode_counts": {
+        "incomplete+time": 7,
+        "incomplete+time+speed": 2
+      },
+      "privileged_track_access": false,
+      "summary": {
+        "completion_rate": 0.0,
+        "episode_count": 9,
+        "incomplete_rate": 1.0,
+        "mean_abs_jerk_m_s3": 15.814751106754127,
+        "mean_action_total_variation": 1193.9468919281844,
+        "mean_feasible_energy_kwh": null,
+        "mean_integrated_speed_violation_m": 1.4621772884437836,
+        "mean_max_abs_jerk_m_s3": 57.84375095732654,
+        "mean_max_speed_violation_m_s": 0.4720957892904296,
+        "mean_regenerative_energy_kwh": 0.03721366064588418,
+        "mean_speed_violation_count": 0.2222222222222222,
+        "mean_traction_energy_kwh": 0.20909474280072404,
+        "mean_travel_time_s": 179.99999999999406,
+        "median_feasible_energy_kwh": null,
+        "median_travel_time_s": 179.99999999999406,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate": 0.7777777777777778,
+        "speed_violation_rate": 0.2222222222222222,
+        "time_violation_rate": 1.0
+      }
+    }
+  },
+  "reserved_final_test_evaluated": false,
+  "result_file_count": 72,
+  "schema_version": 1,
+  "summaries": {
+    "ppo/development-2000-2008-v1/step-100000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.697988818181818,
+          "train/approx_kl": 0.002225500298663974,
+          "train/clip_fraction": 0.0083984375,
+          "train/entropy_loss": -1.0703308362513781,
+          "train/explained_variance": 0.9558723568916321,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": 0.0008078457904048264,
+          "train/value_loss": 2.784736551625436e-05
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.41082175925925923,
+          "train/approx_kl": 0.002961699152365327,
+          "train/clip_fraction": 0.027197265625,
+          "train/entropy_loss": -0.8027838857844471,
+          "train/explained_variance": 0.9586668014526367,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": -0.001757785549852997,
+          "train/value_loss": 7.072800540103286e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.8035326111111113,
+          "train/approx_kl": 0.0003071558312512934,
+          "train/clip_fraction": 0.011279296875,
+          "train/entropy_loss": -0.9972001135349273,
+          "train/explained_variance": 0.9507910013198853,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": 0.0007619761861860752,
+          "train/value_loss": 8.3579330345529e-08
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 34.19853449998967,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 480,
+        "29": 480,
+        "47": 480
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/development-2000-2008-v1/step-150000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.5984392409638554,
+          "train/approx_kl": 0.004622225649654865,
+          "train/clip_fraction": 0.019384765625,
+          "train/entropy_loss": -0.9332329962402582,
+          "train/explained_variance": 0.9601597189903259,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": 0.00015679448551964015,
+          "train/value_loss": 3.0557835748248885e-07
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.4080713253012048,
+          "train/approx_kl": 0.001471249619498849,
+          "train/clip_fraction": 0.024609375,
+          "train/entropy_loss": -0.7626123195514083,
+          "train/explained_variance": 0.8605121374130249,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": -0.0009053236673935317,
+          "train/value_loss": 3.811154762972668e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.6633926265060242,
+          "train/approx_kl": 0.0007604530546814203,
+          "train/clip_fraction": 0.0138671875,
+          "train/entropy_loss": -0.9364139933139086,
+          "train/explained_variance": 0.9502962231636047,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": 0.0006047695962479338,
+          "train/value_loss": 2.8912336367994605e-05
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 51.27520836096179,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 730,
+        "29": 730,
+        "47": 730
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/development-2000-2008-v1/step-200000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40857663,
+          "train/approx_kl": 0.0048515996895730495,
+          "train/clip_fraction": 0.03466796875,
+          "train/entropy_loss": -0.9032796429470181,
+          "train/explained_variance": 0.956602931022644,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": -0.0006368580710841343,
+          "train/value_loss": 7.07838618711331e-08
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.40683479,
+          "train/approx_kl": 0.005612100008875132,
+          "train/clip_fraction": 0.04990234375,
+          "train/entropy_loss": -0.6889315279200673,
+          "train/explained_variance": 0.9351606965065002,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": -0.0012918450709548778,
+          "train/value_loss": 1.8304531452139802e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.40516424,
+          "train/approx_kl": 0.0017708864761516452,
+          "train/clip_fraction": 0.012939453125,
+          "train/entropy_loss": -0.8283469868823886,
+          "train/explained_variance": 0.9281277656555176,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": 0.000540227978490293,
+          "train/value_loss": 2.131997430819711e-09
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 68.52428956929361,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 970,
+        "29": 970,
+        "47": 970
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/development-2000-2008-v1/step-250000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40284487000000013,
+          "train/approx_kl": 0.0036546378396451473,
+          "train/clip_fraction": 0.0328125,
+          "train/entropy_loss": -0.8867066187784076,
+          "train/explained_variance": 0.9605661034584045,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": -0.0019383450911846013,
+          "train/value_loss": 6.725078966071056e-09
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.40288452000000013,
+          "train/approx_kl": 0.0015843510627746582,
+          "train/clip_fraction": 0.0052734375,
+          "train/entropy_loss": -0.6531961247324943,
+          "train/explained_variance": 0.9602804780006409,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": 0.000600119074806571,
+          "train/value_loss": 1.51171829598719e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.40245403,
+          "train/approx_kl": 0.0031218952499330044,
+          "train/clip_fraction": 0.020751953125,
+          "train/entropy_loss": -0.8233647480607033,
+          "train/explained_variance": 0.9573465585708618,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": -0.0012767617765348405,
+          "train/value_loss": 8.209250948336237e-07
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 86.71419413830154,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 1220,
+        "29": 1220,
+        "47": 1220
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/development-2000-2008-v1/step-300000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40251545000000005,
+          "train/approx_kl": 0.00175161671359092,
+          "train/clip_fraction": 0.01748046875,
+          "train/entropy_loss": -0.9023763151839376,
+          "train/explained_variance": 0.9603748917579651,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": 0.00012084284389857203,
+          "train/value_loss": 7.908897127999322e-10
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.4025149300000001,
+          "train/approx_kl": 0.009208831936120987,
+          "train/clip_fraction": 0.04658203125,
+          "train/entropy_loss": -0.6739439276978374,
+          "train/explained_variance": 0.9537103176116943,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": 3.292940091341734e-05,
+          "train/value_loss": 2.2502104694030552e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.4023624700000001,
+          "train/approx_kl": 0.0028475462459027767,
+          "train/clip_fraction": 0.02900390625,
+          "train/entropy_loss": -0.8181499624624848,
+          "train/explained_variance": 0.9590299129486084,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": -2.771813451545313e-05,
+          "train/value_loss": 4.011769955187985e-09
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 104.89416634696924,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 1460,
+        "29": 1460,
+        "47": 1460
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/development-2000-2008-v1/step-50000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.9785878214285714,
+          "train/approx_kl": 0.0006452149245887995,
+          "train/clip_fraction": 0.0158203125,
+          "train/entropy_loss": -1.2343781515955925,
+          "train/explained_variance": 0.9605675935745239,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.0002579884661827236,
+          "train/value_loss": 4.306201083936756e-06
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.41691462962962966,
+          "train/approx_kl": 0.0017254997510463,
+          "train/clip_fraction": 0.025537109375,
+          "train/entropy_loss": -1.0644165024161338,
+          "train/explained_variance": 0.9142778515815735,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.002055389652377926,
+          "train/value_loss": 1.878455068191759e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.2034554444444443,
+          "train/approx_kl": 0.003863752819597721,
+          "train/clip_fraction": 0.01962890625,
+          "train/entropy_loss": -1.0398747973144054,
+          "train/explained_variance": 0.9601452350616455,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.0008857376524247229,
+          "train/value_loss": 1.8609972379346474e-06
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 17.471161736000795,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 240,
+        "29": 240,
+        "47": 240
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-100000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.697988818181818,
+          "train/approx_kl": 0.002225500298663974,
+          "train/clip_fraction": 0.0083984375,
+          "train/entropy_loss": -1.0703308362513781,
+          "train/explained_variance": 0.9558723568916321,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": 0.0008078457904048264,
+          "train/value_loss": 2.784736551625436e-05
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.41082175925925923,
+          "train/approx_kl": 0.002961699152365327,
+          "train/clip_fraction": 0.027197265625,
+          "train/entropy_loss": -0.8027838857844471,
+          "train/explained_variance": 0.9586668014526367,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": -0.001757785549852997,
+          "train/value_loss": 7.072800540103286e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.8035326111111113,
+          "train/approx_kl": 0.0003071558312512934,
+          "train/clip_fraction": 0.011279296875,
+          "train/entropy_loss": -0.9972001135349273,
+          "train/explained_variance": 0.9507910013198853,
+          "train/n_updates": 470.0,
+          "train/policy_gradient_loss": 0.0007619761861860752,
+          "train/value_loss": 8.3579330345529e-08
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 34.19853449998967,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 480,
+        "29": 480,
+        "47": 480
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-150000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.5984392409638554,
+          "train/approx_kl": 0.004622225649654865,
+          "train/clip_fraction": 0.019384765625,
+          "train/entropy_loss": -0.9332329962402582,
+          "train/explained_variance": 0.9601597189903259,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": 0.00015679448551964015,
+          "train/value_loss": 3.0557835748248885e-07
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.4080713253012048,
+          "train/approx_kl": 0.001471249619498849,
+          "train/clip_fraction": 0.024609375,
+          "train/entropy_loss": -0.7626123195514083,
+          "train/explained_variance": 0.8605121374130249,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": -0.0009053236673935317,
+          "train/value_loss": 3.811154762972668e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.6633926265060242,
+          "train/approx_kl": 0.0007604530546814203,
+          "train/clip_fraction": 0.0138671875,
+          "train/entropy_loss": -0.9364139933139086,
+          "train/explained_variance": 0.9502962231636047,
+          "train/n_updates": 720.0,
+          "train/policy_gradient_loss": 0.0006047695962479338,
+          "train/value_loss": 2.8912336367994605e-05
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 51.27520836096179,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 730,
+        "29": 730,
+        "47": 730
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-200000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40857663,
+          "train/approx_kl": 0.0048515996895730495,
+          "train/clip_fraction": 0.03466796875,
+          "train/entropy_loss": -0.9032796429470181,
+          "train/explained_variance": 0.956602931022644,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": -0.0006368580710841343,
+          "train/value_loss": 7.07838618711331e-08
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.40683479,
+          "train/approx_kl": 0.005612100008875132,
+          "train/clip_fraction": 0.04990234375,
+          "train/entropy_loss": -0.6889315279200673,
+          "train/explained_variance": 0.9351606965065002,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": -0.0012918450709548778,
+          "train/value_loss": 1.8304531452139802e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.40516424,
+          "train/approx_kl": 0.0017708864761516452,
+          "train/clip_fraction": 0.012939453125,
+          "train/entropy_loss": -0.8283469868823886,
+          "train/explained_variance": 0.9281277656555176,
+          "train/n_updates": 960.0,
+          "train/policy_gradient_loss": 0.000540227978490293,
+          "train/value_loss": 2.131997430819711e-09
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 68.52428956929361,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 970,
+        "29": 970,
+        "47": 970
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-250000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40284487000000013,
+          "train/approx_kl": 0.0036546378396451473,
+          "train/clip_fraction": 0.0328125,
+          "train/entropy_loss": -0.8867066187784076,
+          "train/explained_variance": 0.9605661034584045,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": -0.0019383450911846013,
+          "train/value_loss": 6.725078966071056e-09
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.40288452000000013,
+          "train/approx_kl": 0.0015843510627746582,
+          "train/clip_fraction": 0.0052734375,
+          "train/entropy_loss": -0.6531961247324943,
+          "train/explained_variance": 0.9602804780006409,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": 0.000600119074806571,
+          "train/value_loss": 1.51171829598719e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.40245403,
+          "train/approx_kl": 0.0031218952499330044,
+          "train/clip_fraction": 0.020751953125,
+          "train/entropy_loss": -0.8233647480607033,
+          "train/explained_variance": 0.9573465585708618,
+          "train/n_updates": 1210.0,
+          "train/policy_gradient_loss": -0.0012767617765348405,
+          "train/value_loss": 8.209250948336237e-07
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 86.71419413830154,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 1220,
+        "29": 1220,
+        "47": 1220
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-300000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.40251545000000005,
+          "train/approx_kl": 0.00175161671359092,
+          "train/clip_fraction": 0.01748046875,
+          "train/entropy_loss": -0.9023763151839376,
+          "train/explained_variance": 0.9603748917579651,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": 0.00012084284389857203,
+          "train/value_loss": 7.908897127999322e-10
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.4025149300000001,
+          "train/approx_kl": 0.009208831936120987,
+          "train/clip_fraction": 0.04658203125,
+          "train/entropy_loss": -0.6739439276978374,
+          "train/explained_variance": 0.9537103176116943,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": 3.292940091341734e-05,
+          "train/value_loss": 2.2502104694030552e-08
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.4023624700000001,
+          "train/approx_kl": 0.0028475462459027767,
+          "train/clip_fraction": 0.02900390625,
+          "train/entropy_loss": -0.8181499624624848,
+          "train/explained_variance": 0.9590299129486084,
+          "train/n_updates": 1450.0,
+          "train/policy_gradient_loss": -2.771813451545313e-05,
+          "train/value_loss": 4.011769955187985e-09
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 104.89416634696924,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 1460,
+        "29": 1460,
+        "47": 1460
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "ppo/validation-3000-3008-v1/step-50000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04043848354770364,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.9785878214285714,
+          "train/approx_kl": 0.0006452149245887995,
+          "train/clip_fraction": 0.0158203125,
+          "train/entropy_loss": -1.2343781515955925,
+          "train/explained_variance": 0.9605675935745239,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.0002579884661827236,
+          "train/value_loss": 4.306201083936756e-06
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.41691462962962966,
+          "train/approx_kl": 0.0017254997510463,
+          "train/clip_fraction": 0.025537109375,
+          "train/entropy_loss": -1.0644165024161338,
+          "train/explained_variance": 0.9142778515815735,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.002055389652377926,
+          "train/value_loss": 1.878455068191759e-07
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.2034554444444443,
+          "train/approx_kl": 0.003863752819597721,
+          "train/clip_fraction": 0.01962890625,
+          "train/entropy_loss": -1.0398747973144054,
+          "train/explained_variance": 0.9601452350616455,
+          "train/n_updates": 230.0,
+          "train/policy_gradient_loss": -0.0008857376524247229,
+          "train/value_loss": 1.8609972379346474e-06
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 17.471161736000795,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 240,
+        "29": 240,
+        "47": 240
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "sac/development-2000-2008-v1/step-100000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 8
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.4509214218284603,
+          "mean_action_total_variation": 27.54684680700302,
+          "mean_feasible_energy_kwh": 0.1563521703450044,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 26.88367403237769,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.007583957638299183,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.09675078361649188,
+          "mean_travel_time_s": 173.4444444444389,
+          "median_feasible_energy_kwh": 0.1563521703450044,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 173.4444444444389,
+            "median": 179.99999999999406,
+            "minimum": 120.9999999999974
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.11640756796906852,
+          "mean_action_total_variation": 6.493265006277296,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 14.83620397488623,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.009094326212436773,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.08070000137581462,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 2.0056086918283844,
+          "mean_action_total_variation": 119.55266273683972,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 9.731844410401658,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.010084613583316212,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.06769810286300941,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.26994678571428576,
+          "train/actor_loss": -0.06618377566337585,
+          "train/critic_loss": 1.6715771380404476e-06,
+          "train/ent_coef": 4.9108835810329765e-05,
+          "train/ent_coef_loss": 0.5037757158279419,
+          "train/n_updates": 99468.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.5776376545454547,
+          "train/actor_loss": -0.06003838777542114,
+          "train/critic_loss": 4.5140404836274683e-05,
+          "train/ent_coef": 2.1141881006769836e-05,
+          "train/ent_coef_loss": 5.22383975982666,
+          "train/n_updates": 98899.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.0534653571428572,
+          "train/actor_loss": -0.047053683549165726,
+          "train/critic_loss": 9.689004400570411e-06,
+          "train/ent_coef": 7.715735409874469e-05,
+          "train/ent_coef_loss": 0.020233839750289917,
+          "train/n_updates": 98858.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 1,
+        "incomplete+time": 26
+      },
+      "feasible_episode_count": 1,
+      "maximum_rsr": 0.1111111111111111,
+      "mean_completion_rate": 0.037037037037037035,
+      "mean_feasible_energy_kwh": 0.1563521703450044,
+      "mean_rsr": 0.037037037037037035,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.037037037037037035,
+      "mean_training_wall_time_s": 506.5580050420055,
+      "median_feasible_energy_kwh": 0.1563521703450044,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 99899,
+        "29": 99899,
+        "47": 99899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 177.81481481480898,
+        "median": 179.99999999999406,
+        "minimum": 120.9999999999974
+      }
+    },
+    "sac/development-2000-2008-v1/step-150000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 7,
+            "incomplete+time+speed": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.4035764309180215,
+          "mean_action_total_variation": 26.486104269822437,
+          "mean_feasible_energy_kwh": 0.16079411368040594,
+          "mean_integrated_speed_violation_m": 1.3368716197072767,
+          "mean_max_abs_jerk_m_s3": 17.340291165607553,
+          "mean_max_speed_violation_m_s": 0.452471935628729,
+          "mean_regenerative_energy_kwh": 0.021455830597950656,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_traction_energy_kwh": 0.11584679938469337,
+          "mean_travel_time_s": 172.1999999999945,
+          "median_feasible_energy_kwh": 0.16079411368040594,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 172.1999999999945,
+            "median": 179.99999999999406,
+            "minimum": 109.79999999999804
+          }
+        },
+        "29": {
+          "completion_rate": 0.7777777777777778,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time+speed": 2,
+            "speed": 7
+          },
+          "incomplete_rate": 0.2222222222222222,
+          "mean_abs_jerk_m_s3": 2.3452462383661707,
+          "mean_action_total_variation": 84.72749624649684,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 132.84187779177338,
+          "mean_max_abs_jerk_m_s3": 38.1033554374768,
+          "mean_max_speed_violation_m_s": 14.690634297731378,
+          "mean_regenerative_energy_kwh": 0.08774377598785438,
+          "mean_speed_violation_count": 1.8888888888888888,
+          "mean_traction_energy_kwh": 0.2873844776731445,
+          "mean_travel_time_s": 96.15555555555419,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 74.10000000000007,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.0,
+          "speed_violation_rate": 1.0,
+          "time_compliance_rate": 0.7777777777777778,
+          "time_violation_rate": 0.2222222222222222,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 96.15555555555419,
+            "median": 74.10000000000007,
+            "minimum": 41.900000000000325
+          }
+        },
+        "47": {
+          "completion_rate": 0.2222222222222222,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 2,
+            "incomplete+time": 7
+          },
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 1.0156234192413478,
+          "mean_action_total_variation": 46.6890130771531,
+          "mean_feasible_energy_kwh": 0.17064473756616078,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 22.51987741862038,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.016991682444891118,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.12589898586655335,
+          "mean_travel_time_s": 164.37777777777274,
+          "median_feasible_energy_kwh": 0.17064473756616078,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.2222222222222222,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 164.37777777777274,
+            "median": 179.99999999999406,
+            "minimum": 85.99999999999939
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.10093886206896546,
+          "train/actor_loss": -0.061988625675439835,
+          "train/critic_loss": 5.163828609511256e-05,
+          "train/ent_coef": 9.628293628338724e-05,
+          "train/ent_coef_loss": 0.052491843700408936,
+          "train/n_updates": 149760.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.5752627261904762,
+          "train/actor_loss": 0.011781751178205013,
+          "train/critic_loss": 4.533550963969901e-06,
+          "train/ent_coef": 8.607188647147268e-05,
+          "train/ent_coef_loss": 2.4972991943359375,
+          "train/n_updates": 149664.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.7256034597701149,
+          "train/actor_loss": 0.03712958097457886,
+          "train/critic_loss": 9.834807860897854e-05,
+          "train/ent_coef": 0.00010489267879165709,
+          "train/ent_coef_loss": 1.878799319267273,
+          "train/n_updates": 149465.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 3,
+        "incomplete+time": 14,
+        "incomplete+time+speed": 3,
+        "speed": 7
+      },
+      "feasible_episode_count": 3,
+      "maximum_rsr": 0.2222222222222222,
+      "mean_completion_rate": 0.3703703703703704,
+      "mean_feasible_energy_kwh": 0.16736119627090917,
+      "mean_rsr": 0.1111111111111111,
+      "mean_speed_compliance_rate": 0.6296296296296297,
+      "mean_time_compliance_rate": 0.37037037037037035,
+      "mean_training_wall_time_s": 765.2127320700092,
+      "median_feasible_energy_kwh": 0.16642753677839978,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 149899,
+        "29": 149899,
+        "47": 149899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 144.24444444444046,
+        "median": 179.99999999999406,
+        "minimum": 41.900000000000325
+      }
+    },
+    "sac/development-2000-2008-v1/step-200000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.2222222222222222,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 6,
+            "incomplete+time+speed": 1,
+            "speed": 1
+          },
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 1.6424652700725082,
+          "mean_action_total_variation": 78.18313683403863,
+          "mean_feasible_energy_kwh": 0.19921774691623634,
+          "mean_integrated_speed_violation_m": 0.53482780421215,
+          "mean_max_abs_jerk_m_s3": 33.19854968021356,
+          "mean_max_speed_violation_m_s": 0.22224753928264582,
+          "mean_regenerative_energy_kwh": 0.03216653557595559,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_traction_energy_kwh": 0.1599087112546561,
+          "mean_travel_time_s": 160.78888888888403,
+          "median_feasible_energy_kwh": 0.19921774691623634,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliance_rate": 0.7777777777777778,
+          "speed_violation_rate": 0.2222222222222222,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 160.78888888888403,
+            "median": 179.99999999999406,
+            "minimum": 83.59999999999953
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.8085391765453402,
+          "mean_action_total_variation": 47.89577925867505,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 16.761325959487152,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.003054938466779315,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.07757758592984704,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "speed": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.4833046563125694,
+          "mean_action_total_variation": 29.82966344886356,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.37781555827506436,
+          "mean_max_abs_jerk_m_s3": 19.64242043250375,
+          "mean_max_speed_violation_m_s": 0.4054631602150971,
+          "mean_regenerative_energy_kwh": 0.015318459660549994,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.08961038912828723,
+          "mean_travel_time_s": 172.7222222222167,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 172.7222222222167,
+            "median": 179.99999999999406,
+            "minimum": 114.49999999999777
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.30910802000000004,
+          "train/actor_loss": -0.055176958441734314,
+          "train/critic_loss": 1.6974005120573565e-05,
+          "train/ent_coef": 5.708340904675424e-05,
+          "train/ent_coef_loss": -0.558678150177002,
+          "train/n_updates": 198607.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.46933769999999997,
+          "train/actor_loss": 0.029224246740341187,
+          "train/critic_loss": 7.69384132581763e-06,
+          "train/ent_coef": 0.00013966743426863104,
+          "train/ent_coef_loss": 2.6882762908935547,
+          "train/n_updates": 199311.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.10138298999999995,
+          "train/actor_loss": 0.012460073456168175,
+          "train/critic_loss": 7.831211405573413e-06,
+          "train/ent_coef": 6.617775943595916e-05,
+          "train/ent_coef_loss": -2.6516685485839844,
+          "train/n_updates": 199813.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 1,
+        "incomplete+time": 23,
+        "incomplete+time+speed": 1,
+        "speed": 2
+      },
+      "feasible_episode_count": 1,
+      "maximum_rsr": 0.1111111111111111,
+      "mean_completion_rate": 0.1111111111111111,
+      "mean_feasible_energy_kwh": 0.19921774691623634,
+      "mean_rsr": 0.037037037037037035,
+      "mean_speed_compliance_rate": 0.8888888888888888,
+      "mean_time_compliance_rate": 0.1111111111111111,
+      "mean_training_wall_time_s": 1014.7510666526892,
+      "median_feasible_energy_kwh": 0.19921774691623634,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 199899,
+        "29": 199899,
+        "47": 199899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 171.17037037036494,
+        "median": 179.99999999999406,
+        "minimum": 83.59999999999953
+      }
+    },
+    "sac/development-2000-2008-v1/step-250000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.5555555555555556,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+time": 4,
+            "time": 1
+          },
+          "incomplete_rate": 0.4444444444444444,
+          "mean_abs_jerk_m_s3": 0.6302398562923722,
+          "mean_action_total_variation": 31.581217845280964,
+          "mean_feasible_energy_kwh": 0.16993075073004651,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 26.869403733169076,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.02557448430972557,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.16084589383311693,
+          "mean_travel_time_s": 145.12222222221828,
+          "median_feasible_energy_kwh": 0.1704283497541043,
+          "median_travel_time_s": 162.49999999999505,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.4444444444444444,
+          "time_violation_rate": 0.5555555555555556,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 145.12222222221828,
+            "median": 162.49999999999505,
+            "minimum": 96.3999999999988
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.05609321336605715,
+          "mean_action_total_variation": 2.953639050324758,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.17168644791723,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0019128679953461767,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.06952299905657783,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.2222222222222222,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 6,
+            "incomplete+time+speed": 1,
+            "speed": 2
+          },
+          "incomplete_rate": 0.7777777777777778,
+          "mean_abs_jerk_m_s3": 1.130219605753646,
+          "mean_action_total_variation": 61.125787330998314,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 10.02781862910841,
+          "mean_max_abs_jerk_m_s3": 20.890631423269543,
+          "mean_max_speed_violation_m_s": 0.630012978962141,
+          "mean_regenerative_energy_kwh": 0.023631476025788443,
+          "mean_speed_violation_count": 0.6666666666666666,
+          "mean_traction_energy_kwh": 0.1336821496845832,
+          "mean_travel_time_s": 158.0444444444397,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.6666666666666666,
+          "speed_violation_rate": 0.3333333333333333,
+          "time_compliance_rate": 0.2222222222222222,
+          "time_violation_rate": 0.7777777777777778,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 158.0444444444397,
+            "median": 179.99999999999406,
+            "minimum": 58.800000000000566
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.7399165199999999,
+          "train/actor_loss": -0.039561863988637924,
+          "train/critic_loss": 7.216515768959653e-06,
+          "train/ent_coef": 4.822212940780446e-05,
+          "train/ent_coef_loss": -0.26744401454925537,
+          "train/n_updates": 249652.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.29199938999999997,
+          "train/actor_loss": 0.021961107850074768,
+          "train/critic_loss": 3.746783022506861e-06,
+          "train/ent_coef": 0.00013342127203941345,
+          "train/ent_coef_loss": 0.4514421224594116,
+          "train/n_updates": 248293.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": 0.10189411000000001,
+          "train/actor_loss": -0.0014987328322604299,
+          "train/critic_loss": 6.982766990404343e-06,
+          "train/ent_coef": 8.093597716651857e-05,
+          "train/ent_coef_loss": -0.6703966856002808,
+          "train/n_updates": 248778.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 4,
+        "incomplete+time": 19,
+        "incomplete+time+speed": 1,
+        "speed": 2,
+        "time": 1
+      },
+      "feasible_episode_count": 4,
+      "maximum_rsr": 0.4444444444444444,
+      "mean_completion_rate": 0.25925925925925924,
+      "mean_feasible_energy_kwh": 0.16993075073004651,
+      "mean_rsr": 0.14814814814814814,
+      "mean_speed_compliance_rate": 0.8888888888888888,
+      "mean_time_compliance_rate": 0.2222222222222222,
+      "mean_training_wall_time_s": 1281.7830335549854,
+      "median_feasible_energy_kwh": 0.1704283497541043,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 249899,
+        "29": 249899,
+        "47": 249899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 161.05555555555068,
+        "median": 179.99999999999406,
+        "minimum": 58.800000000000566
+      }
+    },
+    "sac/development-2000-2008-v1/step-300000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.3333333333333333,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 3,
+            "incomplete+time": 6
+          },
+          "incomplete_rate": 0.6666666666666666,
+          "mean_abs_jerk_m_s3": 2.1996447096152347,
+          "mean_action_total_variation": 127.33021744754579,
+          "mean_feasible_energy_kwh": 0.166069044616779,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 37.12873583453656,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.03490686560625017,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.1700700179278191,
+          "mean_travel_time_s": 158.08888888888418,
+          "median_feasible_energy_kwh": 0.1623247799594325,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.3333333333333333,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.33333333333333337,
+          "time_violation_rate": 0.6666666666666666,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 158.08888888888418,
+            "median": 179.99999999999406,
+            "minimum": 105.69999999999827
+          }
+        },
+        "29": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "time": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 1.7000773739491766,
+          "mean_action_total_variation": 100.60557786623637,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 31.168210501526517,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.020567442185900783,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.12582855977308538,
+          "mean_travel_time_s": 176.25555555554982,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 176.25555555554982,
+            "median": 179.99999999999406,
+            "minimum": 146.29999999999598
+          }
+        },
+        "47": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 8
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 2.536072060610026,
+          "mean_action_total_variation": 152.78673824999066,
+          "mean_feasible_energy_kwh": 0.21213692638684728,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 24.971553976755445,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.02220797175823429,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.14028641559407007,
+          "mean_travel_time_s": 173.54444444443888,
+          "median_feasible_energy_kwh": 0.21213692638684728,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 173.54444444443888,
+            "median": 179.99999999999406,
+            "minimum": 121.89999999999735
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.7034467699999998,
+          "train/actor_loss": -0.0566389299929142,
+          "train/critic_loss": 1.803091072360985e-05,
+          "train/ent_coef": 7.32739717932418e-05,
+          "train/ent_coef_loss": 0.42967963218688965,
+          "train/n_updates": 298968.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.29908896999999995,
+          "train/actor_loss": 0.011174272745847702,
+          "train/critic_loss": 3.775524237425998e-05,
+          "train/ent_coef": 0.00012035860709147528,
+          "train/ent_coef_loss": 1.3203669786453247,
+          "train/n_updates": 299412.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": 0.13922373999999998,
+          "train/actor_loss": -0.0021326341666281223,
+          "train/critic_loss": 0.00026721059111878276,
+          "train/ent_coef": 6.350799230858684e-05,
+          "train/ent_coef_loss": -1.2559871673583984,
+          "train/n_updates": 299255.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 4,
+        "incomplete+time": 22,
+        "time": 1
+      },
+      "feasible_episode_count": 4,
+      "maximum_rsr": 0.3333333333333333,
+      "mean_completion_rate": 0.1851851851851852,
+      "mean_feasible_energy_kwh": 0.17758601505929605,
+      "mean_rsr": 0.14814814814814814,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.14814814814814814,
+      "mean_training_wall_time_s": 1525.0847384163255,
+      "median_feasible_energy_kwh": 0.16915466680142177,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 299899,
+        "29": 299899,
+        "47": 299899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 169.29629629629096,
+        "median": 179.99999999999406,
+        "minimum": 105.69999999999827
+      }
+    },
+    "sac/development-2000-2008-v1/step-50000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.511382117044705,
+          "mean_action_total_variation": 31.14582637945811,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 14.809018377406002,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0008265590846701332,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.06553837536609738,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "incomplete+time+speed": 1
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.03538842836104785,
+          "mean_action_total_variation": 2.349338604344262,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.8440733698318534,
+          "mean_max_abs_jerk_m_s3": 10.878666001875864,
+          "mean_max_speed_violation_m_s": 0.32430913425823843,
+          "mean_regenerative_energy_kwh": 0.01680189497497297,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_traction_energy_kwh": 0.0794608656002755,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.014343627811827582,
+          "mean_action_total_variation": 0.7972702847586738,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 5.34517080511986,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0005097248293769405,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.04846375544691109,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.4531546428571428,
+          "train/actor_loss": -0.9993996024131775,
+          "train/critic_loss": 1.0759720680653118e-05,
+          "train/ent_coef": 6.232021405594423e-05,
+          "train/ent_coef_loss": -2.0411088466644287,
+          "train/n_updates": 49722.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.7508720740740742,
+          "train/actor_loss": -1.0875933170318604,
+          "train/critic_loss": 2.0954175852239132e-05,
+          "train/ent_coef": 0.00014738546451553702,
+          "train/ent_coef_loss": -1.1047974824905396,
+          "train/n_updates": 48499.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.9491805357142855,
+          "train/actor_loss": -0.950476348400116,
+          "train/critic_loss": 8.661267929710448e-05,
+          "train/ent_coef": 0.00015576614532619715,
+          "train/ent_coef_loss": 1.4264836311340332,
+          "train/n_updates": 49198.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 26,
+        "incomplete+time+speed": 1
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 0.9629629629629629,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 252.61559316700246,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 49899,
+        "29": 49899,
+        "47": 49899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    },
+    "sac/validation-3000-3008-v1/step-100000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.34213478882470005,
+          "mean_action_total_variation": 24.31185786591636,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 13.86400396714531,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.005358237280654998,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.07169147935487778,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "time": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.2147267061630013,
+          "mean_action_total_variation": 12.01205379433102,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.38160997495457,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.010618211886043132,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.08796575276082884,
+          "mean_travel_time_s": 177.22222222221643,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 177.22222222221643,
+            "median": 179.99999999999406,
+            "minimum": 154.99999999999548
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 1.541598854512493,
+          "mean_action_total_variation": 92.30267502864201,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 14.45933958026045,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.005708383885111044,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.062066800988119245,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.26994678571428576,
+          "train/actor_loss": -0.06618377566337585,
+          "train/critic_loss": 1.6715771380404476e-06,
+          "train/ent_coef": 4.9108835810329765e-05,
+          "train/ent_coef_loss": 0.5037757158279419,
+          "train/n_updates": 99468.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.5776376545454547,
+          "train/actor_loss": -0.06003838777542114,
+          "train/critic_loss": 4.5140404836274683e-05,
+          "train/ent_coef": 2.1141881006769836e-05,
+          "train/ent_coef_loss": 5.22383975982666,
+          "train/n_updates": 98899.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.0534653571428572,
+          "train/actor_loss": -0.047053683549165726,
+          "train/critic_loss": 9.689004400570411e-06,
+          "train/ent_coef": 7.715735409874469e-05,
+          "train/ent_coef_loss": 0.020233839750289917,
+          "train/n_updates": 98858.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 26,
+        "time": 1
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.037037037037037035,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 506.5580050420055,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 99899,
+        "29": 99899,
+        "47": 99899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.0740740740682,
+        "median": 179.99999999999406,
+        "minimum": 154.99999999999548
+      }
+    },
+    "sac/validation-3000-3008-v1/step-150000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "speed": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.08313003875740958,
+          "mean_action_total_variation": 3.5800911916626825,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 1.7910842963929374,
+          "mean_max_abs_jerk_m_s3": 4.7556986613965595,
+          "mean_max_speed_violation_m_s": 0.4773108804229966,
+          "mean_regenerative_energy_kwh": 0.00404884749923151,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.06552049932854667,
+          "mean_travel_time_s": 173.47777777777222,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 173.47777777777222,
+            "median": 179.99999999999406,
+            "minimum": 121.29999999999738
+          }
+        },
+        "29": {
+          "completion_rate": 0.5555555555555556,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 4,
+            "speed": 5
+          },
+          "incomplete_rate": 0.4444444444444444,
+          "mean_abs_jerk_m_s3": 1.093859915570293,
+          "mean_action_total_variation": 25.361879938178593,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 72.78649699870579,
+          "mean_max_abs_jerk_m_s3": 21.30132310306234,
+          "mean_max_speed_violation_m_s": 7.445248565741151,
+          "mean_regenerative_energy_kwh": 0.06509984998066272,
+          "mean_speed_violation_count": 2.0,
+          "mean_traction_energy_kwh": 0.21367496015199716,
+          "mean_travel_time_s": 116.82222222221971,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 80.69999999999969,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.4444444444444444,
+          "speed_violation_rate": 0.5555555555555556,
+          "time_compliance_rate": 0.5555555555555556,
+          "time_violation_rate": 0.4444444444444444,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 116.82222222221971,
+            "median": 80.69999999999969,
+            "minimum": 51.100000000000456
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.867447994991377,
+          "mean_action_total_variation": 63.34845081302855,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.77464957027331,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.008483190111259612,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.08395919615694723,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.10093886206896546,
+          "train/actor_loss": -0.061988625675439835,
+          "train/critic_loss": 5.163828609511256e-05,
+          "train/ent_coef": 9.628293628338724e-05,
+          "train/ent_coef_loss": 0.052491843700408936,
+          "train/n_updates": 149760.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.5752627261904762,
+          "train/actor_loss": 0.011781751178205013,
+          "train/critic_loss": 4.533550963969901e-06,
+          "train/ent_coef": 8.607188647147268e-05,
+          "train/ent_coef_loss": 2.4972991943359375,
+          "train/n_updates": 149664.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.7256034597701149,
+          "train/actor_loss": 0.03712958097457886,
+          "train/critic_loss": 9.834807860897854e-05,
+          "train/ent_coef": 0.00010489267879165709,
+          "train/ent_coef_loss": 1.878799319267273,
+          "train/n_updates": 149465.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 21,
+        "speed": 6
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.22222222222222224,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 0.7777777777777777,
+      "mean_time_compliance_rate": 0.2222222222222222,
+      "mean_training_wall_time_s": 765.2127320700092,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 149899,
+        "29": 149899,
+        "47": 149899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 156.766666666662,
+        "median": 179.99999999999406,
+        "minimum": 51.100000000000456
+      }
+    },
+    "sac/validation-3000-3008-v1/step-200000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.646765987820467,
+          "mean_action_total_variation": 39.47710005442301,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 14.283440445356336,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.011009934847796839,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.07525132384229509,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.014441564899107695,
+          "mean_action_total_variation": 0.7286720673243204,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 3.7491335602028073,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0011900940108090596,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.049100979442938564,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "speed": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 0.6481636387553574,
+          "mean_action_total_variation": 30.303418119748432,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.10539974547007375,
+          "mean_max_abs_jerk_m_s3": 10.195037091378257,
+          "mean_max_speed_violation_m_s": 0.10866254511857083,
+          "mean_regenerative_energy_kwh": 0.008711247905735721,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.06709760327840869,
+          "mean_travel_time_s": 173.7888888888833,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 173.7888888888833,
+            "median": 179.99999999999406,
+            "minimum": 124.09999999999722
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.30910802000000004,
+          "train/actor_loss": -0.055176958441734314,
+          "train/critic_loss": 1.6974005120573565e-05,
+          "train/ent_coef": 5.708340904675424e-05,
+          "train/ent_coef_loss": -0.558678150177002,
+          "train/n_updates": 198607.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.46933769999999997,
+          "train/actor_loss": 0.029224246740341187,
+          "train/critic_loss": 7.69384132581763e-06,
+          "train/ent_coef": 0.00013966743426863104,
+          "train/ent_coef_loss": 2.6882762908935547,
+          "train/n_updates": 199311.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -0.10138298999999995,
+          "train/actor_loss": 0.012460073456168175,
+          "train/critic_loss": 7.831211405573413e-06,
+          "train/ent_coef": 6.617775943595916e-05,
+          "train/ent_coef_loss": -2.6516685485839844,
+          "train/n_updates": 199813.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 26,
+        "speed": 1
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.037037037037037035,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 0.9629629629629629,
+      "mean_time_compliance_rate": 0.037037037037037035,
+      "mean_training_wall_time_s": 1014.7510666526892,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 199899,
+        "29": 199899,
+        "47": 199899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 177.9296296296238,
+        "median": 179.99999999999406,
+        "minimum": 124.09999999999722
+      }
+    },
+    "sac/validation-3000-3008-v1/step-250000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.6666666666666666,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+time": 3,
+            "time": 2
+          },
+          "incomplete_rate": 0.3333333333333333,
+          "mean_abs_jerk_m_s3": 1.0179651682653383,
+          "mean_action_total_variation": 45.33049111896091,
+          "mean_feasible_energy_kwh": 0.18636563476101647,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 33.13134732400719,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.02759678949431754,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.171427720885371,
+          "mean_travel_time_s": 143.32222222221836,
+          "median_feasible_energy_kwh": 0.18252420647003587,
+          "median_travel_time_s": 144.79999999999606,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.4444444444444444,
+          "time_violation_rate": 0.5555555555555556,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 143.32222222221836,
+            "median": 144.79999999999606,
+            "minimum": 99.49999999999862
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.2440686072350274,
+          "mean_action_total_variation": 17.23465609550476,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.207562223745901,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0007680184787192385,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.05212393587949279,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 7,
+            "incomplete+time+speed": 1,
+            "speed": 1
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 1.0590702534609258,
+          "mean_action_total_variation": 61.3535626133283,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 2.147167425502905,
+          "mean_max_abs_jerk_m_s3": 23.803255199398027,
+          "mean_max_speed_violation_m_s": 0.5031872122049177,
+          "mean_regenerative_energy_kwh": 0.021570038296306868,
+          "mean_speed_violation_count": 0.3333333333333333,
+          "mean_traction_energy_kwh": 0.11594460898686622,
+          "mean_travel_time_s": 168.1444444444392,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.7777777777777778,
+          "speed_violation_rate": 0.2222222222222222,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 168.1444444444392,
+            "median": 179.99999999999406,
+            "minimum": 73.30000000000011
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.7399165199999999,
+          "train/actor_loss": -0.039561863988637924,
+          "train/critic_loss": 7.216515768959653e-06,
+          "train/ent_coef": 4.822212940780446e-05,
+          "train/ent_coef_loss": -0.26744401454925537,
+          "train/n_updates": 249652.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.29199938999999997,
+          "train/actor_loss": 0.021961107850074768,
+          "train/critic_loss": 3.746783022506861e-06,
+          "train/ent_coef": 0.00013342127203941345,
+          "train/ent_coef_loss": 0.4514421224594116,
+          "train/n_updates": 248293.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": 0.10189411000000001,
+          "train/actor_loss": -0.0014987328322604299,
+          "train/critic_loss": 6.982766990404343e-06,
+          "train/ent_coef": 8.093597716651857e-05,
+          "train/ent_coef_loss": -0.6703966856002808,
+          "train/n_updates": 248778.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 4,
+        "incomplete+time": 19,
+        "incomplete+time+speed": 1,
+        "speed": 1,
+        "time": 2
+      },
+      "feasible_episode_count": 4,
+      "maximum_rsr": 0.4444444444444444,
+      "mean_completion_rate": 0.25925925925925924,
+      "mean_feasible_energy_kwh": 0.18636563476101647,
+      "mean_rsr": 0.14814814814814814,
+      "mean_speed_compliance_rate": 0.9259259259259259,
+      "mean_time_compliance_rate": 0.18518518518518517,
+      "mean_training_wall_time_s": 1281.7830335549854,
+      "median_feasible_energy_kwh": 0.18252420647003587,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 249899,
+        "29": 249899,
+        "47": 249899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 163.8222222222172,
+        "median": 179.99999999999406,
+        "minimum": 73.30000000000011
+      }
+    },
+    "sac/validation-3000-3008-v1/step-300000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.4444444444444444,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+time": 5
+          },
+          "incomplete_rate": 0.5555555555555556,
+          "mean_abs_jerk_m_s3": 1.7767679114128045,
+          "mean_action_total_variation": 74.95418261157141,
+          "mean_feasible_energy_kwh": 0.19559566646420676,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 29.444779166535184,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.032240011576099896,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.14822106066347737,
+          "mean_travel_time_s": 151.36666666666235,
+          "median_feasible_energy_kwh": 0.19688598867014684,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.4444444444444444,
+          "time_violation_rate": 0.5555555555555556,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 151.36666666666235,
+            "median": 179.99999999999406,
+            "minimum": 104.09999999999836
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.7830075329497717,
+          "mean_action_total_variation": 53.3789285686281,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 11.186788447657785,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.004926022140964586,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.06019121041385009,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.1111111111111111,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+time": 8
+          },
+          "incomplete_rate": 0.8888888888888888,
+          "mean_abs_jerk_m_s3": 1.0406071183011274,
+          "mean_action_total_variation": 61.202899561987984,
+          "mean_feasible_energy_kwh": 0.21273828656405208,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 13.363220195012302,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.021537636994904755,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.11211602171576944,
+          "mean_travel_time_s": 171.12222222221678,
+          "median_feasible_energy_kwh": 0.21273828656405208,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.11111111111111116,
+          "time_violation_rate": 0.8888888888888888,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 171.12222222221678,
+            "median": 179.99999999999406,
+            "minimum": 100.09999999999859
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": 0.7034467699999998,
+          "train/actor_loss": -0.0566389299929142,
+          "train/critic_loss": 1.803091072360985e-05,
+          "train/ent_coef": 7.32739717932418e-05,
+          "train/ent_coef_loss": 0.42967963218688965,
+          "train/n_updates": 298968.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.29908896999999995,
+          "train/actor_loss": 0.011174272745847702,
+          "train/critic_loss": 3.775524237425998e-05,
+          "train/ent_coef": 0.00012035860709147528,
+          "train/ent_coef_loss": 1.3203669786453247,
+          "train/n_updates": 299412.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": 0.13922373999999998,
+          "train/actor_loss": -0.0021326341666281223,
+          "train/critic_loss": 0.00026721059111878276,
+          "train/ent_coef": 6.350799230858684e-05,
+          "train/ent_coef_loss": -1.2559871673583984,
+          "train/n_updates": 299255.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 5,
+        "incomplete+time": 22
+      },
+      "feasible_episode_count": 5,
+      "maximum_rsr": 0.4444444444444444,
+      "mean_completion_rate": 0.1851851851851852,
+      "mean_feasible_energy_kwh": 0.19902419048417583,
+      "mean_rsr": 0.1851851851851852,
+      "mean_speed_compliance_rate": 1.0,
+      "mean_time_compliance_rate": 0.18518518518518517,
+      "mean_training_wall_time_s": 1525.0847384163255,
+      "median_feasible_energy_kwh": 0.20319585725047648,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 299899,
+        "29": 299899,
+        "47": 299899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 167.49629629629106,
+        "median": 179.99999999999406,
+        "minimum": 100.09999999999859
+      }
+    },
+    "sac/validation-3000-3008-v1/step-50000": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.6109867810309657,
+          "mean_action_total_variation": 53.4604532652431,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 4.725992047641463,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 4.0440223708969364e-05,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.051398783711180444,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "29": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 9
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.016917623125976562,
+          "mean_action_total_variation": 0.9384312894609239,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 6.7056999223639275,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.0073177694181392845,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.05777571876222538,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "47": {
+          "completion_rate": 0.0,
+          "episode_count": 9,
+          "failure_mode_counts": {
+            "incomplete+time": 8,
+            "incomplete+time+speed": 1
+          },
+          "incomplete_rate": 1.0,
+          "mean_abs_jerk_m_s3": 0.0473057079145639,
+          "mean_action_total_variation": 2.7800934977001615,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 0.37966953247168556,
+          "mean_max_abs_jerk_m_s3": 5.476196373342356,
+          "mean_max_speed_violation_m_s": 0.2534563290502323,
+          "mean_regenerative_energy_kwh": 0.0026950058935065746,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_traction_energy_kwh": 0.05356149134999072,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "speed_violation_rate": 0.1111111111111111,
+          "time_compliance_rate": 0.0,
+          "time_violation_rate": 1.0,
+          "travel_time_distribution_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        }
+      },
+      "diagnostics_by_training_seed": {
+        "11": {
+          "rollout/ep_rew_mean": -0.4531546428571428,
+          "train/actor_loss": -0.9993996024131775,
+          "train/critic_loss": 1.0759720680653118e-05,
+          "train/ent_coef": 6.232021405594423e-05,
+          "train/ent_coef_loss": -2.0411088466644287,
+          "train/n_updates": 49722.0
+        },
+        "29": {
+          "rollout/ep_rew_mean": -0.7508720740740742,
+          "train/actor_loss": -1.0875933170318604,
+          "train/critic_loss": 2.0954175852239132e-05,
+          "train/ent_coef": 0.00014738546451553702,
+          "train/ent_coef_loss": -1.1047974824905396,
+          "train/n_updates": 48499.0
+        },
+        "47": {
+          "rollout/ep_rew_mean": -1.9491805357142855,
+          "train/actor_loss": -0.950476348400116,
+          "train/critic_loss": 8.661267929710448e-05,
+          "train/ent_coef": 0.00015576614532619715,
+          "train/ent_coef_loss": 1.4264836311340332,
+          "train/n_updates": 49198.0
+        }
+      },
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 26,
+        "incomplete+time+speed": 1
+      },
+      "feasible_episode_count": 0,
+      "maximum_rsr": 0.0,
+      "mean_completion_rate": 0.0,
+      "mean_feasible_energy_kwh": null,
+      "mean_rsr": 0.0,
+      "mean_speed_compliance_rate": 0.9629629629629629,
+      "mean_time_compliance_rate": 0.0,
+      "mean_training_wall_time_s": 252.61559316700246,
+      "median_feasible_energy_kwh": null,
+      "minimum_rsr": 0.0,
+      "policy_updates_by_training_seed": {
+        "11": 49899,
+        "29": 49899,
+        "47": 49899
+      },
+      "travel_time_s": {
+        "maximum": 179.99999999999406,
+        "mean": 179.99999999999406,
+        "median": 179.99999999999406,
+        "minimum": 179.99999999999406
+      }
+    }
+  }
+}

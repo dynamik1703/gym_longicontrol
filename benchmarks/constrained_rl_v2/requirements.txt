@@ -1,0 +1,4 @@
+# Frozen research-only stack. Install in an isolated environment.
+fsrl @ git+https://github.com/liuzuxin/FSRL.git@e056fc9498d5d037869533da7cf976acf462f918
+tianshou==0.5.1
+

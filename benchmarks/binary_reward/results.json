@@ -1,0 +1,750 @@
+{
+  "acceptance": {
+    "maximum_peak_to_final_rsr_drop": {
+      "passed": true,
+      "threshold": 0.3333333333333333,
+      "value": 0.0
+    },
+    "minimum_seed_rsr": {
+      "passed": false,
+      "threshold": 0.3333333333333333,
+      "value": 0.0
+    },
+    "minimum_training_successes_per_seed": {
+      "passed": false,
+      "threshold": 1,
+      "value": 0
+    },
+    "pooled_validation_rsr": {
+      "passed": false,
+      "threshold": 0.5,
+      "value": 0.0
+    },
+    "seed_count_at_half_rsr": {
+      "passed": false,
+      "threshold": 2,
+      "value": 0
+    }
+  },
+  "benchmark_name": "binary-reward-sb3-sac-v1-stochastic-v1",
+  "configuration_sha256": "c45e799f4830600e6e7afae2ef68a2026c44e88cf216eba3149e3031b8ca8e1d",
+  "decision_gate": "D",
+  "decision_reason": "Training and final Validation never escape zero success.",
+  "final_validation": {
+    "by_training_seed": {
+      "11": {
+        "completion_rate": 0.0,
+        "deadline_compliance_rate": 0.0,
+        "diagnostics": {
+          "rollout/ep_rew_mean": 0.0,
+          "train/actor_loss": 0.0005359124625101686,
+          "train/critic_loss": 6.852490130881961e-09,
+          "train/ent_coef": 1.4384116866494878e-06,
+          "train/ent_coef_loss": 0.3315407931804657,
+          "train/n_updates": 299477.0
+        },
+        "episode_count": 9,
+        "failure_mode_counts": {
+          "incomplete+time": 9
+        },
+        "feasible_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_travel_time_s": 179.99999999999406,
+        "median_feasible_energy_kwh": null,
+        "median_travel_time_s": 179.99999999999406,
+        "policy_updates": 299899,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate": 1.0,
+        "training_wall_time_s": 2117.3331536250007
+      },
+      "29": {
+        "completion_rate": 0.0,
+        "deadline_compliance_rate": 0.0,
+        "diagnostics": {
+          "rollout/ep_rew_mean": 0.0,
+          "train/actor_loss": 0.00011395848559914157,
+          "train/critic_loss": 1.5879592085710215e-10,
+          "train/ent_coef": 3.5263781228422886e-07,
+          "train/ent_coef_loss": -4.242072105407715,
+          "train/n_updates": 298679.0
+        },
+        "episode_count": 9,
+        "failure_mode_counts": {
+          "incomplete+time": 9
+        },
+        "feasible_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_travel_time_s": 179.99999999999406,
+        "median_feasible_energy_kwh": null,
+        "median_travel_time_s": 179.99999999999406,
+        "policy_updates": 299899,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate": 1.0,
+        "training_wall_time_s": 2117.279066875002
+      },
+      "47": {
+        "completion_rate": 0.0,
+        "deadline_compliance_rate": 0.0,
+        "diagnostics": {
+          "rollout/ep_rew_mean": 0.0,
+          "train/actor_loss": 0.00041784794302657247,
+          "train/critic_loss": 1.6613928011111057e-09,
+          "train/ent_coef": 7.202652909654716e-07,
+          "train/ent_coef_loss": -1.4955017566680908,
+          "train/n_updates": 298801.0
+        },
+        "episode_count": 9,
+        "failure_mode_counts": {
+          "incomplete+time": 9
+        },
+        "feasible_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_travel_time_s": 179.99999999999406,
+        "median_feasible_energy_kwh": null,
+        "median_travel_time_s": 179.99999999999406,
+        "policy_updates": 299899,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate": 1.0,
+        "training_wall_time_s": 2117.987809583996
+      }
+    },
+    "overall": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    }
+  },
+  "frozen_comparisons": {
+    "constrained_v2": {
+      "episode_count": 27,
+      "feasible_count": 21,
+      "requirement_satisfaction_rate": 0.7777777777777778,
+      "source": "benchmarks/constrained_rl_v2/results.json"
+    },
+    "requirement_conditioned_v1": {
+      "episode_count": 135,
+      "feasible_count": 48,
+      "note": "Different five-requirement validation matrix",
+      "requirement_satisfaction_rate": 0.35555555555555557,
+      "source": "benchmarks/requirement_conditioned/results.json"
+    },
+    "scalar_sb3_sac": {
+      "episode_count": 27,
+      "feasible_count": 5,
+      "learning_curves": [
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 11,
+          "training_steps": 50000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 11,
+          "training_steps": 100000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.1111111111111111,
+          "rsr": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "training_seed": 11,
+          "training_steps": 150000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 11,
+          "training_steps": 200000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.6666666666666666,
+          "rsr": 0.4444444444444444,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 11,
+          "training_steps": 250000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.4444444444444444,
+          "rsr": 0.4444444444444444,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 11,
+          "training_steps": 300000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 29,
+          "training_steps": 50000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.1111111111111111,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 29,
+          "training_steps": 100000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.5555555555555556,
+          "rsr": 0.0,
+          "speed_compliance_rate": 0.4444444444444444,
+          "training_seed": 29,
+          "training_steps": 150000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 29,
+          "training_steps": 200000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 29,
+          "training_steps": 250000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 29,
+          "training_steps": 300000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "training_seed": 47,
+          "training_steps": 50000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 47,
+          "training_steps": 100000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.0,
+          "rsr": 0.0,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 47,
+          "training_steps": 150000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.1111111111111111,
+          "rsr": 0.0,
+          "speed_compliance_rate": 0.8888888888888888,
+          "training_seed": 47,
+          "training_steps": 200000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.1111111111111111,
+          "rsr": 0.0,
+          "speed_compliance_rate": 0.7777777777777778,
+          "training_seed": 47,
+          "training_steps": 250000
+        },
+        {
+          "algorithm": "sac",
+          "completion_rate": 0.1111111111111111,
+          "rsr": 0.1111111111111111,
+          "speed_compliance_rate": 1.0,
+          "training_seed": 47,
+          "training_steps": 300000
+        }
+      ],
+      "requirement_satisfaction_rate": 0.1851851851851852,
+      "source": "benchmarks/scalar_sb3/results.json"
+    }
+  },
+  "learning_curves": [
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 11,
+      "training_steps": 50000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 100000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 150000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 200000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 250000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 11,
+      "training_steps": 300000
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 29,
+      "training_steps": 50000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 100000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 150000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 200000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 250000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 29,
+      "training_steps": 300000
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 47,
+      "training_steps": 50000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 100000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 150000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 200000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 250000
+    },
+    {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "rsr": 0.0,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47,
+      "training_steps": 300000
+    }
+  ],
+  "learning_stability": [
+    {
+      "final_minus_250k_rsr": 0.0,
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_rsr_drop": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 11
+    },
+    {
+      "final_minus_250k_rsr": 0.0,
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_rsr_drop": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 29
+    },
+    {
+      "final_minus_250k_rsr": 0.0,
+      "final_rsr": 0.0,
+      "peak_rsr": 0.0,
+      "peak_to_final_rsr_drop": 0.0,
+      "peak_training_steps": 50000,
+      "training_seed": 47
+    }
+  ],
+  "reserved_final_test_evaluated": false,
+  "result_file_count": 36,
+  "schema_version": 1,
+  "summaries": {
+    "development-2000-2008-v1/step-100000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "development-2000-2008-v1/step-150000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "development-2000-2008-v1/step-200000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "development-2000-2008-v1/step-250000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "development-2000-2008-v1/step-300000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "development-2000-2008-v1/step-50000": {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.8888888888888888,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 3,
+        "speed": 24
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 57.97777777777742,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 41.40000000000032,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 0.1111111111111111
+    },
+    "validation-3000-3008-v1/step-100000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "validation-3000-3008-v1/step-150000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "validation-3000-3008-v1/step-200000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "validation-3000-3008-v1/step-250000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "validation-3000-3008-v1/step-300000": {
+      "completion_rate": 0.0,
+      "deadline_compliance_rate": 0.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+time": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 179.99999999999406,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 179.99999999999406,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 1.0
+    },
+    "validation-3000-3008-v1/step-50000": {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "speed": 27
+      },
+      "feasible_count": 0,
+      "mean_feasible_energy_kwh": null,
+      "mean_travel_time_s": 42.82962962962996,
+      "median_feasible_energy_kwh": null,
+      "median_travel_time_s": 39.40000000000029,
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliance_rate": 0.0
+    }
+  },
+  "training_outcomes": {
+    "by_training_seed": {
+      "11": {
+        "completed_training_episode_count": 207,
+        "cumulative_successes_by_checkpoint": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "failure_mode_counts": {
+          "incomplete+time": 153,
+          "incomplete+time+speed": 1,
+          "speed": 52,
+          "time+speed": 1
+        },
+        "first_success_training_step": null,
+        "last_success_training_step": null,
+        "maximum_steps_between_successes": null,
+        "median_steps_between_successes": null,
+        "successes_by_50k_interval": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "successful_training_episode_count": 0,
+        "training_episode_success_rate": 0.0
+      },
+      "29": {
+        "completed_training_episode_count": 179,
+        "cumulative_successes_by_checkpoint": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "failure_mode_counts": {
+          "incomplete+time": 158,
+          "incomplete+time+speed": 3,
+          "speed": 18
+        },
+        "first_success_training_step": null,
+        "last_success_training_step": null,
+        "maximum_steps_between_successes": null,
+        "median_steps_between_successes": null,
+        "successes_by_50k_interval": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "successful_training_episode_count": 0,
+        "training_episode_success_rate": 0.0
+      },
+      "47": {
+        "completed_training_episode_count": 218,
+        "cumulative_successes_by_checkpoint": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "failure_mode_counts": {
+          "incomplete+time": 148,
+          "incomplete+time+speed": 3,
+          "speed": 67
+        },
+        "first_success_training_step": null,
+        "last_success_training_step": null,
+        "maximum_steps_between_successes": null,
+        "median_steps_between_successes": null,
+        "successes_by_50k_interval": {
+          "100000": 0,
+          "150000": 0,
+          "200000": 0,
+          "250000": 0,
+          "300000": 0,
+          "50000": 0
+        },
+        "successful_training_episode_count": 0,
+        "training_episode_success_rate": 0.0
+      }
+    },
+    "pooled_completed_training_episode_count": 604,
+    "pooled_successful_training_episode_count": 0,
+    "pooled_training_episode_success_rate": 0.0
+  }
+}

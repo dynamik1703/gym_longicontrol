@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "purpose": "factual provenance of scalar reward iterations; no subjective engineering score",
+  "iterations": [
+    {
+      "reward_formula_version": "scalar-v1",
+      "source_configuration": "canonical.json",
+      "configuration_ids": ["e05-s0-t025", "e05-s0-t1", "e05-s2-t025", "e05-s2-t1", "e2-s0-t025", "e2-s0-t1", "e2-s2-t025", "e2-s2-t1"],
+      "parameters": {"progress_weight": 1.0, "energy_weight": [0.5, 2.0], "time_weight": [0.25, 1.0], "speed_integral_weight": [0.0, 2.0], "on_time_completion_bonus": 0.0, "speed_violation_event_penalty": 0.0},
+      "reason_for_change": "initial compact interpretable Cartesian sensitivity study",
+      "training_budget_online_steps": [100000],
+      "observed_failure_mode": "5/216 feasible episodes; all energy-weight-2 settings collapsed largely into standstill; substantial seed variation",
+      "outcome": "naive scalar reward rejected as a fair strong baseline; preserved as Scalar Study V1"
+    },
+    {
+      "reward_formula_version": "scalar-v2a",
+      "source_configuration": "canonical_v2.json",
+      "configuration_ids": ["v2-balanced", "v2-energy-oriented", "v2-strong-compliance"],
+      "parameters": {
+        "progress_weight": [1.0],
+        "energy_weight": [0.5, 1.0],
+        "time_weight": [0.25],
+        "on_time_completion_bonus": [2.0, 3.0],
+        "speed_integral_weight": [1.0, 2.0],
+        "speed_violation_event_penalty": [2.0, 3.0]
+      },
+      "reason_for_change": "repair episode-level V1 scale inversion with an on-time completion bonus and exact-compliance terminal penalty",
+      "training_budget_online_steps": [100000, 300000],
+      "observed_failure_mode": "all candidates had 0/27 validation RSR at 300k; five curves were flat and the only improving balanced seed peaked at 150k then collapsed",
+      "outcome": "episode-scale sanity achieved, but dense speed penalty remained locally dominant; 1M extension rejected"
+    },
+    {
+      "reward_formula_version": "scalar-v2b",
+      "source_configuration": "canonical_v2b.json",
+      "configuration_ids": ["v2b-balanced", "v2b-energy-oriented", "v2b-strong-compliance"],
+      "parameters": {
+        "progress_weight": [2.0],
+        "energy_weight": [0.5, 1.0],
+        "time_weight": [0.25],
+        "on_time_completion_bonus": [2.0, 3.0],
+        "speed_integral_weight": [0.1, 0.25],
+        "speed_violation_event_penalty": [2.0, 3.0]
+      },
+      "reason_for_change": "restore locally positive compliant progress and reduce exploratory speed-cost dominance without adding a new shaping concept",
+      "training_budget_online_steps": [100000, 300000],
+      "observed_failure_mode": "best 300k exploratory RSR was 0/9, 4/9, 2/9 across seeds; validation balanced peaked at mean 10/27 at 250k and fell to 2/27 at 300k; other candidates collapsed",
+      "outcome": "clear descriptive improvement over V1 but no configuration met the predeclared reliability criterion; training instability remains dominant"
+    }
+  ]
+}

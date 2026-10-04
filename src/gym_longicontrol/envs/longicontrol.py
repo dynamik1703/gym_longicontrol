@@ -1,10 +1,13 @@
 """Thin Gymnasium lifecycle around the simulation components."""
 
+from dataclasses import asdict
+
 import gymnasium as gym
 import numpy as np
 from gymnasium import spaces
 
 from gym_longicontrol.domain.dynamics import advance
+from gym_longicontrol.domain.metrics import EpisodeMetrics, _EpisodeMetricsAccumulator
 from gym_longicontrol.domain.observation import observation
 from gym_longicontrol.domain.reward import reward_components
 from gym_longicontrol.domain.state import SimulationConfig, VehicleState
@@ -56,6 +59,17 @@ class LongiControlEnv(gym.Env):
         self.track = None
         self._renderer = None
         self._terminated = False
+        self._metrics = _EpisodeMetricsAccumulator()
+
+    @property
+    def episode_metrics(self) -> EpisodeMetrics:
+        """Physical snapshot since reset; also available on incomplete episodes.
+
+        An outer TimeLimit may end an episode without notifying this base env.
+        Therefore info includes a fresh snapshot on EVERY reset/step, not only
+        when the route is completed. Task feasibility is evaluated separately.
+        """
+        return self._metrics.snapshot(self.state, completed=bool(self._terminated))
 
     def _observation(self):
         sensor = self.track.sense(self.state.position_m, self.config.sensor_range_m)
@@ -80,6 +94,11 @@ class LongiControlEnv(gym.Env):
             "step_energy_kwh": step_energy_kwh,
             "speed_limit_m_s": limit,
             "speed_limit_km_h": limit * 3.6,
+            "speed_excess_m_s": self._metrics.speed_excess_m_s,
+            "speed_violation_count": self._metrics.speed_violation_count,
+            "max_speed_violation_m_s": self._metrics.max_speed_violation_m_s,
+            "integrated_speed_violation_m": self._metrics.integrated_speed_violation_m,
+            "episode_metrics": asdict(self.episode_metrics),
             "reward_components": (
                 dict(components)
                 if components is not None
@@ -102,6 +121,7 @@ class LongiControlEnv(gym.Env):
         self.track = self.track_generator(self.np_random)
         self.state = VehicleState()
         self._terminated = False
+        self._metrics = _EpisodeMetricsAccumulator()
         if self._renderer is not None:
             self._renderer.reset()
         if self.render_mode == "human":
@@ -125,6 +145,13 @@ class LongiControlEnv(gym.Env):
         )
         reward = float(np.dot(self.reward_weights, list(components.values())))
         self._terminated = self.state.position_m >= self.config.track_length_m
+        # Observe physical quantities, not the historical reward (including shock).
+        # This does not affect dynamics, observations, reward or termination.
+        self._metrics.update(
+            velocity_m_s=self.state.velocity_m_s,
+            speed_limit_m_s=sensor.current_limit_m_s,
+            dt_s=self.config.dt_s,
+        )
         if self.render_mode == "human":
             self.render()
         return (

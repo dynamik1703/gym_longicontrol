@@ -38,6 +38,10 @@ legacy = ["gym==0.23.1"]
 train = [
     "torch>=2.0",
 ]
+benchmark = [
+    "matplotlib>=3.7,<4",
+    "stable-baselines3>=2.9,<2.10",
+]
 dev = [
     "build>=1.2,<2",
     "pytest>=8,<9",

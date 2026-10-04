@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "name": "requirement-conditioned-sacl-v1-stochastic-v1",
+  "environment_id": "StochasticTrack-v1",
+  "max_episode_steps": 1800,
+  "max_speed_violation_m_s": 0.0,
+  "track_splits": {
+    "development_calibration": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "v1_exploratory_evaluation": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "paper_final_test_reserved": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "training_seeds": [11, 29, 47],
+  "simulator_step_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "requirements": {
+    "training_margins_s": [20.0, 40.0, 60.0],
+    "interpolation_margins_s": [30.0, 50.0],
+    "time_scale_s": 180.0,
+    "maximum_t_min_start_s": 180.0,
+    "sampling": "independent-shuffled-balanced-blocks"
+  },
+  "objective": {
+    "name": "negative_net_energy",
+    "energy_scale_kwh": 0.25
+  },
+  "constraints": {
+    "names": ["speed_integral_m", "deadline_deficit_integral_s"],
+    "cost_limits": [0.0, 0.0]
+  },
+  "deadline_cost": {
+    "name": "episode_requirement_optimistic_deadline_deficit_integral",
+    "uses_terminal_failure_cost": false
+  },
+  "algorithm": {
+    "name": "FSRL-SACLag",
+    "fsrl_git_commit": "e056fc9498d5d037869533da7cf976acf462f918",
+    "tianshou_version": "0.5.1",
+    "actor_learning_rate": 0.0005,
+    "critic_learning_rate": 0.001,
+    "hidden_sizes": [128, 128],
+    "automatic_entropy_tuning": true,
+    "alpha_learning_rate": 0.0003,
+    "initial_effective_alpha": 1.0,
+    "tau": 0.05,
+    "n_step": 2,
+    "gamma": 0.99,
+    "lagrangian_pid": [0.05, 0.0005, 0.1],
+    "lagrangian_rescaling": true,
+    "initial_multipliers": [0.0, 0.0],
+    "deterministic_evaluation": true,
+    "buffer_size": 100000,
+    "batch_size": 256,
+    "update_per_step": 0.1,
+    "episodes_per_collect": 1,
+    "action_repeat": 1
+  },
+  "acceptance": {
+    "minimum_overall_rsr": 0.70,
+    "minimum_rsr_per_requirement": 0.50,
+    "minimum_overall_rsr_per_training_seed": 0.50,
+    "travel_time_monotonicity_tolerance_s": 0.1,
+    "energy_monotonicity_tolerance_kwh": 0.001,
+    "minimum_travel_time_pairwise_monotonicity": 0.70,
+    "minimum_energy_pairwise_monotonicity": 0.60,
+    "minimum_requirement_sensitive_track_seed_rate": 0.6666666666666666,
+    "requirement_sensitive_travel_time_range_s": 1.0,
+    "requirement_sensitive_energy_range_kwh": 0.005,
+    "requirement_sensitive_mean_action_difference": 0.05,
+    "maximum_interpolation_rsr_gap": 0.15,
+    "minimum_interpolation_directional_rate": 0.65
+  }
+}

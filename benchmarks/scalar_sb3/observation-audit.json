@@ -1,0 +1,49 @@
+{
+  "configuration_sha256": "5e22fc3a6b8936a051a973c47b49e78789d5097c76f9a4e1fa0b0171931266fe",
+  "declared_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "declared_low": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation_count": 16200,
+  "observed_max": [
+    0.21832640436956835,
+    0.9999746543981182,
+    0.7507507507507508,
+    0.7507507507507508,
+    0.7507507507507508,
+    1.0,
+    1.0,
+    0.2
+  ],
+  "observed_min": [
+    0.0,
+    0.00010839231917418128,
+    0.3003003003003003,
+    0.15015015015015015,
+    0.15015015015015015,
+    8.992304728498842e-05,
+    0.6670041424508181,
+    0.2
+  ],
+  "policy": "uniform random actions from numpy seed 73001",
+  "reason": "The historical eight-feature observation is already scaled to [0, 1].",
+  "schema_version": 1,
+  "track_split": "development-2000-2008-v1",
+  "vec_normalize_used": false
+}

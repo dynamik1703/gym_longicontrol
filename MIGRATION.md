@@ -84,6 +84,36 @@ The info mapping retains the short historic keys and adds names with explicit
 units.  New integrations should use the explicit keys such as `position_m`,
 `velocity_m_s`, `acceleration_m_s2`, and `total_energy_kwh`.
 
+### Additive task/evaluation API for v1
+
+The task/evaluation layer does not change v1 numerical behavior or require
+policy retraining. `TaskSpecification` and `is_feasible` in `domain.task`
+describe/evaluate operational requirements separately from reward. In particular,
+the task time budget is not an environment termination or truncation setting.
+
+`domain.metrics.EpisodeMetrics` is immutable. Every reset/step now adds a
+plain-dict `info["episode_metrics"]` snapshot plus `speed_excess_m_s`,
+`speed_violation_count`, `max_speed_violation_m_s` and
+`integrated_speed_violation_m`. Existing keys remain. Consumers that validated
+the exact set of info keys should allow these additions. Use
+`EpisodeMetrics(**info["episode_metrics"])` on the final step; a snapshot is
+always included so outer time-limit truncations also retain final measurements.
+The snapshot itself does not claim the episode ended: `completed` only means
+the route finish was reached. An incomplete timeout is infeasible.
+
+Speed metrics sample the limit and velocity at the step endpoint. Count denotes
+contiguous above-limit events, not the number of violating timesteps. The
+integrated metric `integrated_speed_violation_m` is excess × timestep summed in
+**metres**.
+Neither counting nor integration applies task tolerance. Feasibility uses
+inclusive comparisons of stored floating-point values with no hidden epsilon;
+time/energy accumulation and within-step integration are unchanged.
+
+Historical reward components, including `shock`, keep their original meaning.
+They are training signals, not substitutes for physical benchmark evaluation.
+See [Task specification and evaluation](README.md#task-specification-and-evaluation)
+for definitions and an example.
+
 ## Rendering
 
 Choose rendering when constructing the environment.  `render()` no longer

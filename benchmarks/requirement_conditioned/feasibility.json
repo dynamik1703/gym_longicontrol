@@ -1,0 +1,179 @@
+{
+  "episode_horizon_s": 180.0,
+  "interpolation_margins_s": [
+    30.0,
+    50.0
+  ],
+  "maximum_development_deadline_s": 177.0,
+  "maximum_reference_gap_s": 19.914285714282926,
+  "reference_controller": {
+    "braking_m_s2": 0.75,
+    "privileged_track_access": true,
+    "purpose": "physics-only feasibility anchor; never a learned baseline",
+    "speed_margin_m_s": 0.5
+  },
+  "reserved_final_test_evaluated": false,
+  "schema_version": 1,
+  "selection_data": "Development tracks only",
+  "selection_rule": "tight margin = ceil(max Development fast-compliant-reference gap / 10 s) * 10 s; anchors add 0/20/40 s; interpolation adds 10/30 s",
+  "tracks": [
+    {
+      "fast_compliant_reference_time_s": 129.69999999999692,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 12.699999999996919,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 117.0,
+      "track_seed": 2000
+    },
+    {
+      "fast_compliant_reference_time_s": 116.79999999999764,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 8.799999999997638,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 108.0,
+      "track_seed": 2001
+    },
+    {
+      "fast_compliant_reference_time_s": 69.40000000000033,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 13.714285714286042,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 55.68571428571429,
+      "track_seed": 2002
+    },
+    {
+      "fast_compliant_reference_time_s": 85.59999999999941,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 13.857142857142279,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 71.74285714285713,
+      "track_seed": 2003
+    },
+    {
+      "fast_compliant_reference_time_s": 124.3999999999972,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 19.914285714282926,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 104.48571428571428,
+      "track_seed": 2004
+    },
+    {
+      "fast_compliant_reference_time_s": 71.7000000000002,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 10.671428571428777,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 61.028571428571425,
+      "track_seed": 2005
+    },
+    {
+      "fast_compliant_reference_time_s": 63.20000000000063,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 4.914285714286343,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 58.285714285714285,
+      "track_seed": 2006
+    },
+    {
+      "fast_compliant_reference_time_s": 74.70000000000003,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 8.35714285714289,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 66.34285714285714,
+      "track_seed": 2007
+    },
+    {
+      "fast_compliant_reference_time_s": 87.69999999999929,
+      "reference_completed": true,
+      "reference_gap_over_t_min_s": 16.757142857142156,
+      "reference_max_speed_violation_m_s": 0.0,
+      "t_min_start_s": 70.94285714285714,
+      "track_seed": 2008
+    }
+  ],
+  "training_margins_s": [
+    20.0,
+    40.0,
+    60.0
+  ],
+  "validation_precheck": {
+    "all_tight_requirements_reached_by_fast_compliant_reference": true,
+    "influenced_requirement_selection": false,
+    "maximum_primary_deadline_s": 177.0,
+    "maximum_reference_gap_s": 17.65714285714175,
+    "performed_after_requirement_selection": true,
+    "tracks": [
+      {
+        "fast_compliant_reference_time_s": 59.90000000000058,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 8.114285714286297,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 51.785714285714285,
+        "track_seed": 3000
+      },
+      {
+        "fast_compliant_reference_time_s": 64.6000000000006,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 6.700000000000607,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 57.9,
+        "track_seed": 3001
+      },
+      {
+        "fast_compliant_reference_time_s": 96.99999999999876,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 12.199999999998752,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 84.80000000000001,
+        "track_seed": 3002
+      },
+      {
+        "fast_compliant_reference_time_s": 88.69999999999924,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 14.114285714284946,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 74.58571428571429,
+        "track_seed": 3003
+      },
+      {
+        "fast_compliant_reference_time_s": 70.0000000000003,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 7.000000000000298,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 63.0,
+        "track_seed": 3004
+      },
+      {
+        "fast_compliant_reference_time_s": 68.3000000000004,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 9.957142857143253,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 58.34285714285714,
+        "track_seed": 3005
+      },
+      {
+        "fast_compliant_reference_time_s": 126.79999999999707,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 9.799999999997084,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 116.99999999999999,
+        "track_seed": 3006
+      },
+      {
+        "fast_compliant_reference_time_s": 101.09999999999853,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 16.114285714284236,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 84.9857142857143,
+        "track_seed": 3007
+      },
+      {
+        "fast_compliant_reference_time_s": 94.79999999999889,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 17.65714285714175,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 77.14285714285714,
+        "track_seed": 3008
+      }
+    ]
+  }
+}

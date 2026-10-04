@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "name": "constrained-sac-lagrangian-v2-deadline-slack-stochastic-v1",
+  "environment_id": "StochasticTrack-v1",
+  "max_episode_steps": 1800,
+  "task": {
+    "max_time_s": 140.0,
+    "max_speed_violation_m_s": 0.0
+  },
+  "track_splits": {
+    "development_calibration": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "v1_exploratory_evaluation": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "paper_final_test_reserved": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "training_seeds": [11, 29, 47],
+  "simulator_step_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "objective": {
+    "name": "negative_net_energy",
+    "energy_scale_kwh": 0.25
+  },
+  "constraints": {
+    "names": ["speed_integral_m", "deadline_deficit_integral_s"],
+    "cost_limits": [0.0, 0.0]
+  },
+  "deadline_cost": {
+    "name": "optimistic_speed_limit_deadline_deficit_integral",
+    "normalization_s": 140.0,
+    "uses_terminal_failure_cost": false
+  },
+  "algorithm": {
+    "name": "FSRL-SACLag",
+    "fsrl_git_commit": "e056fc9498d5d037869533da7cf976acf462f918",
+    "tianshou_version": "0.5.1",
+    "actor_learning_rate": 0.0005,
+    "critic_learning_rate": 0.001,
+    "hidden_sizes": [128, 128],
+    "automatic_entropy_tuning": true,
+    "alpha_learning_rate": 0.0003,
+    "initial_effective_alpha": 1.0,
+    "tau": 0.05,
+    "n_step": 2,
+    "gamma": 0.99,
+    "lagrangian_pid": [0.05, 0.0005, 0.1],
+    "lagrangian_rescaling": true,
+    "initial_multipliers": [0.0, 0.0],
+    "deterministic_evaluation": true,
+    "buffer_size": 100000,
+    "batch_size": 256,
+    "update_per_step": 0.1,
+    "episodes_per_collect": 1,
+    "action_repeat": 1
+  },
+  "acceptance": {
+    "minimum_material_pooled_rsr": 0.2222222222222222,
+    "minimum_material_pooled_completion_rate": 0.2222222222222222,
+    "minimum_improved_training_seeds": 2,
+    "maximum_material_standstill_rate": 0.3333333333333333,
+    "minimum_credible_speed_compliance_rate": 0.8888888888888888,
+    "maximum_peak_to_final_rsr_drop": 0.2222222222222222,
+    "strong_minimum_rsr_per_training_seed": 0.8888888888888888,
+    "strong_minimum_completion_rate_per_training_seed": 0.8888888888888888,
+    "strong_minimum_speed_compliance_rate_per_training_seed": 0.8888888888888888,
+    "strong_maximum_rsr_range": 0.1111111111111111,
+    "strong_maximum_mean_energy_ratio_to_fast_reference": 1.25,
+    "standstill_dominance_rate": 0.5,
+    "instability_multiplier_threshold": 1000.0,
+    "instability_critic_loss_threshold": 1000000.0,
+    "minimum_unstable_training_seeds": 2
+  }
+}

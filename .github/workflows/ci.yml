@@ -61,7 +61,7 @@ jobs:
           python -m pip install -e ".[dev]"
 
       - name: Run Ruff
-        run: python -m ruff check src tests training tools
+        run: python -m ruff check .
 
   training-smoke:
     name: Training import smoke test
@@ -80,15 +80,25 @@ jobs:
       - name: Install package and training dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e ".[dev,train,video,legacy]"
+          python -m pip install -e ".[benchmark,dev,train,video,legacy]"
 
       - name: Import training modules
-        run: python -c "import torch; import training.checkpoint; import training.sac"
+        run: >-
+          python -c "import stable_baselines3; import torch;
+          import training.checkpoint; import training.sac;
+          import benchmarks.scalar_sb3.experiment"
 
       - name: Run training tests with PyTorch installed
         env:
           MPLBACKEND: Agg
         run: python -m pytest tests/training tests/test_legacy.py
+
+      - name: Run SB3 benchmark smoke test
+        env:
+          MPLBACKEND: Agg
+        run: >-
+          python -m benchmarks.scalar_sb3.experiment --smoke --device cpu
+          --output-dir "$RUNNER_TEMP/scalar-sb3-smoke"
 
   build:
     name: Build and install smoke test

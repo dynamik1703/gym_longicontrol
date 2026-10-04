@@ -1,0 +1,24 @@
+{
+  "best_generation_zero_candidate_id": null,
+  "candidate_slots_by_generation": {
+    "0": 5,
+    "1": 3,
+    "2": 3
+  },
+  "candidates": [],
+  "engineering_effort": {
+    "explicit_task_metrics_in_reflection": 13,
+    "final_training_transitions": 0,
+    "generated_reward_candidate_count": 0,
+    "generation_count_started": 0,
+    "human_reward_edits": 0,
+    "human_selected_coefficients_during_search": 0,
+    "screening_rl_transitions": 0
+  },
+  "parent_selections": [],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "schema_version": 1,
+  "status": "NOT_STARTED",
+  "winner": null
+}

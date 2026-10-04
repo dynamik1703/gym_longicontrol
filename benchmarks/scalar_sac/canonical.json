@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "name": "scalar-sac-stochastic-v1",
+  "environment_id": "StochasticTrack-v1",
+  "evaluation_set_id": "stochastic-tracks-1000-1008-v1",
+  "max_episode_steps": 1800,
+  "task": {
+    "max_time_s": 140.0,
+    "max_speed_violation_m_s": 0.0
+  },
+  "time_budget_sweep": [120.0, 140.0, 160.0],
+  "seeds": {
+    "training": [11, 29, 47],
+    "calibration": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "evaluation": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008]
+  },
+  "reward_normalization": {
+    "energy_kwh": 0.25,
+    "integrated_speed_violation_m": 1.0
+  },
+  "reward_grid": [
+    {
+      "configuration_id": "e05-s0-t025",
+      "progress_weight": 1.0,
+      "energy_weight": 0.5,
+      "time_weight": 0.25,
+      "speed_violation_weight": 0.0
+    },
+    {
+      "configuration_id": "e05-s0-t1",
+      "progress_weight": 1.0,
+      "energy_weight": 0.5,
+      "time_weight": 1.0,
+      "speed_violation_weight": 0.0
+    },
+    {
+      "configuration_id": "e05-s2-t025",
+      "progress_weight": 1.0,
+      "energy_weight": 0.5,
+      "time_weight": 0.25,
+      "speed_violation_weight": 2.0
+    },
+    {
+      "configuration_id": "e05-s2-t1",
+      "progress_weight": 1.0,
+      "energy_weight": 0.5,
+      "time_weight": 1.0,
+      "speed_violation_weight": 2.0
+    },
+    {
+      "configuration_id": "e2-s0-t025",
+      "progress_weight": 1.0,
+      "energy_weight": 2.0,
+      "time_weight": 0.25,
+      "speed_violation_weight": 0.0
+    },
+    {
+      "configuration_id": "e2-s0-t1",
+      "progress_weight": 1.0,
+      "energy_weight": 2.0,
+      "time_weight": 1.0,
+      "speed_violation_weight": 0.0
+    },
+    {
+      "configuration_id": "e2-s2-t025",
+      "progress_weight": 1.0,
+      "energy_weight": 2.0,
+      "time_weight": 0.25,
+      "speed_violation_weight": 2.0
+    },
+    {
+      "configuration_id": "e2-s2-t1",
+      "progress_weight": 1.0,
+      "energy_weight": 2.0,
+      "time_weight": 1.0,
+      "speed_violation_weight": 2.0
+    }
+  ],
+  "training": {
+    "total_training_steps": 100000,
+    "initial_random_steps": 10000,
+    "replay_buffer_capacity": 200000,
+    "batch_size": 256,
+    "hidden_layer_sizes": [64, 64],
+    "learning_rate": 0.001,
+    "discount_factor": 0.99,
+    "soft_update_factor": 0.01
+  }
+}

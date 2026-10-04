@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "name": "scalar-credit-assignment-v1-stochastic-v1",
+  "environment_id": "StochasticTrack-v1",
+  "max_episode_steps": 1800,
+  "simulator_dt_s": 0.1,
+  "task": {
+    "max_time_s": 140.0,
+    "max_speed_violation_m_s": 0.0
+  },
+  "track_splits": {
+    "development_calibration": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "v1_exploratory_evaluation": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "paper_final_test_reserved": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "training_seeds": [11, 29, 47],
+  "simulator_step_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "reward_normalization": {
+    "energy_kwh": 0.25,
+    "integrated_speed_violation_m": 1.0
+  },
+  "reward": {
+    "configuration_id": "v2b-balanced",
+    "progress_weight": 2.0,
+    "energy_weight": 0.5,
+    "time_weight": 0.25,
+    "on_time_completion_bonus": 2.0,
+    "speed_integral_weight": 0.1,
+    "speed_violation_event_penalty": 2.0,
+    "design_intent": "restore learnable dense progress while retaining exact-compliance terminal semantics"
+  },
+  "acceptance": {
+    "minimum_rsr_per_training_seed": 0.8888888888888888,
+    "minimum_completion_rate_per_training_seed": 0.8888888888888888,
+    "minimum_speed_compliance_rate_per_training_seed": 0.8888888888888888,
+    "maximum_rsr_range_across_training_seeds": 0.1111111111111111,
+    "maximum_mean_energy_ratio_to_fast_reference": 1.25
+  },
+  "material_mean_rsr_improvement": 0.2222222222222222,
+  "conditions": [
+    {
+      "condition_id": "a-baseline",
+      "label": "A. baseline",
+      "action_repeat": 1,
+      "gamma": 0.99
+    },
+    {
+      "condition_id": "b-discount-only",
+      "label": "B. discount only",
+      "action_repeat": 1,
+      "gamma": 0.999
+    },
+    {
+      "condition_id": "c-horizon-only",
+      "label": "C. horizon only",
+      "action_repeat": 5,
+      "gamma": 0.99
+    },
+    {
+      "condition_id": "d-horizon-discount",
+      "label": "D. horizon + discount",
+      "action_repeat": 5,
+      "gamma": 0.999
+    }
+  ],
+  "sac": {
+    "learning_rate": 0.0003,
+    "buffer_size": 1000000,
+    "learning_starts": 100,
+    "batch_size": 256,
+    "tau": 0.005,
+    "gamma": 0.99,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "ent_coef": "auto",
+    "policy_network": [256, 256]
+  }
+}

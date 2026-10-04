@@ -1,6 +1,7 @@
 include MIGRATION.md CHANGELOG.md
 recursive-include tools *.py
 recursive-include training *.py
+recursive-include benchmarks *.py *.json *.md *.png *.txt *.sha256
 recursive-include tests *.py
 recursive-include examples *.py
 recursive-include legacy *.md *.py *.pkl

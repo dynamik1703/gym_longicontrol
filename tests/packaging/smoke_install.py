@@ -7,6 +7,8 @@ from importlib.resources import files
 import gymnasium as gym
 
 import gym_longicontrol
+from gym_longicontrol.domain.metrics import EpisodeMetrics
+from gym_longicontrol.domain.task import TaskSpecification, is_feasible
 
 assert version("gym-longicontrol") == "1.0.0"
 assert "site-packages" in gym_longicontrol.__file__
@@ -19,9 +21,13 @@ for name in ("DeterministicTrack-v1", "StochasticTrack-v1"):
     try:
         observation, _ = env.reset(seed=2)
         assert env.observation_space.contains(observation)
-        observation, _, terminated, truncated, _ = env.step([0.5])
+        observation, _, terminated, truncated, info = env.step([0.5])
         assert env.observation_space.contains(observation)
         assert not terminated and not truncated
+        metrics = EpisodeMetrics(**info["episode_metrics"])
+        assert metrics == env.unwrapped.episode_metrics
+        assert metrics.travel_time_s == 0.1
+        assert not is_feasible(metrics, TaskSpecification(60))
     finally:
         env.close()
 assert not {"torch", "matplotlib", "sklearn", "gym"} & set(sys.modules)

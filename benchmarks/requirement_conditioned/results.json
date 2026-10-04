@@ -1,0 +1,1632 @@
+{
+  "acceptance": {
+    "energy_pairwise_monotonicity": {
+      "passed": false,
+      "threshold": 0.6,
+      "value": 0.5211267605633803
+    },
+    "interpolation_directional_rate": {
+      "passed": true,
+      "threshold": 0.65,
+      "value": 0.9629629629629629
+    },
+    "interpolation_rsr_gap": {
+      "passed": true,
+      "threshold": 0.15,
+      "value": 0.006172839506172811
+    },
+    "minimum_requirement_rsr": {
+      "passed": false,
+      "threshold": 0.5,
+      "value": 0.18518518518518517
+    },
+    "minimum_seed_rsr": {
+      "passed": false,
+      "threshold": 0.5,
+      "value": 0.06666666666666667
+    },
+    "overall_rsr": {
+      "passed": false,
+      "threshold": 0.7,
+      "value": 0.35555555555555557
+    },
+    "requirement_sensitive_group_rate": {
+      "passed": true,
+      "threshold": 0.6666666666666666,
+      "value": 0.9629629629629629
+    },
+    "travel_time_pairwise_monotonicity": {
+      "passed": true,
+      "threshold": 0.7,
+      "value": 0.9703703703703703
+    }
+  },
+  "benchmark_name": "requirement-conditioned-sacl-v1-stochastic-v1",
+  "canonical_140": {
+    "feasible_count_difference": -9,
+    "frozen_constrained_v2": {
+      "episode_count": 27,
+      "feasible_count": 21,
+      "requirement_satisfaction_rate": 0.7777777777777778,
+      "source": "benchmarks/constrained_rl_v2/results.json"
+    },
+    "requirement_conditioned": {
+      "by_training_seed": {
+        "11": {
+          "completion_rate": 0.6666666666666666,
+          "deadline_compliance_rate": 0.4444444444444444,
+          "episode_count": 9,
+          "feasible_count": 3,
+          "mean_feasible_energy_kwh": 0.2252272330292682,
+          "mean_integrated_speed_violation_m": 0.06463692396199813,
+          "mean_max_speed_violation_m_s": 0.32142371910106565,
+          "mean_travel_time_s": 152.83333333332894,
+          "median_feasible_energy_kwh": 0.22579032239835323,
+          "median_travel_time_s": 170.79999999999458,
+          "requirement_satisfaction_rate": 0.3333333333333333,
+          "speed_compliance_rate": 0.5555555555555556
+        },
+        "29": {
+          "completion_rate": 0.5555555555555556,
+          "deadline_compliance_rate": 0.2222222222222222,
+          "episode_count": 9,
+          "feasible_count": 2,
+          "mean_feasible_energy_kwh": 0.23769390412631936,
+          "mean_integrated_speed_violation_m": 0.30008880481464106,
+          "mean_max_speed_violation_m_s": 0.036597919092576404,
+          "mean_travel_time_s": 151.52222222221792,
+          "median_feasible_energy_kwh": 0.23769390412631936,
+          "median_travel_time_s": 165.1999999999949,
+          "requirement_satisfaction_rate": 0.2222222222222222,
+          "speed_compliance_rate": 0.7777777777777778
+        },
+        "47": {
+          "completion_rate": 1.0,
+          "deadline_compliance_rate": 0.7777777777777778,
+          "episode_count": 9,
+          "feasible_count": 7,
+          "mean_feasible_energy_kwh": 0.21075041164771474,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_travel_time_s": 114.18888888888667,
+          "median_feasible_energy_kwh": 0.20800982963907816,
+          "median_travel_time_s": 115.19999999999773,
+          "requirement_satisfaction_rate": 0.7777777777777778,
+          "speed_compliance_rate": 1.0
+        }
+      },
+      "completion_rate": 0.7407407407407407,
+      "deadline_compliance_rate": 0.48148148148148145,
+      "episode_count": 27,
+      "feasible_count": 12,
+      "mean_feasible_energy_kwh": 0.21886019907287055,
+      "mean_integrated_speed_violation_m": 0.12157524292554639,
+      "mean_max_speed_violation_m_s": 0.11934054606454735,
+      "mean_travel_time_s": 139.51481481481116,
+      "median_feasible_energy_kwh": 0.21309477673034793,
+      "median_travel_time_s": 141.29999999999626,
+      "requirement_satisfaction_rate": 0.4444444444444444,
+      "speed_compliance_rate": 0.7777777777777778
+    },
+    "rsr_difference": -0.33333333333333337
+  },
+  "configuration_sha256": "422e061d74573f0337ef8882f7d11fafb0fa93061a96e609c61c5825b28bb026",
+  "controllability": {
+    "feasible_energy_pair_count": 71,
+    "feasible_energy_pairwise_monotonicity_rate": 0.5211267605633803,
+    "group_count": 27,
+    "groups": [
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.04805192806857084,
+        "track_seed": 3000,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 26.999999999998465
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.04497105404180226,
+        "track_seed": 3001,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 21.99999999999875
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9746794344808963,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.1193757782202953,
+        "track_seed": 3002,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 21.499999999998778
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.03324729148991433,
+        "track_seed": 3003,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 29.499999999998323
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.033442580381729224,
+        "track_seed": 3004,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 20.59999999999883
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.06489002703889084,
+        "track_seed": 3005,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 23.299999999998676
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": null,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": false,
+        "sensitivity_reasons": [],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.006440716103551114,
+        "track_seed": 3006,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 0.0
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.03620562945581796,
+        "track_seed": 3007,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 26.19999999999851
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.030611084072661877,
+        "track_seed": 3008,
+        "training_seed": 11,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 27.299999999998448
+      },
+      {
+        "deadline_feasible_energy_spearman": -1.0,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 3,
+        "energy_pairwise_monotonicity_rate": 1.0,
+        "feasible_energy_range_kwh": 0.006049382739400644,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "feasible_energy_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.08295710048400878,
+        "track_seed": 3000,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 15.499999999999119
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.06732372536624735,
+        "track_seed": 3001,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 48.89999999999722
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9746794344808963,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.30048532886386076,
+        "track_seed": 3002,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 25.69999999999854
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.0485730590216248,
+        "track_seed": 3003,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 37.69999999999786
+      },
+      {
+        "deadline_feasible_energy_spearman": -0.9999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 10,
+        "energy_pairwise_monotonicity_rate": 1.0,
+        "feasible_energy_range_kwh": 0.004574415486411715,
+        "interpolation_feasible_energy_comparison_count": 2,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.0405964068433663,
+        "track_seed": 3004,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 3.2999999999998124
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.06663742732483968,
+        "track_seed": 3005,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 20.899999999998826
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.7999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 6,
+        "energy_pairwise_monotonicity_rate": 0.6666666666666666,
+        "feasible_energy_range_kwh": 0.001349097096362356,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.005708499345655891,
+        "track_seed": 3006,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 6.899999999999608
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9746794344808963,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.07118710233987995,
+        "track_seed": 3007,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 20.099999999998857
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.8944271909999159,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.06872162748354572,
+        "track_seed": 3008,
+        "training_seed": 29,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 18.199999999998965
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.9999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 10,
+        "energy_pairwise_monotonicity_rate": 0.0,
+        "feasible_energy_range_kwh": 0.017974639379551877,
+        "interpolation_feasible_energy_comparison_count": 2,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "feasible_energy_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.08589220065323756,
+        "track_seed": 3000,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 29.799999999998306
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.7,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 10,
+        "energy_pairwise_monotonicity_rate": 0.3,
+        "feasible_energy_range_kwh": 0.004238130956917635,
+        "interpolation_feasible_energy_comparison_count": 2,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.09376545909518111,
+        "track_seed": 3001,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 12.199999999999307
+      },
+      {
+        "deadline_feasible_energy_spearman": -0.7999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 6,
+        "energy_pairwise_monotonicity_rate": 1.0,
+        "feasible_energy_range_kwh": 0.0015816241037057421,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.0699298278993954,
+        "track_seed": 3002,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 3.8999999999997783
+      },
+      {
+        "deadline_feasible_energy_spearman": null,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 0,
+        "energy_pairwise_monotonicity_rate": null,
+        "feasible_energy_range_kwh": null,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.09154631530307031,
+        "track_seed": 3003,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 27.199999999998468
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.8999999999999998,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 10,
+        "energy_pairwise_monotonicity_rate": 0.1,
+        "feasible_energy_range_kwh": 0.008081192664626452,
+        "interpolation_feasible_energy_comparison_count": 2,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "feasible_energy_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.09428043538789711,
+        "track_seed": 3004,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 14.199999999999193
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.7999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 6,
+        "energy_pairwise_monotonicity_rate": 0.16666666666666666,
+        "feasible_energy_range_kwh": 0.008684340158997578,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "feasible_energy_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.14005901402621387,
+        "track_seed": 3005,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 14.59999999999917
+      },
+      {
+        "deadline_feasible_energy_spearman": -1.0,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 6,
+        "energy_pairwise_monotonicity_rate": 1.0,
+        "feasible_energy_range_kwh": 0.023254456696496922,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "feasible_energy_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.1626979355765753,
+        "track_seed": 3006,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 2.9999999999998295
+      },
+      {
+        "deadline_feasible_energy_spearman": 0.9999999999999999,
+        "deadline_travel_time_spearman": 0.9999999999999999,
+        "energy_pair_count": 1,
+        "energy_pairwise_monotonicity_rate": 0.0,
+        "feasible_energy_range_kwh": 0.001207838157485125,
+        "interpolation_feasible_energy_comparison_count": 0,
+        "interpolation_travel_directional_rate": 1.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.13388038065457683,
+        "track_seed": 3007,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 1.0,
+        "travel_time_range_s": 13.299999999999258
+      },
+      {
+        "deadline_feasible_energy_spearman": -0.5,
+        "deadline_travel_time_spearman": -0.7999999999999999,
+        "energy_pair_count": 3,
+        "energy_pairwise_monotonicity_rate": 1.0,
+        "feasible_energy_range_kwh": 0.0028986474792339623,
+        "interpolation_feasible_energy_comparison_count": 1,
+        "interpolation_travel_directional_rate": 0.0,
+        "requirement_sensitive": true,
+        "sensitivity_reasons": [
+          "travel_time_range",
+          "action_profile_difference"
+        ],
+        "tight_to_loose_action_profile_mean_absolute_difference": 0.20920752681156934,
+        "track_seed": 3008,
+        "training_seed": 47,
+        "travel_pairwise_monotonicity_rate": 0.2,
+        "travel_time_range_s": 12.399999999999295
+      }
+    ],
+    "interpolation_feasible_energy_comparison_count": 14,
+    "interpolation_feasible_energy_directional_rate": 0.5714285714285714,
+    "interpolation_travel_comparison_count": 54,
+    "interpolation_travel_directional_rate": 0.9629629629629629,
+    "mean_deadline_feasible_energy_spearman": 0.08181818181818178,
+    "mean_deadline_travel_time_spearman": 0.9237871344016385,
+    "median_feasible_ordered_pair_energy_delta_kwh": 0.0008454932212041411,
+    "median_feasible_tight_to_loose_energy_delta_kwh": 0.005269473393027982,
+    "median_ordered_pair_travel_time_delta_s": 7.199999999999591,
+    "median_tight_to_loose_travel_time_delta_s": 20.59999999999883,
+    "ordered_pair_count": 270,
+    "requirement_sensitive_group_count": 26,
+    "requirement_sensitive_group_rate": 0.9629629629629629,
+    "sensitivity_reason_counts": {
+      "action_profile_difference": 17,
+      "feasible_energy_range": 5,
+      "travel_time_range": 26
+    },
+    "travel_time_pairwise_monotonicity_rate": 0.9703703703703703
+  },
+  "decision_gate": "D",
+  "decision_reason": "The tight requirement fails while at least one looser level works.",
+  "final_validation": {
+    "by_margin": {
+      "20": {
+        "completion_rate": 0.9629629629629629,
+        "deadline_compliance_rate": 0.25925925925925924,
+        "episode_count": 27,
+        "feasible_count": 5,
+        "mean_feasible_energy_kwh": 0.21130464100536056,
+        "mean_integrated_speed_violation_m": 0.6131298841704275,
+        "mean_max_speed_violation_m_s": 0.19010648048540754,
+        "mean_travel_time_s": 116.32962962962729,
+        "median_feasible_energy_kwh": 0.2095513837774069,
+        "median_travel_time_s": 117.4999999999976,
+        "requirement_satisfaction_rate": 0.18518518518518517,
+        "speed_compliance_rate": 0.6296296296296297
+      },
+      "30": {
+        "completion_rate": 0.9629629629629629,
+        "deadline_compliance_rate": 0.37037037037037035,
+        "episode_count": 27,
+        "feasible_count": 8,
+        "mean_feasible_energy_kwh": 0.20576969065876366,
+        "mean_integrated_speed_violation_m": 0.4246414100850099,
+        "mean_max_speed_violation_m_s": 0.16937409540007486,
+        "mean_travel_time_s": 122.41851851851585,
+        "median_feasible_energy_kwh": 0.20772305283618975,
+        "median_travel_time_s": 122.29999999999733,
+        "requirement_satisfaction_rate": 0.2962962962962963,
+        "speed_compliance_rate": 0.6666666666666666
+      },
+      "40": {
+        "completion_rate": 0.9259259259259259,
+        "deadline_compliance_rate": 0.4444444444444444,
+        "episode_count": 27,
+        "feasible_count": 10,
+        "mean_feasible_energy_kwh": 0.21252208406868997,
+        "mean_integrated_speed_violation_m": 0.26384663233708505,
+        "mean_max_speed_violation_m_s": 0.15350995107419663,
+        "mean_travel_time_s": 127.06296296296003,
+        "median_feasible_energy_kwh": 0.2100410979410297,
+        "median_travel_time_s": 125.79999999999713,
+        "requirement_satisfaction_rate": 0.37037037037037035,
+        "speed_compliance_rate": 0.7037037037037037
+      },
+      "50": {
+        "completion_rate": 0.8148148148148148,
+        "deadline_compliance_rate": 0.48148148148148145,
+        "episode_count": 27,
+        "feasible_count": 11,
+        "mean_feasible_energy_kwh": 0.21258898866930911,
+        "mean_integrated_speed_violation_m": 0.1388286248643848,
+        "mean_max_speed_violation_m_s": 0.13378447951143102,
+        "mean_travel_time_s": 131.55555555555236,
+        "median_feasible_energy_kwh": 0.2112605479752948,
+        "median_travel_time_s": 127.19999999999705,
+        "requirement_satisfaction_rate": 0.4074074074074074,
+        "speed_compliance_rate": 0.7037037037037037
+      },
+      "60": {
+        "completion_rate": 0.7777777777777778,
+        "deadline_compliance_rate": 0.5555555555555556,
+        "episode_count": 27,
+        "feasible_count": 14,
+        "mean_feasible_energy_kwh": 0.2149379564731643,
+        "mean_integrated_speed_violation_m": 0.06878486076537996,
+        "mean_max_speed_violation_m_s": 0.12040640724809301,
+        "mean_travel_time_s": 135.08518518518179,
+        "median_feasible_energy_kwh": 0.2152644046803039,
+        "median_travel_time_s": 130.79999999999686,
+        "requirement_satisfaction_rate": 0.5185185185185185,
+        "speed_compliance_rate": 0.7777777777777778
+      }
+    },
+    "by_training_seed": {
+      "11": {
+        "by_margin": {
+          "20": {
+            "completion_rate": 0.8888888888888888,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 0,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.08309441541732632,
+            "mean_max_speed_violation_m_s": 0.40573104831340157,
+            "mean_travel_time_s": 123.94444444444169,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 141.49999999999625,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.4444444444444444
+          },
+          "30": {
+            "completion_rate": 0.8888888888888888,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 0,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.07744067322016411,
+            "mean_max_speed_violation_m_s": 0.39393046435731727,
+            "mean_travel_time_s": 129.43333333333027,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 148.09999999999587,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.4444444444444444
+          },
+          "40": {
+            "completion_rate": 0.8888888888888888,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 0,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.07896577890779982,
+            "mean_max_speed_violation_m_s": 0.38079366778010837,
+            "mean_travel_time_s": 135.26666666666327,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 154.7999999999955,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.4444444444444444
+          },
+          "50": {
+            "completion_rate": 0.7777777777777778,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 0,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.07240495195187113,
+            "mean_max_speed_violation_m_s": 0.3517635084462694,
+            "mean_travel_time_s": 141.22222222221848,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 161.5999999999951,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.4444444444444444
+          },
+          "60": {
+            "completion_rate": 0.6666666666666666,
+            "deadline_compliance_rate": 0.4444444444444444,
+            "episode_count": 9,
+            "feasible_count": 3,
+            "mean_feasible_energy_kwh": 0.2240441992721728,
+            "mean_integrated_speed_violation_m": 0.062361175837343144,
+            "mean_max_speed_violation_m_s": 0.32940174747690903,
+            "mean_travel_time_s": 145.87777777777376,
+            "median_feasible_energy_kwh": 0.22324746965542502,
+            "median_travel_time_s": 168.7999999999947,
+            "requirement_satisfaction_rate": 0.3333333333333333,
+            "speed_compliance_rate": 0.5555555555555556
+          }
+        },
+        "checkpoint_multipliers": {
+          "deadline": 2.1848341795399184,
+          "speed": 3.3118068140609624
+        },
+        "completion_rate": 0.8222222222222222,
+        "deadline_compliance_rate": 0.26666666666666666,
+        "episode_count": 45,
+        "feasible_count": 3,
+        "gradient_updates": 30004,
+        "mean_feasible_energy_kwh": 0.2240441992721728,
+        "mean_integrated_speed_violation_m": 0.0748533990669009,
+        "mean_max_speed_violation_m_s": 0.3723240872748011,
+        "mean_travel_time_s": 135.1488888888855,
+        "median_feasible_energy_kwh": 0.22324746965542502,
+        "median_travel_time_s": 148.09999999999587,
+        "requirement_satisfaction_rate": 0.06666666666666667,
+        "simulator_steps": 300000,
+        "speed_compliance_rate": 0.4666666666666667
+      },
+      "29": {
+        "by_margin": {
+          "20": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 2,
+            "mean_feasible_energy_kwh": 0.22215042378958164,
+            "mean_integrated_speed_violation_m": 1.756295237093956,
+            "mean_max_speed_violation_m_s": 0.1645883931428211,
+            "mean_travel_time_s": 124.6111111111083,
+            "median_feasible_energy_kwh": 0.22215042378958164,
+            "median_travel_time_s": 136.49999999999653,
+            "requirement_satisfaction_rate": 0.2222222222222222,
+            "speed_compliance_rate": 0.4444444444444444
+          },
+          "30": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "feasible_count": 2,
+            "mean_feasible_energy_kwh": 0.19097983587129136,
+            "mean_integrated_speed_violation_m": 1.1964835570348655,
+            "mean_max_speed_violation_m_s": 0.11419182184290734,
+            "mean_travel_time_s": 133.45555555555225,
+            "median_feasible_energy_kwh": 0.19097983587129136,
+            "median_travel_time_s": 143.49999999999613,
+            "requirement_satisfaction_rate": 0.2222222222222222,
+            "speed_compliance_rate": 0.5555555555555556
+          },
+          "40": {
+            "completion_rate": 0.8888888888888888,
+            "deadline_compliance_rate": 0.3333333333333333,
+            "episode_count": 9,
+            "feasible_count": 3,
+            "mean_feasible_energy_kwh": 0.21689177540356375,
+            "mean_integrated_speed_violation_m": 0.7125741181034554,
+            "mean_max_speed_violation_m_s": 0.0797361854424815,
+            "mean_travel_time_s": 139.31111111110746,
+            "median_feasible_energy_kwh": 0.21772961031555552,
+            "median_travel_time_s": 148.29999999999586,
+            "requirement_satisfaction_rate": 0.3333333333333333,
+            "speed_compliance_rate": 0.6666666666666666
+          },
+          "50": {
+            "completion_rate": 0.6666666666666666,
+            "deadline_compliance_rate": 0.3333333333333333,
+            "episode_count": 9,
+            "feasible_count": 3,
+            "mean_feasible_energy_kwh": 0.21540708972442102,
+            "mean_integrated_speed_violation_m": 0.34408092264128326,
+            "mean_max_speed_violation_m_s": 0.04958993008802359,
+            "mean_travel_time_s": 143.42222222221835,
+            "median_feasible_energy_kwh": 0.21677700247739326,
+            "median_travel_time_s": 150.09999999999576,
+            "requirement_satisfaction_rate": 0.3333333333333333,
+            "speed_compliance_rate": 0.6666666666666666
+          },
+          "60": {
+            "completion_rate": 0.6666666666666666,
+            "deadline_compliance_rate": 0.3333333333333333,
+            "episode_count": 9,
+            "feasible_count": 3,
+            "mean_feasible_energy_kwh": 0.21398905612536112,
+            "mean_integrated_speed_violation_m": 0.14399340645879674,
+            "mean_max_speed_violation_m_s": 0.03181747426736998,
+            "mean_travel_time_s": 146.52222222221818,
+            "median_feasible_energy_kwh": 0.21490310765486736,
+            "median_travel_time_s": 151.89999999999566,
+            "requirement_satisfaction_rate": 0.3333333333333333,
+            "speed_compliance_rate": 0.7777777777777778
+          }
+        },
+        "checkpoint_multipliers": {
+          "deadline": 2.122299240016708,
+          "speed": 2.4689953088298036
+        },
+        "completion_rate": 0.8444444444444444,
+        "deadline_compliance_rate": 0.28888888888888886,
+        "episode_count": 45,
+        "feasible_count": 13,
+        "gradient_updates": 30001,
+        "mean_feasible_energy_kwh": 0.21270186792936796,
+        "mean_integrated_speed_violation_m": 0.8306854482664714,
+        "mean_max_speed_violation_m_s": 0.0879847609567207,
+        "mean_travel_time_s": 137.46444444444091,
+        "median_feasible_energy_kwh": 0.21772961031555552,
+        "median_travel_time_s": 144.99999999999605,
+        "requirement_satisfaction_rate": 0.28888888888888886,
+        "simulator_steps": 300000,
+        "speed_compliance_rate": 0.6222222222222222
+      },
+      "47": {
+        "by_margin": {
+          "20": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.3333333333333333,
+            "episode_count": 9,
+            "feasible_count": 3,
+            "mean_feasible_energy_kwh": 0.20407411914921317,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_travel_time_s": 100.4333333333319,
+            "median_feasible_energy_kwh": 0.20294532133876722,
+            "median_travel_time_s": 107.99999999999814,
+            "requirement_satisfaction_rate": 0.3333333333333333,
+            "speed_compliance_rate": 1.0
+          },
+          "30": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.6666666666666666,
+            "episode_count": 9,
+            "feasible_count": 6,
+            "mean_feasible_energy_kwh": 0.21069964225458773,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_travel_time_s": 104.36666666666503,
+            "median_feasible_energy_kwh": 0.20772305283618975,
+            "median_travel_time_s": 109.09999999999808,
+            "requirement_satisfaction_rate": 0.6666666666666666,
+            "speed_compliance_rate": 1.0
+          },
+          "40": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.7777777777777778,
+            "episode_count": 9,
+            "feasible_count": 7,
+            "mean_feasible_energy_kwh": 0.21064935921088693,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_travel_time_s": 106.61111111110932,
+            "median_feasible_energy_kwh": 0.20966714112796878,
+            "median_travel_time_s": 109.99999999999802,
+            "requirement_satisfaction_rate": 0.7777777777777778,
+            "speed_compliance_rate": 1.0
+          },
+          "50": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.8888888888888888,
+            "episode_count": 9,
+            "feasible_count": 8,
+            "mean_feasible_energy_kwh": 0.21153220077364215,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_travel_time_s": 110.02222222222025,
+            "median_feasible_energy_kwh": 0.21114353098934424,
+            "median_travel_time_s": 110.99999999999797,
+            "requirement_satisfaction_rate": 0.8888888888888888,
+            "speed_compliance_rate": 1.0
+          },
+          "60": {
+            "completion_rate": 1.0,
+            "deadline_compliance_rate": 0.8888888888888888,
+            "episode_count": 9,
+            "feasible_count": 8,
+            "mean_feasible_energy_kwh": 0.21187895305396226,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_travel_time_s": 112.85555555555342,
+            "median_feasible_energy_kwh": 0.20923081850256814,
+            "median_travel_time_s": 111.89999999999792,
+            "requirement_satisfaction_rate": 0.8888888888888888,
+            "speed_compliance_rate": 1.0
+          }
+        },
+        "checkpoint_multipliers": {
+          "deadline": 1.4878925947086818,
+          "speed": 2.985367692402737
+        },
+        "completion_rate": 1.0,
+        "deadline_compliance_rate": 0.7111111111111111,
+        "episode_count": 45,
+        "feasible_count": 32,
+        "gradient_updates": 29992,
+        "mean_feasible_energy_kwh": 0.21057046737725657,
+        "mean_integrated_speed_violation_m": 0.0,
+        "mean_max_speed_violation_m_s": 0.0,
+        "mean_travel_time_s": 106.857777777776,
+        "median_feasible_energy_kwh": 0.2094499000762746,
+        "median_travel_time_s": 109.99999999999802,
+        "requirement_satisfaction_rate": 0.7111111111111111,
+        "simulator_steps": 300000,
+        "speed_compliance_rate": 1.0
+      }
+    },
+    "interpolation_requirements": {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.42592592592592593,
+      "episode_count": 54,
+      "feasible_count": 19,
+      "mean_feasible_energy_kwh": 0.20971770529644787,
+      "mean_integrated_speed_violation_m": 0.2817350174746973,
+      "mean_max_speed_violation_m_s": 0.15157928745575294,
+      "mean_travel_time_s": 126.98703703703411,
+      "median_feasible_energy_kwh": 0.21102651400339367,
+      "median_travel_time_s": 124.74999999999719,
+      "requirement_satisfaction_rate": 0.35185185185185186,
+      "speed_compliance_rate": 0.6851851851851852
+    },
+    "interpolation_rsr_gap": 0.006172839506172811,
+    "overall": {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.4222222222222222,
+      "episode_count": 135,
+      "feasible_count": 48,
+      "mean_feasible_energy_kwh": 0.21198982993688567,
+      "mean_integrated_speed_violation_m": 0.30184628244445744,
+      "mean_max_speed_violation_m_s": 0.1534362827438406,
+      "mean_travel_time_s": 126.49037037036747,
+      "median_feasible_energy_kwh": 0.21078931211443508,
+      "median_travel_time_s": 122.29999999999733,
+      "requirement_satisfaction_rate": 0.35555555555555557,
+      "speed_compliance_rate": 0.6962962962962963
+    },
+    "seen_requirements": {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.41975308641975306,
+      "episode_count": 81,
+      "feasible_count": 29,
+      "mean_feasible_energy_kwh": 0.21347846332200007,
+      "mean_integrated_speed_violation_m": 0.3152537924242975,
+      "mean_max_speed_violation_m_s": 0.15467427960256572,
+      "mean_travel_time_s": 126.15925925925637,
+      "median_feasible_energy_kwh": 0.21041505475409067,
+      "median_travel_time_s": 122.29999999999733,
+      "requirement_satisfaction_rate": 0.35802469135802467,
+      "speed_compliance_rate": 0.7037037037037037
+    }
+  },
+  "learning_curves": [
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 0.8666666666666667,
+      "overall_rsr": 0.13333333333333333,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.2222222222222222,
+        "50": 0.2222222222222222,
+        "60": 0.2222222222222222
+      },
+      "simulator_step_target": 50000,
+      "simulator_steps": 50855,
+      "speed_compliance_rate": 0.2222222222222222,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 0.9333333333333333,
+      "deadline_compliance_rate": 0.3111111111111111,
+      "overall_rsr": 0.3111111111111111,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.2222222222222222,
+        "40": 0.4444444444444444,
+        "50": 0.4444444444444444,
+        "60": 0.4444444444444444
+      },
+      "simulator_step_target": 100000,
+      "simulator_steps": 100550,
+      "speed_compliance_rate": 0.6888888888888889,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.17777777777777778,
+      "overall_rsr": 0.13333333333333333,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.1111111111111111,
+        "40": 0.1111111111111111,
+        "50": 0.2222222222222222,
+        "60": 0.2222222222222222
+      },
+      "simulator_step_target": 150000,
+      "simulator_steps": 150846,
+      "speed_compliance_rate": 0.4,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 0.8222222222222222,
+      "deadline_compliance_rate": 0.37777777777777777,
+      "overall_rsr": 0.37777777777777777,
+      "rsr_by_margin": {
+        "20": 0.3333333333333333,
+        "30": 0.3333333333333333,
+        "40": 0.3333333333333333,
+        "50": 0.4444444444444444,
+        "60": 0.4444444444444444
+      },
+      "simulator_step_target": 200000,
+      "simulator_steps": 200599,
+      "speed_compliance_rate": 0.8888888888888888,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "overall_rsr": 0.0,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.0
+      },
+      "simulator_step_target": 250000,
+      "simulator_steps": 250259,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 0.8222222222222222,
+      "deadline_compliance_rate": 0.26666666666666666,
+      "overall_rsr": 0.06666666666666667,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.3333333333333333
+      },
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.4666666666666667,
+      "training_seed": 11
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "overall_rsr": 0.0,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.0
+      },
+      "simulator_step_target": 50000,
+      "simulator_steps": 51761,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 0.4666666666666667,
+      "deadline_compliance_rate": 0.0,
+      "overall_rsr": 0.0,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.0
+      },
+      "simulator_step_target": 100000,
+      "simulator_steps": 101221,
+      "speed_compliance_rate": 0.9555555555555556,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "overall_rsr": 0.0,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.0
+      },
+      "simulator_step_target": 150000,
+      "simulator_steps": 150342,
+      "speed_compliance_rate": 0.0,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 0.8222222222222222,
+      "overall_rsr": 0.4888888888888889,
+      "rsr_by_margin": {
+        "20": 0.2222222222222222,
+        "30": 0.3333333333333333,
+        "40": 0.5555555555555556,
+        "50": 0.6666666666666666,
+        "60": 0.6666666666666666
+      },
+      "simulator_step_target": 200000,
+      "simulator_steps": 200728,
+      "speed_compliance_rate": 0.6,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 1.0,
+      "overall_rsr": 0.17777777777777778,
+      "rsr_by_margin": {
+        "20": 0.1111111111111111,
+        "30": 0.1111111111111111,
+        "40": 0.2222222222222222,
+        "50": 0.2222222222222222,
+        "60": 0.2222222222222222
+      },
+      "simulator_step_target": 250000,
+      "simulator_steps": 250031,
+      "speed_compliance_rate": 0.17777777777777778,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 0.8444444444444444,
+      "deadline_compliance_rate": 0.28888888888888886,
+      "overall_rsr": 0.28888888888888886,
+      "rsr_by_margin": {
+        "20": 0.2222222222222222,
+        "30": 0.2222222222222222,
+        "40": 0.3333333333333333,
+        "50": 0.3333333333333333,
+        "60": 0.3333333333333333
+      },
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 0.6222222222222222,
+      "training_seed": 29
+    },
+    {
+      "completion_rate": 0.9777777777777777,
+      "deadline_compliance_rate": 0.8888888888888888,
+      "overall_rsr": 0.044444444444444446,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.2222222222222222
+      },
+      "simulator_step_target": 50000,
+      "simulator_steps": 50460,
+      "speed_compliance_rate": 0.044444444444444446,
+      "training_seed": 47
+    },
+    {
+      "completion_rate": 0.8888888888888888,
+      "deadline_compliance_rate": 0.5777777777777777,
+      "overall_rsr": 0.0,
+      "rsr_by_margin": {
+        "20": 0.0,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0,
+        "60": 0.0
+      },
+      "simulator_step_target": 100000,
+      "simulator_steps": 100532,
+      "speed_compliance_rate": 0.1111111111111111,
+      "training_seed": 47
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 0.8888888888888888,
+      "overall_rsr": 0.6666666666666666,
+      "rsr_by_margin": {
+        "20": 0.3333333333333333,
+        "30": 0.6666666666666666,
+        "40": 0.7777777777777778,
+        "50": 0.7777777777777778,
+        "60": 0.7777777777777778
+      },
+      "simulator_step_target": 150000,
+      "simulator_steps": 150509,
+      "speed_compliance_rate": 0.7777777777777778,
+      "training_seed": 47
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 0.5555555555555556,
+      "overall_rsr": 0.3111111111111111,
+      "rsr_by_margin": {
+        "20": 0.1111111111111111,
+        "30": 0.1111111111111111,
+        "40": 0.1111111111111111,
+        "50": 0.5555555555555556,
+        "60": 0.6666666666666666
+      },
+      "simulator_step_target": 200000,
+      "simulator_steps": 200310,
+      "speed_compliance_rate": 0.6444444444444445,
+      "training_seed": 47
+    },
+    {
+      "completion_rate": 0.9333333333333333,
+      "deadline_compliance_rate": 0.28888888888888886,
+      "overall_rsr": 0.08888888888888889,
+      "rsr_by_margin": {
+        "20": 0.1111111111111111,
+        "30": 0.1111111111111111,
+        "40": 0.0,
+        "50": 0.1111111111111111,
+        "60": 0.1111111111111111
+      },
+      "simulator_step_target": 250000,
+      "simulator_steps": 250482,
+      "speed_compliance_rate": 0.2,
+      "training_seed": 47
+    },
+    {
+      "completion_rate": 1.0,
+      "deadline_compliance_rate": 0.7111111111111111,
+      "overall_rsr": 0.7111111111111111,
+      "rsr_by_margin": {
+        "20": 0.3333333333333333,
+        "30": 0.6666666666666666,
+        "40": 0.7777777777777778,
+        "50": 0.8888888888888888,
+        "60": 0.8888888888888888
+      },
+      "simulator_step_target": 300000,
+      "simulator_steps": 300000,
+      "speed_compliance_rate": 1.0,
+      "training_seed": 47
+    }
+  ],
+  "learning_stability": [
+    {
+      "final_minus_250k_rsr": 0.06666666666666667,
+      "final_rsr": 0.06666666666666667,
+      "peak_rsr": 0.37777777777777777,
+      "peak_simulator_step_target": 200000,
+      "peak_to_final_rsr_drop": 0.3111111111111111,
+      "training_seed": 11
+    },
+    {
+      "final_minus_250k_rsr": 0.11111111111111108,
+      "final_rsr": 0.28888888888888886,
+      "peak_rsr": 0.4888888888888889,
+      "peak_simulator_step_target": 200000,
+      "peak_to_final_rsr_drop": 0.2,
+      "training_seed": 29
+    },
+    {
+      "final_minus_250k_rsr": 0.6222222222222222,
+      "final_rsr": 0.7111111111111111,
+      "peak_rsr": 0.7111111111111111,
+      "peak_simulator_step_target": 300000,
+      "peak_to_final_rsr_drop": 0.0,
+      "training_seed": 47
+    }
+  ],
+  "physics_feasibility": {
+    "episode_horizon_s": 180.0,
+    "interpolation_margins_s": [
+      30.0,
+      50.0
+    ],
+    "maximum_development_deadline_s": 177.0,
+    "maximum_reference_gap_s": 19.914285714282926,
+    "reference_controller": {
+      "braking_m_s2": 0.75,
+      "privileged_track_access": true,
+      "purpose": "physics-only feasibility anchor; never a learned baseline",
+      "speed_margin_m_s": 0.5
+    },
+    "reserved_final_test_evaluated": false,
+    "schema_version": 1,
+    "selection_data": "Development tracks only",
+    "selection_rule": "tight margin = ceil(max Development fast-compliant-reference gap / 10 s) * 10 s; anchors add 0/20/40 s; interpolation adds 10/30 s",
+    "tracks": [
+      {
+        "fast_compliant_reference_time_s": 129.69999999999692,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 12.699999999996919,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 117.0,
+        "track_seed": 2000
+      },
+      {
+        "fast_compliant_reference_time_s": 116.79999999999764,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 8.799999999997638,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 108.0,
+        "track_seed": 2001
+      },
+      {
+        "fast_compliant_reference_time_s": 69.40000000000033,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 13.714285714286042,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 55.68571428571429,
+        "track_seed": 2002
+      },
+      {
+        "fast_compliant_reference_time_s": 85.59999999999941,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 13.857142857142279,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 71.74285714285713,
+        "track_seed": 2003
+      },
+      {
+        "fast_compliant_reference_time_s": 124.3999999999972,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 19.914285714282926,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 104.48571428571428,
+        "track_seed": 2004
+      },
+      {
+        "fast_compliant_reference_time_s": 71.7000000000002,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 10.671428571428777,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 61.028571428571425,
+        "track_seed": 2005
+      },
+      {
+        "fast_compliant_reference_time_s": 63.20000000000063,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 4.914285714286343,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 58.285714285714285,
+        "track_seed": 2006
+      },
+      {
+        "fast_compliant_reference_time_s": 74.70000000000003,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 8.35714285714289,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 66.34285714285714,
+        "track_seed": 2007
+      },
+      {
+        "fast_compliant_reference_time_s": 87.69999999999929,
+        "reference_completed": true,
+        "reference_gap_over_t_min_s": 16.757142857142156,
+        "reference_max_speed_violation_m_s": 0.0,
+        "t_min_start_s": 70.94285714285714,
+        "track_seed": 2008
+      }
+    ],
+    "training_margins_s": [
+      20.0,
+      40.0,
+      60.0
+    ],
+    "validation_precheck": {
+      "all_tight_requirements_reached_by_fast_compliant_reference": true,
+      "influenced_requirement_selection": false,
+      "maximum_primary_deadline_s": 177.0,
+      "maximum_reference_gap_s": 17.65714285714175,
+      "performed_after_requirement_selection": true,
+      "tracks": [
+        {
+          "fast_compliant_reference_time_s": 59.90000000000058,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 8.114285714286297,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 51.785714285714285,
+          "track_seed": 3000
+        },
+        {
+          "fast_compliant_reference_time_s": 64.6000000000006,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 6.700000000000607,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 57.9,
+          "track_seed": 3001
+        },
+        {
+          "fast_compliant_reference_time_s": 96.99999999999876,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 12.199999999998752,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 84.80000000000001,
+          "track_seed": 3002
+        },
+        {
+          "fast_compliant_reference_time_s": 88.69999999999924,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 14.114285714284946,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 74.58571428571429,
+          "track_seed": 3003
+        },
+        {
+          "fast_compliant_reference_time_s": 70.0000000000003,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 7.000000000000298,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 63.0,
+          "track_seed": 3004
+        },
+        {
+          "fast_compliant_reference_time_s": 68.3000000000004,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 9.957142857143253,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 58.34285714285714,
+          "track_seed": 3005
+        },
+        {
+          "fast_compliant_reference_time_s": 126.79999999999707,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 9.799999999997084,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 116.99999999999999,
+          "track_seed": 3006
+        },
+        {
+          "fast_compliant_reference_time_s": 101.09999999999853,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 16.114285714284236,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 84.9857142857143,
+          "track_seed": 3007
+        },
+        {
+          "fast_compliant_reference_time_s": 94.79999999999889,
+          "reference_completed": true,
+          "reference_gap_over_t_min_s": 17.65714285714175,
+          "reference_max_speed_violation_m_s": 0.0,
+          "t_min_start_s": 77.14285714285714,
+          "track_seed": 3008
+        }
+      ]
+    }
+  },
+  "primary_validation_episode_count": 135,
+  "reserved_final_test_evaluated": false,
+  "result_file_count": 39,
+  "schema_version": 1,
+  "training_diagnostics": {
+    "by_training_seed": {
+      "11": {
+        "completed_training_episode_count": 250,
+        "final_multipliers": {
+          "deadline": 2.1848341795399184,
+          "speed": 3.3118068140609624
+        },
+        "final_simulator_steps": 300000,
+        "has_nonfinite_required_diagnostic": false,
+        "maximum_exposure_count_difference": 1,
+        "maximum_multipliers": {
+          "deadline": 22.998972982793866,
+          "speed": 78.67969608713274
+        },
+        "requirement_exposure_counts": {
+          "20": 84,
+          "40": 83,
+          "60": 83
+        }
+      },
+      "29": {
+        "completed_training_episode_count": 259,
+        "final_multipliers": {
+          "deadline": 2.122299240016708,
+          "speed": 2.4689953088298036
+        },
+        "final_simulator_steps": 300000,
+        "has_nonfinite_required_diagnostic": false,
+        "maximum_exposure_count_difference": 1,
+        "maximum_multipliers": {
+          "deadline": 24.502815146768203,
+          "speed": 58.954349574017655
+        },
+        "requirement_exposure_counts": {
+          "20": 86,
+          "40": 87,
+          "60": 86
+        }
+      },
+      "47": {
+        "completed_training_episode_count": 271,
+        "final_multipliers": {
+          "deadline": 1.4878925947086818,
+          "speed": 2.985367692402737
+        },
+        "final_simulator_steps": 300000,
+        "has_nonfinite_required_diagnostic": false,
+        "maximum_exposure_count_difference": 1,
+        "maximum_multipliers": {
+          "deadline": 27.55561763262856,
+          "speed": 76.91158541541364
+        },
+        "requirement_exposure_counts": {
+          "20": 91,
+          "40": 90,
+          "60": 90
+        }
+      }
+    },
+    "pooled_by_training_requirement_margin": {
+      "20": {
+        "completion_rate": 0.8352490421455939,
+        "episode_count": 261,
+        "mean_deadline_cost_return_s": 21.002220871833,
+        "mean_energy_kwh": 0.2644786889841448,
+        "mean_speed_cost_return_m": 18.505855934523996,
+        "median_deadline_cost_return_s": 1.5752532762713813,
+        "median_speed_cost_return_m": 0.017712856295662934
+      },
+      "40": {
+        "completion_rate": 0.7807692307692308,
+        "episode_count": 260,
+        "mean_deadline_cost_return_s": 15.362154445427745,
+        "mean_energy_kwh": 0.26593968786195626,
+        "mean_speed_cost_return_m": 17.868743192812143,
+        "median_deadline_cost_return_s": 0.0,
+        "median_speed_cost_return_m": 0.0
+      },
+      "60": {
+        "completion_rate": 0.8146718146718147,
+        "episode_count": 259,
+        "mean_deadline_cost_return_s": 7.408471657237693,
+        "mean_energy_kwh": 0.2597160733670209,
+        "mean_speed_cost_return_m": 22.53694298996051,
+        "median_deadline_cost_return_s": 0.0,
+        "median_speed_cost_return_m": 0.0
+      }
+    }
+  }
+}

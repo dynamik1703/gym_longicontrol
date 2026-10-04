@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "study": "Scalar SAC baseline hardening",
+  "experiment_date": "2026-09-24/25",
+  "task": {"max_time_s": 140.0, "max_speed_violation_m_s": 0.0},
+  "track_splits": {
+    "development_calibration": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "v1_exploratory_evaluation": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "paper_final_test_reserved": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017],
+    "paper_final_test_evaluated": false
+  },
+  "training": {
+    "training_seeds": [11, 29, 47],
+    "random_warmup_steps": 10000,
+    "online_steps": [100000, 300000],
+    "validation_curve_steps": [50000, 100000, 150000, 200000, 250000, 300000],
+    "one_million_steps_run": false,
+    "one_million_steps_decision": "not justified because validation curves were flat or collapsed after transient improvements"
+  },
+  "acceptance": {
+    "minimum_rsr_per_training_seed": 0.8888888888888888,
+    "minimum_completion_rate_per_training_seed": 0.8888888888888888,
+    "minimum_speed_compliance_rate_per_training_seed": 0.8888888888888888,
+    "maximum_rsr_range_across_training_seeds": 0.1111111111111111,
+    "maximum_mean_energy_ratio_to_fast_reference": 1.25,
+    "accepted_configuration": null
+  },
+  "iterations": {
+    "v2a": {
+      "configuration_sha256": "321441efe7c86b030d54dd5261a3925d9bdf373965a63ea289965f4ab67c0cdb",
+      "trained_policy_count": 9,
+      "stored_result_count": 72,
+      "exploratory_300k": {
+        "v2-balanced": {"rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.0}, "mean_rsr": 0.0},
+        "v2-energy-oriented": {"rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.0}, "mean_rsr": 0.0},
+        "v2-strong-compliance": {"rsr_by_seed": {"11": 0.0, "29": 0.1111111111111111, "47": 0.0}, "mean_rsr": 0.037037037037037035}
+      },
+      "validation_300k_mean_rsr": {"v2-balanced": 0.0, "v2-energy-oriented": 0.0, "v2-strong-compliance": 0.0},
+      "outcome": "episode-scale inversion fixed, but dense speed cost still induced standstill; one transient learning curve collapsed"
+    },
+    "v2b": {
+      "configuration_sha256": "2ffdadee80f81b6728bfaa4bb2ebda88a67777a82b36d612e12887f051f7c72d",
+      "trained_policy_count": 9,
+      "stored_result_count": 72,
+      "validation_mean_rsr_by_step": {
+        "v2b-balanced": {"50000": 0.037037037037037035, "100000": 0.18518518518518517, "150000": 0.18518518518518517, "200000": 0.3333333333333333, "250000": 0.37037037037037035, "300000": 0.07407407407407407},
+        "v2b-energy-oriented": {"50000": 0.0, "100000": 0.1111111111111111, "150000": 0.07407407407407407, "200000": 0.0, "250000": 0.0, "300000": 0.0},
+        "v2b-strong-compliance": {"50000": 0.0, "100000": 0.0, "150000": 0.037037037037037035, "200000": 0.0, "250000": 0.0, "300000": 0.0}
+      },
+      "exploratory_100k": {
+        "v2b-balanced": {"rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.5555555555555556}, "mean_rsr": 0.18518518518518517},
+        "v2b-energy-oriented": {"rsr_by_seed": {"11": 0.0, "29": 0.3333333333333333, "47": 0.0}, "mean_rsr": 0.1111111111111111},
+        "v2b-strong-compliance": {"rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.0}, "mean_rsr": 0.0}
+      },
+      "exploratory_300k": {
+        "v2b-balanced": {
+          "rsr_by_seed": {"11": 0.0, "29": 0.4444444444444444, "47": 0.2222222222222222},
+          "mean_rsr": 0.2222222222222222,
+          "completion_rate": 0.4444444444444444,
+          "speed_compliance_rate": 0.7777777777777778,
+          "mean_travel_time_s": 147.41481481481057,
+          "median_travel_time_s": 179.99999999999406,
+          "feasible_episode_count": 6,
+          "mean_feasible_energy_kwh": 0.1813497144304778,
+          "median_feasible_energy_kwh": 0.1795453235140418,
+          "failure_mode_counts": {"feasible": 6, "incomplete+time": 13, "incomplete+time+speed": 2, "speed": 4, "time": 2}
+        },
+        "v2b-energy-oriented": {
+          "rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.0},
+          "mean_rsr": 0.0,
+          "completion_rate": 0.0,
+          "speed_compliance_rate": 0.9259259259259259,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406,
+          "feasible_episode_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "median_feasible_energy_kwh": null,
+          "failure_mode_counts": {"incomplete+time": 25, "incomplete+time+speed": 2}
+        },
+        "v2b-strong-compliance": {
+          "rsr_by_seed": {"11": 0.0, "29": 0.0, "47": 0.2222222222222222},
+          "mean_rsr": 0.07407407407407407,
+          "completion_rate": 0.07407407407407407,
+          "speed_compliance_rate": 1.0,
+          "mean_travel_time_s": 172.66666666666123,
+          "median_travel_time_s": 179.99999999999406,
+          "feasible_episode_count": 2,
+          "mean_feasible_energy_kwh": 0.2163504413495692,
+          "median_feasible_energy_kwh": 0.2163504413495692,
+          "failure_mode_counts": {"feasible": 2, "incomplete+time": 25}
+        }
+      }
+    }
+  },
+  "v1_to_best_v2": {
+    "best_v1_configuration": "e05-s0-t025",
+    "best_v1_mean_rsr": 0.07407407407407407,
+    "best_v2_configuration": "v2b-balanced",
+    "best_v2_mean_rsr": 0.2222222222222222,
+    "absolute_mean_rsr_change": 0.14814814814814814,
+    "interpretation": "descriptive improvement with worse seed range; not an accepted baseline"
+  },
+  "paired_energy_against_fast_reference_at_300k": [
+    {"configuration_id": "v2b-balanced", "training_seed": 29, "paired_track_count": 4, "mean_delta_energy_kwh": -0.0537465101336364, "median_delta_energy_kwh": -0.06664987806539825, "mean_energy_ratio": 0.8252379054707623},
+    {"configuration_id": "v2b-balanced", "training_seed": 47, "paired_track_count": 2, "mean_delta_energy_kwh": -0.09608959967786787, "median_delta_energy_kwh": -0.09608959967786787, "mean_energy_ratio": 0.63399189928917},
+    {"configuration_id": "v2b-strong-compliance", "training_seed": 47, "paired_track_count": 2, "mean_delta_energy_kwh": -0.04071495200548844, "median_delta_energy_kwh": -0.04071495200548844, "mean_energy_ratio": 0.8507006205330123}
+  ],
+  "decision_gate": "C: training instability remains dominant",
+  "strong_fair_scalar_baseline_achieved": false
+}

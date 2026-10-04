@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "protocol_id": "llm-reward-search-v1",
+  "phase": "phase-1-infrastructure-frozen",
+  "environment_id": "StochasticTrack-v1",
+  "max_episode_steps": 1800,
+  "task": {
+    "max_time_s": 140.0,
+    "max_speed_violation_m_s": 0.0
+  },
+  "search_budget": {
+    "candidate_counts_by_generation": [5, 3, 3],
+    "maximum_candidates": 11,
+    "maximum_generation": 2,
+    "parent_count": 2,
+    "generation_zero_minimum_distinct_functional_forms": 3
+  },
+  "screening": {
+    "training_seed": 11,
+    "simulator_transitions_per_candidate": 50000,
+    "evaluation_checkpoints": [10000, 25000, 50000],
+    "development_split_id": "development-2000-2008-v1",
+    "development_tracks": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008]
+  },
+  "sac": {
+    "learning_rate": 0.0003,
+    "buffer_size": 1000000,
+    "learning_starts": 100,
+    "batch_size": 256,
+    "tau": 0.005,
+    "gamma": 0.99,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "ent_coef": "auto",
+    "policy_network": [256, 256]
+  },
+  "track_policy": {
+    "historical_exploratory": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper_final_test_reserved": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "retry_policy": {
+    "maximum_repair_attempts_per_candidate": 1,
+    "repair_feedback": "validation-errors-only",
+    "replacement_after_technical_failure": false
+  },
+  "ranking": {
+    "order": [
+      "development_rsr_desc",
+      "completion_rate_desc",
+      "median_incomplete_route_progress_desc",
+      "deadline_compliance_among_completed_desc",
+      "speed_compliance_among_relevant_desc",
+      "speed_violation_severity_among_relevant_asc",
+      "feasible_energy_kwh_asc",
+      "candidate_id_asc"
+    ],
+    "substantial_progress_threshold": 0.5,
+    "energy_scope": "feasible-episodes-only"
+  },
+  "final_evaluation": {
+    "training_seeds": [11, 29, 47],
+    "simulator_transitions_per_seed": 300000,
+    "evaluation_split_id": "validation-3000-3008-v1",
+    "validation_tracks": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "requires_closed_search": true,
+    "winner_only": true
+  },
+  "allowed_candidate_imports": [
+    "math",
+    "benchmarks.llm_reward.reward_api"
+  ],
+  "information_barrier": [
+    "historical benchmark results",
+    "historical reward implementations",
+    "validation metrics or trajectories",
+    "historical exploratory metrics or trajectories",
+    "paper-final tracks or metadata",
+    "precomputed optimal trajectories or actions",
+    "minimum-time or deadline-slack helpers"
+  ]
+}
