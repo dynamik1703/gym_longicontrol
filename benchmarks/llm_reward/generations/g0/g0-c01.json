@@ -1,0 +1,35 @@
+{
+  "candidate_id": "g0-c01",
+  "engineering_effort": {
+    "ast_node_count": 260,
+    "numeric_constant_count": 15,
+    "reward_component_count": 7,
+    "source_line_count": 48
+  },
+  "generation": 0,
+  "parent_candidate_ids": [],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "849d1dd6d96aca3eadfe39d034c8788717fea725319658e5d4baf38ac5096d0a",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 260,
+    "errors": [],
+    "numeric_constant_count": 15,
+    "smoke_component_names": [
+      "completion",
+      "energy_cost",
+      "progress",
+      "speed_cost",
+      "terminal_failure",
+      "time_cost",
+      "timeliness"
+    ],
+    "source_line_count": 48,
+    "source_sha256": "849d1dd6d96aca3eadfe39d034c8788717fea725319658e5d4baf38ac5096d0a",
+    "valid": true
+  },
+  "visible_rationale": "Additive hierarchical shaping combines normalized route progress with explicit terminal completion, on-time completion, speed-limit, and signed-energy terms."
+}

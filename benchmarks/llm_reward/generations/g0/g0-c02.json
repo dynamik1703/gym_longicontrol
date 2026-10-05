@@ -1,0 +1,32 @@
+{
+  "candidate_id": "g0-c02",
+  "engineering_effort": {
+    "ast_node_count": 352,
+    "numeric_constant_count": 25,
+    "reward_component_count": 4,
+    "source_line_count": 44
+  },
+  "generation": 0,
+  "parent_candidate_ids": [],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "780a8f13f4416b60aa64e8ca01210eaabfa08c32af2764a2b081d16429bfeb03",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 352,
+    "errors": [],
+    "numeric_constant_count": 25,
+    "smoke_component_names": [
+      "energy_cost",
+      "potential_change",
+      "speed_barrier",
+      "terminal"
+    ],
+    "source_line_count": 44,
+    "source_sha256": "780a8f13f4416b60aa64e8ca01210eaabfa08c32af2764a2b081d16429bfeb03",
+    "valid": true
+  },
+  "visible_rationale": "Potential-difference shaping rewards gains in route completion while penalizing growth in schedule lag, with bounded overspeed shaping and terminal outcomes."
+}

@@ -5,12 +5,201 @@
     "1": 3,
     "2": 3
   },
-  "candidates": [],
+  "candidates": [
+    {
+      "candidate_id": "g0-c01",
+      "engineering_effort": {
+        "ast_node_count": 260,
+        "numeric_constant_count": 15,
+        "reward_component_count": 7,
+        "source_line_count": 48
+      },
+      "generation": 0,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c01.json",
+      "parent_candidate_ids": [],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c01.py",
+      "source_sha256": "849d1dd6d96aca3eadfe39d034c8788717fea725319658e5d4baf38ac5096d0a",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 260,
+          "errors": [],
+          "numeric_constant_count": 15,
+          "smoke_component_names": [
+            "completion",
+            "energy_cost",
+            "progress",
+            "speed_cost",
+            "terminal_failure",
+            "time_cost",
+            "timeliness"
+          ],
+          "source_line_count": 48,
+          "source_sha256": "849d1dd6d96aca3eadfe39d034c8788717fea725319658e5d4baf38ac5096d0a",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Additive hierarchical shaping combines normalized route progress with explicit terminal completion, on-time completion, speed-limit, and signed-energy terms."
+    },
+    {
+      "candidate_id": "g0-c02",
+      "engineering_effort": {
+        "ast_node_count": 352,
+        "numeric_constant_count": 25,
+        "reward_component_count": 4,
+        "source_line_count": 44
+      },
+      "generation": 0,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c02.json",
+      "parent_candidate_ids": [],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c02.py",
+      "source_sha256": "780a8f13f4416b60aa64e8ca01210eaabfa08c32af2764a2b081d16429bfeb03",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 352,
+          "errors": [],
+          "numeric_constant_count": 25,
+          "smoke_component_names": [
+            "energy_cost",
+            "potential_change",
+            "speed_barrier",
+            "terminal"
+          ],
+          "source_line_count": 44,
+          "source_sha256": "780a8f13f4416b60aa64e8ca01210eaabfa08c32af2764a2b081d16429bfeb03",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Potential-difference shaping rewards gains in route completion while penalizing growth in schedule lag, with bounded overspeed shaping and terminal outcomes."
+    },
+    {
+      "candidate_id": "g0-c03",
+      "engineering_effort": {
+        "ast_node_count": 325,
+        "numeric_constant_count": 23,
+        "reward_component_count": 5,
+        "source_line_count": 51
+      },
+      "generation": 0,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c03.json",
+      "parent_candidate_ids": [],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c03.py",
+      "source_sha256": "44446a4f75a0ad7dea840ccf1e6bf9a7c4fb811c544761f0b1d66eb4e6126dd5",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 325,
+          "errors": [],
+          "numeric_constant_count": 23,
+          "smoke_component_names": [
+            "energy_cost",
+            "productive_progress",
+            "reverse_cost",
+            "terminal",
+            "violation_toll"
+          ],
+          "source_line_count": 51,
+          "source_sha256": "44446a4f75a0ad7dea840ccf1e6bf9a7c4fb811c544761f0b1d66eb4e6126dd5",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Multiplicative gating makes forward progress most valuable when it is speed-compliant and schedule-responsive, while retaining explicit reverse, energy, and terminal terms."
+    },
+    {
+      "candidate_id": "g0-c04",
+      "engineering_effort": {
+        "ast_node_count": 358,
+        "numeric_constant_count": 29,
+        "reward_component_count": 7,
+        "source_line_count": 63
+      },
+      "generation": 0,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c04.json",
+      "parent_candidate_ids": [],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c04.py",
+      "source_sha256": "1af57cbc97c4bc6e5d5dbf4d975b976de415d9044589cccebed5cf5651fd3867",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 358,
+          "errors": [],
+          "numeric_constant_count": 29,
+          "smoke_component_names": [
+            "bounded_energy",
+            "completion",
+            "failure",
+            "on_time",
+            "progress",
+            "schedule_cost",
+            "speed_cost"
+          ],
+          "source_line_count": 63,
+          "source_sha256": "1af57cbc97c4bc6e5d5dbf4d975b976de415d9044589cccebed5cf5651fd3867",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "A banded constraint design applies discrete schedule-lag and overspeed severity tiers, with bounded per-step energy influence and dominant terminal outcomes."
+    },
+    {
+      "candidate_id": "g0-c05",
+      "engineering_effort": {
+        "ast_node_count": 438,
+        "numeric_constant_count": 33,
+        "reward_component_count": 5,
+        "source_line_count": 67
+      },
+      "generation": 0,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c05.json",
+      "parent_candidate_ids": [],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g0/g0-c05.py",
+      "source_sha256": "ee1da65c604d64c78a76a367c1f8307d28356efff5fff16150d97778ae8307f9",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 438,
+          "errors": [],
+          "numeric_constant_count": 33,
+          "smoke_component_names": [
+            "energy_cost",
+            "legal_cost",
+            "progress",
+            "terminal",
+            "tracking_cost"
+          ],
+          "source_line_count": 67,
+          "source_sha256": "ee1da65c604d64c78a76a367c1f8307d28356efff5fff16150d97778ae8307f9",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "A kinematic preview envelope uses visible future limits and braking distance to form a target speed, then combines robust target tracking with progress, legality, energy, and terminal terms."
+    }
+  ],
   "engineering_effort": {
     "explicit_task_metrics_in_reflection": 13,
     "final_training_transitions": 0,
-    "generated_reward_candidate_count": 0,
-    "generation_count_started": 0,
+    "generated_reward_candidate_count": 5,
+    "generation_count_started": 1,
     "human_reward_edits": 0,
     "human_selected_coefficients_during_search": 0,
     "screening_rl_transitions": 0
@@ -19,6 +208,6 @@
   "protocol_id": "llm-reward-search-v1",
   "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
   "schema_version": 1,
-  "status": "NOT_STARTED",
+  "status": "OPEN",
   "winner": null
 }

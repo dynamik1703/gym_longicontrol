@@ -1,0 +1,33 @@
+{
+  "candidate_id": "g0-c03",
+  "engineering_effort": {
+    "ast_node_count": 325,
+    "numeric_constant_count": 23,
+    "reward_component_count": 5,
+    "source_line_count": 51
+  },
+  "generation": 0,
+  "parent_candidate_ids": [],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "44446a4f75a0ad7dea840ccf1e6bf9a7c4fb811c544761f0b1d66eb4e6126dd5",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 325,
+    "errors": [],
+    "numeric_constant_count": 23,
+    "smoke_component_names": [
+      "energy_cost",
+      "productive_progress",
+      "reverse_cost",
+      "terminal",
+      "violation_toll"
+    ],
+    "source_line_count": 51,
+    "source_sha256": "44446a4f75a0ad7dea840ccf1e6bf9a7c4fb811c544761f0b1d66eb4e6126dd5",
+    "valid": true
+  },
+  "visible_rationale": "Multiplicative gating makes forward progress most valuable when it is speed-compliant and schedule-responsive, while retaining explicit reverse, energy, and terminal terms."
+}

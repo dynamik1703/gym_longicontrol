@@ -1,0 +1,35 @@
+{
+  "candidate_id": "g0-c04",
+  "engineering_effort": {
+    "ast_node_count": 358,
+    "numeric_constant_count": 29,
+    "reward_component_count": 7,
+    "source_line_count": 63
+  },
+  "generation": 0,
+  "parent_candidate_ids": [],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "1af57cbc97c4bc6e5d5dbf4d975b976de415d9044589cccebed5cf5651fd3867",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 358,
+    "errors": [],
+    "numeric_constant_count": 29,
+    "smoke_component_names": [
+      "bounded_energy",
+      "completion",
+      "failure",
+      "on_time",
+      "progress",
+      "schedule_cost",
+      "speed_cost"
+    ],
+    "source_line_count": 63,
+    "source_sha256": "1af57cbc97c4bc6e5d5dbf4d975b976de415d9044589cccebed5cf5651fd3867",
+    "valid": true
+  },
+  "visible_rationale": "A banded constraint design applies discrete schedule-lag and overspeed severity tiers, with bounded per-step energy influence and dominant terminal outcomes."
+}
