@@ -476,12 +476,19 @@
         "g1-c03"
       ],
       "ranking": null,
-      "reflection": null,
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g2-c01.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g2-c01.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g2-c01/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c01.py",
       "source_sha256": "410a8350b014963a9d4f5ba59a41677283fc795fd9e592be06e8c970accb1f2f",
-      "status": "validated",
+      "status": "reflected",
       "validation_attempts": [
         {
           "ast_node_count": 613,
@@ -518,12 +525,19 @@
         "g1-c03"
       ],
       "ranking": null,
-      "reflection": null,
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g2-c02.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g2-c02.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g2-c02/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c02.py",
       "source_sha256": "62cdd4d7ce5c572c4cad59ec7ca548a11b13135db4f853c79deaa691549e22b2",
-      "status": "validated",
+      "status": "reflected",
       "validation_attempts": [
         {
           "ast_node_count": 571,
@@ -559,12 +573,19 @@
         "g1-c03"
       ],
       "ranking": null,
-      "reflection": null,
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g2-c03.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g2-c03.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g2-c03/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c03.py",
       "source_sha256": "e16c20b61a70e49308b8a5822a9290413288c7575abfb3227e65edd9b5b22cd5",
-      "status": "validated",
+      "status": "reflected",
       "validation_attempts": [
         {
           "ast_node_count": 648,
@@ -595,7 +616,7 @@
     "generation_count_started": 3,
     "human_reward_edits": 0,
     "human_selected_coefficients_during_search": 0,
-    "screening_rl_transitions": 400000
+    "screening_rl_transitions": 550000
   },
   "parent_selections": [
     {
