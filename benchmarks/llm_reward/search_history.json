@@ -283,13 +283,136 @@
         }
       ],
       "visible_rationale": "A kinematic preview envelope uses visible future limits and braking distance to form a target speed, then combines robust target tracking with progress, legality, energy, and terminal terms."
+    },
+    {
+      "candidate_id": "g1-c01",
+      "engineering_effort": {
+        "ast_node_count": 485,
+        "numeric_constant_count": 37,
+        "reward_component_count": 5,
+        "source_line_count": 70
+      },
+      "generation": 1,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c01.json",
+      "parent_candidate_ids": [
+        "g0-c02",
+        "g0-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c01.py",
+      "source_sha256": "ba4b441c1749ece94570cd38db78548727e85e5e6e814c8b18b7f7a5fd16a94d",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 485,
+          "errors": [],
+          "numeric_constant_count": 37,
+          "smoke_component_names": [
+            "current_speed_cost",
+            "energy_cost",
+            "potential_change",
+            "preview_speed_cost",
+            "terminal"
+          ],
+          "source_line_count": 70,
+          "source_sha256": "ba4b441c1749ece94570cd38db78548727e85e5e6e814c8b18b7f7a5fd16a94d",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Retains the reliable progress-and-schedule potential from the parent while replacing its weak normalized speed penalty with strong quadratic costs for crossing the current limit, approaching it without margin, and entering lower future limits too fast."
+    },
+    {
+      "candidate_id": "g1-c02",
+      "engineering_effort": {
+        "ast_node_count": 529,
+        "numeric_constant_count": 43,
+        "reward_component_count": 6,
+        "source_line_count": 78
+      },
+      "generation": 1,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c02.json",
+      "parent_candidate_ids": [
+        "g0-c02",
+        "g0-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c02.py",
+      "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 529,
+          "errors": [],
+          "numeric_constant_count": 43,
+          "smoke_component_names": [
+            "compliant_progress",
+            "current_violation_toll",
+            "energy_cost",
+            "preview_toll",
+            "reverse_cost",
+            "terminal"
+          ],
+          "source_line_count": 78,
+          "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Makes progress valuable only while current and upcoming speed constraints are respected, and adds steep current-violation and preview tolls. This directly targets the universal speed failures while retaining deadline-responsive urgency and completion incentives."
+    },
+    {
+      "candidate_id": "g1-c03",
+      "engineering_effort": {
+        "ast_node_count": 535,
+        "numeric_constant_count": 39,
+        "reward_component_count": 7,
+        "source_line_count": 76
+      },
+      "generation": 1,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c03.json",
+      "parent_candidate_ids": [
+        "g0-c02",
+        "g0-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c03.py",
+      "source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 535,
+          "errors": [],
+          "numeric_constant_count": 39,
+          "smoke_component_names": [
+            "energy_cost",
+            "reverse_cost",
+            "route_progress",
+            "smoothness_cost",
+            "speed_guard",
+            "target_tracking",
+            "terminal"
+          ],
+          "source_line_count": 76,
+          "source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Tracks the deadline-implied speed only up to a buffered ceiling derived from current and visible future limits. A boundary guard, compliance-gated progress, and mild smoothness and energy costs aim for timely, anticipatory, efficient legal driving."
     }
   ],
   "engineering_effort": {
     "explicit_task_metrics_in_reflection": 13,
     "final_training_transitions": 0,
-    "generated_reward_candidate_count": 5,
-    "generation_count_started": 1,
+    "generated_reward_candidate_count": 8,
+    "generation_count_started": 2,
     "human_reward_edits": 0,
     "human_selected_coefficients_during_search": 0,
     "screening_rl_transitions": 250000

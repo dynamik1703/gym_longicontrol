@@ -1,0 +1,37 @@
+{
+  "candidate_id": "g1-c02",
+  "engineering_effort": {
+    "ast_node_count": 529,
+    "numeric_constant_count": 43,
+    "reward_component_count": 6,
+    "source_line_count": 78
+  },
+  "generation": 1,
+  "parent_candidate_ids": [
+    "g0-c02",
+    "g0-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 529,
+    "errors": [],
+    "numeric_constant_count": 43,
+    "smoke_component_names": [
+      "compliant_progress",
+      "current_violation_toll",
+      "energy_cost",
+      "preview_toll",
+      "reverse_cost",
+      "terminal"
+    ],
+    "source_line_count": 78,
+    "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
+    "valid": true
+  },
+  "visible_rationale": "Makes progress valuable only while current and upcoming speed constraints are respected, and adds steep current-violation and preview tolls. This directly targets the universal speed failures while retaining deadline-responsive urgency and completion incentives."
+}

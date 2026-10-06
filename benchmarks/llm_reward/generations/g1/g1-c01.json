@@ -1,0 +1,36 @@
+{
+  "candidate_id": "g1-c01",
+  "engineering_effort": {
+    "ast_node_count": 485,
+    "numeric_constant_count": 37,
+    "reward_component_count": 5,
+    "source_line_count": 70
+  },
+  "generation": 1,
+  "parent_candidate_ids": [
+    "g0-c02",
+    "g0-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "ba4b441c1749ece94570cd38db78548727e85e5e6e814c8b18b7f7a5fd16a94d",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 485,
+    "errors": [],
+    "numeric_constant_count": 37,
+    "smoke_component_names": [
+      "current_speed_cost",
+      "energy_cost",
+      "potential_change",
+      "preview_speed_cost",
+      "terminal"
+    ],
+    "source_line_count": 70,
+    "source_sha256": "ba4b441c1749ece94570cd38db78548727e85e5e6e814c8b18b7f7a5fd16a94d",
+    "valid": true
+  },
+  "visible_rationale": "Retains the reliable progress-and-schedule potential from the parent while replacing its weak normalized speed penalty with strong quadratic costs for crossing the current limit, approaching it without margin, and entering lower future limits too fast."
+}

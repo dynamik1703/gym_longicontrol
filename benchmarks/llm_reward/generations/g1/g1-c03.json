@@ -1,0 +1,38 @@
+{
+  "candidate_id": "g1-c03",
+  "engineering_effort": {
+    "ast_node_count": 535,
+    "numeric_constant_count": 39,
+    "reward_component_count": 7,
+    "source_line_count": 76
+  },
+  "generation": 1,
+  "parent_candidate_ids": [
+    "g0-c02",
+    "g0-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 535,
+    "errors": [],
+    "numeric_constant_count": 39,
+    "smoke_component_names": [
+      "energy_cost",
+      "reverse_cost",
+      "route_progress",
+      "smoothness_cost",
+      "speed_guard",
+      "target_tracking",
+      "terminal"
+    ],
+    "source_line_count": 76,
+    "source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
+    "valid": true
+  },
+  "visible_rationale": "Tracks the deadline-implied speed only up to a buffered ceiling derived from current and visible future limits. A boundary guard, compliance-gated progress, and mild smoothness and energy costs aim for timely, anticipatory, efficient legal driving."
+}
