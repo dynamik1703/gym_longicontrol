@@ -1,0 +1,503 @@
+{
+  "completed_at": "2026-10-06T21:25:20.084228+00:00",
+  "created_at": "2026-10-06T16:25:48.471263+00:00",
+  "execution_order": [
+    {
+      "condition_id": "sac-no-her",
+      "training_seed": 11
+    },
+    {
+      "condition_id": "sac-no-her",
+      "training_seed": 29
+    },
+    {
+      "condition_id": "sac-no-her",
+      "training_seed": 47
+    },
+    {
+      "condition_id": "sac-her",
+      "training_seed": 11
+    },
+    {
+      "condition_id": "sac-her",
+      "training_seed": 29
+    },
+    {
+      "condition_id": "sac-her",
+      "training_seed": 47
+    }
+  ],
+  "paper_test_tracks_opened": false,
+  "policies": {
+    "sac-her:seed-11": {
+      "completed_at": "2026-10-06T19:25:31.401567+00:00",
+      "condition_id": "sac-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-her/training-seed-11/step-050000/model.zip",
+          "model_sha256": "1a722220cd837e0ca0f87c629d647faaef16f83b35ddef85e1c835b5596e0538",
+          "result_path": "sac-her/training-seed-11/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 98200,
+          "model_path": "sac-her/training-seed-11/step-100000/model.zip",
+          "model_sha256": "8345a8c7b24a0333cf8825d87cba89d679ebbcc0d1fda46762a96b89b1ab5bfd",
+          "result_path": "sac-her/training-seed-11/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-her/training-seed-11/step-150000/model.zip",
+          "model_sha256": "00e784909ccad87b901e759c4df656c7ca95691877ab63a87b11464682612cc1",
+          "result_path": "sac-her/training-seed-11/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-her/training-seed-11/step-200000/model.zip",
+          "model_sha256": "9e27fac1fac1e05875c12d0429f4882757b7495132f95d178ae2ceb37d4f122d",
+          "result_path": "sac-her/training-seed-11/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-her/training-seed-11/step-250000/model.zip",
+          "model_sha256": "a29a3d9500fc63aca2488cdfc62a525385c70ae180a1219960b05796f62fd9c7",
+          "result_path": "sac-her/training-seed-11/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 298200,
+          "model_path": "sac-her/training-seed-11/step-300000/model.zip",
+          "model_sha256": "b269c39998798eef54c47eeda71c43329a1ba4c488e4c50f175118b45ee3d687",
+          "result_path": "sac-her/training-seed-11/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-her/training-seed-11/step-300000/model.zip",
+      "final_model_sha256": "b269c39998798eef54c47eeda71c43329a1ba4c488e4c50f175118b45ee3d687",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-her/training-seed-11/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T18:21:38.701425+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-her/training-seed-11/training-outcomes.json",
+      "training_seed": 11,
+      "training_transitions": 300000,
+      "training_wall_time_s": 3809.7921418329934,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-her/training-seed-11/validation-result.json",
+      "validation_status": "COMPLETE"
+    },
+    "sac-her:seed-29": {
+      "completed_at": "2026-10-06T20:25:35.111311+00:00",
+      "condition_id": "sac-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-her/training-seed-29/step-050000/model.zip",
+          "model_sha256": "bd1ed08cb8a717746b286f18223767ec002b45da36b8084d0eef680ddd0cdc27",
+          "result_path": "sac-her/training-seed-29/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 11649,
+          "gradient_updates": 98200,
+          "model_path": "sac-her/training-seed-29/step-100000/model.zip",
+          "model_sha256": "1e364ad28e03fc82197ac6a8b26b536fe64e2b99937ac5da77a2a8a13b251b61",
+          "result_path": "sac-her/training-seed-29/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-her/training-seed-29/step-150000/model.zip",
+          "model_sha256": "75482daeee3dec5ef79a3c0a31cebc5834f359349fa306c9de7b2a8f4f3b5102",
+          "result_path": "sac-her/training-seed-29/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-her/training-seed-29/step-200000/model.zip",
+          "model_sha256": "a6bab295e36e7cd9547a84383faa141905cc57ff9bb47e615b9a5ab67cf5ed65",
+          "result_path": "sac-her/training-seed-29/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-her/training-seed-29/step-250000/model.zip",
+          "model_sha256": "cee62d308764f8ba3ba5fd0c23380e602d65e0d133f6d4b2573b3467743d0a75",
+          "result_path": "sac-her/training-seed-29/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 298200,
+          "model_path": "sac-her/training-seed-29/step-300000/model.zip",
+          "model_sha256": "fd14d86aa0a8a6271d8bc8e6665d4614fd8dba4496feafb9a21d85e0ab85009a",
+          "result_path": "sac-her/training-seed-29/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-her/training-seed-29/step-300000/model.zip",
+      "final_model_sha256": "fd14d86aa0a8a6271d8bc8e6665d4614fd8dba4496feafb9a21d85e0ab85009a",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-her/training-seed-29/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T19:25:31.405669+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-her/training-seed-29/training-outcomes.json",
+      "training_seed": 29,
+      "training_transitions": 300000,
+      "training_wall_time_s": 3582.0980573330016,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-her/training-seed-29/validation-result.json",
+      "validation_status": "COMPLETE"
+    },
+    "sac-her:seed-47": {
+      "completed_at": "2026-10-06T21:24:49.882383+00:00",
+      "condition_id": "sac-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-her/training-seed-47/step-050000/model.zip",
+          "model_sha256": "62e7a41e0fc51549e26c9065629727a5835a9f451ee487c439cf8d0ec01a351f",
+          "result_path": "sac-her/training-seed-47/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 98200,
+          "model_path": "sac-her/training-seed-47/step-100000/model.zip",
+          "model_sha256": "cef2c66d3ea9cf1e597a7eb4630e1593fe2bdd3ba965966f00fa429fd835ca04",
+          "result_path": "sac-her/training-seed-47/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-her/training-seed-47/step-150000/model.zip",
+          "model_sha256": "8e6bc78368d53c8b71106703545a2fdd36e7c23b27a257a0bfa94b2bda0ff537",
+          "result_path": "sac-her/training-seed-47/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-her/training-seed-47/step-200000/model.zip",
+          "model_sha256": "e5870c7180d3ed1ec24bcf8e20b6e1239b8e43cb4bfd8cbf7f8cbec4b7d43c45",
+          "result_path": "sac-her/training-seed-47/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-her/training-seed-47/step-250000/model.zip",
+          "model_sha256": "0a4fc2e01dc6dbb83248e05446634af6ca88ea5095e3f0ee392ac03450c83b03",
+          "result_path": "sac-her/training-seed-47/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 298200,
+          "model_path": "sac-her/training-seed-47/step-300000/model.zip",
+          "model_sha256": "aaf41eacd251d4bd52fe7d9f90a87f42c3fb0648be0d2f1f04581f5cb136227d",
+          "result_path": "sac-her/training-seed-47/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-her/training-seed-47/step-300000/model.zip",
+      "final_model_sha256": "aaf41eacd251d4bd52fe7d9f90a87f42c3fb0648be0d2f1f04581f5cb136227d",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-her/training-seed-47/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T20:25:35.114905+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-her/training-seed-47/training-outcomes.json",
+      "training_seed": 47,
+      "training_transitions": 300000,
+      "training_wall_time_s": 3532.5294327090087,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-her/training-seed-47/validation-result.json",
+      "validation_status": "COMPLETE"
+    },
+    "sac-no-her:seed-11": {
+      "completed_at": "2026-10-06T17:03:45.336763+00:00",
+      "condition_id": "sac-no-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-no-her/training-seed-11/step-050000/model.zip",
+          "model_sha256": "4147113ce0275a0faa75e13e812f1d57b7ab5f6dc7f481b0abc752ad9bdd4075",
+          "result_path": "sac-no-her/training-seed-11/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 98200,
+          "model_path": "sac-no-her/training-seed-11/step-100000/model.zip",
+          "model_sha256": "92ca73d7c6a63c34e13659b48bf341766eeb15f788a133f281116e35d5fc2240",
+          "result_path": "sac-no-her/training-seed-11/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-no-her/training-seed-11/step-150000/model.zip",
+          "model_sha256": "ba4223a2ff100488cf5e1170e11d51ac87f7d0afbdbcd3736b83e7318b302c65",
+          "result_path": "sac-no-her/training-seed-11/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-no-her/training-seed-11/step-200000/model.zip",
+          "model_sha256": "db3f465761bbc0e7a1cc7e8ed06aea699d65ba208f86261c9b1815e03ea9c477",
+          "result_path": "sac-no-her/training-seed-11/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-no-her/training-seed-11/step-250000/model.zip",
+          "model_sha256": "34db20d14645d983a6c46fe3342d84824487a678a4dc9e0d0b1e7ce97d960bff",
+          "result_path": "sac-no-her/training-seed-11/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 298200,
+          "model_path": "sac-no-her/training-seed-11/step-300000/model.zip",
+          "model_sha256": "9ae325bd8f89f72cc3b1fb8fba7b96b37e33d909a5c001f36251ac2b25401f46",
+          "result_path": "sac-no-her/training-seed-11/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-no-her/training-seed-11/step-300000/model.zip",
+      "final_model_sha256": "9ae325bd8f89f72cc3b1fb8fba7b96b37e33d909a5c001f36251ac2b25401f46",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-no-her/training-seed-11/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T16:25:48.473768+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-no-her/training-seed-11/training-outcomes.json",
+      "training_seed": 11,
+      "training_transitions": 300000,
+      "training_wall_time_s": 2254.2026221669657,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-no-her/training-seed-11/validation-result.json",
+      "validation_status": "COMPLETE"
+    },
+    "sac-no-her:seed-29": {
+      "completed_at": "2026-10-06T17:42:26.379289+00:00",
+      "condition_id": "sac-no-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-no-her/training-seed-29/step-050000/model.zip",
+          "model_sha256": "429eeb526a743571d155a096da4db0ff7c5ecf3d0ccee6ddd041e9cfee00620d",
+          "result_path": "sac-no-her/training-seed-29/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 98200,
+          "model_path": "sac-no-her/training-seed-29/step-100000/model.zip",
+          "model_sha256": "2a90020f31d16251c57bfda8dc1cb11e25696f9ee3d049460195304aa241d44f",
+          "result_path": "sac-no-her/training-seed-29/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-no-her/training-seed-29/step-150000/model.zip",
+          "model_sha256": "854069373584371edd6d1dbec0228f01273371d63e061e0f6a22ffa65f898f4d",
+          "result_path": "sac-no-her/training-seed-29/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-no-her/training-seed-29/step-200000/model.zip",
+          "model_sha256": "9f7868321ff2ba083e8fbb73f2eb45106808e15bc9e426088c68ceb3c0af0a7b",
+          "result_path": "sac-no-her/training-seed-29/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-no-her/training-seed-29/step-250000/model.zip",
+          "model_sha256": "1b35b8218d7cecbba0198dc756baf014a83f212decef6e3d72c7956882d50d75",
+          "result_path": "sac-no-her/training-seed-29/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 298200,
+          "model_path": "sac-no-her/training-seed-29/step-300000/model.zip",
+          "model_sha256": "d0b85ba4f618c7842f77d01dd23ba63bc3eb4fbe40ec559410604dd55809ae03",
+          "result_path": "sac-no-her/training-seed-29/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-no-her/training-seed-29/step-300000/model.zip",
+      "final_model_sha256": "d0b85ba4f618c7842f77d01dd23ba63bc3eb4fbe40ec559410604dd55809ae03",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-no-her/training-seed-29/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T17:03:45.339917+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-no-her/training-seed-29/training-outcomes.json",
+      "training_seed": 29,
+      "training_transitions": 300000,
+      "training_wall_time_s": 2298.5028820830194,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-no-her/training-seed-29/validation-result.json",
+      "validation_status": "COMPLETE"
+    },
+    "sac-no-her:seed-47": {
+      "completed_at": "2026-10-06T18:21:38.697605+00:00",
+      "condition_id": "sac-no-her",
+      "development_checkpoints": [
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 48200,
+          "model_path": "sac-no-her/training-seed-47/step-050000/model.zip",
+          "model_sha256": "60c25d089f3aae6ce6693b01aff1218c67c90d2f97fbe0156b55f48a29a4edb6",
+          "result_path": "sac-no-her/training-seed-47/step-050000/development-result.json",
+          "training_transitions": 50000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 98200,
+          "model_path": "sac-no-her/training-seed-47/step-100000/model.zip",
+          "model_sha256": "78817939e1fafccd7e44ce48318d53374acdcc2d88853a8f87bc229446fe2e1e",
+          "result_path": "sac-no-her/training-seed-47/step-100000/development-result.json",
+          "training_transitions": 100000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 148200,
+          "model_path": "sac-no-her/training-seed-47/step-150000/model.zip",
+          "model_sha256": "734ba5811e6b0a9529387c1fd12889edb3935d69542f1cac24a40231502e42a7",
+          "result_path": "sac-no-her/training-seed-47/step-150000/development-result.json",
+          "training_transitions": 150000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 198200,
+          "model_path": "sac-no-her/training-seed-47/step-200000/model.zip",
+          "model_sha256": "11c5069cc5cff4242ca76289612aad93374463fc2efa899e5c087ba848b4ee54",
+          "result_path": "sac-no-her/training-seed-47/step-200000/development-result.json",
+          "training_transitions": 200000
+        },
+        {
+          "evaluation_simulator_transitions": 16200,
+          "gradient_updates": 248200,
+          "model_path": "sac-no-her/training-seed-47/step-250000/model.zip",
+          "model_sha256": "e555442c88abc766dee21380584a018c1702edd97f69315d8aeeb2e4f0653b20",
+          "result_path": "sac-no-her/training-seed-47/step-250000/development-result.json",
+          "training_transitions": 250000
+        },
+        {
+          "evaluation_simulator_transitions": 14857,
+          "gradient_updates": 298200,
+          "model_path": "sac-no-her/training-seed-47/step-300000/model.zip",
+          "model_sha256": "5cda2ee93718e7ab7ae898e827c4c72031a7d53e6d214d20416c5788b3219276",
+          "result_path": "sac-no-her/training-seed-47/step-300000/development-result.json",
+          "training_transitions": 300000
+        }
+      ],
+      "final_model_path": "sac-no-her/training-seed-47/step-300000/model.zip",
+      "final_model_sha256": "5cda2ee93718e7ab7ae898e827c4c72031a7d53e6d214d20416c5788b3219276",
+      "gradient_updates": 298200,
+      "replay_diagnostics_path": "sac-no-her/training-seed-47/replay-diagnostics.json",
+      "resolved_device": "cpu",
+      "started_at": "2026-10-06T17:42:26.382708+00:00",
+      "status": "TRAINING_COMPLETE",
+      "training_outcomes_path": "sac-no-her/training-seed-47/training-outcomes.json",
+      "training_seed": 47,
+      "training_transitions": 300000,
+      "training_wall_time_s": 2329.9343303320056,
+      "validation_episode_count": 9,
+      "validation_result_path": "sac-no-her/training-seed-47/validation-result.json",
+      "validation_status": "COMPLETE"
+    }
+  },
+  "provenance": {
+    "authorized_restart_from": {
+      "active_lock_sha256": "b90cc0672a84f58751a5a4d1c490d20b0fcc12c3b2f74854bc94d70ca5f9f6f9",
+      "interruption": {
+        "at": "2026-10-06T16:14:23.777034+00:00",
+        "message": "Stored terminal observation has wrong position",
+        "type": "RuntimeError"
+      },
+      "manifest_sha256": "55a88a291d82be5ea0ba329d0ab4d26456e899401c52af58eb561776a261eb30",
+      "paper_test_tracks_opened": false,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_task/runs/goal-conditioned-her-v1",
+      "recorded_totals": {
+        "development_evaluation_transitions": 0,
+        "training_transitions": 0,
+        "validation_evaluation_transitions": 0
+      },
+      "status": "INTERRUPTED",
+      "validation_opened": false
+    },
+    "branch": "research/goal-conditioned-her",
+    "configuration_sha256": "87fee0a3f74b9f8365b9f4c5004e3b7bf880a3739d890462780fc1d70294f6ec",
+    "dependencies": {
+      "gym_longicontrol": "1.0.0",
+      "gymnasium": "1.3.0",
+      "numpy": "2.4.6",
+      "stable_baselines3": "2.9.0",
+      "torch": "2.14.0"
+    },
+    "execution_runner_commit": "ef53e8edc45634a7b85130af2be82364a8f6b70e",
+    "execution_source_sha256": {
+      "benchmarks/goal_conditioned/diagnostics.py": "1b953cbafe280ab0e508b067e74632106e6e8d36a72b72e1fed6efe2522509c9",
+      "benchmarks/goal_conditioned/evaluation.py": "3dab250b438af92a3d11b222337e8974903a1c6ec0c7f9ffcf15399fb38edacf",
+      "benchmarks/goal_conditioned/runner.py": "9b3e4829fa5475f0cb96cca9fcc8ea34ed2198b042d2260c4642dacf024c14bc"
+    },
+    "llm_reward_search": {
+      "frozen_artifact_count_verified": 191,
+      "history_sha256": "63e8e873cb14f4f0ef97ebe127ecbb7b5610344c7bd2f43e3dfc60bba5848ff6",
+      "status": "CLOSED",
+      "winner_candidate_id": "g1-c02"
+    },
+    "preparation_commit": "f74eb1120dbdfec5107e511db9db79d035c75cd0",
+    "scientific_source_sha256": {
+      "benchmarks/goal_conditioned/DESIGN.md": "d278bf22dd91a9e3539c8f07202945c2fe33aa51cd131b4777fdbf386f3dddc2",
+      "benchmarks/goal_conditioned/PROTOCOL.md": "3b31a63e4cc71886aceab007156c1f982a71fbad6ec4cb87377d83b8b33a70ec",
+      "benchmarks/goal_conditioned/canonical.json": "330b483fece9f707fc132cd516a8b98d57c0e87e490251cb8f38b7bc510311cc",
+      "benchmarks/goal_conditioned/environment.py": "d91badfe7ebb70c56b3688bf44771b1579cef80620d3f371035516eb3f24f421",
+      "benchmarks/goal_conditioned/goal.py": "70743d8e488579eebb30e7c8a8b718f6811e90e8c43658225eac7c4bbcef7875",
+      "benchmarks/goal_conditioned/replay_buffer.py": "54c72aec91485f0867c64f646b24bb1cbf51e18e2a59b4e527a1144e3b6ef4a3"
+    }
+  },
+  "requested_device": "cpu",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "study_id": "goal-conditioned-her-v1-stochastic-v1",
+  "totals": {
+    "development_evaluation_transitions": 577306,
+    "training_transitions": 1800000,
+    "validation_evaluation_transitions": 97200
+  },
+  "updated_at": "2026-10-06T21:25:20.084242+00:00",
+  "validation_opened": true,
+  "validation_opened_at": "2026-10-06T21:24:49.963464+00:00"
+}
