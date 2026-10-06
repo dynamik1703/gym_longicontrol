@@ -27,7 +27,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 163.40012570057647
         },
-        "rank_at_selection": 4
+        "rank_at_selection": 6
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c01.json",
@@ -84,7 +84,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 267.70644996462335
         },
-        "rank_at_selection": 1
+        "rank_at_selection": 3
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c02.json",
@@ -138,7 +138,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 403.8312737888161
         },
-        "rank_at_selection": 2
+        "rank_at_selection": 4
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c03.json",
@@ -193,7 +193,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 51.870313130721314
         },
-        "rank_at_selection": 5
+        "rank_at_selection": 7
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c04.json",
@@ -250,7 +250,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 187.88733515326757
         },
-        "rank_at_selection": 3
+        "rank_at_selection": 5
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c05.json",
@@ -298,13 +298,31 @@
         "g0-c02",
         "g0-c03"
       ],
-      "ranking": null,
-      "reflection": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.0,
+          "deadline_compliance_among_completed": 0.0,
+          "development_rsr": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "median_incomplete_route_progress": 0.0,
+          "speed_compliance_among_relevant": 0.0,
+          "speed_violation_severity_among_relevant": null
+        },
+        "rank_at_selection": 8
+      },
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g1-c01.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g1-c01.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g1-c01/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c01.py",
       "source_sha256": "ba4b441c1749ece94570cd38db78548727e85e5e6e814c8b18b7f7a5fd16a94d",
-      "status": "validated",
+      "status": "ranked",
       "validation_attempts": [
         {
           "ast_node_count": 485,
@@ -338,13 +356,31 @@
         "g0-c02",
         "g0-c03"
       ],
-      "ranking": null,
-      "reflection": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.3333333333333333,
+          "deadline_compliance_among_completed": 1.0,
+          "development_rsr": 0.2222222222222222,
+          "mean_feasible_energy_kwh": 0.27236955005465935,
+          "median_incomplete_route_progress": 0.5162130335380467,
+          "speed_compliance_among_relevant": 0.5,
+          "speed_violation_severity_among_relevant": 0.265025594720508
+        },
+        "rank_at_selection": 1
+      },
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g1-c02.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g1-c02.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g1-c02/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c02.py",
       "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
-      "status": "validated",
+      "status": "ranked",
       "validation_attempts": [
         {
           "ast_node_count": 529,
@@ -379,13 +415,31 @@
         "g0-c02",
         "g0-c03"
       ],
-      "ranking": null,
-      "reflection": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.6666666666666666,
+          "deadline_compliance_among_completed": 0.16666666666666666,
+          "development_rsr": 0.1111111111111111,
+          "mean_feasible_energy_kwh": 0.221397190987718,
+          "median_incomplete_route_progress": 0.6702127313328996,
+          "speed_compliance_among_relevant": 1.0,
+          "speed_violation_severity_among_relevant": 0.0
+        },
+        "rank_at_selection": 2
+      },
+      "reflection": {
+        "json_path": "runs/llm-reward-search/reflections/g1-c03.json",
+        "markdown_path": "runs/llm-reward-search/reflections/g1-c03.md"
+      },
       "repair_attempt_count": 0,
-      "screening": null,
+      "screening": {
+        "gradient_updates": 49899,
+        "result_path": "runs/llm-reward-search/screening/g1-c03/screening-result.json",
+        "simulator_transitions": 50000
+      },
       "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g1/g1-c03.py",
       "source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
-      "status": "validated",
+      "status": "ranked",
       "validation_attempts": [
         {
           "ast_node_count": 535,
@@ -415,7 +469,7 @@
     "generation_count_started": 2,
     "human_reward_edits": 0,
     "human_selected_coefficients_during_search": 0,
-    "screening_rl_transitions": 250000
+    "screening_rl_transitions": 400000
   },
   "parent_selections": [
     {
@@ -425,6 +479,14 @@
       ],
       "eligible_candidate_count": 5,
       "for_generation": 1
+    },
+    {
+      "candidate_ids": [
+        "g1-c02",
+        "g1-c03"
+      ],
+      "eligible_candidate_count": 8,
+      "for_generation": 2
     }
   ],
   "protocol_id": "llm-reward-search-v1",

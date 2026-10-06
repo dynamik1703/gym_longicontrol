@@ -1,0 +1,155 @@
+{
+  "candidate_id": "g1-c03",
+  "candidate_source_sha256": "960b10469e4f1d43b6e159c76ad91a55ddae15330b610c4cb481d499151af21d",
+  "development_metrics": {
+    "completion_rate": 0.6666666666666666,
+    "deadline_compliance_rate_among_completed": 0.16666666666666666,
+    "episode_count": 9,
+    "episode_length_steps": {
+      "count": 9,
+      "max": 1800.0,
+      "mean": 1621.3333333333333,
+      "median": 1639.0,
+      "min": 1370.0
+    },
+    "failure_mode_counts": {
+      "feasible": 1,
+      "incomplete+time": 3,
+      "time": 5
+    },
+    "feasible_energy_kwh": {
+      "count": 1,
+      "max": 0.221397190987718,
+      "mean": 0.221397190987718,
+      "median": 0.221397190987718,
+      "min": 0.221397190987718
+    },
+    "integrated_speed_violation_m": {
+      "count": 9,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "max_speed_violation_m_s": {
+      "count": 9,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "min": 0.0
+    },
+    "mean_integrated_speed_violation_m_among_relevant": 0.0,
+    "normalized_route_progress_for_incomplete": {
+      "count": 3,
+      "max": 0.8501746602957327,
+      "mean": 0.6037003997208034,
+      "median": 0.6702127313328996,
+      "min": 0.2907138075337778
+    },
+    "requirement_satisfaction_rate": 0.1111111111111111,
+    "speed_compliance_rate_among_relevant": 1.0,
+    "travel_time_s": {
+      "count": 9,
+      "max": 179.99999999999406,
+      "mean": 162.1333333333284,
+      "median": 163.89999999999498,
+      "min": 136.9999999999965
+    }
+  },
+  "episode_reward_statistics": {
+    "count": 35,
+    "max": 1627.609017575509,
+    "mean": -3537.3814101793214,
+    "min": -25060.173666357994,
+    "std": 6185.636148198877
+  },
+  "generation": 1,
+  "information_scope": "development-only-aggregate",
+  "protocol_id": "llm-reward-search-v1",
+  "ranking_fields": {
+    "completion_rate": 0.6666666666666666,
+    "deadline_compliance_among_completed": 0.16666666666666666,
+    "development_rsr": 0.1111111111111111,
+    "mean_feasible_energy_kwh": 0.221397190987718,
+    "median_incomplete_route_progress": 0.6702127313328996,
+    "speed_compliance_among_relevant": 1.0,
+    "speed_violation_severity_among_relevant": 0.0
+  },
+  "reward_component_statistics": {
+    "energy_cost": {
+      "count": 50000,
+      "max": 0.003940711089313923,
+      "mean": -0.000657619214008767,
+      "min": -0.009645323405447211,
+      "std": 0.001682669457277686
+    },
+    "reverse_cost": {
+      "count": 50000,
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0,
+      "std": 0.0
+    },
+    "route_progress": {
+      "count": 50000,
+      "max": 1.1643842643227587,
+      "mean": 0.38512143831164075,
+      "min": 0.0,
+      "std": 0.2700974824943214
+    },
+    "smoothness_cost": {
+      "count": 50000,
+      "max": -0.0,
+      "mean": -0.00902773396303042,
+      "min": -0.071757161003582,
+      "std": 0.015212471260506856
+    },
+    "speed_guard": {
+      "count": 50000,
+      "max": -0.0,
+      "mean": -0.5158937601852462,
+      "min": -204.17490006025236,
+      "std": 6.285698767645841
+    },
+    "target_tracking": {
+      "count": 50000,
+      "max": -1.965507917832473e-08,
+      "mean": -2.7785662900198957,
+      "min": -44.38622358900634,
+      "std": 4.645496981166864
+    },
+    "terminal": {
+      "count": 50000,
+      "max": 1440.0,
+      "mean": 0.43450071940722534,
+      "min": -1311.7821834008787,
+      "std": 35.57349919694124
+    }
+  },
+  "schema_version": 1,
+  "training_success_trajectory": {
+    "completed_training_episode_count": 35,
+    "development_checkpoints": [
+      {
+        "completion_rate": 0.1111111111111111,
+        "cumulative_training_successes": 2,
+        "requirement_satisfaction_rate": 0.1111111111111111,
+        "simulator_transitions": 10000
+      },
+      {
+        "completion_rate": 1.0,
+        "cumulative_training_successes": 5,
+        "requirement_satisfaction_rate": 0.3333333333333333,
+        "simulator_transitions": 25000
+      },
+      {
+        "completion_rate": 0.6666666666666666,
+        "cumulative_training_successes": 12,
+        "requirement_satisfaction_rate": 0.1111111111111111,
+        "simulator_transitions": 50000
+      }
+    ],
+    "first_success_training_step": 5720,
+    "successful_training_episode_count": 12
+  }
+}
