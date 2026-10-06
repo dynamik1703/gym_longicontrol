@@ -1,0 +1,132 @@
+{
+  "candidate_id": "g0-c02",
+  "candidate_source_sha256": "780a8f13f4416b60aa64e8ca01210eaabfa08c32af2764a2b081d16429bfeb03",
+  "development_metrics": {
+    "completion_rate": 1.0,
+    "deadline_compliance_rate_among_completed": 1.0,
+    "episode_count": 9,
+    "episode_length_steps": {
+      "count": 9,
+      "max": 708.0,
+      "mean": 566.4444444444445,
+      "median": 581.0,
+      "min": 467.0
+    },
+    "failure_mode_counts": {
+      "speed": 9
+    },
+    "feasible_energy_kwh": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "median": null,
+      "min": null
+    },
+    "integrated_speed_violation_m": {
+      "count": 9,
+      "max": 477.34876524812313,
+      "mean": 267.70644996462335,
+      "median": 255.40738909068236,
+      "min": 30.048091781762647
+    },
+    "max_speed_violation_m_s": {
+      "count": 9,
+      "max": 23.700059712859236,
+      "mean": 17.529127905237843,
+      "median": 18.043083473448156,
+      "min": 8.12083795436445
+    },
+    "mean_integrated_speed_violation_m_among_relevant": 267.70644996462335,
+    "normalized_route_progress_for_incomplete": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "median": null,
+      "min": null
+    },
+    "requirement_satisfaction_rate": 0.0,
+    "speed_compliance_rate_among_relevant": 0.0,
+    "travel_time_s": {
+      "count": 9,
+      "max": 70.80000000000025,
+      "mean": 56.64444444444493,
+      "median": 58.100000000000556,
+      "min": 46.700000000000394
+    }
+  },
+  "episode_reward_statistics": {
+    "count": 85,
+    "max": 1778.3950783433393,
+    "mean": 1591.8223876856337,
+    "min": -1282.2786059225764,
+    "std": 629.2895387810222
+  },
+  "generation": 0,
+  "information_scope": "development-only-aggregate",
+  "protocol_id": "llm-reward-search-v1",
+  "ranking_fields": {
+    "completion_rate": 1.0,
+    "deadline_compliance_among_completed": 1.0,
+    "development_rsr": 0.0,
+    "mean_feasible_energy_kwh": null,
+    "median_incomplete_route_progress": 1.0,
+    "speed_compliance_among_relevant": 0.0,
+    "speed_violation_severity_among_relevant": 267.70644996462335
+  },
+  "reward_component_statistics": {
+    "energy_cost": {
+      "count": 50000,
+      "max": 0.0050246816676548225,
+      "mean": -0.0025612247539707486,
+      "min": -0.012088082832432411,
+      "std": 0.004983807753869001
+    },
+    "potential_change": {
+      "count": 50000,
+      "max": 2.5900000000001455,
+      "mean": 1.135813379079333,
+      "min": -0.3081158000948676,
+      "std": 0.7214818074600435
+    },
+    "speed_barrier": {
+      "count": 50000,
+      "max": -0.0,
+      "mean": -0.04895879025630754,
+      "min": -0.5211955955851728,
+      "std": 0.09158728853840759
+    },
+    "terminal": {
+      "count": 50000,
+      "max": 1080.0,
+      "mean": 1.6313734630055836,
+      "min": -998.7645695040278,
+      "std": 44.238208429295305
+    }
+  },
+  "schema_version": 1,
+  "training_success_trajectory": {
+    "completed_training_episode_count": 85,
+    "development_checkpoints": [
+      {
+        "completion_rate": 0.4444444444444444,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 10000
+      },
+      {
+        "completion_rate": 1.0,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 25000
+      },
+      {
+        "completion_rate": 1.0,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 50000
+      }
+    ],
+    "first_success_training_step": null,
+    "successful_training_episode_count": 0
+  }
+}

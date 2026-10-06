@@ -1,0 +1,141 @@
+{
+  "candidate_id": "g0-c05",
+  "candidate_source_sha256": "ee1da65c604d64c78a76a367c1f8307d28356efff5fff16150d97778ae8307f9",
+  "development_metrics": {
+    "completion_rate": 0.7777777777777778,
+    "deadline_compliance_rate_among_completed": 0.8571428571428571,
+    "episode_count": 9,
+    "episode_length_steps": {
+      "count": 9,
+      "max": 1800.0,
+      "mean": 1065.888888888889,
+      "median": 1044.0,
+      "min": 367.0
+    },
+    "failure_mode_counts": {
+      "incomplete+time": 2,
+      "speed": 6,
+      "time+speed": 1
+    },
+    "feasible_energy_kwh": {
+      "count": 0,
+      "max": null,
+      "mean": null,
+      "median": null,
+      "min": null
+    },
+    "integrated_speed_violation_m": {
+      "count": 9,
+      "max": 394.89980018122486,
+      "mean": 146.134594008097,
+      "median": 108.00533855651275,
+      "min": 0.0
+    },
+    "max_speed_violation_m_s": {
+      "count": 9,
+      "max": 29.85059931315181,
+      "mean": 13.041425822721145,
+      "median": 9.776908397893003,
+      "min": 0.0
+    },
+    "mean_integrated_speed_violation_m_among_relevant": 187.88733515326757,
+    "normalized_route_progress_for_incomplete": {
+      "count": 2,
+      "max": 0.10621521516894665,
+      "mean": 0.053107607584473325,
+      "median": 0.053107607584473325,
+      "min": 0.0
+    },
+    "requirement_satisfaction_rate": 0.0,
+    "speed_compliance_rate_among_relevant": 0.0,
+    "travel_time_s": {
+      "count": 9,
+      "max": 179.99999999999406,
+      "mean": 106.58888888888671,
+      "median": 104.39999999999834,
+      "min": 36.70000000000025
+    }
+  },
+  "episode_reward_statistics": {
+    "count": 57,
+    "max": 1429.80597691203,
+    "mean": 399.7372804717791,
+    "min": -2279.3971746172756,
+    "std": 1059.8789516005966
+  },
+  "generation": 0,
+  "information_scope": "development-only-aggregate",
+  "protocol_id": "llm-reward-search-v1",
+  "ranking_fields": {
+    "completion_rate": 0.7777777777777778,
+    "deadline_compliance_among_completed": 0.8571428571428571,
+    "development_rsr": 0.0,
+    "mean_feasible_energy_kwh": null,
+    "median_incomplete_route_progress": 0.053107607584473325,
+    "speed_compliance_among_relevant": 0.0,
+    "speed_violation_severity_among_relevant": 187.88733515326757
+  },
+  "reward_component_statistics": {
+    "energy_cost": {
+      "count": 50000,
+      "max": 0.004970387114130611,
+      "mean": -0.001789938865937421,
+      "min": -0.011965145216395197,
+      "std": 0.003046959263159123
+    },
+    "legal_cost": {
+      "count": 50000,
+      "max": -0.0,
+      "mean": -0.6057921312134253,
+      "min": -29.707039549332574,
+      "std": 2.572137215816007
+    },
+    "progress": {
+      "count": 50000,
+      "max": 0.6660000000000081,
+      "mean": 0.18299348662082218,
+      "min": 0.0,
+      "std": 0.18461513283314693
+    },
+    "terminal": {
+      "count": 50000,
+      "max": 1260.0,
+      "mean": 0.9156,
+      "min": -1050.0,
+      "std": 40.90473904867259
+    },
+    "tracking_cost": {
+      "count": 50000,
+      "max": -9.264045279019033e-10,
+      "mean": -0.03422626624413322,
+      "min": -0.3227011388074157,
+      "std": 0.03667510391434292
+    }
+  },
+  "schema_version": 1,
+  "training_success_trajectory": {
+    "completed_training_episode_count": 57,
+    "development_checkpoints": [
+      {
+        "completion_rate": 0.5555555555555556,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 10000
+      },
+      {
+        "completion_rate": 1.0,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 25000
+      },
+      {
+        "completion_rate": 0.7777777777777778,
+        "cumulative_training_successes": 0,
+        "requirement_satisfaction_rate": 0.0,
+        "simulator_transitions": 50000
+      }
+    ],
+    "first_success_training_step": null,
+    "successful_training_episode_count": 0
+  }
+}
