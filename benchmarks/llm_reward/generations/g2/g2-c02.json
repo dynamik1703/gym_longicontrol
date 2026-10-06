@@ -1,0 +1,37 @@
+{
+  "candidate_id": "g2-c02",
+  "engineering_effort": {
+    "ast_node_count": 571,
+    "numeric_constant_count": 48,
+    "reward_component_count": 6,
+    "source_line_count": 91
+  },
+  "generation": 2,
+  "parent_candidate_ids": [
+    "g1-c02",
+    "g1-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "62cdd4d7ce5c572c4cad59ec7ca548a11b13135db4f853c79deaa691549e22b2",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 571,
+    "errors": [],
+    "numeric_constant_count": 48,
+    "smoke_component_names": [
+      "compliant_progress",
+      "energy_cost",
+      "reverse_cost",
+      "schedule_recovery",
+      "speed_guard",
+      "terminal"
+    ],
+    "source_line_count": 91,
+    "source_sha256": "62cdd4d7ce5c572c4cad59ec7ca548a11b13135db4f853c79deaa691549e22b2",
+    "valid": true
+  },
+  "visible_rationale": "Rewards reductions in schedule debt only when progress is speed-compliant.\nIntended to improve completion while addressing residual speed violations\nand avoiding a dominant symmetric tracking penalty."
+}

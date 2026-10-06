@@ -1,0 +1,39 @@
+{
+  "candidate_id": "g2-c03",
+  "engineering_effort": {
+    "ast_node_count": 648,
+    "numeric_constant_count": 54,
+    "reward_component_count": 8,
+    "source_line_count": 92
+  },
+  "generation": 2,
+  "parent_candidate_ids": [
+    "g1-c02",
+    "g1-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "e16c20b61a70e49308b8a5822a9290413288c7575abfb3227e65edd9b5b22cd5",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 648,
+    "errors": [],
+    "numeric_constant_count": 54,
+    "smoke_component_names": [
+      "braking_guard",
+      "current_speed_guard",
+      "energy_cost",
+      "reverse_cost",
+      "route_progress",
+      "terminal",
+      "time_cost",
+      "unsafe_acceleration"
+    ],
+    "source_line_count": 92,
+    "source_sha256": "e16c20b61a70e49308b8a5822a9290413288c7575abfb3227e65edd9b5b22cd5",
+    "valid": true
+  },
+  "visible_rationale": "Combines explicit elapsed-time cost with kinetic braking barriers,\nunsafe-acceleration suppression, and schedule-dependent energy weighting.\nIntended to preserve legal driving while strengthening deadline and\ncompletion incentives."
+}

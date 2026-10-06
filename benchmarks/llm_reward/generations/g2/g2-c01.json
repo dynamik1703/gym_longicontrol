@@ -1,0 +1,38 @@
+{
+  "candidate_id": "g2-c01",
+  "engineering_effort": {
+    "ast_node_count": 613,
+    "numeric_constant_count": 49,
+    "reward_component_count": 7,
+    "source_line_count": 81
+  },
+  "generation": 2,
+  "parent_candidate_ids": [
+    "g1-c02",
+    "g1-c03"
+  ],
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "repair_attempt_count": 0,
+  "schema_version": 1,
+  "source_sha256": "410a8350b014963a9d4f5ba59a41677283fc795fd9e592be06e8c970accb1f2f",
+  "status": "validated",
+  "validation": {
+    "ast_node_count": 613,
+    "errors": [],
+    "numeric_constant_count": 49,
+    "smoke_component_names": [
+      "energy_cost",
+      "pace_support",
+      "reverse_cost",
+      "route_progress",
+      "schedule_cost",
+      "speed_guard",
+      "terminal"
+    ],
+    "source_line_count": 81,
+    "source_sha256": "410a8350b014963a9d4f5ba59a41677283fc795fd9e592be06e8c970accb1f2f",
+    "valid": true
+  },
+  "visible_rationale": "One-sided deadline pace support capped by anticipatory braking ceilings.\nIntended to improve the perfectly speed-compliant parent\u2019s late completion\nbehavior without rewarding overspeed."
+}

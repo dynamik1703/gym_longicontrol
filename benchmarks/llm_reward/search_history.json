@@ -460,13 +460,139 @@
         }
       ],
       "visible_rationale": "Tracks the deadline-implied speed only up to a buffered ceiling derived from current and visible future limits. A boundary guard, compliance-gated progress, and mild smoothness and energy costs aim for timely, anticipatory, efficient legal driving."
+    },
+    {
+      "candidate_id": "g2-c01",
+      "engineering_effort": {
+        "ast_node_count": 613,
+        "numeric_constant_count": 49,
+        "reward_component_count": 7,
+        "source_line_count": 81
+      },
+      "generation": 2,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c01.json",
+      "parent_candidate_ids": [
+        "g1-c02",
+        "g1-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c01.py",
+      "source_sha256": "410a8350b014963a9d4f5ba59a41677283fc795fd9e592be06e8c970accb1f2f",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 613,
+          "errors": [],
+          "numeric_constant_count": 49,
+          "smoke_component_names": [
+            "energy_cost",
+            "pace_support",
+            "reverse_cost",
+            "route_progress",
+            "schedule_cost",
+            "speed_guard",
+            "terminal"
+          ],
+          "source_line_count": 81,
+          "source_sha256": "410a8350b014963a9d4f5ba59a41677283fc795fd9e592be06e8c970accb1f2f",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "One-sided deadline pace support capped by anticipatory braking ceilings.\nIntended to improve the perfectly speed-compliant parent\u2019s late completion\nbehavior without rewarding overspeed."
+    },
+    {
+      "candidate_id": "g2-c02",
+      "engineering_effort": {
+        "ast_node_count": 571,
+        "numeric_constant_count": 48,
+        "reward_component_count": 6,
+        "source_line_count": 91
+      },
+      "generation": 2,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c02.json",
+      "parent_candidate_ids": [
+        "g1-c02",
+        "g1-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c02.py",
+      "source_sha256": "62cdd4d7ce5c572c4cad59ec7ca548a11b13135db4f853c79deaa691549e22b2",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 571,
+          "errors": [],
+          "numeric_constant_count": 48,
+          "smoke_component_names": [
+            "compliant_progress",
+            "energy_cost",
+            "reverse_cost",
+            "schedule_recovery",
+            "speed_guard",
+            "terminal"
+          ],
+          "source_line_count": 91,
+          "source_sha256": "62cdd4d7ce5c572c4cad59ec7ca548a11b13135db4f853c79deaa691549e22b2",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Rewards reductions in schedule debt only when progress is speed-compliant.\nIntended to improve completion while addressing residual speed violations\nand avoiding a dominant symmetric tracking penalty."
+    },
+    {
+      "candidate_id": "g2-c03",
+      "engineering_effort": {
+        "ast_node_count": 648,
+        "numeric_constant_count": 54,
+        "reward_component_count": 8,
+        "source_line_count": 92
+      },
+      "generation": 2,
+      "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c03.json",
+      "parent_candidate_ids": [
+        "g1-c02",
+        "g1-c03"
+      ],
+      "ranking": null,
+      "reflection": null,
+      "repair_attempt_count": 0,
+      "screening": null,
+      "source_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/generations/g2/g2-c03.py",
+      "source_sha256": "e16c20b61a70e49308b8a5822a9290413288c7575abfb3227e65edd9b5b22cd5",
+      "status": "validated",
+      "validation_attempts": [
+        {
+          "ast_node_count": 648,
+          "errors": [],
+          "numeric_constant_count": 54,
+          "smoke_component_names": [
+            "braking_guard",
+            "current_speed_guard",
+            "energy_cost",
+            "reverse_cost",
+            "route_progress",
+            "terminal",
+            "time_cost",
+            "unsafe_acceleration"
+          ],
+          "source_line_count": 92,
+          "source_sha256": "e16c20b61a70e49308b8a5822a9290413288c7575abfb3227e65edd9b5b22cd5",
+          "valid": true
+        }
+      ],
+      "visible_rationale": "Combines explicit elapsed-time cost with kinetic braking barriers,\nunsafe-acceleration suppression, and schedule-dependent energy weighting.\nIntended to preserve legal driving while strengthening deadline and\ncompletion incentives."
     }
   ],
   "engineering_effort": {
     "explicit_task_metrics_in_reflection": 13,
     "final_training_transitions": 0,
-    "generated_reward_candidate_count": 8,
-    "generation_count_started": 2,
+    "generated_reward_candidate_count": 11,
+    "generation_count_started": 3,
     "human_reward_edits": 0,
     "human_selected_coefficients_during_search": 0,
     "screening_rl_transitions": 400000
