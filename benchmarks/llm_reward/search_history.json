@@ -27,7 +27,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 163.40012570057647
         },
-        "rank_at_selection": 6
+        "final_rank": 8
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c01.json",
@@ -84,7 +84,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 267.70644996462335
         },
-        "rank_at_selection": 3
+        "final_rank": 5
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c02.json",
@@ -138,7 +138,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 403.8312737888161
         },
-        "rank_at_selection": 4
+        "final_rank": 6
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c03.json",
@@ -193,7 +193,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 51.870313130721314
         },
-        "rank_at_selection": 7
+        "final_rank": 10
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c04.json",
@@ -250,7 +250,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": 187.88733515326757
         },
-        "rank_at_selection": 5
+        "final_rank": 7
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g0-c05.json",
@@ -308,7 +308,7 @@
           "speed_compliance_among_relevant": 0.0,
           "speed_violation_severity_among_relevant": null
         },
-        "rank_at_selection": 8
+        "final_rank": 11
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g1-c01.json",
@@ -366,7 +366,7 @@
           "speed_compliance_among_relevant": 0.5,
           "speed_violation_severity_among_relevant": 0.265025594720508
         },
-        "rank_at_selection": 1
+        "final_rank": 1
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g1-c02.json",
@@ -425,7 +425,7 @@
           "speed_compliance_among_relevant": 1.0,
           "speed_violation_severity_among_relevant": 0.0
         },
-        "rank_at_selection": 2
+        "final_rank": 2
       },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g1-c03.json",
@@ -475,7 +475,18 @@
         "g1-c02",
         "g1-c03"
       ],
-      "ranking": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.4444444444444444,
+          "deadline_compliance_among_completed": 1.0,
+          "development_rsr": 0.1111111111111111,
+          "mean_feasible_energy_kwh": 0.2171259445641792,
+          "median_incomplete_route_progress": 0.47444677849636835,
+          "speed_compliance_among_relevant": 0.3333333333333333,
+          "speed_violation_severity_among_relevant": 32.42452405323522
+        },
+        "final_rank": 3
+      },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g2-c01.json",
         "markdown_path": "runs/llm-reward-search/reflections/g2-c01.md"
@@ -524,7 +535,18 @@
         "g1-c02",
         "g1-c03"
       ],
-      "ranking": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.2222222222222222,
+          "deadline_compliance_among_completed": 0.5,
+          "development_rsr": 0.1111111111111111,
+          "mean_feasible_energy_kwh": 0.2257221529137238,
+          "median_incomplete_route_progress": 0.42081790982122574,
+          "speed_compliance_among_relevant": 0.8,
+          "speed_violation_severity_among_relevant": 16.72500241313331
+        },
+        "final_rank": 4
+      },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g2-c02.json",
         "markdown_path": "runs/llm-reward-search/reflections/g2-c02.md"
@@ -572,7 +594,18 @@
         "g1-c02",
         "g1-c03"
       ],
-      "ranking": null,
+      "ranking": {
+        "fields": {
+          "completion_rate": 0.0,
+          "deadline_compliance_among_completed": 0.0,
+          "development_rsr": 0.0,
+          "mean_feasible_energy_kwh": null,
+          "median_incomplete_route_progress": 0.5812619414283008,
+          "speed_compliance_among_relevant": 1.0,
+          "speed_violation_severity_among_relevant": 0.0
+        },
+        "final_rank": 9
+      },
       "reflection": {
         "json_path": "runs/llm-reward-search/reflections/g2-c03.json",
         "markdown_path": "runs/llm-reward-search/reflections/g2-c03.md"
@@ -639,6 +672,12 @@
   "protocol_id": "llm-reward-search-v1",
   "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
   "schema_version": 1,
-  "status": "OPEN",
-  "winner": null
+  "status": "CLOSED",
+  "winner": {
+    "candidate_id": "g1-c02",
+    "final_reward_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/FINAL_REWARD.py",
+    "generation": 1,
+    "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_task/benchmarks/llm_reward/FINAL_REWARD.metadata.json",
+    "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47"
+  }
 }

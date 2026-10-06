@@ -1,0 +1,10 @@
+{
+  "candidate_id": "g1-c02",
+  "generation": 1,
+  "protocol_id": "llm-reward-search-v1",
+  "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+  "schema_version": 1,
+  "search_status": "CLOSED",
+  "selection_rank": 1,
+  "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47"
+}
