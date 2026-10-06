@@ -31,7 +31,9 @@ from benchmarks.goal_conditioned.runner import (
     _evaluate_without_rng_perturbation,
     _model_sha256,
     _new_manifest,
+    _terminal_position_is_consistent,
     initialize_study_root,
+    interrupted_attempt_provenance,
     validate_validation_gate,
 )
 from gym_longicontrol.domain.task import TaskSpecification
@@ -441,6 +443,32 @@ def test_duplicate_study_root_is_refused_and_partial_state_is_preserved(tmp_path
         initialize_study_root(root, configuration, _provenance(), "cpu")
     assert (created / "partial-marker.txt").read_text(encoding="utf-8") == "keep"
     assert (created / "ACTIVE.lock").exists()
+
+
+def test_authorized_restart_requires_preserved_interrupted_attempt(tmp_path):
+    configuration = load_configuration()
+    root, manifest = initialize_study_root(
+        tmp_path / "attempt-1", configuration, _provenance(), "cpu"
+    )
+    with pytest.raises(RuntimeError, match="not marked INTERRUPTED"):
+        interrupted_attempt_provenance(root)
+    manifest["status"] = "INTERRUPTED"
+    (root / "manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    provenance = interrupted_attempt_provenance(root)
+    assert provenance["status"] == "INTERRUPTED"
+    assert provenance["validation_opened"] is False
+    (root / "validation-result.json").write_text("{}\n", encoding="utf-8")
+    with pytest.raises(RuntimeError, match="Validation results"):
+        interrupted_attempt_provenance(root)
+
+
+def test_terminal_position_check_respects_encoder_clipping():
+    terminal = {"achieved_goal": np.array([1.0, 0.999, 0.5, 0.0])}
+    assert _terminal_position_is_consistent(terminal, 1000.3, 1000.0)
+    inconsistent = {"achieved_goal": np.array([0.99, 0.98, 0.5, 0.0])}
+    assert not _terminal_position_is_consistent(inconsistent, 1000.3, 1000.0)
 
 
 def test_validation_gate_requires_six_complete_hashed_policies(tmp_path):

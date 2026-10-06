@@ -295,6 +295,18 @@ def _model_sha256(path: Path) -> str:
     return _sha256_file(path)
 
 
+def _terminal_position_is_consistent(
+    terminal_observation: Mapping[str, Any],
+    physical_position_m: float,
+    route_length_m: float,
+) -> bool:
+    """Compare the stored normalized position with the encoder's clipped value."""
+
+    stored = float(terminal_observation["achieved_goal"][0])
+    expected = float(np.clip(physical_position_m / route_length_m, 0.0, 1.0))
+    return bool(np.isclose(stored, expected, rtol=0.0, atol=1e-12))
+
+
 def _policy_key(condition_id: str, seed: int) -> str:
     return f"{condition_id}:seed-{seed}"
 
@@ -366,6 +378,34 @@ def initialize_study_root(
     return root, manifest
 
 
+def interrupted_attempt_provenance(path: str | Path) -> dict[str, Any]:
+    """Validate and describe one preserved attempt before an authorized restart."""
+
+    root = Path(path).resolve()
+    manifest_path = root / "manifest.json"
+    lock_path = root / "ACTIVE.lock"
+    if not manifest_path.is_file() or not lock_path.is_file():
+        raise RuntimeError("Restart source lacks its preserved manifest or lock")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if manifest.get("status") != "INTERRUPTED":
+        raise RuntimeError("Restart source is not marked INTERRUPTED")
+    if manifest.get("validation_opened") or manifest.get("paper_test_tracks_opened"):
+        raise RuntimeError("Restart source accessed a protected evaluation split")
+    validation_files = tuple(root.rglob("validation-result.json"))
+    if validation_files:
+        raise RuntimeError("Restart source contains Validation results")
+    return {
+        "path": str(root),
+        "manifest_sha256": _sha256_file(manifest_path),
+        "active_lock_sha256": _sha256_file(lock_path),
+        "status": manifest["status"],
+        "interruption": manifest.get("interruption"),
+        "recorded_totals": manifest.get("totals"),
+        "validation_opened": False,
+        "paper_test_tracks_opened": False,
+    }
+
+
 def _update_manifest(root: Path, manifest: dict[str, Any]) -> None:
     manifest["updated_at"] = _utc_now()
     _write_json(root / "manifest.json", manifest)
@@ -434,11 +474,11 @@ class GoalStudyCallback:
                 if "terminal_observation" not in info:
                     raise RuntimeError("Automatic reset lost terminal_observation")
                 terminal = info["terminal_observation"]
-                terminal_position = (
-                    float(terminal["achieved_goal"][0])
-                    * configuration.goal_scales.route_length_m
-                )
-                if not np.isclose(terminal_position, float(info["position_m"])):
+                if not _terminal_position_is_consistent(
+                    terminal,
+                    float(info["position_m"]),
+                    configuration.goal_scales.route_length_m,
+                ):
                     raise RuntimeError("Stored terminal observation has wrong position")
                 metrics = info["episode_metrics"]
                 success = bool(info["goal_success"])
@@ -623,6 +663,7 @@ def _run_policy(
 
     environment = make_environment(configuration)
     started_at = time.perf_counter()
+    model = None
     try:
         model = _build_diagnostic_model(
             configuration, condition_id, environment, training_seed, device
@@ -678,6 +719,22 @@ def _run_policy(
         )
         manifest["totals"]["training_transitions"] += model.num_timesteps
         _update_manifest(study_root, manifest)
+    except BaseException:
+        if model is not None:
+            item.update(
+                {
+                    "status": "INTERRUPTED",
+                    "interrupted_at": _utc_now(),
+                    "training_transitions": int(model.num_timesteps),
+                    "gradient_updates": int(getattr(model, "_n_updates", 0)),
+                }
+            )
+            manifest["totals"]["training_transitions"] = sum(
+                policy["training_transitions"]
+                for policy in manifest["policies"].values()
+            )
+            _update_manifest(study_root, manifest)
+        raise
     finally:
         environment.close()
 
@@ -745,8 +802,16 @@ def run_study(
     output_root: str | Path,
     repo_root: str | Path,
     device: str = "auto",
+    authorized_restart_from: str | Path | None = None,
 ) -> Path:
     provenance = verify_preflight(configuration, repo_root)
+    if authorized_restart_from is not None:
+        source = Path(authorized_restart_from).resolve()
+        if source == Path(output_root).resolve():
+            raise ValueError("Authorized restart requires a new output root")
+        provenance["authorized_restart_from"] = interrupted_attempt_provenance(
+            source
+        )
     root, manifest = initialize_study_root(
         output_root, configuration, provenance, device
     )
@@ -787,6 +852,11 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG_PATH)
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument(
+        "--authorized-restart-from",
+        type=Path,
+        help="Preserved INTERRUPTED attempt required for an explicit restart.",
+    )
+    parser.add_argument(
         "--device", choices=("auto", "cpu", "cuda", "mps"), default="auto"
     )
     args = parser.parse_args(argv)
@@ -798,6 +868,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             output_root=args.output_root,
             repo_root=repo_root,
             device=args.device,
+            authorized_restart_from=args.authorized_restart_from,
         ),
         flush=True,
     )
