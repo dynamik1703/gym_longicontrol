@@ -1,0 +1,1899 @@
+{
+  "artifacts": {
+    "candidate_source_hash_mismatches": 0,
+    "candidate_sources_verified": 11,
+    "source_manifest_path": "runs/llm-reward-final/final-evaluation-manifest.json",
+    "source_manifest_sha256": "0c7b4ec5ca67448e23f44e42c643b27194c9570344ed58ca02e78f075cc0c713"
+  },
+  "benchmark_name": "llm-reward-final-v1",
+  "execution": {
+    "command": "PYTHONPATH=src ../gym_longicontrol_morl/.venv/bin/python -m benchmarks.llm_reward.final_evaluation --output-root runs/llm-reward-final",
+    "prior_screening_training_transitions": 550000,
+    "run_count": 1,
+    "runtime": {
+      "gym_longicontrol": "1.0.0",
+      "gymnasium": "1.3.0",
+      "numpy": "2.4.6",
+      "python": "3.10.14",
+      "requested_device": "auto",
+      "resolved_device": "cpu",
+      "stable_baselines3": "2.9.0",
+      "torch": "2.14.0"
+    },
+    "sac_configuration": {
+      "batch_size": 256,
+      "buffer_size": 1000000,
+      "ent_coef": "auto",
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.0003,
+      "learning_starts": 100,
+      "observation_normalization": false,
+      "policy_network": [
+        256,
+        256
+      ],
+      "reward_normalization": false,
+      "tau": 0.005,
+      "train_freq": 1
+    },
+    "sealed_paper_test_tracks": {
+      "accessed": false,
+      "tracks": [
+        4000,
+        4001,
+        4002,
+        4003,
+        4004,
+        4005,
+        4006,
+        4007,
+        4008,
+        4009,
+        4010,
+        4011,
+        4012,
+        4013,
+        4014,
+        4015,
+        4016,
+        4017
+      ]
+    },
+    "simulator_transitions_per_seed": 300000,
+    "total_final_training_transitions": 900000,
+    "total_final_validation_interactions": 42289,
+    "total_search_plus_final_training_transitions": 1450000,
+    "training_seeds": [
+      11,
+      29,
+      47
+    ],
+    "training_track_sampling": "StochasticTrack-v1 samples a stochastic track on every training reset from the seeded environment RNG; Development tracks 2000-2008 are evaluation-only and are not a finite training-track schedule.",
+    "validation": {
+      "episodes_per_training_seed": 9,
+      "evaluation_transitions_entered_replay": false,
+      "mode": "deterministic final-policy evaluation after training",
+      "split_id": "validation-3000-3008-v1",
+      "tracks": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008
+      ]
+    }
+  },
+  "historical_comparisons": {
+    "binary_reward_v1": {
+      "matching": {
+        "deterministic_final_evaluation": true,
+        "environment_id": true,
+        "max_episode_steps": true,
+        "no_observation_or_reward_normalization": true,
+        "observation_and_action_semantics": true,
+        "sb3_sac_configuration": true,
+        "task_and_zero_speed_tolerance": true,
+        "training_budget_per_seed": true,
+        "training_seeds": true,
+        "validation_tracks": true
+      },
+      "overall": {
+        "completed_within_deadline_count": 0,
+        "completion_count": 0,
+        "completion_rate": 0.0,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 0,
+          "rate": null,
+          "speed_compliant_count": 0
+        },
+        "deadline_compliance_rate_all_episodes": 0.0,
+        "deadline_compliant_count_all_episodes": 0,
+        "episode_count": 27,
+        "evaluation_interactions": 48600,
+        "failure_mode_counts": {
+          "incomplete+time": 27
+        },
+        "feasible_count": 0,
+        "feasible_energy_kwh": {
+          "count": 0,
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null
+        },
+        "feasible_tracks": [],
+        "integrated_speed_violation_m": {
+          "count": 27,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 27,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate_all_episodes": 1.0,
+        "speed_compliant_count_all_episodes": 27,
+        "travel_time_s": {
+          "count": 27,
+          "maximum": 179.99999999999406,
+          "mean": 179.99999999999406,
+          "median": 179.99999999999406,
+          "minimum": 179.99999999999406
+        }
+      },
+      "paired_energy": {
+        "conclusion": "No jointly feasible seed-track pair; paired energy cannot be compared.",
+        "jointly_feasible_pair_count": 0,
+        "pairs": []
+      },
+      "per_seed": [
+        {
+          "summary": {
+            "completed_within_deadline_count": 0,
+            "completion_count": 0,
+            "completion_rate": 0.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 0,
+              "rate": null,
+              "speed_compliant_count": 0
+            },
+            "deadline_compliance_rate_all_episodes": 0.0,
+            "deadline_compliant_count_all_episodes": 0,
+            "episode_count": 9,
+            "evaluation_interactions": 16200,
+            "failure_mode_counts": {
+              "incomplete+time": 9
+            },
+            "feasible_count": 0,
+            "feasible_energy_kwh": {
+              "count": 0,
+              "maximum": null,
+              "mean": null,
+              "median": null,
+              "minimum": null
+            },
+            "feasible_tracks": [],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 179.99999999999406,
+              "median": 179.99999999999406,
+              "minimum": 179.99999999999406
+            }
+          },
+          "training_seed": 11
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 0,
+            "completion_count": 0,
+            "completion_rate": 0.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 0,
+              "rate": null,
+              "speed_compliant_count": 0
+            },
+            "deadline_compliance_rate_all_episodes": 0.0,
+            "deadline_compliant_count_all_episodes": 0,
+            "episode_count": 9,
+            "evaluation_interactions": 16200,
+            "failure_mode_counts": {
+              "incomplete+time": 9
+            },
+            "feasible_count": 0,
+            "feasible_energy_kwh": {
+              "count": 0,
+              "maximum": null,
+              "mean": null,
+              "median": null,
+              "minimum": null
+            },
+            "feasible_tracks": [],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 179.99999999999406,
+              "median": 179.99999999999406,
+              "minimum": 179.99999999999406
+            }
+          },
+          "training_seed": 29
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 0,
+            "completion_count": 0,
+            "completion_rate": 0.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 0,
+              "rate": null,
+              "speed_compliant_count": 0
+            },
+            "deadline_compliance_rate_all_episodes": 0.0,
+            "deadline_compliant_count_all_episodes": 0,
+            "episode_count": 9,
+            "evaluation_interactions": 16200,
+            "failure_mode_counts": {
+              "incomplete+time": 9
+            },
+            "feasible_count": 0,
+            "feasible_energy_kwh": {
+              "count": 0,
+              "maximum": null,
+              "mean": null,
+              "median": null,
+              "minimum": null
+            },
+            "feasible_tracks": [],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 179.99999999999406,
+              "median": 179.99999999999406,
+              "minimum": 179.99999999999406
+            }
+          },
+          "training_seed": 47
+        }
+      ],
+      "role": "contextual reference"
+    },
+    "constrained_v2": {
+      "caveat": "Constrained V2 uses FSRL SACLag, different networks, replay, update rate, objective and explicit costs; its numerical outcome is therefore contextual, not a reward-only comparison.",
+      "matching": {
+        "algorithm_and_preprocessing": false,
+        "deterministic_final_evaluation": true,
+        "environment_id": true,
+        "max_episode_steps": true,
+        "observation_and_action_semantics": true,
+        "task_and_zero_speed_tolerance": true,
+        "training_budget_per_seed": true,
+        "training_seeds": true,
+        "validation_tracks": true
+      },
+      "overall": {
+        "completed_within_deadline_count": 27,
+        "completion_count": 27,
+        "completion_rate": 1.0,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 27,
+          "rate": 0.7777777777777778,
+          "speed_compliant_count": 21
+        },
+        "deadline_compliance_rate_all_episodes": 1.0,
+        "deadline_compliant_count_all_episodes": 27,
+        "episode_count": 27,
+        "evaluation_interactions": 29737,
+        "failure_mode_counts": {
+          "feasible": 21,
+          "speed": 6
+        },
+        "feasible_count": 21,
+        "feasible_energy_kwh": {
+          "count": 21,
+          "maximum": 0.29584706230925306,
+          "mean": 0.1896147711060881,
+          "median": 0.17926613455143423,
+          "minimum": 0.15094935964754674
+        },
+        "feasible_tracks": [
+          {
+            "evaluation_seed": 3000,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3001,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3002,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3003,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3004,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3005,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3006,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3007,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3008,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3002,
+            "training_seed": 29
+          },
+          {
+            "evaluation_seed": 3003,
+            "training_seed": 29
+          },
+          {
+            "evaluation_seed": 3006,
+            "training_seed": 29
+          },
+          {
+            "evaluation_seed": 3007,
+            "training_seed": 29
+          },
+          {
+            "evaluation_seed": 3008,
+            "training_seed": 29
+          },
+          {
+            "evaluation_seed": 3000,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3001,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3002,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3004,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3005,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3006,
+            "training_seed": 47
+          },
+          {
+            "evaluation_seed": 3008,
+            "training_seed": 47
+          }
+        ],
+        "integrated_speed_violation_m": {
+          "count": 27,
+          "maximum": 1.2321290548093384,
+          "mean": 0.05638960998422211,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 27,
+          "maximum": 2.0952425918123225,
+          "mean": 0.11162306135967014,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.7777777777777778,
+        "speed_compliance_rate_all_episodes": 0.7777777777777778,
+        "speed_compliant_count_all_episodes": 21,
+        "travel_time_s": {
+          "count": 27,
+          "maximum": 139.49999999999636,
+          "mean": 110.13703703703506,
+          "median": 114.69999999999776,
+          "minimum": 73.70000000000009
+        }
+      },
+      "paired_energy": {
+        "conclusion": "Coverage is too small to establish energy superiority.",
+        "jointly_feasible_pair_count": 1,
+        "pairs": [
+          {
+            "difference_kwh": 0.03235288959422333,
+            "evaluation_seed": 3008,
+            "llm_reward_energy_kwh": 0.1974143793946782,
+            "ratio": 1.1960050744321717,
+            "reference_energy_kwh": 0.16506148980045487,
+            "training_seed": 11
+          }
+        ]
+      },
+      "per_seed": [
+        {
+          "summary": {
+            "completed_within_deadline_count": 9,
+            "completion_count": 9,
+            "completion_rate": 1.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 9,
+              "rate": 1.0,
+              "speed_compliant_count": 9
+            },
+            "deadline_compliance_rate_all_episodes": 1.0,
+            "deadline_compliant_count_all_episodes": 9,
+            "episode_count": 9,
+            "evaluation_interactions": 9785,
+            "failure_mode_counts": {
+              "feasible": 9
+            },
+            "feasible_count": 9,
+            "feasible_energy_kwh": {
+              "count": 9,
+              "maximum": 0.19900838589708583,
+              "mean": 0.17373737709537876,
+              "median": 0.17335210164181938,
+              "minimum": 0.1569017553524454
+            },
+            "feasible_tracks": [
+              {
+                "evaluation_seed": 3000,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3001,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3002,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3003,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3004,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3005,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3006,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3007,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3008,
+                "training_seed": 11
+              }
+            ],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 1.0,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 139.49999999999636,
+              "mean": 108.72222222222032,
+              "median": 116.19999999999767,
+              "minimum": 86.69999999999935
+            }
+          },
+          "training_seed": 11
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 9,
+            "completion_count": 9,
+            "completion_rate": 1.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 9,
+              "rate": 0.5555555555555556,
+              "speed_compliant_count": 5
+            },
+            "deadline_compliance_rate_all_episodes": 1.0,
+            "deadline_compliant_count_all_episodes": 9,
+            "episode_count": 9,
+            "evaluation_interactions": 9579,
+            "failure_mode_counts": {
+              "feasible": 5,
+              "speed": 4
+            },
+            "feasible_count": 5,
+            "feasible_energy_kwh": {
+              "count": 5,
+              "maximum": 0.29584706230925306,
+              "mean": 0.21858820141451857,
+              "median": 0.20890067762088138,
+              "minimum": 0.15226684730507664
+            },
+            "feasible_tracks": [
+              {
+                "evaluation_seed": 3002,
+                "training_seed": 29
+              },
+              {
+                "evaluation_seed": 3003,
+                "training_seed": 29
+              },
+              {
+                "evaluation_seed": 3006,
+                "training_seed": 29
+              },
+              {
+                "evaluation_seed": 3007,
+                "training_seed": 29
+              },
+              {
+                "evaluation_seed": 3008,
+                "training_seed": 29
+              }
+            ],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.10995133239483154,
+              "mean": 0.01538569650086667,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.05868469489133332,
+              "mean": 0.014927088130665567,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.5555555555555556,
+            "speed_compliance_rate_all_episodes": 0.5555555555555556,
+            "speed_compliant_count_all_episodes": 5,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 138.09999999999644,
+              "mean": 106.43333333333156,
+              "median": 106.39999999999823,
+              "minimum": 73.70000000000009
+            }
+          },
+          "training_seed": 29
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 9,
+            "completion_count": 9,
+            "completion_rate": 1.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 9,
+              "rate": 0.7777777777777778,
+              "speed_compliant_count": 7
+            },
+            "deadline_compliance_rate_all_episodes": 1.0,
+            "deadline_compliant_count_all_episodes": 9,
+            "episode_count": 9,
+            "evaluation_interactions": 10373,
+            "failure_mode_counts": {
+              "feasible": 7,
+              "speed": 2
+            },
+            "feasible_count": 7,
+            "feasible_energy_kwh": {
+              "count": 7,
+              "maximum": 0.20697943241335082,
+              "mean": 0.18933325604240683,
+              "median": 0.19882447916824497,
+              "minimum": 0.15094935964754674
+            },
+            "feasible_tracks": [
+              {
+                "evaluation_seed": 3000,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3001,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3002,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3004,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3005,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3006,
+                "training_seed": 47
+              },
+              {
+                "evaluation_seed": 3008,
+                "training_seed": 47
+              }
+            ],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 1.2321290548093384,
+              "mean": 0.15378313345179967,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 2.0952425918123225,
+              "mean": 0.31994209594834483,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.7777777777777778,
+            "speed_compliance_rate_all_episodes": 0.7777777777777778,
+            "speed_compliant_count_all_episodes": 7,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 130.59999999999687,
+              "mean": 115.25555555555327,
+              "median": 116.09999999999768,
+              "minimum": 99.19999999999864
+            }
+          },
+          "training_seed": 47
+        }
+      ],
+      "role": "contextual reference only"
+    },
+    "scalar_sb3_sac": {
+      "caveat": "The scalar study also recorded separate milestone evaluations; this comparison uses only its deterministic 300k final policies. Those evaluation transitions did not enter replay.",
+      "description": "historically engineered scalar reward",
+      "matching": {
+        "deterministic_final_evaluation": true,
+        "environment_id": true,
+        "max_episode_steps": true,
+        "no_observation_or_reward_normalization": true,
+        "observation_and_action_semantics": true,
+        "sb3_sac_configuration": true,
+        "task_and_zero_speed_tolerance": true,
+        "training_budget_per_seed": true,
+        "training_seeds": true,
+        "validation_tracks": true
+      },
+      "overall": {
+        "completed_within_deadline_count": 5,
+        "completion_count": 5,
+        "completion_rate": 0.18518518518518517,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 8,
+          "rate": 1.0,
+          "speed_compliant_count": 8
+        },
+        "deadline_compliance_rate_all_episodes": 0.18518518518518517,
+        "deadline_compliant_count_all_episodes": 5,
+        "episode_count": 27,
+        "evaluation_interactions": 45224,
+        "failure_mode_counts": {
+          "feasible": 5,
+          "incomplete+time": 22
+        },
+        "feasible_count": 5,
+        "feasible_energy_kwh": {
+          "count": 5,
+          "maximum": 0.21273828656405208,
+          "mean": 0.19902419048417583,
+          "median": 0.20319585725047648,
+          "minimum": 0.1812348350140273
+        },
+        "feasible_tracks": [
+          {
+            "evaluation_seed": 3000,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3001,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3004,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3005,
+            "training_seed": 11
+          },
+          {
+            "evaluation_seed": 3004,
+            "training_seed": 47
+          }
+        ],
+        "integrated_speed_violation_m": {
+          "count": 27,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 27,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.18518518518518517,
+        "speed_compliance_rate_all_episodes": 1.0,
+        "speed_compliant_count_all_episodes": 27,
+        "travel_time_s": {
+          "count": 27,
+          "maximum": 179.99999999999406,
+          "mean": 167.49629629629106,
+          "median": 179.99999999999406,
+          "minimum": 100.09999999999859
+        }
+      },
+      "paired_energy": {
+        "conclusion": "No jointly feasible seed-track pair; paired energy cannot be compared.",
+        "jointly_feasible_pair_count": 0,
+        "pairs": []
+      },
+      "per_seed": [
+        {
+          "summary": {
+            "completed_within_deadline_count": 4,
+            "completion_count": 4,
+            "completion_rate": 0.4444444444444444,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 4,
+              "rate": 1.0,
+              "speed_compliant_count": 4
+            },
+            "deadline_compliance_rate_all_episodes": 0.4444444444444444,
+            "deadline_compliant_count_all_episodes": 4,
+            "episode_count": 9,
+            "evaluation_interactions": 13623,
+            "failure_mode_counts": {
+              "feasible": 4,
+              "incomplete+time": 5
+            },
+            "feasible_count": 4,
+            "feasible_energy_kwh": {
+              "count": 4,
+              "maximum": 0.20737585350250606,
+              "mean": 0.19559566646420676,
+              "median": 0.19688598867014684,
+              "minimum": 0.1812348350140273
+            },
+            "feasible_tracks": [
+              {
+                "evaluation_seed": 3000,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3001,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3004,
+                "training_seed": 11
+              },
+              {
+                "evaluation_seed": 3005,
+                "training_seed": 11
+              }
+            ],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.4444444444444444,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 151.36666666666235,
+              "median": 179.99999999999406,
+              "minimum": 104.09999999999836
+            }
+          },
+          "training_seed": 11
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 0,
+            "completion_count": 0,
+            "completion_rate": 0.0,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 1,
+              "rate": 1.0,
+              "speed_compliant_count": 1
+            },
+            "deadline_compliance_rate_all_episodes": 0.0,
+            "deadline_compliant_count_all_episodes": 0,
+            "episode_count": 9,
+            "evaluation_interactions": 16200,
+            "failure_mode_counts": {
+              "incomplete+time": 9
+            },
+            "feasible_count": 0,
+            "feasible_energy_kwh": {
+              "count": 0,
+              "maximum": null,
+              "mean": null,
+              "median": null,
+              "minimum": null
+            },
+            "feasible_tracks": [],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 179.99999999999406,
+              "median": 179.99999999999406,
+              "minimum": 179.99999999999406
+            }
+          },
+          "training_seed": 29
+        },
+        {
+          "summary": {
+            "completed_within_deadline_count": 1,
+            "completion_count": 1,
+            "completion_rate": 0.1111111111111111,
+            "conditional_speed_compliance": {
+              "definition": "completed or final_position_m / 1000.0 >= 0.5",
+              "eligible_count": 3,
+              "rate": 1.0,
+              "speed_compliant_count": 3
+            },
+            "deadline_compliance_rate_all_episodes": 0.1111111111111111,
+            "deadline_compliant_count_all_episodes": 1,
+            "episode_count": 9,
+            "evaluation_interactions": 15401,
+            "failure_mode_counts": {
+              "feasible": 1,
+              "incomplete+time": 8
+            },
+            "feasible_count": 1,
+            "feasible_energy_kwh": {
+              "count": 1,
+              "maximum": 0.21273828656405208,
+              "mean": 0.21273828656405208,
+              "median": 0.21273828656405208,
+              "minimum": 0.21273828656405208
+            },
+            "feasible_tracks": [
+              {
+                "evaluation_seed": 3004,
+                "training_seed": 47
+              }
+            ],
+            "integrated_speed_violation_m": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "max_speed_violation_m_s": {
+              "count": 9,
+              "maximum": 0.0,
+              "mean": 0.0,
+              "median": 0.0,
+              "minimum": 0.0
+            },
+            "requirement_satisfaction_rate": 0.1111111111111111,
+            "speed_compliance_rate_all_episodes": 1.0,
+            "speed_compliant_count_all_episodes": 9,
+            "travel_time_s": {
+              "count": 9,
+              "maximum": 179.99999999999406,
+              "mean": 171.12222222221678,
+              "median": 179.99999999999406,
+              "minimum": 100.09999999999859
+            }
+          },
+          "training_seed": 47
+        }
+      ],
+      "role": "primary matched historical comparison"
+    }
+  },
+  "interpretation": {
+    "acceptance": "No separate preregistered final robustness threshold exists for this study; exact outcomes are reported without inventing one.",
+    "efficiency": "Only one LLM-reward episode was feasible. It had no jointly feasible pair with the primary scalar baseline; energy competitiveness cannot be established.",
+    "search_scope": "This is one LLM reward search followed by three policy-training replicates, not three independent reward searches.",
+    "seed_robustness": "Useful behavior did not replicate beyond the screening seed: seeds 29 and 47 completed 0/9 routes and achieved 0/9 RSR.",
+    "task_acquisition": "The frozen reward produced feasible driving once on seed 11 (1/9), so task acquisition occurred but was sparse."
+  },
+  "overall_summary": {
+    "completed_within_deadline_count": 8,
+    "completion_count": 8,
+    "completion_rate": 0.2962962962962963,
+    "conditional_speed_compliance": {
+      "definition": "completed or final_position_m / 1000.0 >= 0.5",
+      "eligible_count": 11,
+      "rate": 0.36363636363636365,
+      "speed_compliant_count": 4
+    },
+    "deadline_compliance_rate_all_episodes": 0.2962962962962963,
+    "deadline_compliant_count_all_episodes": 8,
+    "episode_count": 27,
+    "evaluation_interactions": 42289,
+    "failure_mode_counts": {
+      "feasible": 1,
+      "incomplete+time": 19,
+      "speed": 7
+    },
+    "feasible_count": 1,
+    "feasible_energy_kwh": {
+      "count": 1,
+      "maximum": 0.1974143793946782,
+      "mean": 0.1974143793946782,
+      "median": 0.1974143793946782,
+      "minimum": 0.1974143793946782
+    },
+    "feasible_tracks": [
+      {
+        "evaluation_seed": 3008,
+        "training_seed": 11
+      }
+    ],
+    "integrated_speed_violation_m": {
+      "count": 27,
+      "maximum": 11.221538345074,
+      "mean": 1.470422918950623,
+      "median": 0.0,
+      "minimum": 0.0
+    },
+    "max_speed_violation_m_s": {
+      "count": 27,
+      "maximum": 1.7192655315254477,
+      "mean": 0.23245804528864564,
+      "median": 0.0,
+      "minimum": 0.0
+    },
+    "requirement_satisfaction_rate": 0.037037037037037035,
+    "speed_compliance_rate_all_episodes": 0.7407407407407407,
+    "speed_compliant_count_all_episodes": 20,
+    "travel_time_s": {
+      "count": 27,
+      "maximum": 179.99999999999406,
+      "mean": 156.6259259259213,
+      "median": 179.99999999999406,
+      "minimum": 75.00000000000001
+    }
+  },
+  "per_seed_results": [
+    {
+      "episodes": [
+        {
+          "acceleration_sign_change_count": 181,
+          "action_total_variation": 232.91088569164276,
+          "completed": true,
+          "energy_kwh": 0.23589662998230565,
+          "evaluation_seed": 3000,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1001.4058209239477,
+          "integrated_speed_violation_m": 0.6003119072172064,
+          "max_abs_jerk_m_s3": 58.92465011867684,
+          "max_speed_violation_m_s": 0.24181133044604408,
+          "mean_abs_acceleration_m_s2": 0.9200537420606242,
+          "mean_abs_action": 0.34882632383911444,
+          "mean_abs_action_change": 0.27960490479188804,
+          "mean_abs_jerk_m_s3": 7.494384977201265,
+          "regenerative_energy_kwh": 0.08521038132084875,
+          "speed_violation_count": 4,
+          "step_count": 834,
+          "traction_energy_kwh": 0.3211070113031543,
+          "travel_time_s": 83.39999999999954
+        },
+        {
+          "acceleration_sign_change_count": 196,
+          "action_total_variation": 162.01833140850067,
+          "completed": true,
+          "energy_kwh": 0.22018063347848782,
+          "evaluation_seed": 3001,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1000.7307733799591,
+          "integrated_speed_violation_m": 7.322119963360298,
+          "max_abs_jerk_m_s3": 44.6679650563342,
+          "max_speed_violation_m_s": 0.7297735720343788,
+          "mean_abs_acceleration_m_s2": 0.894244786128501,
+          "mean_abs_action": 0.3430169582366943,
+          "mean_abs_action_change": 0.2163128590233654,
+          "mean_abs_jerk_m_s3": 5.6155505329941064,
+          "regenerative_energy_kwh": 0.08322013173067389,
+          "speed_violation_count": 2,
+          "step_count": 750,
+          "traction_energy_kwh": 0.30340076520916176,
+          "travel_time_s": 75.00000000000001
+        },
+        {
+          "acceleration_sign_change_count": 591,
+          "action_total_variation": 245.46900284290314,
+          "completed": true,
+          "energy_kwh": 0.2163613666903024,
+          "evaluation_seed": 3002,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1001.1013017233876,
+          "integrated_speed_violation_m": 1.0317312186829666,
+          "max_abs_jerk_m_s3": 35.84190397775823,
+          "max_speed_violation_m_s": 0.5966032844517297,
+          "mean_abs_acceleration_m_s2": 0.6591177025787932,
+          "mean_abs_action": 0.23462289959644805,
+          "mean_abs_action_change": 0.17761867065333078,
+          "mean_abs_jerk_m_s3": 5.346257637305389,
+          "regenerative_energy_kwh": 0.061865293825032974,
+          "speed_violation_count": 2,
+          "step_count": 1383,
+          "traction_energy_kwh": 0.2782266605153352,
+          "travel_time_s": 138.29999999999643
+        },
+        {
+          "acceleration_sign_change_count": 304,
+          "action_total_variation": 325.37714171409607,
+          "completed": true,
+          "energy_kwh": 0.30067113741156,
+          "evaluation_seed": 3003,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1001.6753606044463,
+          "integrated_speed_violation_m": 10.242888420597774,
+          "max_abs_jerk_m_s3": 57.94776860385703,
+          "max_speed_violation_m_s": 1.7192655315254477,
+          "mean_abs_acceleration_m_s2": 0.9121843390339138,
+          "mean_abs_action": 0.33191710842369887,
+          "mean_abs_action_change": 0.30016341486540227,
+          "mean_abs_jerk_m_s3": 9.030685592953642,
+          "regenerative_energy_kwh": 0.06941800878567793,
+          "speed_violation_count": 2,
+          "step_count": 1085,
+          "traction_energy_kwh": 0.37008914619723793,
+          "travel_time_s": 108.49999999999811
+        },
+        {
+          "acceleration_sign_change_count": 183,
+          "action_total_variation": 185.1011484861374,
+          "completed": true,
+          "energy_kwh": 0.22762480581318376,
+          "evaluation_seed": 3004,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1001.433036739902,
+          "integrated_speed_violation_m": 4.83280874874196,
+          "max_abs_jerk_m_s3": 35.73196286779922,
+          "max_speed_violation_m_s": 0.7708118836974442,
+          "mean_abs_acceleration_m_s2": 0.8507992135392427,
+          "mean_abs_action": 0.3335995204410948,
+          "mean_abs_action_change": 0.22573310790992365,
+          "mean_abs_jerk_m_s3": 5.661870315377103,
+          "regenerative_energy_kwh": 0.08546432543325824,
+          "speed_violation_count": 5,
+          "step_count": 821,
+          "traction_energy_kwh": 0.31308913124644205,
+          "travel_time_s": 82.09999999999961
+        },
+        {
+          "acceleration_sign_change_count": 167,
+          "action_total_variation": 185.1752816438675,
+          "completed": true,
+          "energy_kwh": 0.1970176807577461,
+          "evaluation_seed": 3005,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1000.9901760427351,
+          "integrated_speed_violation_m": 11.221538345074,
+          "max_abs_jerk_m_s3": 59.15860066064555,
+          "max_speed_violation_m_s": 1.2498921886354122,
+          "mean_abs_acceleration_m_s2": 0.8336757426851944,
+          "mean_abs_action": 0.31286475170000105,
+          "mean_abs_action_change": 0.2308918723738996,
+          "mean_abs_jerk_m_s3": 6.068626446314593,
+          "regenerative_energy_kwh": 0.07497094036302872,
+          "speed_violation_count": 4,
+          "step_count": 803,
+          "traction_energy_kwh": 0.27198862112077543,
+          "travel_time_s": 80.29999999999971
+        },
+        {
+          "acceleration_sign_change_count": 1658,
+          "action_total_variation": 614.3151547908783,
+          "completed": false,
+          "energy_kwh": 0.15212055447521974,
+          "evaluation_seed": 3006,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 914.3216056057448,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 31.121250417720525,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.5532085688547114,
+          "mean_abs_action": 0.1824891972872946,
+          "mean_abs_action_change": 0.3414759059426783,
+          "mean_abs_jerk_m_s3": 10.378795768016092,
+          "regenerative_energy_kwh": 0.04559735028649226,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.19771790476171228,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 420,
+          "action_total_variation": 451.5462076663971,
+          "completed": true,
+          "energy_kwh": 0.22875595563166504,
+          "evaluation_seed": 3007,
+          "failure_mode": "speed",
+          "feasible": false,
+          "final_position_m": 1001.1140094928909,
+          "integrated_speed_violation_m": 4.450020207992614,
+          "max_abs_jerk_m_s3": 59.23472045634816,
+          "max_speed_violation_m_s": 0.9682094320029755,
+          "mean_abs_acceleration_m_s2": 0.800835402872611,
+          "mean_abs_action": 0.2836445080331597,
+          "mean_abs_action_change": 0.3600846951087696,
+          "mean_abs_jerk_m_s3": 10.780200956530074,
+          "regenerative_energy_kwh": 0.06019800765202372,
+          "speed_violation_count": 3,
+          "step_count": 1255,
+          "traction_energy_kwh": 0.2889539632836885,
+          "travel_time_s": 125.49999999999714
+        },
+        {
+          "acceleration_sign_change_count": 430,
+          "action_total_variation": 373.9335733652115,
+          "completed": true,
+          "energy_kwh": 0.1974143793946782,
+          "evaluation_seed": 3008,
+          "failure_mode": "feasible",
+          "feasible": true,
+          "final_position_m": 1000.0155918679166,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 55.27428284160662,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.9036168305435993,
+          "mean_abs_action": 0.3226417483752256,
+          "mean_abs_action_change": 0.3231923711021707,
+          "mean_abs_jerk_m_s3": 9.697638882860511,
+          "regenerative_energy_kwh": 0.09249633568355606,
+          "speed_violation_count": 0,
+          "step_count": 1158,
+          "traction_energy_kwh": 0.28991071507823424,
+          "travel_time_s": 115.7999999999977
+        }
+      ],
+      "gradient_updates": 299900,
+      "model_num_timesteps_verified": 300000,
+      "model_sha256": "a4e61c04634c41ea493cef98698e08fed356bdbecb3a286f2f92dbc5768fc608",
+      "screening_role": "used as the fixed candidate-screening training seed",
+      "simulator_transitions": 300000,
+      "source_result_path": "runs/llm-reward-final/training-seed-11/validation-result.json",
+      "source_result_sha256": "31444796431219e9d4f11f34b0c6f5389347f9dc4f81753cdb323da2fa37c9e9",
+      "summary": {
+        "completed_within_deadline_count": 8,
+        "completion_count": 8,
+        "completion_rate": 0.8888888888888888,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 9,
+          "rate": 0.2222222222222222,
+          "speed_compliant_count": 2
+        },
+        "deadline_compliance_rate_all_episodes": 0.8888888888888888,
+        "deadline_compliant_count_all_episodes": 8,
+        "episode_count": 9,
+        "evaluation_interactions": 9889,
+        "failure_mode_counts": {
+          "feasible": 1,
+          "incomplete+time": 1,
+          "speed": 7
+        },
+        "feasible_count": 1,
+        "feasible_energy_kwh": {
+          "count": 1,
+          "maximum": 0.1974143793946782,
+          "mean": 0.1974143793946782,
+          "median": 0.1974143793946782,
+          "minimum": 0.1974143793946782
+        },
+        "feasible_tracks": [
+          {
+            "evaluation_seed": 3008,
+            "training_seed": 11
+          }
+        ],
+        "integrated_speed_violation_m": {
+          "count": 9,
+          "maximum": 11.221538345074,
+          "mean": 4.411268756851869,
+          "median": 4.450020207992614,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 9,
+          "maximum": 1.7192655315254477,
+          "mean": 0.6973741358659369,
+          "median": 0.7297735720343788,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.1111111111111111,
+        "speed_compliance_rate_all_episodes": 0.2222222222222222,
+        "speed_compliant_count_all_episodes": 2,
+        "travel_time_s": {
+          "count": 9,
+          "maximum": 179.99999999999406,
+          "mean": 109.87777777777582,
+          "median": 108.49999999999811,
+          "minimum": 75.00000000000001
+        }
+      },
+      "training_seed": 11,
+      "training_wall_time_s": 2538.8096804170054
+    },
+    {
+      "episodes": [
+        {
+          "acceleration_sign_change_count": 1332,
+          "action_total_variation": 1657.1474200487137,
+          "completed": false,
+          "energy_kwh": 0.2371928263929408,
+          "evaluation_seed": 3000,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 593.2829824357817,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 53.39364481835874,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 1.6741621606348478,
+          "mean_abs_action": 0.5607810031374295,
+          "mean_abs_action_change": 0.9211492051410304,
+          "mean_abs_jerk_m_s3": 27.65604584960184,
+          "regenerative_energy_kwh": 0.08864032718204191,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.3258331535749824,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 1,
+          "action_total_variation": 0.07762312889099121,
+          "completed": false,
+          "energy_kwh": 0.04890529832977127,
+          "evaluation_seed": 3001,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 51.60945444781675,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.6689321994781494,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0016152362371444132,
+          "mean_abs_action": 0.027351693246099686,
+          "mean_abs_action_change": 4.3147931568088496e-05,
+          "mean_abs_jerk_m_s3": 0.0009555918925158883,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04890529832977127,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3002,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.16473454236984253,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3003,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.16473454236984253,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3004,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.32490289211273193,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 1786,
+          "action_total_variation": 1644.0597876310349,
+          "completed": false,
+          "energy_kwh": 0.15269716868021968,
+          "evaluation_seed": 3005,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 209.74420632341784,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 53.68851749244105,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 1.1867961872176511,
+          "mean_abs_action": 0.45826850440767075,
+          "mean_abs_action_change": 0.9138742566042439,
+          "mean_abs_jerk_m_s3": 23.68929339891739,
+          "regenerative_energy_kwh": 0.018154265713999907,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.17085143439421965,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3006,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.13851267099380493,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 283,
+          "action_total_variation": 272.12331223487854,
+          "completed": false,
+          "energy_kwh": 0.09991380584220028,
+          "evaluation_seed": 3007,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 228.959315932422,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 54.33259849012025,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.40049731685646917,
+          "mean_abs_action": 0.2477321156528261,
+          "mean_abs_action_change": 0.1512636532711943,
+          "mean_abs_jerk_m_s3": 4.520634030554305,
+          "regenerative_energy_kwh": 0.03297158978939815,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.13288539563159354,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 446,
+          "action_total_variation": 211.9051651954651,
+          "completed": false,
+          "energy_kwh": 0.08200805399441607,
+          "evaluation_seed": 3008,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 180.69966282006058,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 39.5435092562548,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.2596929149443756,
+          "mean_abs_action": 0.10840873764620887,
+          "mean_abs_action_change": 0.11779053095912456,
+          "mean_abs_jerk_m_s3": 3.544040697006872,
+          "regenerative_energy_kwh": 0.01048775299439893,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.09249580698881485,
+          "travel_time_s": 179.99999999999406
+        }
+      ],
+      "gradient_updates": 299900,
+      "model_num_timesteps_verified": 300000,
+      "model_sha256": "faefdcd99abddb112a88f6b58b25d61b473ee077fdcc0e4298135baef305221d",
+      "screening_role": "not used for candidate screening",
+      "simulator_transitions": 300000,
+      "source_result_path": "runs/llm-reward-final/training-seed-29/validation-result.json",
+      "source_result_sha256": "0cc154ee146d930f11f21291fea9d4f5241054682cc6a7b03cbbdca403778d4f",
+      "summary": {
+        "completed_within_deadline_count": 0,
+        "completion_count": 0,
+        "completion_rate": 0.0,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 1,
+          "rate": 1.0,
+          "speed_compliant_count": 1
+        },
+        "deadline_compliance_rate_all_episodes": 0.0,
+        "deadline_compliant_count_all_episodes": 0,
+        "episode_count": 9,
+        "evaluation_interactions": 16200,
+        "failure_mode_counts": {
+          "incomplete+time": 9
+        },
+        "feasible_count": 0,
+        "feasible_energy_kwh": {
+          "count": 0,
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null
+        },
+        "feasible_tracks": [],
+        "integrated_speed_violation_m": {
+          "count": 9,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 9,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate_all_episodes": 1.0,
+        "speed_compliant_count_all_episodes": 9,
+        "travel_time_s": {
+          "count": 9,
+          "maximum": 179.99999999999406,
+          "mean": 179.99999999999406,
+          "median": 179.99999999999406,
+          "minimum": 179.99999999999406
+        }
+      },
+      "training_seed": 29,
+      "training_wall_time_s": 2020.8188115830126
+    },
+    {
+      "episodes": [
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3000,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.6829419732093811,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 529,
+          "action_total_variation": 747.2097301483154,
+          "completed": false,
+          "energy_kwh": 0.20261306433641907,
+          "evaluation_seed": 3001,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 641.1282458379894,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 43.13221775650901,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 1.2398569321013586,
+          "mean_abs_action": 0.4137791617380248,
+          "mean_abs_action_change": 0.4153472652297473,
+          "mean_abs_jerk_m_s3": 12.6822728969524,
+          "regenerative_energy_kwh": 0.03780416652251367,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.240417230858933,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 3,
+          "action_total_variation": 1.0248594880104065,
+          "completed": false,
+          "energy_kwh": 0.05115184482167997,
+          "evaluation_seed": 3002,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 43.888371846955096,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 2.9723596572875977,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.025113991900261496,
+          "mean_abs_action": 0.4870498727758725,
+          "mean_abs_action_change": 0.0005696828727128441,
+          "mean_abs_jerk_m_s3": 0.017336349334641257,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.05115184482167997,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 3,
+          "action_total_variation": 1.0248594880104065,
+          "completed": false,
+          "energy_kwh": 0.05115184482167997,
+          "evaluation_seed": 3003,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 43.888371846955096,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 2.9723596572875977,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.025113991900261496,
+          "mean_abs_action": 0.4870498727758725,
+          "mean_abs_action_change": 0.0005696828727128441,
+          "mean_abs_jerk_m_s3": 0.017336349334641257,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.05115184482167997,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 195,
+          "action_total_variation": 11.697111785411835,
+          "completed": false,
+          "energy_kwh": 0.10397103457693593,
+          "evaluation_seed": 3004,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 273.7158970722813,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 19.326975403661066,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.046635975575678994,
+          "mean_abs_action": 0.060396563013394675,
+          "mean_abs_action_change": 0.006502007662819252,
+          "mean_abs_jerk_m_s3": 0.1989289348107705,
+          "regenerative_energy_kwh": 0.000741090494047521,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.10471212507098346,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3005,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.8600843548774719,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 1,
+          "action_total_variation": 0.8012009263038635,
+          "completed": false,
+          "energy_kwh": 0.05205072851739944,
+          "evaluation_seed": 3006,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 56.45308961433286,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 2.548750638961792,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.03123672820806663,
+          "mean_abs_action": 0.46285120682583913,
+          "mean_abs_action_change": 0.0004453590474173783,
+          "mean_abs_jerk_m_s3": 0.01637259118696969,
+          "regenerative_energy_kwh": 1.2528655430930177e-06,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.052051981382942536,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 15,
+          "action_total_variation": 9.118610858917236,
+          "completed": false,
+          "energy_kwh": 0.07372194405830064,
+          "evaluation_seed": 3007,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 245.81511057183613,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 24.048069079680204,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.11244594154727829,
+          "mean_abs_action": 0.20338051524427203,
+          "mean_abs_action_change": 0.00506871087210519,
+          "mean_abs_jerk_m_s3": 0.16602084220254545,
+          "regenerative_energy_kwh": 0.0018159384151527228,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.07553788247345337,
+          "travel_time_s": 179.99999999999406
+        },
+        {
+          "acceleration_sign_change_count": 0,
+          "action_total_variation": 0.0,
+          "completed": false,
+          "energy_kwh": 0.04043848354770364,
+          "evaluation_seed": 3008,
+          "failure_mode": "incomplete+time",
+          "feasible": false,
+          "final_position_m": 0.0,
+          "integrated_speed_violation_m": 0.0,
+          "max_abs_jerk_m_s3": 0.0,
+          "max_speed_violation_m_s": 0.0,
+          "mean_abs_acceleration_m_s2": 0.0,
+          "mean_abs_action": 0.5232605338096619,
+          "mean_abs_action_change": 0.0,
+          "mean_abs_jerk_m_s3": 0.0,
+          "regenerative_energy_kwh": 0.0,
+          "speed_violation_count": 0,
+          "step_count": 1800,
+          "traction_energy_kwh": 0.04043848354770364,
+          "travel_time_s": 179.99999999999406
+        }
+      ],
+      "gradient_updates": 299900,
+      "model_num_timesteps_verified": 300000,
+      "model_sha256": "4a0cd115642628bd6e356890b4ba61dd7a648c3fb7a1ef48fa228d4f8473e3ce",
+      "screening_role": "not used for candidate screening",
+      "simulator_transitions": 300000,
+      "source_result_path": "runs/llm-reward-final/training-seed-47/validation-result.json",
+      "source_result_sha256": "474380616c1e064b6cc224ce14f641acdc2490737a026f6e6214a9f139138190",
+      "summary": {
+        "completed_within_deadline_count": 0,
+        "completion_count": 0,
+        "completion_rate": 0.0,
+        "conditional_speed_compliance": {
+          "definition": "completed or final_position_m / 1000.0 >= 0.5",
+          "eligible_count": 1,
+          "rate": 1.0,
+          "speed_compliant_count": 1
+        },
+        "deadline_compliance_rate_all_episodes": 0.0,
+        "deadline_compliant_count_all_episodes": 0,
+        "episode_count": 9,
+        "evaluation_interactions": 16200,
+        "failure_mode_counts": {
+          "incomplete+time": 9
+        },
+        "feasible_count": 0,
+        "feasible_energy_kwh": {
+          "count": 0,
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null
+        },
+        "feasible_tracks": [],
+        "integrated_speed_violation_m": {
+          "count": 9,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "max_speed_violation_m_s": {
+          "count": 9,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliance_rate_all_episodes": 1.0,
+        "speed_compliant_count_all_episodes": 9,
+        "travel_time_s": {
+          "count": 9,
+          "maximum": 179.99999999999406,
+          "mean": 179.99999999999406,
+          "median": 179.99999999999406,
+          "minimum": 179.99999999999406
+        }
+      },
+      "training_seed": 47,
+      "training_wall_time_s": 1982.3985613340046
+    }
+  ],
+  "schema_version": 1,
+  "winner": {
+    "candidate_id": "g1-c02",
+    "protocol_id": "llm-reward-search-v1",
+    "protocol_sha256": "7f1da03f98c8d1bd7f3607710ca62bab82f19f86670cd8b27d5458d83f28ca4e",
+    "search_status": "CLOSED",
+    "source_sha256": "714ed4124e98b2e12d1d89a72edb78d9ab1f04de8fd88e2e18bb74350417fd47",
+    "winner_freeze_commit": "18db74c4263aff7db058cdc08f17bc6ab26f2ff2"
+  }
+}

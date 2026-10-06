@@ -644,7 +644,7 @@
   ],
   "engineering_effort": {
     "explicit_task_metrics_in_reflection": 13,
-    "final_training_transitions": 0,
+    "final_training_transitions": 900000,
     "generated_reward_candidate_count": 11,
     "generation_count_started": 3,
     "human_reward_edits": 0,
