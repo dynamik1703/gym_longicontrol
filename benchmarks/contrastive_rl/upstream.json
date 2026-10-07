@@ -1,0 +1,44 @@
+{
+  "paper": {
+    "title": "1000 Layer Networks for Self-Supervised RL: Scaling Depth Can Enable New Goal-Reaching Capabilities",
+    "arxiv_id": "2503.14858",
+    "audited_version": "v4",
+    "versioned_url": "https://arxiv.org/html/2503.14858v4",
+    "version_date": "2026-02-02",
+    "note": "A later v5 existed on the audit date; v4 is pinned because the research specification requires it."
+  },
+  "foundational_paper": {
+    "title": "Contrastive Learning as Goal-Conditioned Reinforcement Learning",
+    "arxiv_id": "2206.07568",
+    "url": "https://arxiv.org/abs/2206.07568"
+  },
+  "implementation": {
+    "repository": "https://github.com/wang-kevin3290/scaling-crl",
+    "commit": "17acb519ddc4325c8662b1f8c68ed6a5f31857fc",
+    "commit_date": "2026-07-24T00:30:35-07:00",
+    "license": "Apache-2.0",
+    "attribution": "Copyright 2023 FLAIR",
+    "local_files_modified": true,
+    "audited_paths": [
+      "train.py",
+      "buffer.py",
+      "evaluator.py",
+      "pyproject.toml",
+      "LICENSE"
+    ],
+    "last_path_commits": {
+      "train.py": "7132ebbd210a7a9cfc6454b2339f7037ebb6433f",
+      "buffer.py": "e224a55a4238d5d895e5ecf84514793620165b34",
+      "evaluator.py": "e224a55a4238d5d895e5ecf84514793620165b34",
+      "pyproject.toml": "8d0d078e035bc6215826651f5cca188330915e23",
+      "LICENSE": "7f3365fd03cdacfe6ecd23ae734356022330864f"
+    },
+    "source_hashes_sha256": {
+      "train.py": "58ddfc653752f4b47f44de99f2c4d3969a0bda0b928da61b238c211c2a82bdd4",
+      "buffer.py": "c329993bd503d54e7fa4ba6184bfb85642e5029fe1bb9805a6fcbaf656e4a44e",
+      "evaluator.py": "70ee12b816b98babb31c7b46a6f768e2e6c4d2c0aab2c23e0f6094bfb54003ad",
+      "pyproject.toml": "0df55d1f0fa8de40ab01dc68437e3c7d11633b46539f47c6832d0c01c93321a7",
+      "LICENSE": "194e94abef030f092fde5f16e9966ba07f1c83455467a7f2cf9f9282335288c4"
+    }
+  }
+}

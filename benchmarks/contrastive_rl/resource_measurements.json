@@ -1,0 +1,98 @@
+{
+  "kind": "preparation_only_synthetic_resource_check",
+  "generated_at": "2026-10-07",
+  "host": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.10.14",
+    "logical_cpu_count": 12,
+    "physical_memory_bytes": 34359738368
+  },
+  "backend": {
+    "jax": "0.4.23",
+    "jaxlib": "0.4.23",
+    "flax": "0.7.4",
+    "optax": "0.1.7",
+    "devices": [
+      "TFRT_CPU_0"
+    ],
+    "external_tracking": false
+  },
+  "depths": [
+    {
+      "depth_inside_residual_blocks": 4,
+      "residual_blocks_per_network": 1,
+      "input_projection_dense_layers_per_network": 1,
+      "actor_output_dense_layers": 2,
+      "critic_output_dense_layers_per_encoder": 1,
+      "batch_size": 256,
+      "synthetic_update_iterations_steady": 20,
+      "synthetic_update_iterations_total_including_compile": 21,
+      "parameters": {
+        "actor": 270594,
+        "state_action_encoder": 285760,
+        "goal_encoder": 283456,
+        "total_trainable": 839811
+      },
+      "timing_seconds": {
+        "host_to_device_batch": 7.345799895119853e-05,
+        "actor_compile_and_first_call": 0.18308445799993933,
+        "actor_steady_total": 0.10227283300264389,
+        "actor_steady_per_batch": 0.001022728330026439,
+        "update_compile_and_first_call": 6.653417582998372,
+        "update_steady_total": 0.5100235419995442,
+        "update_steady_per_iteration": 0.025501177099977214
+      },
+      "resident_memory_bytes": {
+        "before": 152043520,
+        "after": 496091136,
+        "observed_increase": 344047616
+      },
+      "finite_final_metrics": true
+    },
+    {
+      "depth_inside_residual_blocks": 16,
+      "residual_blocks_per_network": 4,
+      "input_projection_dense_layers_per_network": 1,
+      "actor_output_dense_layers": 2,
+      "critic_output_dense_layers_per_encoder": 1,
+      "batch_size": 256,
+      "synthetic_update_iterations_steady": 20,
+      "synthetic_update_iterations_total_including_compile": 21,
+      "parameters": {
+        "actor": 1066242,
+        "state_action_encoder": 1081408,
+        "goal_encoder": 1079104,
+        "total_trainable": 3226755
+      },
+      "timing_seconds": {
+        "host_to_device_batch": 6.495799971162342e-05,
+        "actor_compile_and_first_call": 0.5545074999972712,
+        "actor_steady_total": 0.44351874999847496,
+        "actor_steady_per_batch": 0.00443518749998475,
+        "update_compile_and_first_call": 39.64867770799901,
+        "update_steady_total": 1.3761379170027794,
+        "update_steady_per_iteration": 0.06880689585013897
+      },
+      "resident_memory_bytes": {
+        "before": 445366272,
+        "after": 1189167104,
+        "observed_increase": 743800832
+      },
+      "finite_final_metrics": true
+    }
+  ],
+  "simulator": {
+    "transitions": 1000,
+    "development_seed_start": 2000,
+    "fixed_action": 0.0,
+    "resets": 0,
+    "elapsed_seconds": 0.05705449999732082,
+    "transitions_per_second": 17527.10128117779,
+    "final_observation_finite": true,
+    "used_for_learning": false
+  },
+  "training_performed": false,
+  "validation_tracks_used": false,
+  "paper_tracks_used": false
+}

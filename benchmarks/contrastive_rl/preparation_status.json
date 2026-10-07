@@ -1,0 +1,27 @@
+{
+  "status": "PREPARED_NOT_READY",
+  "reference_core_verified": true,
+  "task_mapping_verified": false,
+  "numerical_tests_passed": true,
+  "resource_check_completed": true,
+  "ready_for_main_training": false,
+  "main_training_enabled": false,
+  "blocking_decisions": [
+    "Define a reference measure and importance weights for canonical goal-set aggregation.",
+    "Define actor and real-rollout goal distributions without fabricating successful examples.",
+    "Resolve the upstream batch-size mismatch (code default 256 versus paper/example 512) without a performance sweep.",
+    "Add synthetic parity tests for the selected set estimator before freezing the protocol."
+  ],
+  "preparation_usage": {
+    "longicontrol_simulator_transitions": 1000,
+    "longicontrol_policy_training_transitions": 0,
+    "synthetic_full_updates_depth_4": 21,
+    "synthetic_full_updates_depth_16": 21,
+    "validation_tracks_used": false,
+    "paper_tracks_used": false,
+    "development_seed_used": 2000
+  },
+  "future_protocol_status": "DRAFT",
+  "planned_main_depths": [4, 16],
+  "planned_main_seeds": [11, 29, 47]
+}

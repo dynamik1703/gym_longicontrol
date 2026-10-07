@@ -1,0 +1,12 @@
+# Isolated, preparation-only CPU reference environment (Python 3.10).
+# The public package deliberately does not acquire these heavy dependencies.
+numpy==1.26.4
+jax==0.4.23
+jaxlib==0.4.23
+flax==0.7.4
+optax==0.1.7
+chex==0.1.85
+scipy==1.12.0
+pytest==8.4.2
+psutil==7.0.0
+gymnasium>=1.0,<2

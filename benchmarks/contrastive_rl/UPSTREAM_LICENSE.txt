@@ -1,0 +1,12 @@
+The architecture and update equations in this preparation are derived from:
+
+  scaling-crl, https://github.com/wang-kevin3290/scaling-crl
+  pinned revision 17acb519ddc4325c8662b1f8c68ed6a5f31857fc
+  Copyright 2023 FLAIR
+  Licensed under the Apache License, Version 2.0.
+
+The local files are modified: Brax/environment/tracking code was removed,
+dimensions were made explicit, numerical distance guarding was added, and
+LongiControl-specific outcome handling was isolated in a separate adapter.
+
+Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0

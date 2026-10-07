@@ -1,0 +1,33 @@
+{
+  "status": "DRAFT_NOT_EXECUTABLE",
+  "reason": "The reference core is prepared, but canonical goal-set aggregation and actor-goal sampling are not yet semantically resolved.",
+  "task": {
+    "route_length_m": 1000.0,
+    "max_time_s": 140.0,
+    "max_speed_violation_m_s": 0.0,
+    "energy_role": "evaluation_only"
+  },
+  "reference_core": {
+    "backend": "JAX/Flax",
+    "depths_inside_residual_blocks": [4, 16],
+    "width": 256,
+    "embedding_dim": 64,
+    "batch_size": 256,
+    "actor_learning_rate": 0.0003,
+    "critic_learning_rate": 0.0003,
+    "alpha_learning_rate": 0.0003,
+    "gamma_per_decision": 0.99,
+    "entropy_fraction": 0.5,
+    "logsumexp_penalty": 0.1
+  },
+  "future_protocol_if_unblocked": {
+    "seeds": [11, 29, 47],
+    "native_transitions_per_policy": 300000,
+    "total_native_transitions": 1800000,
+    "development_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+    "development_tracks": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation_tracks": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper_tracks_sealed": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "main_training_enabled": false
+}
