@@ -1,8 +1,9 @@
-# Contrastive RL preparation
+# Projected-goal Contrastive RL
 
-This directory prepares, but does not execute, a Contrastive Reinforcement
-Learning (CRL) study for LongiControl. Here CRL means contrastive RL, not the
-earlier constrained-RL benchmark.
+This directory contains the frozen design and execution infrastructure for a
+Contrastive Reinforcement Learning (CRL) depth study. Here CRL means
+contrastive RL, not the earlier constrained-RL benchmark. The six main runs
+remain disabled until a separate explicit authorization.
 
 The source-faithful core contains residual actor/state-action/goal networks,
 negative-Euclidean association scores, diagonal-positive InfoNCE, entropy
@@ -31,12 +32,16 @@ representation. The score remains an uncalibrated association surrogate.
 - Frozen pre-training depth protocol: [PROTOCOL.md](PROTOCOL.md)
 - Bounded CPU/JAX measurements: [RESOURCE_REPORT.md](RESOURCE_REPORT.md)
 - Machine-readable readiness: [preparation_status.json](preparation_status.json)
+- Execution/checkpoint contract: [EXECUTION.md](EXECUTION.md)
+- Machine-readable run schema: [execution_schema.json](execution_schema.json)
 
-The optional JAX stack is isolated in `requirements-reference.txt`; it is not a
+The optional JAX stack is isolated in requirements-reference.txt; it is not a
 dependency of the public environment package. External tracking and telemetry
-are absent. Semantic readiness does not authorize execution: the end-to-end
-runner/checkpoint contract is not implemented, and no LongiControl policy was
-trained.
+are absent. runner.py now provides the exact collector/replay/update loop,
+atomic full-state checkpoints, diagnostics, split gates, and duplicate-run
+protection. Readiness does not authorize execution:
+main_training_authorized and main_training_enabled remain false, and no
+LongiControl policy was trained.
 
 ## Reproduce preparation checks
 

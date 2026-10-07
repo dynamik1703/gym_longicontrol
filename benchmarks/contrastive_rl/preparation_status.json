@@ -1,33 +1,33 @@
 {
-  "status": "SEMANTICALLY_READY_EXECUTION_NOT_IMPLEMENTED_OR_AUTHORIZED",
+  "status": "READY_FOR_MAIN_TRAINING_NOT_AUTHORIZED",
   "reference_core_verified": true,
   "task_mapping_verified": true,
   "numerical_tests_passed": true,
   "resource_check_completed": true,
   "technical_semantic_readiness": true,
-  "execution_infrastructure_ready": false,
-  "ready_for_main_training": false,
+  "execution_infrastructure_ready": true,
+  "ready_for_main_training": true,
   "main_training_authorized": false,
   "main_training_enabled": false,
   "remaining_blockers": [
-    "Implement and verify the end-to-end collector/replay/update runner.",
-    "Implement atomic checkpoints covering model, optimizers, replay, sampler RNG, environment state, counters and hashes.",
     "Obtain a separate explicit authorization before executing the six main runs."
   ],
   "preparation_usage": {
     "previous_longicontrol_simulator_transitions": 1000,
     "revision_additional_longicontrol_simulator_transitions": 500,
-    "total_longicontrol_simulator_transitions": 1500,
+    "execution_infrastructure_additional_simulator_transitions": 3,
+    "total_longicontrol_simulator_transitions": 1503,
     "longicontrol_policy_training_transitions": 0,
     "previous_synthetic_full_updates_depth_4": 21,
     "previous_synthetic_full_updates_depth_16": 21,
     "revision_synthetic_full_updates_depth_4": 20,
     "revision_synthetic_full_updates_depth_16": 20,
+    "execution_small_core_exact_resume_update_comparisons": 2,
     "validation_tracks_used": false,
     "paper_tracks_used": false,
-    "development_seeds_used": [2000, 2001]
+    "development_seeds_used": [2000, 2001, 2002]
   },
-  "future_protocol_status": "FROZEN_PRETRAINING_DESIGN_EXECUTION_DISABLED",
+  "future_protocol_status": "FROZEN_EXECUTION_READY_BUT_NOT_AUTHORIZED",
   "planned_main_depths": [4, 16],
   "planned_main_seeds": [11, 29, 47]
 }

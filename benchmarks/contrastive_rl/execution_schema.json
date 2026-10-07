@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "study_id": "projected-goal-crl-depth-v1",
+  "frozen_configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+  "output_root": "runs/contrastive-rl-projected-depth-v1",
+  "matrix": {
+    "depths": [4, 16],
+    "training_seeds": [11, 29, 47],
+    "policy_count": 6
+  },
+  "policy_states": ["NOT_STARTED", "RUNNING", "INTERRUPTED", "COMPLETED"],
+  "schedule": {
+    "native_transitions": 300000,
+    "prefill_transitions": 10000,
+    "first_update_after_transition": 10040,
+    "update_interval_transitions": 40,
+    "last_update_after_transition": 300000,
+    "complete_update_cycles": 7250,
+    "batch_size": 256
+  },
+  "checkpoint": {
+    "schema_version": 1,
+    "atomic_single_file": true,
+    "exact_resume_fields": [
+      "learner_and_all_optimizer_states",
+      "replay_rows_and_indices",
+      "episode_and_trajectory_bookkeeping",
+      "future_sampler_rng",
+      "actor_action_rng",
+      "update_rng",
+      "track_rng_and_used_reset_seeds",
+      "serialized_environment",
+      "current_observation_and_raw_outcome",
+      "transition_and_update_counters",
+      "diagnostics_and_training_outcomes",
+      "completed_development_evaluations",
+      "configuration_source_and_runtime_hashes"
+    ]
+  },
+  "development": {
+    "checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+    "tracks": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "deterministic": true,
+    "selection_role": "diagnostic_only"
+  },
+  "validation": {
+    "tracks": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "opened": false,
+    "gate": "all_six_complete_exact_budget_all_hashes_all_development"
+  },
+  "paper_final": {
+    "tracks": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017],
+    "opened": false,
+    "runner_access": "always_blocked"
+  },
+  "authorization": {
+    "execution_infrastructure_ready": true,
+    "ready_for_main_training": true,
+    "main_training_authorized": false,
+    "main_training_enabled": false
+  }
+}

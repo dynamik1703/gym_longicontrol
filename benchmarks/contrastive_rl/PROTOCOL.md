@@ -1,9 +1,9 @@
-# Frozen pre-training design — projected-goal Contrastive RL
+# Frozen projected-goal Contrastive RL protocol
 
-Status: **SEMANTICALLY FROZEN / EXECUTION DISABLED**. The task mapping and
-matched settings are fixed below, but this document does not authorize training.
-Execution infrastructure and a separate explicit authorization are still
-required.
+Status: **SCIENTIFICALLY FROZEN / EXECUTION READY / NOT AUTHORIZED**. The task
+mapping and matched settings are fixed below. The tested execution
+infrastructure does not authorize training; both authorization flags remain
+false.
 
 ## Research questions
 
@@ -114,9 +114,23 @@ goal composition; duplicate rates; positive/reference scores; embedding norms
 and collapse; actor/critic gradients; entropy/alpha; and `[1,1,1]` query
 behavior. Diagnostic RNG must not perturb training.
 
+## Execution implementation
+
+The implementation details that realize this protocol are documented in
+EXECUTION.md and execution_schema.json. They add no scientific setting. The
+runner uses a dedicated PCG64 track stream excluding all historical,
+Development, Validation, and paper-final tracks. Atomic schema-1 checkpoints
+include learner, optimizers, replay, environment, RNG, counters, diagnostics,
+hashes, and runtime versions.
+
+Caught interruptions produce an exact-resume checkpoint and immutable resource
+accounting. A hard crash without a current exact checkpoint is preserved and
+blocked pending an explicit restart decision; consumed work is never silently
+rerun. An exclusive study lock and per-policy state machine reject duplicate
+RUNNING or COMPLETED policies.
+
 ## Execution gate
 
-Semantic and numerical mapping readiness is satisfied. Main execution remains
-disabled because an end-to-end collector/replay/checkpoint runner with the exact
-resume contract has not been implemented or verified, and this task grants no
-training authorization.
+Semantic, numerical, and execution-infrastructure readiness are satisfied.
+Main execution remains disabled solely because this task grants no training
+authorization. Validation and paper-final access remain sealed.

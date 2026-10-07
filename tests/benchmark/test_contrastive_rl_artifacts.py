@@ -20,10 +20,18 @@ def test_preparation_deliverables_are_complete_without_fake_results():
         "DESIGN.md",
         "PROTOCOL.md",
         "RESOURCE_REPORT.md",
+        "EXECUTION.md",
+        "execution_schema.json",
         "preparation_status.json",
         "canonical.json",
         "upstream.json",
         "projected_adapter.py",
+        "runner.py",
+        "replay.py",
+        "checkpointing.py",
+        "diagnostics.py",
+        "evaluation.py",
+        "execution.py",
         "projection_measurements.json",
         "resource_measurements_projected.json",
     }
@@ -37,13 +45,13 @@ def test_semantic_readiness_is_separate_from_execution_authorization():
     assert status["reference_core_verified"] is True
     assert status["task_mapping_verified"] is True
     assert status["technical_semantic_readiness"] is True
-    assert status["execution_infrastructure_ready"] is False
-    assert status["ready_for_main_training"] is False
+    assert status["execution_infrastructure_ready"] is True
+    assert status["ready_for_main_training"] is True
     assert status["main_training_authorized"] is False
     assert status["main_training_enabled"] is False
     assert (
         status["future_protocol_status"]
-        == "FROZEN_PRETRAINING_DESIGN_EXECUTION_DISABLED"
+        == "FROZEN_EXECUTION_READY_BUT_NOT_AUTHORIZED"
     )
     assert config["status"] == "FROZEN_PRETRAINING_DESIGN_EXECUTION_DISABLED"
     assert config["task_mapping_verified"] is True
@@ -76,6 +84,25 @@ def test_pinned_sources_and_planned_factorial_budget():
     assert future["paper_tracks_sealed"] == list(range(4000, 4018))
 
 
+def test_execution_schema_is_ready_but_cannot_authorize_training():
+    schema = load("execution_schema.json")
+    assert schema["frozen_configuration_sha256"] == (
+        "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc"
+    )
+    assert schema["matrix"] == {
+        "depths": [4, 16],
+        "training_seeds": [11, 29, 47],
+        "policy_count": 6,
+    }
+    assert schema["schedule"]["complete_update_cycles"] == 7_250
+    assert schema["authorization"]["execution_infrastructure_ready"] is True
+    assert schema["authorization"]["ready_for_main_training"] is True
+    assert schema["authorization"]["main_training_authorized"] is False
+    assert schema["authorization"]["main_training_enabled"] is False
+    assert schema["validation"]["opened"] is False
+    assert schema["paper_final"]["opened"] is False
+
+
 def test_resource_probe_stayed_within_preparation_caps():
     measurements = load("resource_measurements.json")
     projected = load("resource_measurements_projected.json")
@@ -99,8 +126,16 @@ def test_resource_probe_stayed_within_preparation_caps():
     assert status["preparation_usage"]["longicontrol_policy_training_transitions"] == 0
     assert (
         status["preparation_usage"]["total_longicontrol_simulator_transitions"]
-        == 1_500
+        == 1_503
     )
+    assert (
+        status["preparation_usage"][
+            "execution_infrastructure_additional_simulator_transitions"
+        ]
+        == 3
+    )
+    assert status["preparation_usage"]["validation_tracks_used"] is False
+    assert status["preparation_usage"]["paper_tracks_used"] is False
 
 
 def test_projection_collision_check_is_bounded_and_not_training():

@@ -59,7 +59,11 @@ therefore treats the identical columns as competing references.
   synthetic cycles per depth.
 - Projection revision: 500 fixed-action Development transitions and 20
   synthetic cycles per depth.
-- Cumulative physical transitions: 1,500, all preparation-only.
+- Execution infrastructure: 3 fixed-action Development transitions on seed
+  2002 to verify bit-identical environment continuation after serialization.
+  Two small-core synthetic update comparisons verified checkpoint continuation;
+  neither used a depth-4/depth-16 physical policy.
+- Cumulative physical transitions: 1,503, all preparation-only.
 - Policy-training transitions: 0.
 - Validation and paper-test transitions: 0.
 
@@ -71,6 +75,6 @@ steady CPU timings, pure update arithmetic is about 3.1 minutes for depth 4 and
 Python orchestration, checkpoints, evaluation, and environment time. No policy
 result selected any setting.
 
-Both depths remain technically feasible on the measured host. The current
-blocker is end-to-end execution/checkpoint infrastructure and authorization,
-not network memory or update throughput.
+Both depths remain technically feasible on the measured host. Execution and
+checkpoint infrastructure is now tested; the only remaining blocker is a
+separate explicit authorization, not network memory or update throughput.
