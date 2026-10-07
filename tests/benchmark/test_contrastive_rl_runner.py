@@ -32,6 +32,7 @@ from benchmarks.contrastive_rl.runner import (  # noqa: E402
     PolicyRunner,
     _checkpoint_policy,
     _observed_future_is_canonical,
+    validate_study,
 )
 
 
@@ -320,6 +321,95 @@ def test_failed_milestone_checkpoint_never_publishes_final_directory(
     assert len(tuple(run_directory.glob(".step-050000.pending-*"))) == 1
     assert runner.development_completed == []
     assert item["development_checkpoints"] == []
+
+
+def test_validation_runs_each_frozen_policy_once_and_persists_54_episodes(
+    tmp_path, monkeypatch
+):
+    from benchmarks.contrastive_rl.config import PLANNED_DEPTHS, PLANNED_SEEDS
+    from benchmarks.contrastive_rl.execution import (
+        DEFAULT_OUTPUT_ROOT,
+        atomic_json,
+        new_manifest,
+    )
+
+    provenance = {
+        "configuration_sha256": "a" * 64,
+        "scientific_source_sha256": {"science.py": "b" * 64},
+        "execution_source_sha256": {"runner.py": "c" * 64},
+    }
+    study_root = tmp_path / DEFAULT_OUTPUT_ROOT
+    study_root.mkdir(parents=True)
+    manifest = new_manifest(provenance)
+    manifest["status"] = "COMPLETED"
+    for item in manifest["policies"].values():
+        item.update(
+            {
+                "status": "COMPLETED",
+                "final_checkpoint_path": "synthetic.ckpt",
+                "final_checkpoint_sha256": "d" * 64,
+            }
+        )
+    atomic_json(study_root / "manifest.json", manifest)
+
+    class Restored:
+        learner = object()
+        learner_state = SimpleNamespace(actor=SimpleNamespace(params={}))
+
+        @staticmethod
+        def close():
+            return None
+
+    calls = []
+
+    def fake_evaluate(_learner, _params, tracks, *, split):
+        calls.append((tuple(tracks), split))
+        episodes = [
+            {
+                "evaluation_seed": track,
+                "step_count": 1,
+                "feasible": False,
+            }
+            for track in tracks
+        ]
+        return {
+            "split": split,
+            "command": [1.0, 1.0, 1.0],
+            "deterministic_actions": True,
+            "separate_environment": True,
+            "episodes": episodes,
+            "summary": {"evaluation_simulator_transitions": len(episodes)},
+        }
+
+    monkeypatch.setattr(
+        "benchmarks.contrastive_rl.runner.verify_preflight",
+        lambda *_args, **_kwargs: provenance,
+    )
+    monkeypatch.setattr(
+        "benchmarks.contrastive_rl.runner.validate_validation_gate",
+        lambda _root, current: (
+            None
+            if not current["validation_opened"]
+            else (_ for _ in ()).throw(RuntimeError("already opened"))
+        ),
+    )
+    monkeypatch.setattr(
+        "benchmarks.contrastive_rl.runner.PolicyRunner.restore",
+        lambda *_args, **_kwargs: Restored(),
+    )
+    monkeypatch.setattr(
+        "benchmarks.contrastive_rl.runner.evaluate_actor", fake_evaluate
+    )
+    validate_study(tmp_path)
+    stored = json.loads((study_root / "manifest.json").read_text())
+    episodes = json.loads((study_root / "validation-episodes.json").read_text())
+    assert stored["validation_opened"] is True
+    assert stored["validation"]["status"] == "COMPLETED"
+    assert stored["validation"]["episode_count"] == 54
+    assert len(episodes) == 54
+    assert len(calls) == len(PLANNED_DEPTHS) * len(PLANNED_SEEDS) == 6
+    with pytest.raises(RuntimeError, match="already opened"):
+        validate_study(tmp_path)
 
 
 def _sampled(goals):

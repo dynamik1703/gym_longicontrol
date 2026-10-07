@@ -99,9 +99,14 @@ Physical canonical success is recorded separately and only through
 never count as task success; energy is reported only for genuinely feasible
 episodes.
 
-## Authorization
+## Authorization and final Validation
 
 `python -m benchmarks.contrastive_rl.runner preflight` performs a read-only
-check. `run` and `resume` require both authorization flags in
-`preparation_status.json` to be true. They are deliberately false in this
-commit. No main run is started by installation, import, tests, or preflight.
+check. `run`, `resume`, and `validate` require both authorization flags in
+`preparation_status.json` to be true. They are true only because the six-policy
+matrix and its single final Validation pass were explicitly authorized after
+the execution-ready commit. No run is started by installation, import, tests,
+or preflight. `validate` first enforces the frozen all-six-complete gate, marks
+Validation opened before evaluating, writes each policy result atomically, and
+cannot be invoked a second time. A failed Validation attempt remains opened and
+must not be silently rerun.

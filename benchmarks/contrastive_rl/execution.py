@@ -262,6 +262,7 @@ def new_manifest(provenance: Mapping[str, Any]) -> dict[str, Any]:
             "native_simulator_transitions": 0,
             "complete_update_cycles": 0,
             "development_simulator_transitions": 0,
+            "validation_simulator_transitions": 0,
         },
         "planned_primary_budget": {
             "native_simulator_transitions": 6 * PLANNED_TRANSITIONS_PER_POLICY,

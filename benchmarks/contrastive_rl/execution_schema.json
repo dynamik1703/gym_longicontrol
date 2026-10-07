@@ -56,7 +56,7 @@
   "authorization": {
     "execution_infrastructure_ready": true,
     "ready_for_main_training": true,
-    "main_training_authorized": false,
-    "main_training_enabled": false
+    "main_training_authorized": true,
+    "main_training_enabled": true
   }
 }

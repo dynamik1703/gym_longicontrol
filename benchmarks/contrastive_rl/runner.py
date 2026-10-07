@@ -31,6 +31,7 @@ from .config import (
     PLANNED_DEPTHS,
     PLANNED_SEEDS,
     PLANNED_TRANSITIONS_PER_POLICY,
+    VALIDATION_TRACKS,
     ReferenceCoreConfig,
 )
 from .diagnostics import DiagnosticsAccumulator, learning_batch_diagnostics
@@ -51,6 +52,7 @@ from .execution import (
     update_manifest,
     utc_now,
     validate_resume_provenance,
+    validate_validation_gate,
     verify_preflight,
 )
 from .goal_adapter import (
@@ -802,12 +804,126 @@ def resume_study(repo_root: str | Path) -> Path:
     return manifest_path
 
 
+def validate_study(repo_root: str | Path) -> Path:
+    """Run the single authorized final Validation pass after all six policies."""
+
+    root = Path(repo_root).resolve()
+    current_provenance = verify_preflight(root, require_training_authorization=True)
+    study_root = root / DEFAULT_OUTPUT_ROOT
+    manifest_path = study_root / "manifest.json"
+    if not manifest_path.is_file():
+        raise RuntimeError("no completed CRL study exists for Validation")
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    validate_resume_provenance(manifest, current_provenance)
+    validate_validation_gate(study_root, manifest)
+    with ExclusiveStudyLock(study_root, manifest["study_id"]):
+        opened_at = utc_now()
+        manifest["validation_opened"] = True
+        manifest["validation"] = {
+            "status": "RUNNING",
+            "opened_at": opened_at,
+            "tracks": list(VALIDATION_TRACKS),
+            "policy_results": [],
+        }
+        update_manifest(study_root, manifest)
+        validation_episodes: list[dict[str, Any]] = []
+        try:
+            for depth in PLANNED_DEPTHS:
+                for seed in PLANNED_SEEDS:
+                    item = manifest["policies"][policy_key(depth, seed)]
+                    checkpoint = study_root / item["final_checkpoint_path"]
+                    runner = PolicyRunner.restore(
+                        checkpoint,
+                        execution_source_sha256=current_provenance[
+                            "execution_source_sha256"
+                        ],
+                    )
+                    try:
+                        result = evaluate_actor(
+                            runner.learner,
+                            runner.learner_state.actor.params,
+                            VALIDATION_TRACKS,
+                            split="validation",
+                        )
+                    finally:
+                        runner.close()
+                    result = {
+                        "depth": depth,
+                        "training_seed": seed,
+                        "final_checkpoint_sha256": item["final_checkpoint_sha256"],
+                        **result,
+                    }
+                    result_path = (
+                        study_root
+                        / f"depth-{depth}"
+                        / f"seed-{seed}"
+                        / "validation-result.json"
+                    )
+                    atomic_json(result_path, result)
+                    item["validation_result_path"] = str(
+                        result_path.relative_to(study_root)
+                    )
+                    item["validation_result_sha256"] = file_sha256(result_path)
+                    item["validation_episode_count"] = len(result["episodes"])
+                    manifest["actual_resources_across_attempts"][
+                        "validation_simulator_transitions"
+                    ] += result["summary"]["evaluation_simulator_transitions"]
+                    manifest["validation"]["policy_results"].append(
+                        {
+                            "depth": depth,
+                            "training_seed": seed,
+                            "path": item["validation_result_path"],
+                            "sha256": item["validation_result_sha256"],
+                            "episode_count": item["validation_episode_count"],
+                        }
+                    )
+                    for episode in result["episodes"]:
+                        validation_episodes.append(
+                            {
+                                "depth": depth,
+                                "training_seed": seed,
+                                **episode,
+                            }
+                        )
+                    atomic_json(
+                        study_root / "validation-episodes.json",
+                        validation_episodes,
+                    )
+                    update_manifest(study_root, manifest)
+            if len(validation_episodes) != 54:
+                raise RuntimeError("final Validation did not produce 54 episodes")
+            manifest["validation"].update(
+                {
+                    "status": "COMPLETED",
+                    "completed_at": utc_now(),
+                    "episode_count": len(validation_episodes),
+                    "episodes_path": "validation-episodes.json",
+                    "episodes_sha256": file_sha256(
+                        study_root / "validation-episodes.json"
+                    ),
+                }
+            )
+            update_manifest(study_root, manifest)
+        except BaseException as error:
+            manifest["validation"].update(
+                {
+                    "status": "INTERRUPTED",
+                    "interrupted_at": utc_now(),
+                    "error_type": type(error).__name__,
+                    "error": str(error),
+                }
+            )
+            update_manifest(study_root, manifest)
+            raise
+    return manifest_path
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "command",
-        choices=("preflight", "run", "resume"),
-        help="run/resume remain authorization-gated",
+        choices=("preflight", "run", "resume", "validate"),
+        help="run/resume/validate are authorization-gated",
     )
     args = parser.parse_args(argv)
     repo_root = Path(__file__).resolve().parents[2]
@@ -824,7 +940,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             )
         )
         return 0
-    operation = run_study if args.command == "run" else resume_study
+    operations = {
+        "run": run_study,
+        "resume": resume_study,
+        "validate": validate_study,
+    }
+    operation = operations[args.command]
     print(operation(repo_root), flush=True)
     return 0
 
