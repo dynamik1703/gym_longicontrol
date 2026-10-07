@@ -7,7 +7,8 @@ earlier constrained-RL benchmark.
 The source-faithful core contains residual actor/state-action/goal networks,
 negative-Euclidean association scores, diagonal-positive InfoNCE, entropy
 temperature learning, episode-safe discounted-future sampling, and save/load.
-LongiControl-specific physical outcomes live in a separate pure adapter.
+LongiControl-specific raw outcomes and their requirement-aware projection live
+in separate adapter modules.
 
 The canonical task is a **first-arrival requirement set**:
 
@@ -17,23 +18,25 @@ and absolute_episode_time <= 140 s
 and cumulative_max_speed_violation <= 0 m/s
 ```
 
-This is not a point state with time coordinate 140, and an association score is
-not a calibrated success probability or safety guarantee. The exact outcome
-representation and set-membership predicate are implemented and tested, but a
-principled actor objective for the whole inequality-defined set is unresolved.
-Consequently [PROTOCOL.md](PROTOCOL.md) is DRAFT and main training is disabled.
+The fixed network command is `[1,1,1]`: completed progress, within deadline,
+and compliant so far. Raw values remain in replay/state, and domain validation
+proves equivalence to canonical first arrival for valid physical transitions.
+This projection is task engineering, not a scalar reward or an unchanged paper
+representation. The score remains an uncalibrated association surrogate.
 
 ## What was checked
 
 - Primary-source audit and pinned upstream revision: [SOURCE_AUDIT.md](SOURCE_AUDIT.md)
-- Mapping decision and open issue: [DESIGN.md](DESIGN.md)
-- Future matched-depth protocol: [PROTOCOL.md](PROTOCOL.md)
+- Mapping decision and equivalence argument: [DESIGN.md](DESIGN.md)
+- Frozen pre-training depth protocol: [PROTOCOL.md](PROTOCOL.md)
 - Bounded CPU/JAX measurements: [RESOURCE_REPORT.md](RESOURCE_REPORT.md)
 - Machine-readable readiness: [preparation_status.json](preparation_status.json)
 
 The optional JAX stack is isolated in `requirements-reference.txt`; it is not a
 dependency of the public environment package. External tracking and telemetry
-are absent. No results file exists because no LongiControl policy was trained.
+are absent. Semantic readiness does not authorize execution: the end-to-end
+runner/checkpoint contract is not implemented, and no LongiControl policy was
+trained.
 
 ## Reproduce preparation checks
 

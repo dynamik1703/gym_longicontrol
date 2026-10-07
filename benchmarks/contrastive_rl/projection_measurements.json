@@ -1,0 +1,15 @@
+{
+  "kind": "preparation_only_projection_collision_check",
+  "development_seed": 2001,
+  "scripted_action": 0.0,
+  "native_simulator_transitions": 500,
+  "used_for_learning": false,
+  "raw_unique_rows": 500,
+  "projected_unique_rows": 1,
+  "raw_equivalent_pair_rate": 0.0,
+  "projected_equivalent_pair_rate": 1.0,
+  "canonical_projected_outcomes": 0,
+  "training_performed": false,
+  "validation_tracks_used": false,
+  "paper_tracks_used": false
+}

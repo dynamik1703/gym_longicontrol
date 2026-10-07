@@ -55,10 +55,23 @@ def test_discarded_state_is_not_sampled_as_a_future():
 
 def test_real_terminal_outcome_can_be_future_but_never_a_source_after_termination():
     pairs = sample_future_pairs(
-        [8, 8], gamma=0.99, rng=np.random.default_rng(2)
+        [8, 8],
+        episode_ends=[False, True],
+        gamma=0.99,
+        rng=np.random.default_rng(2),
     )
     np.testing.assert_array_equal(pairs.source_indices, [0])
     np.testing.assert_array_equal(pairs.future_indices, [1])
+
+
+def test_post_terminal_row_with_same_episode_identity_is_rejected():
+    with pytest.raises(ValueError, match="post-terminal"):
+        sample_future_pairs(
+            [8, 8, 8],
+            episode_ends=[False, True, False],
+            gamma=0.99,
+            rng=np.random.default_rng(2),
+        )
 
 
 def test_reference_columns_and_duplicate_goal_diagnostic():

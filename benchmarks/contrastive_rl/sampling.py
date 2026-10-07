@@ -33,6 +33,7 @@ def sample_future_pairs(
     rng: np.random.Generator,
     eligible=None,
     step_indices=None,
+    episode_ends=None,
 ) -> FuturePairs:
     """Sample one strict future from the same episode for each valid source.
 
@@ -61,11 +62,22 @@ def sample_future_pairs(
     )
     if allowed.shape != ids.shape or allowed.dtype != np.bool_:
         raise ValueError("eligible must be a boolean vector matching episode_ids")
+    ends = (
+        np.zeros(len(ids), dtype=bool)
+        if episode_ends is None
+        else np.asarray(episode_ends)
+    )
+    if ends.shape != ids.shape or ends.dtype != np.bool_:
+        raise ValueError("episode_ends must be a boolean vector matching episode_ids")
+    if len(ids) > 1 and np.any(ends[:-1] & (ids[:-1] == ids[1:])):
+        raise ValueError("post-terminal rows must use a new physical episode ID")
 
     segment = np.zeros(len(ids), dtype=np.int64)
     for index in range(1, len(ids)):
         segment[index] = segment[index - 1] + int(
-            ids[index] != ids[index - 1] or steps[index] != steps[index - 1] + 1
+            ids[index] != ids[index - 1]
+            or steps[index] != steps[index - 1] + 1
+            or ends[index - 1]
         )
 
     sources: list[int] = []
@@ -77,7 +89,7 @@ def sample_future_pairs(
             & (segment == segment[source])
             & allowed
         )
-        if not allowed[source] or not len(candidates):
+        if not allowed[source] or ends[source] or not len(candidates):
             continue
         candidate_lags = candidates - source
         future = int(

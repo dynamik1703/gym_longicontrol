@@ -1,99 +1,122 @@
-# DRAFT protocol — shallow versus deeper Contrastive RL
+# Frozen pre-training design — projected-goal Contrastive RL
 
-Status: **DRAFT / EXECUTION DISABLED**. This document records matched settings,
-but cannot be frozen until the actor-side goal-set estimator in `DESIGN.md` is
-resolved and tested. It authorizes no training.
+Status: **SEMANTICALLY FROZEN / EXECUTION DISABLED**. The task mapping and
+matched settings are fixed below, but this document does not authorize training.
+Execution infrastructure and a separate explicit authorization are still
+required.
 
 ## Research questions
 
-1. Does the finalized CRL task specification produce canonical success?
-2. Does greater residual depth improve RSR under matched rules and budget?
+1. Does projected-goal CRL produce canonical first-arrival success?
+2. Does residual depth 16 improve RSR over depth 4 under matched rules?
 3. Is any difference repeatable across seeds and tracks?
-4. Do association-score diagnostics correspond to actual control outcomes?
+4. Does improved contrastive association correspond to improved control?
 
-## Planned factorial comparison
+## Fixed comparison
 
-- Conditions: residual depth 4 versus 16.
+- Conditions: depth 4 and depth 16, counted only as Dense layers inside
+  four-layer residual blocks.
 - Seeds: 11, 29, 47.
-- Width: 256; embedding: 64; LayerNorm; Swish; residual block every four
-  internal Dense layers.
+- Width 256; embedding 64; LayerNorm; Swish; residual connections.
 - Actor, state-action encoder, and goal encoder scale together.
-- Input/output projections are excluded from the named depth and reported
-  separately.
-- Fixed width means depth 16 has more parameters and compute; this is neither
-  parameter-matched nor FLOP-matched.
-- Budget: 300,000 native simulator transitions per policy, including prefill;
-  1,800,000 total first-tier transitions.
-- No shallow-success gate: both depths run if and only if semantics are ready.
+- Goal dimension 3; policy-state dimension 12; action dimension 1.
+- Batch **256**, explicitly frozen from the pinned code default. The paper table
+  and repository example use 512; this disclosed difference is not tuned.
+- Adam learning rates `3e-4`; gamma `.99` per decision; target entropy
+  `-0.5 * action_dim`; logsumexp penalty `.1`.
+- Fixed-width depth scaling is neither parameter- nor FLOP-matched.
+- Depth 16 runs independently of depth-4 success.
 
-This tier is a low-budget LongiControl adaptation, not a replication of the
-paper's 100M–400M-transition experiments.
+This 300k tier is a low-budget LongiControl adaptation, not a replication of
+the paper's 100M–400M-transition scale. Its failure cannot refute depth scaling.
 
-## Draft update accounting
+## Goal and sampling rules
 
-The pinned code collects `62 × 512 = 31,744` transitions and performs 800
-minibatch updates. With batch 256 that is about 0.0252 gradient updates and 6.45
-sampled replay items per collected transition. A serial equivalent is one
-batch-256 update after every 40 native transitions (6.4 replay samples per new
-transition). Subject to semantic readiness, the draft fixes that schedule for
-both depths, uses a 10,000-transition prefill included in budget, and never
-changes batch size after seeing control performance. The prefill is a
-LongiControl resource adaptation: upstream's 1,000 rows × 512 environments is
-512,000 transitions and exceeds this entire tier.
+- Real collection and deterministic evaluation command `[1,1,1]`.
+- Critic positives use projected raw future outcomes recorded strictly later in
+  the same uninterrupted physical episode, sampled proportional to `.99**lag`.
+- Actor training uses those sampled projected future outcomes, not the fixed
+  collection command, matching the pinned scaling implementation.
+- At `dt=0.1 s`, decision lag `k` means `0.1k` physical seconds; absolute
+  deadline time is never restarted.
+- Every in-batch goal column remains a reference sample. Duplicate columns are
+  measured and not masked or given multi-positive labels.
+- Completion terminates. Its real terminal outcome may be sampled once as a
+  future, never repeated or used as a post-terminal source. Timeout remains a
+  failed observed outcome.
+- Training tracks use a dedicated RNG stream excluding Development, Validation,
+  and paper-test seeds.
 
-Replay capacity is provisionally 300,000 transitions. This differs from
-upstream's `max_replay_size=10000`, which counts time rows each containing 512
-environment transitions (up to 5.12M slots), not 10,000 scalar transitions.
-Adam learning rates are `3e-4`, gamma is `.99` per decision, target entropy is
-`-0.5 * action_dim`, and the logsumexp penalty is `.1`.
+The real-rollout goal treatment differs from the historical HER study, so the
+historical HER/CRL comparison is not a one-factor causal test.
 
-Batch 256 follows the pinned code default; the README example and paper table
-use 512. The final frozen protocol must resolve this disclosed source mismatch
-before training, without a performance sweep.
+## Exact transition and update budget
 
-## Data, goals, and sampling
+Each policy receives exactly 300,000 native simulator transitions, including
+10,000 prefill transitions. Transitions 1 through 10,000 populate replay and
+perform no optimizer update. Thereafter one complete ordered cycle
 
-- Training tracks come from a dedicated RNG stream excluding all Development,
-  Validation, and paper-test seeds.
-- Positive future goals are strict future exact outcomes from the same episode
-  and uninterrupted collector segment, sampled proportional to `.99**lag`.
-  At simulator `dt=0.1 s`, one decision lag is 0.1 physical seconds.
-- Reference goals are all in-batch goal columns; they are samples from a
-  reference distribution, never claims of physical unreachability.
-- Real rollout and actor goal distributions are **TBD BLOCKERS**. They must be
-  identical across depths and cannot fabricate canonical success.
-- No absorbing completion state is introduced. A real terminal completion may
-  be a future goal for an earlier source but is never repeated; timeout remains
-  an observed failure outcome.
-- This real-rollout goal treatment will differ from the historical HER study;
-  HER versus CRL is therefore not a one-factor causal comparison.
+```text
+actor update -> alpha update -> critic update
+```
+
+occurs after transitions 10,040; 10,080; ...; 299,960; and 300,000. Thus
+
+```text
+(300000 - 10000) / 40 = 7,250 complete update cycles per policy
+```
+
+The final transition is included and followed by the final cycle. With batch
+256 this samples 6.4 replay rows per new post-prefill transition, closely
+matching the pinned implementation's aggregate sample-use accounting. Replay
+capacity is 300,000 scalar transitions; upstream's 10,000 rows each contain 512
+environment transitions and are not equivalent.
+
+Historical Goal/HER SAC used train frequency 1 and one gradient step after each
+eligible interaction, roughly forty times more update cycles after warmup.
+Equal simulator interactions are therefore not equal optimizer or compute
+budgets.
+
+Total first-tier budget is `2 depths × 3 seeds × 300,000 = 1,800,000` planned
+main-study transitions. No increase or additional main depth is authorized.
 
 ## Checkpoints and evaluation
 
 - Development checkpoints: 50k, 100k, 150k, 200k, 250k, 300k.
-- Development tracks: 2000–2008, deterministic actions, evaluation RNG isolated
-  from collection/sampling RNG.
-- Final checkpoint rule: 300k, not best-on-Development.
-- After every one of the six policies and source/config hashes is frozen,
-  Validation 3000–3008 is opened once for deterministic evaluation.
+- Development tracks: 2000–2008, deterministic evaluation with RNG isolated
+  from collection and replay sampling.
+- Final policy is the 300k checkpoint, never best-on-Development selection.
+- Only after all six policies and hashes are frozen may Validation 3000–3008 be
+  opened once under a future authorization.
 - Paper tracks 4000–4017 remain sealed.
-- A completed `(depth, seed)` manifest prevents duplicates. Partial runs resume
-  only from an atomic checkpoint with matching source/config/model hashes;
-  otherwise they are discarded and rerun within the same fixed budget.
+
+## Restart and resource accounting
+
+Every attempt gets an immutable provenance record. Interrupted attempts and all
+their consumed simulator transitions, update cycles, wall time, checkpoints,
+and technical retries are preserved; there is no silent deletion or free rerun.
+
+Exact resume requires matching model parameters, all optimizer states, replay
+contents and positions, sampler RNG, environment/collector state, transition
+counters, source/config hashes, and evaluation state, or a documented
+equivalent that demonstrably reproduces the next transition and update. If
+exact resume is unavailable, execution stops and requests an explicit
+provenance-recorded restart decision. Reports distinguish the planned 1.8M
+main-study transitions from all resources consumed across attempts. Historical
+accounting is untouched.
 
 ## Required diagnostics
 
-Record native transitions, gradient updates, real canonical training successes,
-RSR/completion/deadline/speed metrics by seed and track, feasible-only energy,
-pair counts and unique source coverage, lag seconds and target distances,
-valid/invalid outcome composition, duplicate rates, positive/reference scores,
-embedding norms/collapse, gradients, entropy/alpha, and canonical goal-region
-queries after their estimator is defined. Diagnostic computation must use a
-separate RNG and may not alter training samples.
+Record native transitions and complete update cycles; real canonical training
+successes; RSR/completion/deadline/speed outcomes by seed and track;
+feasible-only energy; source coverage and future lags; valid/invalid projected
+goal composition; duplicate rates; positive/reference scores; embedding norms
+and collapse; actor/critic gradients; entropy/alpha; and `[1,1,1]` query
+behavior. Diagnostic RNG must not perturb training.
 
 ## Execution gate
 
-Main training remains disabled until `task_mapping_verified` is true, actor and
-real-rollout goal distributions are frozen, set aggregation has synthetic
-parity tests, and the batch-size source mismatch is resolved. No budget increase
-or additional main depth is authorized here.
+Semantic and numerical mapping readiness is satisfied. Main execution remains
+disabled because an end-to-end collector/replay/checkpoint runner with the exact
+resume contract has not been implemented or verified, and this task grants no
+training authorization.

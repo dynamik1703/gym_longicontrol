@@ -24,12 +24,16 @@ from benchmarks.contrastive_rl.losses import (  # noqa: E402
     infonce_loss_from_logits,
     pairwise_association_scores,
 )
+from benchmarks.contrastive_rl.projected_adapter import (  # noqa: E402
+    contrastive_batch_from_recorded,
+)
+from gym_longicontrol.domain.task import TaskSpecification  # noqa: E402
 
 
 def small_core(depth=4):
     config = ReferenceCoreConfig(
         state_dim=3,
-        goal_dim=2,
+        goal_dim=3,
         action_dim=1,
         depth=depth,
         width=16,
@@ -42,8 +46,8 @@ def batch(reward_value=0.0):
     return ContrastiveBatch(
         states=jnp.arange(12, dtype=jnp.float32).reshape(4, 3) / 12,
         actions=jnp.linspace(-0.5, 0.5, 4).reshape(4, 1),
-        critic_goals=jnp.arange(8, dtype=jnp.float32).reshape(4, 2) / 8,
-        actor_goals=jnp.arange(8, dtype=jnp.float32).reshape(4, 2) / 8,
+        critic_goals=jnp.arange(12, dtype=jnp.float32).reshape(4, 3) / 12,
+        actor_goals=jnp.arange(12, dtype=jnp.float32).reshape(4, 3) / 12,
         historical_reward=jnp.full((4,), reward_value),
     )
 
@@ -138,20 +142,20 @@ def test_depth_convention_shapes_and_exact_parameter_increase():
     )
     assert critic_increase == 2 * expected_per_network_increase
     assert learner4.deterministic_action(
-        state4.actor.params, jnp.ones((2, 3)), jnp.ones((2, 2))
+        state4.actor.params, jnp.ones((2, 3)), jnp.ones((2, 3))
     ).shape == (2, 1)
 
 
 def test_save_load_reproduces_outputs(tmp_path: Path):
     learner, state = small_core()
     expected = learner.deterministic_action(
-        state.actor.params, jnp.ones((2, 3)), jnp.ones((2, 2))
+        state.actor.params, jnp.ones((2, 3)), jnp.ones((2, 3))
     )
     path = tmp_path / "state.msgpack"
     save_state(path, state)
     restored = load_state(path, state)
     actual = learner.deterministic_action(
-        restored.actor.params, jnp.ones((2, 3)), jnp.ones((2, 2))
+        restored.actor.params, jnp.ones((2, 3)), jnp.ones((2, 3))
     )
     np.testing.assert_array_equal(expected, actual)
 
@@ -174,3 +178,26 @@ def test_historical_reward_does_not_affect_losses_or_gradients():
         strict=True,
     ):
         np.testing.assert_array_equal(first, second)
+
+
+def test_recorded_adapter_projects_futures_without_inserting_success():
+    task = TaskSpecification(140.0, 0.0)
+    future_outcomes = np.array(
+        [
+            [500.0, 499.0, 100.0, 0.0],
+            [1000.0, 999.0, 141.0, 0.0],
+            [1000.0, 999.0, 130.0, 0.1],
+        ]
+    )
+    adapted = contrastive_batch_from_recorded(
+        states=np.zeros((3, 3)),
+        actions=np.zeros((3, 1)),
+        future_outcomes=future_outcomes,
+        future_terminated=np.array([False, True, True]),
+        task=task,
+        historical_reward=np.array([-10.0, 0.0, 10.0]),
+    )
+    expected = np.array([[0.5, 1.0, 1.0], [1.0, 0.0, 1.0], [1.0, 1.0, 0.0]])
+    np.testing.assert_array_equal(adapted.critic_goals, expected)
+    np.testing.assert_array_equal(adapted.actor_goals, expected)
+    assert not np.all(np.asarray(adapted.critic_goals) == 1.0, axis=-1).any()

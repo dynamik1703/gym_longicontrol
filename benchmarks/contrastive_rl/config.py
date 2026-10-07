@@ -14,7 +14,7 @@ class ReferenceCoreConfig:
     """
 
     state_dim: int = 12
-    goal_dim: int = 4
+    goal_dim: int = 3
     action_dim: int = 1
     depth: int = 4
     width: int = 256
@@ -48,6 +48,11 @@ class ReferenceCoreConfig:
 PLANNED_DEPTHS = (4, 16)
 PLANNED_SEEDS = (11, 29, 47)
 PLANNED_TRANSITIONS_PER_POLICY = 300_000
+PREFILL_TRANSITIONS = 10_000
+UPDATE_INTERVAL_TRANSITIONS = 40
+PLANNED_COMPLETE_UPDATE_CYCLES = (
+    PLANNED_TRANSITIONS_PER_POLICY - PREFILL_TRANSITIONS
+) // UPDATE_INTERVAL_TRANSITIONS
 DEVELOPMENT_CHECKPOINTS = (50_000, 100_000, 150_000, 200_000, 250_000, 300_000)
 DEVELOPMENT_TRACKS = tuple(range(2000, 2009))
 VALIDATION_TRACKS = tuple(range(3000, 3009))
