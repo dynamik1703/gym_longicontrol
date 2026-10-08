@@ -1,0 +1,31 @@
+{
+  "implementation": {
+    "commit": "cfae5609cee79e5a2228fb7653451023c41a64cb",
+    "commit_date": "2020-09-17T12:56:31-07:00",
+    "repository": "https://github.com/dibyaghosh/gcsl",
+    "tree": "b5672e00ed73787e85c193fab79f1aa51edbd9c3"
+  },
+  "license": {
+    "conclusion": "NO_EXPLICIT_TOP_LEVEL_LICENSE",
+    "detail": "The pinned repository tree has no top-level LICENSE, COPYING, or NOTICE. A dependency submodule contains its own license, which does not license the GCSL repository. No upstream code is vendored here."
+  },
+  "paper": {
+    "arxiv": "https://arxiv.org/abs/1912.06088v4",
+    "audited_version": "v4",
+    "last_revised": "2020-10-02",
+    "openreview": "https://openreview.net/forum?id=rALA0Xo6yNJ",
+    "venue": "ICLR 2021"
+  },
+  "sha256": {
+    "README.md": "ae2dfe3922d2cd822910e920f6ff879cc2f8111682776482f66a7d4efe68574d",
+    "environment/environment.yml": "3f158f3690b1bd764eafcf008f820caa7a314b6a205fcb83f65d69d50a7fee2c",
+    "experiments/gcsl_example.py": "97069d322edd15806da66d24aca5013d9514791519979011ab1f908844670b21",
+    "experiments/gcsl_sweep.py": "574cd4597d3d8aa0786f69e606125e1fab29a773bb4121d3cc79921ba27cb3ca",
+    "gcsl/algo/buffer.py": "4aab2e0c33b51bb0f8226713cc44e64b76e4a10441bee0589cc0bab7862b22df",
+    "gcsl/algo/gcsl.py": "033dc3fb39d7c3ebfa01319d7fa0664abd0c9ef6d14de6bec2ad40c37e11ec54",
+    "gcsl/algo/networks.py": "27637ee14c99372cb01070dc21382200bc7871cce6677b221200fbd5035e398f",
+    "gcsl/algo/variants.py": "2cc8b2ce9e2ee8ef04714f603342d1bdf2047817c966d629b6e7c3dbc28a6f2f",
+    "gcsl/envs/env_utils.py": "7075ad35a69f68406f5f50e884feb8f9f9310bf787ac112487bbd4cf16ee9af0",
+    "setup.py": "e40749994c782ce43221e282a9559f45d174c97e3e9858a7036c1dce22ef1eb0"
+  }
+}

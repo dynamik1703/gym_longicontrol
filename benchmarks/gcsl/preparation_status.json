@@ -1,0 +1,29 @@
+{
+  "execution_infrastructure_ready": true,
+  "future_protocol_status": "FROZEN_PRETRAINING_EXECUTION_READY_AUTHORIZATION_OFF",
+  "main_training_authorized": false,
+  "main_training_enabled": false,
+  "paper_final_opened": false,
+  "preparation_usage": {
+    "development_fixed_action_simulator_transitions": 900,
+    "longicontrol_policy_training_transitions": 0,
+    "synthetic_supervised_optimizer_steps_including_tests": 100,
+    "validation_simulator_transitions": 0,
+    "paper_final_simulator_transitions": 0,
+    "total_longicontrol_simulator_transitions": 900
+  },
+  "primary_source_audit_complete": true,
+  "ready_for_main_training": true,
+  "scientific_source_sha256": {
+    "benchmarks/gcsl/canonical.json": "af15b6dec27fcd5c4dd8f02bb207fc389737c448786e2c1ee92066a414966786",
+    "benchmarks/gcsl/config.py": "3c61cf7b0f7c6fdaf0efd980192d44741e75a792c95a566552f33cb8d4b63434",
+    "benchmarks/gcsl/goal_adapter.py": "a515a4c360cd3fdfee7cdcd8562accf355b97c81da2b07e81d4b984ca59918be",
+    "benchmarks/gcsl/learner.py": "8250c3b0cd2eada06b910adcf323a14955b38f96e3768507fd6e114e5b61eaa0",
+    "benchmarks/gcsl/policy.py": "4bc5f130bfcadf6361c55c5aafc59378ed19c0c46351e6b1a145b39e2b88e43a",
+    "benchmarks/gcsl/replay.py": "c2328a00c1c0b5138f98f7fbb67028a55aa92f0ae59ab4dd3fcb1a4a4345b433",
+    "benchmarks/gcsl/sampling.py": "6bd14d080bd93ee1f8c2010f764676067d20526c137f9151855a70ac4b37becc",
+    "benchmarks/gcsl/upstream.json": "8c64ff7eebfcc4528e066dcaa86a8f752f389cc2eab6cce3b39dd13db261c8bf"
+  },
+  "semantic_tests_ready": true,
+  "validation_opened": false
+}

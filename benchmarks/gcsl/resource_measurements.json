@@ -1,0 +1,54 @@
+{
+  "actor_inference": {
+    "elapsed_seconds": 0.1828420410020044,
+    "iterations": 2000,
+    "mean_seconds": 9.14210205010022e-05
+  },
+  "backend": {
+    "cuda_available": false,
+    "device": "cpu",
+    "mps_available": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.9",
+    "torch": "2.14.1"
+  },
+  "batch_256": {
+    "elapsed_seconds": 0.5173111670010258,
+    "finite_final_metrics": true,
+    "seconds_per_update": 0.005812485022483435,
+    "timed_updates": 89,
+    "updates_per_second": 172.04345407031107
+  },
+  "checkpoint": {
+    "synthetic_full_replay_bytes": 46097296
+  },
+  "extrapolation": {
+    "development_and_io_overhead_included": false,
+    "one_policy_compute_seconds_excluding_simulator": 70.61535925074788,
+    "one_policy_simulator_seconds": 64.19112499861512,
+    "one_policy_total_seconds": 134.806484249363,
+    "three_policy_total_seconds_sequential": 404.419452748089
+  },
+  "paper_tracks_used": false,
+  "parameter_count": 270338,
+  "replay": {
+    "allocated_bytes": 45000000,
+    "capacity": 300000,
+    "mean_sample_seconds": 0.00014462574999197386,
+    "sample_elapsed_seconds": 0.07231287499598693,
+    "sample_iterations": 500
+  },
+  "simulator": {
+    "elapsed_seconds": 0.19257337499584537,
+    "fixed_action": 0.0,
+    "track_seeds": [
+      2000
+    ],
+    "transitions": 900,
+    "transitions_per_second": 4673.543266401271,
+    "used_for_learning": false
+  },
+  "synthetic_updates": 90,
+  "training_performed": false,
+  "validation_tracks_used": false
+}

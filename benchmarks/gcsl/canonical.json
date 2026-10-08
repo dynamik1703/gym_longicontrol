@@ -1,0 +1,82 @@
+{
+  "action_policy": {
+    "action_bounds": [-1.0, 1.0],
+    "action_dimension": 1,
+    "distribution": "tanh-transformed diagonal Gaussian",
+    "endpoint_inverse_tanh_epsilon": 1e-06,
+    "log_std_bounds": [-5.0, 2.0],
+    "training_objective": "mean exact transformed action negative log likelihood"
+  },
+  "authorization": {
+    "execution_infrastructure_ready": true,
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "ready_for_main_training": true
+  },
+  "collection": {
+    "goal": [1.0, 1.0, 1.0],
+    "policy": "current GCSL stochastic policy",
+    "source": "own-policy trajectories only"
+  },
+  "evaluation": {
+    "deterministic": true,
+    "development_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+    "development_tracks": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "goal": [1.0, 1.0, 1.0],
+    "paper_tracks_sealed": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017],
+    "validation_tracks": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008]
+  },
+  "goal_projection": {
+    "canonical_command": [1.0, 1.0, 1.0],
+    "definition": ["min(position_m / 1000.0, 1.0)", "float(elapsed_time_s <= 140.0)", "float(cumulative_max_speed_violation_m_s <= 0.0)"],
+    "dimension": 3,
+    "predicates_evaluated_from": "raw physical Float64"
+  },
+  "horizon_conditioning": {
+    "enabled": false,
+    "rationale": "The official principal default sets max_horizon=None; elapsed time and deadline satisfaction already encode distinct task timing semantics."
+  },
+  "optimizer": {
+    "batch_size": 256,
+    "learning_rate": 0.0005,
+    "name": "Adam"
+  },
+  "policy": {
+    "activation": "SiLU",
+    "architecture": "CRL depth-4 actor trunk: input Dense+LayerNorm+SiLU, four Dense+LayerNorm+SiLU residual operations, mean and log-std heads",
+    "depth_inside_residual_blocks": 4,
+    "goal_dimension": 3,
+    "horizon_input_dimension": 0,
+    "state_dimension": 12,
+    "width": 256
+  },
+  "replay": {
+    "capacity_transitions": 300000,
+    "future_probability": "proportional to 0.99**lag among strict later rows in the same uninterrupted physical episode",
+    "historical_reward_used_by_loss": false,
+    "no_cross_reset_pairs": true,
+    "source_action": "actually executed action at source transition",
+    "training_goal": "projected actual future outcome"
+  },
+  "status": "FROZEN_PRETRAINING_EXECUTION_READY_AUTHORIZATION_OFF",
+  "study": {
+    "first_update_after_transition": 10040,
+    "last_update_after_transition": 300000,
+    "native_transitions_per_policy": 300000,
+    "prefill_transitions": 10000,
+    "replay_samples_per_policy": 1856000,
+    "seeds": [11, 29, 47],
+    "supervised_update_cycles_per_policy": 7250,
+    "total_native_transitions": 900000,
+    "total_supervised_update_cycles": 21750,
+    "update_interval_transitions": 40
+  },
+  "task": {
+    "deadline_s": 140.0,
+    "energy_training_signal": false,
+    "native_time_step_s": 0.1,
+    "route_length_m": 1000.0,
+    "simulator_horizon_s": 180.0,
+    "speed_violation_limit_m_s": 0.0
+  }
+}
