@@ -45,7 +45,9 @@
   },
   "validation": {
     "tracks": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
-    "opened": false,
+    "opened": true,
+    "completed": true,
+    "episode_count": 54,
     "gate": "all_six_complete_exact_budget_all_hashes_all_development"
   },
   "paper_final": {
@@ -55,8 +57,18 @@
   },
   "authorization": {
     "execution_infrastructure_ready": true,
-    "ready_for_main_training": true,
+    "ready_for_main_training": false,
     "main_training_authorized": true,
-    "main_training_enabled": true
+    "main_training_enabled": false
+  },
+  "final_result": {
+    "status": "COMPLETED",
+    "depth_4_successes": 0,
+    "depth_4_validation_episodes": 27,
+    "depth_16_successes": 1,
+    "depth_16_validation_episodes": 27,
+    "results_path": "benchmarks/contrastive_rl/results.json",
+    "manifest_path": "benchmarks/contrastive_rl/execution_manifest.json",
+    "paper_tracks_used": false
   }
 }

@@ -1,14 +1,14 @@
 {
-  "status": "MAIN_TRAINING_AUTHORIZED",
+  "status": "STUDY_COMPLETED",
   "reference_core_verified": true,
   "task_mapping_verified": true,
   "numerical_tests_passed": true,
   "resource_check_completed": true,
   "technical_semantic_readiness": true,
   "execution_infrastructure_ready": true,
-  "ready_for_main_training": true,
+  "ready_for_main_training": false,
   "main_training_authorized": true,
-  "main_training_enabled": true,
+  "main_training_enabled": false,
   "remaining_blockers": [],
   "preparation_usage": {
     "previous_longicontrol_simulator_transitions": 1000,
@@ -25,7 +25,19 @@
     "paper_tracks_used": false,
     "development_seeds_used": [2000, 2001, 2002]
   },
-  "future_protocol_status": "FROZEN_MAIN_TRAINING_AUTHORIZED",
+  "future_protocol_status": "COMPLETED_VALIDATION_FROZEN",
   "planned_main_depths": [4, 16],
-  "planned_main_seeds": [11, 29, 47]
+  "planned_main_seeds": [11, 29, 47],
+  "study_execution": {
+    "main_native_simulator_transitions": 1800000,
+    "complete_update_cycles": 43500,
+    "development_simulator_transitions": 462172,
+    "validation_episode_count": 54,
+    "validation_simulator_transitions": 59633,
+    "validation_opened_once": true,
+    "validation_completed": true,
+    "paper_tracks_used": false,
+    "interruption_count": 0,
+    "restart_count": 0
+  }
 }

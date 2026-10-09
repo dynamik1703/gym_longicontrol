@@ -1,0 +1,2752 @@
+{
+  "accounting": {
+    "complete_update_cycles": 43500,
+    "development_simulator_transitions": 462172,
+    "native_simulator_transitions": 1800000,
+    "validation_simulator_transitions": 59633
+  },
+  "canonical_configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+  "depth_results": {
+    "16": {
+      "completed_by_deadline_count": 19,
+      "completion_count": 19,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "feasible": 1,
+        "incomplete+deadline": 1,
+        "incomplete+deadline+speed": 7,
+        "speed": 18
+      },
+      "feasible_energy_count": 1,
+      "incomplete_terminal_progress": [
+        0.9946923210324011,
+        0.8775115482493051,
+        0.8560975201930856,
+        0.9661291180102654,
+        0.9694507065805765,
+        0.8029689579622109,
+        0.8191318614392168,
+        0.9133943076104292
+      ],
+      "mean_feasible_energy_kwh": 0.13554744407086844,
+      "mean_incomplete_terminal_progress": 0.8999220426346863,
+      "per_seed_success": {
+        "11": 0,
+        "29": 1,
+        "47": 0
+      },
+      "requirement_satisfaction_rate": 0.037037037037037035,
+      "speed_compliant_count": 2,
+      "success_count": 1
+    },
+    "4": {
+      "completed_by_deadline_count": 17,
+      "completion_count": 17,
+      "episode_count": 27,
+      "failure_mode_counts": {
+        "incomplete+deadline+speed": 10,
+        "speed": 17
+      },
+      "feasible_energy_count": 0,
+      "incomplete_terminal_progress": [
+        0.9747647930673442,
+        0.8650427579556537,
+        0.8774659785872814,
+        0.979355152564664,
+        0.9514601741622313,
+        0.88915393454065,
+        0.9315856867831255,
+        0.8048748643995803,
+        0.9431399422955306,
+        0.9785054767504251
+      ],
+      "mean_feasible_energy_kwh": null,
+      "mean_incomplete_terminal_progress": 0.9195348761106488,
+      "per_seed_success": {
+        "11": 0,
+        "29": 0,
+        "47": 0
+      },
+      "requirement_satisfaction_rate": 0.0,
+      "speed_compliant_count": 0,
+      "success_count": 0
+    }
+  },
+  "historical_context": {
+    "Action-repeat scalar": {
+      "episodes": 27,
+      "successes": 9
+    },
+    "Binary Success": {
+      "episodes": 27,
+      "successes": 0
+    },
+    "Constrained V2": {
+      "episodes": 27,
+      "successes": 21
+    },
+    "Goal-conditioned SAC + HER": {
+      "episodes": 27,
+      "successes": 0
+    },
+    "Goal-conditioned SAC, no HER": {
+      "episodes": 27,
+      "successes": 0
+    },
+    "LLM reward": {
+      "episodes": 27,
+      "successes": 1
+    },
+    "Requirement-conditioned, canonical 140 s": {
+      "episodes": 27,
+      "successes": 12
+    },
+    "Scalar SB3 SAC": {
+      "episodes": 27,
+      "successes": 5
+    }
+  },
+  "interpretation_scope": "Low-budget 300k-per-policy projected-goal CRL adaptation; depth 4 versus depth 16 is the strongest matched comparison.",
+  "paper_tracks_used": false,
+  "policies": [
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-07T10:38:27.861971+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 0.0,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 1,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 15934,
+          "failure_mode_counts": {
+            "deadline+speed": 1,
+            "incomplete+deadline": 6,
+            "incomplete+deadline+speed": 2
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 825.3730990269486,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 6,
+          "success_count": 0,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 9784,
+          "failure_mode_counts": {
+            "feasible": 2,
+            "speed": 7
+          },
+          "feasible_energy_count": 2,
+          "mean_feasible_energy_kwh": 0.1414618535087917,
+          "mean_final_position_m": 1000.1721248973301,
+          "requirement_satisfaction_rate": 0.2222222222222222,
+          "speed_compliant_count": 2,
+          "success_count": 2,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 6816,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.5547733697349,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 6,
+          "completion_count": 6,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 10425,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 3,
+            "speed": 6
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 994.9201862401483,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 3,
+          "completion_count": 3,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 13039,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 6,
+            "speed": 3
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 940.0652837637626,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 290,
+        "canonical_positive_batch_fraction": 0.04,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.5528889298439026,
+              "mean": 0.19525794687888265,
+              "minimum": -0.21526558697223663,
+              "std": 0.21429148298549894
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.6483198404312134,
+              "mean": -0.03649704212512006,
+              "minimum": -0.4327054023742676,
+              "std": 0.12463722657365049
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -3.022681951522827,
+              "mean": -11.652957814745605,
+              "minimum": -17.65523910522461,
+              "std": 2.782744196987029
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.7619628310203552,
+              "mean": -3.7300516152754426,
+              "minimum": -9.016117095947266,
+              "std": 1.4343766074724287
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 2.1275153160095215,
+              "mean": -7.922906210180372,
+              "minimum": -16.323755264282227,
+              "std": 3.066352187720993
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.338428497314453,
+              "mean": 6.920955169945955,
+              "minimum": 4.731699466705322,
+              "std": 1.289000837162911
+            },
+            "goal_embedding_variance": 0.7000049352645874,
+            "infonce_component": 3.563727378845215,
+            "logsumexp_regularization": 0.01625782810151577,
+            "positive_minus_reference_mean": 5.472572247148948,
+            "positive_scores": {
+              "maximum": -0.7619628310203552,
+              "mean": -3.7300516152754426,
+              "minimum": -9.016117095947266,
+              "std": 1.4343766074724287
+            },
+            "reference_scores": {
+              "maximum": -0.6377131938934326,
+              "mean": -9.20262386242439,
+              "minimum": -18.35356330871582,
+              "std": 3.017986464376644
+            },
+            "state_action_embedding_norms": {
+              "maximum": 12.076705932617188,
+              "mean": 7.095451669767499,
+              "minimum": 3.464005708694458,
+              "std": 1.7883949209230017
+            },
+            "state_action_embedding_variance": 0.7533639669418335
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.5578236663380887,
+            "actor_loss": 3.6040148735046387,
+            "alpha_loss": 0.20288580656051636,
+            "critic_gradient_norm": 4.756649769254162,
+            "critic_loss": 3.5799851417541504,
+            "estimated_entropy": 0.6669803857803345,
+            "goal_encoder_gradient_norm": 3.282563970864369,
+            "log_alpha": -1.749531626701355,
+            "mean_log_probability": -0.6669803857803345,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 3.442454183359427
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.5528889298439026,
+              "mean": 0.19525794687888265,
+              "minimum": -0.21526558697223663,
+              "std": 0.21429148298549894
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.6483198404312134,
+              "mean": -0.03649704212512006,
+              "minimum": -0.4327054023742676,
+              "std": 0.12463722657365049
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -3.022681951522827,
+              "mean": -11.652957814745605,
+              "minimum": -17.65523910522461,
+              "std": 2.782744196987029
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.7619628310203552,
+              "mean": -3.7300516152754426,
+              "minimum": -9.016117095947266,
+              "std": 1.4343766074724287
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 2.1275153160095215,
+              "mean": -7.922906210180372,
+              "minimum": -16.323755264282227,
+              "std": 3.066352187720993
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.338428497314453,
+              "mean": 6.920955169945955,
+              "minimum": 4.731699466705322,
+              "std": 1.289000837162911
+            },
+            "goal_embedding_variance": 0.7000049352645874,
+            "infonce_component": 3.563727378845215,
+            "logsumexp_regularization": 0.01625782810151577,
+            "positive_minus_reference_mean": 5.472572247148948,
+            "positive_scores": {
+              "maximum": -0.7619628310203552,
+              "mean": -3.7300516152754426,
+              "minimum": -9.016117095947266,
+              "std": 1.4343766074724287
+            },
+            "reference_scores": {
+              "maximum": -0.6377131938934326,
+              "mean": -9.20262386242439,
+              "minimum": -18.35356330871582,
+              "std": 3.017986464376644
+            },
+            "state_action_embedding_norms": {
+              "maximum": 12.076705932617188,
+              "mean": 7.095451669767499,
+              "minimum": 3.464005708694458,
+              "std": 1.7883949209230017
+            },
+            "state_action_embedding_variance": 0.7533639669418335
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.5578236663380887,
+            "actor_loss": 3.6040148735046387,
+            "alpha_loss": 0.20288580656051636,
+            "critic_gradient_norm": 4.756649769254162,
+            "critic_loss": 3.5799851417541504,
+            "estimated_entropy": 0.6669803857803345,
+            "goal_encoder_gradient_norm": 3.282563970864369,
+            "log_alpha": -1.749531626701355,
+            "mean_log_probability": -0.6669803857803345,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 3.442454183359427
+          }
+        },
+        "first_canonical_positive_available_transition": 122462,
+        "first_sampled_canonical_positive_transition": 124360,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 255.20027586206896,
+        "mean_exact_duplicate_fraction": 0.002834590517241379,
+        "mean_exact_unique_projected_goals": 255.27434482758622,
+        "mean_future_lag_decisions": 84.56299515086206,
+        "mean_future_lag_seconds": 8.456299515086208,
+        "mean_late_future_fraction": 0.14918911637931034,
+        "mean_pair_collision_rate": 2.6432555780933066e-05,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.041984375,
+          "star-0-1": 0.10720474137931034,
+          "star-1-0": 0.294745150862069,
+          "star-1-1": 0.5560657327586207
+        },
+        "mean_target_progress_distance": 0.06777781201882715,
+        "mean_terminal_future_fraction": 0.003710668103448276,
+        "mean_timely_safe_future_fraction": 0.5560657327586207,
+        "mean_unsafe_future_fraction": 0.33672952586206895,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 302,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259316
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "de860be7c4561ddb0ffb92529613fa192847f9cea9a6e20a5526ac9802884a30",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 839299,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T08:09:22.532015+00:00",
+      "training": {
+        "canonical_successful_episodes": 19,
+        "completed_by_deadline_count": 230,
+        "completion_count": 249,
+        "exclusive_failure_mode_counts": {
+          "deadline": 6,
+          "deadline+speed": 13,
+          "feasible": 19,
+          "incomplete+deadline": 34,
+          "incomplete+deadline+speed": 17,
+          "speed": 211
+        },
+        "feasible_episode_energy_kwh": [
+          0.2585368288056394,
+          0.30820905876559673,
+          0.2601952398055808,
+          0.2854577856120609,
+          0.27089917583337747,
+          0.2810299730978727,
+          0.25641035495180525,
+          0.260933197704722,
+          0.28467196432891484,
+          0.24879850626282726,
+          0.251845167324859,
+          0.24515346092396506,
+          0.2710957611812583,
+          0.2509700748364034,
+          0.25934220562194316,
+          0.24032803963094343,
+          0.2338160492774331,
+          0.25097139388054707,
+          0.2113023428476817
+        ],
+        "first_canonical_success_transition": 122462,
+        "incomplete_final_route_progress": [
+          0.2906857337689695,
+          0.5107327775908334,
+          0.16562350227594666,
+          0.4358155347382089,
+          0.9537939778569552,
+          0.8174961565878154,
+          0.3905038764590734,
+          0.19191429746962058,
+          0.7002283239476922,
+          0.42479786936971453,
+          0.17703123669710844,
+          0.424842115200743,
+          0.1728843245762818,
+          0.2757986535543628,
+          0.5692184858947998,
+          0.29900912865376117,
+          0.676121935774645,
+          0.43398610715726876,
+          0.5745582011523744,
+          0.3320979525094208,
+          0.3862413955361979,
+          0.470471842514112,
+          0.6052233541244862,
+          0.478923109661291,
+          0.37650401633957714,
+          0.7734452299420554,
+          0.5589999988053053,
+          0.21559242570029366,
+          0.45796460531289357,
+          0.5246074821712863,
+          0.4199832924668291,
+          0.5749822846288049,
+          0.5875815780732727,
+          0.7537310159123816,
+          0.5382598302307989,
+          0.920115355016472,
+          0.8398532904999343,
+          0.5845467644093724,
+          0.9394799763045599,
+          0.568226605081849,
+          0.5450894928766153,
+          0.9549128392654146,
+          0.9470717895855914,
+          0.9799154235118981,
+          0.99209569122259,
+          0.8571892871050214,
+          0.9151055859656304,
+          0.9734417663326136,
+          0.9691942053883874,
+          0.9321134739307019,
+          0.9110900318690741
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 42.600000000000335,
+          "episode_id": 300,
+          "final_route_progress": 0.5882075730724976,
+          "max_speed_violation_m_s": 0.0,
+          "position_m": 588.2075730724976,
+          "transition_count": 426
+        },
+        "speed_compliant_count": 59,
+        "total_ended_training_episodes": 300
+      },
+      "training_seed": 11,
+      "validation": {
+        "completed_by_deadline_count": 5,
+        "completion_count": 5,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 11313,
+        "failure_mode_counts": {
+          "incomplete+deadline+speed": 4,
+          "speed": 5
+        },
+        "feasible_energy_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_final_position_m": 966.5306564273997,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliant_count": 0,
+        "success_count": 0
+      },
+      "wall_clock_s": 8945.329956
+    },
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-07T18:09:25.038139+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 0.993571974193782,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 512.8553771445178,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 5,
+          "completion_count": 5,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 11888,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+deadline+speed": 4,
+            "speed": 4
+          },
+          "feasible_energy_count": 1,
+          "mean_feasible_energy_kwh": 0.14642396434686222,
+          "mean_final_position_m": 964.33029750257,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliant_count": 1,
+          "success_count": 1,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 5,
+          "completion_count": 5,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 11048,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 4,
+            "speed": 5
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 960.3582738063989,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 3,
+          "completion_count": 3,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 13277,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 6,
+            "speed": 3
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 898.0596797211317,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 4,
+          "completion_count": 4,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 12550,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 5,
+            "speed": 4
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 941.1023187483208,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 289,
+        "canonical_positive_batch_fraction": 0.03986206896551724,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.4503328204154968,
+              "mean": 0.1398400347286497,
+              "minimum": -0.323872834444046,
+              "std": 0.19168408606857681
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.4118136465549469,
+              "mean": -0.008547897346034006,
+              "minimum": -0.30643323063850403,
+              "std": 0.09647803790237897
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.6406410932540894,
+              "mean": -10.788942709099501,
+              "minimum": -18.027326583862305,
+              "std": 2.9751454686310597
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.4420163929462433,
+              "mean": -3.342518476420082,
+              "minimum": -7.899351596832275,
+              "std": 1.383874224244835
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 1.1551260948181152,
+              "mean": -7.446424222551286,
+              "minimum": -16.16725730895996,
+              "std": 3.3281437172685884
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 10.491125106811523,
+              "mean": 7.293930813670158,
+              "minimum": 5.21541690826416,
+              "std": 1.4002987569990313
+            },
+            "goal_embedding_variance": 0.7674658298492432,
+            "infonce_component": 3.1770734786987305,
+            "logsumexp_regularization": 0.020936354994773865,
+            "positive_minus_reference_mean": 6.202996811346042,
+            "positive_scores": {
+              "maximum": -0.4420163929462433,
+              "mean": -3.342518476420082,
+              "minimum": -7.899351596832275,
+              "std": 1.383874224244835
+            },
+            "reference_scores": {
+              "maximum": -0.5196098685264587,
+              "mean": -9.545515287766124,
+              "minimum": -19.388572692871094,
+              "std": 3.1876364225628615
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.23447036743164,
+              "mean": 7.427434481680393,
+              "minimum": 3.5617291927337646,
+              "std": 1.996056169312508
+            },
+            "state_action_embedding_variance": 0.8022081851959229
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.5581247346757002,
+            "actor_loss": 3.220573663711548,
+            "alpha_loss": 0.20615363121032715,
+            "critic_gradient_norm": 3.565755723027802,
+            "critic_loss": 3.198009729385376,
+            "estimated_entropy": 0.6816027164459229,
+            "goal_encoder_gradient_norm": 2.5584804289598275,
+            "log_alpha": -1.7460052967071533,
+            "mean_log_probability": -0.6816027164459229,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 2.4837052504141988
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.4503328204154968,
+              "mean": 0.1398400347286497,
+              "minimum": -0.323872834444046,
+              "std": 0.19168408606857681
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.4118136465549469,
+              "mean": -0.008547897346034006,
+              "minimum": -0.30643323063850403,
+              "std": 0.09647803790237897
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.6406410932540894,
+              "mean": -10.788942709099501,
+              "minimum": -18.027326583862305,
+              "std": 2.9751454686310597
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.4420163929462433,
+              "mean": -3.342518476420082,
+              "minimum": -7.899351596832275,
+              "std": 1.383874224244835
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 1.1551260948181152,
+              "mean": -7.446424222551286,
+              "minimum": -16.16725730895996,
+              "std": 3.3281437172685884
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 10.491125106811523,
+              "mean": 7.293930813670158,
+              "minimum": 5.21541690826416,
+              "std": 1.4002987569990313
+            },
+            "goal_embedding_variance": 0.7674658298492432,
+            "infonce_component": 3.1770734786987305,
+            "logsumexp_regularization": 0.020936354994773865,
+            "positive_minus_reference_mean": 6.202996811346042,
+            "positive_scores": {
+              "maximum": -0.4420163929462433,
+              "mean": -3.342518476420082,
+              "minimum": -7.899351596832275,
+              "std": 1.383874224244835
+            },
+            "reference_scores": {
+              "maximum": -0.5196098685264587,
+              "mean": -9.545515287766124,
+              "minimum": -19.388572692871094,
+              "std": 3.1876364225628615
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.23447036743164,
+              "mean": 7.427434481680393,
+              "minimum": 3.5617291927337646,
+              "std": 1.996056169312508
+            },
+            "state_action_embedding_variance": 0.8022081851959229
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.5581247346757002,
+            "actor_loss": 3.220573663711548,
+            "alpha_loss": 0.20615363121032715,
+            "critic_gradient_norm": 3.565755723027802,
+            "critic_loss": 3.198009729385376,
+            "estimated_entropy": 0.6816027164459229,
+            "goal_encoder_gradient_norm": 2.5584804289598275,
+            "log_alpha": -1.7460052967071533,
+            "mean_log_probability": -0.6816027164459229,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 2.4837052504141988
+          }
+        },
+        "first_canonical_positive_available_transition": 123146,
+        "first_sampled_canonical_positive_transition": 123320,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 252.87724137931033,
+        "mean_exact_duplicate_fraction": 0.010220905172413794,
+        "mean_exact_unique_projected_goals": 253.38344827586207,
+        "mean_future_lag_decisions": 87.05884967672414,
+        "mean_future_lag_seconds": 8.705884967672414,
+        "mean_late_future_fraction": 0.18201724137931036,
+        "mean_pair_collision_rate": 0.00023346433400946585,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.04033243534482758,
+          "star-0-1": 0.14168480603448275,
+          "star-1-0": 0.26483405172413793,
+          "star-1-1": 0.5531487068965517
+        },
+        "mean_target_progress_distance": 0.05350725164732788,
+        "mean_terminal_future_fraction": 0.002310344827586207,
+        "mean_timely_safe_future_fraction": 0.5531487068965517,
+        "mean_unsafe_future_fraction": 0.30516648706896554,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 304,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259305
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "b64d2397d7a7b31cb14b433921c21068d1d0f106e4bb9ddca8ccc476a18e2445",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 839299,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T10:38:28.563994+00:00",
+      "training": {
+        "canonical_successful_episodes": 19,
+        "completed_by_deadline_count": 198,
+        "completion_count": 219,
+        "exclusive_failure_mode_counts": {
+          "deadline": 8,
+          "deadline+speed": 13,
+          "feasible": 19,
+          "incomplete+deadline": 42,
+          "incomplete+deadline+speed": 16,
+          "speed": 179
+        },
+        "feasible_episode_energy_kwh": [
+          0.2836595419215132,
+          0.3014529972209193,
+          0.2775311161021471,
+          0.3002084138932767,
+          0.28598855716799326,
+          0.26036817948610663,
+          0.2874126604819966,
+          0.27544185749135497,
+          0.26127166086244286,
+          0.2812026759463592,
+          0.263012858273837,
+          0.2934150449140107,
+          0.27425427837550903,
+          0.28723602721721203,
+          0.28555673266051373,
+          0.2866027613570407,
+          0.2536524932634585,
+          0.27509893250265066,
+          0.27127464018393566
+        ],
+        "first_canonical_success_transition": 123146,
+        "incomplete_final_route_progress": [
+          0.882472359955246,
+          0.18921047366701882,
+          0.1401636340168237,
+          0.22094202732179868,
+          0.44145884233948296,
+          0.2448233884789036,
+          0.3328531281100664,
+          0.47181726863272005,
+          0.33016158690444025,
+          0.4974517118879624,
+          0.7060747588979855,
+          0.6912871559288528,
+          0.7904516851260796,
+          0.45163614881732006,
+          0.362548334998613,
+          0.1192275445254776,
+          0.19115699943876263,
+          0.3969502033970704,
+          0.27549080784519825,
+          0.23052392289078893,
+          0.13775639756686234,
+          0.2509888995620099,
+          0.6230761691852312,
+          0.19530414573456342,
+          0.19187484867924975,
+          0.3903485599638391,
+          0.2254303526508964,
+          0.4028699269199307,
+          0.2527233469870065,
+          0.1814755116932298,
+          0.5726564186015461,
+          0.5679167374522417,
+          0.5056326269434065,
+          0.3970890723912243,
+          0.8647049708615396,
+          0.46481066833690454,
+          0.5517578811494935,
+          0.630456995101389,
+          0.4394394225006453,
+          0.39746716973404667,
+          0.5401560100251315,
+          0.533778352349228,
+          0.42595528207731215,
+          0.6425395605157659,
+          0.771957501580306,
+          0.8591671390164506,
+          0.9551360733438493,
+          0.8374024744949994,
+          0.9845846822184726,
+          0.5928105221547137,
+          0.6593357525977571,
+          0.8039929905429047,
+          0.9320129498857426,
+          0.883014669668445,
+          0.9125371475098436,
+          0.8855220515158074,
+          0.7778955016913499,
+          0.9320102818700596
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 40.2000000000003,
+          "episode_id": 277,
+          "final_route_progress": 0.41780259716835666,
+          "max_speed_violation_m_s": 7.130000018672742,
+          "position_m": 417.80259716835667,
+          "transition_count": 402
+        },
+        "speed_compliant_count": 69,
+        "total_ended_training_episodes": 277
+      },
+      "training_seed": 29,
+      "validation": {
+        "completed_by_deadline_count": 4,
+        "completion_count": 4,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 12608,
+        "failure_mode_counts": {
+          "incomplete+deadline+speed": 5,
+          "speed": 4
+        },
+        "feasible_energy_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_final_position_m": 946.8578277139178,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliant_count": 0,
+        "success_count": 0
+      },
+      "wall_clock_s": 27056.474145
+    },
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-08T05:26:49.377850+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 8,
+            "incomplete+deadline+speed": 1
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 202.28416087197516,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 8,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 5,
+            "incomplete+deadline+speed": 4
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 850.4173732255501,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 5,
+          "success_count": 0,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 5,
+          "completion_count": 5,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 12190,
+          "failure_mode_counts": {
+            "incomplete+deadline": 2,
+            "incomplete+deadline+speed": 2,
+            "speed": 5
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 957.3571421500409,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 2,
+          "success_count": 0,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 7075,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.4482982836,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 3,
+            "incomplete+deadline+speed": 6
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 798.5672804337431,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 3,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 7163,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.5172147760604,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 174,
+        "canonical_positive_batch_fraction": 0.024,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.3122507333755493,
+              "mean": 0.14713605625001946,
+              "minimum": -0.059007011353969574,
+              "std": 0.11293399113128512
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.3209388554096222,
+              "mean": 0.01880918678875787,
+              "minimum": -0.25248977541923523,
+              "std": 0.0986743948847358
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -2.504560708999634,
+              "mean": -11.716848595999181,
+              "minimum": -20.71155548095703,
+              "std": 3.3428608975049716
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.6317117810249329,
+              "mean": -3.621396169764921,
+              "minimum": -9.332584381103516,
+              "std": 1.3165853289227356
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.36708927154541016,
+              "mean": -8.095452402718365,
+              "minimum": -19.69035530090332,
+              "std": 3.6524126026500188
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 12.95550537109375,
+              "mean": 7.6699208952486515,
+              "minimum": 5.274442195892334,
+              "std": 1.9207240305207363
+            },
+            "goal_embedding_variance": 0.7772563695907593,
+            "infonce_component": 3.4913763999938965,
+            "logsumexp_regularization": 0.014688098803162575,
+            "positive_minus_reference_mean": 5.799958317922245,
+            "positive_scores": {
+              "maximum": -0.6317117810249329,
+              "mean": -3.621396169764921,
+              "minimum": -9.332584381103516,
+              "std": 1.3165853289227356
+            },
+            "reference_scores": {
+              "maximum": -0.8391704559326172,
+              "mean": -9.421354487687166,
+              "minimum": -20.883258819580078,
+              "std": 3.402778673719399
+            },
+            "state_action_embedding_norms": {
+              "maximum": 12.001230239868164,
+              "mean": 7.848603082820773,
+              "minimum": 3.3483400344848633,
+              "std": 2.2629079483508563
+            },
+            "state_action_embedding_variance": 0.7719627618789673
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.21292083803474118,
+            "actor_loss": 3.501011848449707,
+            "alpha_loss": 0.20719139277935028,
+            "critic_gradient_norm": 9.564917395829509,
+            "critic_loss": 3.5060644149780273,
+            "estimated_entropy": 0.6863195896148682,
+            "goal_encoder_gradient_norm": 6.537993023641642,
+            "log_alpha": -1.744968056678772,
+            "mean_log_probability": -0.6863195896148682,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 6.981568019568037
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.3122507333755493,
+              "mean": 0.14713605625001946,
+              "minimum": -0.059007011353969574,
+              "std": 0.11293399113128512
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.3209388554096222,
+              "mean": 0.01880918678875787,
+              "minimum": -0.25248977541923523,
+              "std": 0.0986743948847358
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -2.504560708999634,
+              "mean": -11.716848595999181,
+              "minimum": -20.71155548095703,
+              "std": 3.3428608975049716
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.6317117810249329,
+              "mean": -3.621396169764921,
+              "minimum": -9.332584381103516,
+              "std": 1.3165853289227356
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.36708927154541016,
+              "mean": -8.095452402718365,
+              "minimum": -19.69035530090332,
+              "std": 3.6524126026500188
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 12.95550537109375,
+              "mean": 7.6699208952486515,
+              "minimum": 5.274442195892334,
+              "std": 1.9207240305207363
+            },
+            "goal_embedding_variance": 0.7772563695907593,
+            "infonce_component": 3.4913763999938965,
+            "logsumexp_regularization": 0.014688098803162575,
+            "positive_minus_reference_mean": 5.799958317922245,
+            "positive_scores": {
+              "maximum": -0.6317117810249329,
+              "mean": -3.621396169764921,
+              "minimum": -9.332584381103516,
+              "std": 1.3165853289227356
+            },
+            "reference_scores": {
+              "maximum": -0.8391704559326172,
+              "mean": -9.421354487687166,
+              "minimum": -20.883258819580078,
+              "std": 3.402778673719399
+            },
+            "state_action_embedding_norms": {
+              "maximum": 12.001230239868164,
+              "mean": 7.848603082820773,
+              "minimum": 3.3483400344848633,
+              "std": 2.2629079483508563
+            },
+            "state_action_embedding_variance": 0.7719627618789673
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.21292083803474118,
+            "actor_loss": 3.501011848449707,
+            "alpha_loss": 0.20719139277935028,
+            "critic_gradient_norm": 9.564917395829509,
+            "critic_loss": 3.5060644149780273,
+            "estimated_entropy": 0.6863195896148682,
+            "goal_encoder_gradient_norm": 6.537993023641642,
+            "log_alpha": -1.744968056678772,
+            "mean_log_probability": -0.6863195896148682,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 6.981568019568037
+          }
+        },
+        "first_canonical_positive_available_transition": 136041,
+        "first_sampled_canonical_positive_transition": 139000,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 255.40675862068966,
+        "mean_exact_duplicate_fraction": 0.0021352370689655172,
+        "mean_exact_unique_projected_goals": 255.45337931034481,
+        "mean_future_lag_decisions": 87.59098706896552,
+        "mean_future_lag_seconds": 8.759098706896552,
+        "mean_late_future_fraction": 0.17236314655172413,
+        "mean_pair_collision_rate": 1.7761156186612575e-05,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.03600161637931035,
+          "star-0-1": 0.1363615301724138,
+          "star-1-0": 0.24311314655172414,
+          "star-1-1": 0.5845237068965518
+        },
+        "mean_target_progress_distance": 0.05234815046962241,
+        "mean_terminal_future_fraction": 0.0023685344827586207,
+        "mean_timely_safe_future_fraction": 0.5845237068965518,
+        "mean_unsafe_future_fraction": 0.2791147629310345,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 181,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259342
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "add1bc9bad00193cd06b35252505a8a34e93ddeb4ec429b8a7af0cf5c532c8c5",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 839299,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T18:09:25.756768+00:00",
+      "training": {
+        "canonical_successful_episodes": 15,
+        "completed_by_deadline_count": 232,
+        "completion_count": 249,
+        "exclusive_failure_mode_counts": {
+          "deadline": 3,
+          "deadline+speed": 14,
+          "feasible": 15,
+          "incomplete+deadline": 38,
+          "incomplete+deadline+speed": 9,
+          "speed": 217
+        },
+        "feasible_episode_energy_kwh": [
+          0.23981833251467474,
+          0.28766735041593167,
+          0.2709926536176321,
+          0.2806740180291085,
+          0.2618673913741112,
+          0.2790624576810214,
+          0.27613397043340016,
+          0.26320435432137607,
+          0.2934094292348344,
+          0.2647649908563341,
+          0.22973186159537332,
+          0.2760287262016378,
+          0.2841913978247465,
+          0.28386073099500275,
+          0.3177727896518574
+        ],
+        "first_canonical_success_transition": 136041,
+        "incomplete_final_route_progress": [
+          0.026200225545956583,
+          0.017293435507202602,
+          0.015137043336353715,
+          0.02139899362722678,
+          0.021286369300489646,
+          0.6290622784362805,
+          0.43554412351017374,
+          0.43901939564485076,
+          0.8545050406762837,
+          0.31919549658899354,
+          0.5296527424077898,
+          0.32791510561245935,
+          0.6132024337479125,
+          0.31911892158894134,
+          0.2156884938205692,
+          0.3488553324516219,
+          0.1207189813120706,
+          0.24370382485892628,
+          0.4756166087812189,
+          0.2856089918975983,
+          0.7561969238453352,
+          0.2723041293900131,
+          0.1962858996615774,
+          0.661002281382912,
+          0.7527607741123404,
+          0.6078237806546428,
+          0.21766901343053452,
+          0.5608846390156766,
+          0.8211193053228131,
+          0.8192579827499762,
+          0.4761934387550394,
+          0.5954670029711832,
+          0.4836345387190007,
+          0.790350164724154,
+          0.7544808245061265,
+          0.8116142228127897,
+          0.8658597870012475,
+          0.6564316080134238,
+          0.9174409798639962,
+          0.9046439960947064,
+          0.6308822023421493,
+          0.6795521240515097,
+          0.8421762309539007,
+          0.9920200548684395,
+          0.553964897147103,
+          0.8612810249456208,
+          0.9720848047090964
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 9.89999999999998,
+          "episode_id": 296,
+          "final_route_progress": 0.027366087654058787,
+          "max_speed_violation_m_s": 0.0,
+          "position_m": 27.366087654058788,
+          "transition_count": 99
+        },
+        "speed_compliant_count": 56,
+        "total_ended_training_episodes": 296
+      },
+      "training_seed": 47,
+      "validation": {
+        "completed_by_deadline_count": 8,
+        "completion_count": 8,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 8273,
+        "failure_mode_counts": {
+          "incomplete+deadline+speed": 1,
+          "speed": 8
+        },
+        "feasible_energy_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_final_position_m": 998.0869935028966,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliant_count": 0,
+        "success_count": 0
+      },
+      "wall_clock_s": 40643.621082
+    },
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-08T14:12:09.154493+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 108.96283396548353,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 48.14250578009743,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 8,
+            "incomplete+deadline+speed": 1
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 616.9915277006587,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 8,
+          "success_count": 0,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 2,
+            "incomplete+deadline+speed": 7
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 909.0907996745086,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 2,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 2,
+            "incomplete+deadline+speed": 7
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 889.6826410441813,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 2,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 5766,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.6123083512185,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 427,
+        "canonical_positive_batch_fraction": 0.05889655172413793,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.40256190299987793,
+              "mean": 0.17198408917283814,
+              "minimum": -0.06596275418996811,
+              "std": 0.11379418598016476
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.44830089807510376,
+              "mean": 0.06235591104461946,
+              "minimum": -0.03206861391663551,
+              "std": 0.054434602561657844
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -0.9020541310310364,
+              "mean": -11.218067328678444,
+              "minimum": -18.242441177368164,
+              "std": 2.8454992324477035
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.7864786386489868,
+              "mean": -3.6327992838341743,
+              "minimum": -7.772006988525391,
+              "std": 1.2992009148690888
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.01053762435913086,
+              "mean": -7.585268057882786,
+              "minimum": -17.209110260009766,
+              "std": 3.1277111583999293
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.454133987426758,
+              "mean": 7.254257531836629,
+              "minimum": 5.414192199707031,
+              "std": 1.3679434763201752
+            },
+            "goal_embedding_variance": 0.6896864771842957,
+            "infonce_component": 3.4648399353027344,
+            "logsumexp_regularization": 0.01809830032289028,
+            "positive_minus_reference_mean": 5.453880435736924,
+            "positive_scores": {
+              "maximum": -0.7864786386489868,
+              "mean": -3.6327992838341743,
+              "minimum": -7.772006988525391,
+              "std": 1.2992009148690888
+            },
+            "reference_scores": {
+              "maximum": -0.8834128975868225,
+              "mean": -9.086679719571098,
+              "minimum": -19.993610382080078,
+              "std": 3.0341555798729076
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.559540748596191,
+              "mean": 7.334727039560676,
+              "minimum": 4.426070213317871,
+              "std": 1.543475030126716
+            },
+            "state_action_embedding_variance": 0.7267884612083435
+          },
+          "optimization": {
+            "actor_gradient_norm": 1.4100325873998345,
+            "actor_loss": 3.5126590728759766,
+            "alpha_loss": 0.22657014429569244,
+            "critic_gradient_norm": 9.012115082161552,
+            "critic_loss": 3.482938289642334,
+            "estimated_entropy": 0.6661005020141602,
+            "goal_encoder_gradient_norm": 6.466289074747807,
+            "log_alpha": -1.6383659839630127,
+            "mean_log_probability": -0.6661005020141602,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 6.27736599665185
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.40256190299987793,
+              "mean": 0.17198408917283814,
+              "minimum": -0.06596275418996811,
+              "std": 0.11379418598016476
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.44830089807510376,
+              "mean": 0.06235591104461946,
+              "minimum": -0.03206861391663551,
+              "std": 0.054434602561657844
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -0.9020541310310364,
+              "mean": -11.218067328678444,
+              "minimum": -18.242441177368164,
+              "std": 2.8454992324477035
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.7864786386489868,
+              "mean": -3.6327992838341743,
+              "minimum": -7.772006988525391,
+              "std": 1.2992009148690888
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.01053762435913086,
+              "mean": -7.585268057882786,
+              "minimum": -17.209110260009766,
+              "std": 3.1277111583999293
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.454133987426758,
+              "mean": 7.254257531836629,
+              "minimum": 5.414192199707031,
+              "std": 1.3679434763201752
+            },
+            "goal_embedding_variance": 0.6896864771842957,
+            "infonce_component": 3.4648399353027344,
+            "logsumexp_regularization": 0.01809830032289028,
+            "positive_minus_reference_mean": 5.453880435736924,
+            "positive_scores": {
+              "maximum": -0.7864786386489868,
+              "mean": -3.6327992838341743,
+              "minimum": -7.772006988525391,
+              "std": 1.2992009148690888
+            },
+            "reference_scores": {
+              "maximum": -0.8834128975868225,
+              "mean": -9.086679719571098,
+              "minimum": -19.993610382080078,
+              "std": 3.0341555798729076
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.559540748596191,
+              "mean": 7.334727039560676,
+              "minimum": 4.426070213317871,
+              "std": 1.543475030126716
+            },
+            "state_action_embedding_variance": 0.7267884612083435
+          },
+          "optimization": {
+            "actor_gradient_norm": 1.4100325873998345,
+            "actor_loss": 3.5126590728759766,
+            "alpha_loss": 0.22657014429569244,
+            "critic_gradient_norm": 9.012115082161552,
+            "critic_loss": 3.482938289642334,
+            "estimated_entropy": 0.6661005020141602,
+            "goal_encoder_gradient_norm": 6.466289074747807,
+            "log_alpha": -1.6383659839630127,
+            "mean_log_probability": -0.6661005020141602,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 6.27736599665185
+          }
+        },
+        "first_canonical_positive_available_transition": 22681,
+        "first_sampled_canonical_positive_transition": 23200,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 255.25544827586208,
+        "mean_exact_duplicate_fraction": 0.0026395474137931034,
+        "mean_exact_unique_projected_goals": 255.32427586206896,
+        "mean_future_lag_decisions": 85.32800862068966,
+        "mean_future_lag_seconds": 8.532800862068965,
+        "mean_late_future_fraction": 0.16589547413793104,
+        "mean_pair_collision_rate": 2.407876943881001e-05,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.03226077586206896,
+          "star-0-1": 0.13363469827586208,
+          "star-1-0": 0.265890625,
+          "star-1-1": 0.5682139008620689
+        },
+        "mean_target_progress_distance": 0.0633236932403888,
+        "mean_terminal_future_fraction": 0.0031470905172413795,
+        "mean_timely_safe_future_fraction": 0.5682139008620689,
+        "mean_unsafe_future_fraction": 0.298151400862069,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 454,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259278
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "24b7bf5fa4431daf5c302f3ed5f919cd01a698233793570418c942be10af901b",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 3226243,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-08T05:26:50.106269+00:00",
+      "training": {
+        "canonical_successful_episodes": 21,
+        "completed_by_deadline_count": 211,
+        "completion_count": 230,
+        "exclusive_failure_mode_counts": {
+          "deadline": 5,
+          "deadline+speed": 14,
+          "feasible": 21,
+          "incomplete+deadline": 45,
+          "incomplete+deadline+speed": 15,
+          "speed": 190
+        },
+        "feasible_episode_energy_kwh": [
+          0.32815173506230055,
+          0.31470701836195025,
+          0.27503255758599215,
+          0.28242758848540567,
+          0.26985473836644286,
+          0.27520769192526096,
+          0.2861977663329017,
+          0.2721815344593652,
+          0.29760673097630447,
+          0.3137923912951703,
+          0.2923400057935893,
+          0.2664496850928361,
+          0.2587238896596203,
+          0.268181173828125,
+          0.30625462631158273,
+          0.2828631369747244,
+          0.2659410105151426,
+          0.2793212570559291,
+          0.27652771162187606,
+          0.2557790937893352,
+          0.26166680347192317
+        ],
+        "first_canonical_success_transition": 22681,
+        "incomplete_final_route_progress": [
+          0.23314244820272356,
+          0.5540258307386333,
+          0.27906496713042445,
+          0.6681235147715067,
+          0.573678731665908,
+          0.3050621387096188,
+          0.42327239231901304,
+          0.26872020519399525,
+          0.3537558948209024,
+          0.25291108950979996,
+          0.961712198398103,
+          0.2355121793368822,
+          0.41086618074841674,
+          0.3796508821870783,
+          0.7110799652319831,
+          0.8402509765034792,
+          0.9386171400238346,
+          0.4422086992127627,
+          0.42721500544040614,
+          0.5195093404394528,
+          0.3402736337421053,
+          0.39131475510474323,
+          0.37155777541608376,
+          0.5639989243577348,
+          0.6676095286701137,
+          0.3527716527825931,
+          0.6095888285188933,
+          0.380382798392626,
+          0.20339794993864332,
+          0.3539407947395833,
+          0.5471263573341321,
+          0.421547779597468,
+          0.26131593841626144,
+          0.3762178799022631,
+          0.4782547066940766,
+          0.4593631562581257,
+          0.6882742287836402,
+          0.6435827415735574,
+          0.6368601538011568,
+          0.7161369020350217,
+          0.4720720135109078,
+          0.6814635434793301,
+          0.28274707544413985,
+          0.35937064762947885,
+          0.41716537095354966,
+          0.9143172615954818,
+          0.8508310242407212,
+          0.7807446769851104,
+          0.7295326197491222,
+          0.7848625883362739,
+          0.9970551164813997,
+          0.9126542719715742,
+          0.8696209605629441,
+          0.7468829948401374,
+          0.8917224144290719,
+          0.903252729132944,
+          0.9174317421108122,
+          0.9434694039207265,
+          0.8855262770022106,
+          0.9695156342142746
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 22.50000000000005,
+          "episode_id": 290,
+          "final_route_progress": 0.11775414626318687,
+          "max_speed_violation_m_s": 0.0,
+          "position_m": 117.75414626318687,
+          "transition_count": 225
+        },
+        "speed_compliant_count": 71,
+        "total_ended_training_episodes": 290
+      },
+      "training_seed": 11,
+      "validation": {
+        "completed_by_deadline_count": 9,
+        "completion_count": 9,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 5788,
+        "failure_mode_counts": {
+          "speed": 9
+        },
+        "feasible_energy_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_final_position_m": 1001.1366681726184,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliant_count": 0,
+        "success_count": 0
+      },
+      "wall_clock_s": 31519.048224
+    },
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-09T09:39:55.699439+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 64.8901972211358,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 6,
+          "completion_count": 6,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 13149,
+          "failure_mode_counts": {
+            "feasible": 4,
+            "incomplete+deadline+speed": 3,
+            "speed": 2
+          },
+          "feasible_energy_count": 4,
+          "mean_feasible_energy_kwh": 0.14797483209800083,
+          "mean_final_position_m": 987.8432532862145,
+          "requirement_satisfaction_rate": 0.4444444444444444,
+          "speed_compliant_count": 4,
+          "success_count": 4,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 6,
+          "completion_count": 6,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 11342,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+deadline+speed": 3,
+            "speed": 5
+          },
+          "feasible_energy_count": 1,
+          "mean_feasible_energy_kwh": 0.14603982200022553,
+          "mean_final_position_m": 982.102935254643,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliant_count": 1,
+          "success_count": 1,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 7020,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.7431250140235,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 3,
+            "incomplete+deadline+speed": 6
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 835.3475358439874,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 3,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 1,
+          "completion_count": 1,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 15557,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "incomplete+deadline": 1,
+            "incomplete+deadline+speed": 7
+          },
+          "feasible_energy_count": 1,
+          "mean_feasible_energy_kwh": 0.13799959160820877,
+          "mean_final_position_m": 891.8334396747333,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliant_count": 2,
+          "success_count": 1,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 619,
+        "canonical_positive_batch_fraction": 0.08537931034482758,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.3419399559497833,
+              "mean": 0.08312014108742005,
+              "minimum": -0.20148925483226776,
+              "std": 0.13114202026520777
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.29058387875556946,
+              "mean": -0.030664500116699855,
+              "minimum": -0.18781352043151855,
+              "std": 0.06114340027336827
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.119881272315979,
+              "mean": -10.395223290659487,
+              "minimum": -15.771257400512695,
+              "std": 2.719252547116506
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.8589859008789062,
+              "mean": -3.528952665394172,
+              "minimum": -8.752669334411621,
+              "std": 1.2339732841870825
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.5071682929992676,
+              "mean": -6.866270627826452,
+              "minimum": -14.437397956848145,
+              "std": 2.659193618161959
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 10.702617645263672,
+              "mean": 7.100947929546237,
+              "minimum": 4.797886371612549,
+              "std": 1.2518483982598632
+            },
+            "goal_embedding_variance": 0.6881213784217834,
+            "infonce_component": 3.3891091346740723,
+            "logsumexp_regularization": 0.016416775062680244,
+            "positive_minus_reference_mean": 5.502275178428995,
+            "positive_scores": {
+              "maximum": -0.8589859008789062,
+              "mean": -3.528952665394172,
+              "minimum": -8.752669334411621,
+              "std": 1.2339732841870825
+            },
+            "reference_scores": {
+              "maximum": -0.894662618637085,
+              "mean": -9.031227843823167,
+              "minimum": -17.00240135192871,
+              "std": 2.862245538755669
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.204510688781738,
+              "mean": 7.142582321539521,
+              "minimum": 4.276984691619873,
+              "std": 1.2588481735084258
+            },
+            "state_action_embedding_variance": 0.70464026927948
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.6320244716754836,
+            "actor_loss": 3.3968381881713867,
+            "alpha_loss": 0.22899304330348969,
+            "critic_gradient_norm": 4.815720498346382,
+            "critic_loss": 3.4055259227752686,
+            "estimated_entropy": 0.6656940579414368,
+            "goal_encoder_gradient_norm": 2.393850146721368,
+            "log_alpha": -1.6273802518844604,
+            "mean_log_probability": -0.6656940579414368,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 4.178593709998091
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.3419399559497833,
+              "mean": 0.08312014108742005,
+              "minimum": -0.20148925483226776,
+              "std": 0.13114202026520777
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.29058387875556946,
+              "mean": -0.030664500116699855,
+              "minimum": -0.18781352043151855,
+              "std": 0.06114340027336827
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.119881272315979,
+              "mean": -10.395223290659487,
+              "minimum": -15.771257400512695,
+              "std": 2.719252547116506
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.8589859008789062,
+              "mean": -3.528952665394172,
+              "minimum": -8.752669334411621,
+              "std": 1.2339732841870825
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 0.5071682929992676,
+              "mean": -6.866270627826452,
+              "minimum": -14.437397956848145,
+              "std": 2.659193618161959
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 10.702617645263672,
+              "mean": 7.100947929546237,
+              "minimum": 4.797886371612549,
+              "std": 1.2518483982598632
+            },
+            "goal_embedding_variance": 0.6881213784217834,
+            "infonce_component": 3.3891091346740723,
+            "logsumexp_regularization": 0.016416775062680244,
+            "positive_minus_reference_mean": 5.502275178428995,
+            "positive_scores": {
+              "maximum": -0.8589859008789062,
+              "mean": -3.528952665394172,
+              "minimum": -8.752669334411621,
+              "std": 1.2339732841870825
+            },
+            "reference_scores": {
+              "maximum": -0.894662618637085,
+              "mean": -9.031227843823167,
+              "minimum": -17.00240135192871,
+              "std": 2.862245538755669
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.204510688781738,
+              "mean": 7.142582321539521,
+              "minimum": 4.276984691619873,
+              "std": 1.2588481735084258
+            },
+            "state_action_embedding_variance": 0.70464026927948
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.6320244716754836,
+            "actor_loss": 3.3968381881713867,
+            "alpha_loss": 0.22899304330348969,
+            "critic_gradient_norm": 4.815720498346382,
+            "critic_loss": 3.4055259227752686,
+            "estimated_entropy": 0.6656940579414368,
+            "goal_encoder_gradient_norm": 2.393850146721368,
+            "log_alpha": -1.6273802518844604,
+            "mean_log_probability": -0.6656940579414368,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 4.178593709998091
+          }
+        },
+        "first_canonical_positive_available_transition": 28220,
+        "first_sampled_canonical_positive_transition": 28440,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 255.07337931034482,
+        "mean_exact_duplicate_fraction": 0.0032591594827586206,
+        "mean_exact_unique_projected_goals": 255.1656551724138,
+        "mean_future_lag_decisions": 83.4303270474138,
+        "mean_future_lag_seconds": 8.343032704741379,
+        "mean_late_future_fraction": 0.10845528017241379,
+        "mean_pair_collision_rate": 3.1664131169709264e-05,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.057490840517241376,
+          "star-0-1": 0.05096443965517242,
+          "star-1-0": 0.4369229525862069,
+          "star-1-1": 0.4546217672413793
+        },
+        "mean_target_progress_distance": 0.08240740375784428,
+        "mean_terminal_future_fraction": 0.004390086206896552,
+        "mean_timely_safe_future_fraction": 0.4546217672413793,
+        "mean_unsafe_future_fraction": 0.4944137931034483,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 649,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259280
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "97ffe98af34b0349dac27bccacadf33b49d8346d98983d03c2d86a3d1000609a",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 3226243,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-08T14:12:09.900383+00:00",
+      "training": {
+        "canonical_successful_episodes": 27,
+        "completed_by_deadline_count": 219,
+        "completion_count": 240,
+        "exclusive_failure_mode_counts": {
+          "deadline": 7,
+          "deadline+speed": 14,
+          "feasible": 27,
+          "incomplete+deadline": 19,
+          "incomplete+deadline+speed": 21,
+          "speed": 192
+        },
+        "feasible_episode_energy_kwh": [
+          0.25105455467480386,
+          0.26181392527701136,
+          0.27825210282794177,
+          0.30564158150975446,
+          0.2784777606723833,
+          0.2817081136891487,
+          0.27018373440480914,
+          0.31117089921870267,
+          0.2575184865920007,
+          0.2790494071228872,
+          0.27851192494331894,
+          0.2814044951217877,
+          0.2740303943583609,
+          0.2710190365316769,
+          0.30567412978659,
+          0.27895139057116414,
+          0.2540632565554177,
+          0.2710461764612777,
+          0.24639179194171396,
+          0.27605909489807096,
+          0.2807029997139804,
+          0.28677854180337364,
+          0.291918304268618,
+          0.28007425150714327,
+          0.2639065623984804,
+          0.2683651896208723,
+          0.28123603157763516
+        ],
+        "first_canonical_success_transition": 28220,
+        "incomplete_final_route_progress": [
+          0.39173275341409625,
+          0.8538774878061142,
+          0.9721317102648614,
+          0.7441300754315461,
+          0.6536794229347068,
+          0.8081593487528197,
+          0.9953747284674165,
+          0.8363776271343336,
+          0.9921985510598705,
+          0.9715732631205721,
+          0.8032706886346639,
+          0.6393778413581607,
+          0.7204034558477455,
+          0.7619816107290953,
+          0.8715405524442001,
+          0.6931939450698064,
+          0.9769382957383176,
+          0.7707166910473321,
+          0.987481480426752,
+          0.8995791324832202,
+          0.5646654044915018,
+          0.9183054327376463,
+          0.9599151585223835,
+          0.7046419585805279,
+          0.8352066039634274,
+          0.9043269415214314,
+          0.9210462457079156,
+          0.8158521791115493,
+          0.7556670811107236,
+          0.902947769475142,
+          0.8283079892259261,
+          0.7256677173535553,
+          0.6788023065021596,
+          0.9529608524059163,
+          0.9787701962332199,
+          0.5974161530256984,
+          0.8894562601313795,
+          0.9591437126215834,
+          0.9969580398790725,
+          0.9091371967218685
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 151.2999999999957,
+          "episode_id": 280,
+          "final_route_progress": 0.8503465350041377,
+          "max_speed_violation_m_s": 6.465322398436724,
+          "position_m": 850.3465350041376,
+          "transition_count": 1513
+        },
+        "speed_compliant_count": 53,
+        "total_ended_training_episodes": 280
+      },
+      "training_seed": 29,
+      "validation": {
+        "completed_by_deadline_count": 1,
+        "completion_count": 1,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 15377,
+        "failure_mode_counts": {
+          "feasible": 1,
+          "incomplete+deadline": 1,
+          "incomplete+deadline+speed": 7
+        },
+        "feasible_energy_count": 1,
+        "mean_feasible_energy_kwh": 0.13554744407086844,
+        "mean_final_position_m": 911.0462504122356,
+        "requirement_satisfaction_rate": 0.1111111111111111,
+        "speed_compliant_count": 2,
+        "success_count": 1
+      },
+      "wall_clock_s": 70065.799056
+    },
+    {
+      "attempt_count": 1,
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-09T17:49:03.060419+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development": [
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 140.64479779026118,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 9,
+          "success_count": 0,
+          "transition_count": 50000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 8794,
+          "failure_mode_counts": {
+            "feasible": 1,
+            "speed": 8
+          },
+          "feasible_energy_count": 1,
+          "mean_feasible_energy_kwh": 0.1616354031951842,
+          "mean_final_position_m": 1000.4756643182177,
+          "requirement_satisfaction_rate": 0.1111111111111111,
+          "speed_compliant_count": 1,
+          "success_count": 1,
+          "transition_count": 100000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 6908,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.8097629551651,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 150000
+        },
+        {
+          "completed_by_deadline_count": 0,
+          "completion_count": 0,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 16200,
+          "failure_mode_counts": {
+            "incomplete+deadline": 4,
+            "incomplete+deadline+speed": 5
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 898.6376961288246,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 4,
+          "success_count": 0,
+          "transition_count": 200000
+        },
+        {
+          "completed_by_deadline_count": 3,
+          "completion_count": 3,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 13147,
+          "failure_mode_counts": {
+            "incomplete+deadline+speed": 6,
+            "speed": 3
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 962.6153970758371,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 250000
+        },
+        {
+          "completed_by_deadline_count": 9,
+          "completion_count": 9,
+          "episode_count": 9,
+          "evaluation_simulator_transitions": 6300,
+          "failure_mode_counts": {
+            "speed": 9
+          },
+          "feasible_energy_count": 0,
+          "mean_feasible_energy_kwh": null,
+          "mean_final_position_m": 1000.7474881605436,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliant_count": 0,
+          "success_count": 0,
+          "transition_count": 300000
+        }
+      ],
+      "diagnostics": {
+        "all_identical_goal_batch_count": 0,
+        "all_identical_goal_batch_frequency": 0.0,
+        "batches_with_canonical_positive": 398,
+        "canonical_positive_batch_fraction": 0.05489655172413793,
+        "detailed_diagnostic_count": 76,
+        "final_detailed_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.372187077999115,
+              "mean": 0.2267380866651365,
+              "minimum": -0.03810747340321541,
+              "std": 0.10623579541849655
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.2778693437576294,
+              "mean": 0.03347612842117087,
+              "minimum": -0.13050661981105804,
+              "std": 0.054254756299480164
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.0137196779251099,
+              "mean": -10.895013511180878,
+              "minimum": -17.336978912353516,
+              "std": 2.73315878169538
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.9684847593307495,
+              "mean": -3.555491940351203,
+              "minimum": -10.008465766906738,
+              "std": 1.3102646964479834
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 1.7186894416809082,
+              "mean": -7.33952156547457,
+              "minimum": -16.323793411254883,
+              "std": 2.8974522903453743
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.713493347167969,
+              "mean": 7.3556846752762794,
+              "minimum": 5.454899311065674,
+              "std": 1.4146392261211198
+            },
+            "goal_embedding_variance": 0.7374293208122253,
+            "infonce_component": 3.33451509475708,
+            "logsumexp_regularization": 0.01229924988001585,
+            "positive_minus_reference_mean": 5.593256007071,
+            "positive_scores": {
+              "maximum": -0.9684847593307495,
+              "mean": -3.555491940351203,
+              "minimum": -10.008465766906738,
+              "std": 1.3102646964479834
+            },
+            "reference_scores": {
+              "maximum": -0.8946591019630432,
+              "mean": -9.148747947422203,
+              "minimum": -18.1101016998291,
+              "std": 2.9436034349377787
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.90776538848877,
+              "mean": 7.101847818121314,
+              "minimum": 4.033769130706787,
+              "std": 1.881114988791248
+            },
+            "state_action_embedding_variance": 0.6953151226043701
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.2889877483634162,
+            "actor_loss": 3.441547155380249,
+            "alpha_loss": 0.23922879993915558,
+            "critic_gradient_norm": 10.206242965409745,
+            "critic_loss": 3.3468143939971924,
+            "estimated_entropy": 0.6842915415763855,
+            "goal_encoder_gradient_norm": 8.459751358632326,
+            "log_alpha": -1.5994796752929688,
+            "mean_log_probability": -0.6842915415763855,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 5.709641181291026
+          }
+        },
+        "final_learning": {
+          "canonical_query": {
+            "actor_action_canonical_goal": {
+              "maximum": 0.372187077999115,
+              "mean": 0.2267380866651365,
+              "minimum": -0.03810747340321541,
+              "std": 0.10623579541849655
+            },
+            "actor_action_sampled_goal": {
+              "maximum": 0.2778693437576294,
+              "mean": 0.03347612842117087,
+              "minimum": -0.13050661981105804,
+              "std": 0.054254756299480164
+            },
+            "actual_action_canonical_goal_score": {
+              "maximum": -1.0137196779251099,
+              "mean": -10.895013511180878,
+              "minimum": -17.336978912353516,
+              "std": 2.73315878169538
+            },
+            "actual_action_sampled_goal_score": {
+              "maximum": -0.9684847593307495,
+              "mean": -3.555491940351203,
+              "minimum": -10.008465766906738,
+              "std": 1.3102646964479834
+            },
+            "canonical_minus_sampled_score": {
+              "maximum": 1.7186894416809082,
+              "mean": -7.33952156547457,
+              "minimum": -16.323793411254883,
+              "std": 2.8974522903453743
+            }
+          },
+          "contrastive": {
+            "goal_embedding_norms": {
+              "maximum": 11.713493347167969,
+              "mean": 7.3556846752762794,
+              "minimum": 5.454899311065674,
+              "std": 1.4146392261211198
+            },
+            "goal_embedding_variance": 0.7374293208122253,
+            "infonce_component": 3.33451509475708,
+            "logsumexp_regularization": 0.01229924988001585,
+            "positive_minus_reference_mean": 5.593256007071,
+            "positive_scores": {
+              "maximum": -0.9684847593307495,
+              "mean": -3.555491940351203,
+              "minimum": -10.008465766906738,
+              "std": 1.3102646964479834
+            },
+            "reference_scores": {
+              "maximum": -0.8946591019630432,
+              "mean": -9.148747947422203,
+              "minimum": -18.1101016998291,
+              "std": 2.9436034349377787
+            },
+            "state_action_embedding_norms": {
+              "maximum": 11.90776538848877,
+              "mean": 7.101847818121314,
+              "minimum": 4.033769130706787,
+              "std": 1.881114988791248
+            },
+            "state_action_embedding_variance": 0.6953151226043701
+          },
+          "optimization": {
+            "actor_gradient_norm": 0.2889877483634162,
+            "actor_loss": 3.441547155380249,
+            "alpha_loss": 0.23922879993915558,
+            "critic_gradient_norm": 10.206242965409745,
+            "critic_loss": 3.3468143939971924,
+            "estimated_entropy": 0.6842915415763855,
+            "goal_encoder_gradient_norm": 8.459751358632326,
+            "log_alpha": -1.5994796752929688,
+            "mean_log_probability": -0.6842915415763855,
+            "nonfinite_value_count": 0,
+            "state_action_encoder_gradient_norm": 5.709641181291026
+          }
+        },
+        "first_canonical_positive_available_transition": 52444,
+        "first_sampled_canonical_positive_transition": 53120,
+        "learning_batch_count": 7250,
+        "mean_distinct_progress_values": 255.41696551724138,
+        "mean_exact_duplicate_fraction": 0.0020932112068965517,
+        "mean_exact_unique_projected_goals": 255.4641379310345,
+        "mean_future_lag_decisions": 88.00978717672413,
+        "mean_future_lag_seconds": 8.800978717672415,
+        "mean_late_future_fraction": 0.16491325431034481,
+        "mean_pair_collision_rate": 1.7249830966869506e-05,
+        "mean_requirement_bit_frequencies": {
+          "star-0-0": 0.0382957974137931,
+          "star-0-1": 0.1266174568965517,
+          "star-1-0": 0.2533582974137931,
+          "star-1-1": 0.5817284482758621
+        },
+        "mean_target_progress_distance": 0.05356999598548106,
+        "mean_terminal_future_fraction": 0.0022214439655172413,
+        "mean_timely_safe_future_fraction": 0.5817284482758621,
+        "mean_unsafe_future_fraction": 0.2916540948275862,
+        "minimum_goal_distance_to_canonical": 0.0,
+        "nonfinite_value_count": 0,
+        "observed_canonical_future_positive_count": 411,
+        "sampled_source_future_pairs": 1856000,
+        "unique_source_transition_coverage": 259362
+      },
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_sha256": "b986d54636e42483491bb4f2b99deb6a1f4e213c31e60cc0da1ad1726edc315c",
+      "interruption_count": 0,
+      "native_transitions": 300000,
+      "parameter_count": 3226243,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-09T09:39:56.426877+00:00",
+      "training": {
+        "canonical_successful_episodes": 21,
+        "completed_by_deadline_count": 193,
+        "completion_count": 210,
+        "exclusive_failure_mode_counts": {
+          "deadline": 7,
+          "deadline+speed": 10,
+          "feasible": 21,
+          "incomplete+deadline": 35,
+          "incomplete+deadline+speed": 16,
+          "speed": 172
+        },
+        "feasible_episode_energy_kwh": [
+          0.28868588898422815,
+          0.26736196400779205,
+          0.26124487115583805,
+          0.2522206269953646,
+          0.26770206809611125,
+          0.27412988347448053,
+          0.27775802999394306,
+          0.2828152528947615,
+          0.2652463038531199,
+          0.2800321726223919,
+          0.2656160604290857,
+          0.25093093638791153,
+          0.28239673893070655,
+          0.26666318004041584,
+          0.2501567186398815,
+          0.2860244860482746,
+          0.2702063306416559,
+          0.2937040066765598,
+          0.3157478785583002,
+          0.26120989920363474,
+          0.27198016072810843
+        ],
+        "first_canonical_success_transition": 52444,
+        "incomplete_final_route_progress": [
+          0.2256491626585163,
+          0.16847568082948036,
+          0.15281772744781788,
+          0.25487587630258457,
+          0.11706110029387963,
+          0.18285557899597904,
+          0.39380221174291813,
+          0.6584483510999167,
+          0.38568986468416566,
+          0.2901093590694062,
+          0.3127828011934131,
+          0.6677505655687762,
+          0.22184735405617378,
+          0.5149274689926773,
+          0.7168761994836764,
+          0.38170881477512997,
+          0.5540324605398455,
+          0.4794481433014498,
+          0.42527233799870773,
+          0.8822009011193915,
+          0.5976890471519882,
+          0.6438199445022338,
+          0.9241078382450776,
+          0.7177002567868394,
+          0.6631610662065565,
+          0.7442060653864555,
+          0.43431875973721223,
+          0.654813963769023,
+          0.673598068022637,
+          0.8299529487711792,
+          0.9319908298354951,
+          0.7019938423318176,
+          0.3457098821315501,
+          0.605241162169748,
+          0.8896643529778039,
+          0.8436519912268705,
+          0.9033567389686776,
+          0.9293750688898479,
+          0.8329588492139198,
+          0.7970297466625303,
+          0.9172196052864473,
+          0.9163803619830482,
+          0.9813317868606459,
+          0.9321099854822401,
+          0.9331805457131678,
+          0.829967670027816,
+          0.9033681558653214,
+          0.9962487753063558,
+          0.9863388646071992,
+          0.7820150161568868,
+          0.9261269480362199
+        ],
+        "partial_episode_at_training_boundary": {
+          "elapsed_time_s": 37.90000000000027,
+          "episode_id": 261,
+          "final_route_progress": 0.3618233920906155,
+          "max_speed_violation_m_s": 11.432446969732917,
+          "position_m": 361.82339209061547,
+          "transition_count": 379
+        },
+        "speed_compliant_count": 63,
+        "total_ended_training_episodes": 261
+      },
+      "training_seed": 47,
+      "validation": {
+        "completed_by_deadline_count": 9,
+        "completion_count": 9,
+        "episode_count": 9,
+        "evaluation_simulator_transitions": 6274,
+        "failure_mode_counts": {
+          "speed": 9
+        },
+        "feasible_energy_count": 0,
+        "mean_feasible_energy_kwh": null,
+        "mean_final_position_m": 1000.9281433647188,
+        "requirement_satisfaction_rate": 0.0,
+        "speed_compliant_count": 0,
+        "success_count": 0
+      },
+      "wall_clock_s": 29346.633542
+    }
+  ],
+  "status": "COMPLETED",
+  "study_id": "0da406b9-982e-4431-9ec6-6dc0bf90375c",
+  "total_wall_clock_through_validation_s": 209593.99213,
+  "training_wall_clock_s": 207581.274107,
+  "validation_episode_count": 54
+}

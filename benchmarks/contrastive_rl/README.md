@@ -1,9 +1,9 @@
 # Projected-goal Contrastive RL
 
-This directory contains the frozen design and execution infrastructure for a
-Contrastive Reinforcement Learning (CRL) depth study. Here CRL means
-contrastive RL, not the earlier constrained-RL benchmark. The six main runs
-remain disabled until a separate explicit authorization.
+This directory contains the frozen design, execution infrastructure, and final
+artifacts for a Contrastive Reinforcement Learning (CRL) depth study. Here CRL
+means contrastive RL, not the earlier constrained-RL benchmark. The six main
+runs and the single preregistered Validation pass are complete.
 
 The source-faithful core contains residual actor/state-action/goal networks,
 negative-Euclidean association scores, diagonal-positive InfoNCE, entropy
@@ -34,14 +34,21 @@ representation. The score remains an uncalibrated association surrogate.
 - Machine-readable readiness: [preparation_status.json](preparation_status.json)
 - Execution/checkpoint contract: [EXECUTION.md](EXECUTION.md)
 - Machine-readable run schema: [execution_schema.json](execution_schema.json)
+- Final results and interpretation: [RESULTS.md](RESULTS.md)
+- Compact machine-readable results: [results.json](results.json)
 
 The optional JAX stack is isolated in requirements-reference.txt; it is not a
 dependency of the public environment package. External tracking and telemetry
-are absent. runner.py now provides the exact collector/replay/update loop,
-atomic full-state checkpoints, diagnostics, split gates, and duplicate-run
-protection. Readiness does not authorize execution:
-main_training_authorized and main_training_enabled remain false, and no
-LongiControl policy was trained.
+are absent. runner.py provides the exact collector/replay/update loop, atomic
+full-state checkpoints, diagnostics, split gates, and duplicate-run
+protection. All six policies completed exactly 300,000 native transitions and
+7,250 update cycles. Validation was opened once for the 54 authorized episodes;
+paper tracks 4000--4017 remained sealed.
+
+The final canonical Validation result is **0/27 for depth 4** and **1/27 for
+depth 16**. The lone depth-16 success came from seed 29, so deeper networks did
+not provide a repeatable improvement across seeds at this 300k-per-policy
+budget.
 
 ## Reproduce preparation checks
 

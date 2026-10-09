@@ -13,7 +13,7 @@ def load(name):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
 
 
-def test_preparation_deliverables_are_complete_without_fake_results():
+def test_study_deliverables_include_compact_final_results():
     expected = {
         "README.md",
         "SOURCE_AUDIT.md",
@@ -34,22 +34,32 @@ def test_preparation_deliverables_are_complete_without_fake_results():
         "execution.py",
         "projection_measurements.json",
         "resource_measurements_projected.json",
+        "RESULTS.md",
+        "results.json",
+        "validation_episodes.json",
+        "execution_manifest.json",
+        "finalize.py",
     }
     assert expected <= {path.name for path in ROOT.iterdir()}
-    assert not (ROOT / "RESULTS.md").exists()
+    assert {
+        "development-rsr.png",
+        "validation-requirements.png",
+        "collision-vs-score-gap.png",
+    } <= {path.name for path in (ROOT / "plots").iterdir()}
 
 
-def test_semantic_readiness_is_separate_from_execution_authorization():
+def test_completed_study_disables_duplicate_training_but_preserves_authorization():
     status = load("preparation_status.json")
     config = load("canonical.json")
     assert status["reference_core_verified"] is True
     assert status["task_mapping_verified"] is True
     assert status["technical_semantic_readiness"] is True
     assert status["execution_infrastructure_ready"] is True
-    assert status["ready_for_main_training"] is True
+    assert status["status"] == "STUDY_COMPLETED"
+    assert status["ready_for_main_training"] is False
     assert status["main_training_authorized"] is True
-    assert status["main_training_enabled"] is True
-    assert status["future_protocol_status"] == "FROZEN_MAIN_TRAINING_AUTHORIZED"
+    assert status["main_training_enabled"] is False
+    assert status["future_protocol_status"] == "COMPLETED_VALIDATION_FROZEN"
     assert config["status"] == "FROZEN_PRETRAINING_DESIGN_EXECUTION_DISABLED"
     assert config["task_mapping_verified"] is True
     assert config["main_training_authorized"] is False
@@ -81,7 +91,7 @@ def test_pinned_sources_and_planned_factorial_budget():
     assert future["paper_tracks_sealed"] == list(range(4000, 4018))
 
 
-def test_execution_schema_records_explicit_training_authorization():
+def test_execution_schema_records_completed_single_validation():
     schema = load("execution_schema.json")
     assert schema["frozen_configuration_sha256"] == (
         "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc"
@@ -93,11 +103,81 @@ def test_execution_schema_records_explicit_training_authorization():
     }
     assert schema["schedule"]["complete_update_cycles"] == 7_250
     assert schema["authorization"]["execution_infrastructure_ready"] is True
-    assert schema["authorization"]["ready_for_main_training"] is True
+    assert schema["authorization"]["ready_for_main_training"] is False
     assert schema["authorization"]["main_training_authorized"] is True
-    assert schema["authorization"]["main_training_enabled"] is True
-    assert schema["validation"]["opened"] is False
+    assert schema["authorization"]["main_training_enabled"] is False
+    assert schema["validation"]["opened"] is True
+    assert schema["validation"]["completed"] is True
+    assert schema["validation"]["episode_count"] == 54
     assert schema["paper_final"]["opened"] is False
+    assert schema["final_result"]["depth_4_successes"] == 0
+    assert schema["final_result"]["depth_16_successes"] == 1
+
+
+def test_final_results_match_frozen_budget_and_validation_accounting():
+    results = load("results.json")
+    manifest = load("execution_manifest.json")
+    episodes = load("validation_episodes.json")
+
+    assert results["status"] == "COMPLETED"
+    assert results["canonical_configuration_sha256"] == (
+        "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc"
+    )
+    assert results["validation_episode_count"] == len(episodes) == 54
+    assert results["paper_tracks_used"] is False
+    assert results["accounting"] == {
+        "complete_update_cycles": 43_500,
+        "development_simulator_transitions": 462_172,
+        "native_simulator_transitions": 1_800_000,
+        "validation_simulator_transitions": 59_633,
+    }
+    assert len(results["policies"]) == 6
+    assert all(
+        policy["native_transitions"] == 300_000 for policy in results["policies"]
+    )
+    assert all(
+        policy["complete_update_cycles"] == 7_250 for policy in results["policies"]
+    )
+    assert all(policy["attempt_count"] == 1 for policy in results["policies"])
+    assert all(policy["interruption_count"] == 0 for policy in results["policies"])
+
+    assert manifest["status"] == "COMPLETED"
+    assert manifest["validation_opened"] is True
+    assert manifest["validation"]["status"] == "COMPLETED"
+    assert manifest["validation"]["episode_count"] == 54
+    assert manifest["paper_tracks_opened"] is False
+
+
+def test_final_validation_outcomes_and_energy_semantics_are_exact():
+    results = load("results.json")
+    depth_4 = results["depth_results"]["4"]
+    depth_16 = results["depth_results"]["16"]
+
+    assert depth_4["success_count"] == 0
+    assert depth_4["episode_count"] == 27
+    assert depth_4["per_seed_success"] == {"11": 0, "29": 0, "47": 0}
+    assert depth_4["mean_feasible_energy_kwh"] is None
+    assert depth_4["feasible_energy_count"] == 0
+
+    assert depth_16["success_count"] == 1
+    assert depth_16["episode_count"] == 27
+    assert depth_16["per_seed_success"] == {"11": 0, "29": 1, "47": 0}
+    assert depth_16["feasible_energy_count"] == 1
+    assert depth_16["mean_feasible_energy_kwh"] == 0.13554744407086844
+
+    expected_history = {
+        "Scalar SB3 SAC": 5,
+        "Action-repeat scalar": 9,
+        "Constrained V2": 21,
+        "Requirement-conditioned, canonical 140 s": 12,
+        "Binary Success": 0,
+        "LLM reward": 1,
+        "Goal-conditioned SAC, no HER": 0,
+        "Goal-conditioned SAC + HER": 0,
+    }
+    assert {
+        name: row["successes"] for name, row in results["historical_context"].items()
+    } == expected_history
 
 
 def test_resource_probe_stayed_within_preparation_caps():

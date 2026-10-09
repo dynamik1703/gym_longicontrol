@@ -79,7 +79,8 @@ select a checkpoint; 300k is always final.
 Validation remains sealed until all six manifest entries are `COMPLETED`, each
 has exactly 300,000 transitions and 7,250 updates, all six Development results
 exist, and checkpoint/config/source hashes match. The gate is single-use and
-this runner exposes no command that opens it. The paper gate always raises.
+can be opened only by the explicit `validate` command after those checks pass.
+The paper gate always raises.
 
 ## Diagnostics
 
@@ -110,3 +111,8 @@ or preflight. `validate` first enforces the frozen all-six-complete gate, marks
 Validation opened before evaluating, writes each policy result atomically, and
 cannot be invoked a second time. A failed Validation attempt remains opened and
 must not be silently rerun.
+
+The authorized matrix and its one Validation pass have now completed. The
+compact final manifest records six first-attempt completions, 54 Validation
+episodes, and a still-sealed paper split. Duplicate-run and single-use
+Validation guards remain active.

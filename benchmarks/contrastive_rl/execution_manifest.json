@@ -1,0 +1,1046 @@
+{
+  "actual_resources_across_attempts": {
+    "complete_update_cycles": 43500,
+    "development_simulator_transitions": 462172,
+    "native_simulator_transitions": 1800000,
+    "validation_simulator_transitions": 59633
+  },
+  "completed_at": "2026-10-09T17:49:03.786084+00:00",
+  "created_at": "2026-10-07T08:09:22.511977+00:00",
+  "execution_order": [
+    {
+      "depth": 4,
+      "training_seed": 11
+    },
+    {
+      "depth": 4,
+      "training_seed": 29
+    },
+    {
+      "depth": 4,
+      "training_seed": 47
+    },
+    {
+      "depth": 16,
+      "training_seed": 11
+    },
+    {
+      "depth": 16,
+      "training_seed": 29
+    },
+    {
+      "depth": 16,
+      "training_seed": 47
+    }
+  ],
+  "paper_tracks_opened": false,
+  "planned_primary_budget": {
+    "complete_update_cycles": 43500,
+    "native_simulator_transitions": 1800000
+  },
+  "policies": {
+    "depth-16:seed-11": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-08T14:12:09.213048+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-08T05:26:50.106269+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-08T14:12:09.154493+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-16/seed-11/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "8b988f96c6f8f1570feee208f6e6b9f35bba7aa02bbb3e47835eb222a056edca",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-16/seed-11/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-11/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "5b6dbc4d8a226c55ba73ae8622d8a964f5e11933c74e09aa4ecd164024d57aa9",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-16/seed-11/step-100000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-11/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "36c2b8a06d2c265272aee0be750e227330e1ab6b648a687eecf7d944171e7d3c",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-16/seed-11/step-150000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-11/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "8bfe1a19a441096873821f98d2a7b25cddea2576ccc9e3e1c089dba7dc0cd2ce",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-16/seed-11/step-200000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-11/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "792a7f123b512413308db6e0158d647fca2ba4fd075d39c4f2dbaed05855c385",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-16/seed-11/step-250000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-11/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "24b7bf5fa4431daf5c302f3ed5f919cd01a698233793570418c942be10af901b",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-16/seed-11/step-300000/development-result.json",
+          "development_simulator_transitions": 5766,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-16/seed-11/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "24b7bf5fa4431daf5c302f3ed5f919cd01a698233793570418c942be10af901b",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-08T05:26:50.106269+00:00",
+      "status": "COMPLETED",
+      "training_seed": 11,
+      "training_track_seed_count": 291,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          11,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-16/seed-11/validation-result.json",
+      "validation_result_sha256": "b7c0125858ab50ad6c31660f1c039f1f8fbef694ad4341effd16e6c9e7dee5ba"
+    },
+    "depth-16:seed-29": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-09T09:39:55.763197+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-08T14:12:09.900383+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-09T09:39:55.699439+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-16/seed-29/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "078a781c2accc2c304badbf0a48b3110c274a09c2f2454bc47f837a1194bec53",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-16/seed-29/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-29/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "a311207206892e590fbac2c367d9bcce0bf9f43986fd5506a47fe7101dcb2afe",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-16/seed-29/step-100000/development-result.json",
+          "development_simulator_transitions": 13149,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-29/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "de8a9dab554bd661085714691e1175a0e17af7457a5ba10c413bef78e09ed480",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-16/seed-29/step-150000/development-result.json",
+          "development_simulator_transitions": 11342,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-29/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "66e0392b8f587fb452d21dac87ba4019fc688f66a3ed95c5969ed2c4ca76e238",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-16/seed-29/step-200000/development-result.json",
+          "development_simulator_transitions": 7020,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-29/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "0f2704ad9883fca011b59c69c36578053bf9feeeec745d7cc6c2cf94936e59d1",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-16/seed-29/step-250000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-29/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "97ffe98af34b0349dac27bccacadf33b49d8346d98983d03c2d86a3d1000609a",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-16/seed-29/step-300000/development-result.json",
+          "development_simulator_transitions": 15557,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-16/seed-29/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "97ffe98af34b0349dac27bccacadf33b49d8346d98983d03c2d86a3d1000609a",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-08T14:12:09.900383+00:00",
+      "status": "COMPLETED",
+      "training_seed": 29,
+      "training_track_seed_count": 281,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          29,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-16/seed-29/validation-result.json",
+      "validation_result_sha256": "638ff4d379d7c1383e9158a0dd5fcff7297a86e8580a341578f4c00d69447550"
+    },
+    "depth-16:seed-47": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-09T17:49:03.119349+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-09T09:39:56.426877+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-09T17:49:03.060419+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 16,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-16/seed-47/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "950124828d92744c9d7f649fc6fd3d6e59985a33a1bc8fe4a409809b0f399e17",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-16/seed-47/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-47/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "558311326cb87371412e24588526d40dbba7d53634c85e976701999c04ae0a28",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-16/seed-47/step-100000/development-result.json",
+          "development_simulator_transitions": 8794,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-47/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "d86dbef1918b957963c52dcf3dbab02da4aae4b393e543adba36ff40e7269eef",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-16/seed-47/step-150000/development-result.json",
+          "development_simulator_transitions": 6908,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-47/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "665f880cd6870b3386e159cf60c28018fce9378e7dd79cf6a0edd2f5817c73bc",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-16/seed-47/step-200000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-47/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "852cce9229d2b8651efe1c68c7a5563f25827021350b5d0d3ec8447d6bf1228a",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-16/seed-47/step-250000/development-result.json",
+          "development_simulator_transitions": 13147,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-16/seed-47/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "b986d54636e42483491bb4f2b99deb6a1f4e213c31e60cc0da1ad1726edc315c",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-16/seed-47/step-300000/development-result.json",
+          "development_simulator_transitions": 6300,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-16/seed-47/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "b986d54636e42483491bb4f2b99deb6a1f4e213c31e60cc0da1ad1726edc315c",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-09T09:39:56.426877+00:00",
+      "status": "COMPLETED",
+      "training_seed": 47,
+      "training_track_seed_count": 262,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          47,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-16/seed-47/validation-result.json",
+      "validation_result_sha256": "3bb8af127302909303f88d780076b7fe3c68a9ef1089fd38b82bb2515e027f45"
+    },
+    "depth-4:seed-11": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-07T10:38:27.903370+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-07T08:09:22.532015+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-07T10:38:27.861971+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-4/seed-11/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "d2061a9cc81b746611f4bc73d4709a960fec207ef84e0816e26f203e870729ea",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-4/seed-11/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-11/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "419c51dc788f9140e26825105107610576a1455b4245d20556f8d02984d3c79a",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-4/seed-11/step-100000/development-result.json",
+          "development_simulator_transitions": 15934,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-11/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "717f3681c23735b273ad08df65986af30be7578c78c00ae51fdbbaa4a42da77b",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-4/seed-11/step-150000/development-result.json",
+          "development_simulator_transitions": 9784,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-11/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "106fc9f046cd32c64ab01abed8865df120e450a286dc5a28da54928ee3d2c872",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-4/seed-11/step-200000/development-result.json",
+          "development_simulator_transitions": 6816,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-11/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "15b8eb512b9297f2753bc67e7a678f1fcaa287638094741abc682fa2a8b201ab",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-4/seed-11/step-250000/development-result.json",
+          "development_simulator_transitions": 10425,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-11/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "de860be7c4561ddb0ffb92529613fa192847f9cea9a6e20a5526ac9802884a30",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-4/seed-11/step-300000/development-result.json",
+          "development_simulator_transitions": 13039,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-4/seed-11/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "de860be7c4561ddb0ffb92529613fa192847f9cea9a6e20a5526ac9802884a30",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T08:09:22.532015+00:00",
+      "status": "COMPLETED",
+      "training_seed": 11,
+      "training_track_seed_count": 301,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          11,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-4/seed-11/validation-result.json",
+      "validation_result_sha256": "eb29256345c15d4b1f0ad037960698a3120b835f52034317e8f126181735165b"
+    },
+    "depth-4:seed-29": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-07T18:09:25.088187+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-07T10:38:28.563994+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-07T18:09:25.038139+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-4/seed-29/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "631be8098b613a5361026385a1fa7abf47f7eb0b8f9623c1cd94b73e6fc6d02f",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-4/seed-29/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-29/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "a2fa53dd50f6c5d8543a69bceecb684b5c63b86cdc44b1686e3205a9cbed6ac4",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-4/seed-29/step-100000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-29/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "2488d4dd4412a6d79dbe7e9fa9dc22cb333262e5f284f68aca8ab990eb67b766",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-4/seed-29/step-150000/development-result.json",
+          "development_simulator_transitions": 11888,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-29/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "112faaac79869f5e5b31c13aee3552ff594acfeafd940c831949748988fb0010",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-4/seed-29/step-200000/development-result.json",
+          "development_simulator_transitions": 11048,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-29/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "dcd5ebd7cc0e8f817adb8d46cd0aeb57d3bcd1d49cef0da068d73b650a0849cb",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-4/seed-29/step-250000/development-result.json",
+          "development_simulator_transitions": 13277,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-29/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "b64d2397d7a7b31cb14b433921c21068d1d0f106e4bb9ddca8ccc476a18e2445",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-4/seed-29/step-300000/development-result.json",
+          "development_simulator_transitions": 12550,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-4/seed-29/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "b64d2397d7a7b31cb14b433921c21068d1d0f106e4bb9ddca8ccc476a18e2445",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T10:38:28.563994+00:00",
+      "status": "COMPLETED",
+      "training_seed": 29,
+      "training_track_seed_count": 278,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          29,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-4/seed-29/validation-result.json",
+      "validation_result_sha256": "4a9f7dd0fe5f2e71101109ef35942a4bfb7fcc5a9915c16d3bbfeae6a31ec0e1"
+    },
+    "depth-4:seed-47": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "complete_update_cycles": 7250,
+          "completed_at": "2026-10-08T05:26:49.421562+00:00",
+          "native_transitions": 300000,
+          "started_at": "2026-10-07T18:09:25.756768+00:00",
+          "status": "COMPLETED"
+        }
+      ],
+      "complete_update_cycles": 7250,
+      "completed_at": "2026-10-08T05:26:49.377850+00:00",
+      "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "depth": 4,
+      "development_checkpoints": [
+        {
+          "checkpoint_path": "depth-4/seed-47/step-050000/exact-resume.ckpt",
+          "checkpoint_sha256": "5a68e5af7e5d52a0637663f17ce684cb8b39dea86be7a7f865331621e7d86d37",
+          "complete_update_cycles": 1000,
+          "development_result_path": "depth-4/seed-47/step-050000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 50000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-47/step-100000/exact-resume.ckpt",
+          "checkpoint_sha256": "96295603b79a8d5969454350f6d07ce4ef0398cc90f8d7d3a8f01be47e6e603a",
+          "complete_update_cycles": 2250,
+          "development_result_path": "depth-4/seed-47/step-100000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 100000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-47/step-150000/exact-resume.ckpt",
+          "checkpoint_sha256": "1c2498d94538bf1b846ccbeca08f74bdcb8a91dc721a2340cfc9e600d12fe43a",
+          "complete_update_cycles": 3500,
+          "development_result_path": "depth-4/seed-47/step-150000/development-result.json",
+          "development_simulator_transitions": 12190,
+          "transition_count": 150000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-47/step-200000/exact-resume.ckpt",
+          "checkpoint_sha256": "c5808277558084494da2e663380912e15765e816fde835617512b77c4198b1dd",
+          "complete_update_cycles": 4750,
+          "development_result_path": "depth-4/seed-47/step-200000/development-result.json",
+          "development_simulator_transitions": 7075,
+          "transition_count": 200000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-47/step-250000/exact-resume.ckpt",
+          "checkpoint_sha256": "5b0fcb3e62dcb17cb658e69054e8a51f54753d8584ad44d909fd8495d19dbbe0",
+          "complete_update_cycles": 6000,
+          "development_result_path": "depth-4/seed-47/step-250000/development-result.json",
+          "development_simulator_transitions": 16200,
+          "transition_count": 250000
+        },
+        {
+          "checkpoint_path": "depth-4/seed-47/step-300000/exact-resume.ckpt",
+          "checkpoint_sha256": "add1bc9bad00193cd06b35252505a8a34e93ddeb4ec429b8a7af0cf5c532c8c5",
+          "complete_update_cycles": 7250,
+          "development_result_path": "depth-4/seed-47/step-300000/development-result.json",
+          "development_simulator_transitions": 7163,
+          "transition_count": 300000
+        }
+      ],
+      "execution_source_sha256": {
+        "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+        "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+        "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+        "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+        "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+        "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+      },
+      "final_checkpoint_path": "depth-4/seed-47/step-300000/exact-resume.ckpt",
+      "final_checkpoint_sha256": "add1bc9bad00193cd06b35252505a8a34e93ddeb4ec429b8a7af0cf5c532c8c5",
+      "native_transitions": 300000,
+      "scientific_source_sha256": {
+        "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+        "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+        "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+        "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+        "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+        "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+        "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+        "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+        "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+      },
+      "started_at": "2026-10-07T18:09:25.756768+00:00",
+      "status": "COMPLETED",
+      "training_seed": 47,
+      "training_track_seed_count": 297,
+      "training_track_stream": {
+        "algorithm": "numpy.random.PCG64",
+        "claim_identical_realized_tracks_across_policies": false,
+        "excluded_tracks": [
+          1000,
+          1001,
+          1002,
+          1003,
+          1004,
+          1005,
+          1006,
+          1007,
+          1008,
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008,
+          4000,
+          4001,
+          4002,
+          4003,
+          4004,
+          4005,
+          4006,
+          4007,
+          4008,
+          4009,
+          4010,
+          4011,
+          4012,
+          4013,
+          4014,
+          4015,
+          4016,
+          4017
+        ],
+        "seed_sequence_entropy": [
+          47,
+          1129466929
+        ]
+      },
+      "validation_episode_count": 9,
+      "validation_result_path": "depth-4/seed-47/validation-result.json",
+      "validation_result_sha256": "11e9610cd2da2f5bb4dec5af86a0df37b9ce93a01d328ae46e42047f988200f6"
+    }
+  },
+  "provenance": {
+    "branch": "research/contrastive-rl",
+    "configuration_sha256": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+    "execution_commit": "2284d3e81a07fbbf82fced1e488cb635549fb361",
+    "execution_source_sha256": {
+      "benchmarks/contrastive_rl/checkpointing.py": "91187822aa8a3fc56e59ce8f1a6abfc31c138eaa954dbef353a7b95405d2e2f7",
+      "benchmarks/contrastive_rl/diagnostics.py": "7713630be59924bd97176413e344da254c95e195155e6e9d3219c9e3fa1e2620",
+      "benchmarks/contrastive_rl/evaluation.py": "a49a0098f5308cab21a9ace0fea41f92d422b928dabda2c4c27615b84bdf5a92",
+      "benchmarks/contrastive_rl/execution.py": "d2fd3ea3f3b48a55b21f73d0c740fed648f3bbae1d2f40cae685471aad8783a1",
+      "benchmarks/contrastive_rl/replay.py": "bbfcae17ede953bb890e79a49f453c53fb3d3fe1b0f4f9dc87e4dcf64bce2a68",
+      "benchmarks/contrastive_rl/runner.py": "3f9b21bae6258ca1825eff61369f064f27989e404eca54d7ebd8bbac4c9a722f"
+    },
+    "historical_frozen_artifact_count_verified": 191,
+    "preparation_commit": "8c9a61ea545d339faaa12a201dbdca7120706d44",
+    "runtime_versions": {
+      "flax": "0.7.4",
+      "gymnasium": "1.3.0",
+      "jax": "0.4.23",
+      "jaxlib": "0.4.23",
+      "numpy": "1.26.4",
+      "optax": "0.1.7",
+      "python": "3.10.14"
+    },
+    "scientific_source_sha256": {
+      "benchmarks/contrastive_rl/canonical.json": "659e139034d9f3aed25a07d5244bc6ac4c86ce63dd0394f315ca5341ae0a78fc",
+      "benchmarks/contrastive_rl/config.py": "3cf2224f724cf544a2654c56487f2800ac595758913ea106117f959e6083d2c9",
+      "benchmarks/contrastive_rl/goal_adapter.py": "d4bb6a029298368cf4fcc79112e9b405116ed6f8bc52341849640b1588230630",
+      "benchmarks/contrastive_rl/learner.py": "b159aabe57c02f67469d75a9b91ec5104be47f806fa1119a69c0fd26ea776ce0",
+      "benchmarks/contrastive_rl/losses.py": "347d60100b841ea7f029cfcde4fb88164ac74e87283e6cdd92088d24c13e5aca",
+      "benchmarks/contrastive_rl/networks.py": "e927bf9ab87b8a7433777741deb66b4826a7c7ae7c7b60edbabdc40d841e028a",
+      "benchmarks/contrastive_rl/projected_adapter.py": "0daa4ae6fa82b06297a6f96864ff5fe7adf8985a14ea8636e32a1f25f9c89932",
+      "benchmarks/contrastive_rl/sampling.py": "6a019d1af9eed291fe3982e56f9ecc81b3ec7754abb9d2d37ec27ea407dcaf34",
+      "benchmarks/contrastive_rl/upstream.json": "932aaafacd62339e8f05834be563f55067deabdca7379997168a28a10bfe1958"
+    }
+  },
+  "schema_version": 1,
+  "status": "COMPLETED",
+  "study_id": "0da406b9-982e-4431-9ec6-6dc0bf90375c",
+  "updated_at": "2026-10-09T18:22:36.512381+00:00",
+  "validation": {
+    "completed_at": "2026-10-09T18:22:36.504107+00:00",
+    "episode_count": 54,
+    "episodes_path": "validation-episodes.json",
+    "episodes_sha256": "fcee9bf3a9408a9bc80008173a3544c6a539997667b879ef128550edbffe9cd8",
+    "opened_at": "2026-10-09T17:49:39.875309+00:00",
+    "policy_results": [
+      {
+        "depth": 4,
+        "episode_count": 9,
+        "path": "depth-4/seed-11/validation-result.json",
+        "sha256": "eb29256345c15d4b1f0ad037960698a3120b835f52034317e8f126181735165b",
+        "training_seed": 11
+      },
+      {
+        "depth": 4,
+        "episode_count": 9,
+        "path": "depth-4/seed-29/validation-result.json",
+        "sha256": "4a9f7dd0fe5f2e71101109ef35942a4bfb7fcc5a9915c16d3bbfeae6a31ec0e1",
+        "training_seed": 29
+      },
+      {
+        "depth": 4,
+        "episode_count": 9,
+        "path": "depth-4/seed-47/validation-result.json",
+        "sha256": "11e9610cd2da2f5bb4dec5af86a0df37b9ce93a01d328ae46e42047f988200f6",
+        "training_seed": 47
+      },
+      {
+        "depth": 16,
+        "episode_count": 9,
+        "path": "depth-16/seed-11/validation-result.json",
+        "sha256": "b7c0125858ab50ad6c31660f1c039f1f8fbef694ad4341effd16e6c9e7dee5ba",
+        "training_seed": 11
+      },
+      {
+        "depth": 16,
+        "episode_count": 9,
+        "path": "depth-16/seed-29/validation-result.json",
+        "sha256": "638ff4d379d7c1383e9158a0dd5fcff7297a86e8580a341578f4c00d69447550",
+        "training_seed": 29
+      },
+      {
+        "depth": 16,
+        "episode_count": 9,
+        "path": "depth-16/seed-47/validation-result.json",
+        "sha256": "3bb8af127302909303f88d780076b7fe3c68a9ef1089fd38b82bb2515e027f45",
+        "training_seed": 47
+      }
+    ],
+    "status": "COMPLETED",
+    "tracks": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008
+    ]
+  },
+  "validation_opened": true
+}

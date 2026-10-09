@@ -75,6 +75,24 @@ steady CPU timings, pure update arithmetic is about 3.1 minutes for depth 4 and
 Python orchestration, checkpoints, evaluation, and environment time. No policy
 result selected any setting.
 
-Both depths remain technically feasible on the measured host. Execution and
-checkpoint infrastructure is now tested; the only remaining blocker is a
-separate explicit authorization, not network memory or update throughput.
+Both depths were technically feasible on the measured host. The subsequent
+authorized study completed without interruption or restart.
+
+## Final study accounting
+
+| Resource | Observed total |
+|---|---:|
+| Main native simulator transitions | 1,800,000 |
+| Complete actor/alpha/critic cycles | 43,500 |
+| Development simulator transitions | 462,172 |
+| Validation episodes | 54 |
+| Validation simulator transitions | 59,633 |
+| Training wall clock | 57.66 h |
+| Wall clock through Validation | 58.22 h |
+
+Every policy used one attempt, exactly 300,000 native transitions, and 7,250
+complete cycles. The wall-clock measurement includes the sequential Python,
+environment, replay, checkpoint, Development, and JAX work and any host-level
+scheduling delays; it is not a pure accelerator timing. Large models, replay
+buffers, and raw run artifacts remain in the ignored run directory. Paper
+tracks 4000--4017 were not used.
