@@ -55,15 +55,20 @@ def test_duplicate_run_protection_and_interruption_record(tmp_path):
             pass
 
 
-def test_main_training_and_paper_test_are_hard_blocked(tmp_path):
-    with pytest.raises(PermissionError, match="not authorized"):
+def test_only_frozen_main_matrix_is_authorized_and_paper_test_is_blocked(tmp_path):
+    with pytest.raises(ValueError, match="Unauthorized training seed"):
         run_policy(
-            condition="physics", training_seed=11, output_root=tmp_path
+            condition="physics", training_seed=13, output_root=tmp_path
         )
     with pytest.raises(PermissionError, match="sealed"):
         assert_paper_test_blocked()
     configuration = load_configuration()
-    assert not any(configuration.raw["authorization"].values())
+    assert configuration.raw["authorization"] == {
+        "main_training_authorized": True,
+        "main_training_enabled": True,
+        "validation_authorized": True,
+        "paper_test_authorized": False,
+    }
 
 
 def test_status_is_read_only(tmp_path, capsys):

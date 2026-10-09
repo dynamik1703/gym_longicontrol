@@ -16,9 +16,9 @@ python -m benchmarks.model_based_rl.runner status
 python -m benchmarks.model_based_rl.runner model-disabled-parity
 ```
 
-The checked-in configuration deliberately makes every `run`, Validation and paper-test
-command fail closed. A later authorization must be a reviewed protocol state change; it
-must not be inferred from readiness.
+The checked-in execution state authorizes exactly the frozen six-policy matrix and its
+single final Validation pass. Validation remains sealed until all six final policies
+pass the completion gate. Paper-test tracks remain hard blocked.
 
 Research-only dependencies are listed in `requirements.txt`. Raw replays, checkpoints,
 models and run directories are intentionally ignored and are not benchmark artifacts.

@@ -97,8 +97,13 @@ class MBRLConfiguration:
         if self.raw["real_transition_checkpoints"][-1] != 300_000:
             raise ValueError("Each policy must receive exactly 300k real transitions")
         auth = self.raw["authorization"]
-        if any(auth.values()):
-            raise ValueError("Preparation configuration must keep all gates closed")
+        if auth != {
+            "main_training_authorized": True,
+            "main_training_enabled": True,
+            "validation_authorized": True,
+            "paper_test_authorized": False,
+        }:
+            raise ValueError("Execution authorization differs from the reviewed state")
         if self.raw["track_splits"]["paper_test"] != list(range(4000, 4018)):
             raise ValueError("Paper-test tracks changed")
         if self.raw["preparation"]["maximum_simulator_transitions"] > 5000:

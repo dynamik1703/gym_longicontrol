@@ -24,9 +24,9 @@ def test_frozen_matrix_and_v2_parity():
     assert configuration.v2.algorithm.n_step == 2
     assert configuration.v2.algorithm.update_per_step == 0.1
     assert configuration.raw["authorization"] == {
-        "main_training_authorized": False,
-        "main_training_enabled": False,
-        "validation_authorized": False,
+        "main_training_authorized": True,
+        "main_training_enabled": True,
+        "validation_authorized": True,
         "paper_test_authorized": False,
     }
 

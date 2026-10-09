@@ -40,15 +40,15 @@ def test_required_compact_artifacts_are_present_and_consistent():
     assert interactions["paper_test_transitions"] == 0
 
 
-def test_readiness_does_not_imply_authorization():
+def test_reviewed_execution_authorization_preserves_sealed_evaluation_state():
     status = read_json("preparation_status.json")
     assert status["scientific_design_frozen"] is True
     assert status["physics_model_verified"] is True
     assert status["learned_model_verified"] is True
     assert status["execution_infrastructure_ready"] is True
     assert status["ready_for_main_training"] is True
-    assert status["main_training_authorized"] is False
-    assert status["main_training_enabled"] is False
+    assert status["main_training_authorized"] is True
+    assert status["main_training_enabled"] is True
     assert status["validation_opened"] is False
     assert status["paper_test_opened"] is False
 

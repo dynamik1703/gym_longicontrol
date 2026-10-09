@@ -61,9 +61,9 @@
     "false_safe_excess_m_s_invalid": 0.1
   },
   "authorization": {
-    "main_training_authorized": false,
-    "main_training_enabled": false,
-    "validation_authorized": false,
+    "main_training_authorized": true,
+    "main_training_enabled": true,
+    "validation_authorized": true,
     "paper_test_authorized": false
   }
 }
