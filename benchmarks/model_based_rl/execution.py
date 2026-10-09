@@ -172,10 +172,20 @@ def assert_paper_test_blocked() -> None:
 class RunLease(AbstractContextManager):
     """Exclusive attempt record; crashes remain visible as INTERRUPTED attempts."""
 
-    def __init__(self, output_root: str | Path, run_id: str, *, resume: bool):
+    def __init__(
+        self,
+        output_root: str | Path,
+        run_id: str,
+        *,
+        resume: bool,
+        restart: bool = False,
+    ):
+        if resume and restart:
+            raise ValueError("An attempt cannot be both resumed and freshly restarted")
         self.output_root = Path(output_root)
         self.run_id = run_id
         self.resume = resume
+        self.restart = restart
         self.attempt_id = str(uuid.uuid4())
         self.path: Path | None = None
         self.manifest_path: Path | None = None
@@ -184,12 +194,32 @@ class RunLease(AbstractContextManager):
     def __enter__(self):
         self.manifest_path, self.manifest = load_or_create_manifest(self.output_root)
         run = self.manifest["runs"][self.run_id]
-        allowed = {"INTERRUPTED"} if self.resume else {"NOT_STARTED"}
+        allowed = {"INTERRUPTED"} if self.resume or self.restart else {"NOT_STARTED"}
         if run["state"] not in allowed:
+            if self.resume:
+                operation = "resume"
+            elif self.restart:
+                operation = "restart"
+            else:
+                operation = "start"
             raise RuntimeError(
-                f"Cannot {'resume' if self.resume else 'start'} {self.run_id} "
-                f"from {run['state']}"
+                f"Cannot {operation} {self.run_id} from {run['state']}"
             )
+        if self.restart:
+            authorization = run.get("restart_authorization")
+            if not authorization or authorization.get("consumed_at") is not None:
+                raise PermissionError(
+                    "Fresh restart lacks unused explicit authorization"
+                )
+            counter_names = (
+                "real_transitions",
+                "synthetic_transitions",
+                "rl_gradient_updates",
+                "model_gradient_updates",
+            )
+            if any(int(run[name]) != 0 for name in counter_names):
+                raise RuntimeError("Authorized fresh restart is limited to zero work")
+            authorization["consumed_at"] = utc_now()
         run_directory = self.output_root / self.run_id
         run_directory.mkdir(parents=True, exist_ok=True)
         self.path = run_directory / ".run.lock"
@@ -202,6 +232,7 @@ class RunLease(AbstractContextManager):
                 "attempt_id": self.attempt_id,
                 "started_at": utc_now(),
                 "resume": self.resume,
+                "restart": self.restart,
                 "state": "RUNNING",
             }
         )

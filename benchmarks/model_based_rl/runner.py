@@ -28,6 +28,7 @@ def build_parser() -> argparse.ArgumentParser:
             "status",
             "model-disabled-parity",
             "run",
+            "restart",
             "resume",
             "validate",
             "paper",
@@ -97,6 +98,7 @@ def main(argv=None) -> int:
             output_root=args.output_root,
             device=args.device,
             threads=args.threads,
+            restart=args.command == "restart",
         )
     )
     return 0

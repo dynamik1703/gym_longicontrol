@@ -206,6 +206,7 @@ def run_policy(
     device: str = "cpu",
     threads: int = 4,
     resume: bool = False,
+    restart: bool = False,
 ) -> Path:
     """Execute one authorized policy. Preparation snapshots always refuse this call."""
 
@@ -226,8 +227,7 @@ def run_policy(
             "checkpoint path"
         )
     import tianshou
-    from fsrl.data import FastCollector
-    from tianshou.data import ReplayBuffer
+    from tianshou.data import Collector, ReplayBuffer
 
     if tianshou.__version__ != configuration.v2.algorithm.tianshou_version:
         raise RuntimeError(
@@ -236,7 +236,9 @@ def run_policy(
         )
 
     run_id = f"{condition}-seed-{training_seed}"
-    with RunLease(output_root, run_id, resume=False) as lease:
+    with RunLease(
+        output_root, run_id, resume=False, restart=restart
+    ) as lease:
         track_stream = TrainingTrackStream(training_seed)
         seeded = TrainingSeedWrapper(_base_environment(configuration.v2), track_stream)
         dense = DenseDeadlineTaskWrapper(
@@ -256,7 +258,7 @@ def run_policy(
         )
         policy = agent.policy
         policy.train()
-        collector = FastCollector(
+        collector = Collector(
             policy,
             recorder,
             ReplayBuffer(configuration.v2.algorithm.buffer_size),

@@ -1,10 +1,14 @@
 """Pinned-stack integration; skipped when the optional FSRL stack is absent."""
 
+import gymnasium as gym
 import numpy as np
 import pytest
 
 pytest.importorskip("fsrl")
 pytest.importorskip("tianshou")
+
+from tianshou.data import Batch, Collector, ReplayBuffer  # noqa: E402
+from tianshou.policy import BasePolicy  # noqa: E402
 
 from benchmarks.model_based_rl.adapter import model_step  # noqa: E402
 from benchmarks.model_based_rl.config import load_configuration  # noqa: E402
@@ -21,6 +25,46 @@ from benchmarks.model_based_rl.resource_check import optional_fsrl_probe  # noqa
 from gym_longicontrol.domain.state import SimulationConfig, VehicleState  # noqa: E402
 from gym_longicontrol.domain.track import Track  # noqa: E402
 from gym_longicontrol.domain.vehicle import VehicleModel  # noqa: E402
+
+
+class _OneStepCostEnvironment(gym.Env):
+    observation_space = gym.spaces.Box(-1.0, 1.0, (2,), dtype=np.float32)
+    action_space = gym.spaces.Box(-1.0, 1.0, (1,), dtype=np.float32)
+
+    def reset(self, *, seed=None, options=None):
+        super().reset(seed=seed)
+        return np.zeros(2, dtype=np.float32), {}
+
+    def step(self, action):
+        return (
+            np.ones(2, dtype=np.float32),
+            0.0,
+            False,
+            False,
+            {"cost": np.asarray([0.25, 0.5], dtype=np.float64)},
+        )
+
+
+class _ZeroPolicy(BasePolicy):
+    def __init__(self):
+        super().__init__(action_space=_OneStepCostEnvironment.action_space)
+
+    def forward(self, batch, state=None, **kwargs):
+        return Batch(act=np.zeros((len(batch), 1)), state=state)
+
+    def learn(self, batch, **kwargs):
+        return {}
+
+
+def test_pinned_tianshou_collector_preserves_one_step_vector_cost():
+    collector = Collector(
+        _ZeroPolicy(), _OneStepCostEnvironment(), ReplayBuffer(8)
+    )
+    stats = collector.collect(n_step=1)
+    assert int(stats["n/st"]) == 1
+    assert int(stats["n/ep"]) == 0
+    assert len(collector.buffer) == 1
+    np.testing.assert_allclose(collector.buffer[0].info.cost, [0.25, 0.5])
 
 
 def test_pinned_fsrl_mixed_update_is_finite_and_counted():
