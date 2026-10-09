@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "mbpo": {
+      "paper": "https://arxiv.org/abs/1906.08253",
+      "repository": "https://github.com/jannerm/mbpo",
+      "revision": "ac694ff9f1ebb789cc5b3f164d9d67f93ed8f129",
+      "license": "MIT"
+    },
+    "td_mpc2": {
+      "paper": "https://arxiv.org/abs/2310.16828",
+      "repository": "https://github.com/nicklashansen/tdmpc2",
+      "revision": "e9f59321933cbc8e11a002b842adc7d4ffae8ff1",
+      "license": "MIT"
+    },
+    "dreamerv3": {
+      "paper": "https://arxiv.org/abs/2301.04104",
+      "repository": "https://github.com/danijar/dreamerv3",
+      "revision": "e01491fad6434b2245a3b8ca201dd7faedcc458c",
+      "license": "MIT"
+    },
+    "fsrl": {
+      "repository": "https://github.com/liuzuxin/FSRL",
+      "revision": "e056fc9498d5d037869533da7cf976acf462f918",
+      "license": "MIT",
+      "tianshou_version": "0.5.1"
+    }
+  }
+}

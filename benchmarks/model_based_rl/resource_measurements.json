@@ -1,0 +1,52 @@
+{
+  "estimated_one_policy_hours": {
+    "learned_cpu_serial": 30.3,
+    "physics_cpu_serial": 1.1
+  },
+  "estimated_replay_bytes": {
+    "real_model_100k": 16000000,
+    "real_rl_100k": 12800000,
+    "synthetic_100k": 19200000,
+    "total_payload_lower_bound": 48000000
+  },
+  "estimated_six_policy_hours_cpu_serial": 94.2,
+  "fsrl_mixed_update_probe": {
+    "available": true,
+    "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+    "minimal_policy_plus_model_checkpoint_bytes": 4448067,
+    "policy_parameter_count": 232974,
+    "seconds": 0.6753472920099739,
+    "tianshou_version": "0.5.1",
+    "updates": 10,
+    "updates_per_second": 14.807196413326722
+  },
+  "learned_model_parameter_bytes": 3449824,
+  "learned_model_parameter_count": 862456,
+  "model_training_probe": {
+    "examples": 396,
+    "epochs_per_member": 12,
+    "seconds": 0.41757350001716986
+  },
+  "notes": [
+    "Runtime estimates are CPU serial extrapolations, not contractual budgets.",
+    "Learned runtime linearly extrapolates the bounded 7-member probe across the frozen refresh schedule and is deliberately conservative.",
+    "Checkpoint bytes are the measured policy-plus-ensemble lower bound; full replay checkpoints are expected to exceed 52 MB plus Python/container overhead."
+  ],
+  "runtime": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.13"
+  },
+  "synthetic_generation_transitions_per_second": 1833.6640572745175,
+  "transition_latency": {
+    "learned": {
+      "iterations": 1000,
+      "microseconds": 545.3561659960542,
+      "seconds": 0.5453561659960542
+    },
+    "physics": {
+      "iterations": 5000,
+      "microseconds": 457.14314180077054,
+      "seconds": 2.2857157090038527
+    }
+  }
+}

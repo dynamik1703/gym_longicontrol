@@ -1,0 +1,20 @@
+{
+  "attempts": [
+    {
+      "purpose": "parity, learned-model, and latency probe",
+      "simulator_transitions": 4500,
+      "artifact_write_succeeded": false,
+      "reason": "sandbox denied the final worktree JSON write; interactions are conservatively counted"
+    },
+    {
+      "purpose": "targeted recovery parity and learned-model probe",
+      "simulator_transitions": 495,
+      "artifact_write_succeeded": true
+    }
+  ],
+  "future_main_initialization_reuse": false,
+  "maximum_allowed": 5000,
+  "paper_test_transitions": 0,
+  "simulator_transitions": 4995,
+  "validation_transitions": 0
+}

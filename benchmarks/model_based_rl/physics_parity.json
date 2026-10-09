@@ -1,0 +1,21 @@
+{
+  "development_track_seeds": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+  "maximum_absolute_errors": {
+    "acceleration_m_s2": 0.0,
+    "deadline_cost": 0.0,
+    "observation": 0.0,
+    "position_m": 0.0,
+    "signed_step_energy_kwh": 0.0,
+    "speed_excess_m_s": 3.552713678800501e-15,
+    "velocity_m_s": 0.0
+  },
+  "simulator_transitions": 495,
+  "speed_limit_boundary_crossings": 450,
+  "terminal_semantics_accuracy": 1.0,
+  "tolerances": {
+    "observation_absolute": 1e-12,
+    "physical_and_cost_absolute": 1e-12,
+    "termination_exact": true
+  },
+  "verified": true
+}

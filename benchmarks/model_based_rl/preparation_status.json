@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scientific_design_frozen": true,
+  "physics_model_verified": true,
+  "learned_model_verified": true,
+  "execution_infrastructure_ready": true,
+  "ready_for_main_training": true,
+  "main_training_authorized": false,
+  "main_training_enabled": false,
+  "validation_opened": false,
+  "paper_test_opened": false,
+  "main_policy_training_started": false,
+  "preparation_simulator_transitions": 4995,
+  "notes": [
+    "Learned verification means finite architecture/training/diagnostic behavior, not acceptable future main-run accuracy.",
+    "Hard-failure resume/restart remains separately authorized; no crash-transparent resume claim is made.",
+    "The learned-versus-physics comparison is causal; frozen Constrained V2 is contextual because H=1 synthetic samples require one-step targets."
+  ]
+}

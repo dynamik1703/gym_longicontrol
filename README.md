@@ -324,6 +324,17 @@ all preceding studies plus the task/evaluation layer and public environments.
 The actual reward-design search must occur in a fresh session using only the
 sanitized generation package described by the frozen protocol.
 
+## Model-based constrained RL preparation
+
+The next prepared arm compares [learned vehicle dynamics with known exogenous
+track maps against the exact physics model](benchmarks/model_based_rl/README.md).
+Both conditions retain the Constrained RL V2 task, costs, SACLag learner, real
+interaction budget, one-step imagination schedule and actor-only evaluation.
+The preparation includes a primary-source audit, model/state boundary, physics
+parity, probabilistic ensemble, diagnostics, checkpoint/run protection and a
+frozen six-policy protocol. No MBRL main policy, Validation or paper-test run
+has started; all execution authorization flags remain false.
+
 ## Rendering
 
 Install the `render` extra and select the mode while creating the environment:

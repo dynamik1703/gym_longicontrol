@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "name": "constrained-model-based-rl-v1",
+  "environment_id": "StochasticTrack-v1",
+  "max_episode_steps": 1800,
+  "conditions": ["learned", "physics"],
+  "training_seeds": [11, 29, 47],
+  "real_transition_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "track_splits": {
+    "development": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper_test": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "frozen_v2": {
+    "configuration_sha256": "89d7142cc84ba60d98075313220b331b60c2c41997b6c65b11adeb1b08712060",
+    "validation_rsr": [21, 27],
+    "completion": [27, 27],
+    "deadline_compliance": [27, 27],
+    "speed_compliance": [21, 27]
+  },
+  "model": {
+    "ensemble_size": 7,
+    "elite_size": 5,
+    "hidden_sizes": [200, 200, 200, 200],
+    "activation": "swish",
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "holdout_fraction": 0.2,
+    "maximum_holdout_size": 5000,
+    "maximum_epochs": 200,
+    "early_stop_patience": 5,
+    "relative_improvement_threshold": 0.01,
+    "minimum_log_variance": -10.0,
+    "maximum_log_variance": 0.5,
+    "input_fields": ["position_m", "velocity_m_s", "acceleration_m_s2", "action"],
+    "target_fields": ["delta_position_m", "delta_velocity_m_s", "next_acceleration_m_s2", "signed_step_energy_kwh"]
+  },
+  "imagination": {
+    "horizon": 1,
+    "warmup_real_transitions": 10000,
+    "refresh_real_transitions": 250,
+    "synthetic_transitions_per_refresh": 2500,
+    "real_fraction": 0.5,
+    "batch_size": 256,
+    "synthetic_replay_capacity": 100000,
+    "source_states": "real_replay_only",
+    "action_source": "current_stochastic_actor"
+  },
+  "preparation": {
+    "maximum_simulator_transitions": 5000,
+    "parity_simulator_transitions": 4500,
+    "allowed_track_seeds": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008]
+  },
+  "interpretation_gates": {
+    "credible_speed_count": 24,
+    "frozen_v2_rsr_count": 21,
+    "material_improvement_count": 22,
+    "learned_approaches_physics_gap_count": 3,
+    "physics_learned_separation_count": 4,
+    "false_safe_rate_invalid": 0.01,
+    "false_safe_excess_m_s_invalid": 0.1
+  },
+  "authorization": {
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "validation_authorized": false,
+    "paper_test_authorized": false
+  }
+}

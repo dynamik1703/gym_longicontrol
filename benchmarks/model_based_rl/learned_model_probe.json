@@ -1,0 +1,44 @@
+{
+  "heldout_examples": 99,
+  "heldout_one_step": {
+    "acceleration_mae_m_s2": 0.30472907954991296,
+    "acceleration_rmse_m_s2": 0.3748630311007613,
+    "count": 99,
+    "deadline_category_error_count": 0,
+    "deadline_category_error_rate": 0.0,
+    "false_safe_count": 10,
+    "false_safe_rate": 0.10101010101010101,
+    "false_unsafe_count": 5,
+    "false_unsafe_rate": 0.050505050505050504,
+    "maximum_ensemble_variance": 0.4895353258868071,
+    "position_mae_m": 0.49235459078412797,
+    "position_rmse_m": 0.6241565497248722,
+    "signed_energy_mae_kwh": 0.00041609779823852545,
+    "signed_energy_rmse_kwh": 0.0005095343646530177,
+    "speed_excess_mae_m_s": 1.792038336751506,
+    "termination_accuracy": 1.0,
+    "velocity_mae_m_s": 0.0356745668510571,
+    "velocity_rmse_m_s": 0.04446726526605425
+  },
+  "maximum_epochs_for_bounded_probe": 12,
+  "open_loop_position_rmse_m": {
+    "1": 0.7760822117470525,
+    "5": 0.10082541066243778,
+    "10": 0.49855562251707397,
+    "25": 0.6560684526763225,
+    "50": 0.715570152228679
+  },
+  "probe_is_not_main_initialization": true,
+  "training_examples": 396,
+  "training_report": {
+    "elite_indices": [4, 2, 6, 5, 3],
+    "epochs": [12, 12, 12, 12, 12, 12, 12],
+    "gradient_updates": 168,
+    "holdout_examples": 79,
+    "holdout_losses": [-0.2274997979402542, -0.2281724214553833, -0.2621884047985077, -0.24038133025169373, -0.26653558015823364, -0.24889883399009705, -0.2584686279296875],
+    "model_version": 1,
+    "real_examples": 396,
+    "train_examples": 317,
+    "wall_time_s": 0.41757350001716986
+  }
+}

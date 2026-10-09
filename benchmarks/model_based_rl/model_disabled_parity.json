@@ -1,0 +1,14 @@
+{
+  "adapter_update_count": 1,
+  "direct_update_count": 1,
+  "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+  "initial_parameters_equal": true,
+  "maximum_parameter_difference": 0.0,
+  "n_step": 2,
+  "pid_after": [0.0, 0.0],
+  "pid_before": [0.0, 0.0],
+  "simulator_transitions": 0,
+  "synthetic_integration_transitions": 512,
+  "tianshou_version": "0.5.1",
+  "verified": true
+}
