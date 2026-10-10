@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "purpose": "Execution-only exact collector/environment restore verification",
+  "longicontrol_simulator_transitions": 6,
+  "test_executions": 2,
+  "transitions_per_execution": 3,
+  "track_source": "Dedicated TrainingTrackStream excluding every reserved research split",
+  "development_tracks_used": false,
+  "validation_tracks_used": false,
+  "paper_tracks_used": false,
+  "used_for_training_or_results": false,
+  "note": "The production-environment check was executed twice while verifying the repair, then replaced by a non-simulator checkpointable fixture so routine tests consume zero LongiControl simulator transitions. These technical interactions are reported separately and are not included in preparation or primary-study results."
+}

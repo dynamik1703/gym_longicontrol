@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import os
 import random
+import time
 from pathlib import Path
 from typing import Any
 
@@ -87,23 +88,45 @@ def validate_checkpoint_payload(payload: dict[str, Any]) -> None:
         raise ValueError("Unknown checkpoint model condition")
 
 
-def atomic_torch_save(path: str | Path, payload: dict[str, Any]) -> str:
+def atomic_torch_save_with_metrics(
+    path: str | Path, payload: dict[str, Any]
+) -> dict[str, Any]:
     import torch
 
     validate_checkpoint_payload(payload)
     destination = Path(path)
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary = destination.with_name(f".{destination.name}.tmp")
+    started = time.perf_counter()
     try:
         with temporary.open("wb") as stream:
             torch.save(payload, stream)
             stream.flush()
+            serialized_at = time.perf_counter()
             os.fsync(stream.fileno())
+            fsynced_at = time.perf_counter()
         os.replace(temporary, destination)
+        directory_fd = os.open(destination.parent, os.O_RDONLY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
     finally:
         if temporary.exists():
             temporary.unlink()
-    return file_sha256(destination)
+    committed_at = time.perf_counter()
+    return {
+        "sha256": file_sha256(destination),
+        "size_bytes": destination.stat().st_size,
+        "serialization_s": serialized_at - started,
+        "fsync_s": fsynced_at - serialized_at,
+        "atomic_commit_s": committed_at - fsynced_at,
+        "write_total_s": committed_at - started,
+    }
+
+
+def atomic_torch_save(path: str | Path, payload: dict[str, Any]) -> str:
+    return str(atomic_torch_save_with_metrics(path, payload)["sha256"])
 
 
 def load_checkpoint(path: str | Path, *, expected_sha256: str | None = None):

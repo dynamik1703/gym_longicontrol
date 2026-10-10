@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-10T11:04:17Z",
+  "execution_commit_sha": "16cfd0312c525ee978811167a47f52ed1c1e6978",
+  "run_id": "learned-seed-11",
+  "attempt_number": 2,
+  "attempt_id": "8d35a1ba-853b-444e-bf59-92aa2eb0c00a",
+  "original_started_at": "2026-10-09T20:30:23.198144+00:00",
+  "original_manifest_state": "RUNNING",
+  "classification": "HARD_FAILURE_UNRECOVERABLE",
+  "recovery_class": "CAUSE_REQUIRES_INFRASTRUCTURE_REPAIR_BEFORE_RESTART",
+  "reason": "No verified checkpoint exists. Exact resume is impossible. Fresh restart is explicitly authorized only after execution hardening.",
+  "likely_failure_mechanism": "External termination of the non-detached parent/session process; exact trigger unknown.",
+  "durable_scientific_state": {
+    "checkpoint": null,
+    "real_transition_count": 0,
+    "rl_update_count": 0,
+    "model_update_count": 0,
+    "model_refresh_count": 0,
+    "synthetic_transition_count": 0
+  },
+  "actual_consumed_scientific_work": {
+    "real_transition_count": null,
+    "rl_update_count": null,
+    "model_update_count": null,
+    "model_refresh_count": null,
+    "synthetic_transition_count": null,
+    "status": "UNKNOWN"
+  },
+  "known_resource_lower_bounds": {
+    "wall_clock_hours": 12.5,
+    "observed_cumulative_cpu_time": "237:11 min",
+    "last_observed_rss_mib": 324
+  },
+  "process_evidence": {
+    "worker_pid": 94949,
+    "launcher_pid": 94942,
+    "worker_pid_alive_at_capture": false,
+    "launcher_pid_alive_at_capture": false,
+    "alternate_mbrl_worker_found": false,
+    "host": "bwpm-RLXWFHTGV7"
+  },
+  "stale_lock": {
+    "path": "runs/model-based-rl-v1/learned-seed-11/.run.lock",
+    "contents": {"host": "bwpm-RLXWFHTGV7", "pid": 94949},
+    "sha256": "22c4541d7e35656caed5ef5004d6023d7e0996f5a891715c8ad8ba398320bf86",
+    "inode": 159106435,
+    "size_bytes": 41,
+    "birth_time": "2026-10-09T22:30:23Z",
+    "modified_time": "2026-10-09T22:30:23Z"
+  },
+  "evidence_sha256": {
+    "runs/model-based-rl-v1/manifest.json": "0d18772b69333d4f1e4495194cbf8fa3c17ce702975006ba93f826070aee9e30",
+    "runs/model-based-rl-v1/orchestrator.log": "9d84067fc3ddda10ec9bed5693de58462340bbbb05beae53184ab9a0616150d1",
+    "runs/model-based-rl-v1/orchestrator.pid": "cb829d3b6cc4d56ae22978d2fd126c22d7938f3e8b015b8f4ae5f8e4b853dc58"
+  },
+  "primary_budget_accounting": {
+    "counts_toward_planned_1800000_real_transitions": false,
+    "account_under": "technical/failed attempts actual resources"
+  }
+}

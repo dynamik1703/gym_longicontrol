@@ -2,6 +2,7 @@ import pytest
 
 from benchmarks.model_based_rl.checkpointing import (
     atomic_torch_save,
+    atomic_torch_save_with_metrics,
     file_sha256,
     load_checkpoint,
 )
@@ -43,6 +44,25 @@ def test_atomic_checkpoint_hash_and_corruption_detection(tmp_path):
         load_checkpoint(path, expected_sha256="0" * 64)
 
 
+def test_failed_atomic_checkpoint_does_not_replace_verified_file(
+    tmp_path, monkeypatch
+):
+    import torch
+
+    path = tmp_path / "checkpoint.pt"
+    original = atomic_torch_save(path, checkpoint_payload())
+
+    def fail_during_save(_payload, stream):
+        stream.write(b"incomplete")
+        raise OSError("simulated write failure")
+
+    monkeypatch.setattr(torch, "save", fail_during_save)
+    with pytest.raises(OSError, match="simulated"):
+        atomic_torch_save_with_metrics(path, checkpoint_payload())
+    assert file_sha256(path) == original
+    assert not (tmp_path / ".checkpoint.pt.tmp").exists()
+
+
 def test_duplicate_run_protection_and_interruption_record(tmp_path):
     run_id = "physics-seed-11"
     with pytest.raises(RuntimeError, match="boom"):
@@ -62,11 +82,13 @@ def test_zero_work_restart_requires_and_consumes_explicit_authorization(tmp_path
         with RunLease(tmp_path, run_id, resume=False):
             raise RuntimeError("first failure")
     manifest_path, manifest = load_or_create_manifest(tmp_path)
-    manifest["runs"][run_id]["restart_authorization"] = {
-        "authorized_at": "2026-10-09T00:00:00+00:00",
-        "reason": "collector_api_incompatibility",
-        "consumed_at": None,
-    }
+    manifest["runs"][run_id]["fresh_restart_authorizations"] = [
+        {
+            "authorized_at": "2026-10-09T00:00:00+00:00",
+            "reason": "collector_api_incompatibility",
+            "consumed_at": None,
+        }
+    ]
     atomic_json(manifest_path, manifest)
     with pytest.raises(RuntimeError, match="second failure"):
         with RunLease(tmp_path, run_id, resume=False, restart=True):
@@ -77,7 +99,7 @@ def test_zero_work_restart_requires_and_consumes_explicit_authorization(tmp_path
     assert len(run["attempts"]) == 2
     assert run["attempts"][0]["error"] == "first failure"
     assert run["attempts"][1]["restart"] is True
-    assert run["restart_authorization"]["consumed_at"] is not None
+    assert run["fresh_restart_authorizations"][0]["consumed_at"] is not None
     with pytest.raises(PermissionError, match="unused explicit authorization"):
         with RunLease(tmp_path, run_id, resume=False, restart=True):
             pass

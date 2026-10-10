@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "measured_at_utc": "2026-10-10T11:21:00Z",
+  "fixture": {
+    "description": "Production-shape Learned checkpoint with real FSRL policy, seven-member learned ensemble, optimizer states, capacity-sized Tianshou replay, and unique real/model replay records. No simulator transition or research-track evaluation was performed.",
+    "limitations": "Environment/collector state and diagnostics were placeholders. Actual per-checkpoint schema-2 metadata is authoritative during the study.",
+    "runtime": "Pinned study runtime on the launch host"
+  },
+  "measurements": [
+    {
+      "transition_count": 10000,
+      "real_replay_items": 10000,
+      "synthetic_replay_items": 2500,
+      "size_bytes": 30406287,
+      "serialization_s": 0.532503166992683,
+      "fsync_s": 0.0033157500147353858,
+      "atomic_commit_s": 0.0007279169803950936,
+      "write_total_s": 0.5365468339878134,
+      "verified_restore_s": 0.34049500001128763,
+      "end_to_end_write_verify_s": 0.9161756670218892
+    },
+    {
+      "transition_count": 50000,
+      "real_replay_items": 50000,
+      "synthetic_replay_items": 100000,
+      "size_bytes": 137609935,
+      "serialization_s": 5.854049959016265,
+      "fsync_s": 0.0014483330014627427,
+      "atomic_commit_s": 0.0010104579851031303,
+      "write_total_s": 5.856508750002831,
+      "verified_restore_s": 5.5464526250143535,
+      "end_to_end_write_verify_s": 11.636315290990751
+    },
+    {
+      "transition_count": 100000,
+      "real_replay_items": 100000,
+      "synthetic_replay_items": 100000,
+      "size_bytes": 173602831,
+      "serialization_s": 7.445149292005226,
+      "fsync_s": 0.0033787080028560013,
+      "atomic_commit_s": 0.000604875007411465,
+      "write_total_s": 7.4491328750154935,
+      "verified_restore_s": 7.279028416000074,
+      "end_to_end_write_verify_s": 15.021649208007148
+    }
+  ],
+  "retention_estimate": {
+    "steady_checkpoint_size_bytes": 173602831,
+    "maximum_retained_checkpoints_per_completed_policy": 8,
+    "basis": "Six frozen 50k scientific checkpoints plus the latest two non-scientific technical checkpoints.",
+    "estimated_steady_retained_bytes_per_completed_policy": 1388822648,
+    "estimated_steady_retained_bytes_for_six_policies": 8332935888,
+    "technical_checkpoint_writes_per_policy": 30,
+    "estimated_cumulative_io_bytes_per_policy": 4800000000,
+    "estimated_cumulative_io_bytes_for_six_policies": 28800000000
+  }
+}

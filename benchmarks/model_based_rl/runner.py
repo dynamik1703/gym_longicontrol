@@ -39,6 +39,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
     parser.add_argument("--device", choices=("cpu", "cuda", "mps"), default="cpu")
     parser.add_argument("--threads", type=int, default=4)
+    parser.add_argument("--checkpoint", type=Path)
     return parser
 
 
@@ -87,10 +88,10 @@ def main(argv=None) -> int:
         raise PermissionError("Use the separately authorized one-shot evaluator")
     if args.condition is None or args.seed is None:
         raise ValueError("run/resume requires --condition and --seed")
-    if args.command == "resume":
-        raise PermissionError(
-            "Resume needs explicit restart authorization and a selected checkpoint"
-        )
+    if args.command == "resume" and args.checkpoint is None:
+        raise ValueError("resume requires --checkpoint")
+    if args.command != "resume" and args.checkpoint is not None:
+        raise ValueError("--checkpoint is accepted only for exact resume")
     print(
         run_policy(
             condition=args.condition,
@@ -98,7 +99,9 @@ def main(argv=None) -> int:
             output_root=args.output_root,
             device=args.device,
             threads=args.threads,
+            resume=args.command == "resume",
             restart=args.command == "restart",
+            checkpoint_path=args.checkpoint,
         )
     )
     return 0

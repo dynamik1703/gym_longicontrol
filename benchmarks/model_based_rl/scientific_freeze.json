@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "baseline_execution_commit": "16cfd0312c525ee978811167a47f52ed1c1e6978",
+  "files": {
+    "benchmarks/model_based_rl/canonical.json": "f784815ae62f43758b0dc44fc5b3001032e99fae9ab01796c001c206da4cb2db",
+    "benchmarks/model_based_rl/config.py": "557df00113ebb4eacc5d5042a64f27a744ce96c1e555524da37142c42b435dc7",
+    "benchmarks/model_based_rl/adapter.py": "2449326dc0ad559c77f5c174410d1cbb8fb4fe1cf96cb2ef5a70a792864feabc",
+    "benchmarks/model_based_rl/model_state.py": "318bc1d730a3477af6ac595f06b591495808836a73e38133324e271042b734a4",
+    "benchmarks/model_based_rl/physics_model.py": "9de662161def0b2aea6c7bbe1d7e509bc48374f9d426acf9a9ddefb718843e82",
+    "benchmarks/model_based_rl/learned_model.py": "bfea5ed3e0c795e02820a85c0aa1dd22beabfb7d1b3f47b26a2df29b9d43646a",
+    "benchmarks/model_based_rl/model_training.py": "6d562d168e42c00c735ffd09e8b120a1fa57f4e14011858ca657870e32a9a161",
+    "benchmarks/model_based_rl/imagination.py": "1e55a6f78c1e7b94f736ae6114ca1cb90a839c219b949bfe96975661e6b52e17",
+    "benchmarks/model_based_rl/fsrl_adapter.py": "96ab1f48b65a640951c69e6a765586b86652eded478fbbe0e7349b87d39778c4",
+    "benchmarks/model_based_rl/model_disabled_parity.py": "5e6cab88371da5254b5718ece6df3cb58d2e9089a4b389d98666fa6ddf207d47",
+    "benchmarks/model_based_rl/diagnostics.py": "6efabcda339adfb80062f62db4966dbd01cad37d0923438a82cba5484dea796d",
+    "benchmarks/model_based_rl/evaluation.py": "fc7209bcbfff8b6f18118fbb9931e1d32e0866a8f4b03b9d16e8eeccbaabd91f"
+  },
+  "excluded_execution_only_files": [
+    "benchmarks/model_based_rl/checkpointing.py",
+    "benchmarks/model_based_rl/execution.py",
+    "benchmarks/model_based_rl/training.py",
+    "benchmarks/model_based_rl/runner.py",
+    "benchmarks/model_based_rl/recovery.py",
+    "benchmarks/model_based_rl/recovery_admin.py",
+    "benchmarks/model_based_rl/detached_launcher.py",
+    "benchmarks/model_based_rl/matrix_worker.py"
+  ]
+}

@@ -19,7 +19,7 @@ from benchmarks.constrained_rl_v2.adapter import build_agent
 from benchmarks.constrained_rl_v2.costs import DenseDeadlineTaskWrapper
 from benchmarks.scalar_sac.experiment import _base_environment
 
-from .checkpointing import atomic_torch_save, capture_rng_states
+from .checkpointing import capture_rng_states
 from .config import load_configuration
 from .evaluation import evaluate_development
 from .execution import RunLease, TrainingTrackStream, atomic_json, scientific_hashes
@@ -37,6 +37,23 @@ from .learned_model import ProbabilisticEnsemble
 from .model_state import ModelState, TrackContext
 from .model_training import RealModelDataset, RealModelExample, train_ensemble
 from .physics_model import PhysicsDynamicsModel
+from .recovery import (
+    CHECKPOINT_SCHEMA_VERSION,
+    HEARTBEAT_INTERVAL,
+    apply_retention,
+    collector_state,
+    execution_hashes,
+    heartbeat_payload,
+    publish_latest_recovery,
+    recovery_checkpoint_due,
+    restore_collector,
+    restore_policy_state,
+    restore_runtime_rng,
+    runtime_versions,
+    verify_recovery_checkpoint,
+    write_heartbeat,
+    write_verified_checkpoint,
+)
 
 
 class TrainingSeedWrapper(gym.Wrapper):
@@ -162,8 +179,18 @@ def _make_checkpoint_payload(
     counters,
     diagnostics,
     hashes,
+    attempt_id,
+    training_seed,
+    previous_completed,
+    pid_updates,
+    development_checkpoints_completed,
+    last_recovery_checkpoint,
+    last_scientific_checkpoint,
 ) -> dict[str, Any]:
     payload = {
+        "checkpoint_schema_version": CHECKPOINT_SCHEMA_VERSION,
+        "attempt_id": attempt_id,
+        "training_seed": training_seed,
         "model_condition": condition,
         "policy": policy.state_dict(),
         "policy_optimizers": _policy_optimizer_state(policy),
@@ -173,11 +200,19 @@ def _make_checkpoint_payload(
         "real_source_replay": real_sources,
         "synthetic_replay": synthetic,
         "environment_state": copy.deepcopy(recorder),
-        "collector_state": copy.deepcopy(collector.__dict__),
+        "collector_state": collector_state(collector),
         "track_stream_state": track_stream.state_dict(),
         "counters": dict(counters),
         "diagnostics": diagnostics,
         "hashes": hashes,
+        "runtime_versions": runtime_versions(),
+        "previous_completed_episodes": previous_completed,
+        "pid_real_episode_updates": pid_updates,
+        "development_checkpoints_completed": sorted(
+            development_checkpoints_completed
+        ),
+        "last_recovery_checkpoint": last_recovery_checkpoint,
+        "last_scientific_checkpoint": last_scientific_checkpoint,
         "rng_states": capture_rng_states(
             model_rng=model_rng, synthetic_rng=synthetic_rng
         ),
@@ -207,6 +242,7 @@ def run_policy(
     threads: int = 4,
     resume: bool = False,
     restart: bool = False,
+    checkpoint_path: str | Path | None = None,
 ) -> Path:
     """Execute one authorized policy. Preparation snapshots always refuse this call."""
 
@@ -221,11 +257,8 @@ def run_policy(
         raise ValueError("Unauthorized model condition")
     if training_seed not in configuration.raw["training_seeds"]:
         raise ValueError("Unauthorized training seed")
-    if resume:
-        raise NotImplementedError(
-            "Resume requires a separately authorized attempt and explicit "
-            "checkpoint path"
-        )
+    if resume != (checkpoint_path is not None):
+        raise ValueError("Exact resume requires one explicit recovery checkpoint")
     import tianshou
     from tianshou.data import Collector, ReplayBuffer
 
@@ -237,7 +270,7 @@ def run_policy(
 
     run_id = f"{condition}-seed-{training_seed}"
     with RunLease(
-        output_root, run_id, resume=False, restart=restart
+        output_root, run_id, resume=resume, restart=restart
     ) as lease:
         track_stream = TrainingTrackStream(training_seed)
         seeded = TrainingSeedWrapper(_base_environment(configuration.v2), track_stream)
@@ -296,6 +329,77 @@ def run_policy(
         checkpoints = set(configuration.raw["real_transition_checkpoints"])
         final_checkpoint: Path | None = None
         previous_completed = 0
+        development_checkpoints_completed: set[int] = set()
+        last_recovery_checkpoint: str | None = None
+        last_scientific_checkpoint: str | None = None
+        if resume:
+            assert checkpoint_path is not None
+            payload, metadata = verify_recovery_checkpoint(
+                checkpoint_path,
+                configuration_sha256=configuration.configuration_sha256,
+                expected_attempt_id=lease.attempt_id,
+            )
+            if payload["model_condition"] != condition:
+                raise RuntimeError("Checkpoint model condition differs")
+            if int(payload["training_seed"]) != training_seed:
+                raise RuntimeError("Checkpoint training seed differs")
+            restore_policy_state(policy, payload)
+            restored_recorder = payload["environment_state"]
+            recorder.close()
+            restore_collector(
+                collector,
+                state=payload["collector_state"],
+                recorder=restored_recorder,
+                replay_buffer=payload["real_rl_replay"],
+            )
+            recorder = restored_recorder
+            dense = recorder.env
+            track_stream = dense.env.stream
+            track_stream.load_state_dict(payload["track_stream_state"])
+            base = recorder.unwrapped
+            real_model_data = payload["real_model_replay"]
+            real_sources = payload["real_source_replay"]
+            synthetic = payload["synthetic_replay"]
+            counters = dict(payload["counters"])
+            diagnostics = payload["diagnostics"]
+            previous_completed = int(payload["previous_completed_episodes"])
+            pid_gate.real_episode_updates = int(payload["pid_real_episode_updates"])
+            development_checkpoints_completed = set(
+                int(value)
+                for value in payload["development_checkpoints_completed"]
+            )
+            last_recovery_checkpoint = str(checkpoint_path)
+            last_scientific_checkpoint = payload["last_scientific_checkpoint"]
+            if last_scientific_checkpoint is not None:
+                final_checkpoint = Path(last_scientific_checkpoint)
+            if condition == "learned":
+                model.load_state_dict(payload["learned_model_full_state"])
+            restore_runtime_rng(
+                payload, model_rng=model_rng, synthetic_rng=synthetic_rng
+            )
+            lease.attempt.setdefault("resume_events", [])[-1].update(
+                {
+                    "checkpoint": str(checkpoint_path),
+                    "checkpoint_sha256": metadata["sha256"],
+                    "transition_count": metadata["transition_count"],
+                }
+            )
+            atomic_json(lease.manifest_path, lease.manifest)
+        run_directory = Path(output_root) / run_id
+        write_heartbeat(
+            run_directory,
+            heartbeat_payload(
+                condition=condition,
+                seed=training_seed,
+                attempt_id=lease.attempt_id,
+                counters=counters,
+                recorder=recorder,
+                synthetic=synthetic,
+                status="RUNNING",
+                last_recovery_checkpoint=last_recovery_checkpoint,
+                last_scientific_checkpoint=last_scientific_checkpoint,
+            ),
+        )
         while counters["real_transitions"] < 300_000:
             stats = collector.collect(n_step=1)
             records = recorder.drain()
@@ -335,6 +439,20 @@ def run_policy(
                 policy.post_update_fn(stats_train={"cost": completed.costs})
                 previous_completed = recorder.completed_episodes
             if refresh_due(real_count, configuration.imagination):
+                write_heartbeat(
+                    run_directory,
+                    heartbeat_payload(
+                        condition=condition,
+                        seed=training_seed,
+                        attempt_id=lease.attempt_id,
+                        counters=counters,
+                        recorder=recorder,
+                        synthetic=synthetic,
+                        status="MODEL_REFRESH_RUNNING",
+                        last_recovery_checkpoint=last_recovery_checkpoint,
+                        last_scientific_checkpoint=last_scientific_checkpoint,
+                    ),
+                )
                 report = None
                 if condition == "learned":
                     report = train_ensemble(
@@ -395,7 +513,9 @@ def run_policy(
                         }
                     )
                 counters["rl_gradient_updates"] += 1
-            if real_count in checkpoints:
+            scientific_checkpoint = real_count in checkpoints
+            recovery_checkpoint = recovery_checkpoint_due(real_count)
+            if scientific_checkpoint:
                 episodes, summary = evaluate_development(policy, configuration)
                 checkpoint_dir = Path(output_root) / run_id / f"step-{real_count:06d}"
                 atomic_json(
@@ -404,6 +524,22 @@ def run_policy(
                         "episodes": [asdict(item) for item in episodes],
                         "summary": asdict(summary),
                     },
+                )
+                development_checkpoints_completed.add(real_count)
+            elif recovery_checkpoint:
+                checkpoint_dir = (
+                    Path(output_root)
+                    / run_id
+                    / "recovery"
+                    / f"step-{real_count:06d}"
+                )
+            if scientific_checkpoint or recovery_checkpoint:
+                checkpoint = checkpoint_dir / "checkpoint.pt"
+                current_recovery = str(checkpoint)
+                current_scientific = (
+                    str(checkpoint)
+                    if scientific_checkpoint
+                    else last_scientific_checkpoint
                 )
                 payload = _make_checkpoint_payload(
                     condition=condition,
@@ -422,14 +558,74 @@ def run_policy(
                     hashes={
                         "configuration": configuration.configuration_sha256,
                         "scientific_sources": scientific_hashes(),
+                        "execution_sources": execution_hashes(),
                     },
+                    attempt_id=lease.attempt_id,
+                    training_seed=training_seed,
+                    previous_completed=previous_completed,
+                    pid_updates=pid_gate.real_episode_updates,
+                    development_checkpoints_completed=(
+                        development_checkpoints_completed
+                    ),
+                    last_recovery_checkpoint=current_recovery,
+                    last_scientific_checkpoint=current_scientific,
                 )
-                final_checkpoint = checkpoint_dir / "checkpoint.pt"
-                atomic_torch_save(final_checkpoint, payload)
+                if scientific_checkpoint and recovery_checkpoint:
+                    kind = "scientific_and_recovery"
+                elif scientific_checkpoint:
+                    kind = "scientific"
+                else:
+                    kind = "recovery"
+                metadata = write_verified_checkpoint(
+                    checkpoint, payload, kind=kind
+                )
+                last_recovery_checkpoint = current_recovery
+                last_scientific_checkpoint = current_scientific
+                publish_latest_recovery(run_directory, metadata)
+                lease.record_checkpoint(counters, metadata)
+                if not scientific_checkpoint:
+                    apply_retention(run_directory)
+                if scientific_checkpoint:
+                    final_checkpoint = checkpoint
+            if (
+                real_count % HEARTBEAT_INTERVAL == 0
+                or scientific_checkpoint
+                or recovery_checkpoint
+            ):
+                write_heartbeat(
+                    run_directory,
+                    heartbeat_payload(
+                        condition=condition,
+                        seed=training_seed,
+                        attempt_id=lease.attempt_id,
+                        counters=counters,
+                        recorder=recorder,
+                        synthetic=synthetic,
+                        status="RUNNING",
+                        last_recovery_checkpoint=last_recovery_checkpoint,
+                        last_scientific_checkpoint=last_scientific_checkpoint,
+                    ),
+                )
         if counters["rl_gradient_updates"] != 30_000 or final_checkpoint is None:
             raise RuntimeError("Frozen policy budget/update count was not reached")
+        if development_checkpoints_completed != checkpoints:
+            raise RuntimeError("Frozen Development checkpoint schedule is incomplete")
         lease.manifest["runs"][run_id]["development_complete"] = True
         lease.complete(
             {**counters, "development_complete": True}, final_checkpoint
+        )
+        write_heartbeat(
+            run_directory,
+            heartbeat_payload(
+                condition=condition,
+                seed=training_seed,
+                attempt_id=lease.attempt_id,
+                counters=counters,
+                recorder=recorder,
+                synthetic=synthetic,
+                status="COMPLETED",
+                last_recovery_checkpoint=last_recovery_checkpoint,
+                last_scientific_checkpoint=last_scientific_checkpoint,
+            ),
         )
         return final_checkpoint

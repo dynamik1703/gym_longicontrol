@@ -27,6 +27,7 @@ DEFAULT_OUTPUT_ROOT = Path("runs/model-based-rl-v1")
 RUN_STATES = frozenset({"NOT_STARTED", "RUNNING", "INTERRUPTED", "COMPLETED"})
 SCIENTIFIC_FILES = (
     "benchmarks/model_based_rl/canonical.json",
+    "benchmarks/model_based_rl/config.py",
     "benchmarks/model_based_rl/adapter.py",
     "benchmarks/model_based_rl/model_state.py",
     "benchmarks/model_based_rl/physics_model.py",
@@ -36,10 +37,7 @@ SCIENTIFIC_FILES = (
     "benchmarks/model_based_rl/fsrl_adapter.py",
     "benchmarks/model_based_rl/model_disabled_parity.py",
     "benchmarks/model_based_rl/diagnostics.py",
-    "benchmarks/model_based_rl/checkpointing.py",
     "benchmarks/model_based_rl/evaluation.py",
-    "benchmarks/model_based_rl/execution.py",
-    "benchmarks/model_based_rl/training.py",
 )
 
 
@@ -76,7 +74,15 @@ def assert_freeze_ancestor(repository: str | Path = ".") -> None:
 
 def scientific_hashes(repository: str | Path = ".") -> dict[str, str]:
     root = Path(repository)
-    return {name: file_sha256(root / name) for name in SCIENTIFIC_FILES}
+    expected = json.loads(
+        (root / "benchmarks/model_based_rl/scientific_freeze.json").read_text(
+            encoding="utf-8"
+        )
+    )["files"]
+    actual = {name: file_sha256(root / name) for name in SCIENTIFIC_FILES}
+    if actual != expected:
+        raise RuntimeError("Frozen MBRL scientific sources changed")
+    return actual
 
 
 class TrainingTrackStream:
@@ -190,6 +196,7 @@ class RunLease(AbstractContextManager):
         self.path: Path | None = None
         self.manifest_path: Path | None = None
         self.manifest: dict[str, Any] | None = None
+        self.attempt_index: int | None = None
 
     def __enter__(self):
         self.manifest_path, self.manifest = load_or_create_manifest(self.output_root)
@@ -206,7 +213,15 @@ class RunLease(AbstractContextManager):
                 f"Cannot {operation} {self.run_id} from {run['state']}"
             )
         if self.restart:
-            authorization = run.get("restart_authorization")
+            authorizations = run.get("fresh_restart_authorizations", [])
+            authorization = next(
+                (
+                    item
+                    for item in reversed(authorizations)
+                    if item.get("consumed_at") is None
+                ),
+                None,
+            )
             if not authorization or authorization.get("consumed_at") is not None:
                 raise PermissionError(
                     "Fresh restart lacks unused explicit authorization"
@@ -220,24 +235,71 @@ class RunLease(AbstractContextManager):
             if any(int(run[name]) != 0 for name in counter_names):
                 raise RuntimeError("Authorized fresh restart is limited to zero work")
             authorization["consumed_at"] = utc_now()
+        if self.resume:
+            if not run["attempts"]:
+                raise RuntimeError("No interrupted attempt exists to resume")
+            attempt = run["attempts"][-1]
+            if attempt.get("recovery_class") != "VERIFIED_CHECKPOINT_RESUMABLE":
+                raise PermissionError("Attempt has no verified exact-resume state")
+            self.attempt_id = attempt["attempt_id"]
+            self.attempt_index = len(run["attempts"]) - 1
+        else:
+            attempt = {
+                "attempt_number": len(run["attempts"]) + 1,
+                "attempt_id": self.attempt_id,
+                "started_at": utc_now(),
+                "resume": False,
+                "restart": self.restart,
+                "state": "RUNNING",
+            }
+            run["attempts"].append(attempt)
+            self.attempt_index = len(run["attempts"]) - 1
         run_directory = self.output_root / self.run_id
         run_directory.mkdir(parents=True, exist_ok=True)
         self.path = run_directory / ".run.lock"
         descriptor = os.open(self.path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
         with os.fdopen(descriptor, "w") as stream:
-            json.dump({"host": socket.gethostname(), "pid": os.getpid()}, stream)
+            json.dump(
+                {
+                    "host": socket.gethostname(),
+                    "pid": os.getpid(),
+                    "process_group_id": os.getpgrp(),
+                    "session_id": os.getsid(0),
+                    "attempt_id": self.attempt_id,
+                    "started_at": utc_now(),
+                },
+                stream,
+            )
+            stream.flush()
+            os.fsync(stream.fileno())
         run["state"] = "RUNNING"
-        run["attempts"].append(
-            {
-                "attempt_id": self.attempt_id,
-                "started_at": utc_now(),
-                "resume": self.resume,
-                "restart": self.restart,
-                "state": "RUNNING",
-            }
-        )
+        if self.resume:
+            attempt.setdefault("resume_events", []).append(
+                {"resumed_at": utc_now(), "pid": os.getpid()}
+            )
+            attempt["state"] = "RUNNING"
         atomic_json(self.manifest_path, self.manifest)
         return self
+
+    @property
+    def attempt(self) -> dict[str, Any]:
+        assert self.manifest is not None and self.attempt_index is not None
+        return self.manifest["runs"][self.run_id]["attempts"][self.attempt_index]
+
+    def record_checkpoint(
+        self, counters: dict[str, Any], metadata: dict[str, Any]
+    ) -> None:
+        assert self.manifest is not None and self.manifest_path is not None
+        run = self.manifest["runs"][self.run_id]
+        durable = {
+            name: int(value)
+            for name, value in counters.items()
+            if isinstance(value, (int, np.integer))
+        }
+        run.update(durable)
+        run["last_verified_recovery_checkpoint"] = metadata
+        self.attempt["last_verified_recovery_checkpoint"] = metadata
+        atomic_json(self.manifest_path, self.manifest)
 
     def complete(self, counters: dict[str, Any], checkpoint: str | Path) -> None:
         assert self.manifest is not None and self.manifest_path is not None
@@ -247,7 +309,7 @@ class RunLease(AbstractContextManager):
         run.update(counters)
         run["final_checkpoint_sha256"] = file_sha256(checkpoint)
         run["state"] = "COMPLETED"
-        run["attempts"][-1].update({"state": "COMPLETED", "ended_at": utc_now()})
+        self.attempt.update({"state": "COMPLETED", "ended_at": utc_now()})
         atomic_json(self.manifest_path, self.manifest)
 
     def __exit__(self, exc_type, exc, traceback):
@@ -255,9 +317,15 @@ class RunLease(AbstractContextManager):
         run = self.manifest["runs"][self.run_id]
         if exc_type is not None and run["state"] == "RUNNING":
             run["state"] = "INTERRUPTED"
-            run["attempts"][-1].update(
+            recovery_class = (
+                "VERIFIED_CHECKPOINT_RESUMABLE"
+                if run.get("last_verified_recovery_checkpoint")
+                else "NO_VERIFIED_CHECKPOINT_UNRECOVERABLE"
+            )
+            self.attempt.update(
                 {"state": "INTERRUPTED", "ended_at": utc_now(), "error": str(exc)}
             )
+            self.attempt["recovery_class"] = recovery_class
             atomic_json(self.manifest_path, self.manifest)
         if self.path is not None and self.path.exists():
             self.path.unlink()
