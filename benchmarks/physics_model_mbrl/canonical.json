@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "physics-model-constrained-rl-v1",
+  "source_commit": "e0a6b7a2068eb0e0f9917831ff420fd7bd10aa9a",
+  "parent_study": "constrained-model-based-rl-v1",
+  "parent_configuration_sha256": "c60560198ef3ba4b9ce4cc6b9e75c30e04760d7d57a324812646e9ea32d66533",
+  "condition": "physics",
+  "training_seeds": [11, 29, 47],
+  "real_transitions_per_policy": 300000,
+  "total_real_transitions": 900000,
+  "real_transition_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "recovery_checkpoint_interval": 10000,
+  "track_splits": {
+    "excluded": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017],
+    "development": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper_test": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "historical_reference": {
+    "name": "constrained-rl-v2",
+    "requirement_satisfaction": [21, 27],
+    "completion": [27, 27],
+    "deadline_compliance": [27, 27],
+    "speed_compliance": [21, 27]
+  },
+  "interpretation_gates": {
+    "strong_improvement": {
+      "minimum_requirement_satisfaction_count": 22,
+      "minimum_speed_compliance_count": 24,
+      "required_completion_count": 27,
+      "required_deadline_compliance_count": 27
+    },
+    "no_material_improvement_maximum_rsr_count": 21,
+    "degradation": "completion/deadline materially below frozen V2 or RSR clearly below 21/27"
+  },
+  "runtime_estimate": {
+    "basis": "frozen parent resource measurement",
+    "hours_per_policy_cpu_serial": 1.1,
+    "hours_total_cpu_serial": 3.3,
+    "threads": 4,
+    "device": "cpu"
+  },
+  "output_root": "runs/physics-model-mbrl-v1",
+  "authorization": {
+    "main_training_authorized": true,
+    "main_training_enabled": true,
+    "validation_authorized": true,
+    "paper_test_authorized": false,
+    "automatic_fresh_restart_authorized": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source": "benchmarks/model_based_rl/resource_measurements.json",
+  "source_measurement": {
+    "physics_transition_latency_microseconds": 457.14314180077054,
+    "physics_transition_latency_iterations": 5000,
+    "estimated_one_policy_hours_cpu_serial": 1.1
+  },
+  "study_projection": {
+    "policy_count": 3,
+    "estimated_total_hours_cpu_serial": 3.3,
+    "execution": "serial",
+    "device": "cpu",
+    "threads": 4
+  },
+  "note": "Measured-probe extrapolation; not a contractual wall-clock limit."
+}

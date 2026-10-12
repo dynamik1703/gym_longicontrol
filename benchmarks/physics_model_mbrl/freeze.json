@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "frozen_before_main_training": true,
+  "source_commit": "e0a6b7a2068eb0e0f9917831ff420fd7bd10aa9a",
+  "configuration_sha256": "1b19a0b4bfd5d3870135200c4a0b9840c820e4d375648d6f3de27a7acfd21517",
+  "parent_configuration_sha256": "c60560198ef3ba4b9ce4cc6b9e75c30e04760d7d57a324812646e9ea32d66533",
+  "physics_parity_artifact_sha256": "1835e2f4f3b3b8d4446fda5a3936ef0eb8199dc7ea4fa133afa3b0cd9a67df3f",
+  "parent_files": {
+    "benchmarks/model_based_rl/canonical.json": "f784815ae62f43758b0dc44fc5b3001032e99fae9ab01796c001c206da4cb2db",
+    "benchmarks/model_based_rl/config.py": "557df00113ebb4eacc5d5042a64f27a744ce96c1e555524da37142c42b435dc7",
+    "benchmarks/model_based_rl/physics_model.py": "9de662161def0b2aea6c7bbe1d7e509bc48374f9d426acf9a9ddefb718843e82",
+    "benchmarks/model_based_rl/imagination.py": "1e55a6f78c1e7b94f736ae6114ca1cb90a839c219b949bfe96975661e6b52e17",
+    "benchmarks/model_based_rl/fsrl_adapter.py": "96ab1f48b65a640951c69e6a765586b86652eded478fbbe0e7349b87d39778c4",
+    "benchmarks/model_based_rl/training.py": "67cca884ac0a2872c54effd06dbf4dfadcea143d3a8bf99cf24fac2c4ee9b745",
+    "benchmarks/model_based_rl/execution.py": "d6e650709738ba38a036571fb2f4ef83ce4311a5abf4eb76f25c0071420dc7a5",
+    "benchmarks/model_based_rl/recovery.py": "d3df194e2d6cf042f269072c85b02a50ed1d1e0d5f27380bfa27def0e96018da",
+    "benchmarks/model_based_rl/checkpointing.py": "113262481804c311a65eb8d69dca9d931bbc89f983b3e44235cd0aa1eee9074f"
+  },
+  "study_files": {
+    "benchmarks/physics_model_mbrl/canonical.json": "4c83c48928901c180e96cfaebf095b88fd99db5ca152c9d4cbebd35e43d46327",
+    "benchmarks/physics_model_mbrl/config.py": "7684b2df320c28902c071f57d6fef4b8c461fa88b35577b02f9f842eb64cc946",
+    "benchmarks/physics_model_mbrl/execution.py": "cb6e4a2b8e8dd4b6c37658b3e997a9572395d5a1dc11c1051045daca8960ab23",
+    "benchmarks/physics_model_mbrl/training.py": "e4240e2e411c66d20ec3ec5eedf831317018a1261deecaf48653a7eb81b5a0c2",
+    "benchmarks/physics_model_mbrl/runner.py": "9da39dd131e1ac2b414b8f76e79a222f07212b26e5e59ee22344f8edcdeee528",
+    "benchmarks/physics_model_mbrl/freeze.py": "d303241d498af114c48a68ef8ca31f98f49658dae2e4f0a3b42712f5a40eb5ff",
+    "benchmarks/physics_model_mbrl/matrix_worker.py": "3c30c047e5d133490f3f5e4a22a504f566789ca15b3fab25166320f973e169e8",
+    "benchmarks/physics_model_mbrl/detached_launcher.py": "59271eb43e61d60767ab13bfdf133d19b5da8acdf320d1af52fc38d43b7afbec",
+    "benchmarks/physics_model_mbrl/recovery_admin.py": "5e8537204f202df3d9d372bc01cb536d302441d3640d1728137bc2cfc5d70507",
+    "benchmarks/physics_model_mbrl/final_evaluation.py": "879132fe08c8ba9ae6644b866ea56753c181dbcd26ba8d97313c452c87f43373",
+    "benchmarks/physics_model_mbrl/PROTOCOL.md": "ec5524f9099c059cceef989e3dd5a2425837f8fce13ec10662713b33569cc575"
+  }
+}
