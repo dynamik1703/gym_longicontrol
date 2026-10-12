@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "study": "constrained-model-based-rl-v1",
+  "classification": "TERMINATED_RESOURCE_INFEASIBLE",
+  "reason": "COMPUTATIONAL_RESOURCE_INFEASIBILITY",
+  "decision_at_utc": "2026-10-12T15:52:35Z",
+  "safe_boundary_at_utc": "2026-10-12T16:16:21.863647+00:00",
+  "worker_ended_at_utc": "2026-10-12T16:16:21.965235+00:00",
+  "launcher_ended_at_utc": "2026-10-12T16:16:25.257604+00:00",
+  "statement": "The study was terminated because measured computational cost made the preregistered six-policy experiment operationally infeasible. The termination was not triggered by Development performance.",
+  "execution": {
+    "branch": "research/model-based-rl",
+    "commit": "0f2f6efee5430481e70aab8e0da90b41db20f9d5",
+    "run_id": "learned-seed-11",
+    "attempt_id": "862895c0-1b25-4e5f-bc40-5d1e5519921a",
+    "controlled_stop_signal": 2,
+    "launchd_label": "org.longicontrol.mbrl.frozen-v1",
+    "launchd_bootout_at_utc": "2026-10-12T16:22:59Z",
+    "launchd_loaded_after_closure": false,
+    "stopped_pids": [20438, 20439],
+    "remaining_policies_started": false
+  },
+  "runtime_evidence": {
+    "original_six_policy_estimate_hours": 94.2,
+    "observed_40k_to_50k_hours": 15.06507370111111,
+    "observed_50k_to_60k_hours": 18.8849596275,
+    "projected_remaining_first_learned_policy_hours": [450.0, 800.0],
+    "projected_remaining_matrix_hours": [1600.0, 2500.0]
+  },
+  "durable_state": {
+    "real_transitions": 60000,
+    "checkpoint_relative_path": "learned-seed-11/recovery/step-060000/checkpoint.pt",
+    "checkpoint_recorded_absolute_path": "/Users/romanliessner/gitlab/gym_longicontrol_mbrl/runs/model-based-rl-v1/learned-seed-11/recovery/step-060000/checkpoint.pt",
+    "checkpoint_sha256": "155fa64e06de2bdd9848a6a9f4535f144c0d790fe0de1f19f9eadc3a47d00dd7",
+    "checkpoint_size_bytes": 191663773,
+    "counters": {
+      "real_transitions": 60000,
+      "rl_gradient_updates": 6000,
+      "model_gradient_updates": 29123065,
+      "model_refreshes": 201,
+      "synthetic_transitions": 502500,
+      "synthetic_sampled": 640128
+    }
+  },
+  "observed_safe_boundary": {
+    "status": "OBSERVED_NOT_DURABLE",
+    "real_transitions": 60500,
+    "rl_gradient_updates": 6050,
+    "model_gradient_updates": 29700838,
+    "model_refreshes": 203,
+    "synthetic_generated": 507500,
+    "synthetic_sampled": 646528,
+    "current_episode_id": 34,
+    "current_episode_step": 1100
+  },
+  "additional_consumed_after_checkpoint": {
+    "status": "OBSERVED_NOT_DURABLE",
+    "real_transitions": 500,
+    "rl_gradient_updates": 50,
+    "model_gradient_updates": 577773,
+    "model_refreshes": 2,
+    "synthetic_generated": 5000,
+    "synthetic_sampled": 6400
+  },
+  "resource_consumption": {
+    "attempt_3_wall_clock_seconds": 190132.692121,
+    "attempt_3_wall_clock_hours": 52.814636700277776,
+    "worker_cpu_time_lower_bound_seconds": 203069.96,
+    "worker_cpu_time_lower_bound_hours": 56.40832222222222,
+    "worker_cpu_observed_at_utc": "2026-10-12T16:15:50Z",
+    "worker_cpu_ps_time_raw": "3384:29.96",
+    "last_observed_rss_kib": 63920
+  },
+  "development": {
+    "last_evaluated_transition": 50000,
+    "evaluation_track_count": 9,
+    "completed_count": 0,
+    "feasible_count": 0,
+    "requirement_satisfaction_rate": 0.0,
+    "completion_rate": 0.0,
+    "speed_compliance_rate": 1.0,
+    "mean_travel_time_s": 179.99999999999406,
+    "mean_final_position_m": 0.0,
+    "used_as_termination_criterion": false,
+    "source": "runs/model-based-rl-v1/learned-seed-11/step-050000/development.json"
+  },
+  "model_diagnostics": {
+    "source_transition": 60000,
+    "diagnostic_rows": 5202,
+    "model_training_reports": 201,
+    "mixed_update_reports": 5001,
+    "all_numeric_diagnostics_finite": true,
+    "last_model_version": 201,
+    "last_model_real_examples": 60000,
+    "last_model_train_examples": 55000,
+    "last_model_holdout_examples": 5000,
+    "last_model_epochs": [200, 200, 200, 200, 200, 200, 200],
+    "last_model_holdout_losses": [-9.967766761779785, -9.959567070007324, -9.906954765319824, -9.959735870361328, -9.973044395446777, -9.972408294677734, -9.967369079589844],
+    "last_model_elite_indices": [4, 5, 0, 6, 3],
+    "last_model_gradient_updates": 301000,
+    "last_model_wall_time_s": 2238.951565333002,
+    "gate_e_false_safe_metrics_available": false,
+    "gate_e_classification": "NOT_AVAILABLE"
+  },
+  "study_completion": {
+    "completed_policy_count": 0,
+    "partial_policy_count": 1,
+    "not_started_policy_count": 5,
+    "validation_state": "SEALED",
+    "paper_test_state": "SEALED",
+    "final_rsr_available": false,
+    "scientific_parameters_changed": false
+  }
+}

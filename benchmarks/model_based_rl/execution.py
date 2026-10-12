@@ -24,7 +24,15 @@ from .config import (
 
 FREEZE_PARENT = "cae33ff317757e24182955569b698ed29448683c"
 DEFAULT_OUTPUT_ROOT = Path("runs/model-based-rl-v1")
-RUN_STATES = frozenset({"NOT_STARTED", "RUNNING", "INTERRUPTED", "COMPLETED"})
+RUN_STATES = frozenset(
+    {
+        "NOT_STARTED",
+        "RUNNING",
+        "INTERRUPTED",
+        "COMPLETED",
+        "TERMINATED_RESOURCE_INFEASIBLE",
+    }
+)
 SCIENTIFIC_FILES = (
     "benchmarks/model_based_rl/canonical.json",
     "benchmarks/model_based_rl/config.py",
