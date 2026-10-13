@@ -1,0 +1,26 @@
+{
+  "audit_date": "2026-10-13",
+  "fsrl": {
+    "commit": "e056fc9498d5d037869533da7cf976acf462f918",
+    "url": "https://github.com/liuzuxin/FSRL"
+  },
+  "mbpo": {
+    "code_commit": "ac694ff9f1ebb789cc5b3f164d9d67f93ed8f129",
+    "code_url": "https://github.com/JannerM/mbpo",
+    "paper": "arXiv:1906.08253"
+  },
+  "model_based_value_expansion": {
+    "paper": "arXiv:1803.00101",
+    "url": "https://arxiv.org/abs/1803.00101"
+  },
+  "revisiting_model_based_value_expansion": {
+    "paper": "arXiv:2203.14660",
+    "url": "https://arxiv.org/abs/2203.14660"
+  },
+  "td_mpc2": {
+    "code_commit": "e9f59321933cbc8e11a002b842adc7d4ffae8ff1",
+    "code_url": "https://github.com/nicklashansen/tdmpc2",
+    "paper": "arXiv:2310.16828"
+  },
+  "tianshou_version": "0.5.1"
+}

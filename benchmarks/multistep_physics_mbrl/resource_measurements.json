@@ -1,0 +1,94 @@
+{
+  "gate": {
+    "maximum_mve_policy_h": 12.0,
+    "maximum_six_policy_serial_h": 36.0,
+    "mve_policy_pass": true,
+    "ready_for_main_training": true,
+    "six_policy_serial_pass": true
+  },
+  "measured_at_utc": "2026-10-13T07:29:23.455097+00:00",
+  "measurements": {
+    "actor_environment_collection": {
+      "seconds": 0.3019374999566935,
+      "transitions": 512,
+      "transitions_per_second": 1695.7151730852759
+    },
+    "checkpoint": {
+      "fixture_replay_rows": 2048,
+      "projection_scale_to_100k": 48.828125,
+      "size_bytes": 3819597,
+      "verified_roundtrip_s": 0.12605537503259256,
+      "write_total_s": 0.08872900001006201
+    },
+    "exact_physics": {
+      "mean_batch_step_s": 0.00036212097940733655,
+      "seconds": 0.07242419588146731,
+      "state_steps": 51200,
+      "state_steps_per_second": 706946.0610069626
+    },
+    "mve_saclag_update": {
+      "mean_s": 0.06344942499417812,
+      "repeats": 5,
+      "samples_s": [
+        0.05895429098745808,
+        0.06134779204148799,
+        0.07187262497609481,
+        0.060288542008493096,
+        0.0647838749573566
+      ]
+    },
+    "real_only_saclag_update": {
+      "mean_s": 0.007758208201266825,
+      "repeats": 5,
+      "samples_s": [
+        0.007894082984421402,
+        0.007692166022025049,
+        0.007070332998409867,
+        0.008256000000983477,
+        0.007878459000494331
+      ]
+    },
+    "target_construction": {
+      "mean_s": 0.04749091659905389,
+      "repeats": 5,
+      "samples_s": [
+        0.04583962500328198,
+        0.047570541966706514,
+        0.05037924996577203,
+        0.04773812502389774,
+        0.04592704103561118
+      ]
+    }
+  },
+  "preparation_simulator_transitions_cumulative": 1024,
+  "preparation_simulator_transitions_this_measurement": 512,
+  "projection": {
+    "baseline_policy_h": 0.18100975706852296,
+    "checkpoint_per_policy_h": 0.05129206340844424,
+    "collection_per_policy_h": 0.04914347330024308,
+    "cpu_hours_at_four_threads": 9.91335584893568,
+    "development_per_policy_h": 0.01592248534927876,
+    "mve_policy_h": 0.6451032303427837,
+    "six_policy_serial_h": 2.47833896223392
+  },
+  "protocol": {
+    "batch_size": 256,
+    "conditions": 2,
+    "model_expansion_steps": 60,
+    "real_transitions_per_policy": 300000,
+    "seeds": 3,
+    "threads": 4,
+    "updates_per_policy": 30000
+  },
+  "runtime": {
+    "fsrl": "0.1.0",
+    "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.13",
+    "tianshou": "0.5.1",
+    "torch": "2.14.1"
+  },
+  "schema_version": 1
+}

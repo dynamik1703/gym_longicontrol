@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "name": "multistep-exact-physics-value-expansion-v1",
+  "source_commit": "8e5ebf6fb241f434781c0148c122a84c1ab4c35b",
+  "conditions": ["matched_real_only", "physics_mve"],
+  "training_seeds": [11, 29, 47],
+  "real_transitions_per_policy": 300000,
+  "total_real_transitions": 1800000,
+  "rl_updates_per_policy": 30000,
+  "real_transition_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "recovery_checkpoint_interval": 10000,
+  "target": {
+    "gamma": 0.99,
+    "real_prefix_steps": 2,
+    "model_expansion_steps": 60,
+    "native_dt_s": 0.1,
+    "real_prefix_time_s": 0.2,
+    "model_expansion_time_s": 6.0,
+    "total_nominal_horizon_steps": 62,
+    "total_nominal_horizon_s": 6.2,
+    "entropy_on_every_policy_value": true,
+    "entropy_applies_to_cost_critics": true,
+    "synthetic_replay": false
+  },
+  "physical_horizon": {
+    "maximum_generator_speed_limit_km_h": 100.0,
+    "minimum_generator_speed_limit_km_h": 20.0,
+    "maximum_single_transition_drop_km_h": 40.0,
+    "braking_case_start_km_h": 100.0,
+    "braking_case_target_km_h": 60.0,
+    "maximum_brake_action": -1.0,
+    "exact_steps": 60,
+    "time_s": 6.0,
+    "distance_m": 135.0764556315701,
+    "sensor_range_m": 150.0,
+    "two_transition_context": {
+      "start_km_h": 100.0,
+      "target_km_h": 20.0,
+      "exact_steps": 100,
+      "time_s": 10.0,
+      "distance_m": 179.8249471715907
+    }
+  },
+  "track_splits": {
+    "excluded": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017],
+    "development": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper_test": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "frozen_v2": {
+    "configuration_sha256": "89d7142cc84ba60d98075313220b331b60c2c41997b6c65b11adeb1b08712060",
+    "fsrl_git_commit": "e056fc9498d5d037869533da7cf976acf462f918",
+    "tianshou_version": "0.5.1",
+    "n_step": 2,
+    "batch_size": 256,
+    "update_per_step": 0.1,
+    "validation_rsr": [21, 27],
+    "completion": [27, 27],
+    "deadline_compliance": [27, 27],
+    "speed_compliance": [21, 27]
+  },
+  "compute_gate": {
+    "maximum_mve_policy_walltime_h": 12.0,
+    "maximum_six_policy_serial_walltime_h": 36.0,
+    "benchmark_batch_size": 256,
+    "updates_per_policy": 30000
+  },
+  "preparation": {
+    "maximum_simulator_transitions": 5000,
+    "simulator_transitions_consumed": 1024,
+    "allowed_track_seeds": [0]
+  },
+  "interpretation": {
+    "robust_improvement_minimum_rsr": 24,
+    "robust_improvement_completion": 27,
+    "robust_improvement_deadline": 27,
+    "robust_improvement_minimum_speed": 24,
+    "material_difference_count": 3,
+    "late_collapse_minimum_peak_to_final_drop": 3,
+    "numerical_instability_multiplier": 1000.0,
+    "numerical_instability_critic_loss": 1000000.0,
+    "numerical_instability_target_magnitude": 1000000.0
+  },
+  "authorization": {
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "validation_authorized": false,
+    "paper_test_authorized": false,
+    "automatic_fresh_restart_authorized": false
+  }
+}

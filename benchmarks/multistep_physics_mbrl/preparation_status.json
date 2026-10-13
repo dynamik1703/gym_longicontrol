@@ -1,0 +1,16 @@
+{
+  "computational_feasibility_verified": true,
+  "execution_infrastructure_ready": true,
+  "m0_parity_verified": true,
+  "main_training_authorized": false,
+  "main_training_enabled": false,
+  "mve_target_semantics_verified": true,
+  "paper_test_authorized": false,
+  "physics_model_verified": true,
+  "preparation_simulator_transition_limit": 5000,
+  "preparation_simulator_transitions_consumed": 1024,
+  "ready_for_main_training": true,
+  "schema_version": 1,
+  "scientific_design_frozen": true,
+  "validation_authorized": false
+}

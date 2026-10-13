@@ -1,0 +1,28 @@
+{
+  "configuration_sha256": "fb79c46b6709e69b0f37c453e920474f78f6557e817bad374fc8c870b46ab420",
+  "frozen_before_main_training": true,
+  "parent_commit": "8e5ebf6fb241f434781c0148c122a84c1ab4c35b",
+  "readiness_files": {
+    "benchmarks/multistep_physics_mbrl/RESOURCE_REPORT.md": "d6ef824bca703e3f3ee6198215c7a9ce7dadda4be6b583cb8e8191ff588b85cf",
+    "benchmarks/multistep_physics_mbrl/SOURCE_AUDIT.md": "366d6b57176a03e34642e906bdf93c26949859a2ced0c6dcb4361e1d479d6419",
+    "benchmarks/multistep_physics_mbrl/benchmarking.py": "5df443bbee7d8b1b09cf68033b21864cf4f24ea321728e15219d20540aad51a0",
+    "benchmarks/multistep_physics_mbrl/preparation_status.json": "85f5039a849bf9e28e6ef469a0b1fa75f6d66adcd328b676bf044037670eff8a",
+    "benchmarks/multistep_physics_mbrl/resource_measurements.json": "de62522718ed6109d634a397207b17cea98c37d92340f52fe1b51f5b301965ce",
+    "benchmarks/multistep_physics_mbrl/upstream.json": "65faad6008132523e95c18fda7c97d04dfa0a3ece4a36215201444a59ba2ea53"
+  },
+  "schema_version": 1,
+  "scientific_files": {
+    "benchmarks/multistep_physics_mbrl/DESIGN.md": "d438e8669c4eba5cf758d0732c2fa623bf9e762af602a8e52f8ff1b029670b1b",
+    "benchmarks/multistep_physics_mbrl/PROTOCOL.md": "702e7168aaf685972a64396d5f0f32d077ec60fcf1b03149622a34a0e9cdf1ae",
+    "benchmarks/multistep_physics_mbrl/adapter.py": "144b72285bc8956926bd6912aa416dd9e8f18a3b5a75be5a542f16a81eb413a6",
+    "benchmarks/multistep_physics_mbrl/canonical.json": "cc6da1af9988e8c97d0882d0de6aa1d0b6b788c5568e60abaaa35d276c586d4a",
+    "benchmarks/multistep_physics_mbrl/checkpointing.py": "66d7f10745f8d262bb53ef1ce62c21bd11210d5186e2b2eaa27d14fdf7e3d9c2",
+    "benchmarks/multistep_physics_mbrl/config.py": "25e53a12a96ad78b9a4c16483c6ab672a4085002ced1cef97843921dd73307d7",
+    "benchmarks/multistep_physics_mbrl/diagnostics.py": "334b342c0e002719619e01c3821572e659b2233cec55d91c6730f4198292be8d",
+    "benchmarks/multistep_physics_mbrl/evaluation.py": "8c7a4d44a664f1299879b36f6e8483fbb4ec3914d3adef5781f4829ff83cc396",
+    "benchmarks/multistep_physics_mbrl/execution.py": "1aa2310cedb3d507a9ca356fed5a1c791332d364545022677fd2f224b2d228b5",
+    "benchmarks/multistep_physics_mbrl/physics_rollout.py": "c4ade036edba66516faf0dd9e5ad00732ffdbf3c135a5c15102b2edfc71d8fe7",
+    "benchmarks/multistep_physics_mbrl/runner.py": "095de442b8e081769414cacddb41243bcea923b7618f675ab5b865410f36493a",
+    "benchmarks/multistep_physics_mbrl/value_expansion.py": "8ee99b323b06413a72e49a54fdfb51b5d5eed45cc7d3349211370c661f607f37"
+  }
+}
