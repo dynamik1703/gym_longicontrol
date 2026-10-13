@@ -774,7 +774,9 @@ def prepare_launchd_job(
             "matrix": [
                 [condition, seed] for condition in CONDITIONS for seed in TRAINING_SEEDS
             ],
-            "main_training_authorized": False,
+            "main_training_authorized": load_configuration().raw["authorization"][
+                "main_training_authorized"
+            ],
         },
     )
     return destination

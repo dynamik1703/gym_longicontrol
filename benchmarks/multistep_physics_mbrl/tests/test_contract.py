@@ -14,7 +14,8 @@ def test_frozen_preparation_contract():
     status = json.loads((root / "preparation_status.json").read_text())
     configuration = load_configuration()
     assert status["ready_for_main_training"] is True
-    assert status["main_training_authorized"] is False
+    assert status["main_training_authorized"] is True
+    assert status["main_training_enabled"] is True
     assert configuration.raw["authorization"]["validation_authorized"] is False
     assert configuration.raw["authorization"]["paper_test_authorized"] is False
 

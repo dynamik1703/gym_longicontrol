@@ -82,8 +82,8 @@
     "numerical_instability_target_magnitude": 1000000.0
   },
   "authorization": {
-    "main_training_authorized": false,
-    "main_training_enabled": false,
+    "main_training_authorized": true,
+    "main_training_enabled": true,
     "validation_authorized": false,
     "paper_test_authorized": false,
     "automatic_fresh_restart_authorized": false

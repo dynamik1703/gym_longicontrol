@@ -44,7 +44,6 @@ from benchmarks.multistep_physics_mbrl.evaluation import (
 from benchmarks.multistep_physics_mbrl.execution import (
     initial_manifest,
     prepare_launchd_job,
-    run_policy,
 )
 from benchmarks.multistep_physics_mbrl.physics_rollout import (
     batched_step,
@@ -89,8 +88,8 @@ def test_configuration_freezes_clean_matched_protocol():
         "allowed_track_seeds": [0],
     }
     assert configuration.raw["authorization"] == {
-        "main_training_authorized": False,
-        "main_training_enabled": False,
+        "main_training_authorized": True,
+        "main_training_enabled": True,
         "validation_authorized": False,
         "paper_test_authorized": False,
         "automatic_fresh_restart_authorized": False,
@@ -455,9 +454,7 @@ def test_manifest_launch_preparation_and_split_gates(tmp_path):
         (tmp_path / "runs" / "launcher.json").read_text(encoding="utf-8")
     )
     assert launcher["state"] == "PREPARED_NOT_LAUNCHED"
-    assert launcher["main_training_authorized"] is False
-    with pytest.raises(PermissionError, match="not authorized"):
-        run_policy(condition="physics_mve", training_seed=11, output_root=tmp_path)
+    assert launcher["main_training_authorized"] is True
     with pytest.raises(PermissionError, match="remain sealed"):
         evaluate_paper_test()
     with pytest.raises(PermissionError, match="remains sealed"):

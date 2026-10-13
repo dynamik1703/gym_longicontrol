@@ -92,8 +92,15 @@ class StudyConfiguration:
             raise ValueError("Paper-final split changed")
 
         authorization = raw["authorization"]
-        if any(authorization.values()):
-            raise PermissionError("Preparation snapshot must authorize no execution")
+        expected_authorization = {
+            "main_training_authorized": True,
+            "main_training_enabled": True,
+            "validation_authorized": False,
+            "paper_test_authorized": False,
+            "automatic_fresh_restart_authorized": False,
+        }
+        if authorization != expected_authorization:
+            raise PermissionError("Only frozen main-matrix training is authorized")
 
         v2 = load_v2()
         if v2_configuration_sha256(v2) != raw["frozen_v2"]["configuration_sha256"]:
