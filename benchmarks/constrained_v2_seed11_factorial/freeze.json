@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "state": "FROZEN_BEFORE_MAIN_TRAINING",
+  "main_training_started": false,
+  "factorial_configuration_sha256": "f15953eef4ed9642e48f8f60002c7a51badbd89e09d298b1769535a99ad380cf",
+  "design_sha256": "17fa9d50f1099eb6949501ed5ce907b201d8b340d969f9409b90d351bf1a29b4",
+  "protocol_sha256": "5929700b5b6080bc1026c1368039cea879197e964d52cc53b08b174825171ee7",
+  "constrained_v2_semantic_configuration_sha256": "89d7142cc84ba60d98075313220b331b60c2c41997b6c65b11adeb1b08712060",
+  "constrained_v2_file_sha256": "d19af15e6857960dc290e1da806333703f00cdfe2512bd354f5d9448e64c8c4f",
+  "execution_gate": "FAILED_RESERVED_CONTENT_COLLISION"
+}

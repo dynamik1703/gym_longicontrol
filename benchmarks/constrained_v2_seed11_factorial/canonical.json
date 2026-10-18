@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "name": "constrained-v2-seed11-track-collector-factorial",
+  "training_seed": 11,
+  "conditions": [
+    {
+      "id": "A",
+      "name": "A_histTrack_histCollector_seed11",
+      "track_stream": "T_HIST",
+      "collector": "C_HIST"
+    },
+    {
+      "id": "B",
+      "name": "B_histTrack_currentCollector_seed11",
+      "track_stream": "T_HIST",
+      "collector": "C_CURRENT"
+    },
+    {
+      "id": "C",
+      "name": "C_currentTrack_histCollector_seed11",
+      "track_stream": "T_CURRENT",
+      "collector": "C_HIST"
+    },
+    {
+      "id": "D",
+      "name": "D_currentTrack_currentCollector_seed11",
+      "track_stream": "T_CURRENT",
+      "collector": "C_CURRENT"
+    }
+  ],
+  "real_transitions_per_policy": 300000,
+  "gradient_updates_per_policy": 30000,
+  "scientific_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "technical_checkpoint_interval": 10000,
+  "track_definition_count": 500,
+  "track_splits": {
+    "development": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008],
+    "validation": [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008],
+    "paper": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "hard_gates": {
+    "exact_track_streams": true,
+    "no_reserved_track_content": true,
+    "identical_initial_learner_state": true,
+    "current_pipeline_reproduction": true,
+    "maximum_preflight_simulator_transitions": 5000,
+    "maximum_serial_runtime_h": 12.0,
+    "maximum_retained_artifacts_gb": 12.0
+  },
+  "authorization": {
+    "main_training_authorized_only_if_all_gates_pass": true,
+    "fresh_restart_authorized": false,
+    "validation_authorized_only_after_four_frozen_policies": true,
+    "paper_tracks_authorized": false
+  }
+}

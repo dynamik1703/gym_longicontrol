@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "study": "constrained-v2-seed11-track-collector-factorial",
+  "state": "EXECUTION_GATE_FAILED",
+  "reason": "Exact T_HIST and T_CURRENT content collides with Development track 2006 before the minimum possible episode count.",
+  "conditions": {
+    "A_histTrack_histCollector_seed11": {"state": "NOT_STARTED", "real_transitions": 0, "gradient_updates": 0, "attempts": []},
+    "B_histTrack_currentCollector_seed11": {"state": "NOT_STARTED", "real_transitions": 0, "gradient_updates": 0, "attempts": []},
+    "C_currentTrack_histCollector_seed11": {"state": "NOT_STARTED", "real_transitions": 0, "gradient_updates": 0, "attempts": []},
+    "D_currentTrack_currentCollector_seed11": {"state": "NOT_STARTED", "real_transitions": 0, "gradient_updates": 0, "attempts": []}
+  },
+  "development": {"state": "NOT_OPENED", "episode_count": 0},
+  "validation": {"state": "SEALED", "episode_count": 0},
+  "paper": {"state": "SEALED", "episode_count": 0},
+  "fresh_restart_authorized": false
+}
