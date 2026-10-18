@@ -1,0 +1,2615 @@
+{
+  "completed_main_training_commit": "03d84c6677854406b52e84c52a6d3cec11c9652a",
+  "controller": {
+    "actor_only": true,
+    "continued_training": false,
+    "lookahead": false,
+    "model_value_expansion_at_evaluation": false,
+    "online_adaptation": false,
+    "path": "ordinary 8D observation -> frozen deterministic learned actor -> action",
+    "physics_model_queries": 0,
+    "planning": false,
+    "stochastic_actor_sampling": false
+  },
+  "development": {
+    "classification": "E",
+    "classification_unchanged_by_validation": true,
+    "curves": {
+      "per_policy": {
+        "matched_real_only-seed-11": {
+          "completion": [
+            0,
+            9,
+            9,
+            9,
+            9,
+            4
+          ],
+          "deadline": [
+            0,
+            6,
+            6,
+            6,
+            9,
+            2
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            0.1536333598218703,
+            0.16243107929253187,
+            0.17101728612880188,
+            null,
+            0.2207156761568156
+          ],
+          "rsr": [
+            0,
+            3,
+            2,
+            3,
+            0,
+            2
+          ],
+          "speed": [
+            9,
+            4,
+            3,
+            4,
+            0,
+            9
+          ]
+        },
+        "matched_real_only-seed-29": {
+          "completion": [
+            0,
+            9,
+            9,
+            9,
+            5,
+            5
+          ],
+          "deadline": [
+            0,
+            9,
+            6,
+            9,
+            4,
+            5
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            null,
+            0.1645452291635577,
+            0.1740932568406355,
+            0.17937596249661897,
+            0.16809408679890672
+          ],
+          "rsr": [
+            0,
+            0,
+            5,
+            6,
+            4,
+            5
+          ],
+          "speed": [
+            9,
+            0,
+            7,
+            6,
+            9,
+            9
+          ]
+        },
+        "matched_real_only-seed-47": {
+          "completion": [
+            0,
+            9,
+            9,
+            9,
+            9,
+            7
+          ],
+          "deadline": [
+            0,
+            9,
+            8,
+            7,
+            8,
+            6
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            null,
+            0.1684806491883642,
+            0.19932393134602844,
+            0.19469138105029682,
+            0.16988627195612613
+          ],
+          "rsr": [
+            0,
+            0,
+            4,
+            7,
+            3,
+            6
+          ],
+          "speed": [
+            9,
+            0,
+            4,
+            9,
+            4,
+            8
+          ]
+        },
+        "physics_mve-seed-11": {
+          "completion": [
+            0,
+            1,
+            3,
+            9,
+            6,
+            0
+          ],
+          "deadline": [
+            0,
+            0,
+            1,
+            9,
+            6,
+            0
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            null,
+            0.17255156124012444,
+            null,
+            0.1641320721409793,
+            null
+          ],
+          "rsr": [
+            0,
+            0,
+            1,
+            0,
+            4,
+            0
+          ],
+          "speed": [
+            9,
+            7,
+            7,
+            0,
+            5,
+            6
+          ]
+        },
+        "physics_mve-seed-29": {
+          "completion": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            9
+          ],
+          "deadline": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            9
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rsr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speed": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            0
+          ]
+        },
+        "physics_mve-seed-47": {
+          "completion": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deadline": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean_feasible_energy_kwh": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "rsr": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "speed": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ]
+        }
+      },
+      "pooled": {
+        "final_mve_minus_baseline": {
+          "completion": -7,
+          "deadline": -4,
+          "rsr": -13,
+          "speed": -11
+        },
+        "matched_real_only": {
+          "completion": [
+            0,
+            27,
+            27,
+            27,
+            23,
+            16
+          ],
+          "deadline": [
+            0,
+            24,
+            20,
+            22,
+            21,
+            13
+          ],
+          "rsr": [
+            0,
+            3,
+            11,
+            16,
+            7,
+            13
+          ],
+          "speed": [
+            27,
+            4,
+            14,
+            19,
+            13,
+            26
+          ]
+        },
+        "physics_mve": {
+          "completion": [
+            0,
+            1,
+            4,
+            9,
+            6,
+            9
+          ],
+          "deadline": [
+            0,
+            0,
+            1,
+            9,
+            6,
+            9
+          ],
+          "rsr": [
+            0,
+            0,
+            1,
+            0,
+            4,
+            0
+          ],
+          "speed": [
+            27,
+            25,
+            25,
+            18,
+            23,
+            15
+          ]
+        }
+      },
+      "real_transition_checkpoints": [
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000
+      ]
+    },
+    "efficacy_without_instability_override": "D",
+    "final_failure_modes_pooled": {
+      "matched_real_only": {
+        "completed_too_slowly": 3,
+        "fully_feasible": 13,
+        "partial_progress_or_crawling": 11
+      },
+      "physics_mve": {
+        "completed_with_speed_violation": 9,
+        "partial_progress_or_crawling": 9,
+        "standstill": 9
+      }
+    },
+    "label": "unstable"
+  },
+  "development_to_validation": {
+    "matched_real_only-seed-11": {
+      "descriptive_interpretation": "The speed-compliant partial/crawling and late-completion regime generalizes; Validation RSR is lower (2/9 to 0/9).",
+      "development_300k": {
+        "counts": {
+          "completion": 4,
+          "deadline_compliance": 2,
+          "requirement_satisfaction": 2,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 2,
+          "fully_feasible": 2,
+          "partial_progress_or_crawling": 5
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 2,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 2,
+          "partial_progress_or_crawling": 7
+        }
+      }
+    },
+    "matched_real_only-seed-29": {
+      "descriptive_interpretation": "The mixed feasible/partial regime generalizes: completion stays 5/9 and speed 9/9; one Development-feasible episode becomes late.",
+      "development_300k": {
+        "counts": {
+          "completion": 5,
+          "deadline_compliance": 5,
+          "requirement_satisfaction": 5,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "fully_feasible": 5,
+          "partial_progress_or_crawling": 4
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 5,
+          "deadline_compliance": 4,
+          "requirement_satisfaction": 4,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 1,
+          "fully_feasible": 4,
+          "partial_progress_or_crawling": 4
+        }
+      }
+    },
+    "matched_real_only-seed-47": {
+      "descriptive_interpretation": "RSR and deadline remain 6/9; Validation improves completion to 9/9 and speed compliance to 9/9, with three late completions.",
+      "development_300k": {
+        "counts": {
+          "completion": 7,
+          "deadline_compliance": 6,
+          "requirement_satisfaction": 6,
+          "speed_compliance": 8
+        },
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 1,
+          "fully_feasible": 6,
+          "partial_progress_or_crawling": 2
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 9,
+          "deadline_compliance": 6,
+          "requirement_satisfaction": 6,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 3,
+          "fully_feasible": 6
+        }
+      }
+    },
+    "physics_mve-seed-11": {
+      "descriptive_interpretation": "The crawling/partial-progress regime generalizes exactly in RSR and completion (0/9 each); speed compliance changes from 6/9 to 5/9.",
+      "development_300k": {
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 6
+        },
+        "exclusive_failure_modes": {
+          "partial_progress_or_crawling": 9
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 5
+        },
+        "exclusive_failure_modes": {
+          "partial_progress_or_crawling": 9
+        }
+      }
+    },
+    "physics_mve-seed-29": {
+      "descriptive_interpretation": "The speed-violating completion regime generalizes exactly: all nine episodes complete on time and all nine violate speed.",
+      "development_300k": {
+        "counts": {
+          "completion": 9,
+          "deadline_compliance": 9,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 0
+        },
+        "exclusive_failure_modes": {
+          "completed_with_speed_violation": 9
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 9,
+          "deadline_compliance": 9,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 0
+        },
+        "exclusive_failure_modes": {
+          "completed_with_speed_violation": 9
+        }
+      }
+    },
+    "physics_mve-seed-47": {
+      "descriptive_interpretation": "The standstill regime generalizes exactly: nine standstills, 0/9 completion and 9/9 speed compliance.",
+      "development_300k": {
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "standstill": 9
+        }
+      },
+      "used_for_selection": false,
+      "validation": {
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 9
+        },
+        "exclusive_failure_modes": {
+          "standstill": 9
+        }
+      }
+    }
+  },
+  "final_target_decomposition": {
+    "physics_mve-seed-11": {
+      "deadline_cost": {
+        "absolute_model_fraction": 2.3593028735738697,
+        "model_expansion": -0.38500380476988205,
+        "real_two_step": 0.0242681699211163,
+        "target": -0.8108881297148893,
+        "terminal_or_bootstrap": -0.45015249486612174
+      },
+      "objective": {
+        "absolute_model_fraction": 2.005748148440312,
+        "model_expansion": -0.9507671370216761,
+        "real_two_step": -0.0018345926411735007,
+        "target": -1.9234917593254286,
+        "terminal_or_bootstrap": -0.9708900296625829
+      },
+      "speed_cost": {
+        "absolute_model_fraction": 2.1586013329454206,
+        "model_expansion": -0.29625699398046523,
+        "real_two_step": 0.05141757001601322,
+        "target": -1.153031923697917,
+        "terminal_or_bootstrap": -0.9081924997334662
+      }
+    },
+    "physics_mve-seed-29": {
+      "deadline_cost": {
+        "absolute_model_fraction": 0.5120880769883146,
+        "model_expansion": -65.7800925208386,
+        "real_two_step": 0.034661678294487845,
+        "target": -155.97548375300823,
+        "terminal_or_bootstrap": -90.23005291046441
+      },
+      "objective": {
+        "absolute_model_fraction": 0.46531595279529736,
+        "model_expansion": -66.62985365917577,
+        "real_two_step": -0.0012236911730632934,
+        "target": -157.54312160023326,
+        "terminal_or_bootstrap": -90.91204424988466
+      },
+      "speed_cost": {
+        "absolute_model_fraction": 0.5251622141347703,
+        "model_expansion": -62.93468900409454,
+        "real_two_step": 0.13391650075298375,
+        "target": -138.69978690108712,
+        "terminal_or_bootstrap": -75.89901439774572
+      }
+    },
+    "physics_mve-seed-47": {
+      "deadline_cost": {
+        "absolute_model_fraction": 0.4562274068968084,
+        "model_expansion": -927563.3306267849,
+        "real_two_step": 0.04947957756361093,
+        "target": -2031547.8630084652,
+        "terminal_or_bootstrap": -1103984.581861254
+      },
+      "objective": {
+        "absolute_model_fraction": 0.4563518307864121,
+        "model_expansion": -927564.4380026369,
+        "real_two_step": -0.0001787775009323785,
+        "target": -2030932.2586493283,
+        "terminal_or_bootstrap": -1103367.8204679203
+      },
+      "speed_cost": {
+        "absolute_model_fraction": 0.45644086772149667,
+        "model_expansion": -927564.4340776632,
+        "real_two_step": 0.0,
+        "target": -2030461.653814118,
+        "terminal_or_bootstrap": -1102897.2197364504
+      }
+    }
+  },
+  "frozen_interpretation": {
+    "gate_a_robust_improvement": false,
+    "gate_b_material_not_robust": false,
+    "gate_c_no_material_improvement": false,
+    "gate_d_degradation": true,
+    "instability_override_already_triggered_during_development": true,
+    "overall_study_classification": "E",
+    "overall_study_label": "unstable",
+    "thresholds": {
+      "late_collapse_minimum_peak_to_final_drop": 3,
+      "material_difference_count": 3,
+      "numerical_instability_critic_loss": 1000000.0,
+      "numerical_instability_multiplier": 1000.0,
+      "numerical_instability_target_magnitude": 1000000.0,
+      "robust_improvement_completion": 27,
+      "robust_improvement_deadline": 27,
+      "robust_improvement_minimum_rsr": 24,
+      "robust_improvement_minimum_speed": 24
+    },
+    "validation_performance_classification": "D",
+    "validation_performance_label": "degradation",
+    "validation_rsr_delta_mve_minus_real_only": -10
+  },
+  "generated_at_utc": "2026-10-18T18:33:41.319450+00:00",
+  "integrity_and_provenance": {
+    "all_final_checkpoint_hashes_unchanged": true,
+    "development_artifact_count": 36,
+    "development_artifacts_unchanged": true,
+    "development_snapshot_sha256_after": "c8590f0312a1909ad59b375bac7760b5643aca6f689471596c2c6a8e4ffcb321",
+    "development_snapshot_sha256_before": "c8590f0312a1909ad59b375bac7760b5643aca6f689471596c2c6a8e4ffcb321",
+    "fixed_final_checkpoint_real_transitions": 300000,
+    "fixed_final_checkpoint_rl_updates": 30000,
+    "no_best_checkpoint_selection": true,
+    "no_policy_parameter_change_during_validation": true,
+    "no_retraining": true,
+    "paper_final": {
+      "episode_count": 0,
+      "opened_at": null,
+      "state": "SEALED"
+    },
+    "pre_validation_integrity_passed": true,
+    "scientific_frozen_hashes_pass": true
+  },
+  "numerical_instability": {
+    "all_values_finite": true,
+    "any": true,
+    "final_alpha": 7056.361328125,
+    "final_gate_breaches": {
+      "critic_loss": {
+        "threshold": 1000000.0,
+        "value": 2242828837.177812
+      },
+      "target_magnitude": {
+        "threshold": 1000000.0,
+        "value": 4272062.734213751
+      }
+    },
+    "final_lambda_deadline": 3.6892197997018394,
+    "final_lambda_speed": 1.8749228157373476,
+    "first_gate_breach": {
+      "checkpoint": 200000,
+      "metric": "critic_loss",
+      "threshold": 1000000.0,
+      "value": 5657317.967916231
+    },
+    "interpretation": "Evidence consistent with long-horizon target instability; no new causal claim is made.",
+    "multiplier_threshold_breached": false,
+    "non_finite_observed": false,
+    "run": "physics_mve-seed-47"
+  },
+  "runtime_and_accounting": {
+    "main_training": {
+      "checkpoint_write_seconds_total": 1905.622574415116,
+      "host_sleep_and_contention_included_in_wall_time": true,
+      "launchd_last_exit_code": 0,
+      "launchd_unloaded_after_completion": true,
+      "matrix_wall_span_seconds": 441677.07724,
+      "maximum_peak_rss_kb": 1760016,
+      "observed_peak_run_directory_kb": 11054420,
+      "observed_process_cpu_seconds_lower_bound": 123471.82,
+      "real_only_process_cpu_seconds_aggregate": 5568.69,
+      "retained_run_directory_kb_after_cleanup": 4989248,
+      "sum_policy_wall_seconds": 441675.016492
+    },
+    "main_training_matrix_totals": {
+      "model_target_transitions": 1354069340,
+      "policies": 6,
+      "real_transitions": 1800000,
+      "rl_gradient_updates": 180000,
+      "synthetic_transitions": 0
+    },
+    "validation_simulator_transitions": 74961,
+    "validation_training_updates": 0,
+    "validation_wall_seconds": 40.85457
+  },
+  "schema_version": 1,
+  "scope": "single_preregistered_validation_opening",
+  "study": "multistep-exact-physics-value-expansion-v1",
+  "training_configuration_sha256": "d73b05bdffa725b0a0c5a7d831bc926328ec8eb6629d2147fa9fd6dfe709a42a",
+  "validation": {
+    "each_final_policy_evaluated_once_per_track": true,
+    "episode_count": 54,
+    "episodes_per_policy": 9,
+    "evaluated_at": "2026-10-18T18:32:22.945585+00:00",
+    "opened_at": "2026-10-18T18:31:42.091015+00:00",
+    "opening_count": 1,
+    "per_policy": {
+      "matched_real_only-seed-11": {
+        "actor_state_sha256_after": "1a7c1ffef489dbe64dc455331dfe3f2d986dc339874fcc27a0dc32bc8db86e68",
+        "actor_state_sha256_before": "1a7c1ffef489dbe64dc455331dfe3f2d986dc339874fcc27a0dc32bc8db86e68",
+        "actor_unchanged": true,
+        "condition": "matched_real_only",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 14,
+            "action_total_variation": 6.825299978256226,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.0654410143068337,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 170.0475556271579,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 14.715930217913472,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.1439780858982895,
+            "mean_abs_action": 0.044465625517898136,
+            "mean_abs_action_change": 0.0037939410662902865,
+            "mean_abs_jerk_m_s3": 0.12710892773074342,
+            "regenerative_energy_kwh": 0.006888184263959745,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.07232919857079347,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 51,
+            "action_total_variation": 74.17435336112976,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.16055869273229353,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 641.1173232330676,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 23.104439623116786,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.47115581930654277,
+            "mean_abs_action": 0.15086297978957494,
+            "mean_abs_action_change": 0.04123088013403544,
+            "mean_abs_jerk_m_s3": 1.253400514292398,
+            "regenerative_energy_kwh": 0.07006120532670364,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.23061989805899705,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 122,
+            "action_total_variation": 165.19700288772583,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.2624235630156075,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 995.073331825562,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 32.19920711207138,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.9946634437627299,
+            "mean_abs_action": 0.32590896553463405,
+            "mean_abs_action_change": 0.09182712778639568,
+            "mean_abs_jerk_m_s3": 2.7694938601250545,
+            "regenerative_energy_kwh": 0.10607614091287235,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.3684997039284792,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 23,
+            "action_total_variation": 28.378681480884552,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.14472905855107812,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 542.0260648267979,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 38.11862506636132,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.5277240578065711,
+            "mean_abs_action": 0.17676269309388268,
+            "mean_abs_action_change": 0.0157746978770898,
+            "mean_abs_jerk_m_s3": 0.4889887639980942,
+            "regenerative_energy_kwh": 0.03920753168577466,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.1839365902368527,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 84,
+            "action_total_variation": 106.75734043121338,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.24240419014930592,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.1519498466504,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 35.79284457484924,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.9551421559248855,
+            "mean_abs_action": 0.3118845295986073,
+            "mean_abs_action_change": 0.07169734078657715,
+            "mean_abs_jerk_m_s3": 2.1572412601566744,
+            "regenerative_energy_kwh": 0.09796188487522228,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1490,
+            "traction_energy_kwh": 0.34036607502452737,
+            "travel_time_s": 148.99999999999582
+          },
+          {
+            "acceleration_sign_change_count": 72,
+            "action_total_variation": 104.36804437637329,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.23051806584690723,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 916.6839654082661,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 53.31138733327151,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.9471825118388549,
+            "mean_abs_action": 0.30882943229542836,
+            "mean_abs_action_change": 0.05801447714084119,
+            "mean_abs_jerk_m_s3": 1.751625740149205,
+            "regenerative_energy_kwh": 0.09772084445472178,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.3282389103016288,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 242,
+            "action_total_variation": 380.6281386613846,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.2740203002294645,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.5654913031553,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 33.173472491760734,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 1.531965245123514,
+            "mean_abs_action": 0.5081020282409027,
+            "mean_abs_action_change": 0.24828971863104018,
+            "mean_abs_jerk_m_s3": 7.479535068289392,
+            "regenerative_energy_kwh": 0.14894034398956915,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1534,
+            "traction_energy_kwh": 0.4229606442190336,
+            "travel_time_s": 153.39999999999557
+          },
+          {
+            "acceleration_sign_change_count": 67,
+            "action_total_variation": 67.16806757450104,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.1865376058927419,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 853.2293299287888,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 34.37260842697447,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.8574615300759769,
+            "mean_abs_action": 0.27775032927592597,
+            "mean_abs_action_change": 0.03733633550555922,
+            "mean_abs_jerk_m_s3": 1.1226951516798622,
+            "regenerative_energy_kwh": 0.07717833621885553,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.26371594211159716,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 15,
+            "action_total_variation": 18.87518846988678,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.11262560798652652,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 441.15117637603106,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 21.220705760205966,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.33226944053311686,
+            "mean_abs_action": 0.10318541232082579,
+            "mean_abs_action_change": 0.010492044730342846,
+            "mean_abs_jerk_m_s3": 0.331060685926982,
+            "regenerative_energy_kwh": 0.032423470636867596,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.14504907862339417,
+            "travel_time_s": 179.99999999999406
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "994568f614c9d2428b805fafafc9526717fa2d6e4ca73783adfcb361feb4090d",
+        "metrics": {
+          "counts": {
+            "completion": 2,
+            "deadline_compliance": 0,
+            "requirement_satisfaction": 0,
+            "speed_compliance": 9
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "completed_too_slowly": 2,
+            "partial_progress_or_crawling": 7
+          },
+          "feasible_only_energy": {
+            "mean_kwh": null,
+            "median_kwh": null,
+            "sample_count": 0
+          },
+          "integrated_speed_violation_m": {
+            "mean": 0.0,
+            "total": 0.0
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 0.0,
+            "mean": 0.0
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 0.2222222222222222,
+            "episode_count": 9,
+            "incomplete_rate": 0.7777777777777778,
+            "mean_abs_jerk_m_s3": 1.9423499969276006,
+            "mean_action_total_variation": 105.81912413570616,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_abs_jerk_m_s3": 31.778802289613875,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_regenerative_energy_kwh": 0.07516199359606074,
+            "mean_speed_violation_count": 0.0,
+            "mean_traction_energy_kwh": 0.2617462267861448,
+            "mean_travel_time_s": 173.59999999999442,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 179.99999999999406,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 1.0,
+            "speed_violation_rate": 0.0,
+            "time_violation_rate": 1.0
+          },
+          "simulator_transitions": 15624,
+          "travel_time_s": {
+            "maximum": 179.99999999999406,
+            "mean": 173.59999999999442,
+            "median": 179.99999999999406,
+            "minimum": 148.99999999999582
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/matched_real_only-seed-11.json",
+        "raw_result_sha256": "aa337605b8e7f870194eb04dec1d7c7f4256c0b18947776bc3568e5b9dcdbcb1",
+        "training_seed": 11
+      },
+      "matched_real_only-seed-29": {
+        "actor_state_sha256_after": "1a56f44a059bffce3dfba86ddc8f5f5ef903bb815e970747204807fef226cc6f",
+        "actor_state_sha256_before": "1a56f44a059bffce3dfba86ddc8f5f5ef903bb815e970747204807fef226cc6f",
+        "actor_unchanged": true,
+        "condition": "matched_real_only",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 24,
+            "action_total_variation": 16.24441361427307,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.18273533435214992,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.9257264986622,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 29.58069322652386,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.7052416352610739,
+            "mean_abs_action": 0.2477795832797071,
+            "mean_abs_action_change": 0.019315592882607695,
+            "mean_abs_jerk_m_s3": 0.6196784629457164,
+            "regenerative_energy_kwh": 0.05745489572343199,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 842,
+            "traction_energy_kwh": 0.24019023007558205,
+            "travel_time_s": 84.19999999999949
+          },
+          {
+            "acceleration_sign_change_count": 292,
+            "action_total_variation": 7.366974592208862,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.16827836066954854,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.8572804470185,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 28.377086853803373,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.3579399468959466,
+            "mean_abs_action": 0.15010572488592788,
+            "mean_abs_action_change": 0.008158332881737389,
+            "mean_abs_jerk_m_s3": 0.26684445676232105,
+            "regenerative_energy_kwh": 0.020200700920931614,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 904,
+            "traction_energy_kwh": 0.18847906159048022,
+            "travel_time_s": 90.39999999999914
+          },
+          {
+            "acceleration_sign_change_count": 193,
+            "action_total_variation": 10.547520279884338,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.17839395850935574,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.828677040092,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 28.32155583633939,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.24463084050383532,
+            "mean_abs_action": 0.1101584992213556,
+            "mean_abs_action_change": 0.006857945565594498,
+            "mean_abs_jerk_m_s3": 0.2121609484394571,
+            "regenerative_energy_kwh": 0.029412701792702015,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1539,
+            "traction_energy_kwh": 0.2078066603020578,
+            "travel_time_s": 153.89999999999554
+          },
+          {
+            "acceleration_sign_change_count": 22,
+            "action_total_variation": 20.11650562286377,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.25433724850341555,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 971.3801975484962,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 30.08733632528717,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.3769907300879899,
+            "mean_abs_action": 0.14228573517666923,
+            "mean_abs_action_change": 0.011182048706427887,
+            "mean_abs_jerk_m_s3": 0.3479919654391421,
+            "regenerative_energy_kwh": 0.02365776662137031,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.27799501512478575,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 70,
+            "action_total_variation": 8.110445737838745,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.1762205329296611,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.8708472977012,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 29.568874519629116,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.37437215456693557,
+            "mean_abs_action": 0.15889236125035014,
+            "mean_abs_action_change": 0.008250707769927514,
+            "mean_abs_jerk_m_s3": 0.2662769483475028,
+            "regenerative_energy_kwh": 0.030264255893186858,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 984,
+            "traction_energy_kwh": 0.20648478882284801,
+            "travel_time_s": 98.39999999999868
+          },
+          {
+            "acceleration_sign_change_count": 59,
+            "action_total_variation": 10.477841973304749,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.16309368650299275,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.2375110742194,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 29.37914436447651,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.4879315532349287,
+            "mean_abs_action": 0.18268421597656656,
+            "mean_abs_action_change": 0.010746504588004871,
+            "mean_abs_jerk_m_s3": 0.3516278141118347,
+            "regenerative_energy_kwh": 0.041290469400488326,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 976,
+            "traction_energy_kwh": 0.20438415590348127,
+            "travel_time_s": 97.59999999999873
+          },
+          {
+            "acceleration_sign_change_count": 251,
+            "action_total_variation": 3.879435181617737,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.13703600006099145,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 794.6057835917425,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 18.38107521572177,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.06799637517634337,
+            "mean_abs_action": 0.06210594213671154,
+            "mean_abs_action_change": 0.002156439789670782,
+            "mean_abs_jerk_m_s3": 0.07483094637173485,
+            "regenerative_energy_kwh": 0.00013721471355695788,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.1371732147745484,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 29,
+            "action_total_variation": 20.3464298248291,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.16314528068184578,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 861.8005304444672,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 30.329660867785755,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.35435049491202075,
+            "mean_abs_action": 0.12662883361180624,
+            "mean_abs_action_change": 0.011309855377892775,
+            "mean_abs_jerk_m_s3": 0.36123025912018225,
+            "regenerative_energy_kwh": 0.031437885021333316,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.19458316570317916,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 23,
+            "action_total_variation": 15.599232375621796,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.1531021883517607,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 805.7992367894375,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 28.376096309714857,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.30856967582566197,
+            "mean_abs_action": 0.29268327706389957,
+            "mean_abs_action_change": 0.008671057462824788,
+            "mean_abs_jerk_m_s3": 0.2801796007612383,
+            "regenerative_energy_kwh": 0.034242953594652216,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.18734514194641294,
+            "travel_time_s": 179.99999999999406
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "f32757afc979166793ba2f3725df7511af728dd446de1b2ded4d482a3034f5e8",
+        "metrics": {
+          "counts": {
+            "completion": 5,
+            "deadline_compliance": 4,
+            "requirement_satisfaction": 4,
+            "speed_compliance": 9
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "completed_too_slowly": 1,
+            "fully_feasible": 4,
+            "partial_progress_or_crawling": 4
+          },
+          "feasible_only_energy": {
+            "mean_kwh": 0.1725819786135881,
+            "median_kwh": 0.17224944679960483,
+            "sample_count": 4
+          },
+          "integrated_speed_violation_m": {
+            "mean": 0.0,
+            "total": 0.0
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 0.0,
+            "mean": 0.0
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 0.5555555555555556,
+            "episode_count": 9,
+            "incomplete_rate": 0.4444444444444444,
+            "mean_abs_jerk_m_s3": 0.3089801558110144,
+            "mean_action_total_variation": 12.52097768916024,
+            "mean_feasible_energy_kwh": 0.1725819786135881,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_abs_jerk_m_s3": 28.044613724364645,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_regenerative_energy_kwh": 0.02978876040907262,
+            "mean_speed_violation_count": 0.0,
+            "mean_traction_energy_kwh": 0.20493793713815286,
+            "mean_travel_time_s": 138.2777777777742,
+            "median_feasible_energy_kwh": 0.17224944679960483,
+            "median_travel_time_s": 153.89999999999554,
+            "requirement_satisfaction_rate": 0.4444444444444444,
+            "speed_compliance_rate": 1.0,
+            "speed_violation_rate": 0.0,
+            "time_violation_rate": 0.5555555555555556
+          },
+          "simulator_transitions": 12445,
+          "travel_time_s": {
+            "maximum": 179.99999999999406,
+            "mean": 138.2777777777742,
+            "median": 153.89999999999554,
+            "minimum": 84.19999999999949
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/matched_real_only-seed-29.json",
+        "raw_result_sha256": "9bcff44394907bf790a3e306834a2664977e1b0207137cdc664c59dcde9068f9",
+        "training_seed": 29
+      },
+      "matched_real_only-seed-47": {
+        "actor_state_sha256_after": "20f353cb8228e086f8f9b86760215522a8a560901dc33b5234041aa662e79f08",
+        "actor_state_sha256_before": "20f353cb8228e086f8f9b86760215522a8a560901dc33b5234041aa662e79f08",
+        "actor_unchanged": true,
+        "condition": "matched_real_only",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 16,
+            "action_total_variation": 7.067556619644165,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.16784271165357229,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.9592259604881,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 18.239277206931625,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.23926755010850487,
+            "mean_abs_action": 0.12310192124130799,
+            "mean_abs_action_change": 0.007293660082192121,
+            "mean_abs_jerk_m_s3": 0.25194581419490836,
+            "regenerative_energy_kwh": 0.008625726498156423,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 970,
+            "traction_energy_kwh": 0.17646843815172858,
+            "travel_time_s": 96.99999999999876
+          },
+          {
+            "acceleration_sign_change_count": 76,
+            "action_total_variation": 5.9995986223220825,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.16802072774050902,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.582287122679,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 23.15516928344634,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.2506079231369653,
+            "mean_abs_action": 0.12922493742543018,
+            "mean_abs_action_change": 0.006556938385051456,
+            "mean_abs_jerk_m_s3": 0.23125316556811076,
+            "regenerative_energy_kwh": 0.008777748897165507,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 916,
+            "traction_energy_kwh": 0.17679847663767445,
+            "travel_time_s": 91.59999999999907
+          },
+          {
+            "acceleration_sign_change_count": 118,
+            "action_total_variation": 86.5030677318573,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.183084893710755,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.7110622898794,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 27.977102829096314,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.4401136154962354,
+            "mean_abs_action": 0.172053254541061,
+            "mean_abs_action_change": 0.06277435974735653,
+            "mean_abs_jerk_m_s3": 1.9181094308883817,
+            "regenerative_energy_kwh": 0.03500962281448912,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1379,
+            "traction_energy_kwh": 0.21809451652524417,
+            "travel_time_s": 137.89999999999645
+          },
+          {
+            "acceleration_sign_change_count": 23,
+            "action_total_variation": 13.241448044776917,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.19448097624708272,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.7522473832036,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 30.12646910957356,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.23309988739906276,
+            "mean_abs_action": 0.11859080149330545,
+            "mean_abs_action_change": 0.008910799491774507,
+            "mean_abs_jerk_m_s3": 0.28583184679682305,
+            "regenerative_energy_kwh": 0.008784646232467103,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1487,
+            "traction_energy_kwh": 0.20326562247954996,
+            "travel_time_s": 148.69999999999584
+          },
+          {
+            "acceleration_sign_change_count": 42,
+            "action_total_variation": 7.404045224189758,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.1704299893798933,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.4856943234997,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 23.907878914475997,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.27585117129498105,
+            "mean_abs_action": 0.1305788458585739,
+            "mean_abs_action_change": 0.007411456680870629,
+            "mean_abs_jerk_m_s3": 0.2574671144581741,
+            "regenerative_energy_kwh": 0.011766616786554177,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1000,
+            "traction_energy_kwh": 0.18219660616644762,
+            "travel_time_s": 99.9999999999986
+          },
+          {
+            "acceleration_sign_change_count": 57,
+            "action_total_variation": 10.279953122138977,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.16117014005467448,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.3438285831003,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 24.547074777264605,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.30049990022207973,
+            "mean_abs_action": 0.1373036936968422,
+            "mean_abs_action_change": 0.009865598005891534,
+            "mean_abs_jerk_m_s3": 0.3246334034450878,
+            "regenerative_energy_kwh": 0.018692545679398143,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1043,
+            "traction_energy_kwh": 0.1798626857340726,
+            "travel_time_s": 104.29999999999835
+          },
+          {
+            "acceleration_sign_change_count": 327,
+            "action_total_variation": 279.71055245399475,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.1811600202848852,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.4774467227519,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 10.48106776889206,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.7673053431322584,
+            "mean_abs_action": 0.2602452657594213,
+            "mean_abs_action_change": 0.17373326239378556,
+            "mean_abs_jerk_m_s3": 5.269724273845598,
+            "regenerative_energy_kwh": 0.08154421644799632,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1611,
+            "traction_energy_kwh": 0.262704236732882,
+            "travel_time_s": 161.09999999999513
+          },
+          {
+            "acceleration_sign_change_count": 38,
+            "action_total_variation": 19.217866897583008,
+            "completed": true,
+            "deadline_compliant": false,
+            "energy_kwh": 0.1948972438111463,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "completed_too_slowly",
+            "feasible": false,
+            "final_position_m": 1000.4550885544626,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 29.025891226120994,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.2828190310995291,
+            "mean_abs_action": 0.1324142477216533,
+            "mean_abs_action_change": 0.011811841977617091,
+            "mean_abs_jerk_m_s3": 0.36820041875063364,
+            "regenerative_energy_kwh": 0.01989972186871208,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1628,
+            "traction_energy_kwh": 0.2147969656798583,
+            "travel_time_s": 162.79999999999504
+          },
+          {
+            "acceleration_sign_change_count": 81,
+            "action_total_variation": 27.26163649559021,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.1644683331877522,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "fully_feasible",
+            "feasible": true,
+            "final_position_m": 1000.0008866934168,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 27.73419309930731,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.29857522824876886,
+            "mean_abs_action": 0.12758182787270136,
+            "mean_abs_action_change": 0.020436009367009154,
+            "mean_abs_jerk_m_s3": 0.637969344151045,
+            "regenerative_energy_kwh": 0.02027562688608363,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1335,
+            "traction_energy_kwh": 0.18474396007383578,
+            "travel_time_s": 133.4999999999967
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "e0262a618f0435f85b792286cdbd9aebb3a6958e01a88ae101724ed8c98cade6",
+        "metrics": {
+          "counts": {
+            "completion": 9,
+            "deadline_compliance": 6,
+            "requirement_satisfaction": 6,
+            "speed_compliance": 9
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "completed_too_slowly": 3,
+            "fully_feasible": 6
+          },
+          "feasible_only_energy": {
+            "mean_kwh": 0.16916946595452606,
+            "median_kwh": 0.16793171969704065,
+            "sample_count": 6
+          },
+          "integrated_speed_violation_m": {
+            "mean": 0.0,
+            "total": 0.0
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 0.0,
+            "mean": 0.0
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 1.0,
+            "episode_count": 9,
+            "incomplete_rate": 0.0,
+            "mean_abs_jerk_m_s3": 1.0605705346776402,
+            "mean_action_total_variation": 50.74285835689969,
+            "mean_feasible_energy_kwh": 0.16916946595452606,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_abs_jerk_m_s3": 23.910458246123202,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_regenerative_energy_kwh": 0.023708496901224722,
+            "mean_speed_violation_count": 0.0,
+            "mean_traction_energy_kwh": 0.19988127868681038,
+            "mean_travel_time_s": 126.32222222221932,
+            "median_feasible_energy_kwh": 0.16793171969704065,
+            "median_travel_time_s": 133.4999999999967,
+            "requirement_satisfaction_rate": 0.6666666666666666,
+            "speed_compliance_rate": 1.0,
+            "speed_violation_rate": 0.0,
+            "time_violation_rate": 0.3333333333333333
+          },
+          "simulator_transitions": 11369,
+          "travel_time_s": {
+            "maximum": 162.79999999999504,
+            "mean": 126.32222222221932,
+            "median": 133.4999999999967,
+            "minimum": 91.59999999999907
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/matched_real_only-seed-47.json",
+        "raw_result_sha256": "2eff7560402302d8f7d537009479261f5d5c1b43afd0ce9501d90ceff4669ec8",
+        "training_seed": 47
+      },
+      "physics_mve-seed-11": {
+        "actor_state_sha256_after": "f87fc7b0a74679c5b167d686ddcd7049371ae71e74b0d81e51d22281dc5f9457",
+        "actor_state_sha256_before": "f87fc7b0a74679c5b167d686ddcd7049371ae71e74b0d81e51d22281dc5f9457",
+        "actor_unchanged": true,
+        "condition": "physics_mve",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 8,
+            "action_total_variation": 3.0093307495117188,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.08417385986204456,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 200.15673926348254,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 19.652592661760167,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.030791207185720884,
+            "mean_abs_action": 0.0478766342997551,
+            "mean_abs_action_change": 0.0016727797384723283,
+            "mean_abs_jerk_m_s3": 0.043671726102591214,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.08417385986204456,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 673,
+            "action_total_variation": 7.500133633613586,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.11632574905438935,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 378.64450026375454,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 20.32422344856532,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.029556029969952144,
+            "mean_abs_action": 0.04904175543122821,
+            "mean_abs_action_change": 0.004169057050368864,
+            "mean_abs_jerk_m_s3": 0.13550575222225958,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.11632574905438935,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 1584,
+            "action_total_variation": 2470.011649250984,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.1585499426145823,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 216.8991846912565,
+            "integrated_speed_violation_m": 14.305677141554751,
+            "max_abs_jerk_m_s3": 41.11718878178658,
+            "max_speed_violation_m_s": 8.055400121648171,
+            "mean_abs_acceleration_m_s2": 1.2664879555451032,
+            "mean_abs_action": 0.7489581248164177,
+            "mean_abs_action_change": 1.3729914670655832,
+            "mean_abs_jerk_m_s3": 21.877451374832873,
+            "regenerative_energy_kwh": 0.02404798913271201,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.1825979317472967,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 1,
+            "action_total_variation": 4.257035732269287,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.08082683310762338,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 145.2897487543508,
+            "integrated_speed_violation_m": 8.667457150460312,
+            "max_abs_jerk_m_s3": 35.543476359354834,
+            "max_speed_violation_m_s": 6.5592091249098505,
+            "mean_abs_acceleration_m_s2": 0.1654507494554554,
+            "mean_abs_action": 0.06285556909110811,
+            "mean_abs_action_change": 0.002366334481528231,
+            "mean_abs_jerk_m_s3": 0.07017553233466647,
+            "regenerative_energy_kwh": 0.019770604436246772,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.10059743754386997,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 1713,
+            "action_total_variation": 2568.2390427589417,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.20355705291428988,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 170.10621790871357,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 48.748366388443266,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 1.997970740398794,
+            "mean_abs_action": 0.7180184681548013,
+            "mean_abs_action_change": 1.4275925751856262,
+            "mean_abs_jerk_m_s3": 39.8038026156766,
+            "regenerative_energy_kwh": 0.00029061466711859666,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.2038476675814085,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 165,
+            "action_total_variation": 2.958339810371399,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.10124135378290086,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 395.1889279153782,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 28.77551783359499,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.06954527459865184,
+            "mean_abs_action": 0.04614213645458221,
+            "mean_abs_action_change": 0.001644435692257587,
+            "mean_abs_jerk_m_s3": 0.061400690268372846,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.10124135378290086,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 1549,
+            "action_total_variation": 2384.0088416337967,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.15295040013930497,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 200.85939726541193,
+            "integrated_speed_violation_m": 9.133370503161649,
+            "max_abs_jerk_m_s3": 42.480892691317855,
+            "max_speed_violation_m_s": 5.868001582578815,
+            "mean_abs_acceleration_m_s2": 1.2177246129776045,
+            "mean_abs_action": 0.7162082258197996,
+            "mean_abs_action_change": 1.3251855706691478,
+            "mean_abs_jerk_m_s3": 21.45434935734894,
+            "regenerative_energy_kwh": 0.01720713292811914,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.17015753306742576,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 7,
+            "action_total_variation": 11.150595724582672,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.13867945223992165,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 385.17864214824556,
+            "integrated_speed_violation_m": 25.02237204200929,
+            "max_abs_jerk_m_s3": 50.7744861875722,
+            "max_speed_violation_m_s": 10.539034839510075,
+            "mean_abs_acceleration_m_s2": 0.2723431622648063,
+            "mean_abs_action": 0.2997468890746435,
+            "mean_abs_action_change": 0.006198218857466744,
+            "mean_abs_jerk_m_s3": 0.18889039174364158,
+            "regenerative_energy_kwh": 0.045900788133316585,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.18458024037323814,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 1,
+            "action_total_variation": 0.5483776330947876,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04921305784869344,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "partial_progress_or_crawling",
+            "feasible": false,
+            "final_position_m": 49.81686006309643,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 5.43698787689209,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.008709109514335282,
+            "mean_abs_action": 0.02329743458165063,
+            "mean_abs_action_change": 0.0003048235870454628,
+            "mean_abs_jerk_m_s3": 0.00663857596024703,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04921305784869344,
+            "travel_time_s": 179.99999999999406
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "8125ed0cc385e0eead5435e82f9d35b2a69607b1ce54aad8f7b30cc9ea566d9b",
+        "metrics": {
+          "counts": {
+            "completion": 0,
+            "deadline_compliance": 0,
+            "requirement_satisfaction": 0,
+            "speed_compliance": 5
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "partial_progress_or_crawling": 9
+          },
+          "feasible_only_energy": {
+            "mean_kwh": null,
+            "median_kwh": null,
+            "sample_count": 0
+          },
+          "integrated_speed_violation_m": {
+            "mean": 6.3476529819095555,
+            "total": 57.128876837186
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 10.539034839510075,
+            "mean": 3.4468495187385457
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 0.0,
+            "episode_count": 9,
+            "incomplete_rate": 1.0,
+            "mean_abs_jerk_m_s3": 9.293542890721133,
+            "mean_action_total_variation": 827.9648163252407,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 6.3476529819095555,
+            "mean_max_abs_jerk_m_s3": 32.53930358103192,
+            "mean_max_speed_violation_m_s": 3.4468495187385457,
+            "mean_regenerative_energy_kwh": 0.011913014366390345,
+            "mean_speed_violation_count": 0.4444444444444444,
+            "mean_traction_energy_kwh": 0.1325260923179186,
+            "mean_travel_time_s": 179.99999999999406,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 179.99999999999406,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.5555555555555556,
+            "speed_violation_rate": 0.4444444444444444,
+            "time_violation_rate": 1.0
+          },
+          "simulator_transitions": 16200,
+          "travel_time_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/physics_mve-seed-11.json",
+        "raw_result_sha256": "99cbbed3a225f6ae25f792d851b0e52ec030bd70fb0d551bd00123f5d15e835c",
+        "training_seed": 11
+      },
+      "physics_mve-seed-29": {
+        "actor_state_sha256_after": "13ee0d46ec0759285e679eeb81b81a51f98a1eb0cf0f64693a558b0643b979a6",
+        "actor_state_sha256_before": "13ee0d46ec0759285e679eeb81b81a51f98a1eb0cf0f64693a558b0643b979a6",
+        "actor_unchanged": true,
+        "condition": "physics_mve",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.024024486541748047,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5003281690970368,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.0202345583409,
+            "integrated_speed_violation_m": 368.14822209353633,
+            "max_abs_jerk_m_s3": 9.969379901885986,
+            "max_speed_violation_m_s": 20.333333333333332,
+            "mean_abs_acceleration_m_s2": 1.0662824207492794,
+            "mean_abs_action": 0.9993317072260964,
+            "mean_abs_action_change": 6.943493220158395e-05,
+            "mean_abs_jerk_m_s3": 0.17264900560282104,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5003281690970368,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0063179731369018555,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5004821343048479,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.4871414883243,
+            "integrated_speed_violation_m": 436.85758729896344,
+            "max_abs_jerk_m_s3": 9.99454379081726,
+            "max_speed_violation_m_s": 22.15691979125229,
+            "mean_abs_acceleration_m_s2": 1.066282420749279,
+            "mean_abs_action": 0.9998993090319015,
+            "mean_abs_action_change": 1.8260037967924436e-05,
+            "mean_abs_jerk_m_s3": 0.17289592586720864,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5004821343048479,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.019370436668395996,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.500350616266742,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.0980559512316,
+            "integrated_speed_violation_m": 568.1972200834882,
+            "max_abs_jerk_m_s3": 9.977242946624756,
+            "max_speed_violation_m_s": 28.666666666666664,
+            "mean_abs_acceleration_m_s2": 1.0662824207492798,
+            "mean_abs_action": 0.9994612227942826,
+            "mean_abs_action_change": 5.598392100692484e-05,
+            "mean_abs_jerk_m_s3": 0.1726731999250847,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.500350616266742,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.035672664642333984,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5003403757044194,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.0701847464699,
+            "integrated_speed_violation_m": 478.7249044342802,
+            "max_abs_jerk_m_s3": 9.977242946624756,
+            "max_speed_violation_m_s": 31.444444444444443,
+            "mean_abs_acceleration_m_s2": 1.0662824207492803,
+            "mean_abs_action": 0.9993170953277896,
+            "mean_abs_action_change": 0.00010310018682755486,
+            "mean_abs_jerk_m_s3": 0.17269477267799546,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5003403757044194,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0063800811767578125,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5004814928663324,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.489554436231,
+            "integrated_speed_violation_m": 467.17325335834204,
+            "max_abs_jerk_m_s3": 9.995238780975342,
+            "max_speed_violation_m_s": 21.993137249178734,
+            "mean_abs_acceleration_m_s2": 1.0662824207492803,
+            "mean_abs_action": 0.9999016203866569,
+            "mean_abs_action_change": 1.8439540973288475e-05,
+            "mean_abs_jerk_m_s3": 0.17289658967209537,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5004814928663324,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.018211960792541504,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5002987597313278,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1002.9250537523686,
+            "integrated_speed_violation_m": 405.26043892123926,
+            "max_abs_jerk_m_s3": 9.966682195663452,
+            "max_speed_violation_m_s": 25.88888888888889,
+            "mean_abs_acceleration_m_s2": 1.0662824207492796,
+            "mean_abs_action": 0.9992791960493632,
+            "mean_abs_action_change": 5.263572483393498e-05,
+            "mean_abs_jerk_m_s3": 0.17254507206051914,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 2,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5002987597313278,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.013140559196472168,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5003599013676423,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.1255489408015,
+            "integrated_speed_violation_m": 715.1817804838362,
+            "max_abs_jerk_m_s3": 9.978214502334595,
+            "max_speed_violation_m_s": 28.666666666666664,
+            "mean_abs_acceleration_m_s2": 1.0662824207492794,
+            "mean_abs_action": 0.9995369378702785,
+            "mean_abs_action_change": 3.7978494787491816e-05,
+            "mean_abs_jerk_m_s3": 0.1726980741333768,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5003599013676423,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.04768693447113037,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5002746327566838,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1002.8548576257655,
+            "integrated_speed_violation_m": 556.259539699241,
+            "max_abs_jerk_m_s3": 9.96597170829773,
+            "max_speed_violation_m_s": 31.444444444444443,
+            "mean_abs_acceleration_m_s2": 1.0662824207492783,
+            "mean_abs_action": 0.999046089669813,
+            "mean_abs_action_change": 0.0001378235100321687,
+            "mean_abs_jerk_m_s3": 0.172562055741894,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5002746327566838,
+            "travel_time_s": 34.70000000000022
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.028590679168701172,
+            "completed": true,
+            "deadline_compliant": true,
+            "energy_kwh": 0.5003554639472494,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "completed_with_speed_violation",
+            "feasible": false,
+            "final_position_m": 1003.109637357344,
+            "integrated_speed_violation_m": 501.28245596996385,
+            "max_abs_jerk_m_s3": 9.975204467773438,
+            "max_speed_violation_m_s": 31.444444444444443,
+            "mean_abs_acceleration_m_s2": 1.0662824207492794,
+            "mean_abs_action": 0.9993980528641846,
+            "mean_abs_action_change": 8.263202071878951e-05,
+            "mean_abs_jerk_m_s3": 0.17268706639280748,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": false,
+            "speed_violation_count": 1,
+            "step_count": 347,
+            "traction_energy_kwh": 0.5003554639472494,
+            "travel_time_s": 34.70000000000022
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "66ca2345b311ad19f7455bf742316866a00cfdbd52f60bedfdf021fe77b767dd",
+        "metrics": {
+          "counts": {
+            "completion": 9,
+            "deadline_compliance": 9,
+            "requirement_satisfaction": 0,
+            "speed_compliance": 0
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "completed_with_speed_violation": 9
+          },
+          "feasible_only_energy": {
+            "mean_kwh": null,
+            "median_kwh": null,
+            "sample_count": 0
+          },
+          "integrated_speed_violation_m": {
+            "mean": 499.67615581587665,
+            "total": 4497.085402342891
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 31.444444444444443,
+            "mean": 26.893216214368877
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 1.0,
+            "episode_count": 9,
+            "incomplete_rate": 0.0,
+            "mean_abs_jerk_m_s3": 0.17270019578597806,
+            "mean_action_total_variation": 0.022155086199442547,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 499.67615581587665,
+            "mean_max_abs_jerk_m_s3": 9.977746804555258,
+            "mean_max_speed_violation_m_s": 26.893216214368877,
+            "mean_regenerative_energy_kwh": 0.0,
+            "mean_speed_violation_count": 1.1111111111111112,
+            "mean_traction_energy_kwh": 0.5003635051158091,
+            "mean_travel_time_s": 34.70000000000022,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 34.70000000000022,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 0.0,
+            "speed_violation_rate": 1.0,
+            "time_violation_rate": 0.0
+          },
+          "simulator_transitions": 3123,
+          "travel_time_s": {
+            "maximum": 34.70000000000022,
+            "mean": 34.70000000000022,
+            "median": 34.70000000000022,
+            "minimum": 34.70000000000022
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/physics_mve-seed-29.json",
+        "raw_result_sha256": "d936825952994f41948136f1175bd54e12fdc994f8f9b1c20c14d925abfc474d",
+        "training_seed": 29
+      },
+      "physics_mve-seed-47": {
+        "actor_state_sha256_after": "60b2ff7a93d81587299fc51b61adfa642767a72376155bbe4ce6bc0392a5b75a",
+        "actor_state_sha256_before": "60b2ff7a93d81587299fc51b61adfa642767a72376155bbe4ce6bc0392a5b75a",
+        "actor_unchanged": true,
+        "condition": "physics_mve",
+        "episodes": [
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3000,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992349743843079,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3001,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992409944534302,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3002,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992377758026123,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3003,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992377758026123,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3004,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992426037788391,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3005,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992340803146362,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3006,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992386698722839,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3007,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992321133613586,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          },
+          {
+            "acceleration_sign_change_count": 0,
+            "action_total_variation": 0.0,
+            "completed": false,
+            "deadline_compliant": false,
+            "energy_kwh": 0.04043848354770364,
+            "evaluation_seed": 3008,
+            "exclusive_failure_mode": "standstill",
+            "feasible": false,
+            "final_position_m": 0.0,
+            "integrated_speed_violation_m": 0.0,
+            "max_abs_jerk_m_s3": 0.0,
+            "max_speed_violation_m_s": 0.0,
+            "mean_abs_acceleration_m_s2": 0.0,
+            "mean_abs_action": 0.9992371797561646,
+            "mean_abs_action_change": 0.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "regenerative_energy_kwh": 0.0,
+            "speed_compliant": true,
+            "speed_violation_count": 0,
+            "step_count": 1800,
+            "traction_energy_kwh": 0.04043848354770364,
+            "travel_time_s": 179.99999999999406
+          }
+        ],
+        "evaluation_tracks": [
+          3000,
+          3001,
+          3002,
+          3003,
+          3004,
+          3005,
+          3006,
+          3007,
+          3008
+        ],
+        "fixed_checkpoint_real_transitions": 300000,
+        "fixed_checkpoint_sha256": "e1c02028c368111e2807ad75733112c0502d5118aa545795c96ba37ac21aa88e",
+        "metrics": {
+          "counts": {
+            "completion": 0,
+            "deadline_compliance": 0,
+            "requirement_satisfaction": 0,
+            "speed_compliance": 9
+          },
+          "episode_count": 9,
+          "exclusive_failure_modes": {
+            "standstill": 9
+          },
+          "feasible_only_energy": {
+            "mean_kwh": null,
+            "median_kwh": null,
+            "sample_count": 0
+          },
+          "integrated_speed_violation_m": {
+            "mean": 0.0,
+            "total": 0.0
+          },
+          "maximum_speed_violation_m_s": {
+            "maximum": 0.0,
+            "mean": 0.0
+          },
+          "shared_evaluation_summary": {
+            "completion_rate": 0.0,
+            "episode_count": 9,
+            "incomplete_rate": 1.0,
+            "mean_abs_jerk_m_s3": 0.0,
+            "mean_action_total_variation": 0.0,
+            "mean_feasible_energy_kwh": null,
+            "mean_integrated_speed_violation_m": 0.0,
+            "mean_max_abs_jerk_m_s3": 0.0,
+            "mean_max_speed_violation_m_s": 0.0,
+            "mean_regenerative_energy_kwh": 0.0,
+            "mean_speed_violation_count": 0.0,
+            "mean_traction_energy_kwh": 0.04043848354770364,
+            "mean_travel_time_s": 179.99999999999406,
+            "median_feasible_energy_kwh": null,
+            "median_travel_time_s": 179.99999999999406,
+            "requirement_satisfaction_rate": 0.0,
+            "speed_compliance_rate": 1.0,
+            "speed_violation_rate": 0.0,
+            "time_violation_rate": 1.0
+          },
+          "simulator_transitions": 16200,
+          "travel_time_s": {
+            "maximum": 179.99999999999406,
+            "mean": 179.99999999999406,
+            "median": 179.99999999999406,
+            "minimum": 179.99999999999406
+          }
+        },
+        "raw_result_path": "runs/multistep-physics-mbrl-v1/validation/physics_mve-seed-47.json",
+        "raw_result_sha256": "f29ee0ce5cf8d842109a171333f7fe7e77e3d5e8b436dd603f1d30a1522445d6",
+        "training_seed": 47
+      }
+    },
+    "policy_count": 6,
+    "pooled_by_condition": {
+      "matched_real_only": {
+        "counts": {
+          "completion": 16,
+          "deadline_compliance": 10,
+          "requirement_satisfaction": 10,
+          "speed_compliance": 27
+        },
+        "episode_count": 27,
+        "exclusive_failure_modes": {
+          "completed_too_slowly": 6,
+          "fully_feasible": 10,
+          "partial_progress_or_crawling": 11
+        },
+        "feasible_only_energy": {
+          "mean_kwh": 0.17053447101815086,
+          "median_kwh": 0.16814954420502878,
+          "sample_count": 10
+        },
+        "integrated_speed_violation_m": {
+          "mean": 0.0,
+          "total": 0.0
+        },
+        "maximum_speed_violation_m_s": {
+          "maximum": 0.0,
+          "mean": 0.0
+        },
+        "shared_evaluation_summary": {
+          "completion_rate": 0.5925925925925926,
+          "episode_count": 27,
+          "incomplete_rate": 0.4074074074074074,
+          "mean_abs_jerk_m_s3": 1.1039668958054185,
+          "mean_action_total_variation": 56.36098672725536,
+          "mean_feasible_energy_kwh": 0.17053447101815086,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_abs_jerk_m_s3": 27.911291420033905,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_regenerative_energy_kwh": 0.04288641696878603,
+          "mean_speed_violation_count": 0.0,
+          "mean_traction_energy_kwh": 0.22218848087036935,
+          "mean_travel_time_s": 146.06666666666266,
+          "median_feasible_energy_kwh": 0.16814954420502878,
+          "median_travel_time_s": 153.89999999999554,
+          "requirement_satisfaction_rate": 0.37037037037037035,
+          "speed_compliance_rate": 1.0,
+          "speed_violation_rate": 0.0,
+          "time_violation_rate": 0.6296296296296297
+        },
+        "simulator_transitions": 39438,
+        "travel_time_s": {
+          "maximum": 179.99999999999406,
+          "mean": 146.06666666666266,
+          "median": 153.89999999999554,
+          "minimum": 84.19999999999949
+        }
+      },
+      "physics_mve": {
+        "counts": {
+          "completion": 9,
+          "deadline_compliance": 9,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 14
+        },
+        "episode_count": 27,
+        "exclusive_failure_modes": {
+          "completed_with_speed_violation": 9,
+          "partial_progress_or_crawling": 9,
+          "standstill": 9
+        },
+        "feasible_only_energy": {
+          "mean_kwh": null,
+          "median_kwh": null,
+          "sample_count": 0
+        },
+        "integrated_speed_violation_m": {
+          "mean": 168.6746029325954,
+          "total": 4554.214279180076
+        },
+        "maximum_speed_violation_m_s": {
+          "maximum": 31.444444444444443,
+          "mean": 10.113355244369142
+        },
+        "shared_evaluation_summary": {
+          "completion_rate": 0.3333333333333333,
+          "episode_count": 27,
+          "incomplete_rate": 0.6666666666666666,
+          "mean_abs_jerk_m_s3": 3.155414362169037,
+          "mean_action_total_variation": 275.9956571371467,
+          "mean_feasible_energy_kwh": null,
+          "mean_integrated_speed_violation_m": 168.6746029325954,
+          "mean_max_abs_jerk_m_s3": 14.17235012852906,
+          "mean_max_speed_violation_m_s": 10.113355244369142,
+          "mean_regenerative_energy_kwh": 0.0039710047887967816,
+          "mean_speed_violation_count": 0.5185185185185185,
+          "mean_traction_energy_kwh": 0.22444269366047712,
+          "mean_travel_time_s": 131.56666666666277,
+          "median_feasible_energy_kwh": null,
+          "median_travel_time_s": 179.99999999999406,
+          "requirement_satisfaction_rate": 0.0,
+          "speed_compliance_rate": 0.5185185185185185,
+          "speed_violation_rate": 0.48148148148148145,
+          "time_violation_rate": 0.6666666666666666
+        },
+        "simulator_transitions": 35523,
+        "travel_time_s": {
+          "maximum": 179.99999999999406,
+          "mean": 131.56666666666277,
+          "median": 179.99999999999406,
+          "minimum": 34.70000000000022
+        }
+      }
+    },
+    "primary_comparison": {
+      "physics_mve_minus_matched_real_only": {
+        "completion": -7,
+        "deadline_compliance": -1,
+        "requirement_satisfaction": -10,
+        "speed_compliance": -13
+      }
+    },
+    "tracks": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008
+    ]
+  },
+  "validation_authorization_commit": "67660cba9a3f314241f039c71f49480551795832",
+  "validation_authorization_configuration_sha256": "af95595c6f42d977c5c7607335cc1a7c395529ab0564b58ccd01baaf55827ac6"
+}

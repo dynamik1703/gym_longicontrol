@@ -25,17 +25,27 @@ preregistered classification is **E — unstable**. See
 [`main_training_results.json`](main_training_results.json) for the complete result and
 execution provenance.
 
+## Validation result
+
+The single authorized Validation opening is complete. On tracks 3000--3008, matched
+real-only reaches 10/27 pooled RSR and Physics MVE reaches 0/27. The frozen Validation
+performance classification is **D -- degradation**; the overall study classification
+remains **E -- unstable** because the Development instability override had already
+triggered. See [`RESULTS.md`](RESULTS.md) and [`results.json`](results.json) for all 54
+compact episode records, Development-to-Validation comparisons, stability diagnostics,
+and provenance.
+
 ## Safety state
 
-`canonical.json` retains the reviewed main-training authorization as execution
-provenance. Validation and paper-final authorization remain false. `runner.py` checks
+`canonical.json` retains the reviewed main-training and one-time Validation
+authorizations as execution provenance. Paper-final authorization remains false. `runner.py` checks
 both `main_training_authorized` and `main_training_enabled` before it can collect a
 main-study transition. The completed launchd job exited successfully and was unloaded.
 
 Preparation used 1,024 simulator transitions for two 512-transition collection
 measurements, including the final explicitly seeded-0 benchmark, below the 5,000 cap.
 All physics semantic tests use synthetic tracks and exact dynamics. Validation
-3000–3008 and paper-final 4000–4017 remain sealed.
+3000--3008 is complete; paper-final 4000--4017 remains sealed and unopened.
 
 ## Execution commands
 
@@ -47,9 +57,9 @@ python -m benchmarks.multistep_physics_mbrl.runner status
 python -m benchmarks.multistep_physics_mbrl.runner prepare-launchd
 ```
 
-The last command only writes launch artifacts. Main training was enabled in the
-reviewed execution-authorization descendant and is now complete. Validation and paper
-test still require separate explicit authorization.
+The last command only writes launch artifacts. Main training and the single Validation
+opening are complete. Paper final still requires separate explicit authorization and
+remains sealed.
 
 See `DESIGN.md` for target equations, `PROTOCOL.md` for the preregistration,
 `SOURCE_AUDIT.md` for upstream semantics, and `RESOURCE_REPORT.md` for the compute
