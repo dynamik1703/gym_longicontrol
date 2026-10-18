@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "study": "multistep_physics_mbrl",
+  "scope": "development_only_main_training",
+  "authorization_commit": "7dc95d9",
+  "configuration_sha256": "d73b05bdffa725b0a0c5a7d831bc926328ec8eb6629d2147fa9fd6dfe709a42a",
+  "completion_time_utc": "2026-10-18T10:18:54.158167+00:00",
+  "fixed_final_checkpoint_real_transitions": 300000,
+  "matrix_totals": {
+    "policies": 6,
+    "real_transitions": 1800000,
+    "rl_gradient_updates": 180000,
+    "synthetic_transitions": 0,
+    "model_target_transitions": 1354069340
+  },
+  "reserved_splits": {
+    "development_tracks": "2000-2008",
+    "validation": "SEALED",
+    "validation_authorized": false,
+    "paper_test": "SEALED",
+    "paper_test_authorized": false
+  },
+  "pooled_development": {
+    "steps": [50000, 100000, 150000, 200000, 250000, 300000],
+    "matched_real_only": {
+      "rsr": [0, 3, 11, 16, 7, 13],
+      "completion": [0, 27, 27, 27, 23, 16],
+      "deadline": [0, 24, 20, 22, 21, 13],
+      "speed": [27, 4, 14, 19, 13, 26]
+    },
+    "physics_mve": {
+      "rsr": [0, 0, 1, 0, 4, 0],
+      "completion": [0, 1, 4, 9, 6, 9],
+      "deadline": [0, 0, 1, 9, 6, 9],
+      "speed": [27, 25, 25, 18, 23, 15]
+    },
+    "final_mve_minus_baseline": {
+      "rsr": -13,
+      "completion": -7,
+      "deadline": -4,
+      "speed": -11
+    }
+  },
+  "interpretation": {
+    "classification": "E",
+    "label": "unstable",
+    "reason": "physics_mve seed 47 first exceeded the critic-loss gate at 200000 real transitions and exceeded both the critic-loss and target-magnitude gates at 300000",
+    "development_efficacy_without_stability_override": "D",
+    "development_efficacy_reason": "physics_mve finished 13/27 RSR below matched_real_only and materially worsened completion and deadline compliance"
+  },
+  "policies": [
+    {
+      "run": "matched_real_only-seed-11",
+      "state": "COMPLETED",
+      "attempt_id": "4daa201b-8f3b-4096-a56d-4182326a41f6",
+      "resumed": false,
+      "final_checkpoint_sha256": "994568f614c9d2428b805fafafc9526717fa2d6e4ca73783adfcb361feb4090d",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 0},
+      "development": {
+        "rsr": [0, 3, 2, 3, 0, 2],
+        "completion": [0, 9, 9, 9, 9, 4],
+        "deadline": [0, 6, 6, 6, 9, 2],
+        "speed": [9, 4, 3, 4, 0, 9],
+        "mean_feasible_energy_kwh": [null, 0.1536333598218703, 0.16243107929253187, 0.17101728612880188, null, 0.2207156761568156]
+      },
+      "final_failure_modes": {"fully_feasible": 2, "completed_too_slowly": 2, "partial_progress_or_crawling": 5},
+      "late_collapse": {"peak_rsr": 3, "final_rsr": 2, "drop": 1, "flag": false},
+      "pid_real_episode_updates": 222,
+      "anticipatory_nonzero_probe_counts": [0, 0, 0, 0, 1, 0],
+      "stability": {
+        "lambda_speed": [0.0, 2.8285030680004364, 1.105057932559636, 1.621955983122045, 2.332436893290417, 2.141368117462012],
+        "lambda_deadline": [9.169187127659349, 5.64014094516136, 1.1324206239917256, 1.3848445840902686, 8.95064679411747, 1.6620454648850034],
+        "alpha": [0.2232547253370285, 0.05597502365708351, 0.015163981355726719, 0.012467099353671074, 0.008809450082480907, 0.0045278193429112434],
+        "max_abs_critic_loss": 0.5831644882989114,
+        "max_abs_actual_target": null,
+        "all_finite": true,
+        "numerically_unstable": false
+      },
+      "resources": {"wall_seconds": 3305.901432, "cpu_seconds": null, "cpu_note": "only the exact 5568.69-second aggregate for all three real-only policies was retained", "peak_rss_kb": 1106000, "checkpoint_write_seconds": 403.4061584159499, "retained_disk_kb": 838028}
+    },
+    {
+      "run": "matched_real_only-seed-29",
+      "state": "COMPLETED",
+      "attempt_id": "8e6415eb-e087-4089-85d4-15c3a1303636",
+      "resumed": false,
+      "final_checkpoint_sha256": "f32757afc979166793ba2f3725df7511af728dd446de1b2ded4d482a3034f5e8",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 0},
+      "development": {
+        "rsr": [0, 0, 5, 6, 4, 5],
+        "completion": [0, 9, 9, 9, 5, 5],
+        "deadline": [0, 9, 6, 9, 4, 5],
+        "speed": [9, 0, 7, 6, 9, 9],
+        "mean_feasible_energy_kwh": [null, null, 0.1645452291635577, 0.1740932568406355, 0.17937596249661897, 0.16809408679890672]
+      },
+      "final_failure_modes": {"fully_feasible": 5, "partial_progress_or_crawling": 4},
+      "late_collapse": {"peak_rsr": 6, "final_rsr": 5, "drop": 1, "flag": false},
+      "pid_real_episode_updates": 230,
+      "anticipatory_nonzero_probe_counts": [0, 0, 0, 0, 0, 0],
+      "stability": {
+        "lambda_speed": [0.015676386213522735, 4.983684551275686, 1.2012860077369332, 1.1744193635200182, 1.2079294902952458, 1.4081268952842223],
+        "lambda_deadline": [1.3380089411254876, 0.7801333218815305, 0.74147180303555, 2.460834964057235, 0.9988774205770077, 1.0867771307435148],
+        "alpha": [0.22311414778232574, 0.05258040875196457, 0.013124177232384682, 0.003563704201951623, 0.0009587514214217663, 0.000987125444225967],
+        "max_abs_critic_loss": 0.15598991221127553,
+        "max_abs_actual_target": null,
+        "all_finite": true,
+        "numerically_unstable": false
+      },
+      "resources": {"wall_seconds": 2632.35263, "cpu_seconds": null, "cpu_note": "only the exact 5568.69-second aggregate for all three real-only policies was retained", "peak_rss_kb": 1620624, "checkpoint_write_seconds": 309.0819327920326, "retained_disk_kb": 836608}
+    },
+    {
+      "run": "matched_real_only-seed-47",
+      "state": "COMPLETED",
+      "attempt_id": "d0dff0dd-9f8b-4332-97f5-fcba552de63f",
+      "resumed": false,
+      "final_checkpoint_sha256": "e0262a618f0435f85b792286cdbd9aebb3a6958e01a88ae101724ed8c98cade6",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 0},
+      "development": {
+        "rsr": [0, 0, 4, 7, 3, 6],
+        "completion": [0, 9, 9, 9, 9, 7],
+        "deadline": [0, 9, 8, 7, 8, 6],
+        "speed": [9, 0, 4, 9, 4, 8],
+        "mean_feasible_energy_kwh": [null, null, 0.1684806491883642, 0.19932393134602844, 0.19469138105029682, 0.16988627195612613]
+      },
+      "final_failure_modes": {"fully_feasible": 6, "completed_too_slowly": 1, "partial_progress_or_crawling": 2},
+      "late_collapse": {"peak_rsr": 7, "final_rsr": 6, "drop": 1, "flag": false},
+      "pid_real_episode_updates": 240,
+      "anticipatory_nonzero_probe_counts": [0, 0, 0, 0, 0, 0],
+      "stability": {
+        "lambda_speed": [0.010332073174992924, 3.7061985454489825, 1.3077838222496436, 1.3366997317712137, 1.346805733074059, 1.350842512038488],
+        "lambda_deadline": [11.25629379682021, 0.7278788934591082, 0.8531187818590555, 0.8088457898351027, 0.9210113655141839, 0.9845502346620031],
+        "alpha": [0.22315433621406555, 0.051905643194913864, 0.012251630425453186, 0.0030325273983180523, 0.0008300440385937691, 0.0004618712409865111],
+        "max_abs_critic_loss": 0.2703154208865661,
+        "max_abs_actual_target": null,
+        "all_finite": true,
+        "numerically_unstable": false
+      },
+      "resources": {"wall_seconds": 2124.092076, "cpu_seconds": null, "cpu_note": "only the exact 5568.69-second aggregate for all three real-only policies was retained", "peak_rss_kb": 1760016, "checkpoint_write_seconds": 282.29302433523117, "retained_disk_kb": 836400}
+    },
+    {
+      "run": "physics_mve-seed-11",
+      "state": "COMPLETED",
+      "attempt_id": "ed40b66b-bbe2-495a-b882-d40b418ddbc0",
+      "resumed": false,
+      "final_checkpoint_sha256": "8125ed0cc385e0eead5435e82f9d35b2a69607b1ce54aad8f7b30cc9ea566d9b",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 451371345},
+      "development": {
+        "rsr": [0, 0, 1, 0, 4, 0],
+        "completion": [0, 1, 3, 9, 6, 0],
+        "deadline": [0, 0, 1, 9, 6, 0],
+        "speed": [9, 7, 7, 0, 5, 6],
+        "mean_feasible_energy_kwh": [null, null, 0.17255156124012444, null, 0.1641320721409793, null]
+      },
+      "final_failure_modes": {"partial_progress_or_crawling": 9},
+      "late_collapse": {"peak_rsr": 4, "final_rsr": 0, "drop": 4, "flag": true},
+      "pid_real_episode_updates": 203,
+      "anticipatory_nonzero_probe_counts": [0, 0, 0, 4, 0, 0],
+      "target_decomposition_final_means": {
+        "objective": {"target": -1.9234917593254286, "real_two_step": -0.0018345926411735007, "model_expansion": -0.9507671370216761, "terminal_or_bootstrap": -0.9708900296625829, "absolute_model_fraction": 2.005748148440312},
+        "speed_cost": {"target": -1.153031923697917, "real_two_step": 0.05141757001601322, "model_expansion": -0.29625699398046523, "terminal_or_bootstrap": -0.9081924997334662, "absolute_model_fraction": 2.1586013329454206},
+        "deadline_cost": {"target": -0.8108881297148893, "real_two_step": 0.0242681699211163, "model_expansion": -0.38500380476988205, "terminal_or_bootstrap": -0.45015249486612174, "absolute_model_fraction": 2.3593028735738697}
+      },
+      "stability": {
+        "lambda_speed": [1.8266428797280776, 7.314803485729152, 0.8124334659496703, 35.47203087731534, 2.195488796224568, 2.199853040893965],
+        "lambda_deadline": [0.948537122550431, 0.9777167469173241, 1.1286131676350815, 1.4307957312091049, 1.7728924853142527, 2.0072865022135713],
+        "alpha": [0.22261855006217957, 0.06341405212879181, 0.017827598378062248, 0.018690401688218117, 0.05936878174543381, 0.061013221740722656],
+        "max_abs_critic_loss": 67.46557508394724,
+        "max_abs_actual_target": 222.97993214619459,
+        "all_finite": true,
+        "numerically_unstable": false
+      },
+      "resources": {"wall_seconds": 82086.70781, "cpu_seconds": 37621.94, "cpu_note": "exact sampled process-CPU delta", "peak_rss_kb": 1603376, "checkpoint_write_seconds": 286.20313799893484, "retained_disk_kb": 836784}
+    },
+    {
+      "run": "physics_mve-seed-29",
+      "state": "COMPLETED",
+      "attempt_id": "bc990866-050c-49ba-8213-23699ea36ea1",
+      "resumed": false,
+      "final_checkpoint_sha256": "66ca2345b311ad19f7455bf742316866a00cfdbd52f60bedfdf021fe77b767dd",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 450517507},
+      "development": {
+        "rsr": [0, 0, 0, 0, 0, 0],
+        "completion": [0, 0, 1, 0, 0, 9],
+        "deadline": [0, 0, 0, 0, 0, 9],
+        "speed": [9, 9, 9, 9, 9, 0],
+        "mean_feasible_energy_kwh": [null, null, null, null, null, null]
+      },
+      "final_failure_modes": {"completed_with_speed_violation": 9},
+      "late_collapse": {"peak_rsr": 0, "final_rsr": 0, "drop": 0, "flag": false},
+      "pid_real_episode_updates": 240,
+      "anticipatory_nonzero_probe_counts": [1, 1, 1, 1, 1, 5],
+      "target_decomposition_final_means": {
+        "objective": {"target": -157.54312160023326, "real_two_step": -0.0012236911730632934, "model_expansion": -66.62985365917577, "terminal_or_bootstrap": -90.91204424988466, "absolute_model_fraction": 0.46531595279529736},
+        "speed_cost": {"target": -138.69978690108712, "real_two_step": 0.13391650075298375, "model_expansion": -62.93468900409454, "terminal_or_bootstrap": -75.89901439774572, "absolute_model_fraction": 0.5251622141347703},
+        "deadline_cost": {"target": -155.97548375300823, "real_two_step": 0.034661678294487845, "model_expansion": -65.7800925208386, "terminal_or_bootstrap": -90.23005291046441, "absolute_model_fraction": 0.5120880769883146}
+      },
+      "stability": {
+        "lambda_speed": [3.8082264507456416, 4.691277885840872, 5.3608658551027935, 6.0855164481501145, 6.438013297661114, 21.221751242900616],
+        "lambda_deadline": [2.5171345256120574, 3.2929055983295012, 23.251073927444793, 4.260156411333988, 7.920416654601553, 2.533938633539355],
+        "alpha": [0.3625195324420929, 0.16494767367839813, 0.1245678961277008, 0.20690879225730896, 0.12248502671718597, 0.627265214920044],
+        "max_abs_critic_loss": 6090.574716536702,
+        "max_abs_actual_target": 650.1674588634039,
+        "all_finite": true,
+        "numerically_unstable": false
+      },
+      "resources": {"wall_seconds": 263477.795138, "cpu_seconds": 41284.02, "cpu_note": "exact sampled process-CPU delta", "peak_rss_kb": 1682544, "checkpoint_write_seconds": 312.8851341261179, "retained_disk_kb": 836412}
+    },
+    {
+      "run": "physics_mve-seed-47",
+      "state": "COMPLETED",
+      "attempt_id": "e38a7d14-4c57-410b-a5a9-1e0d55205be2",
+      "resumed": false,
+      "final_checkpoint_sha256": "e1c02028c368111e2807ad75733112c0502d5118aa545795c96ba37ac21aa88e",
+      "counters": {"real_transitions": 300000, "rl_gradient_updates": 30000, "synthetic_transitions": 0, "model_target_transitions": 452180488},
+      "development": {
+        "rsr": [0, 0, 0, 0, 0, 0],
+        "completion": [0, 0, 0, 0, 0, 0],
+        "deadline": [0, 0, 0, 0, 0, 0],
+        "speed": [9, 9, 9, 9, 9, 9],
+        "mean_feasible_energy_kwh": [null, null, null, null, null, null]
+      },
+      "final_failure_modes": {"standstill": 9},
+      "late_collapse": {"peak_rsr": 0, "final_rsr": 0, "drop": 0, "flag": false},
+      "pid_real_episode_updates": 173,
+      "anticipatory_nonzero_probe_counts": [2, 2, 2, 2, 2, 2],
+      "target_decomposition_final_means": {
+        "objective": {"target": -2030932.2586493283, "real_two_step": -0.0001787775009323785, "model_expansion": -927564.4380026369, "terminal_or_bootstrap": -1103367.8204679203, "absolute_model_fraction": 0.4563518307864121},
+        "speed_cost": {"target": -2030461.653814118, "real_two_step": 0.0, "model_expansion": -927564.4340776632, "terminal_or_bootstrap": -1102897.2197364504, "absolute_model_fraction": 0.45644086772149667},
+        "deadline_cost": {"target": -2031547.8630084652, "real_two_step": 0.04947957756361093, "model_expansion": -927563.3306267849, "terminal_or_bootstrap": -1103984.581861254, "absolute_model_fraction": 0.4562274068968084}
+      },
+      "stability": {
+        "lambda_speed": [1.8749228157373476, 1.8749228157373476, 1.8749228157373476, 1.8749228157373476, 1.8749228157373476, 1.8749228157373476],
+        "lambda_deadline": [3.4747782486814853, 9.117587631334224, 4.552366932354823, 4.246529774191555, 5.094065442558823, 3.6892197997018394],
+        "alpha": [3.5577685832977295, 15.945919036865234, 72.10548400878906, 339.02783203125, 1560.5189208984375, 7056.361328125],
+        "critic_loss_by_checkpoint": [34085.559908837975, 146214.7391785402, 510087.25014662964, 5657317.967916231, 105020606.91737331, 2242828837.177812],
+        "max_abs_target_by_checkpoint": [1619.8423918624726, 8436.755135075136, 34079.142277248066, 177964.17275143374, 946298.8829853756, 4272062.734213751],
+        "all_finite": true,
+        "first_instability_checkpoint": 200000,
+        "numerically_unstable": true
+      },
+      "resources": {"wall_seconds": 88048.167406, "cpu_seconds_lower_bound": 38997.17, "cpu_note": "exact process-CPU delta through 290000; the worker exited before the 300000 ps sample", "peak_rss_kb": 1564304, "checkpoint_write_seconds": 311.7531867468497, "retained_disk_kb": 804992}
+    }
+  ],
+  "final_failure_modes_pooled": {
+    "matched_real_only": {"fully_feasible": 13, "completed_too_slowly": 3, "partial_progress_or_crawling": 11},
+    "physics_mve": {"completed_with_speed_violation": 9, "partial_progress_or_crawling": 9, "standstill": 9}
+  },
+  "numerical_instability": {
+    "any": true,
+    "run": "physics_mve-seed-47",
+    "first_gate_breach": {"checkpoint": 200000, "metric": "critic_loss", "value": 5657317.967916231, "threshold": 1000000.0},
+    "final_gate_breaches": {
+      "critic_loss": {"value": 2242828837.177812, "threshold": 1000000.0},
+      "target_magnitude": {"value": 4272062.734213751, "threshold": 1000000.0}
+    },
+    "non_finite_observed": false,
+    "multiplier_threshold_breached": false
+  },
+  "recovery_integrity": {
+    "attempts_per_policy": 1,
+    "resumes": 0,
+    "exact_recovery_used": false,
+    "science_checkpoints_per_policy": 6,
+    "checkpoint_metadata_records_per_policy": 30,
+    "technical_recovery_payloads_removed_per_policy": 24,
+    "technical_recovery_metadata_retained": true,
+    "final_hashes_verified_against_bytes": true,
+    "source_hashes_and_configuration_match_across_all_final_checkpoints": true
+  },
+  "resources": {
+    "matrix_wall_span_seconds": 441677.07724,
+    "sum_policy_wall_seconds": 441675.016492,
+    "host_sleep_and_contention_included_in_wall_time": true,
+    "observed_process_cpu_seconds_lower_bound": 123471.82,
+    "real_only_process_cpu_seconds_aggregate": 5568.69,
+    "maximum_peak_rss_kb": 1760016,
+    "observed_peak_run_directory_kb": 11054420,
+    "retained_run_directory_kb_after_cleanup": 4989248,
+    "checkpoint_write_seconds_total": 1905.6225744151162,
+    "launchd_last_exit_code": 0,
+    "launchd_unloaded_after_completion": true
+  }
+}
