@@ -90,7 +90,7 @@ def test_configuration_freezes_clean_matched_protocol():
     assert configuration.raw["authorization"] == {
         "main_training_authorized": True,
         "main_training_enabled": True,
-        "validation_authorized": False,
+        "validation_authorized": True,
         "paper_test_authorized": False,
         "automatic_fresh_restart_authorized": False,
     }
@@ -457,7 +457,7 @@ def test_manifest_launch_preparation_and_split_gates(tmp_path):
     assert launcher["main_training_authorized"] is True
     with pytest.raises(PermissionError, match="remain sealed"):
         evaluate_paper_test()
-    with pytest.raises(PermissionError, match="remains sealed"):
+    with pytest.raises(RuntimeError, match="All six final policies"):
         evaluate_validation(object(), load_configuration(), manifest)
 
 

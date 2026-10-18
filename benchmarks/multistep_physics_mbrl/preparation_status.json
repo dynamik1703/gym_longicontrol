@@ -12,5 +12,5 @@
   "ready_for_main_training": true,
   "schema_version": 1,
   "scientific_design_frozen": true,
-  "validation_authorized": false
+  "validation_authorized": true
 }

@@ -16,7 +16,7 @@ def test_frozen_preparation_contract():
     assert status["ready_for_main_training"] is True
     assert status["main_training_authorized"] is True
     assert status["main_training_enabled"] is True
-    assert configuration.raw["authorization"]["validation_authorized"] is False
+    assert configuration.raw["authorization"]["validation_authorized"] is True
     assert configuration.raw["authorization"]["paper_test_authorized"] is False
 
 

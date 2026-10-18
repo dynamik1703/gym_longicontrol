@@ -95,12 +95,14 @@ class StudyConfiguration:
         expected_authorization = {
             "main_training_authorized": True,
             "main_training_enabled": True,
-            "validation_authorized": False,
+            "validation_authorized": True,
             "paper_test_authorized": False,
             "automatic_fresh_restart_authorized": False,
         }
         if authorization != expected_authorization:
-            raise PermissionError("Only frozen main-matrix training is authorized")
+            raise PermissionError(
+                "Only frozen main training and one Validation opening are authorized"
+            )
 
         v2 = load_v2()
         if v2_configuration_sha256(v2) != raw["frozen_v2"]["configuration_sha256"]:
