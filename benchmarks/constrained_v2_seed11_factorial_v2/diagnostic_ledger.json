@@ -1,0 +1,8 @@
+{
+  "actual_episodes": 0,
+  "episodes": [],
+  "expected_episodes_if_all_gates_passed": 432,
+  "reason": "frozen diagnostic content occurs in an exact training stream",
+  "schema_version": 1,
+  "state": "NOT_EVALUATED"
+}

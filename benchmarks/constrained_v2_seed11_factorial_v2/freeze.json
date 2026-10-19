@@ -1,0 +1,18 @@
+{
+  "files": {
+    "DESIGN.md": "65bf96d823b7aeedfc0f1ad1b61ec276de5f32b18f4262b3cec66b619db4e0f8",
+    "PROTOCOL.md": "d0ccbdda6dba8eb4af9db73d3ac77fe7a73adbc5122ffd4913064586e80c60ca",
+    "README.md": "e22b1e97ccfe3ea7a258480398350d5f4b30bce4652e1ab88aea43b018ee38c8",
+    "RESOURCE_REPORT.md": "6d2f90ec5b3d72c85473427cfec51b7a0e457b5731b80c0c9f6fdd91a2e6d8e2",
+    "RESULTS.md": "db39c488458ed4d2c2731d3f31297c5c21b72db6720d1699487afbe2354f56eb",
+    "canonical.json": "feea069cd91544707e9adc228833458a65d47ee14d267a53d8a29648c1fdae8d",
+    "diagnostic_ledger.json": "5371e52a24b0f22a91871f73bb5d78e01839cdcaed6cd3ea531541b939062d77",
+    "manifest.json": "1dd5529712e8c7bdbbd2af22a27740093da305d80f9845fc4e7d86fb91ec705b",
+    "preflight.py": "ff01689fa1c12684915d12816fec6f6328e2529eb146cee5de753422a81e14c4",
+    "results.json": "bb134bf87bcb348ff7071e2e37be227475fc46da08930142e677d3eb6d9318f1"
+  },
+  "main_training_started": false,
+  "schema_version": 1,
+  "source_commit": "ab6df07b2e28fadc87ab05c3f64f76b7b2bef6cb",
+  "terminal_state": "EXECUTION_GATE_FAILED"
+}

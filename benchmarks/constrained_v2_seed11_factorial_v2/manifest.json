@@ -1,0 +1,49 @@
+{
+  "conditions": {
+    "A_histTrack_histCollector_seed11": {
+      "attempts": [],
+      "gradient_updates": 0,
+      "real_transitions": 0,
+      "state": "NOT_STARTED"
+    },
+    "B_histTrack_currentCollector_seed11": {
+      "attempts": [],
+      "gradient_updates": 0,
+      "real_transitions": 0,
+      "state": "NOT_STARTED"
+    },
+    "C_currentTrack_histCollector_seed11": {
+      "attempts": [],
+      "gradient_updates": 0,
+      "real_transitions": 0,
+      "state": "NOT_STARTED"
+    },
+    "D_currentTrack_currentCollector_seed11": {
+      "attempts": [],
+      "gradient_updates": 0,
+      "real_transitions": 0,
+      "state": "NOT_STARTED"
+    }
+  },
+  "diagnostic": {
+    "episode_count": 0,
+    "state": "NOT_EVALUATED"
+  },
+  "legacy_development": {
+    "episode_count": 0,
+    "state": "NOT_EVALUATED"
+  },
+  "legacy_validation": {
+    "episode_count": 0,
+    "state": "NOT_EVALUATED"
+  },
+  "paper": {
+    "episode_count": 0,
+    "state": "SEALED_UNINSPECTED"
+  },
+  "reason": "frozen diagnostic content occurs in an exact training stream",
+  "schema_version": 1,
+  "source_commit": "ab6df07b2e28fadc87ab05c3f64f76b7b2bef6cb",
+  "state": "EXECUTION_GATE_FAILED",
+  "study": "Constrained V2 Seed-11 Track x Collector 2x2 -- Route-Clean Evaluation"
+}

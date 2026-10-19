@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "name": "constrained-v2-seed11-track-collector-factorial-v2",
+  "source_commit": "ab6df07b2e28fadc87ab05c3f64f76b7b2bef6cb",
+  "training_seed": 11,
+  "condition_order": [
+    "A_histTrack_histCollector_seed11",
+    "B_histTrack_currentCollector_seed11",
+    "C_currentTrack_histCollector_seed11",
+    "D_currentTrack_currentCollector_seed11"
+  ],
+  "track_streams": {
+    "T_HIST": "continuous environment RNG seeded 11; used reset draws 0,2,4,...",
+    "T_CURRENT": "default_rng(SeedSequence([11, 0x4D564531])); explicit signed-31-bit reset seeds with legacy reserved numeric IDs rejected"
+  },
+  "collectors": {
+    "C_HIST": "fixed actor for a complete episode; terminal replay insertion; terminal PID update; accumulated replay updates; next episode",
+    "C_CURRENT": "one transition; terminal PID when applicable; catch updates up to floor(real_transitions * 0.1); continue"
+  },
+  "real_transitions_per_policy": 300000,
+  "gradient_updates_per_policy": 30000,
+  "recovery_checkpoint_interval": 10000,
+  "diagnostic_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "diagnostic_seeds": [
+    9000000, 9000001, 9000002, 9000003, 9000004, 9000005,
+    9000006, 9000007, 9000008, 9000009, 9000010, 9000011,
+    9000012, 9000013, 9000014, 9000015, 9000016, 9000017
+  ],
+  "legacy_development_evaluation": false,
+  "legacy_validation_evaluation": false,
+  "paper_evaluation": false,
+  "main_training_authorization": "conditional_on_all_preflight_gates"
+}
