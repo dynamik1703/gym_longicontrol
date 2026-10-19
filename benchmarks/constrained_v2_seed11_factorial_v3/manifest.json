@@ -1,12 +1,101 @@
 {
+  "branch": "research/constrained-v2-seed11-factorial-v3",
   "condition_order": [
     "A_histTrack_histCollector_seed11",
     "B_histTrack_currentCollector_seed11",
     "C_currentTrack_histCollector_seed11",
     "D_currentTrack_currentCollector_seed11"
   ],
-  "main_training_state": "AUTHORIZED_NOT_STARTED",
-  "output_manifest": "runs/constrained-v2-seed11-factorial-v3/manifest.json",
-  "paper": "SEALED_UNINSPECTED",
-  "schema_version": 1
+  "configuration_sha256": "c2042f49cd38a2eebf03bdc30977dbb84392d26c4f8339d65289f3572c9daaa6",
+  "diagnostic_ledger": {
+    "ordered_set_sha256": "a44cc85367db4a21c5c69a8f209fd8628bf5e42b6ef3cace9bdf8a54df79583f",
+    "path": "benchmarks/constrained_v2_seed11_factorial_v3/diagnostic_ledger.json",
+    "sha256": "2f5c0eec2abbdaf7e7b003f8e6993affd430f94b60b23f8fb620660493ce8c2e"
+  },
+  "evaluation_sets": {
+    "diagnostic": {
+      "episode_count": 432,
+      "state": "COMPLETED"
+    },
+    "legacy_development": {
+      "episode_count": 0,
+      "state": "NOT_EVALUATED"
+    },
+    "legacy_validation": {
+      "episode_count": 0,
+      "state": "NOT_EVALUATED"
+    },
+    "paper": {
+      "episode_count": 0,
+      "state": "SEALED_UNINSPECTED"
+    }
+  },
+  "execution_totals": {
+    "attempts": 4,
+    "completed_training_episodes": 951,
+    "diagnostic_episodes": 432,
+    "real_transitions": 1200000,
+    "resumes": 1,
+    "retained_bytes": 2062748180,
+    "rl_gradient_updates": 120000,
+    "sum_policy_walltime_s": 9295.827559956932
+  },
+  "final_interpretation": {
+    "canonical_baseline_recommendation": "BOTH_STREAM_GENERATION_AND_COLLECTOR_MUST_BE_CANONICALIZED",
+    "classification": "INTERACTION_DOMINANT",
+    "current_regime_reproduction": "EXACT_CURRENT_REGIME_REPRODUCTION",
+    "future_split_rule": "Route-clean Policy R"
+  },
+  "main_training_state": "COMPLETED",
+  "operational_events": [
+    {
+      "attempt_id": "f7317395-5a59-4d38-aba2-ad50d5e58900",
+      "condition": "B_histTrack_currentCollector_seed11",
+      "event": "EXACT_SAME_ATTEMPT_RESUME",
+      "external_jobs_modified": false,
+      "reason": "After unrelated foreground workloads starved the launchd Background process, the runner was cleanly interrupted at its verified 180000-transition recovery checkpoint and relaunched as Interactive.",
+      "resume_timestamp_utc": "2026-10-19T08:54:55.054442+00:00",
+      "scientific_configuration_changed": false
+    }
+  ],
+  "output_manifest": {
+    "path": "runs/constrained-v2-seed11-factorial-v3/manifest.json",
+    "sha256": "3aa8d1c6b53ea2df5c995a44def84688b3f00bb786c708835c7dbb51f28dde51"
+  },
+  "results": {
+    "path": "benchmarks/constrained_v2_seed11_factorial_v3/results.json",
+    "sha256": "ae4e2eac9486a78701a97913c8fecfe318bda739c9f562a57e817db08408a87a"
+  },
+  "runs": {
+    "A_histTrack_histCollector_seed11": {
+      "attempt_id": "82d09b3e-ccf7-475d-bf90-045ea944b712",
+      "completed_training_episodes": 235,
+      "final_checkpoint_sha256": "99524c35bb3ebbe3ebc8e0ac6f0ec67753cc26341df16eeb8aaf88a6eaaa0ed8",
+      "resumes": 0,
+      "state": "COMPLETED"
+    },
+    "B_histTrack_currentCollector_seed11": {
+      "attempt_id": "f7317395-5a59-4d38-aba2-ad50d5e58900",
+      "completed_training_episodes": 242,
+      "final_checkpoint_sha256": "2af996740b6fe1d0b54b0247d3a7e6773118de3918eea977b4f3da4b076319f8",
+      "resumes": 1,
+      "state": "COMPLETED"
+    },
+    "C_currentTrack_histCollector_seed11": {
+      "attempt_id": "d1863870-f906-487c-aebd-b91f256e388d",
+      "completed_training_episodes": 252,
+      "final_checkpoint_sha256": "aa1d3368a50963010aee08cd88c54668dc444ede2f3bcb755ba9f9a341dd9e9b",
+      "resumes": 0,
+      "state": "COMPLETED"
+    },
+    "D_currentTrack_currentCollector_seed11": {
+      "attempt_id": "d897e2e8-d37f-41d5-9253-672456f39e15",
+      "completed_training_episodes": 222,
+      "final_checkpoint_sha256": "add804cbf998fa3c4a32393eebcf9742d5fc135c9d96edf5f8ea24a9b718e84f",
+      "resumes": 0,
+      "state": "COMPLETED"
+    }
+  },
+  "schema_version": 1,
+  "study": "constrained-v2-seed11-track-collector-factorial-v3"
 }
