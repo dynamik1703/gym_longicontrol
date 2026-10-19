@@ -1,0 +1,116 @@
+{
+  "collector_pilots": {
+    "EPISODIC": {
+      "checkpoint": {
+        "load_s": 0.05000391602516174,
+        "replay_capacity": 100000,
+        "rows": 2048,
+        "sha256": "8cafaa6cd8e9e0ceb19bd0f4e3778d642cb1a018783c176c2cbebeba01495b9f",
+        "size_bytes": 53043783,
+        "write_s": 0.12870433297939599
+      },
+      "collector": "EPISODIC",
+      "completed_episodes": 2,
+      "fixture_training_seed": 0,
+      "transitions": 2048,
+      "transitions_per_second_including_updates": 558.0528713804945,
+      "updates": 204,
+      "used_fixture_tasks": [
+        {
+          "accepted_task_index": 0,
+          "full_task_sha256": "96d219f43be5c35d49cb2404a5c3c744f101960de3b7994321cc022445e5847b",
+          "nominal_policy_seed": -1,
+          "raw_candidate_index": 0,
+          "reset_seed": 0,
+          "route_sha256": "767258d7a1934e7b7b6e74693fedd5ddbf5946d98cfc2e2b6e97ae879fc14df5",
+          "stream": "RESOURCE_FIXTURE"
+        },
+        {
+          "accepted_task_index": 1,
+          "full_task_sha256": "71f805f8dca91f6dcdb7387f791adbd004f95c83759c07846d874b01e4c8d046",
+          "nominal_policy_seed": -1,
+          "raw_candidate_index": 1,
+          "reset_seed": 1,
+          "route_sha256": "598ecd37432c765586e1e559476bceb1cbf11b49c2c6b30616d9599dd9275a9c",
+          "stream": "RESOURCE_FIXTURE"
+        }
+      ],
+      "walltime_s": 3.669903166941367
+    },
+    "TRANSITIONAL": {
+      "checkpoint": {
+        "load_s": 0.048215624992735684,
+        "replay_capacity": 100000,
+        "rows": 2048,
+        "sha256": "6978b83cf07cf80f85485ee25127e4083ab5e14e8ef5e65a216295799e83bc9a",
+        "size_bytes": 53044551,
+        "write_s": 0.11818220908753574
+      },
+      "collector": "TRANSITIONAL",
+      "completed_episodes": 2,
+      "fixture_training_seed": 0,
+      "transitions": 2048,
+      "transitions_per_second_including_updates": 676.6967538411883,
+      "updates": 204,
+      "used_fixture_tasks": [
+        {
+          "accepted_task_index": 0,
+          "full_task_sha256": "96d219f43be5c35d49cb2404a5c3c744f101960de3b7994321cc022445e5847b",
+          "nominal_policy_seed": -1,
+          "raw_candidate_index": 0,
+          "reset_seed": 0,
+          "route_sha256": "767258d7a1934e7b7b6e74693fedd5ddbf5946d98cfc2e2b6e97ae879fc14df5",
+          "stream": "RESOURCE_FIXTURE"
+        },
+        {
+          "accepted_task_index": 1,
+          "full_task_sha256": "71f805f8dca91f6dcdb7387f791adbd004f95c83759c07846d874b01e4c8d046",
+          "nominal_policy_seed": -1,
+          "raw_candidate_index": 1,
+          "reset_seed": 1,
+          "route_sha256": "598ecd37432c765586e1e559476bceb1cbf11b49c2c6b30616d9599dd9275a9c",
+          "stream": "RESOURCE_FIXTURE"
+        }
+      ],
+      "walltime_s": 3.0264664170099422
+    }
+  },
+  "diagnostic_evaluation_pilot": {
+    "actor_unchanged": true,
+    "episodes": 3,
+    "fixture_seeds": [
+      0,
+      1,
+      2
+    ],
+    "outcomes_used_for_science": false,
+    "seconds_per_episode": 0.3485704306513071,
+    "simulator_steps": 5400,
+    "training_rng_unchanged": true,
+    "walltime_s": 1.0457112919539213
+  },
+  "diagnostic_tasks_used": false,
+  "fixture_policy_outcomes_used": false,
+  "gates": {
+    "disk_limit_gb": 15.0,
+    "disk_pass": true,
+    "runtime_limit_h": 18.0,
+    "runtime_pass": true
+  },
+  "passed": true,
+  "projection": {
+    "EPISODIC_policy_s": 537.5834717199268,
+    "TRANSITIONAL_policy_s": 443.33004155419076,
+    "all_checkpoint_writes_s": 2839.9704901117366,
+    "all_diagnostic_evaluation_s": 263.5192455723882,
+    "archived_checkpoint_source": "completed multistep-physics-mbrl-v1 300k verified checkpoints",
+    "archived_full_checkpoint_max_bytes": 151275789,
+    "archived_full_checkpoint_max_write_s": 15.777613833954092,
+    "checkpoint_projection_method": "live capacity-preallocated checkpoint bounded by archived verified full-100k checkpoint maxima",
+    "full_checkpoint_size_bytes_conservative": 151275789,
+    "retained_checkpoint_count": 42,
+    "retained_disk_gb": 6.353583138,
+    "total_serial_walltime_h": 1.6795084098629105
+  },
+  "schema_version": 1
+}

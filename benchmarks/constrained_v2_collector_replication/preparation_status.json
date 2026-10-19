@@ -1,0 +1,87 @@
+{
+  "all_programmatic_preparation_gates_pass": true,
+  "collector_semantics": {
+    "episodic_nonterminal_events": [
+      "TRANSITION_INSERTED"
+    ],
+    "passed": true,
+    "terminal_events": {
+      "EPISODIC": [
+        "TRANSITION_INSERTED",
+        "PID_UPDATED",
+        "RL_UPDATE",
+        "POST_UPDATE_HOOK"
+      ],
+      "TRANSITIONAL": [
+        "TRANSITION_INSERTED",
+        "PID_UPDATED",
+        "RL_UPDATE",
+        "POST_UPDATE_HOOK"
+      ]
+    },
+    "transitional_nonterminal_events": [
+      "TRANSITION_INSERTED",
+      "RL_UPDATE"
+    ]
+  },
+  "configuration_sha256": "c92a9b22a62e14a85e81dd10f62f8ee6b0a43ae3c3e9937ddbc4efbef72ae644",
+  "construction_order": [
+    "COLLECTOR_DIAGNOSTIC_V1",
+    "COLLECTOR_VALIDATION_V1",
+    "CANONICAL_11",
+    "CANONICAL_29",
+    "CANONICAL_47"
+  ],
+  "evaluation_fingerprints": {
+    "diagnostic": "5371d49d12f0244522bf22f6c14150ef3ad858d8a823a38860983612f0c729d1",
+    "validation": "17a9491f63743dc6cff0569589785293b254a0f37049083ac0bce7fee0354720"
+  },
+  "evaluation_non_interference_pass": true,
+  "initialization_pass": true,
+  "paper": "SEALED_UNINSPECTED",
+  "ready_for_main_training": true,
+  "recovery_checkpoint_roundtrip_pass": true,
+  "resource_gate_pass": true,
+  "runtime": {
+    "fsrl": "0.1.0",
+    "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.13",
+    "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python",
+    "tianshou": "0.5.1",
+    "torch": "2.14.1"
+  },
+  "schema_version": 1,
+  "scientific_source_hashes": {
+    "canonical.json": "d1c07e74665cbd78302320eda15b7c0f5739ccb74fedaf7b4d504c283915a1d3",
+    "checkpointing.py": "0f32c7849b5c5ef5f61427894ffc48b3271538e29b3d9362729060c3f1d7e610",
+    "config.py": "e59032c917194ed2ac83e033b55f941de83e7c69ba7261023274dba432f57903",
+    "evaluation.py": "19624f5efbe529fceadcf4202f3698026e0b1a981d87df1ea8f923a2dd1695e0",
+    "execution.py": "0c432897379194da037934963fa1d1a73f74ba3ec9834a3ed7ed65b78020beb0",
+    "finalize.py": "5ecf20cd04a6bd6edc351cf10b59a17397cadb7d711546454184de0a3acd72ce",
+    "initialization.py": "a9085830986123f78867aaba0d06a0734273094685e1557aacf8bfcb36015ccc",
+    "preflight.py": "1599e96d5744fcc7a42c48db645a4cb8c391bdb442eca532769fd545b4ce9dac",
+    "resource_preflight.py": "c985010490d70e474e2a8946fff070a0372fb3810ffcddd51226054b4b050426",
+    "runner.py": "c2f9fe6998cd8bbacbf44d7fc0749d964c1184efc7d7984e6f106da826ab9f20",
+    "split.py": "69299f97cdc639797e832aa2d6fb10f3bad08019e778e128a2a4cfe818a8b56a",
+    "streams.py": "a06d08c486413f029f24a63d6f40ea030e820d3304fc107ab77f53cdf727c4ed"
+  },
+  "split_checks": {
+    "both_sets_have_18": true,
+    "cross_set_full_task_unique": true,
+    "cross_set_numeric_unique": true,
+    "cross_set_route_unique": true,
+    "final_static_route_clean_gate": true,
+    "opened_full_task_separation": true,
+    "opened_route_separation": true,
+    "paper_sealed_uninspected": true,
+    "three_streams_have_865": true
+  },
+  "stream_fingerprints": {
+    "11": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+    "29": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+    "47": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255"
+  }
+}

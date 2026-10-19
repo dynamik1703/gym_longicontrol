@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "name": "constrained-v2-three-seed-collector-replication",
+  "source_commit": "7d4b63aa021a8694bf51cca2ed319d55045bb7f8",
+  "conditions": [
+    {"id": "E11", "name": "E11_episodic_seed11", "training_seed": 11, "collector": "EPISODIC"},
+    {"id": "T11", "name": "T11_transitional_seed11", "training_seed": 11, "collector": "TRANSITIONAL"},
+    {"id": "E29", "name": "E29_episodic_seed29", "training_seed": 29, "collector": "EPISODIC"},
+    {"id": "T29", "name": "T29_transitional_seed29", "training_seed": 29, "collector": "TRANSITIONAL"},
+    {"id": "E47", "name": "E47_episodic_seed47", "training_seed": 47, "collector": "EPISODIC"},
+    {"id": "T47", "name": "T47_transitional_seed47", "training_seed": 47, "collector": "TRANSITIONAL"}
+  ],
+  "canonical_namespace": 1128353359,
+  "canonical_seed_sequence": "SeedSequence([seed, 0x43414E4F])",
+  "candidate_integer_rule": "default_rng(SeedSequence([seed, 0x43414E4F])).integers(0, 2**31 - 1)",
+  "real_transition_budget": 300000,
+  "minimum_physically_possible_episode_length": 347,
+  "expected_max_exposed_tasks": 865,
+  "gradient_updates_per_policy": 30000,
+  "update_per_transition": 0.1,
+  "diagnostic_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "recovery_checkpoint_interval": 10000,
+  "evaluation_selections": {
+    "diagnostic": {"id": "COLLECTOR_DIAGNOSTIC_V1", "candidate_start": 9200000, "accepted_count": 18},
+    "validation": {"id": "COLLECTOR_VALIDATION_V1", "candidate_start": 9300000, "accepted_count": 18}
+  },
+  "expected_evaluation_fingerprints": {
+    "diagnostic": "5371d49d12f0244522bf22f6c14150ef3ad858d8a823a38860983612f0c729d1",
+    "validation": "17a9491f63743dc6cff0569589785293b254a0f37049083ac0bce7fee0354720"
+  },
+  "expected_stream_fingerprints": {
+    "11": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+    "29": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+    "47": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255"
+  },
+  "frozen_v2_configuration_sha256": "89d7142cc84ba60d98075313220b331b60c2c41997b6c65b11adeb1b08712060",
+  "resource_gate": {
+    "maximum_total_serial_walltime_h": 18.0,
+    "maximum_retained_disk_gb": 15.0,
+    "fixture_seeds": [0, 1, 2],
+    "pilot_transitions_per_collector": 2048
+  },
+  "authorization": {
+    "main_training_authorized_if_all_gates_pass": true,
+    "automatic_same_attempt_resume_authorized": true,
+    "fresh_restart_authorized": false,
+    "validation_only_after_all_final_policies_frozen": true,
+    "paper_evaluation_authorized": false
+  }
+}
