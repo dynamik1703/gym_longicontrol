@@ -1,0 +1,8 @@
+{
+  "accepted_count": 18,
+  "canonical_full_ledger": "split_ledger.json",
+  "canonical_full_ledger_sha256": "f51d7b856ea33809220458d2c89eb340b72a9ee9fde32302d49d04ab75003c93",
+  "ordered_diagnostic_set_sha256": "a44cc85367db4a21c5c69a8f209fd8628bf5e42b6ef3cace9bdf8a54df79583f",
+  "paper": "SEALED_UNINSPECTED",
+  "schema_version": 1
+}

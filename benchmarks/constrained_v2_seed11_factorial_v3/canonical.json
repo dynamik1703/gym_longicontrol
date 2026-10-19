@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "name": "constrained-v2-seed11-track-collector-factorial-v3",
+  "source_commit": "ad2ad65df655ef1797e52e9e9f8f82b70b1c5d75",
+  "conditions": [
+    {
+      "id": "A",
+      "name": "A_histTrack_histCollector_seed11",
+      "track_stream": "T_HIST",
+      "collector": "C_HIST"
+    },
+    {
+      "id": "B",
+      "name": "B_histTrack_currentCollector_seed11",
+      "track_stream": "T_HIST",
+      "collector": "C_CURRENT"
+    },
+    {
+      "id": "C",
+      "name": "C_currentTrack_histCollector_seed11",
+      "track_stream": "T_CURRENT",
+      "collector": "C_HIST"
+    },
+    {
+      "id": "D",
+      "name": "D_currentTrack_currentCollector_seed11",
+      "track_stream": "T_CURRENT",
+      "collector": "C_CURRENT"
+    }
+  ],
+  "training_seed": 11,
+  "real_transition_budget": 300000,
+  "minimum_physically_possible_episode_length": 347,
+  "expected_max_exposed_tasks": 865,
+  "gradient_updates_per_policy": 30000,
+  "update_per_transition": 0.1,
+  "diagnostic_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+  "recovery_checkpoint_interval": 10000,
+  "diagnostic_selection": {
+    "candidate_start": 9100000,
+    "accepted_count": 18,
+    "policy": "first candidates in ascending numeric order passing every frozen numeric, reachable-stream content, opened-split content, and internal-uniqueness rule"
+  },
+  "expected_stream_fingerprints": {
+    "T_HIST": "1f0504f969a55bc0c1af144fc2d228a81798a8a52e61d52edec406ae6b3582ed",
+    "T_CURRENT": "3278239196a40db9f42c4c613dcfa93c979636e20cfd3f30326a3000a0635159"
+  },
+  "frozen_v2_configuration_sha256": "89d7142cc84ba60d98075313220b331b60c2c41997b6c65b11adeb1b08712060",
+  "resource_gate": {
+    "maximum_total_serial_walltime_h": 24.0,
+    "maximum_retained_disk_gb": 15.0,
+    "fixture_seeds": [0, 1, 2],
+    "pilot_transitions_per_collector": 2048
+  },
+  "authorization": {
+    "main_training_authorized_if_all_gates_pass": true,
+    "automatic_same_attempt_resume_authorized": true,
+    "fresh_restart_authorized": false,
+    "legacy_development_evaluation_authorized": false,
+    "legacy_validation_evaluation_authorized": false,
+    "paper_evaluation_authorized": false
+  }
+}

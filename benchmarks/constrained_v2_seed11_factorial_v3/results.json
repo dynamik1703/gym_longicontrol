@@ -1,0 +1,10 @@
+{
+  "diagnostic_episodes": 0,
+  "gradient_updates": 0,
+  "legacy_development_episodes": 0,
+  "legacy_validation_episodes": 0,
+  "outcome": "AUTHORIZED_NOT_STARTED",
+  "paper_episodes": 0,
+  "real_training_transitions": 0,
+  "schema_version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "condition_order": [
+    "A_histTrack_histCollector_seed11",
+    "B_histTrack_currentCollector_seed11",
+    "C_currentTrack_histCollector_seed11",
+    "D_currentTrack_currentCollector_seed11"
+  ],
+  "main_training_state": "AUTHORIZED_NOT_STARTED",
+  "output_manifest": "runs/constrained-v2-seed11-factorial-v3/manifest.json",
+  "paper": "SEALED_UNINSPECTED",
+  "schema_version": 1
+}

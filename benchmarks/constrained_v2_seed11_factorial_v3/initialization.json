@@ -1,0 +1,100 @@
+{
+  "all_expected_primary_hashes": true,
+  "all_identical": true,
+  "alpha_and_pid_expected": true,
+  "by_condition": {
+    "A_histTrack_histCollector_seed11": {
+      "actor_optimizer_sha256": "69cbefe1250d53b356a59e2308303227714c9091093558574e47eedf5d0f97f2",
+      "actor_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+      "alpha": {
+        "effective_alpha": 1.0,
+        "log_alpha_sha256": "0b36b324566b11129e28353d0bf07667a23b84208118c7feb18b12edffbd430a",
+        "optimizer_sha256": "be2d2b9168b4143f4f75d6061bac4f89cbbd35b80ed43366b82005c4e81b0a20",
+        "target_entropy": -1.0
+      },
+      "combined_learner_sha256": "beffa5734886fc714e4eeca5ddae17fa51e12af9839a2999af7743dc5287d87a",
+      "critic_optimizer_sha256": "f77b055b1a42067b4a2d35a7b314632f43b64c20f50f8d7c1070a321c48856af",
+      "deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "pid_multipliers": [
+        0.0,
+        0.0
+      ],
+      "pid_state_sha256": "10493e65227a217c8c3aa66a3e932259327fddf59d47f8357f30f5f7e44dad4f",
+      "reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353",
+      "target_deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "target_reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "target_speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353"
+    },
+    "B_histTrack_currentCollector_seed11": {
+      "actor_optimizer_sha256": "69cbefe1250d53b356a59e2308303227714c9091093558574e47eedf5d0f97f2",
+      "actor_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+      "alpha": {
+        "effective_alpha": 1.0,
+        "log_alpha_sha256": "0b36b324566b11129e28353d0bf07667a23b84208118c7feb18b12edffbd430a",
+        "optimizer_sha256": "be2d2b9168b4143f4f75d6061bac4f89cbbd35b80ed43366b82005c4e81b0a20",
+        "target_entropy": -1.0
+      },
+      "combined_learner_sha256": "beffa5734886fc714e4eeca5ddae17fa51e12af9839a2999af7743dc5287d87a",
+      "critic_optimizer_sha256": "f77b055b1a42067b4a2d35a7b314632f43b64c20f50f8d7c1070a321c48856af",
+      "deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "pid_multipliers": [
+        0.0,
+        0.0
+      ],
+      "pid_state_sha256": "10493e65227a217c8c3aa66a3e932259327fddf59d47f8357f30f5f7e44dad4f",
+      "reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353",
+      "target_deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "target_reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "target_speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353"
+    },
+    "C_currentTrack_histCollector_seed11": {
+      "actor_optimizer_sha256": "69cbefe1250d53b356a59e2308303227714c9091093558574e47eedf5d0f97f2",
+      "actor_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+      "alpha": {
+        "effective_alpha": 1.0,
+        "log_alpha_sha256": "0b36b324566b11129e28353d0bf07667a23b84208118c7feb18b12edffbd430a",
+        "optimizer_sha256": "be2d2b9168b4143f4f75d6061bac4f89cbbd35b80ed43366b82005c4e81b0a20",
+        "target_entropy": -1.0
+      },
+      "combined_learner_sha256": "beffa5734886fc714e4eeca5ddae17fa51e12af9839a2999af7743dc5287d87a",
+      "critic_optimizer_sha256": "f77b055b1a42067b4a2d35a7b314632f43b64c20f50f8d7c1070a321c48856af",
+      "deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "pid_multipliers": [
+        0.0,
+        0.0
+      ],
+      "pid_state_sha256": "10493e65227a217c8c3aa66a3e932259327fddf59d47f8357f30f5f7e44dad4f",
+      "reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353",
+      "target_deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "target_reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "target_speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353"
+    },
+    "D_currentTrack_currentCollector_seed11": {
+      "actor_optimizer_sha256": "69cbefe1250d53b356a59e2308303227714c9091093558574e47eedf5d0f97f2",
+      "actor_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+      "alpha": {
+        "effective_alpha": 1.0,
+        "log_alpha_sha256": "0b36b324566b11129e28353d0bf07667a23b84208118c7feb18b12edffbd430a",
+        "optimizer_sha256": "be2d2b9168b4143f4f75d6061bac4f89cbbd35b80ed43366b82005c4e81b0a20",
+        "target_entropy": -1.0
+      },
+      "combined_learner_sha256": "beffa5734886fc714e4eeca5ddae17fa51e12af9839a2999af7743dc5287d87a",
+      "critic_optimizer_sha256": "f77b055b1a42067b4a2d35a7b314632f43b64c20f50f8d7c1070a321c48856af",
+      "deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "pid_multipliers": [
+        0.0,
+        0.0
+      ],
+      "pid_state_sha256": "10493e65227a217c8c3aa66a3e932259327fddf59d47f8357f30f5f7e44dad4f",
+      "reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353",
+      "target_deadline_cost_critic_sha256": "844a8d1d8c272f9270030f2c9fcf06a575d6d36708fa89d8428eb47ce864eb4d",
+      "target_reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "target_speed_cost_critic_sha256": "0586555124d0e8d553f3fd59be4776a74380906ebe0fa3aa88ab443a5dd07353"
+    }
+  },
+  "passed": true
+}

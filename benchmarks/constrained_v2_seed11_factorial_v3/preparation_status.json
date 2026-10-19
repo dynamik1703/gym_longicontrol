@@ -1,0 +1,55 @@
+{
+  "all_programmatic_preparation_gates_pass": true,
+  "collector_semantics_pass": true,
+  "configuration_sha256": "c2042f49cd38a2eebf03bdc30977dbb84392d26c4f8339d65289f3572c9daaa6",
+  "current_first_100_matches_archive_audit": true,
+  "diagnostic_set_sha256": "a44cc85367db4a21c5c69a8f209fd8628bf5e42b6ef3cace9bdf8a54df79583f",
+  "evaluation_non_interference_pass": true,
+  "initialization_pass": true,
+  "paper": "SEALED_UNINSPECTED",
+  "ready_for_main_training": true,
+  "recovery_checkpoint_roundtrip_pass": true,
+  "resource_gate_pass": true,
+  "runtime": {
+    "fsrl": "0.1.0",
+    "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+    "gymnasium": "1.4.0",
+    "numpy": "2.4.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.13",
+    "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python",
+    "tianshou": "0.5.1",
+    "torch": "2.14.1"
+  },
+  "schema_version": 1,
+  "scientific_source_hashes": {
+    "canonical.json": "3d11aa0a8faf428fe7474d48335d3e268ece356b9f5af66cdb37b893173ab205",
+    "checkpointing.py": "c0298fed1e5d31f6da235ae71e65b5fc879c08c700e48149e2b5833e421478bc",
+    "config.py": "c4dca7af8d9cec52ea0864d4d27a8b6228c3940d616d9f0b5c3215cafd636d18",
+    "evaluation.py": "20abde5ba5e49cc531f23bb430fadc5bfd65fce75a87640e77276b31400955d3",
+    "execution.py": "1d10fc24ece88492ec9f5186a80c63adea42ae5e17dbbd863309002ff3831d65",
+    "finalize.py": "364e8dd882ed29ad729a784d8d6ba0813c227ffc7193a338f9d273080cfd52ab",
+    "initialization.py": "499b1a8d4b01f446b5691bda388ad9d2d7050186eb119ca6e6e7114a361a7105",
+    "preflight.py": "d8affdea7601be43424771efd63b49b74b07f5a84d8cc9d92ab1871ab738d3c1",
+    "resource_preflight.py": "edcd70e80f03189b2b31ab77828fa63297ca71918102c1d60dfb4a9f896a7c0b",
+    "runner.py": "1ac3518e57d021bc4513c21a7798126d353a3c11cec5e97616c68676ed90484e",
+    "split.py": "43ffd0298987d26753c7434eb7ad3724ee36aa6444d5ff35610615bc9b0241a4",
+    "streams.py": "f63dd65d75d9d318cd19425e87d10c6a9271c45b3f4f297f1982a2d093c7dc3e"
+  },
+  "split_checks": {
+    "accepted_count_18": true,
+    "clean_against_both_stream_full_tasks": true,
+    "clean_against_both_stream_routes": true,
+    "clean_against_opened_full_tasks": true,
+    "clean_against_opened_routes": true,
+    "full_task_unique": true,
+    "numeric_unique": true,
+    "paper_sealed_uninspected": true,
+    "route_unique": true
+  },
+  "stream_fingerprints": {
+    "T_CURRENT": "3278239196a40db9f42c4c613dcfa93c979636e20cfd3f30326a3000a0635159",
+    "T_HIST": "1f0504f969a55bc0c1af144fc2d228a81798a8a52e61d52edec406ae6b3582ed"
+  },
+  "v2_failure_regression_pass": true
+}

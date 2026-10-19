@@ -1,0 +1,112 @@
+{
+  "collector_pilots": {
+    "C_CURRENT": {
+      "checkpoint": {
+        "load_s": 0.053341958904638886,
+        "replay_capacity": 100000,
+        "rows": 2048,
+        "sha256": "cebf5d4c6ee6be1cafd5d77ee1c153601ed170dec47045a02dc047de6a40cb34",
+        "size_bytes": 52229639,
+        "write_s": 0.19553504209034145
+      },
+      "collector": "C_CURRENT",
+      "completed_episodes": 2,
+      "fixture_training_seed": 0,
+      "transitions": 2048,
+      "transitions_per_second_including_updates": 588.2474591658695,
+      "updates": 204,
+      "used_fixture_tasks": [
+        {
+          "episode_index": 0,
+          "full_task_sha256": "50fcec2448795656d87eab2412c74078dd85debad4ab12c7b74cc6adafe39162",
+          "reset_seed": 781183333,
+          "rng_draw_index": 0,
+          "route_sha256": "d225f3d3a41d5e9bf3a0790e77c73ecd46b76a2590b0b1f512efe56372166422",
+          "stream": "T_CURRENT"
+        },
+        {
+          "episode_index": 1,
+          "full_task_sha256": "484a35bd575d1c95bdd376ffabf4383a6b33e91dc0749fd5bbd77cb8809b9d09",
+          "reset_seed": 956899542,
+          "rng_draw_index": 1,
+          "route_sha256": "695772b2fbdcc5da9ef2023c42ae697df3b8a760171e9ba37869884fef418783",
+          "stream": "T_CURRENT"
+        }
+      ],
+      "walltime_s": 3.4815279999747872
+    },
+    "C_HIST": {
+      "checkpoint": {
+        "load_s": 0.04918954102322459,
+        "replay_capacity": 100000,
+        "rows": 2048,
+        "sha256": "c673e76c9f5bd371cd64af92bc64a25b3344c3a7f4f2797cc2fa609328e7907b",
+        "size_bytes": 52239559,
+        "write_s": 0.18055879103485495
+      },
+      "collector": "C_HIST",
+      "completed_episodes": 2,
+      "fixture_training_seed": 0,
+      "transitions": 2048,
+      "transitions_per_second_including_updates": 511.3762540510702,
+      "updates": 204,
+      "used_fixture_tasks": [
+        {
+          "episode_index": 0,
+          "full_task_sha256": "96d219f43be5c35d49cb2404a5c3c744f101960de3b7994321cc022445e5847b",
+          "reset_seed": null,
+          "rng_draw_index": 0,
+          "route_sha256": "767258d7a1934e7b7b6e74693fedd5ddbf5946d98cfc2e2b6e97ae879fc14df5",
+          "stream": "T_HIST"
+        },
+        {
+          "episode_index": 1,
+          "full_task_sha256": "799dffdbe53c97b3db929d14e380ebeb2bccfec46800f5a5ec59c78960c0667a",
+          "reset_seed": null,
+          "rng_draw_index": 2,
+          "route_sha256": "039ec0b581d394ea3aaefb09891d7fcff49d1f055b77f2f48eda5d6a8483dd38",
+          "stream": "T_HIST"
+        }
+      ],
+      "walltime_s": 4.004878959036432
+    }
+  },
+  "diagnostic_evaluation_pilot": {
+    "actor_unchanged": true,
+    "episodes": 3,
+    "fixture_seeds": [
+      0,
+      1,
+      2
+    ],
+    "outcomes_used_for_science": false,
+    "seconds_per_episode": 0.37824513864082593,
+    "simulator_steps": 5400,
+    "training_rng_unchanged": true,
+    "walltime_s": 1.1347354159224778
+  },
+  "diagnostic_tasks_used": false,
+  "fixture_policy_outcomes_used": false,
+  "gates": {
+    "disk_limit_gb": 15.0,
+    "disk_pass": true,
+    "runtime_limit_h": 24.0,
+    "runtime_pass": true
+  },
+  "passed": true,
+  "projection": {
+    "C_CURRENT_policy_s": 509.9894531213067,
+    "C_HIST_policy_s": 586.6521912651024,
+    "all_checkpoint_writes_s": 1893.313660074491,
+    "all_diagnostic_evaluation_s": 163.4018998928368,
+    "archived_checkpoint_source": "completed multistep-physics-mbrl-v1 300k verified checkpoints",
+    "archived_full_checkpoint_max_bytes": 151275789,
+    "archived_full_checkpoint_max_write_s": 15.777613833954092,
+    "checkpoint_projection_method": "live capacity-preallocated V3 checkpoint bounded by archived verified full-100k checkpoint maxima",
+    "full_checkpoint_size_bytes_conservative": 151275789,
+    "retained_checkpoint_count": 28,
+    "retained_disk_gb": 4.235722092,
+    "total_serial_walltime_h": 1.1805552357611517
+  },
+  "schema_version": 1
+}
