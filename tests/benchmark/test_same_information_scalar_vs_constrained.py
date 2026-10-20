@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -30,9 +31,13 @@ from benchmarks.same_information_scalar_vs_constrained.initialization import (
 )
 from benchmarks.same_information_scalar_vs_constrained.interpretation import classify
 from benchmarks.same_information_scalar_vs_constrained.scalarization import (
+    automatic_alpha_integrand,
+    constrained_actor_integrand,
     frozen_scalarization,
     n_step_scalar_return,
+    scalar_actor_integrand,
     scalar_reward,
+    soft_critic_bootstrap,
 )
 from benchmarks.same_information_scalar_vs_constrained.signals import (
     SameInformationScalarWrapper,
@@ -65,13 +70,87 @@ def test_exact_reference_median_and_scalar_formula():
     assert scalar.lambda_deadline == np.median(
         [1.0015569080594906, 1.5752363435900516, 2.3950774369414662]
     )
-    assert scalar.normalizer == pytest.approx(
+    assert scalar.constrained_actor_normalizer == pytest.approx(
         1 + scalar.lambda_speed + scalar.lambda_deadline
     )
-    expected = (
-        0.2514977651664276 * 0.4 - 0.35233381481173953 * 0.2 - 0.39616842002183283 * 0.1
-    )
+    assert scalar.w_reward == 1.0
+    assert scalar.w_speed == scalar.lambda_speed
+    assert scalar.w_deadline == scalar.lambda_deadline
+    expected = 0.4 - 1.4009421299572349 * 0.2 - 1.5752363435900516 * 0.1
     assert scalar_reward(0.4, 0.2, 0.1) == pytest.approx(expected)
+
+
+def test_exact_pinned_sac_and_saclag_equations():
+    alpha = 0.7
+    log_probability = -0.4
+    assert soft_critic_bootstrap(3.0, alpha, log_probability) == pytest.approx(
+        3.0 - alpha * log_probability
+    )
+    # Pinned FSRL invokes this same bootstrap for reward, speed, and deadline critics.
+    assert [
+        soft_critic_bootstrap(q, alpha, log_probability) for q in (3.0, 2.0, 1.0)
+    ] == pytest.approx(
+        [q - alpha * log_probability for q in (3.0, 2.0, 1.0)]
+    )
+    assert scalar_actor_integrand(3.0, alpha, log_probability) == pytest.approx(
+        alpha * log_probability - 3.0
+    )
+    scalar = frozen_scalarization()
+    assert constrained_actor_integrand(
+        3.0,
+        2.0,
+        1.0,
+        scalar.lambda_speed,
+        scalar.lambda_deadline,
+        alpha,
+        log_probability,
+    ) == pytest.approx(
+        (
+            alpha * log_probability
+            - 3.0
+            + scalar.lambda_speed * 2.0
+            + scalar.lambda_deadline
+        )
+        / scalar.constrained_actor_normalizer
+    )
+    assert automatic_alpha_integrand(0.2, log_probability, -1.0) == pytest.approx(
+        -0.2 * (log_probability - 1.0)
+    )
+
+
+def test_candidate_n_and_u_are_exact_positive_reward_scalings_only():
+    scalar = frozen_scalarization()
+    reward_u = scalar_reward(0.4, 0.2, 0.1)
+    reward_n = reward_u / scalar.constrained_actor_normalizer
+    assert reward_u == pytest.approx(scalar.constrained_actor_normalizer * reward_n)
+    # Standard SAC alpha is deliberately not divided by Z in Candidate U.
+    assert scalar_actor_integrand(0.0, 1.0, -0.5) == -0.5
+
+
+def test_immutable_reward_scale_audit_covers_both_candidates():
+    path = (
+        Path(__file__).parents[2]
+        / "benchmarks"
+        / "same_information_scalar_vs_constrained"
+        / "reward_scale.json"
+    )
+    audit = json.loads(path.read_text(encoding="utf-8"))
+    assert audit["selected_candidate"] == "U"
+    assert audit["comparison"]["selection_used_performance_outcomes"] is False
+    assert audit["comparison"]["elementwise_positive_scaling_verified"] is True
+    assert audit["pooled"]["r_E"]["count"] == 900_000
+    for name in (
+        "r_E",
+        "lambda_speed_c_speed",
+        "lambda_deadline_c_deadline",
+        "r_N",
+        "r_U",
+    ):
+        row = audit["pooled"][name]
+        assert row["minimum"] <= row["median"] <= row["maximum"]
+        assert row["max_abs"] == pytest.approx(
+            max(abs(row["minimum"]), abs(row["maximum"]))
+        )
 
 
 @pytest.mark.parametrize(

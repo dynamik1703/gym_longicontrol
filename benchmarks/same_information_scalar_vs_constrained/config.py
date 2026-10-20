@@ -51,6 +51,19 @@ class StudyConfiguration:
         }
         if raw.get("algorithm") != expected:
             raise ValueError("Matched algorithm settings changed")
+        scalar = raw.get("scalarization", {})
+        expected_scalar = {
+            "selected_candidate": "U",
+            "convention": "unnormalized-fixed-lagrangian",
+            "lambda_speed_star": 1.4009421299572349,
+            "lambda_deadline_star": 1.5752363435900516,
+            "constrained_actor_normalizer": 3.9761784735472867,
+            "w_reward": 1.0,
+            "w_speed": 1.4009421299572349,
+            "w_deadline": 1.5752363435900516,
+        }
+        if any(scalar.get(name) != value for name, value in expected_scalar.items()):
+            raise ValueError("Frozen Candidate U scalarization changed")
         auth = raw.get("authorization", {})
         if any(not isinstance(value, bool) for value in auth.values()):
             raise ValueError("Authorization flags must be explicit booleans")

@@ -24,12 +24,17 @@ Key frozen values:
 
 - `lambda_speed_star = 1.4009421299572349`
 - `lambda_deadline_star = 1.5752363435900516`
-- `w_reward = 0.2514977651664276`
-- `w_speed = 0.35233381481173953`
-- `w_deadline = 0.39616842002183283`
+- Primary scalarization: Candidate U, unnormalized fixed Lagrangian
+- `w_reward = 1.0`
+- `w_speed = 1.4009421299572349`
+- `w_deadline = 1.5752363435900516`
+- `Z = 3.9761784735472867` is retained only as the Constrained actor rescaling factor
 - Diagnostic: `SAMEINFO_DIAGNOSTIC_V1`
 - Validation: `SAMEINFO_VALIDATION_V1` (`FROZEN_UNOPENED`)
 - Paper: `SEALED_UNINSPECTED`
+
+"Same stream" means the same ordered task/reset-seed stream. It does not claim that
+different policies produce byte-identical state/action/transition trajectories.
 
 The scalar runner is deliberately fail-closed. `run`, `resume`, and `matrix` reject
 execution while `main_training_authorized` or `main_training_enabled` is false.

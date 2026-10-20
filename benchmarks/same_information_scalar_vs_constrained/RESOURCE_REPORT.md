@@ -29,3 +29,10 @@ Evaluation timing uses the completed collector-replication preparation measureme
 preparation task forbids new policy evaluation. Checkpoint projection uses the larger
 151,275,789-byte / 15.7776-second archived full-checkpoint bound, not the favorable
 pilot size alone.
+
+The Candidate N to Candidate U change is three scalar multiplications/additions with
+the same one-critic standard-SAC graph, tensor shapes, optimizer state, replay,
+checkpoint schema, and evaluation plan. It cannot materially change the execution
+cost represented by this gate. The pilot was therefore not repeated, avoiding any
+unnecessary simulator interaction; the estimates and the 2,061-transition preparation
+total remain unchanged.

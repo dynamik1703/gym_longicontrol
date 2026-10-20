@@ -8,6 +8,9 @@ constructed.
 
 Canonical stream ordered SHA-256:
 
+Here, "stream" means the ordered task/reset-seed schedule. It does not freeze or
+claim equality of the realized online state/action/transition trajectories.
+
 - CANONICAL_11: `08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c`
 - CANONICAL_29: `ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312`
 - CANONICAL_47: `2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255`

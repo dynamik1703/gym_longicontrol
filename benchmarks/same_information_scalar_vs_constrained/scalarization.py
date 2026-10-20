@@ -14,7 +14,7 @@ from .config import load_configuration
 class Scalarization:
     lambda_speed: float
     lambda_deadline: float
-    normalizer: float
+    constrained_actor_normalizer: float
     w_reward: float
     w_speed: float
     w_deadline: float
@@ -42,10 +42,10 @@ def frozen_scalarization() -> Scalarization:
     calculated = {
         "lambda_speed": speed,
         "lambda_deadline": deadline,
-        "normalizer": normalizer,
-        "w_reward": 1.0 / normalizer,
-        "w_speed": speed / normalizer,
-        "w_deadline": deadline / normalizer,
+        "constrained_actor_normalizer": normalizer,
+        "w_reward": 1.0,
+        "w_speed": speed,
+        "w_deadline": deadline,
     }
     for name, value in calculated.items():
         frozen_name = {
@@ -59,6 +59,51 @@ def frozen_scalarization() -> Scalarization:
 
 def scalar_reward(objective: float, speed_cost: float, deadline_cost: float) -> float:
     return frozen_scalarization().reward(objective, speed_cost, deadline_cost)
+
+
+def soft_critic_bootstrap(q_min: float, alpha: float, log_probability: float) -> float:
+    """Pinned FSRL bootstrap used independently by every critic system."""
+
+    return float(q_min - alpha * log_probability)
+
+
+def scalar_actor_integrand(
+    q_scalar_min: float, alpha: float, log_probability: float
+) -> float:
+    """Pinned one-system SAC actor-loss integrand."""
+
+    return float(alpha * log_probability - q_scalar_min)
+
+
+def constrained_actor_integrand(
+    q_reward_min: float,
+    q_speed_min: float,
+    q_deadline_min: float,
+    lambda_speed: float,
+    lambda_deadline: float,
+    alpha: float,
+    log_probability: float,
+) -> float:
+    """Pinned rescaled three-system SACLag actor-loss integrand."""
+
+    normalizer = 1.0 + lambda_speed + lambda_deadline
+    return float(
+        (
+            alpha * log_probability
+            - q_reward_min
+            + lambda_speed * q_speed_min
+            + lambda_deadline * q_deadline_min
+        )
+        / normalizer
+    )
+
+
+def automatic_alpha_integrand(
+    log_alpha: float, detached_log_probability: float, target_entropy: float
+) -> float:
+    """Pinned automatic-alpha loss integrand, identical in both arms."""
+
+    return float(-log_alpha * (detached_log_probability + target_entropy))
 
 
 def n_step_scalar_return(

@@ -31,14 +31,21 @@
     "max_episode_steps": 1800
   },
   "scalarization": {
+    "selected_candidate": "U",
+    "convention": "unnormalized-fixed-lagrangian",
     "lambda_speed_values": [1.737065439763169, 1.4009421299572349, 1.3904230583041928],
     "lambda_deadline_values": [1.0015569080594906, 1.5752363435900516, 2.3950774369414662],
     "lambda_speed_star": 1.4009421299572349,
     "lambda_deadline_star": 1.5752363435900516,
-    "normalizer": 3.9761784735472867,
-    "w_reward": 0.2514977651664276,
-    "w_speed": 0.35233381481173953,
-    "w_deadline": 0.39616842002183283
+    "constrained_actor_normalizer": 3.9761784735472867,
+    "w_reward": 1.0,
+    "w_speed": 1.4009421299572349,
+    "w_deadline": 1.5752363435900516,
+    "candidate_n": {
+      "w_reward": 0.2514977651664276,
+      "w_speed": 0.35233381481173953,
+      "w_deadline": 0.39616842002183283
+    }
   },
   "reference_root": "/Users/romanliessner/gitlab/gym_longicontrol_collector_replication/runs/constrained-v2-collector-replication",
   "reference_conditions": {

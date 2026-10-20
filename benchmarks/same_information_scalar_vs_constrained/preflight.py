@@ -55,6 +55,7 @@ def _fsrl_source_verified() -> bool:
 
 
 def _information_fixture_verified() -> bool:
+    scalar = frozen_scalarization()
     fixtures = (
         (0.001, 10.0, 12.0, 100.0, 30.0),
         (-0.0005, 10.0, 12.0, 120.0, 30.0),
@@ -83,6 +84,18 @@ def _information_fixture_verified() -> bool:
             expected,
             rtol=0,
             atol=0,
+        ):
+            return False
+        expected_scalar = (
+            expected[0]
+            - scalar.lambda_speed * expected[1]
+            - scalar.lambda_deadline * expected[2]
+        )
+        if not np.isclose(
+            scalar.reward(actual.objective, actual.speed_cost, actual.deadline_cost),
+            expected_scalar,
+            rtol=0,
+            atol=1e-15,
         ):
             return False
     return True
@@ -138,8 +151,16 @@ def preparation_status() -> dict[str, Any]:
         "scientific_design_frozen": all((HERE / name).is_file() for name in documents),
         "same_information_verified": _information_fixture_verified(),
         "scalarization_frozen": bool(
-            np.isclose(scalar.w_reward + scalar.w_speed + scalar.w_deadline, 1.0)
+            configuration.raw["scalarization"]["selected_candidate"] == "U"
+            and np.isclose(scalar.w_reward, 1.0, rtol=0, atol=0)
+            and np.isclose(
+                scalar.w_speed, scalar.lambda_speed, rtol=0, atol=1e-15
+            )
+            and np.isclose(
+                scalar.w_deadline, scalar.lambda_deadline, rtol=0, atol=1e-15
+            )
         ),
+        "entropy_semantics_audited": _fsrl_source_verified(),
         "reference_constrained_verified": references["reference_constrained_verified"],
         "canonical_streams_verified": ledger["checks"]["canonical_streams_have_865"],
         "diagnostic_set_frozen": len(

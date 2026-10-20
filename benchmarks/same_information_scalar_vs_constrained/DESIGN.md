@@ -37,8 +37,15 @@ Constrained V2 reuses immutable C11, C29, and C47. Each has 300,000 real transit
 30,000 updates, and all six scientific checkpoints.
 
 Scalar SAC will train S11, S29, and S47 using the identical per-seed ordered canonical
-stream and TRANSITIONAL update timing. It has one double-Q reward critic, no cost
-critics, no PID, no multiplier, and no constrained actor objective.
+**task/reset-seed stream** and TRANSITIONAL update timing. This fixes the ordered task
+presentations and reset seeds, not realized experience: once policies diverge, their
+states, actions, next states, episode lengths, and transition trajectories naturally
+diverge. "Same stream" never means byte-identical online transition tuples.
+
+Scalar uses the unnormalized fixed-Lagrangian reward
+`r_E - 1.4009421299572349*c_speed - 1.5752363435900516*c_deadline`. It has one
+double-Q reward critic, no cost critics, no PID, no multiplier, and no constrained
+actor objective.
 
 ## Fairness
 
@@ -46,6 +53,12 @@ Reference-informed fixed scalarization is used as a strong control, not as a cla
 that these weights would be available a priori in a new task. The medians use all
 three prior immutable final Constrained policies with no seed selection, RSR weighting,
 or new Diagnostic/Validation outcome.
+
+Candidate U was selected before Scalar performance data because it directly encodes
+the fixed Lagrangian immediate reward while leaving automatic-alpha SAC standard.
+Normalizing only its task reward would change task-versus-entropy scale by `Z`; custom
+entropy compensation was rejected. Separate constrained critics and their unusual
+per-critic entropy bootstraps remain a documented algorithmic difference.
 
 ## Interpretation gates
 

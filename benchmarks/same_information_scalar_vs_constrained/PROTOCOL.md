@@ -22,8 +22,18 @@ maximum episode          1800 steps
 ```
 
 No action repeat, model augmentation, reward bonus, speed margin, progress shaping,
-or separate tuning is permitted. S11/S29/S47 consume exactly the retained ordered
-CANONICAL_11/29/47 streams respectively. Any stream recovery failure is a hard stop.
+or separate tuning is permitted. The only scalar reward is:
+
+```text
+r_scalar = r_E
+         - 1.4009421299572349*c_speed
+         - 1.5752363435900516*c_deadline
+```
+
+S11/S29/S47 consume exactly the retained ordered CANONICAL_11/29/47 **task/reset-seed
+streams** respectively. Any stream recovery failure is a hard stop. These streams
+match ordered task presentation, not realized state/action/transition trajectories;
+the latter diverge normally when the policies choose different actions.
 
 Scientific checkpoints occur at 50k intervals; 300k is always final and there is no
 best-checkpoint selection. Recovery checkpoints are written atomically every 10k and
