@@ -111,7 +111,7 @@
   },
   "authorization": {
     "main_training_authorized": true,
-    "main_training_enabled": true,
+    "main_training_enabled": false,
     "same_attempt_exact_resume_authorized": true,
     "fresh_restart_authorized": false,
     "validation_authorized": false,

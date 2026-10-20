@@ -1,0 +1,3218 @@
+{
+  "authorization": {
+    "fresh_restart_authorized": false,
+    "main_training_authorized": true,
+    "main_training_enabled": false,
+    "paper_test_authorized": false,
+    "same_attempt_exact_resume_authorized": true,
+    "validation_authorized": false
+  },
+  "canonical_stream_sha256": {
+    "11": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+    "29": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+    "47": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255"
+  },
+  "canonical_streams_verified": true,
+  "configuration_sha256": "96c587c9b14c0238257be60983bc9db7951fdabe2cebd867d5b9b13627e8c1f2",
+  "diagnostic_classification_applied": false,
+  "diagnostic_classification_note": "The frozen final Validation classification was not applied to diagnostics.",
+  "diagnostic_curves": {
+    "C11": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 13,
+          "standstill": 0,
+          "timely_completion": 16
+        },
+        "checkpoint_sha256": "d33e35ae3de139130c0c0bf859561d382b6178ff5ac5c1753c781f6f4b2034a7",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 16,
+          "requirement_satisfaction": 5,
+          "speed_compliance": 5
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 2,
+          "COMPLETED_SPEED_VIOLATION": 11,
+          "FEASIBLE": 5
+        },
+        "feasible_only_energy_kwh": {
+          "count": 5,
+          "mean": 0.16948091702555407,
+          "median": 0.1695445207534443,
+          "values": [
+            0.17508899104386774,
+            0.1678619538104656,
+            0.18328992355434542,
+            0.15161919596564719,
+            0.1695445207534443
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.03699657447914141,
+          "mean_action_total_variation": 1.2242153220706515,
+          "mean_integrated_speed_violation_m": 4.8105319304357055,
+          "mean_max_speed_violation_m_s": 0.7727958656220879,
+          "mean_speed_violation_count": 0.8888888888888888,
+          "mean_travel_time_s": 113.9388888888867,
+          "median_travel_time_s": 111.79999999999792
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 0.8888888888888888,
+          "rsr": 0.2777777777777778,
+          "speed_compliance": 0.2777777777777778
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "alpha": 0.23633172882894263,
+          "counters": {
+            "real_transitions": 50000,
+            "rl_gradient_updates": 5000
+          },
+          "lambda_deadline": 1.7975925265370538,
+          "lambda_speed": 1.119824744593548,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 9,
+          "speed_violation": 3,
+          "standstill": 0,
+          "timely_completion": 5
+        },
+        "checkpoint_sha256": "c6139c8767b290738bf4a6a21d2846dbf11638af83097bcfecac2fee88ef716a",
+        "counts": {
+          "completion": 9,
+          "deadline_compliance": 5,
+          "requirement_satisfaction": 4,
+          "speed_compliance": 15
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 4,
+          "COMPLETED_SPEED_VIOLATION": 1,
+          "FEASIBLE": 4,
+          "INCOMPLETE_SAFE": 7,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 2
+        },
+        "feasible_only_energy_kwh": {
+          "count": 4,
+          "mean": 0.1658675842830934,
+          "median": 0.16609667037637427,
+          "values": [
+            0.17855279158842002,
+            0.16478820538303382,
+            0.15272420479120505,
+            0.16740513536971469
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.07510578482574912,
+          "mean_action_total_variation": 3.5286472141742706,
+          "mean_integrated_speed_violation_m": 0.014862867771723872,
+          "mean_max_speed_violation_m_s": 0.07453945177249761,
+          "mean_speed_violation_count": 0.16666666666666666,
+          "mean_travel_time_s": 155.78333333332876,
+          "median_travel_time_s": 168.34999999999474
+        },
+        "rates": {
+          "completion": 0.5,
+          "deadline_compliance": 0.2777777777777778,
+          "rsr": 0.2222222222222222,
+          "speed_compliance": 0.8333333333333334
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "alpha": 0.05527578708607066,
+          "counters": {
+            "real_transitions": 100000,
+            "rl_gradient_updates": 10000
+          },
+          "lambda_deadline": 0.5346024235713992,
+          "lambda_speed": 2.411868905939426,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 5,
+          "speed_violation": 2,
+          "standstill": 0,
+          "timely_completion": 10
+        },
+        "checkpoint_sha256": "a1de977fd4f5d25e3c58c041b70ee3b7ae8502e29e237171d33bef922f746cb2",
+        "counts": {
+          "completion": 13,
+          "deadline_compliance": 10,
+          "requirement_satisfaction": 9,
+          "speed_compliance": 16
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 3,
+          "COMPLETED_SPEED_VIOLATION": 1,
+          "FEASIBLE": 9,
+          "INCOMPLETE_SAFE": 4,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+        },
+        "feasible_only_energy_kwh": {
+          "count": 9,
+          "mean": 0.16878579522059525,
+          "median": 0.16941616277129073,
+          "values": [
+            0.17957330189836304,
+            0.1603180111574006,
+            0.16953279759413606,
+            0.16238674564953223,
+            0.17863349361630704,
+            0.17029285042252548,
+            0.16753932961034812,
+            0.1613794642654541,
+            0.16941616277129073
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.1288432497018066,
+          "mean_action_total_variation": 5.509127044015461,
+          "mean_integrated_speed_violation_m": 0.008549681805978404,
+          "mean_max_speed_violation_m_s": 0.05870306666721935,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_travel_time_s": 142.77222222221837,
+          "median_travel_time_s": 138.09999999999644
+        },
+        "rates": {
+          "completion": 0.7222222222222222,
+          "deadline_compliance": 0.5555555555555556,
+          "rsr": 0.5,
+          "speed_compliance": 0.8888888888888888
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "alpha": 0.012643516637591171,
+          "counters": {
+            "real_transitions": 150000,
+            "rl_gradient_updates": 15000
+          },
+          "lambda_deadline": 0.6228442877795207,
+          "lambda_speed": 1.619453069418968,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 14
+        },
+        "checkpoint_sha256": "a70ee60c6fb8a4f93d32554b4be4a173599f626d4b285c7d563b5f792ea07fef",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 14,
+          "requirement_satisfaction": 14,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 4,
+          "FEASIBLE": 14
+        },
+        "feasible_only_energy_kwh": {
+          "count": 14,
+          "mean": 0.17627794866537685,
+          "median": 0.17558405274189237,
+          "values": [
+            0.19182759394060123,
+            0.16558618895555513,
+            0.16929254293154095,
+            0.16946467795688563,
+            0.1913131265113432,
+            0.1797172754669748,
+            0.15661154387802664,
+            0.1721560712682377,
+            0.1912917873895512,
+            0.1830164259689547,
+            0.19313892881649128,
+            0.17757043800800687,
+            0.17359766747577787,
+            0.15330701274732875
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.32238745227647847,
+          "mean_action_total_variation": 11.532504677772522,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 115.59444444444216,
+          "median_travel_time_s": 111.59999999999793
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 0.7777777777777778,
+          "rsr": 0.7777777777777778,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "alpha": 0.0032932860057174602,
+          "counters": {
+            "real_transitions": 200000,
+            "rl_gradient_updates": 20000
+          },
+          "lambda_deadline": 1.4860146754734664,
+          "lambda_speed": 1.6821028005470922,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 1,
+          "standstill": 0,
+          "timely_completion": 10
+        },
+        "checkpoint_sha256": "357f6c132b23fad0ee5cc44dece140e90e642b2b1bec7cdac55ab6e57051d088",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 10,
+          "requirement_satisfaction": 10,
+          "speed_compliance": 17
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 1,
+          "COMPLETED_DEADLINE_VIOLATION": 7,
+          "FEASIBLE": 10
+        },
+        "feasible_only_energy_kwh": {
+          "count": 10,
+          "mean": 0.17117574246052572,
+          "median": 0.17059849112773487,
+          "values": [
+            0.17306409607879322,
+            0.1706187313706895,
+            0.16467015687149375,
+            0.17057825088478024,
+            0.18005188818909468,
+            0.17722538215788372,
+            0.16869502510477297,
+            0.16612534420320868,
+            0.1720296896830948,
+            0.1686988600614457
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.2982101309588893,
+          "mean_action_total_variation": 12.671220653586918,
+          "mean_integrated_speed_violation_m": 0.016437084552007496,
+          "mean_max_speed_violation_m_s": 0.06604987686104548,
+          "mean_speed_violation_count": 0.05555555555555555,
+          "mean_travel_time_s": 139.16111111110752,
+          "median_travel_time_s": 138.84999999999638
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 0.5555555555555556,
+          "rsr": 0.5555555555555556,
+          "speed_compliance": 0.9444444444444444
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "alpha": 0.0010218609470356145,
+          "counters": {
+            "real_transitions": 250000,
+            "rl_gradient_updates": 25000
+          },
+          "lambda_deadline": 1.4814952726339046,
+          "lambda_speed": 1.93753260278045,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 10
+        },
+        "checkpoint_sha256": "e2047a6e9bf217d020e708d32104f24e35d8e34dd7d4900cc87d29cdc069ff1d",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 10,
+          "requirement_satisfaction": 10,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 8,
+          "FEASIBLE": 10
+        },
+        "feasible_only_energy_kwh": {
+          "count": 10,
+          "mean": 0.1726921573318769,
+          "median": 0.1733646442055019,
+          "values": [
+            0.17206005865229818,
+            0.17345693124923622,
+            0.17852869030678864,
+            0.16271402402734697,
+            0.16342365804784176,
+            0.18013677311987042,
+            0.1775168225340393,
+            0.17327235716176756,
+            0.179770219028334,
+            0.1660420391912461
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.8154914143509271,
+          "mean_action_total_variation": 36.18582060933113,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 138.7499999999964,
+          "median_travel_time_s": 138.09999999999644
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 0.5555555555555556,
+          "rsr": 0.5555555555555556,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "alpha": 0.0006771973524748922,
+          "counters": {
+            "real_transitions": 300000,
+            "rl_gradient_updates": 30000
+          },
+          "lambda_deadline": 1.0015569080594906,
+          "lambda_speed": 1.737065439763169,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11
+      }
+    ],
+    "C29": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "checkpoint_sha256": "28ffa7bf647d379c5b8b37efba14c37e3e0caf665185dc06d5ad12287795f89d",
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "alpha": 0.22331893459642949,
+          "counters": {
+            "real_transitions": 50000,
+            "rl_gradient_updates": 5000
+          },
+          "lambda_deadline": 7.314327192709112,
+          "lambda_speed": 0.0,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 7,
+          "speed_violation": 2,
+          "standstill": 0,
+          "timely_completion": 8
+        },
+        "checkpoint_sha256": "860bd424f9af9552374c524eebf7b4a336232411528236812508936f6a6ab6cf",
+        "counts": {
+          "completion": 11,
+          "deadline_compliance": 8,
+          "requirement_satisfaction": 7,
+          "speed_compliance": 16
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 1,
+          "COMPLETED_DEADLINE_VIOLATION": 2,
+          "COMPLETED_SPEED_VIOLATION": 1,
+          "FEASIBLE": 7,
+          "INCOMPLETE_SAFE": 7
+        },
+        "feasible_only_energy_kwh": {
+          "count": 7,
+          "mean": 0.1610713106006634,
+          "median": 0.1590413900084062,
+          "values": [
+            0.1686881004729648,
+            0.15774287217862953,
+            0.15084475820967397,
+            0.16931691898421677,
+            0.1590413900084062,
+            0.15815582157690375,
+            0.16370931277384862
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.09009034600305357,
+          "mean_action_total_variation": 4.151647061109543,
+          "mean_integrated_speed_violation_m": 0.001147003377823857,
+          "mean_max_speed_violation_m_s": 0.00923221643532162,
+          "mean_speed_violation_count": 0.1111111111111111,
+          "mean_travel_time_s": 149.58888888888467,
+          "median_travel_time_s": 153.99999999999554
+        },
+        "rates": {
+          "completion": 0.6111111111111112,
+          "deadline_compliance": 0.4444444444444444,
+          "rsr": 0.3888888888888889,
+          "speed_compliance": 0.8888888888888888
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "alpha": 0.05357092765268365,
+          "counters": {
+            "real_transitions": 100000,
+            "rl_gradient_updates": 10000
+          },
+          "lambda_deadline": 1.0517120787784668,
+          "lambda_speed": 0.7019465422950414,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 8,
+          "standstill": 0,
+          "timely_completion": 18
+        },
+        "checkpoint_sha256": "0bb1a1cf5b3c596e19d949419b62c367b2621c19ebdd49dcdf07807e564841c2",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 18,
+          "requirement_satisfaction": 10,
+          "speed_compliance": 10
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_SPEED_VIOLATION": 8,
+          "FEASIBLE": 10
+        },
+        "feasible_only_energy_kwh": {
+          "count": 10,
+          "mean": 0.17009171723540528,
+          "median": 0.17053668354454854,
+          "values": [
+            0.18316051914573023,
+            0.17131300238031946,
+            0.1640050219613439,
+            0.18525623484533457,
+            0.17252495790290623,
+            0.14979395262173736,
+            0.16442855139930004,
+            0.17829600343156152,
+            0.1623785639570422,
+            0.16976036470877762
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.25437127726702247,
+          "mean_action_total_variation": 8.4756085673968,
+          "mean_integrated_speed_violation_m": 0.21132645956431848,
+          "mean_max_speed_violation_m_s": 0.42821008092285845,
+          "mean_speed_violation_count": 0.5555555555555556,
+          "mean_travel_time_s": 107.11666666666486,
+          "median_travel_time_s": 103.64999999999839
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 1.0,
+          "rsr": 0.5555555555555556,
+          "speed_compliance": 0.5555555555555556
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "alpha": 0.017530388338656385,
+          "counters": {
+            "real_transitions": 150000,
+            "rl_gradient_updates": 15000
+          },
+          "lambda_deadline": 1.1971967084311255,
+          "lambda_speed": 1.2370287981855002,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 7,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 6
+        },
+        "checkpoint_sha256": "5a36864186f296aa4eff1786266e17ef0ebee0d05ed2b13dd24621927de6ba10",
+        "counts": {
+          "completion": 11,
+          "deadline_compliance": 6,
+          "requirement_satisfaction": 6,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 5,
+          "FEASIBLE": 6,
+          "INCOMPLETE_SAFE": 7
+        },
+        "feasible_only_energy_kwh": {
+          "count": 6,
+          "mean": 0.17412822818524754,
+          "median": 0.17393012433816274,
+          "values": [
+            0.1812233455362694,
+            0.16786492194060507,
+            0.15653008545477892,
+            0.1912907675035064,
+            0.1734845127718821,
+            0.1743757359044434
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.35072494465243303,
+          "mean_action_total_variation": 18.582502285639446,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 157.00555555555093,
+          "median_travel_time_s": 163.399999999995
+        },
+        "rates": {
+          "completion": 0.6111111111111112,
+          "deadline_compliance": 0.3333333333333333,
+          "rsr": 0.3333333333333333,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "alpha": 0.005026232299203891,
+          "counters": {
+            "real_transitions": 200000,
+            "rl_gradient_updates": 20000
+          },
+          "lambda_deadline": 1.2804893198197707,
+          "lambda_speed": 1.312544509673597,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 6,
+          "standstill": 0,
+          "timely_completion": 18
+        },
+        "checkpoint_sha256": "5e2059ebbb83d4194ab1518404ff6514ca887bc257cb33ed4063e2009efd6630",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 18,
+          "requirement_satisfaction": 12,
+          "speed_compliance": 12
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_SPEED_VIOLATION": 6,
+          "FEASIBLE": 12
+        },
+        "feasible_only_energy_kwh": {
+          "count": 12,
+          "mean": 0.1827015220913291,
+          "median": 0.1799593746573087,
+          "values": [
+            0.20199742325423198,
+            0.17865865755969232,
+            0.17242824128154544,
+            0.1969195501938953,
+            0.1895790659428246,
+            0.16521471173156835,
+            0.18770872724039214,
+            0.18126009175492508,
+            0.19942387434262188,
+            0.1726999875886421,
+            0.16901810674992507,
+            0.17750982745568483
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.5560957047274453,
+          "mean_action_total_variation": 17.339997324678635,
+          "mean_integrated_speed_violation_m": 0.08727719786767257,
+          "mean_max_speed_violation_m_s": 0.31963139033719945,
+          "mean_speed_violation_count": 0.4444444444444444,
+          "mean_travel_time_s": 97.79444444444317,
+          "median_travel_time_s": 96.19999999999881
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 1.0,
+          "rsr": 0.6666666666666666,
+          "speed_compliance": 0.6666666666666666
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "alpha": 0.0016986376461368192,
+          "counters": {
+            "real_transitions": 250000,
+            "rl_gradient_updates": 25000
+          },
+          "lambda_deadline": 1.4051539750131181,
+          "lambda_speed": 1.5419949058473839,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 7,
+          "speed_violation": 1,
+          "standstill": 0,
+          "timely_completion": 7
+        },
+        "checkpoint_sha256": "d5284426d802163fe8f3045789293e721e81f462771988fe648cf909e8f575db",
+        "counts": {
+          "completion": 11,
+          "deadline_compliance": 7,
+          "requirement_satisfaction": 6,
+          "speed_compliance": 17
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 4,
+          "COMPLETED_SPEED_VIOLATION": 1,
+          "FEASIBLE": 6,
+          "INCOMPLETE_SAFE": 7
+        },
+        "feasible_only_energy_kwh": {
+          "count": 6,
+          "mean": 0.19995871519029618,
+          "median": 0.20567974526664984,
+          "values": [
+            0.22133986750287002,
+            0.18557260338645257,
+            0.17190516554032856,
+            0.20912501752232654,
+            0.20957516417882632,
+            0.20223447301097316
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.29063289655700936,
+          "mean_action_total_variation": 13.294679466221067,
+          "mean_integrated_speed_violation_m": 0.022866798786267815,
+          "mean_max_speed_violation_m_s": 0.011781124326908069,
+          "mean_speed_violation_count": 0.05555555555555555,
+          "mean_travel_time_s": 151.19444444444014,
+          "median_travel_time_s": 153.54999999999558
+        },
+        "rates": {
+          "completion": 0.6111111111111112,
+          "deadline_compliance": 0.3888888888888889,
+          "rsr": 0.3333333333333333,
+          "speed_compliance": 0.9444444444444444
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "alpha": 0.0011874788729478814,
+          "counters": {
+            "real_transitions": 300000,
+            "rl_gradient_updates": 30000
+          },
+          "lambda_deadline": 1.5752363435900516,
+          "lambda_speed": 1.4009421299572349,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29
+      }
+    ],
+    "C47": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "checkpoint_sha256": "eea59f0e96bb359432c651585460405571f375ef6f9ee1af02b8aab939b7f799",
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 7.34692315164834e-05,
+          "mean_action_total_variation": 0.0009619394938151041,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "alpha": 0.22344174759558072,
+          "counters": {
+            "real_transitions": 50000,
+            "rl_gradient_updates": 5000
+          },
+          "lambda_deadline": 8.87260960870347,
+          "lambda_speed": 0.0,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "checkpoint_sha256": "ae1b7ddd05552a6c429492526f534c0569f8c374a3efc804260d1b2351fa886e",
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0008050381555565721,
+          "mean_action_total_variation": 0.04384508397844103,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "alpha": 0.05064355529150049,
+          "counters": {
+            "real_transitions": 100000,
+            "rl_gradient_updates": 10000
+          },
+          "lambda_deadline": 4.606644217486621,
+          "lambda_speed": 0.0004327572792078131,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 13,
+          "speed_violation": 14,
+          "standstill": 0,
+          "timely_completion": 2
+        },
+        "checkpoint_sha256": "6e17ee75d6bcab6dbd0d7f2e47056b46e4e07ffecfc3565b02fa8225adf6ec90",
+        "counts": {
+          "completion": 5,
+          "deadline_compliance": 2,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 4
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 3,
+          "COMPLETED_SPEED_VIOLATION": 2,
+          "INCOMPLETE_SAFE": 4,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 9
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.6544020185488661,
+          "mean_action_total_variation": 35.10069079862701,
+          "mean_integrated_speed_violation_m": 41.30035811303485,
+          "mean_max_speed_violation_m_s": 6.510455728660042,
+          "mean_speed_violation_count": 3.111111111111111,
+          "mean_travel_time_s": 167.41666666666143,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.2777777777777778,
+          "deadline_compliance": 0.1111111111111111,
+          "rsr": 0.0,
+          "speed_compliance": 0.2222222222222222
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "alpha": 0.012837988142893516,
+          "counters": {
+            "real_transitions": 150000,
+            "rl_gradient_updates": 15000
+          },
+          "lambda_deadline": 2.3015310486066163,
+          "lambda_speed": 1.5825272401193295,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 1,
+          "standstill": 0,
+          "timely_completion": 17
+        },
+        "checkpoint_sha256": "962ab64dc65617743fcb80dc28598f2b78623205bef8ff2f53edbd033c1a6eed",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 17,
+          "requirement_satisfaction": 16,
+          "speed_compliance": 17
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 1,
+          "COMPLETED_SPEED_VIOLATION": 1,
+          "FEASIBLE": 16
+        },
+        "feasible_only_energy_kwh": {
+          "count": 16,
+          "mean": 0.16876306323663626,
+          "median": 0.16940682789336486,
+          "values": [
+            0.18820152648075422,
+            0.16154271722286445,
+            0.16984005844156078,
+            0.16440538798745422,
+            0.1870707770840902,
+            0.17278270657229342,
+            0.15356331562139192,
+            0.16897359734516895,
+            0.1740216143315346,
+            0.1553545225757786,
+            0.17433835084491503,
+            0.1616312824353309,
+            0.17606003433432502,
+            0.1687471671515202,
+            0.17298046740816914,
+            0.1506954859490282
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.3612256022870094,
+          "mean_action_total_variation": 11.797713273101383,
+          "mean_integrated_speed_violation_m": 0.02764853868485581,
+          "mean_max_speed_violation_m_s": 0.08211693484262655,
+          "mean_speed_violation_count": 0.05555555555555555,
+          "mean_travel_time_s": 109.55555555555361,
+          "median_travel_time_s": 107.89999999999814
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 0.9444444444444444,
+          "rsr": 0.8888888888888888,
+          "speed_compliance": 0.9444444444444444
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "alpha": 0.016029291724479203,
+          "counters": {
+            "real_transitions": 200000,
+            "rl_gradient_updates": 20000
+          },
+          "lambda_deadline": 2.1492594280659008,
+          "lambda_speed": 0.9041994089521017,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 0,
+          "speed_violation": 7,
+          "standstill": 0,
+          "timely_completion": 18
+        },
+        "checkpoint_sha256": "5b9c5b3b5d3d70dfaf58a3b49e49f53fb8dfbc7c1ed3043865d420f6527ebb08",
+        "counts": {
+          "completion": 18,
+          "deadline_compliance": 18,
+          "requirement_satisfaction": 11,
+          "speed_compliance": 11
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_SPEED_VIOLATION": 7,
+          "FEASIBLE": 11
+        },
+        "feasible_only_energy_kwh": {
+          "count": 11,
+          "mean": 0.1726227110100333,
+          "median": 0.17034232339847427,
+          "values": [
+            0.181752270142203,
+            0.1614282124760164,
+            0.16829306539687522,
+            0.1652487980486256,
+            0.18250216738674824,
+            0.17528573834561526,
+            0.1822511983281367,
+            0.17034232339847427,
+            0.1616335213769082,
+            0.18415403079270135,
+            0.16595849541806185
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.42629264645134085,
+          "mean_action_total_variation": 12.59380081627104,
+          "mean_integrated_speed_violation_m": 1.5542162588788089,
+          "mean_max_speed_violation_m_s": 0.6672414011894353,
+          "mean_speed_violation_count": 0.3888888888888889,
+          "mean_travel_time_s": 98.33888888888757,
+          "median_travel_time_s": 97.59999999999873
+        },
+        "rates": {
+          "completion": 1.0,
+          "deadline_compliance": 1.0,
+          "rsr": 0.6111111111111112,
+          "speed_compliance": 0.6111111111111112
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "alpha": 0.004033073619040479,
+          "counters": {
+            "real_transitions": 250000,
+            "rl_gradient_updates": 25000
+          },
+          "lambda_deadline": 3.777509283108612,
+          "lambda_speed": 0.8316081544966019,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 4,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 12
+        },
+        "checkpoint_sha256": "e828dc0babb42e20b9f5f33bdedbc300bafe21ccdedee101b8ba84b715919e35",
+        "counts": {
+          "completion": 14,
+          "deadline_compliance": 12,
+          "requirement_satisfaction": 12,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_VIOLATION": 2,
+          "FEASIBLE": 12,
+          "INCOMPLETE_SAFE": 4
+        },
+        "feasible_only_energy_kwh": {
+          "count": 12,
+          "mean": 0.17172503449470658,
+          "median": 0.17189677415675514,
+          "values": [
+            0.17364341998891786,
+            0.16255596487949575,
+            0.16329200007576308,
+            0.17852915537852923,
+            0.18062635642573147,
+            0.15267262702463233,
+            0.17015012832459242,
+            0.18601736475365893,
+            0.16881366799554456,
+            0.18722023671743784,
+            0.17437084945744874,
+            0.1628086429147268
+          ]
+        },
+        "method": "constrained",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.3119434262525504,
+          "mean_action_total_variation": 11.948433968755934,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 129.97777777777466,
+          "median_travel_time_s": 118.29999999999755
+        },
+        "rates": {
+          "completion": 0.7777777777777778,
+          "deadline_compliance": 0.6666666666666666,
+          "rsr": 0.6666666666666666,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "alpha": 0.004396333811022904,
+          "counters": {
+            "real_transitions": 300000,
+            "rl_gradient_updates": 30000
+          },
+          "lambda_deadline": 2.3950774369414662,
+          "lambda_speed": 1.3904230583041928,
+          "losses": null,
+          "losses_note": "not retained in the immutable reference checkpoint"
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47
+      }
+    ],
+    "S11": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "checkpoint_sha256": "586cc45f6fb35f985526907cb18a269875a89606e88b05d71f933e240a9743f1",
+          "completed_episodes": 27,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 50000,
+            "maximum": 0.0019248514677286394,
+            "mean": -0.03539985779657471,
+            "minimum": -0.36626162988325406,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04086766835323105
+          },
+          "task_exposures": 28,
+          "walltime_state_s": 281.79855058307294
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "ce9b575782487a75ecddda8c1aee34871d2162d94ccbed4ab92dec5e91e77ef7",
+          "alpha": 0.2231513112783432,
+          "learner_losses": {
+            "loss/actor_rew": -12.449599420535552,
+            "loss/actor_total": -12.449599420535552,
+            "loss/alpha_loss": -1.2618925938813108,
+            "loss/alpha_value": 0.517776849517225,
+            "loss/q0": 0.03269215102717287,
+            "loss/q_total": 0.03269215102717287,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 50000,
+          "rl_gradient_updates": 5000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "checkpoint_sha256": "37cb92fccfcd25a43cf325ce0ee57df99ec2548516030b5afa593e514b46103f",
+          "completed_episodes": 55,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0019248514677286394,
+            "mean": -0.03672593577523101,
+            "minimum": -0.36626162988325406,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.042239120992940075
+          },
+          "task_exposures": 56,
+          "walltime_state_s": 555.0086908329977
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "c07a2b78479e25159f4536c9ea16a23020ef16e0b383e5c6ddc1c5baab4ca176",
+          "alpha": 0.050279222428798676,
+          "learner_losses": {
+            "loss/actor_rew": -6.805671146069591,
+            "loss/actor_total": -6.805671146069591,
+            "loss/alpha_loss": -2.482401767693377,
+            "loss/alpha_value": 0.31679552970714686,
+            "loss/q0": 0.029740017397794964,
+            "loss/q_total": 0.029740017397794964,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 100000,
+          "rl_gradient_updates": 10000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 3.08445415070595e-05,
+          "mean_action_total_variation": 0.003516594568888346,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "checkpoint_sha256": "5c8ea05104b7fb6613751bc896a10ce1b1fd33377b9dfe92b3e7013f1c7d839f",
+          "completed_episodes": 83,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0013625162863184746,
+            "mean": -0.041226340728334726,
+            "minimum": -0.22561018840029576,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04611694883307564
+          },
+          "task_exposures": 84,
+          "walltime_state_s": 788.106615458033
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "17fcc38a5f4648f335eb0d70559b1f32c49dcdaffa0a29d4cf525ca5c5d3ec62",
+          "alpha": 0.011411120183765888,
+          "learner_losses": {
+            "loss/actor_rew": -3.4181900440048074,
+            "loss/actor_total": -3.4181900440048074,
+            "loss/alpha_loss": -3.5704072235812263,
+            "loss/alpha_value": 0.21996393207857917,
+            "loss/q0": 0.029763587816742636,
+            "loss/q_total": 0.029763587816742636,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 150000,
+          "rl_gradient_updates": 15000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 4,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 14
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 14,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 4
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.09099437430732417,
+          "mean_action_total_variation": 5.157255527045992,
+          "mean_integrated_speed_violation_m": 0.18872741261358691,
+          "mean_max_speed_violation_m_s": 0.4243924184614568,
+          "mean_speed_violation_count": 0.2222222222222222,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 0.7777777777777778
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "checkpoint_sha256": "040e9fd13fad2a35870e9d92eac6219ea89253b2d171abfd56e415e0b90d2a30",
+          "completed_episodes": 111,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.002299477217516142,
+            "mean": -0.03999726186155996,
+            "minimum": -1.3492950095265972,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.046630184436783385
+          },
+          "task_exposures": 112,
+          "walltime_state_s": 1078.1554062500363
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "57440e618d412c9f9d7677f6300ef38caa74fe6095d1658d925497cac7589330",
+          "alpha": 0.0029250923544168472,
+          "learner_losses": {
+            "loss/actor_rew": -1.4339228332989584,
+            "loss/actor_total": -1.4339228332989584,
+            "loss/alpha_loss": -4.326964559101284,
+            "loss/alpha_value": 0.166480871663243,
+            "loss/q0": 0.02898572805831204,
+            "loss/q_total": 0.02898572805831204,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 200000,
+          "rl_gradient_updates": 20000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.08652305436856067,
+          "mean_action_total_variation": 4.68707631693946,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "checkpoint_sha256": "e27869001ee7fd07fa7fa7d4923b5b5c84a16e370562f097afcf8a33910b6106",
+          "completed_episodes": 138,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.002299477217516142,
+            "mean": -0.034484256806012366,
+            "minimum": -1.3492950095265972,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.042058629668801986
+          },
+          "task_exposures": 139,
+          "walltime_state_s": 1348.4185092910193
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "79586185647b0c89b05c2fc2d9f2221d3ebc1bfa34ed2892964b9d1069fbf92d",
+          "alpha": 0.0013787441421300173,
+          "learner_losses": {
+            "loss/actor_rew": -0.28005167783682394,
+            "loss/actor_total": -0.28005167783682394,
+            "loss/alpha_loss": -3.874979283213238,
+            "loss/alpha_value": 0.1335631769496576,
+            "loss/q0": 0.033449871400222125,
+            "loss/q_total": 0.033449871400222125,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 250000,
+          "rl_gradient_updates": 25000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.17873000282736015,
+          "mean_action_total_variation": 9.985235389735964,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "checkpoint_sha256": "97abc187734f1664907b6ad4a6512715014a7c453687377f06ef4b443b22d249",
+          "completed_episodes": 167,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0019080069902804842,
+            "mean": -0.035513870861930835,
+            "minimum": -0.2524532755461253,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.040490185176843406
+          },
+          "task_exposures": 167,
+          "walltime_state_s": 1582.5264557501068
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 11,
+        "training_state": {
+          "actor_sha256": "ab4d96b735749a322eed422119f225cf57c96f29cb89fa2414602669bbdb5d4a",
+          "alpha": 0.0009618061012588441,
+          "learner_losses": {
+            "loss/actor_rew": 0.4679348569397725,
+            "loss/actor_total": 0.4679348569397725,
+            "loss/alpha_loss": -3.304404099493678,
+            "loss/alpha_value": 0.11147803448780001,
+            "loss/q0": 0.036695626850270884,
+            "loss/q_total": 0.036695626850270884,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 300000,
+          "rl_gradient_updates": 30000
+        }
+      }
+    ],
+    "S29": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "checkpoint_sha256": "7d8a29eb8c0499a76f272fe116f6bee9acbca199716468424c0f7cb75a059d4c",
+          "completed_episodes": 27,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 50000,
+            "maximum": 0.0016712776291038691,
+            "mean": -0.04110156056616641,
+            "minimum": -0.37619950710573075,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04482845735700991
+          },
+          "task_exposures": 28,
+          "walltime_state_s": 247.85669104091357
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "60cdad40942f125df641f159943fa45c04ddce469d3e3268174beb503596f6a1",
+          "alpha": 0.2233833372592926,
+          "learner_losses": {
+            "loss/actor_rew": -11.892099667131882,
+            "loss/actor_total": -11.892099667131882,
+            "loss/alpha_loss": -1.2586140298596438,
+            "loss/alpha_value": 0.5178629066467265,
+            "loss/q0": 0.06265534043367951,
+            "loss/q_total": 0.06265534043367951,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 50000,
+          "rl_gradient_updates": 5000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0,
+          "mean_action_total_variation": 0.0,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "checkpoint_sha256": "a050068544105d481bbda546ec7528108857d7eb20820aeceea690665baeb80c",
+          "completed_episodes": 55,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0016712776291038691,
+            "mean": -0.04048002872268123,
+            "minimum": -0.37619950710573075,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.045011356187612976
+          },
+          "task_exposures": 56,
+          "walltime_state_s": 503.99181224999484
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "d2f57feef8c95033908537aae62b587f62a36f1cf7fc0b69d9791a24e53c487d",
+          "alpha": 0.050379298627376556,
+          "learner_losses": {
+            "loss/actor_rew": -6.117872708106778,
+            "loss/actor_total": -6.117872708106778,
+            "loss/alpha_loss": -2.46082125438409,
+            "loss/alpha_value": 0.3169827852014439,
+            "loss/q0": 0.05147850134233012,
+            "loss/q_total": 0.05147850134233012,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 100000,
+          "rl_gradient_updates": 10000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0018648535003647775,
+          "mean_action_total_variation": 0.10805384318033855,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "checkpoint_sha256": "e87a6ab85d48015d8709012538b3c6ff3f4f9f6704ece5fcbec792ef152ec850",
+          "completed_episodes": 83,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0003309118767829241,
+            "mean": -0.03974432817233374,
+            "minimum": -0.1903411459772558,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04515939893771948
+          },
+          "task_exposures": 84,
+          "walltime_state_s": 754.9877834159415
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "e0c509a834e697d24b4a3d9ffd0597de69241ae1d6c65e3c1e0e7ee41131ed98",
+          "alpha": 0.011526422575116158,
+          "learner_losses": {
+            "loss/actor_rew": -2.926548856020466,
+            "loss/actor_total": -2.926548856020466,
+            "loss/alpha_loss": -3.549707170541788,
+            "loss/alpha_value": 0.22008119077024124,
+            "loss/q0": 0.04263622122959545,
+            "loss/q_total": 0.04263622122959545,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 150000,
+          "rl_gradient_updates": 15000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 2,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 16
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 16,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 2
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.07767648925683282,
+          "mean_action_total_variation": 4.751092986928092,
+          "mean_integrated_speed_violation_m": 0.02319119573562191,
+          "mean_max_speed_violation_m_s": 0.09894406689329432,
+          "mean_speed_violation_count": 0.16666666666666666,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 0.8888888888888888
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "checkpoint_sha256": "e0ddef5a8f353e288281cb656e30dd1b3be78306adbd64463719e9d22b7b6086",
+          "completed_episodes": 111,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0018167625901937632,
+            "mean": -0.041496832085657735,
+            "minimum": -0.6116888913805995,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04813624676066688
+          },
+          "task_exposures": 112,
+          "walltime_state_s": 1555.0703567909077
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "4a51559d0a22ee2785ee5ce1b9f8f147ef73ea26b0e1014ce66bc1d75cabbd30",
+          "alpha": 0.0027140099555253983,
+          "learner_losses": {
+            "loss/actor_rew": -1.1382265357736392,
+            "loss/actor_total": -1.1382265357736392,
+            "loss/alpha_loss": -4.333477486103574,
+            "loss/alpha_value": 0.16659320546372186,
+            "loss/q0": 0.037805355819314636,
+            "loss/q_total": 0.037805355819314636,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 200000,
+          "rl_gradient_updates": 20000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 1,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 17
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 17,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.13707904892165373,
+          "mean_action_total_variation": 8.203532844781876,
+          "mean_integrated_speed_violation_m": 0.05489984967147708,
+          "mean_max_speed_violation_m_s": 0.020598512223125216,
+          "mean_speed_violation_count": 0.05555555555555555,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 0.9444444444444444
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "checkpoint_sha256": "488e7fa74ac3b7fd1adc1e44d72f150c3b311a3e0c72ed6061914b4778a03e08",
+          "completed_episodes": 138,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0034884651014516314,
+            "mean": -0.043968601843662344,
+            "minimum": -0.6116888913805995,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.05001984114423733
+          },
+          "task_exposures": 139,
+          "walltime_state_s": 1797.9634973749053
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "c6d491009785ee6a3cf76ef8edfe6f795d0f9ac12ed3e4c78040095a2510bd38",
+          "alpha": 0.0007594267372041941,
+          "learner_losses": {
+            "loss/actor_rew": 0.00584742551774943,
+            "loss/actor_total": 0.00584742551774943,
+            "loss/alpha_loss": -4.607895009174191,
+            "loss/alpha_value": 0.13357124706527973,
+            "loss/q0": 0.03621807587731603,
+            "loss/q_total": 0.03621807587731603,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 250000,
+          "rl_gradient_updates": 25000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 1.1474883146782968,
+          "mean_action_total_variation": 71.10555378927126,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "checkpoint_sha256": "6a17a80c2af7412ff7eee2448ce7f98bcff4c316b9f88ce167ae82e4c0228fba",
+          "completed_episodes": 167,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0034884651014516314,
+            "mean": -0.03828981655930559,
+            "minimum": -0.5177631643426139,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.0453092721677739
+          },
+          "task_exposures": 167,
+          "walltime_state_s": 2117.1967859999277
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 29,
+        "training_state": {
+          "actor_sha256": "8f9b38c4f5b959c002b0fc00ae882bbf923e221046fbc4e96fdebe55160e6365",
+          "alpha": 0.0006080393213778734,
+          "learner_losses": {
+            "loss/actor_rew": 0.7559461531557218,
+            "loss/actor_total": 0.7559461531557218,
+            "loss/alpha_loss": -3.9591375775826494,
+            "loss/alpha_value": 0.11140530200748709,
+            "loss/q0": 0.034675017446744984,
+            "loss/q_total": 0.034675017446744984,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 300000,
+          "rl_gradient_updates": 30000
+        }
+      }
+    ],
+    "S47": [
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.0014623500595477867,
+          "mean_action_total_variation": 0.058928844001558095,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 50000,
+        "retained_training_state": {
+          "checkpoint_sha256": "bb51949efdd323b8df12ab19d94468db66e1ada0d0e572904197edcfdc54f696",
+          "completed_episodes": 27,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 50000,
+            "maximum": 0.000809711348005715,
+            "mean": -0.04391451687061035,
+            "minimum": -0.16697496275320528,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04431158992714483
+          },
+          "task_exposures": 28,
+          "walltime_state_s": 231.30269891698845
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "fdbba1e56a056d5288197f377292a2bc94a542c78f6a0139a0008e3ca8045e55",
+          "alpha": 0.22330410778522491,
+          "learner_losses": {
+            "loss/actor_rew": -11.885958556890454,
+            "loss/actor_total": -11.885958556890454,
+            "loss/alpha_loss": -1.2589189614483864,
+            "loss/alpha_value": 0.517896232536435,
+            "loss/q0": 0.03773251674212516,
+            "loss/q_total": 0.03773251674212516,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 50000,
+          "rl_gradient_updates": 5000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.016042909868474193,
+          "mean_action_total_variation": 0.7378918131192526,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 100000,
+        "retained_training_state": {
+          "checkpoint_sha256": "083fa40beabf4f2f49dbeb3efb20c635e2af37ec6b0abeddef030b96f303fbfa",
+          "completed_episodes": 55,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0011726582942759413,
+            "mean": -0.04184683183029436,
+            "minimum": -0.20306520557292967,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.044155659232462334
+          },
+          "task_exposures": 56,
+          "walltime_state_s": 479.63417441700585
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "cfc272734f0782055e10fc35290ed27325b6c2b213ec67b0b60da96a9322b426",
+          "alpha": 0.0503874309360981,
+          "learner_losses": {
+            "loss/actor_rew": -5.800996058455275,
+            "loss/actor_total": -5.800996058455275,
+            "loss/alpha_loss": -2.468821592960204,
+            "loss/alpha_value": 0.31692768512591696,
+            "loss/q0": 0.03855830584205693,
+            "loss/q_total": 0.03855830584205693,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 100000,
+          "rl_gradient_updates": 10000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 17,
+          "speed_violation": 9,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 1,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 9
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 1,
+          "INCOMPLETE_SAFE": 9,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 8
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.07812580686993845,
+          "mean_action_total_variation": 4.017943799495697,
+          "mean_integrated_speed_violation_m": 3.6594827159690118,
+          "mean_max_speed_violation_m_s": 1.6005345345770303,
+          "mean_speed_violation_count": 0.5,
+          "mean_travel_time_s": 178.4833333333275,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.05555555555555555,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 0.5
+        },
+        "real_transitions": 150000,
+        "retained_training_state": {
+          "checkpoint_sha256": "cdd47589e3b85392fe82b513a3252bc6bff92168d95a4f8ad6c9364a8954cf2c",
+          "completed_episodes": 83,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0028516580650556635,
+            "mean": -0.03872224112373801,
+            "minimum": -0.293938410073255,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.043025809701787744
+          },
+          "task_exposures": 84,
+          "walltime_state_s": 735.0521517499583
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "62fde2e4d02c9fa934d01737bb1032f66b65883b65adc22bcfca939eb3718105",
+          "alpha": 0.011608059518039227,
+          "learner_losses": {
+            "loss/actor_rew": -2.5131197598716892,
+            "loss/actor_total": -2.5131197598716892,
+            "loss/alpha_loss": -3.5278353629174797,
+            "loss/alpha_value": 0.22006406607963125,
+            "loss/q0": 0.03900403398827968,
+            "loss/q_total": 0.03900403398827968,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 150000,
+          "rl_gradient_updates": 15000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.027967407084978666,
+          "mean_action_total_variation": 1.1916469302442338,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 200000,
+        "retained_training_state": {
+          "checkpoint_sha256": "9364322b3f48ec9df24e52167fdfc72036a28c3762a388628610daff43bf3337",
+          "completed_episodes": 111,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0028516580650556635,
+            "mean": -0.04322680734196303,
+            "minimum": -0.5963684881433562,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.047507165675700305
+          },
+          "task_exposures": 112,
+          "walltime_state_s": 954.4569229589542
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "c09b8801cc33790fedc39ad850c82507b80e9ae3e5a5b00985b1cb7efe6723db",
+          "alpha": 0.0029946358408778906,
+          "learner_losses": {
+            "loss/actor_rew": -0.5956881963447763,
+            "loss/actor_total": -0.5956881963447763,
+            "loss/alpha_loss": -4.0652185119795,
+            "loss/alpha_value": 0.1666126662869939,
+            "loss/q0": 0.0420573377511931,
+            "loss/q_total": 0.0420573377511931,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 200000,
+          "rl_gradient_updates": 20000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 0,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 18
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 18
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 0.02811939940768759,
+          "mean_action_total_variation": 1.2715147270096674,
+          "mean_integrated_speed_violation_m": 0.0,
+          "mean_max_speed_violation_m_s": 0.0,
+          "mean_speed_violation_count": 0.0,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 1.0
+        },
+        "real_transitions": 250000,
+        "retained_training_state": {
+          "checkpoint_sha256": "c848292493d0ac71816a3a815d8827b5cd20b5334b2003d6dc4ea4ef22fa0573",
+          "completed_episodes": 138,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0013521032287267542,
+            "mean": -0.043865948248631687,
+            "minimum": -1.7565005008263797,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.054898037104778856
+          },
+          "task_exposures": 139,
+          "walltime_state_s": 1202.4609454999445
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "e65c9296bb564990846f3b583fe91d92d9397a8dc79e003bca0da57ba1ce9fa1",
+          "alpha": 0.0008312365971505642,
+          "learner_losses": {
+            "loss/actor_rew": 0.664366090091386,
+            "loss/actor_total": 0.664366090091386,
+            "loss/alpha_loss": -4.0251529582692935,
+            "loss/alpha_value": 0.1336252782301069,
+            "loss/q0": 0.04677453251440101,
+            "loss/q_total": 0.04677453251440101,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 250000,
+          "rl_gradient_updates": 25000
+        }
+      },
+      {
+        "actor_hash_unchanged_during_evaluation": true,
+        "actor_only": true,
+        "behavior_states": {
+          "crawling": 18,
+          "speed_violation": 1,
+          "standstill": 0,
+          "timely_completion": 0
+        },
+        "counts": {
+          "completion": 0,
+          "deadline_compliance": 0,
+          "requirement_satisfaction": 0,
+          "speed_compliance": 17
+        },
+        "deterministic": true,
+        "episode_count": 18,
+        "failure_modes": {
+          "INCOMPLETE_SAFE": 17,
+          "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+        },
+        "feasible_only_energy_kwh": {
+          "count": 0,
+          "mean": null,
+          "median": null,
+          "values": []
+        },
+        "method": "scalar",
+        "metrics": {
+          "mean_abs_jerk_m_s3": 1.8957508913430725,
+          "mean_action_total_variation": 113.38250167833434,
+          "mean_integrated_speed_violation_m": 0.004655520151633742,
+          "mean_max_speed_violation_m_s": 0.0316081718587691,
+          "mean_speed_violation_count": 0.05555555555555555,
+          "mean_travel_time_s": 179.99999999999406,
+          "median_travel_time_s": 179.99999999999406
+        },
+        "rates": {
+          "completion": 0.0,
+          "deadline_compliance": 0.0,
+          "rsr": 0.0,
+          "speed_compliance": 0.9444444444444444
+        },
+        "real_transitions": 300000,
+        "retained_training_state": {
+          "checkpoint_sha256": "b28151f6f25e8510258119aa5f24a06d088980d9e536e044f529241785de53d1",
+          "completed_episodes": 167,
+          "network_parameters_all_finite": true,
+          "optimizer_state_all_finite": true,
+          "scalar_reward_statistics": {
+            "all_finite": true,
+            "count": 100000,
+            "maximum": 0.0026757515727830997,
+            "mean": -0.03778042558886971,
+            "minimum": -1.7565005008263797,
+            "scope": "retained replay window at this checkpoint",
+            "standard_deviation": 0.04997079492276519
+          },
+          "task_exposures": 167,
+          "walltime_state_s": 1461.233330041985
+        },
+        "training_rng_unchanged": true,
+        "training_seed": 47,
+        "training_state": {
+          "actor_sha256": "342fe91cd26af9a2dcd85dd2027437133c4ab2eb641d346c7b519238bcffa447",
+          "alpha": 0.0006260675145313144,
+          "learner_losses": {
+            "loss/actor_rew": 1.4265751343597286,
+            "loss/actor_total": 1.4265751343597286,
+            "loss/alpha_loss": -3.473713463331594,
+            "loss/alpha_value": 0.1114536688530314,
+            "loss/q0": 0.050753342006697434,
+            "loss/q_total": 0.050753342006697434,
+            "loss/rescaling": 1.0
+          },
+          "real_transitions": 300000,
+          "rl_gradient_updates": 30000
+        }
+      }
+    ]
+  },
+  "episode_accounting": {
+    "constrained_reference": 324,
+    "scalar": 324,
+    "total": 648
+  },
+  "integrity": {
+    "all_reference_checkpoint_hashes_verified": true,
+    "all_scalar_checkpoint_hashes_verified": true,
+    "all_scalar_scientific_checkpoint_losses_finite": true,
+    "all_scalar_scientific_checkpoint_states_finite": true,
+    "diagnostic_episode_accounting_exact": true,
+    "final_endpoint_always_300000": true,
+    "no_best_checkpoint_selected": true,
+    "no_constrained_policy_retrained": true,
+    "paper": {
+      "episode_count": 0,
+      "state": "SEALED_UNINSPECTED"
+    },
+    "sameinfo_validation_v1": {
+      "episode_count": 0,
+      "state": "FROZEN_UNOPENED"
+    },
+    "scalar_budget_accounting_exact": true
+  },
+  "paired_final_diagnostic_rsr_count_differences_constrained_minus_scalar": {
+    "11": 10,
+    "29": 6,
+    "47": 12
+  },
+  "pooled_final_diagnostic_rsr_count_difference": 28,
+  "reference_retained_training_states": {
+    "C11@100000": {
+      "alpha": 0.05527578708607066,
+      "counters": {
+        "real_transitions": 100000,
+        "rl_gradient_updates": 10000
+      },
+      "lambda_deadline": 0.5346024235713992,
+      "lambda_speed": 2.411868905939426,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C11@150000": {
+      "alpha": 0.012643516637591171,
+      "counters": {
+        "real_transitions": 150000,
+        "rl_gradient_updates": 15000
+      },
+      "lambda_deadline": 0.6228442877795207,
+      "lambda_speed": 1.619453069418968,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C11@200000": {
+      "alpha": 0.0032932860057174602,
+      "counters": {
+        "real_transitions": 200000,
+        "rl_gradient_updates": 20000
+      },
+      "lambda_deadline": 1.4860146754734664,
+      "lambda_speed": 1.6821028005470922,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C11@250000": {
+      "alpha": 0.0010218609470356145,
+      "counters": {
+        "real_transitions": 250000,
+        "rl_gradient_updates": 25000
+      },
+      "lambda_deadline": 1.4814952726339046,
+      "lambda_speed": 1.93753260278045,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C11@300000": {
+      "alpha": 0.0006771973524748922,
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "lambda_deadline": 1.0015569080594906,
+      "lambda_speed": 1.737065439763169,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C11@50000": {
+      "alpha": 0.23633172882894263,
+      "counters": {
+        "real_transitions": 50000,
+        "rl_gradient_updates": 5000
+      },
+      "lambda_deadline": 1.7975925265370538,
+      "lambda_speed": 1.119824744593548,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@100000": {
+      "alpha": 0.05357092765268365,
+      "counters": {
+        "real_transitions": 100000,
+        "rl_gradient_updates": 10000
+      },
+      "lambda_deadline": 1.0517120787784668,
+      "lambda_speed": 0.7019465422950414,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@150000": {
+      "alpha": 0.017530388338656385,
+      "counters": {
+        "real_transitions": 150000,
+        "rl_gradient_updates": 15000
+      },
+      "lambda_deadline": 1.1971967084311255,
+      "lambda_speed": 1.2370287981855002,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@200000": {
+      "alpha": 0.005026232299203891,
+      "counters": {
+        "real_transitions": 200000,
+        "rl_gradient_updates": 20000
+      },
+      "lambda_deadline": 1.2804893198197707,
+      "lambda_speed": 1.312544509673597,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@250000": {
+      "alpha": 0.0016986376461368192,
+      "counters": {
+        "real_transitions": 250000,
+        "rl_gradient_updates": 25000
+      },
+      "lambda_deadline": 1.4051539750131181,
+      "lambda_speed": 1.5419949058473839,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@300000": {
+      "alpha": 0.0011874788729478814,
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "lambda_deadline": 1.5752363435900516,
+      "lambda_speed": 1.4009421299572349,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C29@50000": {
+      "alpha": 0.22331893459642949,
+      "counters": {
+        "real_transitions": 50000,
+        "rl_gradient_updates": 5000
+      },
+      "lambda_deadline": 7.314327192709112,
+      "lambda_speed": 0.0,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@100000": {
+      "alpha": 0.05064355529150049,
+      "counters": {
+        "real_transitions": 100000,
+        "rl_gradient_updates": 10000
+      },
+      "lambda_deadline": 4.606644217486621,
+      "lambda_speed": 0.0004327572792078131,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@150000": {
+      "alpha": 0.012837988142893516,
+      "counters": {
+        "real_transitions": 150000,
+        "rl_gradient_updates": 15000
+      },
+      "lambda_deadline": 2.3015310486066163,
+      "lambda_speed": 1.5825272401193295,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@200000": {
+      "alpha": 0.016029291724479203,
+      "counters": {
+        "real_transitions": 200000,
+        "rl_gradient_updates": 20000
+      },
+      "lambda_deadline": 2.1492594280659008,
+      "lambda_speed": 0.9041994089521017,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@250000": {
+      "alpha": 0.004033073619040479,
+      "counters": {
+        "real_transitions": 250000,
+        "rl_gradient_updates": 25000
+      },
+      "lambda_deadline": 3.777509283108612,
+      "lambda_speed": 0.8316081544966019,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@300000": {
+      "alpha": 0.004396333811022904,
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "lambda_deadline": 2.3950774369414662,
+      "lambda_speed": 1.3904230583041928,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    },
+    "C47@50000": {
+      "alpha": 0.22344174759558072,
+      "counters": {
+        "real_transitions": 50000,
+        "rl_gradient_updates": 5000
+      },
+      "lambda_deadline": 8.87260960870347,
+      "lambda_speed": 0.0,
+      "losses": null,
+      "losses_note": "not retained in the immutable reference checkpoint"
+    }
+  },
+  "report_scope": "development-style SAMEINFO_DIAGNOSTIC_V1 only",
+  "resource_use": {
+    "cpu_time_note": "launchd runner did not retain final process CPU time",
+    "cpu_time_s": null,
+    "diagnostic_timing_note": "Per-diagnostic and full finalizer walltimes were not retained; the reference result write span excludes pre-evaluation hash verification.",
+    "final_scalar_completion_timestamp_europe_berlin": "2026-10-20T12:57:37.651421+02:00",
+    "first_attempt_start_to_final_scalar_s": 5187.603103,
+    "frozen_projection": {
+      "retained_artifacts_gb": 3.177,
+      "total_walltime_h": 0.895
+    },
+    "launch_preparation_timestamp_europe_berlin": "2026-10-20T11:24:44.603298+02:00",
+    "launch_preparation_to_final_scalar_s": 5573.048123,
+    "peak_rss_bytes": null,
+    "peak_rss_note": "launchd runner did not retain peak RSS",
+    "reference_diagnostic_full_walltime_s": null,
+    "reference_diagnostic_result_write_span_s": 85.171104316,
+    "retained_disk_allocated_bytes": 1639092224,
+    "retained_disk_apparent_bytes": 1638836319
+  },
+  "scalar_runs": {
+    "11": {
+      "attempt_id": "7b3d8c81-1539-4cdf-8ab4-0e1b21ebb8fd",
+      "attempt_number": 1,
+      "attempt_walltime_s": 1600.491033,
+      "checkpoint_source_hashes": {
+        "agent.py": "d52df5c46da1f0560c3ddb02dba31ad8df8876032fbbcec15f3925b025348fd7",
+        "canonical.json": "cd57fcb9905821f4ffe8d3a47df51a36463a47e3d4d1b9856440123309a62825",
+        "checkpointing.py": "0f808839fb85277b7201e591794a1fafda08d3eb4df71f740e5630917a8e9f16",
+        "config.py": "f6379cacfff6b959c7f70de31511766a4ee4602314ebf5c7b2fd16672b9a05bf",
+        "evaluation.py": "f1715445c278ebfe3e38a9958ccd986bcc05c1e97b5b8b18988ced3206d0bf7c",
+        "execution.py": "238bbfb5a67772d707f36c5ec77a8c0e460639f8d0f19e011c8d5c67c18ed036",
+        "finalization.py": "fbbd9f24663bbceabdbcf2fc8468d6789b9a090b84323e9796f6cca537de2371",
+        "initialization.py": "db4ce906a4231b72d8b9746c8758a6eb6958602b2f1889a89252b5a16bca577a",
+        "interpretation.py": "02cc1683a7bf10549383c1c01f0bd9595c245732444a4c1f74c89d98ed903eeb",
+        "preflight.py": "8aeb25f0a756a6c21c1580398027629a8fd46fad083e55e7811e4e2bd8920564",
+        "reference.py": "1914c4ad669aa906b14bc89d05c90e4be07074ffb0641fd7ad813d3ad26af8a9",
+        "resource_preflight.py": "94dcffdaaf0f0a52b0013ddd396b4e0cca51b700133e52e1a0f48bd40df332e3",
+        "runner.py": "14cb52d4676863c81d46bee6d92f98d90579bda3cb086c1d0ac9ec9bbce64936",
+        "scalarization.py": "bd587cd9201887e56872e6768f727b543639cbdd16d1b783f496a0e648c3bf2a",
+        "signals.py": "dd0b49a4af8d2941c1f86e2d13b63a7cc198ec8999dbc876cf81efb33d5a02c3",
+        "split.py": "f8a6c132e5efe9166069514ba0a4456bcf1845a832974e07b69749579f699029",
+        "streams.py": "3c020bcd08c2de1d87c6b8ce5a2ed143451e685d2524acdd324c7207ea684826"
+      },
+      "completed_episodes": 167,
+      "condition": "S11_sameinfo_scalar_seed11",
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "diagnostic_checkpoints_completed": [
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000
+      ],
+      "ended_at_europe_berlin": "2026-10-20T11:57:50.539351+02:00",
+      "ended_at_utc": "2026-10-20T09:57:50.539351+00:00",
+      "final_checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained/S11_sameinfo_scalar_seed11/step-300000/checkpoint.pt",
+      "final_checkpoint_sha256": "97abc187734f1664907b6ad4a6512715014a7c453687377f06ef4b443b22d249",
+      "final_checkpoint_size_bytes": 79525376,
+      "final_replay_scalar_reward_statistics": {
+        "all_finite": true,
+        "count": 100000,
+        "maximum": 0.0019080069902804842,
+        "mean": -0.035513870861930835,
+        "minimum": -0.2524532755461253,
+        "scope": "final retained replay window only",
+        "standard_deviation": 0.040490185176843406
+      },
+      "initialization_parity": {
+        "actor_constrained_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+        "actor_scalar_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+        "byte_identical": true,
+        "reward_critic_constrained_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+        "reward_critic_scalar_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+        "scalar_invariants": {
+          "automatic_alpha": true,
+          "cost_critics": 0,
+          "critic_systems": 1,
+          "double_q_heads": 2,
+          "n_step": 2,
+          "pid_optimizers": 0,
+          "target_entropy": -1.0,
+          "use_lagrangian": false
+        },
+        "training_seed": 11
+      },
+      "network_parameters_all_finite": true,
+      "optimizer_state_all_finite": true,
+      "resume_events": [],
+      "resume_status": "NOT_RESUMED",
+      "retained_checkpoint_write_count": 7,
+      "retained_checkpoint_write_time_s": 5.9724537919973955,
+      "runtime_versions": {
+        "fsrl": "0.1.0",
+        "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+        "gymnasium": "1.4.0",
+        "numpy": "2.4.6",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "python": "3.11.13",
+        "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python",
+        "tianshou": "0.5.1",
+        "torch": "2.14.1"
+      },
+      "started_at_europe_berlin": "2026-10-20T11:31:10.048318+02:00",
+      "started_at_utc": "2026-10-20T09:31:10.048318+00:00",
+      "task_exposures": 167,
+      "total_checkpoint_overhead_note": "The rolling 10k recovery checkpoint is overwritten; total write overhead was not retained. The retained write-time sum is a lower bound.",
+      "total_checkpoint_overhead_s": null,
+      "walltime_state_s": 1582.5264557501068
+    },
+    "29": {
+      "attempt_id": "9fbcec36-3df3-4a1f-922e-a360d36537c6",
+      "attempt_number": 1,
+      "attempt_walltime_s": 2121.203006,
+      "checkpoint_source_hashes": {
+        "agent.py": "d52df5c46da1f0560c3ddb02dba31ad8df8876032fbbcec15f3925b025348fd7",
+        "canonical.json": "cd57fcb9905821f4ffe8d3a47df51a36463a47e3d4d1b9856440123309a62825",
+        "checkpointing.py": "0f808839fb85277b7201e591794a1fafda08d3eb4df71f740e5630917a8e9f16",
+        "config.py": "f6379cacfff6b959c7f70de31511766a4ee4602314ebf5c7b2fd16672b9a05bf",
+        "evaluation.py": "f1715445c278ebfe3e38a9958ccd986bcc05c1e97b5b8b18988ced3206d0bf7c",
+        "execution.py": "238bbfb5a67772d707f36c5ec77a8c0e460639f8d0f19e011c8d5c67c18ed036",
+        "finalization.py": "fbbd9f24663bbceabdbcf2fc8468d6789b9a090b84323e9796f6cca537de2371",
+        "initialization.py": "db4ce906a4231b72d8b9746c8758a6eb6958602b2f1889a89252b5a16bca577a",
+        "interpretation.py": "02cc1683a7bf10549383c1c01f0bd9595c245732444a4c1f74c89d98ed903eeb",
+        "preflight.py": "8aeb25f0a756a6c21c1580398027629a8fd46fad083e55e7811e4e2bd8920564",
+        "reference.py": "1914c4ad669aa906b14bc89d05c90e4be07074ffb0641fd7ad813d3ad26af8a9",
+        "resource_preflight.py": "94dcffdaaf0f0a52b0013ddd396b4e0cca51b700133e52e1a0f48bd40df332e3",
+        "runner.py": "14cb52d4676863c81d46bee6d92f98d90579bda3cb086c1d0ac9ec9bbce64936",
+        "scalarization.py": "bd587cd9201887e56872e6768f727b543639cbdd16d1b783f496a0e648c3bf2a",
+        "signals.py": "dd0b49a4af8d2941c1f86e2d13b63a7cc198ec8999dbc876cf81efb33d5a02c3",
+        "split.py": "f8a6c132e5efe9166069514ba0a4456bcf1845a832974e07b69749579f699029",
+        "streams.py": "3c020bcd08c2de1d87c6b8ce5a2ed143451e685d2524acdd324c7207ea684826"
+      },
+      "completed_episodes": 167,
+      "condition": "S29_sameinfo_scalar_seed29",
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "diagnostic_checkpoints_completed": [
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000
+      ],
+      "ended_at_europe_berlin": "2026-10-20T12:33:12.236070+02:00",
+      "ended_at_utc": "2026-10-20T10:33:12.236070+00:00",
+      "final_checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained/S29_sameinfo_scalar_seed29/step-300000/checkpoint.pt",
+      "final_checkpoint_sha256": "6a17a80c2af7412ff7eee2448ce7f98bcff4c316b9f88ce167ae82e4c0228fba",
+      "final_checkpoint_size_bytes": 79391104,
+      "final_replay_scalar_reward_statistics": {
+        "all_finite": true,
+        "count": 100000,
+        "maximum": 0.0034884651014516314,
+        "mean": -0.03828981655930559,
+        "minimum": -0.5177631643426139,
+        "scope": "final retained replay window only",
+        "standard_deviation": 0.0453092721677739
+      },
+      "initialization_parity": {
+        "actor_constrained_sha256": "bceb32a07c4bfff3483359fc27cedec10b827377290f3e1e647c411421b56b8b",
+        "actor_scalar_sha256": "bceb32a07c4bfff3483359fc27cedec10b827377290f3e1e647c411421b56b8b",
+        "byte_identical": true,
+        "reward_critic_constrained_sha256": "085d0cf06d7c4c447ba3d5aaddc466df7a62236bcbb42c7148511469b9c957f0",
+        "reward_critic_scalar_sha256": "085d0cf06d7c4c447ba3d5aaddc466df7a62236bcbb42c7148511469b9c957f0",
+        "scalar_invariants": {
+          "automatic_alpha": true,
+          "cost_critics": 0,
+          "critic_systems": 1,
+          "double_q_heads": 2,
+          "n_step": 2,
+          "pid_optimizers": 0,
+          "target_entropy": -1.0,
+          "use_lagrangian": false
+        },
+        "training_seed": 29
+      },
+      "network_parameters_all_finite": true,
+      "optimizer_state_all_finite": true,
+      "resume_events": [],
+      "resume_status": "NOT_RESUMED",
+      "retained_checkpoint_write_count": 7,
+      "retained_checkpoint_write_time_s": 8.326893333927728,
+      "runtime_versions": {
+        "fsrl": "0.1.0",
+        "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+        "gymnasium": "1.4.0",
+        "numpy": "2.4.6",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "python": "3.11.13",
+        "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python",
+        "tianshou": "0.5.1",
+        "torch": "2.14.1"
+      },
+      "started_at_europe_berlin": "2026-10-20T11:57:51.033064+02:00",
+      "started_at_utc": "2026-10-20T09:57:51.033064+00:00",
+      "task_exposures": 167,
+      "total_checkpoint_overhead_note": "The rolling 10k recovery checkpoint is overwritten; total write overhead was not retained. The retained write-time sum is a lower bound.",
+      "total_checkpoint_overhead_s": null,
+      "walltime_state_s": 2117.1967859999277
+    },
+    "47": {
+      "attempt_id": "70c3d224-78ba-4d23-9c8b-9e56b0b9bc06",
+      "attempt_number": 1,
+      "attempt_walltime_s": 1464.913601,
+      "checkpoint_source_hashes": {
+        "agent.py": "d52df5c46da1f0560c3ddb02dba31ad8df8876032fbbcec15f3925b025348fd7",
+        "canonical.json": "cd57fcb9905821f4ffe8d3a47df51a36463a47e3d4d1b9856440123309a62825",
+        "checkpointing.py": "0f808839fb85277b7201e591794a1fafda08d3eb4df71f740e5630917a8e9f16",
+        "config.py": "f6379cacfff6b959c7f70de31511766a4ee4602314ebf5c7b2fd16672b9a05bf",
+        "evaluation.py": "f1715445c278ebfe3e38a9958ccd986bcc05c1e97b5b8b18988ced3206d0bf7c",
+        "execution.py": "238bbfb5a67772d707f36c5ec77a8c0e460639f8d0f19e011c8d5c67c18ed036",
+        "finalization.py": "fbbd9f24663bbceabdbcf2fc8468d6789b9a090b84323e9796f6cca537de2371",
+        "initialization.py": "db4ce906a4231b72d8b9746c8758a6eb6958602b2f1889a89252b5a16bca577a",
+        "interpretation.py": "02cc1683a7bf10549383c1c01f0bd9595c245732444a4c1f74c89d98ed903eeb",
+        "preflight.py": "8aeb25f0a756a6c21c1580398027629a8fd46fad083e55e7811e4e2bd8920564",
+        "reference.py": "1914c4ad669aa906b14bc89d05c90e4be07074ffb0641fd7ad813d3ad26af8a9",
+        "resource_preflight.py": "94dcffdaaf0f0a52b0013ddd396b4e0cca51b700133e52e1a0f48bd40df332e3",
+        "runner.py": "14cb52d4676863c81d46bee6d92f98d90579bda3cb086c1d0ac9ec9bbce64936",
+        "scalarization.py": "bd587cd9201887e56872e6768f727b543639cbdd16d1b783f496a0e648c3bf2a",
+        "signals.py": "dd0b49a4af8d2941c1f86e2d13b63a7cc198ec8999dbc876cf81efb33d5a02c3",
+        "split.py": "f8a6c132e5efe9166069514ba0a4456bcf1845a832974e07b69749579f699029",
+        "streams.py": "3c020bcd08c2de1d87c6b8ce5a2ed143451e685d2524acdd324c7207ea684826"
+      },
+      "completed_episodes": 167,
+      "condition": "S47_sameinfo_scalar_seed47",
+      "counters": {
+        "real_transitions": 300000,
+        "rl_gradient_updates": 30000
+      },
+      "diagnostic_checkpoints_completed": [
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000
+      ],
+      "ended_at_europe_berlin": "2026-10-20T12:57:37.651421+02:00",
+      "ended_at_utc": "2026-10-20T10:57:37.651421+00:00",
+      "final_checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained/S47_sameinfo_scalar_seed47/step-300000/checkpoint.pt",
+      "final_checkpoint_sha256": "b28151f6f25e8510258119aa5f24a06d088980d9e536e044f529241785de53d1",
+      "final_checkpoint_size_bytes": 79730688,
+      "final_replay_scalar_reward_statistics": {
+        "all_finite": true,
+        "count": 100000,
+        "maximum": 0.0026757515727830997,
+        "mean": -0.03778042558886971,
+        "minimum": -1.7565005008263797,
+        "scope": "final retained replay window only",
+        "standard_deviation": 0.04997079492276519
+      },
+      "initialization_parity": {
+        "actor_constrained_sha256": "50a88eb93702768167d6729ab1a4fcb475d10d538dc35b00a8b6c858a6fb7bfb",
+        "actor_scalar_sha256": "50a88eb93702768167d6729ab1a4fcb475d10d538dc35b00a8b6c858a6fb7bfb",
+        "byte_identical": true,
+        "reward_critic_constrained_sha256": "f0747a2186372f19c6d1009e6bf8e4e4c1d1a985bd8ddf97a409a9a53c227ae1",
+        "reward_critic_scalar_sha256": "f0747a2186372f19c6d1009e6bf8e4e4c1d1a985bd8ddf97a409a9a53c227ae1",
+        "scalar_invariants": {
+          "automatic_alpha": true,
+          "cost_critics": 0,
+          "critic_systems": 1,
+          "double_q_heads": 2,
+          "n_step": 2,
+          "pid_optimizers": 0,
+          "target_entropy": -1.0,
+          "use_lagrangian": false
+        },
+        "training_seed": 47
+      },
+      "network_parameters_all_finite": true,
+      "optimizer_state_all_finite": true,
+      "resume_events": [],
+      "resume_status": "NOT_RESUMED",
+      "retained_checkpoint_write_count": 7,
+      "retained_checkpoint_write_time_s": 5.950681583140977,
+      "runtime_versions": {
+        "fsrl": "0.1.0",
+        "fsrl_revision": "e056fc9498d5d037869533da7cf976acf462f918",
+        "gymnasium": "1.4.0",
+        "numpy": "2.4.6",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "python": "3.11.13",
+        "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python",
+        "tianshou": "0.5.1",
+        "torch": "2.14.1"
+      },
+      "started_at_europe_berlin": "2026-10-20T12:33:12.737820+02:00",
+      "started_at_utc": "2026-10-20T10:33:12.737820+00:00",
+      "task_exposures": 167,
+      "total_checkpoint_overhead_note": "The rolling 10k recovery checkpoint is overwritten; total write overhead was not retained. The retained write-time sum is a lower bound.",
+      "total_checkpoint_overhead_s": null,
+      "walltime_state_s": 1461.233330041985
+    }
+  },
+  "schema_version": 1,
+  "source_hashes_after_completion_gate_closed": {
+    "agent.py": "d52df5c46da1f0560c3ddb02dba31ad8df8876032fbbcec15f3925b025348fd7",
+    "canonical.json": "e8bee986c528ad254bff179fcbd07b14ea81ecac9791760d49fbb55f314a5385",
+    "checkpointing.py": "0f808839fb85277b7201e591794a1fafda08d3eb4df71f740e5630917a8e9f16",
+    "config.py": "f6379cacfff6b959c7f70de31511766a4ee4602314ebf5c7b2fd16672b9a05bf",
+    "evaluation.py": "f1715445c278ebfe3e38a9958ccd986bcc05c1e97b5b8b18988ced3206d0bf7c",
+    "execution.py": "238bbfb5a67772d707f36c5ec77a8c0e460639f8d0f19e011c8d5c67c18ed036",
+    "finalization.py": "fbbd9f24663bbceabdbcf2fc8468d6789b9a090b84323e9796f6cca537de2371",
+    "initialization.py": "db4ce906a4231b72d8b9746c8758a6eb6958602b2f1889a89252b5a16bca577a",
+    "interpretation.py": "02cc1683a7bf10549383c1c01f0bd9595c245732444a4c1f74c89d98ed903eeb",
+    "preflight.py": "8aeb25f0a756a6c21c1580398027629a8fd46fad083e55e7811e4e2bd8920564",
+    "reference.py": "1914c4ad669aa906b14bc89d05c90e4be07074ffb0641fd7ad813d3ad26af8a9",
+    "resource_preflight.py": "94dcffdaaf0f0a52b0013ddd396b4e0cca51b700133e52e1a0f48bd40df332e3",
+    "runner.py": "14cb52d4676863c81d46bee6d92f98d90579bda3cb086c1d0ac9ec9bbce64936",
+    "scalarization.py": "bd587cd9201887e56872e6768f727b543639cbdd16d1b783f496a0e648c3bf2a",
+    "signals.py": "dd0b49a4af8d2941c1f86e2d13b63a7cc198ec8999dbc876cf81efb33d5a02c3",
+    "split.py": "f8a6c132e5efe9166069514ba0a4456bcf1845a832974e07b69749579f699029",
+    "streams.py": "3c020bcd08c2de1d87c6b8ce5a2ed143451e685d2524acdd324c7207ea684826"
+  },
+  "study": "same-information-scalar-vs-constrained-v1"
+}
