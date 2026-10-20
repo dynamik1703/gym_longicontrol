@@ -107,8 +107,8 @@
     "maximum_preparation_simulator_transitions": 5000
   },
   "authorization": {
-    "main_training_authorized": false,
-    "main_training_enabled": false,
+    "main_training_authorized": true,
+    "main_training_enabled": true,
     "same_attempt_exact_resume_authorized": true,
     "fresh_restart_authorized": false,
     "validation_authorized": false,
