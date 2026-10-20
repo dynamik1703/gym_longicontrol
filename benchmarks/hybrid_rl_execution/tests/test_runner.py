@@ -16,7 +16,11 @@ from benchmarks.hybrid_rl_execution.execution import (
     prepare_launchd_job,
     require_main_training_authorized,
 )
-from benchmarks.hybrid_rl_execution.runner import HybridRunner, UpdateBudgetAccumulator
+from benchmarks.hybrid_rl_execution.runner import (
+    HybridRunner,
+    UpdateBudgetAccumulator,
+    cumulative_update_target,
+)
 from benchmarks.hybrid_rl_execution.verification import exact_resume_probe
 
 
@@ -79,9 +83,21 @@ def test_intervention_deviation_compares_two_native_actuator_commands():
 def test_exact_native_and_gradient_update_budget_accounting():
     budget = UpdateBudgetAccumulator()
     assert budget.cumulative_target(9_999) == 0
-    assert budget.cumulative_target(10_000) == 1_000
+    assert budget.cumulative_target(10_000) == 0
+    assert budget.cumulative_target(10_009) == 0
+    assert budget.cumulative_target(10_010) == 1
+    assert budget.cumulative_target(50_000) == 4_137
+    assert budget.cumulative_target(100_000) == 9_310
+    assert budget.cumulative_target(150_000) == 14_482
+    assert budget.cumulative_target(200_000) == 19_655
+    assert budget.cumulative_target(250_000) == 24_827
     assert budget.cumulative_target(299_999) == 29_999
     assert budget.cumulative_target(300_000) == 30_000
+    assert all(
+        cumulative_update_target(native_transitions)
+        == budget.cumulative_target(native_transitions)
+        for native_transitions in range(300_001)
+    )
     runner = _runner(warmup_native_transitions=10)
     try:
         runner.run_to_budget()
@@ -91,10 +107,35 @@ def test_exact_native_and_gradient_update_budget_accounting():
         runner.close()
 
 
+def test_first_update_occurs_at_exact_post_warmup_native_target():
+    runner = _runner(
+        native_budget=40,
+        update_budget=4,
+        warmup_native_transitions=10,
+    )
+    try:
+        for _ in range(17):
+            runner.advance_native()
+        assert runner.gradient_update_count == 0
+        assert runner.macro_accumulator is not None
+        runner.advance_native()
+        assert runner.native_transition_count == 18
+        assert runner.gradient_update_count == 1
+        assert runner.macro_accumulator is not None
+    finally:
+        runner.close()
+
+
 def test_exact_resume_inside_partially_executed_block():
     result = exact_resume_probe()
     assert result["partial_block_at_checkpoint"]["native_steps_in_accumulator"] == 3
     assert result["partial_block_at_checkpoint"]["remaining_native_steps_in_block"] == 7
+    assert result["update_counts"] == {
+        "at_checkpoint": 0,
+        "uninterrupted_after_checkpoint": 1,
+        "restored_after_checkpoint": 1,
+    }
+    assert result["preparation_interactions"]["gradient_updates"] == 2
     assert result["future_action_reward_cost_trace_exact"]
     assert result["network_optimizer_replay_environment_controller_rng_exact"]
     assert result["passed"]

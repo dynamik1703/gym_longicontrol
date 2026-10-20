@@ -5,9 +5,9 @@
     "macro_transition_count": 0,
     "native_transition_count": 3,
     "schema_version": 1,
-    "sha256": "6b36bf63d604d05c85d0fc412521e1f362a1ed187ae40084bfe718847180ff70",
-    "size_bytes": 3181076,
-    "write_s": 0.0118742500199005
+    "sha256": "467b6aa182ea39d10c95e7fb9363ed585cda09a9a2489c84e83e171e8a692196",
+    "size_bytes": 3181098,
+    "write_s": 0.021540749934501946
   },
   "future_action_reward_cost_trace_exact": true,
   "future_native_steps_compared": 20,
@@ -19,7 +19,12 @@
   },
   "passed": true,
   "preparation_interactions": {
-    "gradient_updates": 4,
+    "gradient_updates": 2,
     "real_native_transitions": 43
+  },
+  "update_counts": {
+    "at_checkpoint": 0,
+    "restored_after_checkpoint": 1,
+    "uninterrupted_after_checkpoint": 1
   }
 }

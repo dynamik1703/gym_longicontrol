@@ -45,6 +45,18 @@ WARMUP_NUMPY_DOMAIN = 0x5741524D
 REPLAY_NUMPY_DOMAIN = 0x52504C59
 
 
+def cumulative_update_target(native_transitions: int) -> int:
+    """Return the frozen Revision-3 optimizer-update target at native step N."""
+
+    if native_transitions <= WARMUP_NATIVE_TRANSITIONS:
+        return 0
+    return min(
+        GRADIENT_UPDATE_BUDGET,
+        ((int(native_transitions) - WARMUP_NATIVE_TRANSITIONS) * GRADIENT_UPDATE_BUDGET)
+        // (NATIVE_BUDGET - WARMUP_NATIVE_TRANSITIONS),
+    )
+
+
 def _seed_value(seed: int, domain: int) -> int:
     return int(np.random.SeedSequence([seed, domain]).generate_state(1)[0])
 
@@ -96,7 +108,7 @@ class CanonicalTrainingStream:
 
 
 class UpdateBudgetAccumulator:
-    """Defer fixed 0.1/native-step credits until the 10k warm-up gate."""
+    """Linearly spread the update budget over post-warm-up native steps."""
 
     def __init__(
         self,
@@ -112,9 +124,11 @@ class UpdateBudgetAccumulator:
         self.update_budget = int(update_budget)
 
     def cumulative_target(self, native_transitions: int) -> int:
-        if native_transitions < self.warmup:
+        if native_transitions <= self.warmup:
             return 0
-        target = int(native_transitions) * self.update_budget // self.native_budget
+        target = ((int(native_transitions) - self.warmup) * self.update_budget) // (
+            self.native_budget - self.warmup
+        )
         return min(target, self.update_budget)
 
     def due(self, native_transitions: int, completed_updates: int) -> int:
@@ -368,7 +382,9 @@ class HybridRunner:
             self.macro_accumulator = None
             self.held_strategy_action = None
             self.remaining_native_steps_in_block = 0
-            self._perform_due_updates()
+        # Revision 3 evaluates the cumulative optimizer budget at every native
+        # step. Replay still contains only completed SMDP macro-transitions.
+        self._perform_due_updates()
         return record
 
     def run_to_budget(self) -> None:

@@ -28,7 +28,7 @@ from .macro_transition import (
     reward_bellman_target,
 )
 from .resource import benchmark_actual_pipeline
-from .runner import UpdateBudgetAccumulator
+from .runner import UpdateBudgetAccumulator, cumulative_update_target
 from .safety import run_safety_audit
 from .verification import causal_information_boundary, exact_resume_probe
 
@@ -119,6 +119,23 @@ def _temporal_semantics_checks() -> dict[str, Any]:
     )
     hand_cost_target = np.array([[0.4]]) + discount * np.array([[2.0]])
     scheduler = UpdateBudgetAccumulator()
+    update_checkpoints = (
+        9_999,
+        10_000,
+        10_009,
+        10_010,
+        50_000,
+        100_000,
+        150_000,
+        200_000,
+        250_000,
+        299_999,
+        300_000,
+    )
+    update_counts = {
+        str(native_transitions): scheduler.cumulative_target(native_transitions)
+        for native_transitions in update_checkpoints
+    }
     checks = {
         "gamma_native_tenth_power_is_gamma_decision": math.isclose(
             GAMMA_NATIVE**10, GAMMA_DECISION, abs_tol=1e-15
@@ -139,7 +156,18 @@ def _temporal_semantics_checks() -> dict[str, Any]:
             computed_cost_target, hand_cost_target
         ),
         "no_updates_before_warmup": scheduler.cumulative_target(9_999) == 0,
-        "deferred_credits_at_warmup": scheduler.cumulative_target(10_000) == 1_000,
+        "no_updates_at_warmup": scheduler.cumulative_target(10_000) == 0,
+        "no_update_before_first_post_warmup_target": (
+            scheduler.cumulative_target(10_009) == 0
+        ),
+        "first_update_at_native_transition_10010": (
+            scheduler.cumulative_target(10_010) == 1
+        ),
+        "canonical_function_matches_accumulator": all(
+            cumulative_update_target(native_transitions)
+            == scheduler.cumulative_target(native_transitions)
+            for native_transitions in (0, *update_checkpoints)
+        ),
         "exact_final_update_budget": scheduler.cumulative_target(300_000) == 30_000,
     }
     return {
@@ -148,6 +176,7 @@ def _temporal_semantics_checks() -> dict[str, Any]:
         "full_block_discount": full_transition.continuation_discount,
         "shortened_terminal_native_steps": shortened_transition.native_steps,
         "shortened_terminal_discount": shortened_transition.continuation_discount,
+        "cumulative_update_targets": update_counts,
         "checks": checks,
         "passed": all(checks.values()),
     }
@@ -313,7 +342,8 @@ def prepare() -> dict[str, Any]:
         + recovery["preparation_interactions"]["real_native_transitions"]
     )
     status = {
-        "schema_version": 1,
+        "schema_version": 2,
+        "protocol_revision": canonical["protocol_revision"],
         "prepared_at_utc": datetime.now(timezone.utc).isoformat(),
         "study": canonical["name"],
         "source_commit": canonical["lineage"]["source_commit"],

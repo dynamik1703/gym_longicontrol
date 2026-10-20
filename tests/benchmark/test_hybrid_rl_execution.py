@@ -24,6 +24,7 @@ def test_hybrid_execution_is_smdp_ready_but_training_fail_closed():
     status_path = Path("benchmarks/hybrid_rl_execution/preparation_status.json")
     if status_path.exists():
         status = json.loads(status_path.read_text(encoding="utf-8"))
+        assert status["protocol_revision"] == 3
         assert status["ready_for_main_training"]
         assert not status["main_training_started"]
         assert status["validation"]["performance_episodes"] == 0

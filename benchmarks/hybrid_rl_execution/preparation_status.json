@@ -1,11 +1,11 @@
 {
   "artifacts": {
     "preflight_results.json": "32194709573e066ab94af22f760d48093cb8483fdc118822c04be7dd55d75e7d",
-    "recovery_probe.json": "24582a7757ec6c79ec4d50849995a13bc0ae22e518184349e7e56fa1f2368e34",
-    "resource_measurements.json": "ebfa2b2b9e395b9004c5c3ca86e52965836228758551e8b3cc1c86f317738e2d",
+    "recovery_probe.json": "6fb323ae513dc9676451d7891e7d2e9e24eda3753ef396e52c011314cd6a5b89",
+    "resource_measurements.json": "1b139554aaba66c579499eff1644d10da653158368f5233c9b7b48183eca19d7",
     "safety_audit.json": "7e763a0d11443236038178903ea5752d86de76009116d54225dbe26bdbd66e29"
   },
-  "configuration_sha256": "0a3b2adf12aecee425ba6c77a87b568f5bac4500ca92b5288cf0bbcba0e50a6d",
+  "configuration_sha256": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
   "diagnostic": {
     "count": 18,
     "id": "HYBRID_RL_DIAGNOSTIC_V1",
@@ -19,9 +19,9 @@
       "macro_transition_count": 0,
       "native_transition_count": 3,
       "schema_version": 1,
-      "sha256": "6b36bf63d604d05c85d0fc412521e1f362a1ed187ae40084bfe718847180ff70",
-      "size_bytes": 3181076,
-      "write_s": 0.0118742500199005
+      "sha256": "467b6aa182ea39d10c95e7fb9363ed585cda09a9a2489c84e83e171e8a692196",
+      "size_bytes": 3181098,
+      "write_s": 0.021540749934501946
     },
     "future_action_reward_cost_trace_exact": true,
     "future_native_steps_compared": 20,
@@ -33,8 +33,13 @@
     },
     "passed": true,
     "preparation_interactions": {
-      "gradient_updates": 4,
+      "gradient_updates": 2,
       "real_native_transitions": 43
+    },
+    "update_counts": {
+      "at_checkpoint": 0,
+      "restored_after_checkpoint": 1,
+      "uninterrupted_after_checkpoint": 1
     }
   },
   "gates": {
@@ -101,47 +106,48 @@
   },
   "preparation_interactions_consumed": {
     "paper_episodes": 0,
-    "real_environment_native_steps": 30348,
+    "real_environment_native_steps": 30347,
     "reserved_diagnostic_episodes": 0,
     "reserved_validation_episodes": 0,
-    "sac_gradient_updates": 14,
+    "sac_gradient_updates": 12,
     "used_only_deterministic_unreserved_fixtures": true
   },
-  "prepared_at_utc": "2026-10-20T16:56:15.385228+00:00",
+  "prepared_at_utc": "2026-10-20T18:18:05.567588+00:00",
+  "protocol_revision": 3,
   "ready_for_main_training": true,
   "resources": {
-    "checkpoint_projection_s": 9.543435032246634,
-    "collection_projection_s": 392.39843665855005,
+    "checkpoint_projection_s": 17.663257444510236,
+    "collection_projection_s": 480.8715629973449,
     "diagnostic_episodes": 324,
-    "evaluation_projection_s": 211.24796716868877,
+    "evaluation_projection_s": 269.84430903196335,
     "final_evaluation_episodes": 180,
     "gradient_updates": 90000,
-    "projected_retained_checkpoint_bytes": 1014594604,
+    "projected_retained_checkpoint_bytes": 1014594547,
     "projected_retained_diagnostics_bytes": 1000000000,
-    "projected_retained_disk_bytes": 2014594604,
-    "projected_retained_disk_gb": 2.014594604,
-    "projected_total_runtime_hours": 0.6952922824409324,
-    "projected_total_runtime_s": 2503.052216787357,
-    "raw_projection_s": 1251.5261083936784,
+    "projected_retained_disk_bytes": 2014594547,
+    "projected_retained_disk_gb": 2.014594547,
+    "projected_total_runtime_hours": 1.00161290908892,
+    "projected_total_runtime_s": 3605.8064727201127,
+    "raw_projection_s": 1802.9032363600563,
     "real_native_transitions": 900000,
     "retained_checkpoint_count": 19,
     "uncertainty_factor": 2.0,
-    "update_projection_s": 638.336269534193
+    "update_projection_s": 1034.5241068862379
   },
-  "schema_version": 1,
+  "schema_version": 2,
   "scientific_source_sha256": {
     "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
-    "benchmarks/hybrid_rl_execution/canonical.json": "0a3b2adf12aecee425ba6c77a87b568f5bac4500ca92b5288cf0bbcba0e50a6d",
+    "benchmarks/hybrid_rl_execution/canonical.json": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
     "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
     "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
     "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",
     "benchmarks/hybrid_rl_execution/macro_transition.py": "494839c92ab077584b72b4de7e53511402a40daee3d304e0dc34fd2ce250461f",
-    "benchmarks/hybrid_rl_execution/prepare.py": "e7444581c33ceeef3045b3dd36d5f8c409e5a31101914e7ccd9ed6ad7da695b1",
+    "benchmarks/hybrid_rl_execution/prepare.py": "e884b16752acd5c78ce892f0abc802b99629a77a5b5179e7890f9911b2922bea",
     "benchmarks/hybrid_rl_execution/replay.py": "14d990009d71d018a4b78b3afed19a17fe9efd55247d759ad36a318c75d98565",
     "benchmarks/hybrid_rl_execution/resource.py": "b57ad15c509a34c5cb577158ca334e094270afce0d9aa7205cbeb4cf878ceed0",
-    "benchmarks/hybrid_rl_execution/runner.py": "7b9533ebd560e7b5831465ae14dbcc4473a1bbe9f3587fce312a4c2b63ca6256",
+    "benchmarks/hybrid_rl_execution/runner.py": "101e51cfc2311462f4692f0d0b3f72721ef6b84c9f48372c7269ec2f60195255",
     "benchmarks/hybrid_rl_execution/safety.py": "745183dfd6576635975f7b84cdb84e15c7b833a74950224476ae2de7682e9ceb",
-    "benchmarks/hybrid_rl_execution/verification.py": "e585a9a1e74a057b56b04079a824eb8b68f7a228538084b77bc7ed5fea794560"
+    "benchmarks/hybrid_rl_execution/verification.py": "be668dc14c9341da873cfcd885299e8d773444873ceac78b90ad986510906f46"
   },
   "shield_reproduction": {
     "SHIELD_DOMINATES_POLICY": false,
@@ -156,14 +162,30 @@
   "study": "HYBRID_RL_EXECUTION_V1",
   "temporal_semantics": {
     "checks": {
+      "canonical_function_matches_accumulator": true,
       "cost_target_matches_hand_calculation": true,
-      "deferred_credits_at_warmup": true,
       "exact_final_update_budget": true,
+      "first_update_at_native_transition_10010": true,
       "full_block_continuation_discount": true,
       "gamma_native_tenth_power_is_gamma_decision": true,
+      "no_update_before_first_post_warmup_target": true,
+      "no_updates_at_warmup": true,
       "no_updates_before_warmup": true,
       "reward_target_matches_hand_calculation": true,
       "short_terminal_block_has_no_bootstrap": true
+    },
+    "cumulative_update_targets": {
+      "10000": 0,
+      "100000": 9310,
+      "10009": 0,
+      "10010": 1,
+      "150000": 14482,
+      "200000": 19655,
+      "250000": 24827,
+      "299999": 29999,
+      "300000": 30000,
+      "50000": 4137,
+      "9999": 0
     },
     "full_block_discount": 0.9899999999999999,
     "gamma_decision": 0.99,

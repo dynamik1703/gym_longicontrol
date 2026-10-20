@@ -91,7 +91,9 @@ def exact_resume_probe() -> dict[str, Any]:
     with tempfile.TemporaryDirectory(prefix="hybrid-rl-resume-") as directory:
         checkpoint = Path(directory) / "checkpoint.pkl"
         metadata = runner.save(checkpoint)
+        checkpoint_update_count = runner.gradient_update_count
         uninterrupted_records = [runner.advance_native() for _ in range(20)]
+        uninterrupted_update_count = runner.gradient_update_count
         uninterrupted = _scientific_snapshot(runner)
         restored = HybridRunner.restore(
             checkpoint,
@@ -101,12 +103,15 @@ def exact_resume_probe() -> dict[str, Any]:
             attempt_id=runner.attempt_id,
         )
         restored_records = [restored.advance_native() for _ in range(20)]
+        restored_update_count = restored.gradient_update_count
         resumed = _scientific_snapshot(restored)
         records_exact = _equal(uninterrupted_records, restored_records)
         scientific_state_exact = _equal(uninterrupted, resumed)
         restored.close()
     runner.close()
     metadata.pop("path", None)
+    uninterrupted_updates = uninterrupted_update_count - checkpoint_update_count
+    restored_updates = restored_update_count - checkpoint_update_count
     return {
         "checkpoint": metadata,
         "partial_block_at_checkpoint": partial,
@@ -115,10 +120,15 @@ def exact_resume_probe() -> dict[str, Any]:
         "network_optimizer_replay_environment_controller_rng_exact": (
             scientific_state_exact
         ),
+        "update_counts": {
+            "at_checkpoint": checkpoint_update_count,
+            "uninterrupted_after_checkpoint": uninterrupted_updates,
+            "restored_after_checkpoint": restored_updates,
+        },
         "passed": bool(records_exact and scientific_state_exact),
         "preparation_interactions": {
             "real_native_transitions": 43,
-            "gradient_updates": 4,
+            "gradient_updates": uninterrupted_updates + restored_updates,
         },
     }
 

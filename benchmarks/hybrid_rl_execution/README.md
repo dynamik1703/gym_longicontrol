@@ -4,6 +4,10 @@ This directory prepares the frozen target-speed Hybrid design for an exact,
 recoverable 1 Hz SMDP study while preserving the unchanged 10 Hz physical
 controller and shield from `benchmarks/hybrid_rl_design/`.
 
+Protocol Revision 3 replaces the former warm-up credit burst with the frozen
+post-warm-up cumulative update schedule in `TEMPORAL_SEMANTICS.md`. No main
+training or reserved evaluation was run for this amendment.
+
 Main training is deliberately fail-closed. `canonical.json` records readiness
 but keeps `main_training_authorized=false` and `main_training_enabled=false`.
 The prepared launchd file is not loaded by preparation.

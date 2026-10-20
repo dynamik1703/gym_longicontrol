@@ -1,9 +1,10 @@
 # Temporal-Semantics Amendment — Hybrid RL V1
 
-Status: **frozen pre-training amendment**. This revision corrects a mathematical
+Status: **frozen pre-training amendment, Revision 3**. Revision 2 corrected a mathematical
 inconsistency in the design at source commit
 `337fe498083eb3d4c63263f696ee8b30f6800fec`; it was fixed before main training
-or any reserved Diagnostic/Validation policy evaluation.
+or any reserved Diagnostic/Validation policy evaluation. Revision 3 changes
+only the optimizer-update schedule described below.
 
 ## Defect in the prior description
 
@@ -71,18 +72,22 @@ effects and diagnostics, never substituted for the strategy action.
 
 ## Update accounting amendment
 
-Native interactions remain the scientific budget. Update credit accrues at the
-frozen rate `0.1` per real native transition. No credit is redeemed before the
-10,000-native-transition replay warm-up. At completed macro boundaries, the
-cumulative target is
+Native interactions remain the scientific budget. Revision 3 removes the
+deferred 1,000-update redemption at the warm-up boundary. The 30,000-update
+budget is instead spread deterministically over the 290,000 native transitions
+after the 10,000-transition replay warm-up:
 
-```text
-U(N) = 0                         if N < 10,000
-U(N) = min(30,000, floor(N/10))  otherwise.
+```python
+def cumulative_update_target(N):
+    if N <= 10000:
+        return 0
+    return min(30000, ((N - 10000) * 30000) // 290000)
 ```
 
-Consequently the deferred warm-up credit is deterministically redeemed at the
-first eligible macro boundary. No environment step or imagined transition is
-added, and `U(300,000)=30,000` exactly. This resolves the otherwise inconsistent
-simultaneous requirements of a 10k warm-up, `0.1` update/native-step credit, and
-exactly 30,000 updates.
+The cumulative target is checked after each real native transition. Therefore
+`U(10,000)=0`, `U(10,009)=0`, the first update occurs at `N=10,010`, and
+`U(300,000)=30,000` exactly. An optimizer update may be triggered while the
+next held-action block is in progress, but it samples only replay entries for
+completed or terminal-shortened SMDP macro-transitions. The held target,
+10 Hz shield, macro-transition construction, discounting, native interaction
+budget, streams, and every other scientific parameter remain unchanged.

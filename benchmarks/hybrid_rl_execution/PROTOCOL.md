@@ -1,4 +1,4 @@
-# Executable Hybrid RL V1 Protocol — Revision 2
+# Executable Hybrid RL V1 Protocol — Revision 3
 
 Status: **prepared; main training, final Validation, and Paper execution are
 not authorized**.
@@ -12,10 +12,17 @@ using the identical shield?
 
 ## Revision relative to the frozen design
 
-Revision 2 makes one necessary pre-training amendment: replay, SAC actions, and
+Revision 2 made one necessary pre-training amendment: replay, SAC actions, and
 Bellman targets now follow the actual 1 Hz held-action SMDP. Native dynamics,
 energy/speed measurements, and shielding remain at 10 Hz. The exact equations
 are frozen in `TEMPORAL_SEMANTICS.md` and `SMDP_TARGETS.md`.
+
+Revision 3 changes only update scheduling. There are no updates through native
+transition 10,000 and no deferred 1,000-update burst. The cumulative target is
+`0` for `N <= 10,000`, then
+`min(30,000, ((N - 10,000) * 30,000) // 290,000)`. The first update is at
+native transition 10,010 and the 30,000th at 300,000. SMDP, shield, streams,
+budgets, model, losses, and all other frozen scientific parameters are unchanged.
 
 No frozen physical parameter, controller margin, deadline, route split,
 acceptance threshold, action bound, signal scale, network size, learning rate,
@@ -40,8 +47,8 @@ or budget was tuned from policy performance.
 
 - Training seeds: 11, 29, 47; existing immutable 865-row streams.
 - Exactly 300,000 real native transitions and 30,000 SAC updates per seed.
-- Ten-thousand-native-transition warm-up; deterministic deferred update-credit
-  accounting described in `TEMPORAL_SEMANTICS.md`.
+- Ten-thousand-native-transition warm-up; deterministic post-warm-up linear
+  update accounting described in `TEMPORAL_SEMANTICS.md`.
 - Macro-decision counts are reported separately and do not replace the native
   interaction budget.
 - Actor-only Diagnostic at 50k increments. No best-checkpoint selection; 300k
