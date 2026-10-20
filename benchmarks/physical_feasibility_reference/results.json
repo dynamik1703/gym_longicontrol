@@ -1,0 +1,997 @@
+{
+  "contextual_analysis": {
+    "performed": false,
+    "reason": "Optional post-hoc panels were omitted to keep the independent holdout as the sole newly opened final-performance result."
+  },
+  "development": {
+    "causal": {
+      "completion_count": 18,
+      "completion_rate": 1.0,
+      "deadline_compliance_count": 18,
+      "deadline_compliance_rate": 1.0,
+      "episode_count": 18,
+      "feasible_only_energy_kwh": {
+        "count": 18,
+        "mean": 0.19956989511426004,
+        "median": 0.19668845380958866,
+        "values": [
+          0.21648489195468645,
+          0.1671208550918668,
+          0.18925369518713117,
+          0.1981860490014107,
+          0.20927090023156647,
+          0.17164084610991975,
+          0.2209173737327466,
+          0.25820177888691653,
+          0.19818604900140982,
+          0.1956226445834075,
+          0.1873042879747054,
+          0.24878553162272254,
+          0.1822996432320901,
+          0.17716300995519269,
+          0.19775426303576984,
+          0.18779686365634396,
+          0.1873042879747054,
+          0.19896514082408925
+        ]
+      },
+      "maximum_solver_computation_time_s": 0.1767840830143541,
+      "mean_solver_computation_time_s": 0.11483673150521806,
+      "mean_travel_time_s": 83.61666666666618,
+      "requirement_satisfaction_count": 18,
+      "requirement_satisfaction_rate": 1.0,
+      "speed_compliance_count": 18,
+      "speed_compliance_rate": 1.0
+    },
+    "evaluation_id": "PHYSICS_REFERENCE_DEV_V1",
+    "oracle": {
+      "completion_count": 18,
+      "completion_rate": 1.0,
+      "deadline_compliance_count": 18,
+      "deadline_compliance_rate": 1.0,
+      "episode_count": 18,
+      "feasible_only_energy_kwh": {
+        "count": 18,
+        "mean": 0.15158407056626133,
+        "median": 0.14957751786385173,
+        "values": [
+          0.14957751786385173,
+          0.1511153931709674,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.1511153931709674,
+          0.1554251304944687,
+          0.1550340264248797,
+          0.14957751786385173,
+          0.15214205544544815,
+          0.14957751786385173,
+          0.1550340264248797,
+          0.15783803999769627,
+          0.1550340264248797,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.14957751786385173
+        ]
+      },
+      "maximum_solver_computation_time_s": 3.229076457908377,
+      "mean_solver_computation_time_s": 1.9561603170134023,
+      "mean_travel_time_s": 129.79444444444135,
+      "requirement_satisfaction_count": 18,
+      "requirement_satisfaction_rate": 1.0,
+      "speed_compliance_count": 18,
+      "speed_compliance_rate": 1.0
+    },
+    "oracle_classifications": {
+      "FEASIBLE_WITNESS": 18,
+      "PROVEN_INFEASIBLE": 0,
+      "UNRESOLVED": 0
+    },
+    "wall_time_s": 37.41398354200646
+  },
+  "freeze": {
+    "canonical_task": {
+      "action_bounds": [
+        -1.0,
+        1.0
+      ],
+      "deadline_s": 140.0,
+      "maximum_episode_steps": 1800,
+      "maximum_speed_violation_m_s": 0.0,
+      "native_dt_s": 0.1,
+      "route_length_m": 1000.0
+    },
+    "controller_configuration": {
+      "braking_position_margin_m": 0.5,
+      "causal_cruise_cap_m_s": 16.666666666666668,
+      "oracle_energy_refinement_iterations": 10,
+      "velocity_safety_margin_m_s": 1e-06
+    },
+    "frozen_at_utc": "2026-10-20T15:20:09.060263+00:00",
+    "schema_version": 1,
+    "scientific_configuration_sha256": "f63717504a810c75d7080388aeb159505cf667ad13248dbe4a53ec0c4bb94cd1",
+    "source_sha256": {
+      "causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "diagnostics.py": "51ad2c904e6a7dc51f562541ce0428a65af17de0ddd1e79a0bce15f0ac9bb22f",
+      "evaluation.py": "a88727a457ef7310bcaf388ae92d07189fe79cf8e6b3efa2010aea8f183b1a08",
+      "feasibility.py": "04e15e15eebcce6d6f9dc1f984922dbc65770be4b7c4b9c318fdf1614657c0a7",
+      "oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+      "runner.py": "ebbe0784b6930761e17a76507cb3c5553d19f82859329ed49ba8a76f10374651"
+    },
+    "split_sha256": {
+      "development": "4551ddfa2f4363aff35323a2ed5994631f5a26bb50948af66f9d78b7558d3d1f",
+      "holdout": "c02c4889333eaf3526277b10bc5c33101ac1aa97f9de836379088c661e72a30b"
+    }
+  },
+  "holdout": {
+    "all_numerical_parity": true,
+    "causal": {
+      "completion_count": 36,
+      "completion_rate": 1.0,
+      "deadline_compliance_count": 36,
+      "deadline_compliance_rate": 1.0,
+      "episode_count": 36,
+      "feasible_only_energy_kwh": {
+        "count": 36,
+        "mean": 0.20585681935254208,
+        "median": 0.21088808920629798,
+        "values": [
+          0.22766424748669867,
+          0.223218237396642,
+          0.2183625445590143,
+          0.22510637183802076,
+          0.20966897157232053,
+          0.22043381394375797,
+          0.21506965413805476,
+          0.1873042879747054,
+          0.19070170526551805,
+          0.21072304525481192,
+          0.22374528063474725,
+          0.1785780025254159,
+          0.1627204545568615,
+          0.2158772814970866,
+          0.1694445262382409,
+          0.17264075159362016,
+          0.16974238685321932,
+          0.24289811923492546,
+          0.23473511475256606,
+          0.21111864404610134,
+          0.18891650243773433,
+          0.2318166627265683,
+          0.17771098076398967,
+          0.20242761329782427,
+          0.211053133157784,
+          0.23941915881494538,
+          0.1873042879747054,
+          0.22175051134300508,
+          0.21392904333512794,
+          0.2074391303394722,
+          0.1732286908450483,
+          0.24903705433101858,
+          0.16771247215786475,
+          0.23824637930114537,
+          0.18799701375405087,
+          0.20310342074890123
+        ]
+      },
+      "maximum_solver_computation_time_s": 0.2058425829745829,
+      "mean_solver_computation_time_s": 0.12417757175474738,
+      "mean_travel_time_s": 91.54166666666573,
+      "requirement_satisfaction_count": 36,
+      "requirement_satisfaction_rate": 1.0,
+      "speed_compliance_count": 36,
+      "speed_compliance_rate": 1.0
+    },
+    "evaluation_id": "PHYSICS_REFERENCE_HOLDOUT_V1",
+    "oracle": {
+      "completion_count": 36,
+      "completion_rate": 1.0,
+      "deadline_compliance_count": 36,
+      "deadline_compliance_rate": 1.0,
+      "episode_count": 36,
+      "feasible_only_energy_kwh": {
+        "count": 36,
+        "mean": 0.15266159372602325,
+        "median": 0.14957751786385173,
+        "values": [
+          0.14957751786385173,
+          0.15503402642487846,
+          0.15786056543953464,
+          0.1542436894804351,
+          0.14957751786385173,
+          0.1550340264248797,
+          0.15503402642487846,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.16891005222030167,
+          0.14957751786385173,
+          0.1511153931709674,
+          0.14957751786385173,
+          0.1554251304944687,
+          0.14957751786385173,
+          0.14734015563169486,
+          0.15424368948043735,
+          0.1550340264248793,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.15877524840775706,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.1550340264248797,
+          0.14957751786385173,
+          0.14957751786385173,
+          0.1550340264248793,
+          0.14957751786385173,
+          0.15443448873033,
+          0.1635873974045339,
+          0.14734015563169486,
+          0.14957751786385173,
+          0.15448541938504692,
+          0.1550340264248797
+        ]
+      },
+      "maximum_solver_computation_time_s": 3.665511375060305,
+      "mean_solver_computation_time_s": 1.855268333281856,
+      "mean_travel_time_s": 131.01388888888573,
+      "requirement_satisfaction_count": 36,
+      "requirement_satisfaction_rate": 1.0,
+      "speed_compliance_count": 36,
+      "speed_compliance_rate": 1.0
+    },
+    "oracle_classifications": {
+      "FEASIBLE_WITNESS": 36,
+      "PROVEN_INFEASIBLE": 0,
+      "UNRESOLVED": 0
+    },
+    "paired_task_level_differences": [
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 49.1999999999972,
+        "track_seed": 9900000
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 47.999999999997286,
+        "track_seed": 9900003
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 32.199999999998184,
+        "track_seed": 9900004
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 46.49999999999737,
+        "track_seed": 9900005
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 56.899999999996766,
+        "track_seed": 9900006
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 50.099999999997166,
+        "track_seed": 9900007
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 37.1999999999979,
+        "track_seed": 9900008
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 62.099999999996534,
+        "track_seed": 9900009
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 44.79999999999745,
+        "track_seed": 9900010
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 49.1999999999972,
+        "track_seed": 9900011
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 12.499999999999304,
+        "track_seed": 9900013
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 36.8999999999979,
+        "track_seed": 9900014
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 21.19999999999881,
+        "track_seed": 9900015
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 48.49999999999724,
+        "track_seed": 9900016
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 5.899999999999679,
+        "track_seed": 9900017
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 31.599999999998204,
+        "track_seed": 9900018
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 21.89999999999877,
+        "track_seed": 9900020
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 44.69999999999747,
+        "track_seed": 9900022
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 39.399999999997775,
+        "track_seed": 9900023
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 44.89999999999745,
+        "track_seed": 9900025
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 55.79999999999683,
+        "track_seed": 9900026
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 32.49999999999817,
+        "track_seed": 9900027
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 47.599999999997294,
+        "track_seed": 9900029
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 47.599999999997294,
+        "track_seed": 9900030
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 45.999999999997385,
+        "track_seed": 9900033
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 39.399999999997775,
+        "track_seed": 9900034
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 62.099999999996534,
+        "track_seed": 9900035
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 19.19999999999891,
+        "track_seed": 9900036
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 46.099999999997394,
+        "track_seed": 9900037
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 57.29999999999674,
+        "track_seed": 9900038
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 9.299999999999471,
+        "track_seed": 9900039
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 22.699999999998724,
+        "track_seed": 9900042
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 42.69999999999759,
+        "track_seed": 9900044
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 39.19999999999777,
+        "track_seed": 9900046
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 22.099999999998758,
+        "track_seed": 9900047
+      },
+      {
+        "oracle_minus_causal_completion": 0,
+        "oracle_minus_causal_deadline_compliance": 0,
+        "oracle_minus_causal_requirement_satisfaction": 0,
+        "oracle_minus_causal_speed_compliance": 0,
+        "oracle_minus_causal_travel_time_s": 47.6999999999973,
+        "track_seed": 9900048
+      }
+    ],
+    "wall_time_s": 71.52418808406219
+  },
+  "interpretation_guardrails": {
+    "observation_limited_controllability_not_learning_feasibility": true,
+    "oracle_rate_is_achieved_not_certified_upper_bound": true,
+    "physical_feasibility_not_observation_limited_controllability": true
+  },
+  "paper": {
+    "content_fingerprints_constructed": 0,
+    "state": "SEALED_UNINSPECTED"
+  },
+  "physical_audit": {
+    "acceleration_envelope": [
+      {
+        "coasting_acceleration_m_s2": 0.0,
+        "maximum_acceleration_m_s2": 1.0,
+        "maximum_braking_m_s2": 0.0,
+        "velocity_km_h": 0.0,
+        "velocity_m_s": 0.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.14743698544698544,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 3.6,
+        "velocity_m_s": 1.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.14829794178794178,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 7.2,
+        "velocity_m_s": 2.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.14973286902286903,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 10.8,
+        "velocity_m_s": 3.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.15174176715176715,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 14.4,
+        "velocity_m_s": 4.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.15432463617463618,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 18.0,
+        "velocity_m_s": 5.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.15748147609147609,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 21.6,
+        "velocity_m_s": 6.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.1612122869022869,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 25.2,
+        "velocity_m_s": 7.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.1655170686070686,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 28.8,
+        "velocity_m_s": 8.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.1703958212058212,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 32.4,
+        "velocity_m_s": 9.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.1758485446985447,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 36.0,
+        "velocity_m_s": 10.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.1818752390852391,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 39.6,
+        "velocity_m_s": 11.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.18847590436590436,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -3.0,
+        "velocity_km_h": 43.2,
+        "velocity_m_s": 12.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.19565054054054054,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -2.861037821312437,
+        "velocity_km_h": 46.800000000000004,
+        "velocity_m_s": 13.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.2033991476091476,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -2.6784016226116227,
+        "velocity_km_h": 50.4,
+        "velocity_m_s": 14.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.21172172557172556,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -2.5217240355740356,
+        "velocity_km_h": 54.0,
+        "velocity_m_s": 15.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.22061827442827442,
+        "maximum_acceleration_m_s2": 3.0,
+        "maximum_braking_m_s2": -2.38624544005544,
+        "velocity_km_h": 57.6,
+        "velocity_m_s": 16.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.2300887941787942,
+        "maximum_acceleration_m_s2": 2.827267204353675,
+        "maximum_braking_m_s2": -2.2683261265337737,
+        "velocity_km_h": 61.2,
+        "velocity_m_s": 17.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.2401332848232848,
+        "maximum_acceleration_m_s2": 2.647369602679603,
+        "maximum_braking_m_s2": -2.16513520982521,
+        "velocity_km_h": 64.8,
+        "velocity_m_s": 18.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.25075174636174635,
+        "maximum_acceleration_m_s2": 2.4847773049567787,
+        "maximum_braking_m_s2": -2.0744377805740966,
+        "velocity_km_h": 68.4,
+        "velocity_m_s": 19.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.26194417879417875,
+        "maximum_acceleration_m_s2": 2.33680841995842,
+        "maximum_braking_m_s2": -1.9944459112959112,
+        "velocity_km_h": 72.0,
+        "velocity_m_s": 20.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.2737105821205821,
+        "maximum_acceleration_m_s2": 2.201291892881893,
+        "maximum_braking_m_s2": -1.9237122321222322,
+        "velocity_km_h": 75.60000000000001,
+        "velocity_m_s": 21.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.28605095634095634,
+        "maximum_acceleration_m_s2": 2.0764514061614063,
+        "maximum_braking_m_s2": -1.8610525313425312,
+        "velocity_km_h": 79.2,
+        "velocity_m_s": 22.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.2989653014553014,
+        "maximum_acceleration_m_s2": 1.960819567025219,
+        "maximum_braking_m_s2": -1.8054885471089817,
+        "velocity_km_h": 82.8,
+        "velocity_m_s": 23.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.31245361746361744,
+        "maximum_acceleration_m_s2": 1.853173548163548,
+        "maximum_braking_m_s2": -1.7562050612150613,
+        "velocity_km_h": 86.4,
+        "velocity_m_s": 24.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.32651590436590433,
+        "maximum_acceleration_m_s2": 1.7524861746361748,
+        "maximum_braking_m_s2": -1.7125172903672903,
+        "velocity_km_h": 90.0,
+        "velocity_m_s": 25.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.34115216216216215,
+        "maximum_acceleration_m_s2": 1.65788829841676,
+        "maximum_braking_m_s2": -1.6738458025481102,
+        "velocity_km_h": 93.60000000000001,
+        "velocity_m_s": 26.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.35636239085239085,
+        "maximum_acceleration_m_s2": 1.568639534149534,
+        "maximum_braking_m_s2": -1.6396970075203408,
+        "velocity_km_h": 97.2,
+        "velocity_m_s": 27.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.3721465904365904,
+        "maximum_acceleration_m_s2": 1.4841052658152658,
+        "maximum_braking_m_s2": -1.609647827937828,
+        "velocity_km_h": 100.8,
+        "velocity_m_s": 28.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.3885047609147609,
+        "maximum_acceleration_m_s2": 1.4037384106387554,
+        "maximum_braking_m_s2": -1.5833335419504386,
+        "velocity_km_h": 104.4,
+        "velocity_m_s": 29.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.4054369022869022,
+        "maximum_acceleration_m_s2": 1.3270648302148302,
+        "maximum_braking_m_s2": -1.5604380572880572,
+        "velocity_km_h": 108.0,
+        "velocity_m_s": 30.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.42294301455301453,
+        "maximum_acceleration_m_s2": 1.2536715652873718,
+        "maximum_braking_m_s2": -1.5406860677799386,
+        "velocity_km_h": 111.60000000000001,
+        "velocity_m_s": 31.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.44102309771309767,
+        "maximum_acceleration_m_s2": 1.1831972765072765,
+        "maximum_braking_m_s2": -1.5238366805266805,
+        "velocity_km_h": 115.2,
+        "velocity_m_s": 32.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.45967715176715174,
+        "maximum_acceleration_m_s2": 1.1153244232344233,
+        "maximum_braking_m_s2": -1.5096782017682018,
+        "velocity_km_h": 118.8,
+        "velocity_m_s": 33.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.4789051767151767,
+        "maximum_acceleration_m_s2": 1.0497728225510579,
+        "maximum_braking_m_s2": -1.4980238428926664,
+        "velocity_km_h": 122.4,
+        "velocity_m_s": 34.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.4987071725571725,
+        "maximum_acceleration_m_s2": 0.9862943124443124,
+        "maximum_braking_m_s2": -1.4887081625581624,
+        "velocity_km_h": 126.0,
+        "velocity_m_s": 35.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.5190831392931392,
+        "maximum_acceleration_m_s2": 0.9246683044583046,
+        "maximum_braking_m_s2": -1.4815841017941018,
+        "velocity_km_h": 129.6,
+        "velocity_m_s": 36.0
+      },
+      {
+        "coasting_acceleration_m_s2": -0.5400330769230769,
+        "maximum_acceleration_m_s2": 0.8646980575377873,
+        "maximum_braking_m_s2": -1.4765204998969863,
+        "velocity_km_h": 133.20000000000002,
+        "velocity_m_s": 37.0
+      }
+    ],
+    "braking_100_to_60": {
+      "distance_m": 135.0764556315701,
+      "elapsed_time_s": 5.999999999999995,
+      "final_velocity_m_s": 16.603915137238552,
+      "initial_velocity_m_s": 27.77777777777778,
+      "steps": 60,
+      "target_velocity_m_s": 16.666666666666668
+    },
+    "minimum_stopping_profiles": {
+      "100": {
+        "distance_m": 184.61655002197784,
+        "elapsed_time_s": 15.399999999999961,
+        "final_velocity_m_s": 7.225022557093575e-07,
+        "initial_velocity_m_s": 27.77777777777778,
+        "steps": 154,
+        "target_velocity_m_s": 0.0
+      },
+      "20": {
+        "distance_m": 5.262962684806223,
+        "elapsed_time_s": 5.399999999999997,
+        "final_velocity_m_s": 9.817296864893747e-07,
+        "initial_velocity_m_s": 5.555555555555555,
+        "steps": 54,
+        "target_velocity_m_s": 0.0
+      },
+      "40": {
+        "distance_m": 20.69592569112889,
+        "elapsed_time_s": 7.29999999999999,
+        "final_velocity_m_s": 8.286953530072025e-07,
+        "initial_velocity_m_s": 11.11111111111111,
+        "steps": 73,
+        "target_velocity_m_s": 0.0
+      },
+      "60": {
+        "distance_m": 49.994391880995664,
+        "elapsed_time_s": 9.399999999999983,
+        "final_velocity_m_s": 7.968943251607675e-07,
+        "initial_velocity_m_s": 16.666666666666668,
+        "steps": 94,
+        "target_velocity_m_s": 0.0
+      },
+      "80": {
+        "distance_m": 103.35182614991047,
+        "elapsed_time_s": 12.099999999999973,
+        "final_velocity_m_s": 8.791251204271526e-07,
+        "initial_velocity_m_s": 22.22222222222222,
+        "steps": 121,
+        "target_velocity_m_s": 0.0
+      }
+    },
+    "production_advance": "gym_longicontrol.domain.dynamics.advance",
+    "simulation": {
+      "dt_s": 0.1,
+      "sensor_range_m": 150.0,
+      "track_length_m": 1000.0
+    },
+    "standstill_semantics": "maximum braking approaches exact zero asymptotically because the production interpolation has zero braking acceleration at zero; reported stopping profiles use 1e-6 m/s practical standstill",
+    "t_min_status": "optimistic heuristic; not a certified exact minimum",
+    "unconstrained_minimum_time_lower_bound_s": 34.70000000000022,
+    "vehicle": "BMW_electric_i3_2014",
+    "vehicle_specs": {
+      "acceleration_limits": [
+        -3.0,
+        3.0
+      ],
+      "drag_coefficient": 0.29,
+      "frontal_area_m2": 2.38,
+      "mass_kg": 1443.0,
+      "power_limits_kw": [
+        -50.0,
+        75.0
+      ],
+      "velocity_limits": [
+        0.0,
+        37.0
+      ]
+    }
+  },
+  "resource_preflight": {
+    "artifact_gate_passed": true,
+    "benchmark_seeds": [
+      9800000,
+      9800001,
+      9800002
+    ],
+    "checkpoint_overhead": "none; deterministic controllers have no checkpoints",
+    "episodes": [
+      {
+        "action_sha256": "19fb140443f2658396859c5f9c04547af64c2c9b639e17b734f859344121ffad",
+        "canonical_success": true,
+        "completion": true,
+        "controller": "oracle",
+        "cruise_cap_m_s": 37.0,
+        "deadline_compliant": true,
+        "failure_mode": "feasible",
+        "final_position_m": 1000.6177377139594,
+        "information_available": "complete generated route, exact vehicle dynamics, current physical state, canonical deadline",
+        "integrated_speed_violation_m": 0.0,
+        "max_speed_violation_m_s": 0.0,
+        "requirement_satisfaction": true,
+        "signed_net_energy_kwh": 0.24234543937549663,
+        "simulator_steps": 848,
+        "solver_computation_time_s": 0.30726720893289894,
+        "solver_status": "FEASIBLE",
+        "speed_compliant": true,
+        "speed_violation_count": 0,
+        "trace_sha256": "1adf1e7afe92fb624c73c0928b5ddd7c330d33efa43d603604faf44860edaa3b",
+        "track_seed": 9800000,
+        "travel_time_s": 84.79999999999946
+      },
+      {
+        "action_sha256": "26808310f0fec56979f8faded8864e3ac690d370d5b451a631226270d9b3f8b8",
+        "canonical_success": true,
+        "completion": true,
+        "controller": "oracle",
+        "cruise_cap_m_s": 37.0,
+        "deadline_compliant": true,
+        "failure_mode": "feasible",
+        "final_position_m": 1000.0826012055204,
+        "information_available": "complete generated route, exact vehicle dynamics, current physical state, canonical deadline",
+        "integrated_speed_violation_m": 0.0,
+        "max_speed_violation_m_s": 0.0,
+        "requirement_satisfaction": true,
+        "signed_net_energy_kwh": 0.17959708449924985,
+        "simulator_steps": 1097,
+        "solver_computation_time_s": 0.3237802080111578,
+        "solver_status": "FEASIBLE",
+        "speed_compliant": true,
+        "speed_violation_count": 0,
+        "trace_sha256": "cd4c6c5f774df79b8cf960d75c5207bfc4bbc1b179158fd1a669c899862d7ceb",
+        "track_seed": 9800001,
+        "travel_time_s": 109.69999999999804
+      },
+      {
+        "action_sha256": "832ad7c79d5976efe882cc9805ce0d665fdd6dbee6eaef44928860bef189dd55",
+        "canonical_success": true,
+        "completion": true,
+        "controller": "oracle",
+        "cruise_cap_m_s": 37.0,
+        "deadline_compliant": true,
+        "failure_mode": "feasible",
+        "final_position_m": 1000.00031122173,
+        "information_available": "complete generated route, exact vehicle dynamics, current physical state, canonical deadline",
+        "integrated_speed_violation_m": 0.0,
+        "max_speed_violation_m_s": 0.0,
+        "requirement_satisfaction": true,
+        "signed_net_energy_kwh": 0.19865865261606025,
+        "simulator_steps": 790,
+        "solver_computation_time_s": 0.28783458401449025,
+        "solver_status": "FEASIBLE",
+        "speed_compliant": true,
+        "speed_violation_count": 0,
+        "trace_sha256": "18e72913607d249c8834702d664fee695706872564fab536aa8c105dcebf0c35",
+        "track_seed": 9800002,
+        "travel_time_s": 78.99999999999979
+      }
+    ],
+    "execution_gate_passed": true,
+    "execution_limit_hours": 12.0,
+    "maximum_rss_platform_units": 55377920,
+    "mean_time_per_simulated_trajectory_s": 0.3099285693606362,
+    "measured_at_utc": "2026-10-20T15:20:04.507525+00:00",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "projected_retained_artifacts_bytes": 3456000,
+    "projected_retained_artifacts_gb": 0.003456,
+    "projected_total_physical_reference_execution_hours": 0.05578714248491451,
+    "projected_total_physical_reference_execution_s": 200.83371294569224,
+    "python": "3.11.9 (main, Apr  2 2024, 08:25:04) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "retained_artifact_limit_gb": 12.0,
+    "wall_time_s": 0.9297857080819085
+  },
+  "schema_version": 1,
+  "scope": "control/feasibility reference; not an RL algorithm comparison",
+  "split_sha256": {
+    "development": "4551ddfa2f4363aff35323a2ed5994631f5a26bb50948af66f9d78b7558d3d1f",
+    "holdout": "c02c4889333eaf3526277b10bc5c33101ac1aa97f9de836379088c661e72a30b"
+  },
+  "study": "Physical Feasibility, Optimal-Control Reference and Observation-Limited Control"
+}
