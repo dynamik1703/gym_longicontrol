@@ -1,9 +1,9 @@
 # Canonical Goal-Conditioned Supervised Learning
 
-This directory is the frozen, execution-ready LongiControl canonical GCSL
-study. It directly supervises an executed action at a source state under an
-actually achieved strict-future projected goal. It consumes no task reward or
-cost and learns no critic.
+This directory contains the completed LongiControl canonical GCSL
+main-training study. It directly supervises an executed action at a source
+state under an actually achieved strict-future projected goal. It consumes no
+task reward or cost and learns no critic.
 
 The training inputs are fixed canonical training streams with disclosed
 historical-content overlap (G11/G29/G47). The scientific integrity condition is
@@ -19,19 +19,19 @@ Supporting records:
 - `PROTOCOL.md`: split, recovery, evaluation, and authorization rules.
 - `RESOURCE_REPORT.md`: bounded preparation benchmark and hard gates.
 - `preparation_status.json`: machine-readable readiness state.
+- `MAIN_TRAINING_REPORT.md`: development-style main-training diagnostics.
+- `main_training_results.json`: machine-readable main-training results.
 
-Safe preparation-only commands:
+Safe status commands:
 
 ```bash
 python -m benchmarks.gcsl_canonical.cli preflight
 python -m benchmarks.gcsl_canonical.cli status
 ```
 
-`matrix` and `resume` are implemented but fail closed while both
-`main_training_authorized` and `main_training_enabled` are false. Validation is
-separately gated and remains frozen. There is no Paper-opening command.
+The authorized G11/G29/G47 matrix is complete and `main_training_enabled` is
+false, so `matrix` and `resume` fail closed. Validation is separately gated and
+remains frozen. There is no Paper-opening command.
 
-Detached execution can be prepared, but not launched, with
-`prepare-launchd`. Once a future prompt explicitly authorizes training, the
-existing heartbeat/status files can be read periodically with `status`; this
-does not add simulator work, checkpoints, or evaluation events.
+The retained heartbeat/status artifacts can be read with `status`; this does
+not add simulator work, checkpoints, or evaluation events.

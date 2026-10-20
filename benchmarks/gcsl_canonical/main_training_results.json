@@ -1,0 +1,3697 @@
+{
+  "authorization": {
+    "fresh_restart_authorized": false,
+    "main_training_authorized": true,
+    "main_training_enabled": false,
+    "paper_test_authorized": false,
+    "same_attempt_exact_resume_authorized": true,
+    "validation_authorized": false
+  },
+  "diagnostic_classification_applied": false,
+  "diagnostic_classification_note": "Frozen final GCSL RSR categories belong to future Validation and were not applied to Diagnostic evidence; no winner was selected.",
+  "execution_order": [
+    11,
+    29,
+    47
+  ],
+  "integrity": {
+    "all_18_checkpoint_hashes_verified": true,
+    "all_18_replay_no_cross_reset_checks_passed": true,
+    "all_diagnostic_actor_hashes_unchanged": true,
+    "all_diagnostic_training_rng_states_unchanged": true,
+    "all_hard_checks_passed": true,
+    "all_nonfinite_counts_zero": true,
+    "all_six_scheduled_checkpoints_per_policy": true,
+    "canonical_streams_verified": true,
+    "diagnostic_episode_count": 324,
+    "diagnostic_episode_count_exact": true,
+    "diagnostic_episode_count_expected": 324,
+    "execution_order_exact": true,
+    "final_policy_step": 300000,
+    "fresh_restart_performed": false,
+    "matrix_state": "COMPLETED",
+    "no_best_checkpoint_selection": true,
+    "paper_accessed": false,
+    "policies_exactly_g11_g29_g47": true,
+    "total_real_transitions": 900000,
+    "total_sampled_hindsight_tuples": 5568000,
+    "total_supervised_updates": 21750,
+    "validation_accessed": false
+  },
+  "policies": {
+    "G11": {
+      "attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+      "attempt_number": 1,
+      "canonical_stream": {
+        "current_task_exact": true,
+        "expected_ordered_sha256": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+        "exposure_count": 190,
+        "exposure_prefix_exact": true,
+        "final_cursor": 190,
+        "ordered_sha256": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+        "total_frozen_tasks": 865,
+        "verified": true
+      },
+      "canonical_training": {
+        "cumulative_successes_by_checkpoint": [
+          0,
+          0,
+          2,
+          3,
+          3,
+          4
+        ],
+        "final_exclusive_failure_mode_counts": {
+          "deadline": 5,
+          "deadline+speed": 22,
+          "feasible": 4,
+          "incomplete+deadline": 93,
+          "incomplete+deadline+speed": 22,
+          "speed": 43
+        },
+        "first_success_episode": 83,
+        "first_success_transition": 147496,
+        "successes_by_50k_interval": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          1
+        ],
+        "total_successes": 4
+      },
+      "checkpoints": {
+        "100000": {
+          "canonical_training": {
+            "canonical_successes": 0,
+            "completed_episodes": 55,
+            "first_canonical_success_transition": null
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-100000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "8a5192eb9805df1699f19bff5779a196056eeb84eb8ebf661469788a42aa432f",
+            "size_bytes": 20552419,
+            "write_seconds": 0.14590424997732043
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 0,
+            "deadline_compliance": 0,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.0,
+            "rsr": 0,
+            "simulator_transitions": 32400,
+            "speed_compliance": 18,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 3,
+              "repeated_sample_fraction": 0.09765625,
+              "within_condition_action_range": {
+                "maximum": 0.18659847974777222,
+                "mean": 0.12666308879852295,
+                "minimum": 0.05215144157409668,
+                "std": 0.05584712438832859
+              },
+              "within_condition_action_std": {
+                "maximum": 0.044900018721818924,
+                "mean": 0.03811937446395556,
+                "minimum": 0.02607572078704834,
+                "std": 0.008538657165814006
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 0,
+            "canonical_hindsight_outcome_fraction": 0.0,
+            "canonical_hindsight_outcome_rows": 0,
+            "canonical_hindsight_supervised_tuples": 0,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 100000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 9.090825339086425,
+              "mean_steps": 90.90825339086425,
+              "median_seconds": 6.2,
+              "median_steps": 62,
+              "p90_seconds": 21.1,
+              "p90_steps": 211,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.0,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.03125,
+              "timely-0:safe-1": 0.23046875,
+              "timely-1:safe-0": 0.05078125,
+              "timely-1:safe-1": 0.6875
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.9952123761177063,
+              "mean": 0.15489972774685157,
+              "minimum": 0.0,
+              "std": 0.1703876443722649
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 39.7,
+              "mean": 8.243359375,
+              "minimum": 0.1,
+              "std": 6.9031324159470975
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 397.0,
+              "mean": 82.43359375,
+              "minimum": 1.0,
+              "std": 69.03132415947097
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.31380955673755073,
+            "retained_transitions": 100000,
+            "safe_row_fraction": 0.92674,
+            "safe_rows": 92674,
+            "sampled_hindsight_tuples": 576000,
+            "timely_row_fraction": 0.78212,
+            "timely_rows": 78212,
+            "total_eligible_hindsight_tuples": 89513499,
+            "unique_projected_goals": 89866,
+            "unique_source_transition_coverage": 86545
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 100000,
+            "total_appended": 100000
+          },
+          "sampled_hindsight_tuples": 576000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.5362759828567505,
+              "mean": 0.8372135676327161,
+              "minimum": 0.0012971758842468262,
+              "std": 0.45800719170922255
+            },
+            "action_mse": {
+              "maximum": 2.3601438999176025,
+              "mean": 0.9106971457521578,
+              "minimum": 1.6826652426971123e-06,
+              "std": 0.7577367619905916
+            },
+            "gradient_norm": 2.5433998107910156,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 43.804786682128906,
+            "policy_std": {
+              "maximum": 7.388932704925537,
+              "mean": 5.88999089927529,
+              "minimum": 0.04970184341073036,
+              "std": 2.2995926169359646
+            },
+            "pre_tanh_mean": {
+              "maximum": -0.055946946144104004,
+              "mean": -0.3924879294936545,
+              "minimum": -0.6747256517410278,
+              "std": 0.12267616144352803
+            },
+            "predicted_action": {
+              "maximum": -0.055888645350933075,
+              "mean": -0.36888570443261415,
+              "minimum": -0.5880798101425171,
+              "std": 0.10675403154379962
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.8930904865264893,
+              "mean": -3.4443223990965635,
+              "minimum": -9.775825500488281,
+              "std": 4.489592420470132
+            },
+            "transformed_action_nll": -4.00590705871582
+          },
+          "transition_count": 100000,
+          "update_count": 2250
+        },
+        "150000": {
+          "canonical_training": {
+            "canonical_successes": 2,
+            "completed_episodes": 85,
+            "first_canonical_success_transition": 147496
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-150000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "ed3b7192d3faa67a401d60d8e95bef5800229063d566bcc449b69fa06cddc343",
+            "size_bytes": 29335318,
+            "write_seconds": 0.2177271250402555
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 1,
+            "deadline_compliance": 0,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "deadline+speed": 1,
+              "incomplete+deadline": 14,
+              "incomplete+deadline+speed": 3
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.26791327719060476,
+            "rsr": 0,
+            "simulator_transitions": 32111,
+            "speed_compliance": 14,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 2,
+              "repeated_sample_fraction": 0.05859375,
+              "within_condition_action_range": {
+                "maximum": 0.24757879972457886,
+                "mean": 0.16679200530052185,
+                "minimum": 0.08600521087646484,
+                "std": 0.080786794424057
+              },
+              "within_condition_action_std": {
+                "maximum": 0.06750497221946716,
+                "mean": 0.05036701820790768,
+                "minimum": 0.03322906419634819,
+                "std": 0.017137954011559486
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 0,
+            "canonical_hindsight_outcome_fraction": 1.3333333333333333e-05,
+            "canonical_hindsight_outcome_rows": 2,
+            "canonical_hindsight_supervised_tuples": 0,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 150000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 9.069186068323459,
+              "mean_steps": 90.69186068323458,
+              "median_seconds": 6.2,
+              "median_steps": 62,
+              "p90_seconds": 21.1,
+              "p90_steps": 211,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.0,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.046875,
+              "timely-0:safe-1": 0.19921875,
+              "timely-1:safe-0": 0.0546875,
+              "timely-1:safe-1": 0.69921875
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.2032981960651341,
+              "minimum": 0.0,
+              "std": 0.21855646295018624
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 56.2,
+              "mean": 8.919140625,
+              "minimum": 0.2,
+              "std": 9.262334725865538
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 562.0,
+              "mean": 89.19140625,
+              "minimum": 2.0,
+              "std": 92.62334725865537
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 150000,
+            "safe_row_fraction": 0.9188733333333333,
+            "safe_rows": 137831,
+            "sampled_hindsight_tuples": 896000,
+            "timely_row_fraction": 0.7938666666666667,
+            "timely_rows": 119080,
+            "total_eligible_hindsight_tuples": 132122603,
+            "unique_projected_goals": 139816,
+            "unique_source_transition_coverage": 129795
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 150000,
+            "total_appended": 150000
+          },
+          "sampled_hindsight_tuples": 896000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.5040204524993896,
+              "mean": 0.8686022152542137,
+              "minimum": 0.0015647709369659424,
+              "std": 0.37580899665167516
+            },
+            "action_mse": {
+              "maximum": 2.262077569961548,
+              "mean": 0.895702211049457,
+              "minimum": 2.448507984809112e-06,
+              "std": 0.6008500957607936
+            },
+            "gradient_norm": 2.066457986831665,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 44.620426177978516,
+            "policy_std": {
+              "maximum": 7.389041900634766,
+              "mean": 6.65008927306917,
+              "minimum": 0.05098438262939453,
+              "std": 1.7987213725569462
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.2627992033958435,
+              "mean": -0.2546312608756125,
+              "minimum": -0.6297370791435242,
+              "std": 0.17017925425375305
+            },
+            "predicted_action": {
+              "maximum": 0.25691184401512146,
+              "mean": -0.24324211279781593,
+              "minimum": -0.5578711628913879,
+              "std": 0.15827619423586042
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.9187800884246826,
+              "mean": -4.076758595881984,
+              "minimum": -9.76921272277832,
+              "std": 4.509438833444021
+            },
+            "transformed_action_nll": -4.168060302734375
+          },
+          "transition_count": 150000,
+          "update_count": 3500
+        },
+        "200000": {
+          "canonical_training": {
+            "canonical_successes": 3,
+            "completed_episodes": 119,
+            "first_canonical_success_transition": 147496
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-200000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "fe2576b4d8cd44e643a5631ae2824ed2c1f2015af8256c4cc0b5939d1d3b1308",
+            "size_bytes": 38119371,
+            "write_seconds": 0.18273133295588195
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 17,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "deadline+speed": 1,
+              "feasible": 2,
+              "speed": 15
+            },
+            "feasible_only_energy_kwh": {
+              "count": 2,
+              "mean": 0.19641264587533058,
+              "values": [
+                0.19702817738248196,
+                0.19579711436817918
+              ]
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 2,
+            "simulator_transitions": 18164,
+            "speed_compliance": 2,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 2,
+              "repeated_sample_fraction": 0.0390625,
+              "within_condition_action_range": {
+                "maximum": 0.12227752804756165,
+                "mean": 0.07894991338253021,
+                "minimum": 0.03562229871749878,
+                "std": 0.04332761466503143
+              },
+              "within_condition_action_std": {
+                "maximum": 0.036624204367399216,
+                "mean": 0.027217676863074303,
+                "minimum": 0.01781114935874939,
+                "std": 0.009406527504324913
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 24,
+            "canonical_hindsight_outcome_fraction": 1.5e-05,
+            "canonical_hindsight_outcome_rows": 3,
+            "canonical_hindsight_supervised_tuples": 24,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 200000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 9.025918887175669,
+              "mean_steps": 90.25918887175668,
+              "median_seconds": 6.2,
+              "median_steps": 62,
+              "p90_seconds": 21.0,
+              "p90_steps": 210,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.0050526315789473685,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.03515625,
+              "timely-0:safe-1": 0.1875,
+              "timely-1:safe-0": 0.09375,
+              "timely-1:safe-1": 0.68359375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.9731912612915039,
+              "mean": 0.21621824566955183,
+              "minimum": 0.0,
+              "std": 0.20637824643897898
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 39.0,
+              "mean": 8.545703125,
+              "minimum": 0.1,
+              "std": 8.357265568765017
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 390.0,
+              "mean": 85.45703125,
+              "minimum": 1.0,
+              "std": 83.57265568765015
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 200000,
+            "safe_row_fraction": 0.892105,
+            "safe_rows": 178421,
+            "sampled_hindsight_tuples": 1216000,
+            "timely_row_fraction": 0.81002,
+            "timely_rows": 162004,
+            "total_eligible_hindsight_tuples": 171084138,
+            "unique_projected_goals": 189757,
+            "unique_source_transition_coverage": 173050
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 200000,
+            "total_appended": 200000
+          },
+          "sampled_hindsight_tuples": 1216000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.488429069519043,
+              "mean": 0.8818854519631714,
+              "minimum": 0.0012380480766296387,
+              "std": 0.34411519123848344
+            },
+            "action_mse": {
+              "maximum": 2.215421199798584,
+              "mean": 0.8961372168891684,
+              "minimum": 1.5327630080719246e-06,
+              "std": 0.5306457094790605
+            },
+            "gradient_norm": 2.6797542572021484,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 45.324832916259766,
+            "policy_std": {
+              "maximum": 7.388298511505127,
+              "mean": 6.693280829058494,
+              "minimum": 0.06452386826276779,
+              "std": 1.663003628652574
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.3303537368774414,
+              "mean": -0.19322467042366043,
+              "minimum": -0.6789196729660034,
+              "std": 0.1820485464483215
+            },
+            "predicted_action": {
+              "maximum": 0.31883859634399414,
+              "mean": -0.1849263117051123,
+              "minimum": -0.5908166170120239,
+              "std": 0.16993110165487296
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.915984869003296,
+              "mean": -3.999268228188157,
+              "minimum": -9.757213592529297,
+              "std": 4.546812730536502
+            },
+            "transformed_action_nll": -4.846199035644531
+          },
+          "transition_count": 200000,
+          "update_count": 4750
+        },
+        "250000": {
+          "canonical_training": {
+            "canonical_successes": 3,
+            "completed_episodes": 152,
+            "first_canonical_success_transition": 147496
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-250000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "93705580759fe12491ebd5e3cbba37bbf722cdfb59653297d8eca981d4997abf",
+            "size_bytes": 46902589,
+            "write_seconds": 0.27587195893283933
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "feasible": 2,
+              "speed": 16
+            },
+            "feasible_only_energy_kwh": {
+              "count": 2,
+              "mean": 0.19125124644648073,
+              "values": [
+                0.1907709070044073,
+                0.19173158588855418
+              ]
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 2,
+            "simulator_transitions": 14528,
+            "speed_compliance": 2,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 2,
+              "repeated_sample_fraction": 0.05859375,
+              "within_condition_action_range": {
+                "maximum": 0.18768605589866638,
+                "mean": 0.1467943787574768,
+                "minimum": 0.10590270161628723,
+                "std": 0.040891677141189575
+              },
+              "within_condition_action_std": {
+                "maximum": 0.06001877784729004,
+                "mean": 0.05296008288860321,
+                "minimum": 0.04590138792991638,
+                "std": 0.007058694958686829
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 46,
+            "canonical_hindsight_outcome_fraction": 1.2e-05,
+            "canonical_hindsight_outcome_rows": 3,
+            "canonical_hindsight_supervised_tuples": 46,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 250000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 9.012004476551382,
+              "mean_steps": 90.12004476551382,
+              "median_seconds": 6.2,
+              "median_steps": 62,
+              "p90_seconds": 20.900000000000002,
+              "p90_steps": 209,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.007666666666666666,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.05078125,
+              "timely-0:safe-1": 0.16015625,
+              "timely-1:safe-0": 0.1328125,
+              "timely-1:safe-1": 0.65625
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.9997205138206482,
+              "mean": 0.2718074405452171,
+              "minimum": 0.0,
+              "std": 0.25157546413085363
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 60.300000000000004,
+              "mean": 9.444140625,
+              "minimum": 0.1,
+              "std": 9.151842200766172
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 603.0,
+              "mean": 94.44140625,
+              "minimum": 1.0,
+              "std": 91.51842200766171
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 250000,
+            "safe_row_fraction": 0.873832,
+            "safe_rows": 218458,
+            "sampled_hindsight_tuples": 1536000,
+            "timely_row_fraction": 0.816364,
+            "timely_rows": 204091,
+            "total_eligible_hindsight_tuples": 211842431,
+            "unique_projected_goals": 239676,
+            "unique_source_transition_coverage": 216144
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 250000,
+            "total_appended": 250000
+          },
+          "sampled_hindsight_tuples": 1536000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.394492745399475,
+              "mean": 0.8494852232106496,
+              "minimum": 0.0002937614917755127,
+              "std": 0.30502454858356476
+            },
+            "action_mse": {
+              "maximum": 1.9446099996566772,
+              "mean": 0.8146651198956347,
+              "minimum": 8.629581316199619e-08,
+              "std": 0.41129246492063043
+            },
+            "gradient_norm": 1.423590898513794,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 48.345401763916016,
+            "policy_std": {
+              "maximum": 6.6475982666015625,
+              "mean": 4.954284410763648,
+              "minimum": 0.04729350656270981,
+              "std": 1.3575729063825213
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.20382902026176453,
+              "mean": -0.11219712649472058,
+              "minimum": -0.664673388004303,
+              "std": 0.15385075097899892
+            },
+            "predicted_action": {
+              "maximum": 0.20105238258838654,
+              "mean": -0.10851349471522553,
+              "minimum": -0.5814651250839233,
+              "std": 0.14681969651108598
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.6805527210235596,
+              "mean": -2.9376246638130397,
+              "minimum": -9.720129013061523,
+              "std": 4.207096816597148
+            },
+            "transformed_action_nll": -4.536398887634277
+          },
+          "transition_count": 250000,
+          "update_count": 6000
+        },
+        "300000": {
+          "canonical_training": {
+            "canonical_successes": 4,
+            "completed_episodes": 189,
+            "first_canonical_success_transition": 147496
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-300000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "f5002bf96a628ed6301eb21b483fa40e204435bed67cb7c940c8ba823bf07bdc",
+            "size_bytes": 55686695,
+            "write_seconds": 0.29014654201455414
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "feasible": 1,
+              "speed": 17
+            },
+            "feasible_only_energy_kwh": {
+              "count": 1,
+              "mean": 0.19752274448593976,
+              "values": [
+                0.19752274448593976
+              ]
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 1,
+            "simulator_transitions": 13152,
+            "speed_compliance": 1,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 1,
+              "repeated_sample_fraction": 0.01171875,
+              "within_condition_action_range": {
+                "maximum": 0.10224702954292297,
+                "mean": 0.10224702954292297,
+                "minimum": 0.10224702954292297,
+                "std": 0.0
+              },
+              "within_condition_action_std": {
+                "maximum": 0.04652824252843857,
+                "mean": 0.04652824252843857,
+                "minimum": 0.04652824252843857,
+                "std": 0.0
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 69,
+            "canonical_hindsight_outcome_fraction": 1.3333333333333333e-05,
+            "canonical_hindsight_outcome_rows": 4,
+            "canonical_hindsight_supervised_tuples": 69,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 300000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.97572986619162,
+              "mean_steps": 89.75729866191618,
+              "median_seconds": 6.1000000000000005,
+              "median_steps": 61,
+              "p90_seconds": 20.900000000000002,
+              "p90_steps": 209,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.009517241379310344,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.046875,
+              "timely-0:safe-1": 0.140625,
+              "timely-1:safe-0": 0.1328125,
+              "timely-1:safe-1": 0.6796875
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.984451413154602,
+              "mean": 0.2690578271044046,
+              "minimum": 0.0,
+              "std": 0.25397046673513535
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 66.0,
+              "mean": 8.801171875,
+              "minimum": 0.1,
+              "std": 9.212862452257115
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 660.0,
+              "mean": 88.01171875,
+              "minimum": 1.0,
+              "std": 92.12862452257114
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 300000,
+            "safe_row_fraction": 0.85272,
+            "safe_rows": 255816,
+            "sampled_hindsight_tuples": 1856000,
+            "timely_row_fraction": 0.8283666666666667,
+            "timely_rows": 248510,
+            "total_eligible_hindsight_tuples": 248526068,
+            "unique_projected_goals": 289611,
+            "unique_source_transition_coverage": 259260
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 300000,
+            "total_appended": 300000
+          },
+          "sampled_hindsight_tuples": 1856000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.3631235361099243,
+              "mean": 0.8797176130901789,
+              "minimum": 0.0035120248794555664,
+              "std": 0.27847649698709626
+            },
+            "action_mse": {
+              "maximum": 1.8581057786941528,
+              "mean": 0.8514522381931435,
+              "minimum": 1.2334318853390869e-05,
+              "std": 0.3895778061252715
+            },
+            "gradient_norm": 1.0978797674179077,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 49.56734848022461,
+            "policy_std": {
+              "maximum": 6.205447196960449,
+              "mean": 5.160118745523505,
+              "minimum": 0.062271684408187866,
+              "std": 0.7681357266574085
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.18180322647094727,
+              "mean": -0.08083350019296631,
+              "minimum": -0.7232420444488525,
+              "std": 0.15200996168854572
+            },
+            "predicted_action": {
+              "maximum": 0.17982634902000427,
+              "mean": -0.07773156373161783,
+              "minimum": -0.618913471698761,
+              "std": 0.14383587437727838
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.585806369781494,
+              "mean": -2.972361089894548,
+              "minimum": -9.713996887207031,
+              "std": 4.203771469738756
+            },
+            "transformed_action_nll": -4.559744834899902
+          },
+          "transition_count": 300000,
+          "update_count": 7250
+        },
+        "50000": {
+          "canonical_training": {
+            "canonical_successes": 0,
+            "completed_episodes": 27,
+            "first_canonical_success_transition": null
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G11/step-050000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "41f466c6572aac708c1f8e9326cbcb09c91c2154b6886d82cc6d6e7c8db161ae",
+            "size_bytes": 11810833,
+            "write_seconds": 0.0855241670506075
+          },
+          "checkpoint_attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 0,
+            "deadline_compliance": 0,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.0,
+            "rsr": 0,
+            "simulator_transitions": 32400,
+            "speed_compliance": 18,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 3,
+              "repeated_sample_fraction": 0.203125,
+              "within_condition_action_range": {
+                "maximum": 1.8763633966445923,
+                "mean": 0.7822838326295217,
+                "minimum": 0.2076716423034668,
+                "std": 0.7739585721027701
+              },
+              "within_condition_action_std": {
+                "maximum": 0.9381816983222961,
+                "mean": 0.35435866316159564,
+                "minimum": 0.06178759038448334,
+                "std": 0.4128255784236623
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 0,
+            "canonical_hindsight_outcome_fraction": 0.0,
+            "canonical_hindsight_outcome_rows": 0,
+            "canonical_hindsight_supervised_tuples": 0,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 50000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 9.090824891691591,
+              "mean_steps": 90.90824891691591,
+              "median_seconds": 6.2,
+              "median_steps": 62,
+              "p90_seconds": 21.1,
+              "p90_steps": 211,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.0,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.03125,
+              "timely-0:safe-1": 0.2421875,
+              "timely-1:safe-0": 0.0,
+              "timely-1:safe-1": 0.7265625
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.5135093331336975,
+              "mean": 0.09920615576788805,
+              "minimum": 0.0,
+              "std": 0.11538650898927168
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 62.2,
+              "mean": 8.557421875,
+              "minimum": 0.1,
+              "std": 9.187195126412169
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 622.0,
+              "mean": 85.57421875,
+              "minimum": 1.0,
+              "std": 91.87195126412168
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 0.5230255356013297,
+            "minimum_goal_distance_to_canonical": 0.6206653435645111,
+            "retained_transitions": 50000,
+            "safe_row_fraction": 0.97258,
+            "safe_rows": 48629,
+            "sampled_hindsight_tuples": 256000,
+            "timely_row_fraction": 0.784,
+            "timely_rows": 39200,
+            "total_eligible_hindsight_tuples": 44745000,
+            "unique_projected_goals": 39918,
+            "unique_source_transition_coverage": 43236
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 50000,
+            "total_appended": 50000
+          },
+          "sampled_hindsight_tuples": 256000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.589529275894165,
+              "mean": 0.6983140830416232,
+              "minimum": 0.0002548098564147949,
+              "std": 0.5448891287193232
+            },
+            "action_mse": {
+              "maximum": 2.5266032218933105,
+              "mean": 0.7845467218581975,
+              "minimum": 6.492805937341473e-08,
+              "std": 0.9061609365562773
+            },
+            "gradient_norm": 3.1412081718444824,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 42.55586242675781,
+            "policy_std": {
+              "maximum": 7.388964653015137,
+              "mean": 5.0997501036617905,
+              "minimum": 0.04417823255062103,
+              "std": 2.840755097547965
+            },
+            "pre_tanh_mean": {
+              "maximum": -0.32663458585739136,
+              "mean": -0.515271560405381,
+              "minimum": -0.9034794569015503,
+              "std": 0.08019343480567467
+            },
+            "predicted_action": {
+              "maximum": -0.3154935836791992,
+              "mean": -0.47168042475823313,
+              "minimum": -0.7179878354072571,
+              "std": 0.060671162925722756
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.9050180912017822,
+              "mean": -3.120174730429426,
+              "minimum": -9.792417526245117,
+              "std": 4.3355995875450075
+            },
+            "transformed_action_nll": -3.6849377155303955
+          },
+          "transition_count": 50000,
+          "update_count": 1000
+        }
+      },
+      "descriptive_mechanism_classification": "SUCCESSFUL_BOOTSTRAP",
+      "final_checkpoint": {
+        "attempt_id": "89a770a9-81b2-442c-a961-f04824496e46",
+        "best_checkpoint_selection_performed": false,
+        "frozen_final_policy": true,
+        "path": "runs/gcsl-canonical-v1/G11/step-300000/checkpoint.pkl",
+        "schema_version": 2,
+        "sha256": "f5002bf96a628ed6301eb21b483fa40e204435bed67cb7c940c8ba823bf07bdc",
+        "size_bytes": 55686695,
+        "transition_count": 300000,
+        "update_count": 7250,
+        "write_s": 0.29014654201455414
+      },
+      "real_transitions": 300000,
+      "resources": {
+        "completed_at": "2026-10-20T13:27:36.881663+00:00",
+        "cpu_and_rss_note": "not retained by the launchd runner",
+        "cpu_seconds": null,
+        "peak_rss_bytes": null,
+        "retained_active_walltime_seconds": 959.4508391669951,
+        "scientific_checkpoint_write_seconds": 1.1979053759714589,
+        "started_at": "2026-10-20T13:11:37.207479+00:00",
+        "walltime_seconds": 959.674184
+      },
+      "resume_count": 0,
+      "resume_status": "NOT_RESUMED",
+      "sampled_hindsight_tuples": 1856000,
+      "state": "COMPLETED",
+      "supervised_updates": 7250,
+      "training_seed": 11
+    },
+    "G29": {
+      "attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+      "attempt_number": 1,
+      "canonical_stream": {
+        "current_task_exact": true,
+        "expected_ordered_sha256": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+        "exposure_count": 348,
+        "exposure_prefix_exact": true,
+        "final_cursor": 348,
+        "ordered_sha256": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+        "total_frozen_tasks": 865,
+        "verified": true
+      },
+      "canonical_training": {
+        "cumulative_successes_by_checkpoint": [
+          3,
+          6,
+          6,
+          8,
+          13,
+          13
+        ],
+        "final_exclusive_failure_mode_counts": {
+          "deadline": 2,
+          "deadline+speed": 4,
+          "feasible": 13,
+          "incomplete+deadline": 7,
+          "incomplete+deadline+speed": 22,
+          "speed": 299
+        },
+        "first_success_episode": 10,
+        "first_success_transition": 10614,
+        "successes_by_50k_interval": [
+          3,
+          3,
+          0,
+          2,
+          5,
+          0
+        ],
+        "total_successes": 13
+      },
+      "checkpoints": {
+        "100000": {
+          "canonical_training": {
+            "canonical_successes": 6,
+            "completed_episodes": 95,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-100000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "cfe5c7b42839c65169b1d576077a29a02057bc87e8be31affd7c49229cdb6c22",
+            "size_bytes": 20484254,
+            "write_seconds": 0.08356545795686543
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 17,
+            "deadline_compliance": 17,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline+speed": 1,
+              "speed": 17
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.9959779292068589,
+            "rsr": 0,
+            "simulator_transitions": 11753,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 168,
+            "canonical_hindsight_outcome_fraction": 6e-05,
+            "canonical_hindsight_outcome_rows": 6,
+            "canonical_hindsight_supervised_tuples": 173,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 100000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.445089297057496,
+              "mean_steps": 84.45089297057496,
+              "median_seconds": 5.7,
+              "median_steps": 57,
+              "p90_seconds": 19.700000000000003,
+              "p90_steps": 197,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.07466666666666667,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.078125,
+              "timely-0:safe-1": 0.03125,
+              "timely-1:safe-0": 0.44921875,
+              "timely-1:safe-1": 0.44140625
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.4606146092983181,
+              "minimum": 0.0030184080824255943,
+              "std": 0.3128892076868193
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 45.6,
+              "mean": 9.26875,
+              "minimum": 0.1,
+              "std": 8.690581737576606
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 456.0,
+              "mean": 92.6875,
+              "minimum": 1.0,
+              "std": 86.90581737576605
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 100000,
+            "safe_row_fraction": 0.53199,
+            "safe_rows": 53199,
+            "sampled_hindsight_tuples": 576000,
+            "timely_row_fraction": 0.92013,
+            "timely_rows": 92013,
+            "total_eligible_hindsight_tuples": 60770656,
+            "unique_projected_goals": 99836,
+            "unique_source_transition_coverage": 86541
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 100000,
+            "total_appended": 100000
+          },
+          "sampled_hindsight_tuples": 576000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.4982542991638184,
+              "mean": 0.7740086826815968,
+              "minimum": 0.008090455085039139,
+              "std": 0.34423911069416724
+            },
+            "action_mse": {
+              "maximum": 2.2447659969329834,
+              "mean": 0.7175900092326515,
+              "minimum": 6.545546057168394e-05,
+              "std": 0.5073163017901909
+            },
+            "gradient_norm": 1.9690275192260742,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 42.01596450805664,
+            "policy_std": {
+              "maximum": 3.635923147201538,
+              "mean": 2.420738550135866,
+              "minimum": 0.9970028400421143,
+              "std": 0.5584198894216117
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6017495393753052,
+              "mean": 0.13351345795672387,
+              "minimum": -0.272251695394516,
+              "std": 0.1972970569017705
+            },
+            "predicted_action": {
+              "maximum": 0.5382933020591736,
+              "mean": 0.12781820918235098,
+              "minimum": -0.2657187879085541,
+              "std": 0.18838065742027202
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.110260009765625,
+              "mean": -0.3173231335822493,
+              "minimum": -8.309981346130371,
+              "std": 2.165122697216104
+            },
+            "transformed_action_nll": -0.53179931640625
+          },
+          "transition_count": 100000,
+          "update_count": 2250
+        },
+        "150000": {
+          "canonical_training": {
+            "canonical_successes": 6,
+            "completed_episodes": 155,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-150000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "3c8ecfc4601ee2590657f915ff3545dfc9d1c607505abeaf91954ac976390810",
+            "size_bytes": 29232899,
+            "write_seconds": 0.2052836250513792
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9146,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 248,
+            "canonical_hindsight_outcome_fraction": 4e-05,
+            "canonical_hindsight_outcome_rows": 6,
+            "canonical_hindsight_supervised_tuples": 256,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 150000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.316172442752778,
+              "mean_steps": 83.16172442752777,
+              "median_seconds": 5.6000000000000005,
+              "median_steps": 56,
+              "p90_seconds": 19.5,
+              "p90_steps": 195,
+              "probability_sum": 1.0000000000000002,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.07085714285714285,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.05859375,
+              "timely-0:safe-1": 0.00390625,
+              "timely-1:safe-0": 0.4765625,
+              "timely-1:safe-1": 0.4609375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.9999251365661621,
+              "mean": 0.418974349574313,
+              "minimum": 7.086645200615749e-05,
+              "std": 0.3094046344878292
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 43.6,
+              "mean": 7.80078125,
+              "minimum": 0.1,
+              "std": 7.795120630217883
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 436.0,
+              "mean": 78.0078125,
+              "minimum": 1.0,
+              "std": 77.95120630217882
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 150000,
+            "safe_row_fraction": 0.4964266666666667,
+            "safe_rows": 74464,
+            "sampled_hindsight_tuples": 896000,
+            "timely_row_fraction": 0.9356,
+            "timely_rows": 140340,
+            "total_eligible_hindsight_tuples": 84297958,
+            "unique_projected_goals": 149732,
+            "unique_source_transition_coverage": 129688
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 150000,
+            "total_appended": 150000
+          },
+          "sampled_hindsight_tuples": 896000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.4680980443954468,
+              "mean": 0.7417355307370599,
+              "minimum": 0.0028640925884246826,
+              "std": 0.35647107074790974
+            },
+            "action_mse": {
+              "maximum": 2.1553118228912354,
+              "mean": 0.6772432224676486,
+              "minimum": 8.203026482078712e-06,
+              "std": 0.5354593490678102
+            },
+            "gradient_norm": 1.1486525535583496,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 42.296165466308594,
+            "policy_std": {
+              "maximum": 3.722066640853882,
+              "mean": 2.472062199842185,
+              "minimum": 0.9616589546203613,
+              "std": 0.6489838517986325
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.5605849623680115,
+              "mean": 0.19934096693759784,
+              "minimum": -0.20189547538757324,
+              "std": 0.1707798917742806
+            },
+            "predicted_action": {
+              "maximum": 0.5084113478660583,
+              "mean": 0.19185524399017595,
+              "minimum": -0.19919626414775848,
+              "std": 0.16276038647672755
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.182800054550171,
+              "mean": -0.46942645334638655,
+              "minimum": -9.053918838500977,
+              "std": 2.415165231449652
+            },
+            "transformed_action_nll": -0.43666934967041016
+          },
+          "transition_count": 150000,
+          "update_count": 3500
+        },
+        "200000": {
+          "canonical_training": {
+            "canonical_successes": 8,
+            "completed_episodes": 213,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-200000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "f773d3e544b25cb93dc9fe70dad0eee41f13f75c2b6672450778bd1344c227ec",
+            "size_bytes": 37982351,
+            "write_seconds": 0.18441070790868253
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9074,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 1,
+              "repeated_sample_fraction": 0.0078125,
+              "within_condition_action_range": {
+                "maximum": 1.339420199394226,
+                "mean": 1.339420199394226,
+                "minimum": 1.339420199394226,
+                "std": 0.0
+              },
+              "within_condition_action_std": {
+                "maximum": 0.669710099697113,
+                "mean": 0.669710099697113,
+                "minimum": 0.669710099697113,
+                "std": 0.0
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 324,
+            "canonical_hindsight_outcome_fraction": 4e-05,
+            "canonical_hindsight_outcome_rows": 8,
+            "canonical_hindsight_supervised_tuples": 335,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 200000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.268146491903194,
+              "mean_steps": 82.68146491903192,
+              "median_seconds": 5.6000000000000005,
+              "median_steps": 56,
+              "p90_seconds": 19.400000000000002,
+              "p90_steps": 194,
+              "probability_sum": 1.0000000000000002,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.06821052631578947,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.06640625,
+              "timely-0:safe-1": 0.01171875,
+              "timely-1:safe-0": 0.4921875,
+              "timely-1:safe-1": 0.4296875
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.41874003688502626,
+              "minimum": 0.00020430969016160816,
+              "std": 0.3069751246768344
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 55.900000000000006,
+              "mean": 7.969921875000001,
+              "minimum": 0.1,
+              "std": 8.51356876514758
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 559.0,
+              "mean": 79.69921875,
+              "minimum": 1.0,
+              "std": 85.13568765147579
+            },
+            "latest_update_terminal_future_fraction": 0.0078125,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 200000,
+            "safe_row_fraction": 0.48901,
+            "safe_rows": 97802,
+            "sampled_hindsight_tuples": 1216000,
+            "timely_row_fraction": 0.940905,
+            "timely_rows": 188181,
+            "total_eligible_hindsight_tuples": 109241412,
+            "unique_projected_goals": 199641,
+            "unique_source_transition_coverage": 172933
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 200000,
+            "total_appended": 200000
+          },
+          "sampled_hindsight_tuples": 1216000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.5051037073135376,
+              "mean": 0.7000196186709218,
+              "minimum": 0.01406753808259964,
+              "std": 0.374135248870163
+            },
+            "action_mse": {
+              "maximum": 2.2653372287750244,
+              "mean": 0.6300046517602595,
+              "minimum": 0.00019789562793448567,
+              "std": 0.5660434953806629
+            },
+            "gradient_norm": 1.9916127920150757,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 42.57868576049805,
+            "policy_std": {
+              "maximum": 3.4776787757873535,
+              "mean": 2.3971096631139517,
+              "minimum": 1.073515772819519,
+              "std": 0.5899882800084969
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.723808228969574,
+              "mean": 0.2293838278419571,
+              "minimum": -0.26794058084487915,
+              "std": 0.22147834045242792
+            },
+            "predicted_action": {
+              "maximum": 0.6192626953125,
+              "mean": 0.21630564815768594,
+              "minimum": -0.26170751452445984,
+              "std": 0.20683404723391843
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.1618974208831787,
+              "mean": -0.23410241142846644,
+              "minimum": -7.825126647949219,
+              "std": 2.0305806517738705
+            },
+            "transformed_action_nll": -0.3047558665275574
+          },
+          "transition_count": 200000,
+          "update_count": 4750
+        },
+        "250000": {
+          "canonical_training": {
+            "canonical_successes": 13,
+            "completed_episodes": 276,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-250000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "d55e3f9e72a7b29be0ecb9431ec97756b71fbda1f4b52f290a8c84220be8ac48",
+            "size_bytes": 46732712,
+            "write_seconds": 0.25394275004509836
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9279,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 398,
+            "canonical_hindsight_outcome_fraction": 5.2e-05,
+            "canonical_hindsight_outcome_rows": 13,
+            "canonical_hindsight_supervised_tuples": 410,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 250000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.207227936636661,
+              "mean_steps": 82.0722793663666,
+              "median_seconds": 5.6000000000000005,
+              "median_steps": 56,
+              "p90_seconds": 19.200000000000003,
+              "p90_steps": 192,
+              "probability_sum": 1.0000000000000002,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.06633333333333333,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.04296875,
+              "timely-0:safe-1": 0.01171875,
+              "timely-1:safe-0": 0.49609375,
+              "timely-1:safe-1": 0.44921875
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.43131598386162295,
+              "minimum": 0.0004706773906946182,
+              "std": 0.3234281256414568
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 51.0,
+              "mean": 7.832421875,
+              "minimum": 0.1,
+              "std": 8.769932853763562
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 510.0,
+              "mean": 78.32421875,
+              "minimum": 1.0,
+              "std": 87.69932853763561
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 250000,
+            "safe_row_fraction": 0.487548,
+            "safe_rows": 121887,
+            "sampled_hindsight_tuples": 1536000,
+            "timely_row_fraction": 0.95154,
+            "timely_rows": 237885,
+            "total_eligible_hindsight_tuples": 130720738,
+            "unique_projected_goals": 249548,
+            "unique_source_transition_coverage": 216134
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 250000,
+            "total_appended": 250000
+          },
+          "sampled_hindsight_tuples": 1536000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.5839934349060059,
+              "mean": 0.7933360814640764,
+              "minimum": 0.019658684730529785,
+              "std": 0.365917184092809
+            },
+            "action_mse": {
+              "maximum": 2.509035110473633,
+              "mean": 0.7632775238671456,
+              "minimum": 0.0003864638856612146,
+              "std": 0.5942880322644348
+            },
+            "gradient_norm": 0.6178192496299744,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 42.826934814453125,
+            "policy_std": {
+              "maximum": 3.61383318901062,
+              "mean": 2.5690220058895648,
+              "minimum": 1.2292019128799438,
+              "std": 0.5115278673330766
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.7749316692352295,
+              "mean": 0.23535892089421395,
+              "minimum": -0.2531777024269104,
+              "std": 0.21462213351015402
+            },
+            "predicted_action": {
+              "maximum": 0.649787962436676,
+              "mean": 0.2221594390575774,
+              "minimum": -0.24790342152118683,
+              "std": 0.19959750745125415
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.051323890686035,
+              "mean": -0.5620225970633328,
+              "minimum": -8.725926399230957,
+              "std": 2.5128225704608997
+            },
+            "transformed_action_nll": -0.6066588759422302
+          },
+          "transition_count": 250000,
+          "update_count": 6000
+        },
+        "300000": {
+          "canonical_training": {
+            "canonical_successes": 13,
+            "completed_episodes": 347,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-300000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "85c1db15981cb997d07551dd2bef2bcd5f97818fcd7263a4c6f19eb4e8047ad5",
+            "size_bytes": 55485797,
+            "write_seconds": 0.33782658295240253
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9190,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 463,
+            "canonical_hindsight_outcome_fraction": 4.3333333333333334e-05,
+            "canonical_hindsight_outcome_rows": 13,
+            "canonical_hindsight_supervised_tuples": 476,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 300000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.124479080162947,
+              "mean_steps": 81.24479080162948,
+              "median_seconds": 5.5,
+              "median_steps": 55,
+              "p90_seconds": 19.0,
+              "p90_steps": 190,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.06386206896551724,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.0390625,
+              "timely-0:safe-1": 0.00390625,
+              "timely-1:safe-0": 0.578125,
+              "timely-1:safe-1": 0.37890625
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.5016282037831843,
+              "minimum": 0.003955000080168247,
+              "std": 0.3131895617252869
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 49.6,
+              "mean": 8.13203125,
+              "minimum": 0.1,
+              "std": 8.75865138015114
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 496.0,
+              "mean": 81.3203125,
+              "minimum": 1.0,
+              "std": 87.58651380151139
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 300000,
+            "safe_row_fraction": 0.4755433333333333,
+            "safe_rows": 142663,
+            "sampled_hindsight_tuples": 1856000,
+            "timely_row_fraction": 0.95891,
+            "timely_rows": 287673,
+            "total_eligible_hindsight_tuples": 149368149,
+            "unique_projected_goals": 299425,
+            "unique_source_transition_coverage": 259226
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 300000,
+            "total_appended": 300000
+          },
+          "sampled_hindsight_tuples": 1856000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.6179628372192383,
+              "mean": 0.7407998866110574,
+              "minimum": 0.0022176653146743774,
+              "std": 0.40105991851467515
+            },
+            "action_mse": {
+              "maximum": 2.6178038120269775,
+              "mean": 0.7096335290919509,
+              "minimum": 4.918039394397056e-06,
+              "std": 0.6124348733227756
+            },
+            "gradient_norm": 0.6272276639938354,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 43.07575607299805,
+            "policy_std": {
+              "maximum": 3.6991782188415527,
+              "mean": 2.5264698695391417,
+              "minimum": 1.1329458951950073,
+              "std": 0.5322751416081631
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.7417917251586914,
+              "mean": 0.2512102112741559,
+              "minimum": -0.1973017305135727,
+              "std": 0.22057410706319983
+            },
+            "predicted_action": {
+              "maximum": 0.6302264332771301,
+              "mean": 0.23559742564066255,
+              "minimum": -0.19478079676628113,
+              "std": 0.20256961865945677
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.0877766609191895,
+              "mean": -0.4888196187093854,
+              "minimum": -8.980135917663574,
+              "std": 2.443259549966821
+            },
+            "transformed_action_nll": -0.4338316321372986
+          },
+          "transition_count": 300000,
+          "update_count": 7250
+        },
+        "50000": {
+          "canonical_training": {
+            "canonical_successes": 3,
+            "completed_episodes": 43,
+            "first_canonical_success_transition": 10614
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G29/step-050000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "1a5a5eb24d5a4db042c6c282cfc3d95c0d3ac6266c448791862b34901b5969f4",
+            "size_bytes": 11775468,
+            "write_seconds": 0.09856075001880527
+          },
+          "checkpoint_attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 14,
+            "deadline_compliance": 14,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline+speed": 4,
+              "speed": 14
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.9789430480006174,
+            "rsr": 0,
+            "simulator_transitions": 16270,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 1,
+              "repeated_sample_fraction": 0.0078125,
+              "within_condition_action_range": {
+                "maximum": 1.8876309394836426,
+                "mean": 1.8876309394836426,
+                "minimum": 1.8876309394836426,
+                "std": 0.0
+              },
+              "within_condition_action_std": {
+                "maximum": 0.9438154697418213,
+                "mean": 0.9438154697418213,
+                "minimum": 0.9438154697418213,
+                "std": 0.0
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 83,
+            "canonical_hindsight_outcome_fraction": 6e-05,
+            "canonical_hindsight_outcome_rows": 3,
+            "canonical_hindsight_supervised_tuples": 86,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 50000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.573734308465381,
+              "mean_steps": 85.73734308465382,
+              "median_seconds": 5.800000000000001,
+              "median_steps": 58,
+              "p90_seconds": 20.0,
+              "p90_steps": 200,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.083,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.05078125,
+              "timely-0:safe-1": 0.08203125,
+              "timely-1:safe-0": 0.3828125,
+              "timely-1:safe-1": 0.484375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 0.9996622204780579,
+              "mean": 0.4389053016584512,
+              "minimum": 0.0029775304719805717,
+              "std": 0.303254512398603
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 46.300000000000004,
+              "mean": 8.103125,
+              "minimum": 0.1,
+              "std": 7.799598722650737
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 463.0,
+              "mean": 81.03125,
+              "minimum": 1.0,
+              "std": 77.99598722650737
+            },
+            "latest_update_terminal_future_fraction": 0.0,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 50000,
+            "safe_row_fraction": 0.6307,
+            "safe_rows": 31535,
+            "sampled_hindsight_tuples": 256000,
+            "timely_row_fraction": 0.90302,
+            "timely_rows": 45151,
+            "total_eligible_hindsight_tuples": 32874188,
+            "unique_projected_goals": 49926,
+            "unique_source_transition_coverage": 43149
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 50000,
+            "total_appended": 50000
+          },
+          "sampled_hindsight_tuples": 256000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.317360520362854,
+              "mean": 0.7287347198725911,
+              "minimum": 0.0019766725599765778,
+              "std": 0.31926346472098227
+            },
+            "action_mse": {
+              "maximum": 1.7354387044906616,
+              "mean": 0.6329834518933861,
+              "minimum": 3.9072342588042375e-06,
+              "std": 0.4340260571327841
+            },
+            "gradient_norm": 4.907960414886475,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.72304916381836,
+            "policy_std": {
+              "maximum": 4.515822887420654,
+              "mean": 2.5278640338219702,
+              "minimum": 1.0248973369598389,
+              "std": 0.7077488685831514
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.41826894879341125,
+              "mean": 0.058785592729691416,
+              "minimum": -0.2822839617729187,
+              "std": 0.1686547764628232
+            },
+            "predicted_action": {
+              "maximum": 0.39547112584114075,
+              "mean": 0.056912045500212116,
+              "minimum": -0.2750176191329956,
+              "std": 0.16463551168622378
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.2688241004943848,
+              "mean": -0.3651920584961772,
+              "minimum": -9.271748542785645,
+              "std": 2.2629976295137157
+            },
+            "transformed_action_nll": -0.23016807436943054
+          },
+          "transition_count": 50000,
+          "update_count": 1000
+        }
+      },
+      "descriptive_mechanism_classification": "CANONICAL_SUPPORT_NO_TRANSFER",
+      "final_checkpoint": {
+        "attempt_id": "60740736-81ec-4c44-b20f-05a7abc86f15",
+        "best_checkpoint_selection_performed": false,
+        "frozen_final_policy": true,
+        "path": "runs/gcsl-canonical-v1/G29/step-300000/checkpoint.pkl",
+        "schema_version": 2,
+        "sha256": "85c1db15981cb997d07551dd2bef2bcd5f97818fcd7263a4c6f19eb4e8047ad5",
+        "size_bytes": 55485797,
+        "transition_count": 300000,
+        "update_count": 7250,
+        "write_s": 0.33782658295240253
+      },
+      "real_transitions": 300000,
+      "resources": {
+        "completed_at": "2026-10-20T13:43:13.394913+00:00",
+        "cpu_and_rss_note": "not retained by the launchd runner",
+        "cpu_seconds": null,
+        "peak_rss_bytes": null,
+        "retained_active_walltime_seconds": 932.9896087080706,
+        "scientific_checkpoint_write_seconds": 1.1635898739332333,
+        "started_at": "2026-10-20T13:27:39.007548+00:00",
+        "walltime_seconds": 934.387365
+      },
+      "resume_count": 0,
+      "resume_status": "NOT_RESUMED",
+      "sampled_hindsight_tuples": 1856000,
+      "state": "COMPLETED",
+      "supervised_updates": 7250,
+      "training_seed": 29
+    },
+    "G47": {
+      "attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+      "attempt_number": 1,
+      "canonical_stream": {
+        "current_task_exact": true,
+        "expected_ordered_sha256": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255",
+        "exposure_count": 291,
+        "exposure_prefix_exact": true,
+        "final_cursor": 291,
+        "ordered_sha256": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255",
+        "total_frozen_tasks": 865,
+        "verified": true
+      },
+      "canonical_training": {
+        "cumulative_successes_by_checkpoint": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          5
+        ],
+        "final_exclusive_failure_mode_counts": {
+          "deadline": 4,
+          "deadline+speed": 7,
+          "feasible": 5,
+          "incomplete+deadline": 36,
+          "incomplete+deadline+speed": 20,
+          "speed": 218
+        },
+        "first_success_episode": 34,
+        "first_success_transition": 29655,
+        "successes_by_50k_interval": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "total_successes": 5
+      },
+      "checkpoints": {
+        "100000": {
+          "canonical_training": {
+            "canonical_successes": 2,
+            "completed_episodes": 117,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-100000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "716337608b45be8f2f60923dbec58b9c9c87c2aa3d6c9bba9da802ec17dd9ea1",
+            "size_bytes": 20506223,
+            "write_seconds": 0.09282254194840789
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9289,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 1,
+              "repeated_sample_fraction": 0.0078125,
+              "within_condition_action_range": {
+                "maximum": 0.3839506208896637,
+                "mean": 0.3839506208896637,
+                "minimum": 0.3839506208896637,
+                "std": 0.0
+              },
+              "within_condition_action_std": {
+                "maximum": 0.19197531044483185,
+                "mean": 0.19197531044483185,
+                "minimum": 0.19197531044483185,
+                "std": 0.0
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 69,
+            "canonical_hindsight_outcome_fraction": 2e-05,
+            "canonical_hindsight_outcome_rows": 2,
+            "canonical_hindsight_supervised_tuples": 71,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 100000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.105347887582758,
+              "mean_steps": 81.05347887582757,
+              "median_seconds": 5.5,
+              "median_steps": 55,
+              "p90_seconds": 19.0,
+              "p90_steps": 190,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.030666666666666665,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.0078125,
+              "timely-0:safe-1": 0.06640625,
+              "timely-1:safe-0": 0.46484375,
+              "timely-1:safe-1": 0.4609375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.3746189281337138,
+              "minimum": 0.0014610690996050835,
+              "std": 0.3120519652887633
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 59.1,
+              "mean": 7.8296875,
+              "minimum": 0.1,
+              "std": 8.271126920035973
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 591.0,
+              "mean": 78.296875,
+              "minimum": 1.0,
+              "std": 82.71126920035972
+            },
+            "latest_update_terminal_future_fraction": 0.0078125,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 100000,
+            "safe_row_fraction": 0.62568,
+            "safe_rows": 62568,
+            "sampled_hindsight_tuples": 576000,
+            "timely_row_fraction": 0.93657,
+            "timely_rows": 93657,
+            "total_eligible_hindsight_tuples": 53272918,
+            "unique_projected_goals": 99816,
+            "unique_source_transition_coverage": 86460
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 100000,
+            "total_appended": 100000
+          },
+          "sampled_hindsight_tuples": 576000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.3607103824615479,
+              "mean": 0.6113913002191111,
+              "minimum": 0.0006856918334960938,
+              "std": 0.39250424421310826
+            },
+            "action_mse": {
+              "maximum": 1.8515326976776123,
+              "mean": 0.5278589020897364,
+              "minimum": 4.7017329052323475e-07,
+              "std": 0.5038764734286564
+            },
+            "gradient_norm": 21.37445068359375,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.49286651611328,
+            "policy_std": {
+              "maximum": 4.265671730041504,
+              "mean": 1.6526316599047277,
+              "minimum": 0.06382843852043152,
+              "std": 1.048338238799312
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6871769428253174,
+              "mean": 0.23896413686452433,
+              "minimum": -0.4039120376110077,
+              "std": 0.21371283470712235
+            },
+            "predicted_action": {
+              "maximum": 0.5961653590202332,
+              "mean": 0.2271686559470254,
+              "minimum": -0.3832912743091583,
+              "std": 0.19896498703391782
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.2245078086853027,
+              "mean": -0.09452464571222663,
+              "minimum": -9.146148681640625,
+              "std": 1.9097251448898984
+            },
+            "transformed_action_nll": -0.23534221947193146
+          },
+          "transition_count": 100000,
+          "update_count": 2250
+        },
+        "150000": {
+          "canonical_training": {
+            "canonical_successes": 2,
+            "completed_episodes": 162,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-150000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "f23c4c6c79938afa2c89d7f234a891279bad90eb2da411bacb625a831b821ba1",
+            "size_bytes": 29257711,
+            "write_seconds": 0.2073075829539448
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 10047,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 94,
+            "canonical_hindsight_outcome_fraction": 1.3333333333333333e-05,
+            "canonical_hindsight_outcome_rows": 2,
+            "canonical_hindsight_supervised_tuples": 96,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 150000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.251692525807183,
+              "mean_steps": 82.51692525807182,
+              "median_seconds": 5.6000000000000005,
+              "median_steps": 56,
+              "p90_seconds": 19.3,
+              "p90_steps": 193,
+              "probability_sum": 1.0000000000000002,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.026857142857142857,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.0390625,
+              "timely-0:safe-1": 0.0703125,
+              "timely-1:safe-0": 0.43359375,
+              "timely-1:safe-1": 0.45703125
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.3727437017810189,
+              "minimum": 0.001773631083779037,
+              "std": 0.3048992873655808
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 60.800000000000004,
+              "mean": 9.332812500000003,
+              "minimum": 0.1,
+              "std": 9.708518403435395
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 608.0,
+              "mean": 93.328125,
+              "minimum": 1.0,
+              "std": 97.08518403435394
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 150000,
+            "safe_row_fraction": 0.63356,
+            "safe_rows": 95034,
+            "sampled_hindsight_tuples": 896000,
+            "timely_row_fraction": 0.92764,
+            "timely_rows": 139146,
+            "total_eligible_hindsight_tuples": 85518611,
+            "unique_projected_goals": 149747,
+            "unique_source_transition_coverage": 129867
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 150000,
+            "total_appended": 150000
+          },
+          "sampled_hindsight_tuples": 896000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.4379304647445679,
+              "mean": 0.6093829961610027,
+              "minimum": 0.0013296902179718018,
+              "std": 0.37356029228392623
+            },
+            "action_mse": {
+              "maximum": 2.0676441192626953,
+              "mean": 0.5108949280741948,
+              "minimum": 1.7680761175142834e-06,
+              "std": 0.47401055482183785
+            },
+            "gradient_norm": 8.615898132324219,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.50996017456055,
+            "policy_std": {
+              "maximum": 4.542951583862305,
+              "mean": 1.9139533853449393,
+              "minimum": 0.0530458427965641,
+              "std": 1.0772851467909927
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6035246849060059,
+              "mean": 0.17844723648158833,
+              "minimum": -0.48161715269088745,
+              "std": 0.2197550228033077
+            },
+            "predicted_action": {
+              "maximum": 0.5395529270172119,
+              "mean": 0.17178706752110884,
+              "minimum": -0.4475378096103668,
+              "std": 0.20801704353678702
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.120220184326172,
+              "mean": -0.16957544721662998,
+              "minimum": -9.341468811035156,
+              "std": 1.9296181746858987
+            },
+            "transformed_action_nll": -0.20691901445388794
+          },
+          "transition_count": 150000,
+          "update_count": 3500
+        },
+        "200000": {
+          "canonical_training": {
+            "canonical_successes": 3,
+            "completed_episodes": 203,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-200000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "306299584186bcf9dc209964d28a64c85b6915888bdef46d1b3716b9f9f73075",
+            "size_bytes": 37997995,
+            "write_seconds": 0.24313154094852507
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 12291,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 108,
+            "canonical_hindsight_outcome_fraction": 1.5e-05,
+            "canonical_hindsight_outcome_rows": 3,
+            "canonical_hindsight_supervised_tuples": 110,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 200000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.355799698518231,
+              "mean_steps": 83.55799698518231,
+              "median_seconds": 5.7,
+              "median_steps": 57,
+              "p90_seconds": 19.5,
+              "p90_steps": 195,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.02273684210526316,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.03125,
+              "timely-0:safe-1": 0.05859375,
+              "timely-1:safe-0": 0.421875,
+              "timely-1:safe-1": 0.48828125
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.39259464277074585,
+              "minimum": 0.002903273096308112,
+              "std": 0.32421559270037253
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 55.900000000000006,
+              "mean": 8.101171875000002,
+              "minimum": 0.1,
+              "std": 8.139153453474691
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 559.0,
+              "mean": 81.01171875,
+              "minimum": 1.0,
+              "std": 81.39153453474691
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 200000,
+            "safe_row_fraction": 0.63316,
+            "safe_rows": 126632,
+            "sampled_hindsight_tuples": 1216000,
+            "timely_row_fraction": 0.91948,
+            "timely_rows": 183896,
+            "total_eligible_hindsight_tuples": 119780002,
+            "unique_projected_goals": 199678,
+            "unique_source_transition_coverage": 173052
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 200000,
+            "total_appended": 200000
+          },
+          "sampled_hindsight_tuples": 1216000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.374565601348877,
+              "mean": 0.6595255007123342,
+              "minimum": 0.008259087800979614,
+              "std": 0.3614251750125485
+            },
+            "action_mse": {
+              "maximum": 1.8894306421279907,
+              "mean": 0.5656020438707117,
+              "minimum": 6.821253191446885e-05,
+              "std": 0.4564262088956441
+            },
+            "gradient_norm": 10.24421215057373,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.530391693115234,
+            "policy_std": {
+              "maximum": 4.069309711456299,
+              "mean": 1.9376582045661053,
+              "minimum": 0.03603072091937065,
+              "std": 0.9808850975259948
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6275686621665955,
+              "mean": 0.1611389238969423,
+              "minimum": -0.40975791215896606,
+              "std": 0.21017843349769216
+            },
+            "predicted_action": {
+              "maximum": 0.5563758015632629,
+              "mean": 0.15445725079234762,
+              "minimum": -0.3882670998573303,
+              "std": 0.19855103391248866
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.2408528327941895,
+              "mean": -0.08092711621429771,
+              "minimum": -9.216350555419922,
+              "std": 1.9253076179819955
+            },
+            "transformed_action_nll": -0.3035421371459961
+          },
+          "transition_count": 200000,
+          "update_count": 4750
+        },
+        "250000": {
+          "canonical_training": {
+            "canonical_successes": 4,
+            "completed_episodes": 244,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-250000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "71e88951450c87cb1fc0802ec94e612ccf5a2e8559da8b246c9915824a6beb47",
+            "size_bytes": 46733519,
+            "write_seconds": 0.23788895807228982
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 15,
+            "deadline_compliance": 15,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline": 1,
+              "incomplete+deadline+speed": 2,
+              "speed": 15
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.9167041288657233,
+            "rsr": 0,
+            "simulator_transitions": 15682,
+            "speed_compliance": 1,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 134,
+            "canonical_hindsight_outcome_fraction": 1.6e-05,
+            "canonical_hindsight_outcome_rows": 4,
+            "canonical_hindsight_supervised_tuples": 136,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 250000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.418907902444753,
+              "mean_steps": 84.18907902444752,
+              "median_seconds": 5.7,
+              "median_steps": 57,
+              "p90_seconds": 19.700000000000003,
+              "p90_steps": 197,
+              "probability_sum": 0.9999999999999999,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.022333333333333334,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.03125,
+              "timely-0:safe-1": 0.07421875,
+              "timely-1:safe-0": 0.3359375,
+              "timely-1:safe-1": 0.55859375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.35616301957384167,
+              "minimum": 0.0009242508676834404,
+              "std": 0.30603804167437276
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 38.300000000000004,
+              "mean": 7.914062500000001,
+              "minimum": 0.1,
+              "std": 7.39471659335865
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 383.0,
+              "mean": 79.140625,
+              "minimum": 1.0,
+              "std": 73.94716593358649
+            },
+            "latest_update_terminal_future_fraction": 0.00390625,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 250000,
+            "safe_row_fraction": 0.656348,
+            "safe_rows": 164087,
+            "sampled_hindsight_tuples": 1536000,
+            "timely_row_fraction": 0.91632,
+            "timely_rows": 229080,
+            "total_eligible_hindsight_tuples": 154107685,
+            "unique_projected_goals": 249617,
+            "unique_source_transition_coverage": 216144
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 250000,
+            "total_appended": 250000
+          },
+          "sampled_hindsight_tuples": 1536000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.3844497203826904,
+              "mean": 0.6592971162754111,
+              "minimum": 0.003238588571548462,
+              "std": 0.3784157242183239
+            },
+            "action_mse": {
+              "maximum": 1.916701078414917,
+              "mean": 0.577871147233477,
+              "minimum": 1.0488455700397026e-05,
+              "std": 0.47983361883492487
+            },
+            "gradient_norm": 2.9377570152282715,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.55171203613281,
+            "policy_std": {
+              "maximum": 3.3841421604156494,
+              "mean": 1.8225014812196605,
+              "minimum": 0.11452344059944153,
+              "std": 0.7561177237925293
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.5777996182441711,
+              "mean": 0.12748410063795745,
+              "minimum": -0.40950316190719604,
+              "std": 0.18331918987210535
+            },
+            "predicted_action": {
+              "maximum": 0.521064281463623,
+              "mean": 0.12322999805019208,
+              "minimum": -0.38805073499679565,
+              "std": 0.17502300060390694
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.108447551727295,
+              "mean": 0.02991992048919201,
+              "minimum": -7.854219436645508,
+              "std": 1.7100086172887208
+            },
+            "transformed_action_nll": -0.2585936188697815
+          },
+          "transition_count": 250000,
+          "update_count": 6000
+        },
+        "300000": {
+          "canonical_training": {
+            "canonical_successes": 5,
+            "completed_episodes": 290,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-300000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "f70f8dd544e66d9ceeeee4e1d591d3035a0beb74ca0e4ae62b73d883c2d5bbec",
+            "size_bytes": 55471878,
+            "write_seconds": 0.3919422090984881
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 16,
+            "deadline_compliance": 16,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "incomplete+deadline": 1,
+              "incomplete+deadline+speed": 1,
+              "speed": 16
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 0.9412111942999846,
+            "rsr": 0,
+            "simulator_transitions": 13562,
+            "speed_compliance": 1,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 1,
+              "repeated_sample_fraction": 0.0078125,
+              "within_condition_action_range": {
+                "maximum": 0.28183454275131226,
+                "mean": 0.28183454275131226,
+                "minimum": 0.28183454275131226,
+                "std": 0.0
+              },
+              "within_condition_action_std": {
+                "maximum": 0.14091727137565613,
+                "mean": 0.14091727137565613,
+                "minimum": 0.14091727137565613,
+                "std": 0.0
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 156,
+            "canonical_hindsight_outcome_fraction": 1.6666666666666667e-05,
+            "canonical_hindsight_outcome_rows": 5,
+            "canonical_hindsight_supervised_tuples": 158,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 300000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.433992691052854,
+              "mean_steps": 84.33992691052853,
+              "median_seconds": 5.7,
+              "median_steps": 57,
+              "p90_seconds": 19.700000000000003,
+              "p90_steps": 197,
+              "probability_sum": 1.0000000000000002,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.021517241379310346,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.0546875,
+              "timely-0:safe-1": 0.08203125,
+              "timely-1:safe-0": 0.38671875,
+              "timely-1:safe-1": 0.4765625
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.3769661937476485,
+              "minimum": 0.002002263907343149,
+              "std": 0.30020195899678714
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 49.300000000000004,
+              "mean": 8.4453125,
+              "minimum": 0.1,
+              "std": 8.587935390845914
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 493.0,
+              "mean": 84.453125,
+              "minimum": 1.0,
+              "std": 85.87935390845914
+            },
+            "latest_update_terminal_future_fraction": 0.0078125,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 300000,
+            "safe_row_fraction": 0.65544,
+            "safe_rows": 196632,
+            "sampled_hindsight_tuples": 1856000,
+            "timely_row_fraction": 0.91903,
+            "timely_rows": 275709,
+            "total_eligible_hindsight_tuples": 184982946,
+            "unique_projected_goals": 299527,
+            "unique_source_transition_coverage": 259422
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 300000,
+            "total_appended": 300000
+          },
+          "sampled_hindsight_tuples": 1856000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.2314043045043945,
+              "mean": 0.6904293882835191,
+              "minimum": 0.007200315594673157,
+              "std": 0.33865180355681423
+            },
+            "action_mse": {
+              "maximum": 1.5163565874099731,
+              "mean": 0.5913777829007074,
+              "minimum": 5.1844544941559434e-05,
+              "std": 0.4157635356469058
+            },
+            "gradient_norm": 2.2853949069976807,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.57556915283203,
+            "policy_std": {
+              "maximum": 3.823373317718506,
+              "mean": 1.9321330336679239,
+              "minimum": 0.10227292031049728,
+              "std": 0.897290524792166
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6066569089889526,
+              "mean": 0.15081325749633834,
+              "minimum": -0.2725997567176819,
+              "std": 0.1661455071550729
+            },
+            "predicted_action": {
+              "maximum": 0.5417695045471191,
+              "mean": 0.1455409859959218,
+              "minimum": -0.2660422623157501,
+              "std": 0.1577315716254916
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 2.103661060333252,
+              "mean": -0.13058928214013577,
+              "minimum": -7.9566450119018555,
+              "std": 1.964128937419695
+            },
+            "transformed_action_nll": -0.28682875633239746
+          },
+          "transition_count": 300000,
+          "update_count": 7250
+        },
+        "50000": {
+          "canonical_training": {
+            "canonical_successes": 1,
+            "completed_episodes": 61,
+            "first_canonical_success_transition": 29655
+          },
+          "checkpoint": {
+            "manifest_and_metadata_hash_verified": true,
+            "path": "runs/gcsl-canonical-v1/G47/step-050000/checkpoint.pkl",
+            "schema_version": 2,
+            "sha256": "4abb9cd4f447c1dc35ad64e6d397adca629ac9266bb37256532b959c1744093a",
+            "size_bytes": 11788652,
+            "write_seconds": 0.1295959580456838
+          },
+          "checkpoint_attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+          "checkpoint_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+          "diagnostic": {
+            "actor_hash_unchanged": true,
+            "completion": 18,
+            "deadline_compliance": 18,
+            "deterministic_action": "tanh(mu)",
+            "episode_count": 18,
+            "evaluation_id": "GCSL_DIAGNOSTIC_V1",
+            "evaluation_seed_count": 18,
+            "exclusive_failure_mode_counts": {
+              "speed": 18
+            },
+            "feasible_only_energy_kwh": {
+              "count": 0,
+              "mean": null,
+              "values": []
+            },
+            "mean_final_progress": 1.0,
+            "rsr": 0,
+            "simulator_transitions": 9327,
+            "speed_compliance": 0,
+            "training_rng_unchanged": true
+          },
+          "goal_action_ambiguity": {
+            "exact_state_goal": {
+              "repeated_condition_group_count": 0,
+              "repeated_sample_fraction": 0.0,
+              "within_condition_action_range": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              },
+              "within_condition_action_std": {
+                "maximum": null,
+                "mean": null,
+                "minimum": null,
+                "std": null
+              }
+            },
+            "projected_goal": {
+              "repeated_condition_group_count": 3,
+              "repeated_sample_fraction": 0.0234375,
+              "within_condition_action_range": {
+                "maximum": 0.3043258786201477,
+                "mean": 0.13287838300069174,
+                "minimum": 0.038531482219696045,
+                "std": 0.1214359682653192
+              },
+              "within_condition_action_std": {
+                "maximum": 0.15216293931007385,
+                "mean": 0.06643919150034587,
+                "minimum": 0.019265741109848022,
+                "std": 0.0607179841326596
+              }
+            }
+          },
+          "replay": {
+            "batches_with_canonical_target": 20,
+            "canonical_hindsight_outcome_fraction": 2e-05,
+            "canonical_hindsight_outcome_rows": 1,
+            "canonical_hindsight_supervised_tuples": 20,
+            "expected_future_lag_distribution": {
+              "eligible_source_transitions": 50000,
+              "maximum_possible_lag_steps": 1800,
+              "mean_seconds": 8.022228180535924,
+              "mean_steps": 80.22228180535924,
+              "median_seconds": 5.4,
+              "median_steps": 54,
+              "p90_seconds": 18.8,
+              "p90_steps": 188,
+              "probability_sum": 1.0,
+              "scope": "exact expected distribution for the frozen sampler at this replay state (uniform source, gamma=0.99 truncated geometric future); not an unretained empirical cumulative sample history"
+            },
+            "fraction_batches_with_canonical_target": 0.02,
+            "latest_update_goal_composition": {
+              "timely-0:safe-0": 0.0,
+              "timely-0:safe-1": 0.078125,
+              "timely-1:safe-0": 0.484375,
+              "timely-1:safe-1": 0.4375
+            },
+            "latest_update_progress_distribution": {
+              "maximum": 1.0,
+              "mean": 0.37649760128340404,
+              "minimum": 0.000456566660432145,
+              "std": 0.3218506848487353
+            },
+            "latest_update_sampled_future_lag_seconds": {
+              "maximum": 40.2,
+              "mean": 8.116015625,
+              "minimum": 0.1,
+              "std": 8.236770722634924
+            },
+            "latest_update_sampled_future_lag_steps": {
+              "maximum": 402.0,
+              "mean": 81.16015625,
+              "minimum": 1.0,
+              "std": 82.36770722634925
+            },
+            "latest_update_terminal_future_fraction": 0.0078125,
+            "maximum_replay_progress": 1.0,
+            "minimum_goal_distance_to_canonical": 0.0,
+            "retained_transitions": 50000,
+            "safe_row_fraction": 0.64168,
+            "safe_rows": 32084,
+            "sampled_hindsight_tuples": 256000,
+            "timely_row_fraction": 0.912,
+            "timely_rows": 45600,
+            "total_eligible_hindsight_tuples": 27785987,
+            "unique_projected_goals": 49927,
+            "unique_source_transition_coverage": 43237
+          },
+          "replay_integrity": {
+            "all_sources_have_physical_future": true,
+            "capacity": 300000,
+            "closed_end_markers_exact": true,
+            "episode_step_continuity": true,
+            "first_sequence": 0,
+            "future_endpoint_same_episode": true,
+            "no_cross_reset_verified": true,
+            "reset_boundary_exact": true,
+            "sequence_index_exact": true,
+            "size": 50000,
+            "total_appended": 50000
+          },
+          "sampled_hindsight_tuples": 256000,
+          "supervised_learning": {
+            "action_mae": {
+              "maximum": 1.3911237716674805,
+              "mean": 0.5659740463888738,
+              "minimum": 0.004803299903869629,
+              "std": 0.40635557932051486
+            },
+            "action_mse": {
+              "maximum": 1.9352253675460815,
+              "mean": 0.4854514776414547,
+              "minimum": 2.307169052073732e-05,
+              "std": 0.49504843301640317
+            },
+            "gradient_norm": 6.490030288696289,
+            "nonfinite_value_count": 0,
+            "parameter_norm": 41.472015380859375,
+            "policy_std": {
+              "maximum": 4.736429214477539,
+              "mean": 1.836584521632176,
+              "minimum": 0.0821349173784256,
+              "std": 1.325184351970912
+            },
+            "pre_tanh_mean": {
+              "maximum": 0.6727913022041321,
+              "mean": 0.22895830270135775,
+              "minimum": -0.4132973551750183,
+              "std": 0.24420980944740414
+            },
+            "predicted_action": {
+              "maximum": 0.5868129730224609,
+              "mean": 0.21500110536703687,
+              "minimum": -0.39126884937286377,
+              "std": 0.22617614356912943
+            },
+            "sampled_entropy_estimate": {
+              "maximum": 4.075531005859375,
+              "mean": -0.3411988477455452,
+              "minimum": -9.462812423706055,
+              "std": 1.9718089817687219
+            },
+            "transformed_action_nll": -0.6471948623657227
+          },
+          "transition_count": 50000,
+          "update_count": 1000
+        }
+      },
+      "descriptive_mechanism_classification": "CANONICAL_SUPPORT_NO_TRANSFER",
+      "final_checkpoint": {
+        "attempt_id": "fb7e881b-cb82-4a51-a868-a263f7865b5a",
+        "best_checkpoint_selection_performed": false,
+        "frozen_final_policy": true,
+        "path": "runs/gcsl-canonical-v1/G47/step-300000/checkpoint.pkl",
+        "schema_version": 2,
+        "sha256": "f70f8dd544e66d9ceeeee4e1d591d3035a0beb74ca0e4ae62b73d883c2d5bbec",
+        "size_bytes": 55471878,
+        "transition_count": 300000,
+        "update_count": 7250,
+        "write_s": 0.3919422090984881
+      },
+      "real_transitions": 300000,
+      "resources": {
+        "completed_at": "2026-10-20T13:56:14.964082+00:00",
+        "cpu_and_rss_note": "not retained by the launchd runner",
+        "cpu_seconds": null,
+        "peak_rss_bytes": null,
+        "retained_active_walltime_seconds": 778.2780264170142,
+        "scientific_checkpoint_write_seconds": 1.3026887910673395,
+        "started_at": "2026-10-20T13:43:15.281826+00:00",
+        "walltime_seconds": 779.682256
+      },
+      "resume_count": 0,
+      "resume_status": "NOT_RESUMED",
+      "sampled_hindsight_tuples": 1856000,
+      "state": "COMPLETED",
+      "supervised_updates": 7250,
+      "training_seed": 47
+    }
+  },
+  "provenance": {
+    "authorization_commit": "0548163405bb4191d10099785d235015c4d34580",
+    "base_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
+    "branch": "research/gcsl-canonical",
+    "completion_source_hashes_verified": true,
+    "configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+    "configuration_sha256_verified": true,
+    "execution_commit": "0548163405bb4191d10099785d235015c4d34580",
+    "execution_source_hashes_verified_before_completion_transition": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "runtime_versions": {
+      "gym-longicontrol": "1.0.0",
+      "gymnasium": "1.4.0",
+      "numpy": "2.4.6",
+      "python": "3.11.9",
+      "torch": "2.14.1"
+    }
+  },
+  "resources": {
+    "cpu_and_rss_note": "not retained by the launchd runner",
+    "cpu_seconds": null,
+    "frozen_projection_hours": 0.20126929412905586,
+    "launchd_exit_code": 0,
+    "launchd_runs": 1,
+    "matrix_completed_at": "2026-10-20T13:56:14.963912+00:00",
+    "matrix_started_at": "2026-10-20T13:11:37.207479+00:00",
+    "matrix_walltime_hours": 0.7438212313888889,
+    "matrix_walltime_seconds": 2677.756433,
+    "peak_rss_bytes": null,
+    "retained_disk_bytes": 831216639,
+    "retained_disk_gb_decimal": 0.831216639,
+    "scientific_checkpoint_write_seconds": 3.6641840409720317,
+    "sum_policy_walltime_seconds": 2673.743805
+  },
+  "schema_version": 1,
+  "scope": "development-style GCSL_DIAGNOSTIC_V1 main-training report; not final Validation",
+  "seals": {
+    "canonical_constrained_references": {
+      "evaluation_episodes": 0,
+      "final_checkpoint_sha256": {
+        "11": "e2047a6e9bf217d020e708d32104f24e35d8e34dd7d4900cc87d29cdc069ff1d",
+        "29": "d5284426d802163fe8f3045789293e721e81f462771988fe648cf909e8f575db",
+        "47": "e828dc0babb42e20b9f5f33bdedbc300bafe21ccdedee101b8ba84b715919e35"
+      },
+      "state": "IMMUTABLE_UNEVALUATED_ON_GCSL_VALIDATION"
+    },
+    "gcsl_validation_v1": {
+      "authorized": false,
+      "episodes": 0,
+      "ordered_sha256": "d808fcc361be35f0c585003278f200d4013cc03718b0ceb318fbe6d55195a159",
+      "state": "FROZEN_UNOPENED"
+    },
+    "historical_evaluation_sets_used": false,
+    "paper": {
+      "authorized": false,
+      "content_fingerprints_constructed": 0,
+      "episodes": 0,
+      "state": "SEALED_UNINSPECTED"
+    }
+  },
+  "study": "canonical-goal-conditioned-supervised-learning-v1"
+}

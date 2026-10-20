@@ -11,12 +11,12 @@ def load(name):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
 
 
-def test_readiness_is_complete_but_all_scientific_authorization_is_off():
+def test_readiness_is_complete_and_main_training_is_closed():
     status = load("preparation_status.json")
     assert status["all_scientific_readiness_flags_true"] is True
     assert all(status["readiness"].values())
     assert status["authorization"] == {
-        "main_training_authorized": False,
+        "main_training_authorized": True,
         "main_training_enabled": False,
         "validation_authorized": False,
         "paper_test_authorized": False,

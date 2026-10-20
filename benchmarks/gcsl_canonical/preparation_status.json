@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "state": "MAIN_TRAINING_AUTHORIZED",
+  "state": "MAIN_TRAINING_COMPLETED",
   "lineage": {
     "branch": "research/gcsl-canonical",
     "base_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
@@ -30,7 +30,7 @@
   "all_scientific_readiness_flags_true": true,
   "authorization": {
     "main_training_authorized": true,
-    "main_training_enabled": true,
+    "main_training_enabled": false,
     "validation_authorized": false,
     "paper_test_authorized": false
   },
@@ -80,7 +80,7 @@
   },
   "scientific_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
   "scientific_source_hashes": {
-    "benchmarks/gcsl_canonical/canonical.json": "5e0010f090b7fa37227e9ac3725455254f8fa834398ad815959ec75e6a722ce8",
+    "benchmarks/gcsl_canonical/canonical.json": "70426fa2cb9ef8e927b5511e1df843f481f15979b2189a1660ea8effaefd1b0e",
     "benchmarks/gcsl_canonical/checkpointing.py": "2a1c5a27c9eedabe3c13e42ee8dfb1bf50743aaba1c2cb4dcbd72e339379c17d",
     "benchmarks/gcsl_canonical/cli.py": "93737557c02f4d93d0cd59ace57849c947c8a0e7c9c2de723415e79e9bc16ce3",
     "benchmarks/gcsl_canonical/config.py": "67c94b3656554d3fb8b1925fa02d41c9509c6085b9127cc9797be8b939ab01ed",
