@@ -1,0 +1,325 @@
+{
+  "canonical_evaluation": {
+    "deadline_s": 140.0,
+    "environment": "StochasticTrack-v1",
+    "maximum_episode_steps": 1800,
+    "metrics": "production EpisodeMetrics and is_feasible",
+    "native_dt_s": 0.1,
+    "route_length_m": 1000.0,
+    "speed_tolerance_m_s": 0.0
+  },
+  "execution_plan": {
+    "aggregation_only_reexecutes_controllers": false,
+    "normal_mode_refuses_existing_episode_records": true,
+    "oracle_refinement_iterations": 10,
+    "oracle_replay_checks_planned": 36,
+    "pair_execution_limit": 1,
+    "panel_count": 2,
+    "reference_controllers": [
+      "oracle",
+      "causal"
+    ],
+    "scientific_controller_task_pairs": 72,
+    "tasks_per_panel": 18
+  },
+  "frozen_at_utc": "2026-10-20T15:44:33.704326+00:00",
+  "frozen_before_contextual_execution": true,
+  "independent_heldout_benchmark": false,
+  "interpretation_limits": [
+    "previously opened contextual tasks; not independent held-out evidence",
+    "achieved Oracle reference; not a proven global optimum",
+    "no guarantee over all possible generated tracks",
+    "no controller or Hybrid design tuning from contextual outcomes",
+    "policy-track pairs and distinct tracks remain separate units"
+  ],
+  "panels": {
+    "gcsl": {
+      "evaluation_id": "GCSL_VALIDATION_V1",
+      "name": "gcsl",
+      "ordered_sha256": "d808fcc361be35f0c585003278f200d4013cc03718b0ceb318fbe6d55195a159",
+      "results_artifact": {
+        "episode_projection_sha256": "200ba5c20faebabda4c4291ea3aafe5b8789254778b315c45a62ab19ad04185d",
+        "git_blob": "9d413f77638c37f93af9af9825e7525c39da9e01",
+        "path": "benchmarks/gcsl_canonical/results.json",
+        "sha256": "921a8e1ff418cafd3b5120e715fb403d76c22c6f27b4d786beb672d3f97b447f"
+      },
+      "source_commit": "5ada9402e3a2d627a7ea417cf1ffc23e1ab3789e",
+      "split_artifact": {
+        "git_blob": "ede1fd3d13c19906771438cddb96bda8e83badac",
+        "path": "benchmarks/gcsl_canonical/SPLIT_LEDGER.md",
+        "sha256": "349ee09470467e71af032e69ab8161c980d3aebfe68dbbb2f49909a0ad6e5437"
+      },
+      "tasks": [
+        {
+          "full_task_sha256": "5813b4bc980b8f6a1819f47ad7a30d98878f4d4d89424c8061a1c9089c40eea2",
+          "numeric_seed": 9700000,
+          "route_sha256": "f4f4996e680667082262d265dd35f42a2583506c3be1a7ec60a787ae60486718"
+        },
+        {
+          "full_task_sha256": "6436823d7e49099163d65a62f301b02ad135a67e81a8cd7dd582d6bf444c76ba",
+          "numeric_seed": 9700001,
+          "route_sha256": "a8b63357898157b338ffc2fb3259007f8e99134dc66317938013c9a0c24680f0"
+        },
+        {
+          "full_task_sha256": "19e660815d1c963185fb492e3676fcc765031484bc1c351bdfe587e5f911f1a3",
+          "numeric_seed": 9700002,
+          "route_sha256": "2e7357e09f0c9d1cbd7692380b8c66a8ffe83bd33245fcd68bf78e593be11c96"
+        },
+        {
+          "full_task_sha256": "dc4ef7e90d81d260ac250300dd47971b4a073077b1e438a1c312ca872393fe44",
+          "numeric_seed": 9700003,
+          "route_sha256": "1a99f35269027b01a54e2aa060ba30e714d21c482f75e4e5e925c4b86cd72369"
+        },
+        {
+          "full_task_sha256": "8a22a1fe85c74124e5ab249a0b88140868ed8612670ced0d3acd27c3a656725c",
+          "numeric_seed": 9700004,
+          "route_sha256": "a8ad84eb504e89dcdc133bc4cedf7d608052a2ab5863afed2ee9c27f5a380217"
+        },
+        {
+          "full_task_sha256": "7245028526ac3b7d3d6129089e95e61462508f9d361290ece59326add769806e",
+          "numeric_seed": 9700005,
+          "route_sha256": "446342f2b381445191f087c8e6e6002f737b95ae39681901e3286715668a3ab0"
+        },
+        {
+          "full_task_sha256": "a9d28adaac5253e9ac94f2dcf67e2a897da61ec4da1afdc5d097dc03a00e7c0f",
+          "numeric_seed": 9700006,
+          "route_sha256": "e3fc68896cc9d305b82bd822b026c863aeb4bf0980fab68d75134b4a046ceeb6"
+        },
+        {
+          "full_task_sha256": "2bd8434cba70818a5178a7779ea2e1d6502716dd8311419306dbd8b2ac07873b",
+          "numeric_seed": 9700007,
+          "route_sha256": "ad0cf74690a69129423ec46c869835418dad724bf94670e94262dbad72e5171f"
+        },
+        {
+          "full_task_sha256": "3f434d59b23429e31acf84da7e60ec82600dd03fb5cf28df7c4392e329f59ca5",
+          "numeric_seed": 9700008,
+          "route_sha256": "2ea6365fa8a2c9cf6079cc10ef241bc7b36fec5907df2c29f23b9397297efc53"
+        },
+        {
+          "full_task_sha256": "d5efd59a9470f95165c8efeffb99ac3290e6f19596a518dc900c96247036cc57",
+          "numeric_seed": 9700009,
+          "route_sha256": "11029a39a4b79e5f54a1a3f1c6533bdfb617e67cdacdf2fff2aaf9711dfafc86"
+        },
+        {
+          "full_task_sha256": "e2c27271f37ba52c4fd756ea9315595c569e0f563a361ed328905fc8e71bad6c",
+          "numeric_seed": 9700010,
+          "route_sha256": "5b1f1e671de3ebcbfa59c7e80695b768907716fb957fb004c3fc193a11459b9c"
+        },
+        {
+          "full_task_sha256": "0d9d4ec173b1a9cf7ffcbd0a4ed38215ea856e10ddc876d60da4dde4329066ca",
+          "numeric_seed": 9700011,
+          "route_sha256": "1b39e81d3ca18f6fee9600430083108db4bb1953c4e504ed0d6fee0ab9b33ddd"
+        },
+        {
+          "full_task_sha256": "f19c091836a413a56be3aa6e003bd6cacf09ffe9de037252bf7394b7ab394313",
+          "numeric_seed": 9700012,
+          "route_sha256": "a9fdab10b74b94c74010c16a7877455d36728c9bbcd07ab7a8615f496d3d3109"
+        },
+        {
+          "full_task_sha256": "280b31be972db301425aa6f333b5b0057151037d6b223386c572832593ff1674",
+          "numeric_seed": 9700013,
+          "route_sha256": "602548b9d9a2228277ff3c0f3b89445c1b654b750e14b077bb6034a54a45bae1"
+        },
+        {
+          "full_task_sha256": "358a09cf4bbf67883fafd5503e0f1f43e34237765068c48dcfc83978c601e0ec",
+          "numeric_seed": 9700014,
+          "route_sha256": "b0e2d6d7dc909ff1662e897aa909f0a5acc20ba692d16950e3262336cae8faac"
+        },
+        {
+          "full_task_sha256": "7e82c620aafd05f73816dce2c131662875e92b1a5cf45898bbfbd74224cc1ccf",
+          "numeric_seed": 9700015,
+          "route_sha256": "00941df52cca5140fb0e3283216aabdcbeb0ae9536b5d89b9768cef33f899122"
+        },
+        {
+          "full_task_sha256": "b37a405900bc4faabba521d5acb10f3b0b3d009ad062367ce6d59e64aef17825",
+          "numeric_seed": 9700017,
+          "route_sha256": "75bba5f2c7e813ace498824723a6ff320066f44680e1fd55cca6abec8d8fd6b6"
+        },
+        {
+          "full_task_sha256": "2bb73d7794bc97bcd4daad4f04e95d4c7e1608fc630691c298ab288f488e7400",
+          "numeric_seed": 9700018,
+          "route_sha256": "dadfa0ffef7ab38c9162a6d11ae2b4c83e99559eb881ef57c95a16172cdbfcb8"
+        }
+      ]
+    },
+    "sameinfo": {
+      "evaluation_id": "SAMEINFO_VALIDATION_V1",
+      "name": "sameinfo",
+      "ordered_sha256": "d8a658e96b0090f8e0cdcdfdec3b291329045dc3dac9541e0603f34d916bf10a",
+      "results_artifact": {
+        "episode_projection_sha256": "38a4d84839d4a9f4cf775e404175b382afee9ea139d418867b821ddbe86d4baf",
+        "git_blob": "911bb020f3e66a1c395b3d58c7ce306cc33f9dd8",
+        "path": "benchmarks/same_information_scalar_vs_constrained/results.json",
+        "sha256": "f2b5edee5e039ec9d334cfed0acf3bbca8a5760bbb9004bf7c431c534ed1f27d"
+      },
+      "source_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
+      "split_artifact": {
+        "git_blob": "96101747bb3e45b9a72159fcf41547b12fa32eff",
+        "path": "benchmarks/same_information_scalar_vs_constrained/SPLIT_LEDGER.md",
+        "sha256": "77c249ffd5277dddcd12fe954a109b8078c85fa6b0253887e41fe9f969bffd98"
+      },
+      "tasks": [
+        {
+          "full_task_sha256": "fd453e48577d7ecee1a5d3a8bf0c352472f262423caf9f9e99ee53c019901b49",
+          "numeric_seed": 9500001,
+          "route_sha256": "ed6e932cf9fcba945359124e0fb0ab40a3601b232270fe933bfc1225f6135d1d"
+        },
+        {
+          "full_task_sha256": "c924d2aa8da8282a25df787942700231897603f5b13771fd360d0bd9f50c5c82",
+          "numeric_seed": 9500002,
+          "route_sha256": "a6c98aafa3d055e19054c418b7652bb358e997b88fce898ba71b31fde4def19e"
+        },
+        {
+          "full_task_sha256": "9ade3e038b2467365fbf23f6097ade7a5cf7de43fc230caa6a9c7915d4c31bb7",
+          "numeric_seed": 9500003,
+          "route_sha256": "8ad3b0ca8d9a572d126df670cec2aac9f662ef3677e6231439bf298a7581830c"
+        },
+        {
+          "full_task_sha256": "cabc117c2300ff4fccfe9d35e1600479c7691c970ab641fe05622db08df15442",
+          "numeric_seed": 9500005,
+          "route_sha256": "2218a5d2a460075a3887db1986bb73fe5674e1def34430904a18de7b7ee60437"
+        },
+        {
+          "full_task_sha256": "4494cf2fe7cbe3c81ab0e082e85a761e86a4b4264f8b5522ec10f8349608453a",
+          "numeric_seed": 9500006,
+          "route_sha256": "b9741940e0eabee71e77fe7bd6be4eb91bdeb5284db6232c45cf28c6f26b7b17"
+        },
+        {
+          "full_task_sha256": "81120fd2538fc16532a3992c840981a6960de1e405ee777b1d858fe26159e7a6",
+          "numeric_seed": 9500007,
+          "route_sha256": "2c000da6ddb951b5274870b58e3a1373a02681e6c0c861b513d9a04aa48de481"
+        },
+        {
+          "full_task_sha256": "895656e5daa9729f1250b4083dd79603ad9032fb842872fac1759b32c8a42713",
+          "numeric_seed": 9500008,
+          "route_sha256": "63c4820e4dfb488dc626757e832e33b13dd64f8a5d83d7d0139deaeebc239c91"
+        },
+        {
+          "full_task_sha256": "40406408a148ae65bf09fb459c36d5f8e616cf27e67e0ea5766fe7740d799e98",
+          "numeric_seed": 9500011,
+          "route_sha256": "85aa6cac0aa0650326cdbdc4643f10886073127342564719500ec1e43a6045b8"
+        },
+        {
+          "full_task_sha256": "3ee8ddfe65a9db2c4fad95c9b763b128903592f3272444a1514d1d03f9edb829",
+          "numeric_seed": 9500012,
+          "route_sha256": "13479e0d623d9bfe700273c91041a2b518bf199964c7a63f207df0ca2cc11f86"
+        },
+        {
+          "full_task_sha256": "e0eb4bd765b376d83cc2b1dd894c8188529dcfb4179149a4ded2dc3d179b324f",
+          "numeric_seed": 9500014,
+          "route_sha256": "6d988b79a3c53487ccef55799eaa096959f22564fc5b1d3f1c2d78f193df4551"
+        },
+        {
+          "full_task_sha256": "ed3169672c1711353187d6d10ebb3ce4e382c522773d8798de9eea2dcd4f70ba",
+          "numeric_seed": 9500015,
+          "route_sha256": "6e673260fc339a95ee1d1520d90e80efe5681145a057b6e3b903257425187eaf"
+        },
+        {
+          "full_task_sha256": "dd0311fa4c6da19a021f989d3152df676d120fe327d9c660642306b5c022bb03",
+          "numeric_seed": 9500016,
+          "route_sha256": "1d49a4506fdd450a7938bb9c402118f3247177fe2d80291f2e8fc7059605cd46"
+        },
+        {
+          "full_task_sha256": "5c9eb5b768675d68d4e201f2e09f62e14dcb2cf60856b7d2751dc66822376564",
+          "numeric_seed": 9500017,
+          "route_sha256": "2965a26c4ebb0665312f46c9088a8e2f5134d494bdc704c9f91a111a0f5ca960"
+        },
+        {
+          "full_task_sha256": "d25c8707d3e83827a66f1fcb6f67d285e3598f896366ee66b86eaed15058e5b7",
+          "numeric_seed": 9500018,
+          "route_sha256": "cb0daf3ac54e52acc352bbce12ad86389099071a271666ca24dbb41e018822c3"
+        },
+        {
+          "full_task_sha256": "8edd6da8191904e88141155b589ae227cf1216a4608323b325477547515fce5b",
+          "numeric_seed": 9500019,
+          "route_sha256": "5ba889aada7d05541651deb3bc02e6c1a69cbcb97798f8171d8e0083585e8247"
+        },
+        {
+          "full_task_sha256": "0dbc59079637585c2357622a5fe5fa977ef2e412213990ded79b452e69b4c87c",
+          "numeric_seed": 9500020,
+          "route_sha256": "daac97232e7d89a3a95b63d48100acd90766f3bc07e93f7c3e22c6210e3bf1aa"
+        },
+        {
+          "full_task_sha256": "a31c6e727893edfce7feadadcd4d3c9c9650c8694bf0414f9ba9de53eb7f3142",
+          "numeric_seed": 9500021,
+          "route_sha256": "48f9c45c784b388b0729a430cd65500670f243619be836d6e08a89f61f87fcfb"
+        },
+        {
+          "full_task_sha256": "2bbde2c45a2d699725785c9e5394712bb7b18d69d91c98d9978d63c2aa28465c",
+          "numeric_seed": 9500022,
+          "route_sha256": "1d38aebf356645345f29d7da3638f97772c4916e4febb65366ca29c738b726dd"
+        }
+      ]
+    }
+  },
+  "paper": {
+    "content_fingerprints_constructed": 0,
+    "numeric_seeds": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017
+    ],
+    "state": "SEALED_UNINSPECTED"
+  },
+  "physical_reference": {
+    "base_commit": "3d9e8bcb72ecf4a01be192036df8f00c5ac9de8e",
+    "controller_configuration": {
+      "braking_position_margin_m": 0.5,
+      "causal_cruise_cap_m_s": 16.666666666666668,
+      "oracle_energy_refinement_iterations": 10,
+      "velocity_safety_margin_m_s": 1e-06
+    },
+    "scientific_configuration_sha256": "f63717504a810c75d7080388aeb159505cf667ad13248dbe4a53ec0c4bb94cd1",
+    "source_sha256_expected": {
+      "causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "diagnostics.py": "51ad2c904e6a7dc51f562541ce0428a65af17de0ddd1e79a0bce15f0ac9bb22f",
+      "evaluation.py": "a88727a457ef7310bcaf388ae92d07189fe79cf8e6b3efa2010aea8f183b1a08",
+      "feasibility.py": "04e15e15eebcce6d6f9dc1f984922dbc65770be4b7c4b9c318fdf1614657c0a7",
+      "oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+      "runner.py": "ebbe0784b6930761e17a76507cb3c5553d19f82859329ed49ba8a76f10374651"
+    },
+    "source_sha256_observed": {
+      "causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "diagnostics.py": "51ad2c904e6a7dc51f562541ce0428a65af17de0ddd1e79a0bce15f0ac9bb22f",
+      "evaluation.py": "a88727a457ef7310bcaf388ae92d07189fe79cf8e6b3efa2010aea8f183b1a08",
+      "feasibility.py": "04e15e15eebcce6d6f9dc1f984922dbc65770be4b7c4b9c318fdf1614657c0a7",
+      "oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+      "runner.py": "ebbe0784b6930761e17a76507cb3c5553d19f82859329ed49ba8a76f10374651"
+    },
+    "verified": true,
+    "worktree_head": "eef0d793c3bb28509e606842a936be9cdfa6b657"
+  },
+  "planned_comparisons": [
+    "per-panel Oracle and causal RSR/completion/deadline/speed",
+    "paired feasible-only causal-minus-Oracle energy and travel time",
+    "RL-failed policy-track pairs with Oracle/causal witnesses",
+    "distinct RL-failed tracks with Oracle/causal witnesses",
+    "RL failure modes by policy, seed, method, and panel",
+    "RL-minus-reference energy only when both trajectories are feasible"
+  ],
+  "protocol_sha256": "34c6e054a86635e8fccb90400d0f78cdeae98c3faee747de5eb9f008a319e200",
+  "rl_execution": {
+    "actors_loaded": false,
+    "policies_rerun": false,
+    "source": "immutable episode metrics read with git show",
+    "training_or_adaptation": false
+  },
+  "runner_sha256": "064362ff6f4618cdd2e257c9829c4895c72ee1787964b64dabbebebfd77a42c7",
+  "schema_version": 1,
+  "study": "post-hoc contextual physical-reference analysis"
+}

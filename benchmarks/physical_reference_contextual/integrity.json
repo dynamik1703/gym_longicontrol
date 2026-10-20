@@ -1,0 +1,36 @@
+{
+  "controller_hashes_verified": true,
+  "freeze_sha256": "d5aba16067268e430c5fe8ba8465005996f2e32697c91f315c3566a98fef3ff0",
+  "immutable_rl_artifacts_verified": true,
+  "paper": {
+    "content_fingerprints_constructed": 0,
+    "numeric_seeds": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017
+    ],
+    "state": "SEALED_UNINSPECTED"
+  },
+  "protocol_sha256": "34c6e054a86635e8fccb90400d0f78cdeae98c3faee747de5eb9f008a319e200",
+  "rl_policies_rerun": false,
+  "runner_sha256": "064362ff6f4618cdd2e257c9829c4895c72ee1787964b64dabbebebfd77a42c7",
+  "runtime_task_fingerprints_verified": 36,
+  "schema_version": 1,
+  "scientific_episode_records": 0,
+  "stage": "PREEXECUTION_FROZEN"
+}
