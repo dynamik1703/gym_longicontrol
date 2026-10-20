@@ -114,7 +114,7 @@
     "main_training_enabled": false,
     "same_attempt_exact_resume_authorized": true,
     "fresh_restart_authorized": false,
-    "validation_authorized": true,
+    "validation_authorized": false,
     "paper_test_authorized": false
   }
 }
