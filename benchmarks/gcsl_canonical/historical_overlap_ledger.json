@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "state": "RECORDED_BEFORE_GCSL_TRAINING",
+  "scope_decision": {
+    "fixed_training_streams": "Preserve the exact canonical G11/G29/G47 streams. Historical-content overlap is permitted and disclosed.",
+    "current_gcsl_evaluation_reserved": [
+      "GCSL_DIAGNOSTIC_V1",
+      "GCSL_VALIDATION_V1"
+    ],
+    "historically_opened_content": "Excluded from selection of new GCSL evaluation tasks, but not a reason to alter the fixed canonical training streams.",
+    "paper": "Seeds 4000-4017 are numeric exclusions only; their content remains sealed and uninspected."
+  },
+  "matching_fields": [
+    "route_sha256",
+    "full_task_sha256"
+  ],
+  "collision_count": 6,
+  "collisions": [
+    {
+      "training_policy": "G11",
+      "accepted_task_index": 104,
+      "reset_seed": 105371547,
+      "historical_set": "diagnostic",
+      "historical_numeric_seed": 9000002,
+      "route_sha256": "b8b3d1cab9efa229ea797fa4b96805cb5d311831587c3d9714bd27f0f4344b6e",
+      "full_task_sha256": "210fc7ca5e9dc721b3cb6cba2c0bc4a4e058e89ead866449e8776f8d34c072db"
+    },
+    {
+      "training_policy": "G29",
+      "accepted_task_index": 235,
+      "reset_seed": 69106380,
+      "historical_set": "diagnostic",
+      "historical_numeric_seed": 9000002,
+      "route_sha256": "b8b3d1cab9efa229ea797fa4b96805cb5d311831587c3d9714bd27f0f4344b6e",
+      "full_task_sha256": "210fc7ca5e9dc721b3cb6cba2c0bc4a4e058e89ead866449e8776f8d34c072db"
+    },
+    {
+      "training_policy": "G29",
+      "accepted_task_index": 646,
+      "reset_seed": 697284428,
+      "historical_set": "V1 exploratory",
+      "historical_numeric_seed": 1007,
+      "route_sha256": "7a62dc51162e8bf874e8c5bb22c522d738973b40af23a064581c0f1dad6f30cf",
+      "full_task_sha256": "d9bb0313b15e0417ff19d6797a65c2e6295ed1ad9e988492c190c1080745b531"
+    },
+    {
+      "training_policy": "G47",
+      "accepted_task_index": 531,
+      "reset_seed": 246512140,
+      "historical_set": "diagnostic",
+      "historical_numeric_seed": 9000005,
+      "route_sha256": "37421e43f27b4e72f5516f962be36e23c86f15be602f66ecd23151c561b6369c",
+      "full_task_sha256": "3a04942965fea88d7969485a38756d84bb473f0ee60d1757572557d31f094c6b"
+    },
+    {
+      "training_policy": "G47",
+      "accepted_task_index": 608,
+      "reset_seed": 1275503705,
+      "historical_set": "diagnostic",
+      "historical_numeric_seed": 9000005,
+      "route_sha256": "37421e43f27b4e72f5516f962be36e23c86f15be602f66ecd23151c561b6369c",
+      "full_task_sha256": "3a04942965fea88d7969485a38756d84bb473f0ee60d1757572557d31f094c6b"
+    },
+    {
+      "training_policy": "G47",
+      "accepted_task_index": 689,
+      "reset_seed": 2015894932,
+      "historical_set": "diagnostic",
+      "historical_numeric_seed": 9000002,
+      "route_sha256": "b8b3d1cab9efa229ea797fa4b96805cb5d311831587c3d9714bd27f0f4344b6e",
+      "full_task_sha256": "210fc7ca5e9dc721b3cb6cba2c0bc4a4e058e89ead866449e8776f8d34c072db"
+    }
+  ],
+  "effect_on_current_study_gate": "NONE: none of these historical tasks is a GCSL scientific diagnostic or Validation outcome.",
+  "required_current_study_gate": "Every reachable G11/G29/G47 training task must be route- and full-task-disjoint from GCSL_DIAGNOSTIC_V1 and GCSL_VALIDATION_V1."
+}
