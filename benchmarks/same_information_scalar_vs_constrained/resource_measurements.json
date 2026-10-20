@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "preparation_simulator_transitions": 2061,
+  "resource_pilot_simulator_transitions": 2048,
+  "verification_simulator_transitions": 13,
+  "new_policy_evaluations": 0,
+  "pilot": {
+    "fixture_seeds_used": [0, 1],
+    "transitions": 2048,
+    "updates": 204,
+    "walltime_s": 3.497150917071849,
+    "collection_walltime_s": 2.255152236437425,
+    "update_walltime_s": 1.2372039211913943,
+    "transitions_per_second_including_updates": 585.6195653445756,
+    "updates_per_second": 164.8879352108369,
+    "checkpoint": {
+      "size_bytes": 55773429,
+      "sha256": "b73f408fa5bc354eb5c8ecd8a3850df60535223b5774ee8125c77c956bee5971",
+      "write_s": 0.20360400003846735,
+      "load_s": 0.06219933298416436
+    },
+    "outcomes_used_for_science": false
+  },
+  "diagnostic_evaluation_cost": {
+    "seconds_per_episode": 0.3485704306513071,
+    "source": "completed collector-replication resource pilot; identical deterministic actor path",
+    "new_evaluation_run": false
+  },
+  "projection": {
+    "one_scalar_policy_s": 512.2779663679466,
+    "three_scalar_policies_s": 1536.83389910384,
+    "diagnostic_episodes": 648,
+    "validation_episodes": 108,
+    "all_evaluation_s": 263.5192455723882,
+    "checkpoint_overhead_s": 1419.9852450558683,
+    "new_main_study_walltime_h": 0.894538441592249,
+    "retained_checkpoint_count": 21,
+    "conservative_checkpoint_size_bytes": 151275789,
+    "retained_new_artifacts_gb": 3.176791569
+  },
+  "gates": {
+    "runtime_limit_h": 12.0,
+    "runtime_pass": true,
+    "disk_limit_gb": 12.0,
+    "disk_pass": true
+  },
+  "passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "strategy": "Reproduce the pinned historical three-critic constructor, retain its actor and first double-Q reward critic, and discard both temporary cost critics before constructing the one-critic Scalar policy.",
+  "by_seed": {
+    "11": {
+      "actor_sha256": "72e9207137ecd2f8e1c6506915f1348eb59f47133a3b181cbf09098888e928c5",
+      "reward_critic_sha256": "b3b6f1dbeaa139a78715d7aa3671036046da9b32e222ee9c9c13bddbf2511649",
+      "scalar_matches_constrained": true
+    },
+    "29": {
+      "actor_sha256": "bceb32a07c4bfff3483359fc27cedec10b827377290f3e1e647c411421b56b8b",
+      "reward_critic_sha256": "085d0cf06d7c4c447ba3d5aaddc466df7a62236bcbb42c7148511469b9c957f0",
+      "scalar_matches_constrained": true
+    },
+    "47": {
+      "actor_sha256": "50a88eb93702768167d6729ab1a4fcb475d10d538dc35b00a8b6c858a6fb7bfb",
+      "reward_critic_sha256": "f0747a2186372f19c6d1009e6bf8e4e4c1d1a985bd8ddf97a409a9a53c227ae1",
+      "scalar_matches_constrained": true
+    }
+  },
+  "scalar_runtime_structure": {
+    "critic_systems": 1,
+    "double_q_heads": 2,
+    "cost_critics": 0,
+    "pid_optimizers": 0,
+    "lagrangian_enabled": false
+  },
+  "passed": true
+}

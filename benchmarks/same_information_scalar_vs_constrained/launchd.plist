@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>org.longicontrol.same-information-scalar-vs-constrained</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/romanliessner/gitlab/gym_longicontrol_multistep_mbrl/.venv/bin/python</string>
+    <string>-m</string>
+    <string>benchmarks.same_information_scalar_vs_constrained.runner</string>
+    <string>matrix</string>
+    <string>--output-root</string>
+    <string>/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONPATH</key>
+    <string>/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar</string>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+    <key>PYTHONDONTWRITEBYTECODE</key>
+    <string>1</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained/launcher.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/romanliessner/gitlab/gym_longicontrol_sameinfo_scalar/runs/same-information-scalar-vs-constrained/launcher.stderr.log</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>

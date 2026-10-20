@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audited_at_source_commit": "38a8c7cc6789ae22d44de2b6f6cd3c84352c4b62",
+  "reference_constrained_verified": true,
+  "matched_retraining_required": false,
+  "all_scientific_checkpoints_present": true,
+  "checkpoint_steps": [50000, 100000, 150000, 200000, 250000, 300000],
+  "final": {
+    "11": {
+      "condition": "T11_transitional_seed11",
+      "checkpoint_sha256": "e2047a6e9bf217d020e708d32104f24e35d8e34dd7d4900cc87d29cdc069ff1d",
+      "size_bytes": 77273485,
+      "real_transitions": 300000,
+      "gradient_updates": 30000,
+      "lambda_speed": 1.737065439763169,
+      "lambda_deadline": 1.0015569080594906
+    },
+    "29": {
+      "condition": "T29_transitional_seed29",
+      "checkpoint_sha256": "d5284426d802163fe8f3045789293e721e81f462771988fe648cf909e8f575db",
+      "size_bytes": 77349453,
+      "real_transitions": 300000,
+      "gradient_updates": 30000,
+      "lambda_speed": 1.4009421299572349,
+      "lambda_deadline": 1.5752363435900516
+    },
+    "47": {
+      "condition": "T47_transitional_seed47",
+      "checkpoint_sha256": "e828dc0babb42e20b9f5f33bdedbc300bafe21ccdedee101b8ba84b715919e35",
+      "size_bytes": 77577357,
+      "real_transitions": 300000,
+      "gradient_updates": 30000,
+      "lambda_speed": 1.3904230583041928,
+      "lambda_deadline": 2.3950774369414662
+    }
+  },
+  "canonical_stream_sha256": {
+    "11": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+    "29": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+    "47": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255"
+  }
+}
