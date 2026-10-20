@@ -1,0 +1,3405 @@
+{
+  "panels": {
+    "gcsl": {
+      "evaluation_id": "GCSL_VALIDATION_V1",
+      "physical_references": {
+        "aggregate_mean_energy_difference_percent": 31.070011072927954,
+        "both_references_feasible_count": 18,
+        "energy_causal_minus_oracle_kwh": {
+          "count": 18,
+          "maximum": 0.09912001629219622,
+          "mean": 0.04735638103376164,
+          "median": 0.048720039050405214,
+          "minimum": 0.013860184087349042,
+          "values": [
+            0.05107571741340297,
+            0.07201651211538224,
+            0.0379305384927916,
+            0.03090161518948356,
+            0.0258300075859057,
+            0.023611279038919908,
+            0.08628733181474424,
+            0.05848705731057635,
+            0.051858362386415224,
+            0.09912001629219622,
+            0.03772677011085368,
+            0.019926708731023646,
+            0.04969280142410959,
+            0.058184163497256663,
+            0.030567942971260975,
+            0.04774727667670084,
+            0.013860184087349042,
+            0.05759057346933713
+          ]
+        },
+        "energy_causal_minus_oracle_percent_per_track": {
+          "count": 18,
+          "maximum": 62.42787669123474,
+          "mean": 30.927144991887683,
+          "median": 32.57176596201517,
+          "minimum": 8.775575863284661,
+          "values": [
+            34.14665395095876,
+            46.335178800409736,
+            25.68613091283781,
+            20.03428165753445,
+            17.268643011857343,
+            15.785312777025313,
+            55.6570282050658,
+            36.8363821799061,
+            33.57952152577128,
+            62.42787669123474,
+            25.22221965549214,
+            13.321994518695858,
+            33.22210592459551,
+            37.52993122800007,
+            20.4361881436517,
+            31.921425999434828,
+            8.775575863284661,
+            38.502158808222205
+          ]
+        },
+        "per_track": [
+          {
+            "causal_energy_kwh": 0.2006532352772547,
+            "causal_minus_oracle_energy_kwh": 0.05107571741340297,
+            "causal_minus_oracle_energy_percent": 34.14665395095876,
+            "causal_minus_oracle_travel_time_s": -38.19999999999783,
+            "causal_travel_time_s": 86.99999999999933,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700000
+          },
+          {
+            "causal_energy_kwh": 0.22744164260985095,
+            "causal_minus_oracle_energy_kwh": 0.07201651211538224,
+            "causal_minus_oracle_energy_percent": 46.335178800409736,
+            "causal_minus_oracle_travel_time_s": -35.499999999997996,
+            "causal_travel_time_s": 95.69999999999884,
+            "oracle_energy_kwh": 0.1554251304944687,
+            "oracle_travel_time_s": 131.19999999999683,
+            "track_seed": 9700001
+          },
+          {
+            "causal_energy_kwh": 0.18559987266189407,
+            "causal_minus_oracle_energy_kwh": 0.0379305384927916,
+            "causal_minus_oracle_energy_percent": 25.68613091283781,
+            "causal_minus_oracle_travel_time_s": -27.199999999998468,
+            "causal_travel_time_s": 103.89999999999837,
+            "oracle_energy_kwh": 0.14766933416910247,
+            "oracle_travel_time_s": 131.09999999999684,
+            "track_seed": 9700002
+          },
+          {
+            "causal_energy_kwh": 0.18514530466992044,
+            "causal_minus_oracle_energy_kwh": 0.03090161518948356,
+            "causal_minus_oracle_energy_percent": 20.03428165753445,
+            "causal_minus_oracle_travel_time_s": -35.99999999999797,
+            "causal_travel_time_s": 103.89999999999837,
+            "oracle_energy_kwh": 0.15424368948043687,
+            "oracle_travel_time_s": 139.89999999999634,
+            "track_seed": 9700003
+          },
+          {
+            "causal_energy_kwh": 0.17540752544975743,
+            "causal_minus_oracle_energy_kwh": 0.0258300075859057,
+            "causal_minus_oracle_energy_percent": 17.268643011857343,
+            "causal_minus_oracle_travel_time_s": -7.899999999999551,
+            "causal_travel_time_s": 117.29999999999761,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700004
+          },
+          {
+            "causal_energy_kwh": 0.17318879690277164,
+            "causal_minus_oracle_energy_kwh": 0.023611279038919908,
+            "causal_minus_oracle_energy_percent": 15.785312777025313,
+            "causal_minus_oracle_travel_time_s": -19.19999999999891,
+            "causal_travel_time_s": 105.99999999999825,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700005
+          },
+          {
+            "causal_energy_kwh": 0.24132135823962353,
+            "causal_minus_oracle_energy_kwh": 0.08628733181474424,
+            "causal_minus_oracle_energy_percent": 55.6570282050658,
+            "causal_minus_oracle_travel_time_s": -35.399999999998,
+            "causal_travel_time_s": 95.79999999999883,
+            "oracle_energy_kwh": 0.1550340264248793,
+            "oracle_travel_time_s": 131.19999999999683,
+            "track_seed": 9700006
+          },
+          {
+            "causal_energy_kwh": 0.21726230571833255,
+            "causal_minus_oracle_energy_kwh": 0.05848705731057635,
+            "causal_minus_oracle_energy_percent": 36.8363821799061,
+            "causal_minus_oracle_travel_time_s": -32.99999999999814,
+            "causal_travel_time_s": 106.7999999999982,
+            "oracle_energy_kwh": 0.1587752484077562,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9700007
+          },
+          {
+            "causal_energy_kwh": 0.20629285111674298,
+            "causal_minus_oracle_energy_kwh": 0.051858362386415224,
+            "causal_minus_oracle_energy_percent": 33.57952152577128,
+            "causal_minus_oracle_travel_time_s": -29.29999999999835,
+            "causal_travel_time_s": 110.19999999999801,
+            "oracle_energy_kwh": 0.15443448873032775,
+            "oracle_travel_time_s": 139.49999999999636,
+            "track_seed": 9700008
+          },
+          {
+            "causal_energy_kwh": 0.2578952646999533,
+            "causal_minus_oracle_energy_kwh": 0.09912001629219622,
+            "causal_minus_oracle_energy_percent": 62.42787669123474,
+            "causal_minus_oracle_travel_time_s": -30.899999999998258,
+            "causal_travel_time_s": 108.89999999999809,
+            "oracle_energy_kwh": 0.15877524840775706,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9700009
+          },
+          {
+            "causal_energy_kwh": 0.1873042879747054,
+            "causal_minus_oracle_energy_kwh": 0.03772677011085368,
+            "causal_minus_oracle_energy_percent": 25.22221965549214,
+            "causal_minus_oracle_travel_time_s": -62.099999999996534,
+            "causal_travel_time_s": 63.10000000000063,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700010
+          },
+          {
+            "causal_energy_kwh": 0.16950422659487538,
+            "causal_minus_oracle_energy_kwh": 0.019926708731023646,
+            "causal_minus_oracle_energy_percent": 13.321994518695858,
+            "causal_minus_oracle_travel_time_s": -46.59999999999735,
+            "causal_travel_time_s": 78.59999999999981,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700011
+          },
+          {
+            "causal_energy_kwh": 0.19927031928796132,
+            "causal_minus_oracle_energy_kwh": 0.04969280142410959,
+            "causal_minus_oracle_energy_percent": 33.22210592459551,
+            "causal_minus_oracle_travel_time_s": -35.599999999997976,
+            "causal_travel_time_s": 89.59999999999918,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700012
+          },
+          {
+            "causal_energy_kwh": 0.21321818992213595,
+            "causal_minus_oracle_energy_kwh": 0.058184163497256663,
+            "causal_minus_oracle_energy_percent": 37.52993122800007,
+            "causal_minus_oracle_travel_time_s": -35.59999999999799,
+            "causal_travel_time_s": 95.59999999999884,
+            "oracle_energy_kwh": 0.1550340264248793,
+            "oracle_travel_time_s": 131.19999999999683,
+            "track_seed": 9700013
+          },
+          {
+            "causal_energy_kwh": 0.1801454608351127,
+            "causal_minus_oracle_energy_kwh": 0.030567942971260975,
+            "causal_minus_oracle_energy_percent": 20.4361881436517,
+            "causal_minus_oracle_travel_time_s": -55.39999999999685,
+            "causal_travel_time_s": 69.80000000000031,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700014
+          },
+          {
+            "causal_energy_kwh": 0.19732479454055257,
+            "causal_minus_oracle_energy_kwh": 0.04774727667670084,
+            "causal_minus_oracle_energy_percent": 31.921425999434828,
+            "causal_minus_oracle_travel_time_s": -30.199999999998283,
+            "causal_travel_time_s": 94.99999999999888,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700015
+          },
+          {
+            "causal_energy_kwh": 0.1718006349851347,
+            "causal_minus_oracle_energy_kwh": 0.013860184087349042,
+            "causal_minus_oracle_energy_percent": 8.775575863284661,
+            "causal_minus_oracle_travel_time_s": -9.799999999999443,
+            "causal_travel_time_s": 130.1999999999969,
+            "oracle_energy_kwh": 0.15794045089778566,
+            "oracle_travel_time_s": 139.99999999999633,
+            "track_seed": 9700017
+          },
+          {
+            "causal_energy_kwh": 0.20716809133318886,
+            "causal_minus_oracle_energy_kwh": 0.05759057346933713,
+            "causal_minus_oracle_energy_percent": 38.502158808222205,
+            "causal_minus_oracle_travel_time_s": -55.99999999999682,
+            "causal_travel_time_s": 69.20000000000034,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9700018
+          }
+        ],
+        "travel_time_causal_minus_oracle_s": {
+          "count": 18,
+          "maximum": -7.899999999999551,
+          "mean": -34.66111111110915,
+          "median": -35.449999999998,
+          "minimum": -62.099999999996534,
+          "values": [
+            -38.19999999999783,
+            -35.499999999997996,
+            -27.199999999998468,
+            -35.99999999999797,
+            -7.899999999999551,
+            -19.19999999999891,
+            -35.399999999998,
+            -32.99999999999814,
+            -29.29999999999835,
+            -30.899999999998258,
+            -62.099999999996534,
+            -46.59999999999735,
+            -35.599999999997976,
+            -35.59999999999799,
+            -55.39999999999685,
+            -30.199999999998283,
+            -9.799999999999443,
+            -55.99999999999682
+          ]
+        }
+      },
+      "rl_failed_witness_analysis": {
+        "by_policy_and_training_seed": {
+          "C11": {
+            "distinct_failed_tracks_causal_feasible": 8,
+            "distinct_failed_tracks_oracle_feasible": 8,
+            "distinct_rl_failed_tracks": 8,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "deadline": 4,
+              "deadline+speed": 2,
+              "incomplete+deadline": 1,
+              "speed": 1
+            },
+            "failure_components": {
+              "deadline_related": 7,
+              "noncompletion": 1,
+              "speed_related": 3
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 10,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.16542545777792853,
+                    "rl_minus_reference_energy_kwh": -0.03522777749932618,
+                    "rl_minus_reference_energy_percent": -17.556545973779006,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.22744164260985095,
+                    "rl_energy_kwh": 0.17090858869820402,
+                    "rl_minus_reference_energy_kwh": -0.056533053911646924,
+                    "rl_minus_reference_energy_percent": -24.856070006767688,
+                    "track_seed": 9700001
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.18514530466992044,
+                    "rl_energy_kwh": 0.1750922753043164,
+                    "rl_minus_reference_energy_kwh": -0.010053029365604038,
+                    "rl_minus_reference_energy_percent": -5.429805191941926,
+                    "track_seed": 9700003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.24132135823962353,
+                    "rl_energy_kwh": 0.17040807420532605,
+                    "rl_minus_reference_energy_kwh": -0.07091328403429747,
+                    "rl_minus_reference_energy_percent": -29.385415593377815,
+                    "track_seed": 9700006
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.19581908810536977,
+                    "rl_minus_reference_energy_kwh": 0.008514800130664357,
+                    "rl_minus_reference_energy_percent": 4.545971810220513,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.17978461778976237,
+                    "rl_minus_reference_energy_kwh": 0.010280391194886995,
+                    "rl_minus_reference_energy_percent": 6.064976314400529,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19927031928796132,
+                    "rl_energy_kwh": 0.1649683175219248,
+                    "rl_minus_reference_energy_kwh": -0.03430200176603651,
+                    "rl_minus_reference_energy_percent": -17.213803786035697,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.16673393585492127,
+                    "rl_minus_reference_energy_kwh": -0.013411524980191436,
+                    "rl_minus_reference_energy_percent": -7.444830926085346,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19732479454055257,
+                    "rl_energy_kwh": 0.1668319489947775,
+                    "rl_minus_reference_energy_kwh": -0.030492845545775082,
+                    "rl_minus_reference_energy_percent": -15.453124183797614,
+                    "track_seed": 9700015
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.17052132030042527,
+                    "rl_minus_reference_energy_kwh": -0.03664677103276359,
+                    "rl_minus_reference_energy_percent": -17.68938971099778,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 10,
+                  "maximum": 0.010280391194886995,
+                  "mean": -0.026878509681008987,
+                  "median": -0.0323974236559058,
+                  "minimum": -0.07091328403429747,
+                  "values": [
+                    -0.03522777749932618,
+                    -0.056533053911646924,
+                    -0.010053029365604038,
+                    -0.07091328403429747,
+                    0.008514800130664357,
+                    0.010280391194886995,
+                    -0.03430200176603651,
+                    -0.013411524980191436,
+                    -0.030492845545775082,
+                    -0.03664677103276359
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 10,
+                  "maximum": 6.064976314400529,
+                  "mean": -12.441803724816182,
+                  "median": -16.333463984916655,
+                  "minimum": -29.385415593377815,
+                  "values": [
+                    -17.556545973779006,
+                    -24.856070006767688,
+                    -5.429805191941926,
+                    -29.385415593377815,
+                    4.545971810220513,
+                    6.064976314400529,
+                    -17.213803786035697,
+                    -7.444830926085346,
+                    -15.453124183797614,
+                    -17.68938971099778
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 10,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16542545777792853,
+                    "rl_minus_reference_energy_kwh": 0.015847939914076792,
+                    "rl_minus_reference_energy_percent": 10.595134977772451,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1554251304944687,
+                    "rl_energy_kwh": 0.17090858869820402,
+                    "rl_minus_reference_energy_kwh": 0.015483458203735312,
+                    "rl_minus_reference_energy_percent": 9.96200431325122,
+                    "track_seed": 9700001
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.15424368948043687,
+                    "rl_energy_kwh": 0.1750922753043164,
+                    "rl_minus_reference_energy_kwh": 0.020848585823879523,
+                    "rl_minus_reference_energy_percent": 13.516653999983449,
+                    "track_seed": 9700003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1550340264248793,
+                    "rl_energy_kwh": 0.17040807420532605,
+                    "rl_minus_reference_energy_kwh": 0.015374047780446765,
+                    "rl_minus_reference_energy_percent": 9.916563566705891,
+                    "track_seed": 9700006
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19581908810536977,
+                    "rl_minus_reference_energy_kwh": 0.04624157024151804,
+                    "rl_minus_reference_energy_percent": 30.91478646116322,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17978461778976237,
+                    "rl_minus_reference_energy_kwh": 0.03020709992591064,
+                    "rl_minus_reference_energy_percent": 20.194946645261027,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1649683175219248,
+                    "rl_minus_reference_energy_kwh": 0.015390799658073079,
+                    "rl_minus_reference_energy_percent": 10.289514011110997,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16673393585492127,
+                    "rl_minus_reference_energy_kwh": 0.01715641799106954,
+                    "rl_minus_reference_energy_percent": 11.469917562534787,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1668319489947775,
+                    "rl_minus_reference_energy_kwh": 0.017254431130925757,
+                    "rl_minus_reference_energy_percent": 11.53544421470549,
+                    "track_seed": 9700015
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17052132030042527,
+                    "rl_minus_reference_energy_kwh": 0.02094380243657354,
+                    "rl_minus_reference_energy_percent": 14.001972178490742,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 10,
+                  "maximum": 0.04624157024151804,
+                  "mean": 0.0214748153106209,
+                  "median": 0.017205424560997648,
+                  "minimum": 0.015374047780446765,
+                  "values": [
+                    0.015847939914076792,
+                    0.015483458203735312,
+                    0.020848585823879523,
+                    0.015374047780446765,
+                    0.04624157024151804,
+                    0.03020709992591064,
+                    0.015390799658073079,
+                    0.01715641799106954,
+                    0.017254431130925757,
+                    0.02094380243657354
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 10,
+                  "maximum": 30.91478646116322,
+                  "mean": 14.239693793097928,
+                  "median": 11.502680888620139,
+                  "minimum": 9.916563566705891,
+                  "values": [
+                    10.595134977772451,
+                    9.96200431325122,
+                    13.516653999983449,
+                    9.916563566705891,
+                    30.91478646116322,
+                    20.194946645261027,
+                    10.289514011110997,
+                    11.469917562534787,
+                    11.53544421470549,
+                    14.001972178490742
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 8,
+            "rl_failed_pairs_oracle_feasible": 8,
+            "rl_failed_policy_track_pairs": 8,
+            "training_seed": 11
+          },
+          "C29": {
+            "distinct_failed_tracks_causal_feasible": 12,
+            "distinct_failed_tracks_oracle_feasible": 12,
+            "distinct_rl_failed_tracks": 12,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "deadline": 3,
+              "deadline+speed": 2,
+              "incomplete+deadline": 6,
+              "incomplete+deadline+speed": 1
+            },
+            "failure_components": {
+              "deadline_related": 12,
+              "noncompletion": 7,
+              "speed_related": 3
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 6,
+                "pairs": [
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.22203260227755406,
+                    "rl_minus_reference_energy_kwh": 0.021379367000299354,
+                    "rl_minus_reference_energy_percent": 10.654882773635913,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.17318879690277164,
+                    "rl_energy_kwh": 0.16464692261139727,
+                    "rl_minus_reference_energy_kwh": -0.008541874291374374,
+                    "rl_minus_reference_energy_percent": -4.932117113885716,
+                    "track_seed": 9700005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.274946172798953,
+                    "rl_minus_reference_energy_kwh": 0.08764188482424759,
+                    "rl_minus_reference_energy_percent": 46.791179087199126,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.19970169807714855,
+                    "rl_minus_reference_energy_kwh": 0.03019747148227317,
+                    "rl_minus_reference_energy_percent": 17.815173160517595,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.22083896522940924,
+                    "rl_minus_reference_energy_kwh": 0.04069350439429653,
+                    "rl_minus_reference_energy_percent": 22.589247714403047,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.2313965268436173,
+                    "rl_minus_reference_energy_kwh": 0.024228435510428442,
+                    "rl_minus_reference_energy_percent": 11.69506141342095,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 6,
+                  "maximum": 0.08764188482424759,
+                  "mean": 0.03259979815336179,
+                  "median": 0.027212953496350806,
+                  "minimum": -0.008541874291374374,
+                  "values": [
+                    0.021379367000299354,
+                    -0.008541874291374374,
+                    0.08764188482424759,
+                    0.03019747148227317,
+                    0.04069350439429653,
+                    0.024228435510428442
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 6,
+                  "maximum": 46.791179087199126,
+                  "mean": 17.435571172548485,
+                  "median": 14.755117286969273,
+                  "minimum": -4.932117113885716,
+                  "values": [
+                    10.654882773635913,
+                    -4.932117113885716,
+                    46.791179087199126,
+                    17.815173160517595,
+                    22.589247714403047,
+                    11.69506141342095
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 6,
+                "pairs": [
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.22203260227755406,
+                    "rl_minus_reference_energy_kwh": 0.07245508441370233,
+                    "rl_minus_reference_energy_percent": 48.43982267418845,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16464692261139727,
+                    "rl_minus_reference_energy_kwh": 0.015069404747545534,
+                    "rl_minus_reference_energy_percent": 10.074645550183543,
+                    "track_seed": 9700005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.274946172798953,
+                    "rl_minus_reference_energy_kwh": 0.12536865493510127,
+                    "rl_minus_reference_energy_percent": 83.81517271145934,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19970169807714855,
+                    "rl_minus_reference_energy_kwh": 0.050124180213296815,
+                    "rl_minus_reference_energy_percent": 33.51050407115378,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.22083896522940924,
+                    "rl_minus_reference_energy_kwh": 0.0712614473655575,
+                    "rl_minus_reference_energy_percent": 47.641817021205696,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.2313965268436173,
+                    "rl_minus_reference_energy_kwh": 0.08181900897976557,
+                    "rl_minus_reference_energy_percent": 54.700071339757606,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 6,
+                  "maximum": 0.12536865493510127,
+                  "mean": 0.06934963010916151,
+                  "median": 0.07185826588962992,
+                  "minimum": 0.015069404747545534,
+                  "values": [
+                    0.07245508441370233,
+                    0.015069404747545534,
+                    0.12536865493510127,
+                    0.050124180213296815,
+                    0.0712614473655575,
+                    0.08181900897976557
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 6,
+                  "maximum": 83.81517271145934,
+                  "mean": 46.3636722279914,
+                  "median": 48.04081984769707,
+                  "minimum": 10.074645550183543,
+                  "values": [
+                    48.43982267418845,
+                    10.074645550183543,
+                    83.81517271145934,
+                    33.51050407115378,
+                    47.641817021205696,
+                    54.700071339757606
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 12,
+            "rl_failed_pairs_oracle_feasible": 12,
+            "rl_failed_policy_track_pairs": 12,
+            "training_seed": 29
+          },
+          "C47": {
+            "distinct_failed_tracks_causal_feasible": 12,
+            "distinct_failed_tracks_oracle_feasible": 12,
+            "distinct_rl_failed_tracks": 12,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "deadline": 3,
+              "deadline+speed": 1,
+              "incomplete+deadline": 7,
+              "incomplete+deadline+speed": 1
+            },
+            "failure_components": {
+              "deadline_related": 12,
+              "noncompletion": 8,
+              "speed_related": 2
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 6,
+                "pairs": [
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.18306456886978895,
+                    "rl_minus_reference_energy_kwh": -0.01758866640746576,
+                    "rl_minus_reference_energy_percent": -8.765702872003253,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.21633184677225623,
+                    "rl_minus_reference_energy_kwh": 0.029027558797550812,
+                    "rl_minus_reference_energy_percent": 15.497540986072273,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.16905269424004604,
+                    "rl_minus_reference_energy_kwh": -0.00045153235482933707,
+                    "rl_minus_reference_energy_percent": -0.2663841273459952,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19927031928796132,
+                    "rl_energy_kwh": 0.19036043818277676,
+                    "rl_minus_reference_energy_kwh": -0.008909881105184564,
+                    "rl_minus_reference_energy_percent": -4.471253489742787,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.16701775800234445,
+                    "rl_minus_reference_energy_kwh": -0.013127702832768262,
+                    "rl_minus_reference_energy_percent": -7.287279275265258,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.20061554753280872,
+                    "rl_minus_reference_energy_kwh": -0.006552543800380145,
+                    "rl_minus_reference_energy_percent": -3.162911700451821,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 6,
+                  "maximum": 0.029027558797550812,
+                  "mean": -0.0029337946171795423,
+                  "median": -0.0077312124527823545,
+                  "minimum": -0.01758866640746576,
+                  "values": [
+                    -0.01758866640746576,
+                    0.029027558797550812,
+                    -0.00045153235482933707,
+                    -0.008909881105184564,
+                    -0.013127702832768262,
+                    -0.006552543800380145
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 6,
+                  "maximum": 15.497540986072273,
+                  "mean": -1.4093317464561401,
+                  "median": -3.817082595097304,
+                  "minimum": -8.765702872003253,
+                  "values": [
+                    -8.765702872003253,
+                    15.497540986072273,
+                    -0.2663841273459952,
+                    -4.471253489742787,
+                    -7.287279275265258,
+                    -3.162911700451821
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 6,
+                "pairs": [
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18306456886978895,
+                    "rl_minus_reference_energy_kwh": 0.03348705100593721,
+                    "rl_minus_reference_energy_percent": 22.387756852883303,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21633184677225623,
+                    "rl_minus_reference_energy_kwh": 0.06675432890840449,
+                    "rl_minus_reference_energy_percent": 44.628584470271484,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16905269424004604,
+                    "rl_minus_reference_energy_kwh": 0.01947517637619431,
+                    "rl_minus_reference_energy_percent": 13.020122712506154,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19036043818277676,
+                    "rl_minus_reference_energy_kwh": 0.040782920318925026,
+                    "rl_minus_reference_energy_percent": 27.265407864333195,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16701775800234445,
+                    "rl_minus_reference_energy_kwh": 0.017440240138492713,
+                    "rl_minus_reference_energy_percent": 11.659666765139898,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.20061554753280872,
+                    "rl_minus_reference_energy_kwh": 0.051038029668956986,
+                    "rl_minus_reference_energy_percent": 34.12145782189858,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 6,
+                  "maximum": 0.06675432890840449,
+                  "mean": 0.03816295773615179,
+                  "median": 0.03713498566243112,
+                  "minimum": 0.017440240138492713,
+                  "values": [
+                    0.03348705100593721,
+                    0.06675432890840449,
+                    0.01947517637619431,
+                    0.040782920318925026,
+                    0.017440240138492713,
+                    0.051038029668956986
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 6,
+                  "maximum": 44.628584470271484,
+                  "mean": 25.513832747838766,
+                  "median": 24.82658235860825,
+                  "minimum": 11.659666765139898,
+                  "values": [
+                    22.387756852883303,
+                    44.628584470271484,
+                    13.020122712506154,
+                    27.265407864333195,
+                    11.659666765139898,
+                    34.12145782189858
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 12,
+            "rl_failed_pairs_oracle_feasible": 12,
+            "rl_failed_policy_track_pairs": 12,
+            "training_seed": 47
+          },
+          "G11": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "speed": 18
+            },
+            "failure_components": {
+              "deadline_related": 0,
+              "noncompletion": 0,
+              "speed_related": 18
+            },
+            "method": "gcsl",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 11
+          },
+          "G29": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "speed": 18
+            },
+            "failure_components": {
+              "deadline_related": 0,
+              "noncompletion": 0,
+              "speed_related": 18
+            },
+            "method": "gcsl",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 29
+          },
+          "G47": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "incomplete+deadline": 1,
+              "incomplete+deadline+speed": 1,
+              "speed": 16
+            },
+            "failure_components": {
+              "deadline_related": 2,
+              "noncompletion": 2,
+              "speed_related": 17
+            },
+            "method": "gcsl",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 47
+          }
+        },
+        "pooled_by_method": {
+          "constrained": {
+            "distinct_failed_tracks_causal_feasible": 13,
+            "distinct_failed_tracks_oracle_feasible": 13,
+            "distinct_rl_failed_tracks": 13,
+            "episode_count": 54,
+            "exclusive_failure_modes": {
+              "deadline": 10,
+              "deadline+speed": 5,
+              "incomplete+deadline": 14,
+              "incomplete+deadline+speed": 2,
+              "speed": 1
+            },
+            "failure_components": {
+              "deadline_related": 31,
+              "noncompletion": 16,
+              "speed_related": 8
+            },
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 22,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.16542545777792853,
+                    "rl_minus_reference_energy_kwh": -0.03522777749932618,
+                    "rl_minus_reference_energy_percent": -17.556545973779006,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.22744164260985095,
+                    "rl_energy_kwh": 0.17090858869820402,
+                    "rl_minus_reference_energy_kwh": -0.056533053911646924,
+                    "rl_minus_reference_energy_percent": -24.856070006767688,
+                    "track_seed": 9700001
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.18514530466992044,
+                    "rl_energy_kwh": 0.1750922753043164,
+                    "rl_minus_reference_energy_kwh": -0.010053029365604038,
+                    "rl_minus_reference_energy_percent": -5.429805191941926,
+                    "track_seed": 9700003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.24132135823962353,
+                    "rl_energy_kwh": 0.17040807420532605,
+                    "rl_minus_reference_energy_kwh": -0.07091328403429747,
+                    "rl_minus_reference_energy_percent": -29.385415593377815,
+                    "track_seed": 9700006
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.19581908810536977,
+                    "rl_minus_reference_energy_kwh": 0.008514800130664357,
+                    "rl_minus_reference_energy_percent": 4.545971810220513,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.17978461778976237,
+                    "rl_minus_reference_energy_kwh": 0.010280391194886995,
+                    "rl_minus_reference_energy_percent": 6.064976314400529,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19927031928796132,
+                    "rl_energy_kwh": 0.1649683175219248,
+                    "rl_minus_reference_energy_kwh": -0.03430200176603651,
+                    "rl_minus_reference_energy_percent": -17.213803786035697,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.16673393585492127,
+                    "rl_minus_reference_energy_kwh": -0.013411524980191436,
+                    "rl_minus_reference_energy_percent": -7.444830926085346,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19732479454055257,
+                    "rl_energy_kwh": 0.1668319489947775,
+                    "rl_minus_reference_energy_kwh": -0.030492845545775082,
+                    "rl_minus_reference_energy_percent": -15.453124183797614,
+                    "track_seed": 9700015
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.17052132030042527,
+                    "rl_minus_reference_energy_kwh": -0.03664677103276359,
+                    "rl_minus_reference_energy_percent": -17.68938971099778,
+                    "track_seed": 9700018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.22203260227755406,
+                    "rl_minus_reference_energy_kwh": 0.021379367000299354,
+                    "rl_minus_reference_energy_percent": 10.654882773635913,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.17318879690277164,
+                    "rl_energy_kwh": 0.16464692261139727,
+                    "rl_minus_reference_energy_kwh": -0.008541874291374374,
+                    "rl_minus_reference_energy_percent": -4.932117113885716,
+                    "track_seed": 9700005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.274946172798953,
+                    "rl_minus_reference_energy_kwh": 0.08764188482424759,
+                    "rl_minus_reference_energy_percent": 46.791179087199126,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.19970169807714855,
+                    "rl_minus_reference_energy_kwh": 0.03019747148227317,
+                    "rl_minus_reference_energy_percent": 17.815173160517595,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.22083896522940924,
+                    "rl_minus_reference_energy_kwh": 0.04069350439429653,
+                    "rl_minus_reference_energy_percent": 22.589247714403047,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.2313965268436173,
+                    "rl_minus_reference_energy_kwh": 0.024228435510428442,
+                    "rl_minus_reference_energy_percent": 11.69506141342095,
+                    "track_seed": 9700018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.2006532352772547,
+                    "rl_energy_kwh": 0.18306456886978895,
+                    "rl_minus_reference_energy_kwh": -0.01758866640746576,
+                    "rl_minus_reference_energy_percent": -8.765702872003253,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.21633184677225623,
+                    "rl_minus_reference_energy_kwh": 0.029027558797550812,
+                    "rl_minus_reference_energy_percent": 15.497540986072273,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.16950422659487538,
+                    "rl_energy_kwh": 0.16905269424004604,
+                    "rl_minus_reference_energy_kwh": -0.00045153235482933707,
+                    "rl_minus_reference_energy_percent": -0.2663841273459952,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19927031928796132,
+                    "rl_energy_kwh": 0.19036043818277676,
+                    "rl_minus_reference_energy_kwh": -0.008909881105184564,
+                    "rl_minus_reference_energy_percent": -4.471253489742787,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1801454608351127,
+                    "rl_energy_kwh": 0.16701775800234445,
+                    "rl_minus_reference_energy_kwh": -0.013127702832768262,
+                    "rl_minus_reference_energy_percent": -7.287279275265258,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.20716809133318886,
+                    "rl_energy_kwh": 0.20061554753280872,
+                    "rl_minus_reference_energy_kwh": -0.006552543800380145,
+                    "rl_minus_reference_energy_percent": -3.162911700451821,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 22,
+                  "maximum": 0.08764188482424759,
+                  "mean": -0.004126776163318019,
+                  "median": -0.008725877698279469,
+                  "minimum": -0.07091328403429747,
+                  "values": [
+                    -0.03522777749932618,
+                    -0.056533053911646924,
+                    -0.010053029365604038,
+                    -0.07091328403429747,
+                    0.008514800130664357,
+                    0.010280391194886995,
+                    -0.03430200176603651,
+                    -0.013411524980191436,
+                    -0.030492845545775082,
+                    -0.03664677103276359,
+                    0.021379367000299354,
+                    -0.008541874291374374,
+                    0.08764188482424759,
+                    0.03019747148227317,
+                    0.04069350439429653,
+                    0.024228435510428442,
+                    -0.01758866640746576,
+                    0.029027558797550812,
+                    -0.00045153235482933707,
+                    -0.008909881105184564,
+                    -0.013127702832768262,
+                    -0.006552543800380145
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 22,
+                  "maximum": 46.791179087199126,
+                  "mean": -1.2845727587094435,
+                  "median": -4.701685301814251,
+                  "minimum": -29.385415593377815,
+                  "values": [
+                    -17.556545973779006,
+                    -24.856070006767688,
+                    -5.429805191941926,
+                    -29.385415593377815,
+                    4.545971810220513,
+                    6.064976314400529,
+                    -17.213803786035697,
+                    -7.444830926085346,
+                    -15.453124183797614,
+                    -17.68938971099778,
+                    10.654882773635913,
+                    -4.932117113885716,
+                    46.791179087199126,
+                    17.815173160517595,
+                    22.589247714403047,
+                    11.69506141342095,
+                    -8.765702872003253,
+                    15.497540986072273,
+                    -0.2663841273459952,
+                    -4.471253489742787,
+                    -7.287279275265258,
+                    -3.162911700451821
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 22,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16542545777792853,
+                    "rl_minus_reference_energy_kwh": 0.015847939914076792,
+                    "rl_minus_reference_energy_percent": 10.595134977772451,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1554251304944687,
+                    "rl_energy_kwh": 0.17090858869820402,
+                    "rl_minus_reference_energy_kwh": 0.015483458203735312,
+                    "rl_minus_reference_energy_percent": 9.96200431325122,
+                    "track_seed": 9700001
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.15424368948043687,
+                    "rl_energy_kwh": 0.1750922753043164,
+                    "rl_minus_reference_energy_kwh": 0.020848585823879523,
+                    "rl_minus_reference_energy_percent": 13.516653999983449,
+                    "track_seed": 9700003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1550340264248793,
+                    "rl_energy_kwh": 0.17040807420532605,
+                    "rl_minus_reference_energy_kwh": 0.015374047780446765,
+                    "rl_minus_reference_energy_percent": 9.916563566705891,
+                    "track_seed": 9700006
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19581908810536977,
+                    "rl_minus_reference_energy_kwh": 0.04624157024151804,
+                    "rl_minus_reference_energy_percent": 30.91478646116322,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17978461778976237,
+                    "rl_minus_reference_energy_kwh": 0.03020709992591064,
+                    "rl_minus_reference_energy_percent": 20.194946645261027,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1649683175219248,
+                    "rl_minus_reference_energy_kwh": 0.015390799658073079,
+                    "rl_minus_reference_energy_percent": 10.289514011110997,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16673393585492127,
+                    "rl_minus_reference_energy_kwh": 0.01715641799106954,
+                    "rl_minus_reference_energy_percent": 11.469917562534787,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1668319489947775,
+                    "rl_minus_reference_energy_kwh": 0.017254431130925757,
+                    "rl_minus_reference_energy_percent": 11.53544421470549,
+                    "track_seed": 9700015
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17052132030042527,
+                    "rl_minus_reference_energy_kwh": 0.02094380243657354,
+                    "rl_minus_reference_energy_percent": 14.001972178490742,
+                    "track_seed": 9700018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.22203260227755406,
+                    "rl_minus_reference_energy_kwh": 0.07245508441370233,
+                    "rl_minus_reference_energy_percent": 48.43982267418845,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16464692261139727,
+                    "rl_minus_reference_energy_kwh": 0.015069404747545534,
+                    "rl_minus_reference_energy_percent": 10.074645550183543,
+                    "track_seed": 9700005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.274946172798953,
+                    "rl_minus_reference_energy_kwh": 0.12536865493510127,
+                    "rl_minus_reference_energy_percent": 83.81517271145934,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19970169807714855,
+                    "rl_minus_reference_energy_kwh": 0.050124180213296815,
+                    "rl_minus_reference_energy_percent": 33.51050407115378,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.22083896522940924,
+                    "rl_minus_reference_energy_kwh": 0.0712614473655575,
+                    "rl_minus_reference_energy_percent": 47.641817021205696,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.2313965268436173,
+                    "rl_minus_reference_energy_kwh": 0.08181900897976557,
+                    "rl_minus_reference_energy_percent": 54.700071339757606,
+                    "track_seed": 9700018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18306456886978895,
+                    "rl_minus_reference_energy_kwh": 0.03348705100593721,
+                    "rl_minus_reference_energy_percent": 22.387756852883303,
+                    "track_seed": 9700000
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21633184677225623,
+                    "rl_minus_reference_energy_kwh": 0.06675432890840449,
+                    "rl_minus_reference_energy_percent": 44.628584470271484,
+                    "track_seed": 9700010
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16905269424004604,
+                    "rl_minus_reference_energy_kwh": 0.01947517637619431,
+                    "rl_minus_reference_energy_percent": 13.020122712506154,
+                    "track_seed": 9700011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19036043818277676,
+                    "rl_minus_reference_energy_kwh": 0.040782920318925026,
+                    "rl_minus_reference_energy_percent": 27.265407864333195,
+                    "track_seed": 9700012
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16701775800234445,
+                    "rl_minus_reference_energy_kwh": 0.017440240138492713,
+                    "rl_minus_reference_energy_percent": 11.659666765139898,
+                    "track_seed": 9700014
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.20061554753280872,
+                    "rl_minus_reference_energy_kwh": 0.051038029668956986,
+                    "rl_minus_reference_energy_percent": 34.12145782189858,
+                    "track_seed": 9700018
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 22,
+                  "maximum": 0.12536865493510127,
+                  "mean": 0.03908289455354949,
+                  "median": 0.02557545118124209,
+                  "minimum": 0.015069404747545534,
+                  "values": [
+                    0.015847939914076792,
+                    0.015483458203735312,
+                    0.020848585823879523,
+                    0.015374047780446765,
+                    0.04624157024151804,
+                    0.03020709992591064,
+                    0.015390799658073079,
+                    0.01715641799106954,
+                    0.017254431130925757,
+                    0.02094380243657354,
+                    0.07245508441370233,
+                    0.015069404747545534,
+                    0.12536865493510127,
+                    0.050124180213296815,
+                    0.0712614473655575,
+                    0.08181900897976557,
+                    0.03348705100593721,
+                    0.06675432890840449,
+                    0.01947517637619431,
+                    0.040782920318925026,
+                    0.017440240138492713,
+                    0.051038029668956986
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 22,
+                  "maximum": 83.81517271145934,
+                  "mean": 26.075543990270923,
+                  "median": 17.098459411875886,
+                  "minimum": 9.916563566705891,
+                  "values": [
+                    10.595134977772451,
+                    9.96200431325122,
+                    13.516653999983449,
+                    9.916563566705891,
+                    30.91478646116322,
+                    20.194946645261027,
+                    10.289514011110997,
+                    11.469917562534787,
+                    11.53544421470549,
+                    14.001972178490742,
+                    48.43982267418845,
+                    10.074645550183543,
+                    83.81517271145934,
+                    33.51050407115378,
+                    47.641817021205696,
+                    54.700071339757606,
+                    22.387756852883303,
+                    44.628584470271484,
+                    13.020122712506154,
+                    27.265407864333195,
+                    11.659666765139898,
+                    34.12145782189858
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 32,
+            "rl_failed_pairs_oracle_feasible": 32,
+            "rl_failed_policy_track_pairs": 32
+          },
+          "gcsl": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 54,
+            "exclusive_failure_modes": {
+              "incomplete+deadline": 1,
+              "incomplete+deadline+speed": 1,
+              "speed": 52
+            },
+            "failure_components": {
+              "deadline_related": 2,
+              "noncompletion": 2,
+              "speed_related": 53
+            },
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 54,
+            "rl_failed_pairs_oracle_feasible": 54,
+            "rl_failed_policy_track_pairs": 54
+          }
+        }
+      }
+    },
+    "sameinfo": {
+      "evaluation_id": "SAMEINFO_VALIDATION_V1",
+      "physical_references": {
+        "aggregate_mean_energy_difference_percent": 28.18435397193724,
+        "both_references_feasible_count": 18,
+        "energy_causal_minus_oracle_kwh": {
+          "count": 18,
+          "maximum": 0.09976009290684654,
+          "mean": 0.04285931655348125,
+          "median": 0.03980387563275202,
+          "minimum": 0.01311087339322517,
+          "values": [
+            0.06048157945635127,
+            0.09976009290684654,
+            0.04282040657477254,
+            0.024297196702266488,
+            0.017437823591257257,
+            0.08540383793184464,
+            0.050517305076804325,
+            0.04188098115465036,
+            0.018759536068978816,
+            0.017691036985534564,
+            0.03680067636264259,
+            0.05909476806396072,
+            0.05432848862581674,
+            0.03772677011085368,
+            0.02460316253162284,
+            0.03772677011085368,
+            0.01311087339322517,
+            0.0490263923143803
+          ]
+        },
+        "energy_causal_minus_oracle_percent_per_track": {
+          "count": 18,
+          "maximum": 58.92131801549702,
+          "mean": 27.929705685976494,
+          "median": 26.42111256141084,
+          "minimum": 8.411702960238404,
+          "values": [
+            40.43493990280193,
+            58.92131801549702,
+            27.62000546732954,
+            16.24388280355224,
+            11.574793851537086,
+            55.087157252686715,
+            31.737123963481377,
+            27.99951607217551,
+            12.73212722529756,
+            11.870520369390512,
+            24.60307998702001,
+            39.507787605988945,
+            36.32129306709552,
+            25.22221965549214,
+            16.44843615737567,
+            25.22221965549214,
+            8.411702960238404,
+            32.77657833512456
+          ]
+        },
+        "per_track": [
+          {
+            "causal_energy_kwh": 0.210059097320203,
+            "causal_minus_oracle_energy_kwh": 0.06048157945635127,
+            "causal_minus_oracle_energy_percent": 40.43493990280193,
+            "causal_minus_oracle_travel_time_s": -47.79999999999728,
+            "causal_travel_time_s": 77.39999999999988,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500001
+          },
+          {
+            "causal_energy_kwh": 0.2690707876890108,
+            "causal_minus_oracle_energy_kwh": 0.09976009290684654,
+            "causal_minus_oracle_energy_percent": 58.92131801549702,
+            "causal_minus_oracle_travel_time_s": -25.799999999998548,
+            "causal_travel_time_s": 113.9999999999978,
+            "oracle_energy_kwh": 0.1693106947821643,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9500002
+          },
+          {
+            "causal_energy_kwh": 0.19785443299965094,
+            "causal_minus_oracle_energy_kwh": 0.04282040657477254,
+            "causal_minus_oracle_energy_percent": 27.62000546732954,
+            "causal_minus_oracle_travel_time_s": -44.39999999999749,
+            "causal_travel_time_s": 86.79999999999934,
+            "oracle_energy_kwh": 0.1550340264248784,
+            "oracle_travel_time_s": 131.19999999999683,
+            "track_seed": 9500003
+          },
+          {
+            "causal_energy_kwh": 0.17387471456611822,
+            "causal_minus_oracle_energy_kwh": 0.024297196702266488,
+            "causal_minus_oracle_energy_percent": 16.24388280355224,
+            "causal_minus_oracle_travel_time_s": -49.699999999997175,
+            "causal_travel_time_s": 75.49999999999999,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500005
+          },
+          {
+            "causal_energy_kwh": 0.16809125046798373,
+            "causal_minus_oracle_energy_kwh": 0.017437823591257257,
+            "causal_minus_oracle_energy_percent": 11.574793851537086,
+            "causal_minus_oracle_travel_time_s": -33.6999999999981,
+            "causal_travel_time_s": 106.19999999999824,
+            "oracle_energy_kwh": 0.15065342687672648,
+            "oracle_travel_time_s": 139.89999999999634,
+            "track_seed": 9500006
+          },
+          {
+            "causal_energy_kwh": 0.24043786435672304,
+            "causal_minus_oracle_energy_kwh": 0.08540383793184464,
+            "causal_minus_oracle_energy_percent": 55.087157252686715,
+            "causal_minus_oracle_travel_time_s": -42.99999999999757,
+            "causal_travel_time_s": 88.19999999999926,
+            "oracle_energy_kwh": 0.1550340264248784,
+            "oracle_travel_time_s": 131.19999999999683,
+            "track_seed": 9500007
+          },
+          {
+            "causal_energy_kwh": 0.20969147957015963,
+            "causal_minus_oracle_energy_kwh": 0.050517305076804325,
+            "causal_minus_oracle_energy_percent": 31.737123963481377,
+            "causal_minus_oracle_travel_time_s": -30.199999999998298,
+            "causal_travel_time_s": 109.59999999999805,
+            "oracle_energy_kwh": 0.1591741744933553,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9500008
+          },
+          {
+            "causal_energy_kwh": 0.1914584990185021,
+            "causal_minus_oracle_energy_kwh": 0.04188098115465036,
+            "causal_minus_oracle_energy_percent": 27.99951607217551,
+            "causal_minus_oracle_travel_time_s": -42.09999999999761,
+            "causal_travel_time_s": 83.09999999999955,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500011
+          },
+          {
+            "causal_energy_kwh": 0.16609969170067368,
+            "causal_minus_oracle_energy_kwh": 0.018759536068978816,
+            "causal_minus_oracle_energy_percent": 12.73212722529756,
+            "causal_minus_oracle_travel_time_s": -47.89999999999729,
+            "causal_travel_time_s": 91.89999999999905,
+            "oracle_energy_kwh": 0.14734015563169486,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9500012
+          },
+          {
+            "causal_energy_kwh": 0.1667244107132181,
+            "causal_minus_oracle_energy_kwh": 0.017691036985534564,
+            "causal_minus_oracle_energy_percent": 11.870520369390512,
+            "causal_minus_oracle_travel_time_s": -33.89999999999809,
+            "causal_travel_time_s": 105.89999999999826,
+            "oracle_energy_kwh": 0.14903337372768355,
+            "oracle_travel_time_s": 139.79999999999634,
+            "track_seed": 9500014
+          },
+          {
+            "causal_energy_kwh": 0.18637819422649432,
+            "causal_minus_oracle_energy_kwh": 0.03680067636264259,
+            "causal_minus_oracle_energy_percent": 24.60307998702001,
+            "causal_minus_oracle_travel_time_s": -25.099999999998573,
+            "causal_travel_time_s": 100.09999999999859,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500015
+          },
+          {
+            "causal_energy_kwh": 0.20867228592781245,
+            "causal_minus_oracle_energy_kwh": 0.05909476806396072,
+            "causal_minus_oracle_energy_percent": 39.507787605988945,
+            "causal_minus_oracle_travel_time_s": -52.39999999999702,
+            "causal_travel_time_s": 72.80000000000014,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500016
+          },
+          {
+            "causal_energy_kwh": 0.20390600648966847,
+            "causal_minus_oracle_energy_kwh": 0.05432848862581674,
+            "causal_minus_oracle_energy_percent": 36.32129306709552,
+            "causal_minus_oracle_travel_time_s": -33.29999999999811,
+            "causal_travel_time_s": 91.89999999999905,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500017
+          },
+          {
+            "causal_energy_kwh": 0.1873042879747054,
+            "causal_minus_oracle_energy_kwh": 0.03772677011085368,
+            "causal_minus_oracle_energy_percent": 25.22221965549214,
+            "causal_minus_oracle_travel_time_s": -62.099999999996534,
+            "causal_travel_time_s": 63.10000000000063,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500018
+          },
+          {
+            "causal_energy_kwh": 0.17418068039547457,
+            "causal_minus_oracle_energy_kwh": 0.02460316253162284,
+            "causal_minus_oracle_energy_percent": 16.44843615737567,
+            "causal_minus_oracle_travel_time_s": -25.799999999998533,
+            "causal_travel_time_s": 99.39999999999863,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500019
+          },
+          {
+            "causal_energy_kwh": 0.1873042879747054,
+            "causal_minus_oracle_energy_kwh": 0.03772677011085368,
+            "causal_minus_oracle_energy_percent": 25.22221965549214,
+            "causal_minus_oracle_travel_time_s": -62.099999999996534,
+            "causal_travel_time_s": 63.10000000000063,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500020
+          },
+          {
+            "causal_energy_kwh": 0.1689755473504423,
+            "causal_minus_oracle_energy_kwh": 0.01311087339322517,
+            "causal_minus_oracle_energy_percent": 8.411702960238404,
+            "causal_minus_oracle_travel_time_s": -15.499999999999133,
+            "causal_travel_time_s": 124.4999999999972,
+            "oracle_energy_kwh": 0.15586467395721712,
+            "oracle_travel_time_s": 139.99999999999633,
+            "track_seed": 9500021
+          },
+          {
+            "causal_energy_kwh": 0.19860391017823203,
+            "causal_minus_oracle_energy_kwh": 0.0490263923143803,
+            "causal_minus_oracle_energy_percent": 32.77657833512456,
+            "causal_minus_oracle_travel_time_s": -55.99999999999682,
+            "causal_travel_time_s": 69.20000000000034,
+            "oracle_energy_kwh": 0.14957751786385173,
+            "oracle_travel_time_s": 125.19999999999716,
+            "track_seed": 9500022
+          }
+        ],
+        "travel_time_causal_minus_oracle_s": {
+          "count": 18,
+          "maximum": -15.499999999999133,
+          "mean": -40.599999999997706,
+          "median": -42.54999999999759,
+          "minimum": -62.099999999996534,
+          "values": [
+            -47.79999999999728,
+            -25.799999999998548,
+            -44.39999999999749,
+            -49.699999999997175,
+            -33.6999999999981,
+            -42.99999999999757,
+            -30.199999999998298,
+            -42.09999999999761,
+            -47.89999999999729,
+            -33.89999999999809,
+            -25.099999999998573,
+            -52.39999999999702,
+            -33.29999999999811,
+            -62.099999999996534,
+            -25.799999999998533,
+            -62.099999999996534,
+            -15.499999999999133,
+            -55.99999999999682
+          ]
+        }
+      },
+      "rl_failed_witness_analysis": {
+        "by_policy_and_training_seed": {
+          "C11": {
+            "distinct_failed_tracks_causal_feasible": 10,
+            "distinct_failed_tracks_oracle_feasible": 10,
+            "distinct_rl_failed_tracks": 10,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 2,
+              "COMPLETED_DEADLINE_VIOLATION": 6,
+              "COMPLETED_SPEED_VIOLATION": 1,
+              "INCOMPLETE_SAFE": 1
+            },
+            "failure_components": {
+              "deadline_related": 9,
+              "noncompletion": 1,
+              "speed_related": 3
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 8,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.1895464284567512,
+                    "rl_minus_reference_energy_kwh": -0.008308004542899733,
+                    "rl_minus_reference_energy_percent": -4.199048976028952,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.15839217841759112,
+                    "rl_minus_reference_energy_kwh": -0.03306632060091097,
+                    "rl_minus_reference_energy_percent": -17.27075098280987,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.16609969170067368,
+                    "rl_energy_kwh": 0.17409176537145096,
+                    "rl_minus_reference_energy_kwh": 0.007992073670777283,
+                    "rl_minus_reference_energy_percent": 4.811612585759464,
+                    "track_seed": 9500012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.17049090199571934,
+                    "rl_minus_reference_energy_kwh": -0.03818138393209311,
+                    "rl_minus_reference_energy_percent": -18.297295092315938,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20390600648966847,
+                    "rl_energy_kwh": 0.18858668378108664,
+                    "rl_minus_reference_energy_kwh": -0.015319322708581828,
+                    "rl_minus_reference_energy_percent": -7.512933518884854,
+                    "track_seed": 9500017
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.18169957870175812,
+                    "rl_minus_reference_energy_kwh": -0.005604709272947289,
+                    "rl_minus_reference_energy_percent": -2.9923016357768484,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.15107946584629,
+                    "rl_minus_reference_energy_kwh": -0.03622482212841541,
+                    "rl_minus_reference_energy_percent": -19.3400922745065,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.17185182620574743,
+                    "rl_minus_reference_energy_kwh": -0.026752083972484603,
+                    "rl_minus_reference_energy_percent": -13.470069118214553,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 8,
+                  "maximum": 0.007992073670777283,
+                  "mean": -0.019433071685944457,
+                  "median": -0.021035703340533216,
+                  "minimum": -0.03818138393209311,
+                  "values": [
+                    -0.008308004542899733,
+                    -0.03306632060091097,
+                    0.007992073670777283,
+                    -0.03818138393209311,
+                    -0.015319322708581828,
+                    -0.005604709272947289,
+                    -0.03622482212841541,
+                    -0.026752083972484603
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 8,
+                  "maximum": 4.811612585759464,
+                  "mean": -9.783859876597257,
+                  "median": -10.491501318549703,
+                  "minimum": -19.3400922745065,
+                  "values": [
+                    -4.199048976028952,
+                    -17.27075098280987,
+                    4.811612585759464,
+                    -18.297295092315938,
+                    -7.512933518884854,
+                    -2.9923016357768484,
+                    -19.3400922745065,
+                    -13.470069118214553
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 8,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.1895464284567512,
+                    "rl_minus_reference_energy_kwh": 0.03451240203187281,
+                    "rl_minus_reference_energy_percent": 22.261178934545548,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15839217841759112,
+                    "rl_minus_reference_energy_kwh": 0.00881466055373939,
+                    "rl_minus_reference_energy_percent": 5.893038392148384,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14734015563169486,
+                    "rl_energy_kwh": 0.17409176537145096,
+                    "rl_minus_reference_energy_kwh": 0.0267516097397561,
+                    "rl_minus_reference_energy_percent": 18.156360447064348,
+                    "track_seed": 9500012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17049090199571934,
+                    "rl_minus_reference_energy_kwh": 0.020913384131867607,
+                    "rl_minus_reference_energy_percent": 13.981636030959788,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18858668378108664,
+                    "rl_minus_reference_energy_kwh": 0.03900916591723491,
+                    "rl_minus_reference_energy_percent": 26.079564946880446,
+                    "track_seed": 9500017
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18169957870175812,
+                    "rl_minus_reference_energy_kwh": 0.03212206083790639,
+                    "rl_minus_reference_energy_percent": 21.47519312838477,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15107946584629,
+                    "rl_minus_reference_energy_kwh": 0.001501947982438273,
+                    "rl_minus_reference_energy_percent": 1.0041268259347467,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17185182620574743,
+                    "rl_minus_reference_energy_kwh": 0.0222743083418957,
+                    "rl_minus_reference_energy_percent": 14.891481460582995,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 8,
+                  "maximum": 0.03900916591723491,
+                  "mean": 0.023237442442088897,
+                  "median": 0.0245129590408259,
+                  "minimum": 0.001501947982438273,
+                  "values": [
+                    0.03451240203187281,
+                    0.00881466055373939,
+                    0.0267516097397561,
+                    0.020913384131867607,
+                    0.03900916591723491,
+                    0.03212206083790639,
+                    0.001501947982438273,
+                    0.0222743083418957
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 8,
+                  "maximum": 26.079564946880446,
+                  "mean": 15.467822520812629,
+                  "median": 16.52392095382367,
+                  "minimum": 1.0041268259347467,
+                  "values": [
+                    22.261178934545548,
+                    5.893038392148384,
+                    18.156360447064348,
+                    13.981636030959788,
+                    26.079564946880446,
+                    21.47519312838477,
+                    1.0041268259347467,
+                    14.891481460582995
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 10,
+            "rl_failed_pairs_oracle_feasible": 10,
+            "rl_failed_policy_track_pairs": 10,
+            "training_seed": 11
+          },
+          "C29": {
+            "distinct_failed_tracks_causal_feasible": 11,
+            "distinct_failed_tracks_oracle_feasible": 11,
+            "distinct_rl_failed_tracks": 11,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 1,
+              "COMPLETED_DEADLINE_VIOLATION": 4,
+              "COMPLETED_SPEED_VIOLATION": 2,
+              "INCOMPLETE_SAFE": 4
+            },
+            "failure_components": {
+              "deadline_related": 9,
+              "noncompletion": 4,
+              "speed_related": 3
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 7,
+                "pairs": [
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.27399060163428435,
+                    "rl_minus_reference_energy_kwh": 0.0761361686346334,
+                    "rl_minus_reference_energy_percent": 38.480901074765264,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.17387471456611822,
+                    "rl_energy_kwh": 0.1861526097576256,
+                    "rl_minus_reference_energy_kwh": 0.012277895191507376,
+                    "rl_minus_reference_energy_percent": 7.061345993950454,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.19607823095953728,
+                    "rl_minus_reference_energy_kwh": 0.004619731941035182,
+                    "rl_minus_reference_energy_percent": 2.4129155742460626,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.21914816582419058,
+                    "rl_minus_reference_energy_kwh": 0.010475879896378132,
+                    "rl_minus_reference_energy_percent": 5.020254534424437,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.23857770803032383,
+                    "rl_minus_reference_energy_kwh": 0.05127342005561841,
+                    "rl_minus_reference_energy_percent": 27.374397356318212,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.20460809574602493,
+                    "rl_minus_reference_energy_kwh": 0.017303807771319513,
+                    "rl_minus_reference_energy_percent": 9.238340434393212,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.21933816223868022,
+                    "rl_minus_reference_energy_kwh": 0.020734252060448183,
+                    "rl_minus_reference_energy_percent": 10.440001932409466,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 7,
+                  "maximum": 0.0761361686346334,
+                  "mean": 0.027545879364420028,
+                  "median": 0.017303807771319513,
+                  "minimum": 0.004619731941035182,
+                  "values": [
+                    0.0761361686346334,
+                    0.012277895191507376,
+                    0.004619731941035182,
+                    0.010475879896378132,
+                    0.05127342005561841,
+                    0.017303807771319513,
+                    0.020734252060448183
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 7,
+                  "maximum": 38.480901074765264,
+                  "mean": 14.289736700072444,
+                  "median": 9.238340434393212,
+                  "minimum": 2.4129155742460626,
+                  "values": [
+                    38.480901074765264,
+                    7.061345993950454,
+                    2.4129155742460626,
+                    5.020254534424437,
+                    27.374397356318212,
+                    9.238340434393212,
+                    10.440001932409466
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 7,
+                "pairs": [
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.27399060163428435,
+                    "rl_minus_reference_energy_kwh": 0.11895657520940595,
+                    "rl_minus_reference_energy_percent": 76.72933352282266,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1861526097576256,
+                    "rl_minus_reference_energy_kwh": 0.036575091893773864,
+                    "rl_minus_reference_energy_percent": 24.452265565113333,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19607823095953728,
+                    "rl_minus_reference_energy_kwh": 0.04650071309568554,
+                    "rl_minus_reference_energy_percent": 31.088036330440627,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21914816582419058,
+                    "rl_minus_reference_energy_kwh": 0.06957064796033885,
+                    "rl_minus_reference_energy_percent": 46.51143363915382,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.23857770803032383,
+                    "rl_minus_reference_energy_kwh": 0.08900019016647209,
+                    "rl_minus_reference_energy_percent": 59.50104764238817,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.20460809574602493,
+                    "rl_minus_reference_energy_kwh": 0.05503057788217319,
+                    "rl_minus_reference_energy_percent": 36.79067460677015,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21933816223868022,
+                    "rl_minus_reference_energy_kwh": 0.06976064437482848,
+                    "rl_minus_reference_energy_percent": 46.63845567909873,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 7,
+                  "maximum": 0.11895657520940595,
+                  "mean": 0.06934206294038257,
+                  "median": 0.06957064796033885,
+                  "minimum": 0.036575091893773864,
+                  "values": [
+                    0.11895657520940595,
+                    0.036575091893773864,
+                    0.04650071309568554,
+                    0.06957064796033885,
+                    0.08900019016647209,
+                    0.05503057788217319,
+                    0.06976064437482848
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 7,
+                  "maximum": 76.72933352282266,
+                  "mean": 45.958749569398215,
+                  "median": 46.51143363915382,
+                  "minimum": 24.452265565113333,
+                  "values": [
+                    76.72933352282266,
+                    24.452265565113333,
+                    31.088036330440627,
+                    46.51143363915382,
+                    59.50104764238817,
+                    36.79067460677015,
+                    46.63845567909873
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 11,
+            "rl_failed_pairs_oracle_feasible": 11,
+            "rl_failed_policy_track_pairs": 11,
+            "training_seed": 29
+          },
+          "C47": {
+            "distinct_failed_tracks_causal_feasible": 10,
+            "distinct_failed_tracks_oracle_feasible": 10,
+            "distinct_rl_failed_tracks": 10,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 1,
+              "COMPLETED_DEADLINE_VIOLATION": 4,
+              "INCOMPLETE_SAFE": 4,
+              "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+            },
+            "failure_components": {
+              "deadline_related": 10,
+              "noncompletion": 5,
+              "speed_related": 2
+            },
+            "method": "constrained",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 8,
+                "pairs": [
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.210059097320203,
+                    "rl_energy_kwh": 0.170639513463135,
+                    "rl_minus_reference_energy_kwh": -0.03941958385706801,
+                    "rl_minus_reference_energy_percent": -18.76594937327512,
+                    "track_seed": 9500001
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.23633267107483533,
+                    "rl_minus_reference_energy_kwh": 0.038478238075184384,
+                    "rl_minus_reference_energy_percent": 19.447751304744468,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.17387471456611822,
+                    "rl_energy_kwh": 0.15582759703540663,
+                    "rl_minus_reference_energy_kwh": -0.018047117530711587,
+                    "rl_minus_reference_energy_percent": -10.379380104660891,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.17677559948012206,
+                    "rl_minus_reference_energy_kwh": -0.014682899538380034,
+                    "rl_minus_reference_energy_percent": -7.668972447632693,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.1818429290964647,
+                    "rl_minus_reference_energy_kwh": -0.02682935683134774,
+                    "rl_minus_reference_energy_percent": -12.857173012725331,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.19363427723062185,
+                    "rl_minus_reference_energy_kwh": 0.006329989255916435,
+                    "rl_minus_reference_energy_percent": 3.3795218061271886,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.16297764691062055,
+                    "rl_minus_reference_energy_kwh": -0.02432664106408486,
+                    "rl_minus_reference_energy_percent": -12.98776516390808,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.17904143852167173,
+                    "rl_minus_reference_energy_kwh": -0.019562471656560304,
+                    "rl_minus_reference_energy_percent": -9.84999320456705,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 8,
+                  "maximum": 0.038478238075184384,
+                  "mean": -0.012257480393381464,
+                  "median": -0.018804794593635946,
+                  "minimum": -0.03941958385706801,
+                  "values": [
+                    -0.03941958385706801,
+                    0.038478238075184384,
+                    -0.018047117530711587,
+                    -0.014682899538380034,
+                    -0.02682935683134774,
+                    0.006329989255916435,
+                    -0.02432664106408486,
+                    -0.019562471656560304
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 8,
+                  "maximum": 19.447751304744468,
+                  "mean": -6.210245024487189,
+                  "median": -10.11468665461397,
+                  "minimum": -18.76594937327512,
+                  "values": [
+                    -18.76594937327512,
+                    19.447751304744468,
+                    -10.379380104660891,
+                    -7.668972447632693,
+                    -12.857173012725331,
+                    3.3795218061271886,
+                    -12.98776516390808,
+                    -9.84999320456705
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 8,
+                "pairs": [
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.170639513463135,
+                    "rl_minus_reference_energy_kwh": 0.021061995599283262,
+                    "rl_minus_reference_energy_percent": 14.080990178252781,
+                    "track_seed": 9500001
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.23633267107483533,
+                    "rl_minus_reference_energy_kwh": 0.08129864464995692,
+                    "rl_minus_reference_energy_percent": 52.439226745717086,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15582759703540663,
+                    "rl_minus_reference_energy_kwh": 0.006250079171554901,
+                    "rl_minus_reference_energy_percent": 4.178488358955014,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17677559948012206,
+                    "rl_minus_reference_energy_kwh": 0.027198081616270325,
+                    "rl_minus_reference_energy_percent": 18.18326845149719,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1818429290964647,
+                    "rl_minus_reference_energy_kwh": 0.03226541123261298,
+                    "rl_minus_reference_energy_percent": 21.57102998726156,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19363427723062185,
+                    "rl_minus_reference_energy_kwh": 0.044056759366770115,
+                    "rl_minus_reference_energy_percent": 29.454131874865986,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16297764691062055,
+                    "rl_minus_reference_energy_kwh": 0.013400129046768822,
+                    "rl_minus_reference_energy_percent": 8.958651833603676,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17904143852167173,
+                    "rl_minus_reference_energy_kwh": 0.029463920657819997,
+                    "rl_minus_reference_energy_percent": 19.69809439185815,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 8,
+                  "maximum": 0.08129864464995692,
+                  "mean": 0.03187437766762967,
+                  "median": 0.02833100113704516,
+                  "minimum": 0.006250079171554901,
+                  "values": [
+                    0.021061995599283262,
+                    0.08129864464995692,
+                    0.006250079171554901,
+                    0.027198081616270325,
+                    0.03226541123261298,
+                    0.044056759366770115,
+                    0.013400129046768822,
+                    0.029463920657819997
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 8,
+                  "maximum": 52.439226745717086,
+                  "mean": 21.07048522775143,
+                  "median": 18.94068142167767,
+                  "minimum": 4.178488358955014,
+                  "values": [
+                    14.080990178252781,
+                    52.439226745717086,
+                    4.178488358955014,
+                    18.18326845149719,
+                    21.57102998726156,
+                    29.454131874865986,
+                    8.958651833603676,
+                    19.69809439185815
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 10,
+            "rl_failed_pairs_oracle_feasible": 10,
+            "rl_failed_policy_track_pairs": 10,
+            "training_seed": 47
+          },
+          "S11": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "INCOMPLETE_SAFE": 18
+            },
+            "failure_components": {
+              "deadline_related": 18,
+              "noncompletion": 18,
+              "speed_related": 0
+            },
+            "method": "scalar",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 11
+          },
+          "S29": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "INCOMPLETE_SAFE": 18
+            },
+            "failure_components": {
+              "deadline_related": 18,
+              "noncompletion": 18,
+              "speed_related": 0
+            },
+            "method": "scalar",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 29
+          },
+          "S47": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 18,
+            "exclusive_failure_modes": {
+              "INCOMPLETE_SAFE": 17,
+              "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+            },
+            "failure_components": {
+              "deadline_related": 18,
+              "noncompletion": 18,
+              "speed_related": 1
+            },
+            "method": "scalar",
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 18,
+            "rl_failed_pairs_oracle_feasible": 18,
+            "rl_failed_policy_track_pairs": 18,
+            "training_seed": 47
+          }
+        },
+        "pooled_by_method": {
+          "constrained": {
+            "distinct_failed_tracks_causal_feasible": 12,
+            "distinct_failed_tracks_oracle_feasible": 12,
+            "distinct_rl_failed_tracks": 12,
+            "episode_count": 54,
+            "exclusive_failure_modes": {
+              "COMPLETED_DEADLINE_AND_SPEED_VIOLATION": 4,
+              "COMPLETED_DEADLINE_VIOLATION": 14,
+              "COMPLETED_SPEED_VIOLATION": 3,
+              "INCOMPLETE_SAFE": 9,
+              "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+            },
+            "failure_components": {
+              "deadline_related": 28,
+              "noncompletion": 10,
+              "speed_related": 8
+            },
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 23,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.1895464284567512,
+                    "rl_minus_reference_energy_kwh": -0.008308004542899733,
+                    "rl_minus_reference_energy_percent": -4.199048976028952,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.15839217841759112,
+                    "rl_minus_reference_energy_kwh": -0.03306632060091097,
+                    "rl_minus_reference_energy_percent": -17.27075098280987,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.16609969170067368,
+                    "rl_energy_kwh": 0.17409176537145096,
+                    "rl_minus_reference_energy_kwh": 0.007992073670777283,
+                    "rl_minus_reference_energy_percent": 4.811612585759464,
+                    "track_seed": 9500012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.17049090199571934,
+                    "rl_minus_reference_energy_kwh": -0.03818138393209311,
+                    "rl_minus_reference_energy_percent": -18.297295092315938,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.20390600648966847,
+                    "rl_energy_kwh": 0.18858668378108664,
+                    "rl_minus_reference_energy_kwh": -0.015319322708581828,
+                    "rl_minus_reference_energy_percent": -7.512933518884854,
+                    "track_seed": 9500017
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.18169957870175812,
+                    "rl_minus_reference_energy_kwh": -0.005604709272947289,
+                    "rl_minus_reference_energy_percent": -2.9923016357768484,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.15107946584629,
+                    "rl_minus_reference_energy_kwh": -0.03622482212841541,
+                    "rl_minus_reference_energy_percent": -19.3400922745065,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.17185182620574743,
+                    "rl_minus_reference_energy_kwh": -0.026752083972484603,
+                    "rl_minus_reference_energy_percent": -13.470069118214553,
+                    "track_seed": 9500022
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.27399060163428435,
+                    "rl_minus_reference_energy_kwh": 0.0761361686346334,
+                    "rl_minus_reference_energy_percent": 38.480901074765264,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.17387471456611822,
+                    "rl_energy_kwh": 0.1861526097576256,
+                    "rl_minus_reference_energy_kwh": 0.012277895191507376,
+                    "rl_minus_reference_energy_percent": 7.061345993950454,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.19607823095953728,
+                    "rl_minus_reference_energy_kwh": 0.004619731941035182,
+                    "rl_minus_reference_energy_percent": 2.4129155742460626,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.21914816582419058,
+                    "rl_minus_reference_energy_kwh": 0.010475879896378132,
+                    "rl_minus_reference_energy_percent": 5.020254534424437,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.23857770803032383,
+                    "rl_minus_reference_energy_kwh": 0.05127342005561841,
+                    "rl_minus_reference_energy_percent": 27.374397356318212,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.20460809574602493,
+                    "rl_minus_reference_energy_kwh": 0.017303807771319513,
+                    "rl_minus_reference_energy_percent": 9.238340434393212,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.21933816223868022,
+                    "rl_minus_reference_energy_kwh": 0.020734252060448183,
+                    "rl_minus_reference_energy_percent": 10.440001932409466,
+                    "track_seed": 9500022
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.210059097320203,
+                    "rl_energy_kwh": 0.170639513463135,
+                    "rl_minus_reference_energy_kwh": -0.03941958385706801,
+                    "rl_minus_reference_energy_percent": -18.76594937327512,
+                    "track_seed": 9500001
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19785443299965094,
+                    "rl_energy_kwh": 0.23633267107483533,
+                    "rl_minus_reference_energy_kwh": 0.038478238075184384,
+                    "rl_minus_reference_energy_percent": 19.447751304744468,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.17387471456611822,
+                    "rl_energy_kwh": 0.15582759703540663,
+                    "rl_minus_reference_energy_kwh": -0.018047117530711587,
+                    "rl_minus_reference_energy_percent": -10.379380104660891,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1914584990185021,
+                    "rl_energy_kwh": 0.17677559948012206,
+                    "rl_minus_reference_energy_kwh": -0.014682899538380034,
+                    "rl_minus_reference_energy_percent": -7.668972447632693,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.20867228592781245,
+                    "rl_energy_kwh": 0.1818429290964647,
+                    "rl_minus_reference_energy_kwh": -0.02682935683134774,
+                    "rl_minus_reference_energy_percent": -12.857173012725331,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.19363427723062185,
+                    "rl_minus_reference_energy_kwh": 0.006329989255916435,
+                    "rl_minus_reference_energy_percent": 3.3795218061271886,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1873042879747054,
+                    "rl_energy_kwh": 0.16297764691062055,
+                    "rl_minus_reference_energy_kwh": -0.02432664106408486,
+                    "rl_minus_reference_energy_percent": -12.98776516390808,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.19860391017823203,
+                    "rl_energy_kwh": 0.17904143852167173,
+                    "rl_minus_reference_energy_kwh": -0.019562471656560304,
+                    "rl_minus_reference_energy_percent": -9.84999320456705,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 23,
+                  "maximum": 0.0761361686346334,
+                  "mean": -0.002639272221029007,
+                  "median": -0.008308004542899733,
+                  "minimum": -0.03941958385706801,
+                  "values": [
+                    -0.008308004542899733,
+                    -0.03306632060091097,
+                    0.007992073670777283,
+                    -0.03818138393209311,
+                    -0.015319322708581828,
+                    -0.005604709272947289,
+                    -0.03622482212841541,
+                    -0.026752083972484603,
+                    0.0761361686346334,
+                    0.012277895191507376,
+                    0.004619731941035182,
+                    0.010475879896378132,
+                    0.05127342005561841,
+                    0.017303807771319513,
+                    0.020734252060448183,
+                    -0.03941958385706801,
+                    0.038478238075184384,
+                    -0.018047117530711587,
+                    -0.014682899538380034,
+                    -0.02682935683134774,
+                    0.006329989255916435,
+                    -0.02432664106408486,
+                    -0.019562471656560304
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 23,
+                  "maximum": 38.480901074765264,
+                  "mean": -1.2141166220942805,
+                  "median": -4.199048976028952,
+                  "minimum": -19.3400922745065,
+                  "values": [
+                    -4.199048976028952,
+                    -17.27075098280987,
+                    4.811612585759464,
+                    -18.297295092315938,
+                    -7.512933518884854,
+                    -2.9923016357768484,
+                    -19.3400922745065,
+                    -13.470069118214553,
+                    38.480901074765264,
+                    7.061345993950454,
+                    2.4129155742460626,
+                    5.020254534424437,
+                    27.374397356318212,
+                    9.238340434393212,
+                    10.440001932409466,
+                    -18.76594937327512,
+                    19.447751304744468,
+                    -10.379380104660891,
+                    -7.668972447632693,
+                    -12.857173012725331,
+                    3.3795218061271886,
+                    -12.98776516390808,
+                    -9.84999320456705
+                  ]
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 23,
+                "pairs": [
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.1895464284567512,
+                    "rl_minus_reference_energy_kwh": 0.03451240203187281,
+                    "rl_minus_reference_energy_percent": 22.261178934545548,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15839217841759112,
+                    "rl_minus_reference_energy_kwh": 0.00881466055373939,
+                    "rl_minus_reference_energy_percent": 5.893038392148384,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14734015563169486,
+                    "rl_energy_kwh": 0.17409176537145096,
+                    "rl_minus_reference_energy_kwh": 0.0267516097397561,
+                    "rl_minus_reference_energy_percent": 18.156360447064348,
+                    "track_seed": 9500012
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17049090199571934,
+                    "rl_minus_reference_energy_kwh": 0.020913384131867607,
+                    "rl_minus_reference_energy_percent": 13.981636030959788,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18858668378108664,
+                    "rl_minus_reference_energy_kwh": 0.03900916591723491,
+                    "rl_minus_reference_energy_percent": 26.079564946880446,
+                    "track_seed": 9500017
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.18169957870175812,
+                    "rl_minus_reference_energy_kwh": 0.03212206083790639,
+                    "rl_minus_reference_energy_percent": 21.47519312838477,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15107946584629,
+                    "rl_minus_reference_energy_kwh": 0.001501947982438273,
+                    "rl_minus_reference_energy_percent": 1.0041268259347467,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C11",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17185182620574743,
+                    "rl_minus_reference_energy_kwh": 0.0222743083418957,
+                    "rl_minus_reference_energy_percent": 14.891481460582995,
+                    "track_seed": 9500022
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.27399060163428435,
+                    "rl_minus_reference_energy_kwh": 0.11895657520940595,
+                    "rl_minus_reference_energy_percent": 76.72933352282266,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1861526097576256,
+                    "rl_minus_reference_energy_kwh": 0.036575091893773864,
+                    "rl_minus_reference_energy_percent": 24.452265565113333,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19607823095953728,
+                    "rl_minus_reference_energy_kwh": 0.04650071309568554,
+                    "rl_minus_reference_energy_percent": 31.088036330440627,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21914816582419058,
+                    "rl_minus_reference_energy_kwh": 0.06957064796033885,
+                    "rl_minus_reference_energy_percent": 46.51143363915382,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.23857770803032383,
+                    "rl_minus_reference_energy_kwh": 0.08900019016647209,
+                    "rl_minus_reference_energy_percent": 59.50104764238817,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.20460809574602493,
+                    "rl_minus_reference_energy_kwh": 0.05503057788217319,
+                    "rl_minus_reference_energy_percent": 36.79067460677015,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C29",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.21933816223868022,
+                    "rl_minus_reference_energy_kwh": 0.06976064437482848,
+                    "rl_minus_reference_energy_percent": 46.63845567909873,
+                    "track_seed": 9500022
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.170639513463135,
+                    "rl_minus_reference_energy_kwh": 0.021061995599283262,
+                    "rl_minus_reference_energy_percent": 14.080990178252781,
+                    "track_seed": 9500001
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.1550340264248784,
+                    "rl_energy_kwh": 0.23633267107483533,
+                    "rl_minus_reference_energy_kwh": 0.08129864464995692,
+                    "rl_minus_reference_energy_percent": 52.439226745717086,
+                    "track_seed": 9500003
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.15582759703540663,
+                    "rl_minus_reference_energy_kwh": 0.006250079171554901,
+                    "rl_minus_reference_energy_percent": 4.178488358955014,
+                    "track_seed": 9500005
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17677559948012206,
+                    "rl_minus_reference_energy_kwh": 0.027198081616270325,
+                    "rl_minus_reference_energy_percent": 18.18326845149719,
+                    "track_seed": 9500011
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.1818429290964647,
+                    "rl_minus_reference_energy_kwh": 0.03226541123261298,
+                    "rl_minus_reference_energy_percent": 21.57102998726156,
+                    "track_seed": 9500016
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.19363427723062185,
+                    "rl_minus_reference_energy_kwh": 0.044056759366770115,
+                    "rl_minus_reference_energy_percent": 29.454131874865986,
+                    "track_seed": 9500018
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.16297764691062055,
+                    "rl_minus_reference_energy_kwh": 0.013400129046768822,
+                    "rl_minus_reference_energy_percent": 8.958651833603676,
+                    "track_seed": 9500020
+                  },
+                  {
+                    "policy": "C47",
+                    "reference_energy_kwh": 0.14957751786385173,
+                    "rl_energy_kwh": 0.17904143852167173,
+                    "rl_minus_reference_energy_kwh": 0.029463920657819997,
+                    "rl_minus_reference_energy_percent": 19.69809439185815,
+                    "track_seed": 9500022
+                  }
+                ],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 23,
+                  "maximum": 0.11895657520940595,
+                  "mean": 0.0402734348461055,
+                  "median": 0.03226541123261298,
+                  "minimum": 0.001501947982438273,
+                  "values": [
+                    0.03451240203187281,
+                    0.00881466055373939,
+                    0.0267516097397561,
+                    0.020913384131867607,
+                    0.03900916591723491,
+                    0.03212206083790639,
+                    0.001501947982438273,
+                    0.0222743083418957,
+                    0.11895657520940595,
+                    0.036575091893773864,
+                    0.04650071309568554,
+                    0.06957064796033885,
+                    0.08900019016647209,
+                    0.05503057788217319,
+                    0.06976064437482848,
+                    0.021061995599283262,
+                    0.08129864464995692,
+                    0.006250079171554901,
+                    0.027198081616270325,
+                    0.03226541123261298,
+                    0.044056759366770115,
+                    0.013400129046768822,
+                    0.029463920657819997
+                  ]
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 23,
+                  "maximum": 76.72933352282266,
+                  "mean": 26.696422129317387,
+                  "median": 21.57102998726156,
+                  "minimum": 1.0041268259347467,
+                  "values": [
+                    22.261178934545548,
+                    5.893038392148384,
+                    18.156360447064348,
+                    13.981636030959788,
+                    26.079564946880446,
+                    21.47519312838477,
+                    1.0041268259347467,
+                    14.891481460582995,
+                    76.72933352282266,
+                    24.452265565113333,
+                    31.088036330440627,
+                    46.51143363915382,
+                    59.50104764238817,
+                    36.79067460677015,
+                    46.63845567909873,
+                    14.080990178252781,
+                    52.439226745717086,
+                    4.178488358955014,
+                    18.18326845149719,
+                    21.57102998726156,
+                    29.454131874865986,
+                    8.958651833603676,
+                    19.69809439185815
+                  ]
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 31,
+            "rl_failed_pairs_oracle_feasible": 31,
+            "rl_failed_policy_track_pairs": 31
+          },
+          "scalar": {
+            "distinct_failed_tracks_causal_feasible": 18,
+            "distinct_failed_tracks_oracle_feasible": 18,
+            "distinct_rl_failed_tracks": 18,
+            "episode_count": 54,
+            "exclusive_failure_modes": {
+              "INCOMPLETE_SAFE": 53,
+              "INCOMPLETE_WITH_SPEED_VIOLATION": 1
+            },
+            "failure_components": {
+              "deadline_related": 54,
+              "noncompletion": 54,
+              "speed_related": 1
+            },
+            "paired_feasible_energy": {
+              "causal": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              },
+              "oracle": {
+                "paired_feasible_policy_track_count": 0,
+                "pairs": [],
+                "rl_minus_reference_energy_kwh": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                },
+                "rl_minus_reference_energy_percent": {
+                  "count": 0,
+                  "maximum": null,
+                  "mean": null,
+                  "median": null,
+                  "minimum": null,
+                  "values": []
+                }
+              }
+            },
+            "rl_failed_pairs_causal_feasible": 54,
+            "rl_failed_pairs_oracle_feasible": 54,
+            "rl_failed_policy_track_pairs": 54
+          }
+        }
+      }
+    }
+  },
+  "schema_version": 1
+}

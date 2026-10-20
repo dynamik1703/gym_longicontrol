@@ -1,0 +1,48 @@
+{
+  "bounded_preparation_only": true,
+  "causal_shield_benchmark": {
+    "actions": 1286,
+    "fixture": "consecutive_downward_changes",
+    "mean_full_environment_step_time_s": 0.0002619135560153536,
+    "mean_physics_prediction_calls_per_action": 10.137636080870918,
+    "mean_shield_time_per_action_s": 0.0002035937667788118,
+    "physics_prediction_calls": 13037,
+    "rollout_wall_time_s": 0.3368208330357447,
+    "shield_action_time_s": 0.26182158407755196
+  },
+  "disk_gate_passed": true,
+  "future_study": {
+    "collection_projection_s": 235.72220041381826,
+    "diagnostic_episode_count": 324,
+    "evaluation_projection_s": 158.40531867808588,
+    "final_evaluation_episode_count": 180,
+    "gradient_updates_per_policy": 30000,
+    "policy_count": 3,
+    "projected_checkpoint_bytes": 71222592,
+    "projected_other_artifact_bytes": 2000000000,
+    "projected_retained_disk_bytes": 2208022592,
+    "projected_retained_disk_gb": 2.208022592,
+    "projected_retained_replay_bytes": 136800000,
+    "projected_runtime_hours": 0.5540619432777445,
+    "projected_runtime_s": 1994.6229957998803,
+    "real_transitions_per_policy": 300000,
+    "uncertainty_factor": 3.0,
+    "update_projection_s": 270.7468128413893
+  },
+  "limits": {
+    "retained_disk_gb": 12.0,
+    "runtime_hours": 24.0
+  },
+  "maximum_rss_platform_units": 311967744,
+  "model_free_update_benchmark": {
+    "batch_size": 256,
+    "mean_update_time_s": 0.0030082979204598815,
+    "parameter_count_actor_plus_two_critics": 211972,
+    "scope": "synthetic tensors only; no environment data and no retained model",
+    "updates": 100,
+    "wall_time_s": 0.30082979204598814
+  },
+  "no_rl_training_occurred": true,
+  "runtime_gate_passed": true,
+  "schema_version": 1
+}

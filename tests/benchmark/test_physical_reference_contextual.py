@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import ast
+import hashlib
 
 import pytest
 
@@ -91,3 +92,38 @@ def test_paired_energy_is_feasible_only_and_uses_causal_minus_oracle():
     assert result["both_references_feasible_count"] == 1
     assert result["energy_causal_minus_oracle_kwh"]["mean"] == pytest.approx(0.05)
     assert result["travel_time_causal_minus_oracle_s"]["mean"] == -10.0
+
+
+def test_completed_contextual_artifacts_have_exact_accounting():
+    if not runner.RESULTS.exists():
+        pytest.skip("contextual execution has not been authorized/completed")
+    payload = runner.load_json(runner.RESULTS)
+    accounting = payload["execution_accounting"]
+    assert accounting["scientific_controller_task_pairs"] == 72
+    assert accounting["duplicate_scientific_pairs"] == 0
+    assert accounting["oracle_replay_checks"] == 36
+    assert accounting["rl_policy_episodes_executed"] == 0
+    assert payload["factual_interpretation"][
+        "both_references_full_feasibility_on_both_panels"
+    ]
+
+
+def test_completed_contextual_output_hashes_and_pairs_are_unique():
+    if not runner.RESULTS.exists():
+        pytest.skip("contextual execution has not been authorized/completed")
+    integrity = runner.load_json(runner.INTEGRITY)
+    for name, expected in integrity["output_sha256"].items():
+        observed = hashlib.sha256((runner.HERE / name).read_bytes()).hexdigest()
+        assert observed == expected
+    paths = sorted(runner.EPISODES.rglob("seed-*-*.json"))
+    identities = set()
+    for path in paths:
+        envelope = runner.load_json(path)
+        identity = (
+            envelope["evaluation_id"],
+            envelope["task"]["numeric_seed"],
+            envelope["controller"],
+        )
+        assert identity not in identities
+        identities.add(identity)
+    assert len(paths) == len(identities) == 72

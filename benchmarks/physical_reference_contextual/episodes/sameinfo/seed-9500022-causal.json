@@ -1,0 +1,35 @@
+{
+  "controller": "causal",
+  "episode": {
+    "action_sha256": "77b694263008c60f3f9a9909515bbb5282c4f3351f99a9d19f11fbb81e70c7cd",
+    "canonical_success": true,
+    "completion": true,
+    "controller": "causal",
+    "cruise_cap_m_s": null,
+    "deadline_compliant": true,
+    "exclusive_failure_mode": "feasible",
+    "final_position_m": 1000.6778912982022,
+    "information_available": "ordinary 8D observation; exact known dynamics; fixed task parameters; internally propagated position/velocity/acceleration/elapsed time; remembered previously visible transitions",
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "requirement_satisfaction": true,
+    "signed_net_energy_kwh": 0.19860391017823203,
+    "simulator_steps": 692,
+    "solver_computation_time_s": 0.09785020805429667,
+    "solver_status": "FEASIBLE",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "trace_sha256": "289d8cc91198b4c98cd160fc4e2d64c97e8f60d47a07d45471c0eb80ebf863e7",
+    "track_seed": 9500022,
+    "travel_time_s": 69.20000000000034
+  },
+  "evaluation_id": "SAMEINFO_VALIDATION_V1",
+  "schema_version": 1,
+  "scientific_pair_execution_ordinal": 1,
+  "source_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
+  "task": {
+    "full_task_sha256": "2bbde2c45a2d699725785c9e5394712bb7b18d69d91c98d9978d63c2aa28465c",
+    "numeric_seed": 9500022,
+    "route_sha256": "1d38aebf356645345f29d7da3638f97772c4916e4febb65366ca29c738b726dd"
+  }
+}

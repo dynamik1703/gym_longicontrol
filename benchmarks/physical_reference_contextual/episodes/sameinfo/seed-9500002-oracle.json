@@ -1,0 +1,62 @@
+{
+  "controller": "oracle",
+  "episode": {
+    "action_sha256": "e032750bbf68790baac8182ef55390d553ce2dad095342ab3444fb11c99b0dd6",
+    "canonical_success": true,
+    "classification": "FEASIBLE_WITNESS",
+    "classification_reason": "executed original-simulator trajectory satisfies all hard requirements",
+    "completion": true,
+    "controller": "oracle",
+    "cruise_cap_m_s": 8.455078125,
+    "deadline_compliant": true,
+    "exclusive_failure_mode": "feasible",
+    "feasibility_preserving_energy_refinement": true,
+    "feasible_witness_found": true,
+    "final_position_m": 1000.714479316245,
+    "infeasibility_proved": false,
+    "information_available": "complete generated route, exact vehicle dynamics, current physical state, canonical deadline",
+    "initial_deadline_slack_s": 38.3,
+    "initial_time_efficient_energy_kwh": 0.27927422525829326,
+    "initial_time_efficient_travel_time_s": 113.69999999999781,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "numerical_parity": true,
+    "optimistic_route_time_s": 101.7,
+    "optimization_iterations": 11,
+    "replay": {
+      "action_sha256": "e032750bbf68790baac8182ef55390d553ce2dad095342ab3444fb11c99b0dd6",
+      "actions_used": 1398,
+      "final_position_m": 1000.714479316245,
+      "metrics": {
+        "completed": true,
+        "energy_kwh": 0.1693106947821643,
+        "integrated_speed_violation_m": 0.0,
+        "max_speed_violation_m_s": 0.0,
+        "speed_violation_count": 0,
+        "travel_time_s": 139.79999999999634
+      },
+      "trace_sha256": "a1fe7197c4e6b45650d44a539b006c1772afb843149e53b6c3299882ea692aba",
+      "track_seed": 9500002
+    },
+    "requirement_satisfaction": true,
+    "signed_net_energy_kwh": 0.1693106947821643,
+    "simulator_steps": 1398,
+    "solver_computation_time_s": 2.6511549999704584,
+    "solver_status": "FEASIBLE",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "trace_sha256": "a1fe7197c4e6b45650d44a539b006c1772afb843149e53b6c3299882ea692aba",
+    "track_seed": 9500002,
+    "travel_time_s": 139.79999999999634,
+    "unresolved": false
+  },
+  "evaluation_id": "SAMEINFO_VALIDATION_V1",
+  "schema_version": 1,
+  "scientific_pair_execution_ordinal": 1,
+  "source_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
+  "task": {
+    "full_task_sha256": "c924d2aa8da8282a25df787942700231897603f5b13771fd360d0bd9f50c5c82",
+    "numeric_seed": 9500002,
+    "route_sha256": "a6c98aafa3d055e19054c418b7652bb358e997b88fce898ba71b31fde4def19e"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "controller": "oracle",
+  "episode": {
+    "action_sha256": "d72dbde5e4b11156c95df11dab36a6d0e1a7bb3bc047b9d773648ead7b8953dd",
+    "canonical_success": true,
+    "classification": "FEASIBLE_WITNESS",
+    "classification_reason": "executed original-simulator trajectory satisfies all hard requirements",
+    "completion": true,
+    "controller": "oracle",
+    "cruise_cap_m_s": 8.09375,
+    "deadline_compliant": true,
+    "exclusive_failure_mode": "feasible",
+    "feasibility_preserving_energy_refinement": true,
+    "feasible_witness_found": true,
+    "final_position_m": 1000.2736166366608,
+    "infeasibility_proved": false,
+    "information_available": "complete generated route, exact vehicle dynamics, current physical state, canonical deadline",
+    "initial_deadline_slack_s": 44.457142857142856,
+    "initial_time_efficient_energy_kwh": 0.20345379369603558,
+    "initial_time_efficient_travel_time_s": 102.29999999999846,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "numerical_parity": true,
+    "optimistic_route_time_s": 95.54285714285714,
+    "optimization_iterations": 11,
+    "replay": {
+      "action_sha256": "d72dbde5e4b11156c95df11dab36a6d0e1a7bb3bc047b9d773648ead7b8953dd",
+      "actions_used": 1311,
+      "final_position_m": 1000.2736166366608,
+      "metrics": {
+        "completed": true,
+        "energy_kwh": 0.14766933416910247,
+        "integrated_speed_violation_m": 0.0,
+        "max_speed_violation_m_s": 0.0,
+        "speed_violation_count": 0,
+        "travel_time_s": 131.09999999999684
+      },
+      "trace_sha256": "c0e12f0c377ec9381f3954f56017d71f03688e94b0f94d78e87dbefac3548b65",
+      "track_seed": 9700002
+    },
+    "requirement_satisfaction": true,
+    "signed_net_energy_kwh": 0.14766933416910247,
+    "simulator_steps": 1311,
+    "solver_computation_time_s": 3.259123250027187,
+    "solver_status": "FEASIBLE",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "trace_sha256": "c0e12f0c377ec9381f3954f56017d71f03688e94b0f94d78e87dbefac3548b65",
+    "track_seed": 9700002,
+    "travel_time_s": 131.09999999999684,
+    "unresolved": false
+  },
+  "evaluation_id": "GCSL_VALIDATION_V1",
+  "schema_version": 1,
+  "scientific_pair_execution_ordinal": 1,
+  "source_commit": "5ada9402e3a2d627a7ea417cf1ffc23e1ab3789e",
+  "task": {
+    "full_task_sha256": "19e660815d1c963185fb492e3676fcc765031484bc1c351bdfe587e5f911f1a3",
+    "numeric_seed": 9700002,
+    "route_sha256": "2e7357e09f0c9d1cbd7692380b8c66a8ffe83bd33245fcd68bf78e593be11c96"
+  }
+}

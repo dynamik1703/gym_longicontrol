@@ -1,0 +1,79 @@
+{
+  "artifact_sha256": {
+    "preflight_results.json": "32194709573e066ab94af22f760d48093cb8483fdc118822c04be7dd55d75e7d",
+    "resource_measurements.json": "0b0efbc70168f77d19b82adcb2a0881fb46cb24c9df305d8718f66092247cff8",
+    "split_ledger.json": "c6e1ac67d4099468ebc2ac1a0c13cbbe9401a78e6acf920fea6eeef726b63312"
+  },
+  "configuration_sha256": "a27b128e9a76cb4c217da6dd63f9321b9f3f1e1ced17aba31cbb97ae2e935fe7",
+  "contextual_results_used_for_hyperparameter_or_controller_selection": false,
+  "gates": {
+    "causal_information_boundary": true,
+    "deadline_viability_fixtures": true,
+    "disk_within_12_gb": true,
+    "fallback_action_trace_metric_energy_parity": true,
+    "frozen_fallback_source_and_configuration": true,
+    "paper_fail_closed": true,
+    "right_endpoint_and_braking_fixtures": true,
+    "route_clean_policy_r": true,
+    "runtime_within_24_hours": true,
+    "shield_does_not_dominate_fixture_strategy": true
+  },
+  "hybrid_final_validation": {
+    "performance_episode_count": 0,
+    "state": "FROZEN_UNOPENED"
+  },
+  "paper": {
+    "content_fingerprints_constructed": 0,
+    "numeric_exclusion_only": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017
+    ],
+    "state": "SEALED_UNINSPECTED"
+  },
+  "physical_fallback": {
+    "scientific_configuration_sha256": "f63717504a810c75d7080388aeb159505cf667ad13248dbe4a53ec0c4bb94cd1",
+    "source_sha256": {
+      "causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "diagnostics.py": "51ad2c904e6a7dc51f562541ce0428a65af17de0ddd1e79a0bce15f0ac9bb22f",
+      "evaluation.py": "a88727a457ef7310bcaf388ae92d07189fe79cf8e6b3efa2010aea8f183b1a08",
+      "feasibility.py": "04e15e15eebcce6d6f9dc1f984922dbc65770be4b7c4b9c318fdf1614657c0a7",
+      "oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+      "runner.py": "ebbe0784b6930761e17a76507cb3c5553d19f82859329ed49ba8a76f10374651"
+    },
+    "verified": true
+  },
+  "prepared_at_utc": "2026-10-20T15:53:10.051100+00:00",
+  "ready_for_future_separately_authorized_training": true,
+  "real_training_transitions": 0,
+  "rl_gradient_updates": 0,
+  "schema_version": 1,
+  "scientific_source_sha256": {
+    "baseline.py": "7e37329c2bca7e70b461c9c2f13aedfba1f6ce1b961f4bc08bdc56d016aeef4d",
+    "canonical.json": "a27b128e9a76cb4c217da6dd63f9321b9f3f1e1ced17aba31cbb97ae2e935fe7",
+    "controller.py": "99f38f33d69267d9e204e99ad1e7116735fa48ce5367907c73c197edec4363ef",
+    "preflight.py": "94a25162468f9f05c326818e20d7d4605b585a371429e144a33b4547db781f96",
+    "prepare.py": "4ffc09a17b1bd1b23ce757f3efeb5c900c4837a036b5e4cb21348f9e4ba59fa5",
+    "resource.py": "eb68be5e5fe3be214f08585b4e78dc197b62d2a230391686f89b3b4b88f21a6e",
+    "split.py": "b6432eb92e2e3fd27a7f90afcbdc2b99cdf29038d60b2667f64582194616c865",
+    "viability.py": "3303459dccfe9a6d48118c83db41c59ed1c1396ac019d6a8e0f8f7ff60c61c6f"
+  },
+  "study": "HYBRID_RL_FEASIBILITY_V1",
+  "training_authorized": false,
+  "training_started": false
+}
