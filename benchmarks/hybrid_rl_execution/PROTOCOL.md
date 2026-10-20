@@ -1,7 +1,7 @@
 # Executable Hybrid RL V1 Protocol — Revision 3
 
-Status: **prepared; main training, final Validation, and Paper execution are
-not authorized**.
+Status: **Revision-3 main training and scheduled Diagnostic authorized; final
+Validation and Paper execution are not authorized**.
 
 ## Scientific question
 
@@ -96,8 +96,12 @@ Current authorization flags are intentionally:
 
 ```text
 ready_for_main_training = true
-main_training_authorized = false
-main_training_enabled = false
+main_training_authorized = true
+main_training_enabled = true
 validation_authorized = false
 paper_authorized = false
 ```
+
+This authorization changes execution metadata only. The pre-authorization
+scientific configuration identity and source ledger remain recorded in
+`authorization_record.json`.

@@ -8,9 +8,10 @@ Protocol Revision 3 replaces the former warm-up credit burst with the frozen
 post-warm-up cumulative update schedule in `TEMPORAL_SEMANTICS.md`. No main
 training or reserved evaluation was run for this amendment.
 
-Main training is deliberately fail-closed. `canonical.json` records readiness
-but keeps `main_training_authorized=false` and `main_training_enabled=false`.
-The prepared launchd file is not loaded by preparation.
+Main training for seeds 11, 29, and 47 and the preregistered Diagnostic are
+authorized by the execution prompt dated 2026-10-20. Final Validation and
+Paper remain fail-closed. `authorization_record.json` preserves the original
+Revision-3 scientific freeze identity and the authorization-only transition.
 
 ## Modules
 

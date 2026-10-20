@@ -5,7 +5,20 @@
     "resource_measurements.json": "1b139554aaba66c579499eff1644d10da653158368f5233c9b7b48183eca19d7",
     "safety_audit.json": "7e763a0d11443236038178903ea5752d86de76009116d54225dbe26bdbd66e29"
   },
-  "configuration_sha256": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
+  "authorization_transition": {
+    "authorized_at_utc": "2026-10-20T20:15:00Z",
+    "authorized_scope": [
+      "main_training_seeds_11_29_47",
+      "scheduled_hybrid_rl_diagnostic_v1"
+    ],
+    "execution_configuration_sha256": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+    "pre_authorization_configuration_sha256": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
+    "pre_authorization_revision3_commit": "e652f547e77753ef7dd5eb0a4b9550f32975bdc2",
+    "scientific_fields_changed": false,
+    "validation_authorized": false,
+    "paper_authorized": false
+  },
+  "configuration_sha256": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
   "diagnostic": {
     "count": 18,
     "id": "HYBRID_RL_DIAGNOSTIC_V1",
@@ -61,8 +74,9 @@
     "validation_split_frozen_unopened": true,
     "validation_unauthorized": true
   },
-  "main_training_authorized": false,
-  "main_training_enabled": false,
+  "gates_snapshot_phase": "PRE_AUTHORIZATION",
+  "main_training_authorized": true,
+  "main_training_enabled": true,
   "main_training_gradient_updates": 0,
   "main_training_real_native_transitions": 0,
   "main_training_started": false,
@@ -137,7 +151,7 @@
   "schema_version": 2,
   "scientific_source_sha256": {
     "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
-    "benchmarks/hybrid_rl_execution/canonical.json": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
+    "benchmarks/hybrid_rl_execution/canonical.json": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
     "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
     "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
     "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",

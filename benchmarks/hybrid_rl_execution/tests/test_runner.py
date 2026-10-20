@@ -151,21 +151,20 @@ def test_frozen_split_hashes_and_fail_closed_boundaries():
         evaluate_seed(numeric_seed=4000, arm="causal")
     with pytest.raises(PermissionError, match="frozen and unopened"):
         evaluate_validation(None)  # type: ignore[arg-type]
-    with pytest.raises(PermissionError, match="not authorized"):
-        require_main_training_authorized()
+    require_main_training_authorized()
 
 
-def test_final_authorization_flags_are_fail_closed():
+def test_authorization_scope_enables_only_main_training():
     from benchmarks.hybrid_rl_execution.evaluation import CANONICAL
 
     authorization = json.loads(CANONICAL.read_text(encoding="utf-8"))["authorization"]
     assert authorization == {
         "ready_for_main_training": True,
-        "main_training_authorized": False,
-        "main_training_enabled": False,
+        "main_training_authorized": True,
+        "main_training_enabled": True,
         "validation_authorized": False,
         "paper_authorized": False,
-        "preparation_only": True,
+        "preparation_only": False,
     }
 
 

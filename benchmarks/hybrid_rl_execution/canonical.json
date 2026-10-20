@@ -4,11 +4,11 @@
   "name": "HYBRID_RL_EXECUTION_V1",
   "authorization": {
     "ready_for_main_training": true,
-    "main_training_authorized": false,
-    "main_training_enabled": false,
+    "main_training_authorized": true,
+    "main_training_enabled": true,
     "validation_authorized": false,
     "paper_authorized": false,
-    "preparation_only": true
+    "preparation_only": false
   },
   "lineage": {
     "source_branch": "research/hybrid-rl-feasibility-design",
