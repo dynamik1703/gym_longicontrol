@@ -1,0 +1,25 @@
+{
+  "checkpoint": {
+    "attempt_id": "EXACT-RESUME-PROBE",
+    "gradient_update_count": 0,
+    "macro_transition_count": 0,
+    "native_transition_count": 3,
+    "schema_version": 1,
+    "sha256": "6b36bf63d604d05c85d0fc412521e1f362a1ed187ae40084bfe718847180ff70",
+    "size_bytes": 3181076,
+    "write_s": 0.0118742500199005
+  },
+  "future_action_reward_cost_trace_exact": true,
+  "future_native_steps_compared": 20,
+  "network_optimizer_replay_environment_controller_rng_exact": true,
+  "partial_block_at_checkpoint": {
+    "held_strategy_action": -0.3173132441537032,
+    "native_steps_in_accumulator": 3,
+    "remaining_native_steps_in_block": 7
+  },
+  "passed": true,
+  "preparation_interactions": {
+    "gradient_updates": 4,
+    "real_native_transitions": 43
+  }
+}

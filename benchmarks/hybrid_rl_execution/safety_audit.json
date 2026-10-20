@@ -1,0 +1,173 @@
+{
+  "deadline_passed": true,
+  "eventual_completion_passed": true,
+  "exact_right_endpoint_speed_passed": true,
+  "feasibility_passed": true,
+  "passed": true,
+  "rows": [
+    {
+      "case": 0,
+      "completed": true,
+      "energy_kwh": 0.21483012389758904,
+      "feasible": true,
+      "fixture": "repeated_maximum_reductions",
+      "influenced_native_count": 495,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 495,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 642,
+        "DEADLINE_RECOVERABILITY": 232
+      },
+      "macro_decision_count": 137,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1369,
+      "override_count": 232,
+      "schedule": "<lambda>",
+      "speed_violation_count": 0,
+      "travel_time_s": 136.8999999999965,
+      "viability_falsifications": []
+    },
+    {
+      "case": 1,
+      "completed": true,
+      "energy_kwh": 0.20568648735778922,
+      "feasible": true,
+      "fixture": "slow_sections",
+      "influenced_native_count": 434,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 434,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 620,
+        "DEADLINE_RECOVERABILITY": 306
+      },
+      "macro_decision_count": 136,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1360,
+      "override_count": 306,
+      "schedule": "<lambda>",
+      "speed_violation_count": 0,
+      "travel_time_s": 135.99999999999656,
+      "viability_falsifications": []
+    },
+    {
+      "case": 2,
+      "completed": true,
+      "energy_kwh": 0.17198171245216487,
+      "feasible": true,
+      "fixture": "consecutive_transitions",
+      "influenced_native_count": 898,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 898,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 234,
+        "DEADLINE_RECOVERABILITY": 234
+      },
+      "macro_decision_count": 137,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1366,
+      "override_count": 234,
+      "schedule": "<lambda>",
+      "speed_violation_count": 0,
+      "travel_time_s": 136.59999999999653,
+      "viability_falsifications": []
+    },
+    {
+      "case": 3,
+      "completed": true,
+      "energy_kwh": 0.17198171245216487,
+      "feasible": true,
+      "fixture": "consecutive_transitions",
+      "influenced_native_count": 898,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 898,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 263,
+        "DEADLINE_RECOVERABILITY": 205
+      },
+      "macro_decision_count": 137,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1366,
+      "override_count": 205,
+      "schedule": "_gradual",
+      "speed_violation_count": 0,
+      "travel_time_s": 136.59999999999653,
+      "viability_falsifications": []
+    },
+    {
+      "case": 4,
+      "completed": true,
+      "energy_kwh": 0.2839518303134096,
+      "feasible": true,
+      "fixture": "repeated_maximum_reductions",
+      "influenced_native_count": 0,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 856,
+        "DEADLINE_RECOVERABILITY": 134,
+        "KNOWN_TRANSITION_BRAKING": 82,
+        "RIGHT_ENDPOINT_SPEED": 2
+      },
+      "macro_decision_count": 108,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1074,
+      "override_count": 218,
+      "schedule": "_fallback_after_slow",
+      "speed_violation_count": 0,
+      "travel_time_s": 107.39999999999817,
+      "viability_falsifications": []
+    },
+    {
+      "case": 5,
+      "completed": true,
+      "energy_kwh": 0.16961061936402888,
+      "feasible": true,
+      "fixture": "low_speed_acceleration",
+      "influenced_native_count": 374,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 374,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 732,
+        "DEADLINE_RECOVERABILITY": 234
+      },
+      "macro_decision_count": 134,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1340,
+      "override_count": 234,
+      "schedule": "<lambda>",
+      "speed_violation_count": 0,
+      "travel_time_s": 133.99999999999667,
+      "viability_falsifications": []
+    },
+    {
+      "case": 6,
+      "completed": true,
+      "energy_kwh": 0.16970767436189108,
+      "feasible": true,
+      "fixture": "interrupted_endpoint_block",
+      "influenced_native_count": 1086,
+      "integrated_speed_violation_m": 0.0,
+      "intervention_reasons": {
+        "ACCEPTED": 1086,
+        "ACCEPTED_IDENTICAL_TO_FALLBACK": 21,
+        "DEADLINE_RECOVERABILITY": 234
+      },
+      "macro_decision_count": 135,
+      "max_speed_violation_m_s": 0.0,
+      "minimum_target": -1.0,
+      "native_proposal_count": 1341,
+      "override_count": 234,
+      "schedule": "<lambda>",
+      "speed_violation_count": 0,
+      "travel_time_s": 134.09999999999667,
+      "viability_falsifications": []
+    }
+  ],
+  "scope": "deterministic unreserved adversarial fixtures; evidence, not a global shield proof",
+  "viability_falsifications": []
+}

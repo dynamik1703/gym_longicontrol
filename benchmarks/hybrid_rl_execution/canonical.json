@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "name": "HYBRID_RL_EXECUTION_V1",
+  "authorization": {
+    "ready_for_main_training": true,
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "validation_authorized": false,
+    "paper_authorized": false,
+    "preparation_only": true
+  },
+  "lineage": {
+    "source_branch": "research/hybrid-rl-feasibility-design",
+    "source_commit": "337fe498083eb3d4c63263f696ee8b30f6800fec",
+    "physical_reference_commit": "3d9e8bcb72ecf4a01be192036df8f00c5ac9de8e",
+    "physical_reference_configuration_sha256": "f63717504a810c75d7080388aeb159505cf667ad13248dbe4a53ec0c4bb94cd1",
+    "frozen_dependency": "benchmarks/hybrid_rl_design"
+  },
+  "temporal_semantics": {
+    "amendment": "SMDP_DECISION_BOUNDARY_V1",
+    "native_dt_s": 0.1,
+    "native_steps_per_strategy_decision": 10,
+    "strategy_period_s": 1.0,
+    "gamma_decision": 0.99,
+    "gamma_native": 0.99899547129175,
+    "replay_unit": "completed or terminal-shortened macro transition",
+    "terminal_bootstrap": false,
+    "truncation_bootstrap": false
+  },
+  "learner": {
+    "algorithm": "shielded constrained Soft Actor-Critic",
+    "observation_dimensions": 16,
+    "action_dimensions": 1,
+    "actor_hidden_sizes": [256, 256],
+    "reward_critics": 2,
+    "speed_cost_critics": 1,
+    "terminal_cost_critics": 1,
+    "intervention_regularizer_critics": 1,
+    "critic_hidden_sizes": [256, 256],
+    "tau": 0.005,
+    "batch_size": 256,
+    "replay_capacity_macro_transitions": 300000,
+    "actor_learning_rate": 0.0003,
+    "critic_learning_rate": 0.0003,
+    "entropy_learning_rate": 0.0003,
+    "constraint_multiplier_learning_rate": 0.001,
+    "target_entropy": -1.0,
+    "energy_reward_scale_per_kwh": 1000.0,
+    "intervention_regularizer_weight": 0.05,
+    "speed_cost_limit": 0.0,
+    "terminal_infeasibility_cost_limit": 0.0,
+    "warmup_real_native_transitions": 10000,
+    "real_native_transitions_per_seed": 300000,
+    "gradient_updates_per_seed": 30000,
+    "update_credit_per_native_transition": 0.1,
+    "training_seeds": [11, 29, 47],
+    "diagnostic_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+    "selected_endpoint": 300000,
+    "best_checkpoint_selection": false,
+    "device": "cpu"
+  },
+  "signals": {
+    "native_energy_reward": "-1000 * signed step_energy_kwh",
+    "native_speed_cost": "max(0, endpoint_velocity_m_s - endpoint_limit_m_s)",
+    "terminal_infeasibility_cost": "1 for incomplete or travel_time_s > 140 at true episode end, else 0",
+    "native_intervention_deviation": "abs(proposed_native_action - executed_native_action)",
+    "macro_aggregation": "sum_i gamma_native^i * signal_i",
+    "critic_replay_action": "proposed normalized strategy target"
+  },
+  "splits": {
+    "diagnostic_id": "HYBRID_RL_DIAGNOSTIC_V1",
+    "diagnostic_ordered_sha256": "c8fe41d3ae100d108a6c5175ee180e023cbd431ab3a2e709d815fef66547b784",
+    "validation_id": "HYBRID_RL_VALIDATION_V1",
+    "validation_ordered_sha256": "f3864fed8725874dc315004375af0d2850dc2d2d56957d52c64d043ca6b3352b",
+    "paper_numeric_seeds": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "comparison_arms": {
+    "causal": "unchanged frozen ObservationLimitedController",
+    "nonlearning": "frozen TimeAwareEnergyStrategy through identical shield",
+    "treatment": "three separately trained constrained SAC target-speed strategies through identical shield",
+    "oracle": "context-only privileged benchmark"
+  },
+  "acceptance": {
+    "rsr_minimum_per_seed": 35,
+    "validation_tasks": 36,
+    "mean_paired_energy_reduction_vs_causal_percent": 10.0,
+    "mean_paired_energy_reduction_vs_nonlearning_percent": 3.0,
+    "energy_subset": "paired feasible trajectories only"
+  },
+  "resource_limits": {
+    "projected_total_runtime_hours": 24.0,
+    "projected_retained_disk_gb": 12.0
+  },
+  "checkpointing": {
+    "technical_interval_native_transitions": 10000,
+    "scientific_interval_native_transitions": 50000,
+    "technical_retention": 1,
+    "immutable_attempt_ids": true,
+    "duplicate_run_protection": true
+  }
+}

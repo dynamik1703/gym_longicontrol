@@ -1,0 +1,183 @@
+{
+  "artifacts": {
+    "preflight_results.json": "32194709573e066ab94af22f760d48093cb8483fdc118822c04be7dd55d75e7d",
+    "recovery_probe.json": "24582a7757ec6c79ec4d50849995a13bc0ae22e518184349e7e56fa1f2368e34",
+    "resource_measurements.json": "ebfa2b2b9e395b9004c5c3ca86e52965836228758551e8b3cc1c86f317738e2d",
+    "safety_audit.json": "7e763a0d11443236038178903ea5752d86de76009116d54225dbe26bdbd66e29"
+  },
+  "configuration_sha256": "0a3b2adf12aecee425ba6c77a87b568f5bac4500ca92b5288cf0bbcba0e50a6d",
+  "diagnostic": {
+    "count": 18,
+    "id": "HYBRID_RL_DIAGNOSTIC_V1",
+    "ordered_sha256": "c8fe41d3ae100d108a6c5175ee180e023cbd431ab3a2e709d815fef66547b784",
+    "performance_episodes": 0
+  },
+  "exact_recovery": {
+    "checkpoint": {
+      "attempt_id": "EXACT-RESUME-PROBE",
+      "gradient_update_count": 0,
+      "macro_transition_count": 0,
+      "native_transition_count": 3,
+      "schema_version": 1,
+      "sha256": "6b36bf63d604d05c85d0fc412521e1f362a1ed187ae40084bfe718847180ff70",
+      "size_bytes": 3181076,
+      "write_s": 0.0118742500199005
+    },
+    "future_action_reward_cost_trace_exact": true,
+    "future_native_steps_compared": 20,
+    "network_optimizer_replay_environment_controller_rng_exact": true,
+    "partial_block_at_checkpoint": {
+      "held_strategy_action": -0.3173132441537032,
+      "native_steps_in_accumulator": 3,
+      "remaining_native_steps_in_block": 7
+    },
+    "passed": true,
+    "preparation_interactions": {
+      "gradient_updates": 4,
+      "real_native_transitions": 43
+    }
+  },
+  "gates": {
+    "actual_pipeline_runtime_within_24_hours": true,
+    "causal_information_boundary": true,
+    "diagnostic_split_hash": true,
+    "exact_mid_block_recovery": true,
+    "extended_deadline_viability_stress": true,
+    "fallback_action_trace_metric_energy_parity": true,
+    "frozen_physical_source_and_configuration": true,
+    "frozen_shield_fixtures": true,
+    "main_training_disabled": true,
+    "main_training_unauthorized": true,
+    "paper_fail_closed": true,
+    "paper_unauthorized": true,
+    "retained_disk_within_12_gb": true,
+    "shield_not_dominating_fixture_strategy": true,
+    "temporal_smdp_analytical_targets": true,
+    "validation_split_frozen_unopened": true,
+    "validation_unauthorized": true
+  },
+  "main_training_authorized": false,
+  "main_training_enabled": false,
+  "main_training_gradient_updates": 0,
+  "main_training_real_native_transitions": 0,
+  "main_training_started": false,
+  "paper": {
+    "content_fingerprints_constructed": 0,
+    "episode_count": 0,
+    "numeric_exclusion_only": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017
+    ],
+    "state": "SEALED_UNINSPECTED"
+  },
+  "paper_authorized": false,
+  "physical_fallback": {
+    "scientific_configuration_sha256": "f63717504a810c75d7080388aeb159505cf667ad13248dbe4a53ec0c4bb94cd1",
+    "source_sha256": {
+      "causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "diagnostics.py": "51ad2c904e6a7dc51f562541ce0428a65af17de0ddd1e79a0bce15f0ac9bb22f",
+      "evaluation.py": "a88727a457ef7310bcaf388ae92d07189fe79cf8e6b3efa2010aea8f183b1a08",
+      "feasibility.py": "04e15e15eebcce6d6f9dc1f984922dbc65770be4b7c4b9c318fdf1614657c0a7",
+      "oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+      "runner.py": "ebbe0784b6930761e17a76507cb3c5553d19f82859329ed49ba8a76f10374651"
+    },
+    "verified": true
+  },
+  "preparation_interactions_consumed": {
+    "paper_episodes": 0,
+    "real_environment_native_steps": 30348,
+    "reserved_diagnostic_episodes": 0,
+    "reserved_validation_episodes": 0,
+    "sac_gradient_updates": 14,
+    "used_only_deterministic_unreserved_fixtures": true
+  },
+  "prepared_at_utc": "2026-10-20T16:56:15.385228+00:00",
+  "ready_for_main_training": true,
+  "resources": {
+    "checkpoint_projection_s": 9.543435032246634,
+    "collection_projection_s": 392.39843665855005,
+    "diagnostic_episodes": 324,
+    "evaluation_projection_s": 211.24796716868877,
+    "final_evaluation_episodes": 180,
+    "gradient_updates": 90000,
+    "projected_retained_checkpoint_bytes": 1014594604,
+    "projected_retained_diagnostics_bytes": 1000000000,
+    "projected_retained_disk_bytes": 2014594604,
+    "projected_retained_disk_gb": 2.014594604,
+    "projected_total_runtime_hours": 0.6952922824409324,
+    "projected_total_runtime_s": 2503.052216787357,
+    "raw_projection_s": 1251.5261083936784,
+    "real_native_transitions": 900000,
+    "retained_checkpoint_count": 19,
+    "uncertainty_factor": 2.0,
+    "update_projection_s": 638.336269534193
+  },
+  "schema_version": 1,
+  "scientific_source_sha256": {
+    "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
+    "benchmarks/hybrid_rl_execution/canonical.json": "0a3b2adf12aecee425ba6c77a87b568f5bac4500ca92b5288cf0bbcba0e50a6d",
+    "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
+    "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
+    "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",
+    "benchmarks/hybrid_rl_execution/macro_transition.py": "494839c92ab077584b72b4de7e53511402a40daee3d304e0dc34fd2ce250461f",
+    "benchmarks/hybrid_rl_execution/prepare.py": "e7444581c33ceeef3045b3dd36d5f8c409e5a31101914e7ccd9ed6ad7da695b1",
+    "benchmarks/hybrid_rl_execution/replay.py": "14d990009d71d018a4b78b3afed19a17fe9efd55247d759ad36a318c75d98565",
+    "benchmarks/hybrid_rl_execution/resource.py": "b57ad15c509a34c5cb577158ca334e094270afce0d9aa7205cbeb4cf878ceed0",
+    "benchmarks/hybrid_rl_execution/runner.py": "7b9533ebd560e7b5831465ae14dbcc4473a1bbe9f3587fce312a4c2b63ca6256",
+    "benchmarks/hybrid_rl_execution/safety.py": "745183dfd6576635975f7b84cdb84e15c7b833a74950224476ae2de7682e9ceb",
+    "benchmarks/hybrid_rl_execution/verification.py": "e585a9a1e74a057b56b04079a824eb8b68f7a228538084b77bc7ed5fea794560"
+  },
+  "shield_reproduction": {
+    "SHIELD_DOMINATES_POLICY": false,
+    "influence_fraction": 0.6338546458141674,
+    "influenced_fixture_count": 6,
+    "influenced_step_count": 4823,
+    "override_count": 1339,
+    "override_fraction": 0.17597581811013274,
+    "proposal_count": 7609
+  },
+  "source_commit": "337fe498083eb3d4c63263f696ee8b30f6800fec",
+  "study": "HYBRID_RL_EXECUTION_V1",
+  "temporal_semantics": {
+    "checks": {
+      "cost_target_matches_hand_calculation": true,
+      "deferred_credits_at_warmup": true,
+      "exact_final_update_budget": true,
+      "full_block_continuation_discount": true,
+      "gamma_native_tenth_power_is_gamma_decision": true,
+      "no_updates_before_warmup": true,
+      "reward_target_matches_hand_calculation": true,
+      "short_terminal_block_has_no_bootstrap": true
+    },
+    "full_block_discount": 0.9899999999999999,
+    "gamma_decision": 0.99,
+    "gamma_native": 0.99899547129175,
+    "passed": true,
+    "shortened_terminal_discount": 0.0,
+    "shortened_terminal_native_steps": 4
+  },
+  "validation": {
+    "count": 36,
+    "id": "HYBRID_RL_VALIDATION_V1",
+    "ordered_sha256": "f3864fed8725874dc315004375af0d2850dc2d2d56957d52c64d043ca6b3352b",
+    "performance_episodes": 0,
+    "state": "FROZEN_UNOPENED"
+  },
+  "validation_authorized": false
+}

@@ -1,0 +1,60 @@
+{
+  "actual_pipeline": {
+    "actor_only_fixture_evaluation": {
+      "actor_inference_time_s": 0.00722337223123759,
+      "macro_decisions": 119,
+      "native_steps": 1184,
+      "wall_time_s": 0.4191427920013666
+    },
+    "batch_size": 256,
+    "checkpoint_restore_s": 0.09729554096702486,
+    "checkpoint_size_bytes": 53399716,
+    "checkpoint_write_s": 0.1060381670249626,
+    "collection_macro_shield_time_s": 1.3079947888618335,
+    "gradient_updates": 10,
+    "macro_transitions": 301,
+    "maximum_rss_platform_units": 514768896,
+    "mean_actual_sac_update_time_s": 0.007092625217046589,
+    "mean_collection_time_per_native_transition_s": 0.00043599826295394453,
+    "native_transitions": 3000,
+    "pipeline_wall_time_s": 1.3789210410322994,
+    "replay_occupancy": 301,
+    "update_time_s": 0.07092625217046589
+  },
+  "bounded_preparation_only": true,
+  "disk_gate_passed": true,
+  "fixture": "consecutive_downward_changes",
+  "future_complete_three_policy_study": {
+    "checkpoint_projection_s": 9.543435032246634,
+    "collection_projection_s": 392.39843665855005,
+    "diagnostic_episodes": 324,
+    "evaluation_projection_s": 211.24796716868877,
+    "final_evaluation_episodes": 180,
+    "gradient_updates": 90000,
+    "projected_retained_checkpoint_bytes": 1014594604,
+    "projected_retained_diagnostics_bytes": 1000000000,
+    "projected_retained_disk_bytes": 2014594604,
+    "projected_retained_disk_gb": 2.014594604,
+    "projected_total_runtime_hours": 0.6952922824409324,
+    "projected_total_runtime_s": 2503.052216787357,
+    "raw_projection_s": 1251.5261083936784,
+    "real_native_transitions": 900000,
+    "retained_checkpoint_count": 19,
+    "uncertainty_factor": 2.0,
+    "update_projection_s": 638.336269534193
+  },
+  "limits": {
+    "retained_disk_gb": 12.0,
+    "runtime_hours": 24.0
+  },
+  "no_main_training_occurred": true,
+  "no_reserved_diagnostic_or_validation_task_used": true,
+  "preparation_interactions": {
+    "gradient_updates": 10,
+    "real_native_transitions": 3000,
+    "unreserved_fixture_evaluation_episodes": 1
+  },
+  "representative_replay_capacity": 300000,
+  "runtime_gate_passed": true,
+  "schema_version": 1
+}

@@ -1,0 +1,262 @@
+{
+  "causal_information_boundary": {
+    "controller_inputs": [
+      "ordinary 8D observation",
+      "scalar strategy action"
+    ],
+    "environment_object_input": false,
+    "future_realized_state_input": false,
+    "oracle_input": false,
+    "simulator_state_input": false,
+    "track_input": false
+  },
+  "fallback_parity": {
+    "all_exact": true,
+    "fixture_count": 6,
+    "fixtures": [
+      {
+        "action_sha256": "2018501e763db9cdd024db12370bbc8a196b160ab81575fd6ef6b81fe169078e",
+        "all_matching": true,
+        "fixture": "constant_100_km_h",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 631,
+        "trace_sha256": "ade7c5c9de37454491a01af3f9a4c1c93a79f63e85f7d62e1f7fcbaaeadeb5b0"
+      },
+      {
+        "action_sha256": "56f2b6f20de37aae2eaa4184619715baee2e5b968a544df7fd455a0679807373",
+        "all_matching": true,
+        "fixture": "upward_changes",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 985,
+        "trace_sha256": "1b0149d83a30a9e381dc9c23210cb2d9aa7d799505726c501ac04ba554c80167"
+      },
+      {
+        "action_sha256": "2018501e763db9cdd024db12370bbc8a196b160ab81575fd6ef6b81fe169078e",
+        "all_matching": true,
+        "fixture": "maximum_legal_downward_change",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 631,
+        "trace_sha256": "e8837d475de8d11bd0e6af9f80f8048e3d770e6e4b6a2d73ca4916dcb782d151"
+      },
+      {
+        "action_sha256": "9b562058ae64668ff65185bea7f1e2f435752e7e730712ac3171a4e3ec303f02",
+        "all_matching": true,
+        "fixture": "consecutive_downward_changes",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 1125,
+        "trace_sha256": "0fa8b4938dbce4910214d6a5e7f84509dba3af81592a1ccb0dda8a24df3a6f17"
+      },
+      {
+        "action_sha256": "2018501e763db9cdd024db12370bbc8a196b160ab81575fd6ef6b81fe169078e",
+        "all_matching": true,
+        "fixture": "short_braking_window",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 631,
+        "trace_sha256": "6408f5fd198da32487bb9e4111437f5a941515ec7a153629249d59eb686f131d"
+      },
+      {
+        "action_sha256": "73c1e0f9414fe99938f32c6edb65a609310cd26e8c91074a37434a5edc1ee597",
+        "all_matching": true,
+        "fixture": "route_endpoint_at_speed_boundary",
+        "matching": {
+          "action_sha256": true,
+          "actions": true,
+          "completion": true,
+          "deadline": true,
+          "energy": true,
+          "metrics": true,
+          "speed": true,
+          "state_trace": true,
+          "trace_sha256": true
+        },
+        "steps": 645,
+        "trace_sha256": "b54448f9246a68ffa39208993762426da625456ad2178b955deb00c822c71310"
+      }
+    ]
+  },
+  "passed": true,
+  "schema_version": 1,
+  "scope": "deterministic physical fixtures only; no reserved evaluation tasks",
+  "shield": {
+    "SHIELD_DOMINATES_POLICY": false,
+    "deadline_fixture_passed": true,
+    "endpoint_safety_passed": true,
+    "feasibility_fixture_passed": true,
+    "fixture_count": 6,
+    "fixtures": [
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.17262548888566934,
+        "feasible": true,
+        "fixture": "constant_100_km_h",
+        "influenced_step_count": 999,
+        "intervention_reasons": {
+          "ACCEPTED": 999,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 32,
+          "DEADLINE_RECOVERABILITY": 223
+        },
+        "override_count": 223,
+        "physics_prediction_calls": 13600,
+        "proposal_count": 1254,
+        "speed_compliant": true,
+        "travel_time_s": 125.39999999999715
+      },
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.1708256112564629,
+        "feasible": true,
+        "fixture": "upward_changes",
+        "influenced_step_count": 521,
+        "intervention_reasons": {
+          "ACCEPTED": 521,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 566,
+          "DEADLINE_RECOVERABILITY": 220
+        },
+        "override_count": 220,
+        "physics_prediction_calls": 12655,
+        "proposal_count": 1307,
+        "speed_compliant": true,
+        "travel_time_s": 130.69999999999686
+      },
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.17262548888566934,
+        "feasible": true,
+        "fixture": "maximum_legal_downward_change",
+        "influenced_step_count": 999,
+        "intervention_reasons": {
+          "ACCEPTED": 999,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 32,
+          "DEADLINE_RECOVERABILITY": 223
+        },
+        "override_count": 223,
+        "physics_prediction_calls": 13600,
+        "proposal_count": 1254,
+        "speed_compliant": true,
+        "travel_time_s": 125.39999999999715
+      },
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.17221172654719064,
+        "feasible": true,
+        "fixture": "consecutive_downward_changes",
+        "influenced_step_count": 306,
+        "intervention_reasons": {
+          "ACCEPTED": 306,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 753,
+          "DEADLINE_RECOVERABILITY": 223,
+          "KNOWN_TRANSITION_BRAKING": 4
+        },
+        "override_count": 227,
+        "physics_prediction_calls": 13037,
+        "proposal_count": 1286,
+        "speed_compliant": true,
+        "travel_time_s": 128.59999999999698
+      },
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.17262548888566934,
+        "feasible": true,
+        "fixture": "short_braking_window",
+        "influenced_step_count": 999,
+        "intervention_reasons": {
+          "ACCEPTED": 999,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 32,
+          "DEADLINE_RECOVERABILITY": 223
+        },
+        "override_count": 223,
+        "physics_prediction_calls": 13600,
+        "proposal_count": 1254,
+        "speed_compliant": true,
+        "travel_time_s": 125.39999999999715
+      },
+      {
+        "completion": true,
+        "deadline_compliant": true,
+        "energy_kwh": 0.17262548888566934,
+        "feasible": true,
+        "fixture": "route_endpoint_at_speed_boundary",
+        "influenced_step_count": 999,
+        "intervention_reasons": {
+          "ACCEPTED": 999,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 32,
+          "DEADLINE_RECOVERABILITY": 223
+        },
+        "override_count": 223,
+        "physics_prediction_calls": 13600,
+        "proposal_count": 1254,
+        "speed_compliant": true,
+        "travel_time_s": 125.39999999999715
+      }
+    ],
+    "influence_fraction": 0.6338546458141674,
+    "influenced_fixture_count": 6,
+    "influenced_step_count": 4823,
+    "mean_physics_prediction_calls_per_proposal": 10.525956104612959,
+    "override_count": 1339,
+    "override_fraction": 0.17597581811013274,
+    "physics_prediction_calls": 80092,
+    "proposal_count": 7609,
+    "thresholds": {
+      "maximum_override_fraction": 0.85,
+      "minimum_influence_fraction": 0.1,
+      "minimum_influenced_fixture_count": 4
+    },
+    "viability_falsifications": []
+  }
+}
