@@ -1,0 +1,92 @@
+{
+  "backend": {
+    "cuda_available": false,
+    "device": "cpu",
+    "mps_available": false,
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.9",
+    "torch": "2.14.1"
+  },
+  "final_selected_budget": {
+    "batch_size": 256,
+    "name": "A_CRL_MATCHED",
+    "sampled_hindsight_tuples_per_policy": 1856000,
+    "updates_per_policy": 7250
+  },
+  "hard_gates": {
+    "computational_feasibility_verified": true,
+    "disk_pass": true,
+    "retained_artifacts_limit_gb": 12.0,
+    "retained_artifacts_projected_gb_decimal": 1.551409157,
+    "three_policy_main_training_projected_h": 0.20126929412905586,
+    "three_policy_main_training_walltime_limit_h": 12.0,
+    "walltime_pass": true
+  },
+  "measurements": {
+    "actor_inference": {
+      "elapsed_s": 0.23102487495634705,
+      "iterations": 2000,
+      "mean_s": 0.00011551243747817352
+    },
+    "checkpoint": {
+      "empty_size_bytes": 3292805,
+      "empty_write_s": 0.02369620802346617,
+      "estimated_bytes_per_replay_row": 150.0618,
+      "fixture_replay_rows": 5000,
+      "fixture_restore_s": 0.0265528749441728,
+      "fixture_size_bytes": 4043114,
+      "fixture_write_s": 0.05607983306981623,
+      "projected_full_size_bytes": 48311345.0,
+      "projected_full_write_s": 0.6701003639715083
+    },
+    "collection": {
+      "data_retained": false,
+      "elapsed_s": 0.35636520804837346,
+      "fixture_seeds": [98000000],
+      "outcomes_interpreted_as_policy_performance": false,
+      "transitions": 1000,
+      "transitions_per_s": 2806.1100730805874,
+      "used_for_learning": false
+    },
+    "diagnostic_evaluation": {
+      "maximum_transitions_per_18_episode_set": 32400,
+      "mode": "projection from measured collection throughput; no policy evaluation was run",
+      "projected_s_per_set": 11.546232740767302
+    },
+    "replay_hindsight_sampling": {
+      "elapsed_s": 0.06455274997279048,
+      "fixture_transitions": 5000,
+      "iterations": 200,
+      "mean_s": 0.0003227637498639524
+    },
+    "supervised_update": {
+      "elapsed_s": 0.17157258396036923,
+      "finite_final_metrics": true,
+      "mean_s": 0.005916295998633422,
+      "timed_updates": 29
+    }
+  },
+  "preparation_only": {
+    "constrained_validation_episodes": 0,
+    "cumulative_simulator_transitions_across_benchmark_passes": 2000,
+    "gcsl_diagnostic_episodes": 0,
+    "gcsl_validation_episodes": 0,
+    "main_training_performed": false,
+    "paper_content_instantiated": false,
+    "policy_evaluation_performed": false,
+    "simulator_transitions_in_final_recorded_pass": 1000,
+    "synthetic_updates_in_final_recorded_pass": 30
+  },
+  "projections": {
+    "all_18_scheduled_diagnostic_sets_s": 207.8321893338114,
+    "future_constrained_contextual_validation_54_episodes_s": 34.638698222301905,
+    "future_gcsl_validation_54_episodes_s": 34.638698222301905,
+    "one_300k_policy_training_s_excluding_diagnostics": 172.24575651026325,
+    "retained_artifacts_bytes": 1551409157.0,
+    "retained_artifacts_gb_decimal": 1.551409157,
+    "three_policy_main_training_s_including_diagnostics": 724.5694588646011,
+    "three_policy_training_s_excluding_diagnostics": 516.7372695307897
+  },
+  "schema_version": 1,
+  "scientific_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad"
+}

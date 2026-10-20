@@ -1,0 +1,34 @@
+{
+  "reference_constrained_verified": true,
+  "strict_algorithmic_control": false,
+  "reason": "GCSL uses 12D state, Constrained uses 8D state, learning objectives differ, and optimizer budgets are 7250 versus 30000 updates.",
+  "verification_mode": "checkpoint bytes + sidecar metadata + completed study manifest; no policy load or evaluation",
+  "seeds": {
+    "11": {
+      "condition": "T11_transitional_seed11",
+      "sha256": "e2047a6e9bf217d020e708d32104f24e35d8e34dd7d4900cc87d29cdc069ff1d",
+      "size_bytes": 77273485,
+      "real_transitions": 300000,
+      "rl_gradient_updates": 30000
+    },
+    "29": {
+      "condition": "T29_transitional_seed29",
+      "sha256": "d5284426d802163fe8f3045789293e721e81f462771988fe648cf909e8f575db",
+      "size_bytes": 77349453,
+      "real_transitions": 300000,
+      "rl_gradient_updates": 30000
+    },
+    "47": {
+      "condition": "T47_transitional_seed47",
+      "sha256": "e828dc0babb42e20b9f5f33bdedbc300bafe21ccdedee101b8ba84b715919e35",
+      "size_bytes": 77577357,
+      "real_transitions": 300000,
+      "rl_gradient_updates": 30000
+    }
+  },
+  "future_evaluation": {
+    "split": "GCSL_VALIDATION_V1",
+    "state": "NOT_AUTHORIZED",
+    "episodes_run_during_preparation": 0
+  }
+}

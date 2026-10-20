@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "state": "READY_AWAITING_EXPLICIT_AUTHORIZATION",
+  "lineage": {
+    "branch": "research/gcsl-canonical",
+    "base_commit": "78a50b7ad866beb72a93f06cb1c5d6bcaa25cc12",
+    "old_gcsl_source_commit": "132fa370d60820d71ef5d8e3a988be98f7defa7c",
+    "split_scope_gate_commit": "18a1434"
+  },
+  "readiness": {
+    "scientific_design_frozen": true,
+    "primary_source_audit_complete": true,
+    "old_gcsl_semantics_audited": true,
+    "continuous_action_adaptation_verified": true,
+    "goal_projection_verified": true,
+    "strict_future_sampler_verified": true,
+    "no_reward_critic_signal_verified": true,
+    "canonical_streams_verified": true,
+    "historical_overlaps_documented": true,
+    "current_study_route_clean_verified": true,
+    "diagnostic_set_frozen": true,
+    "validation_set_frozen": true,
+    "constrained_reference_verified": true,
+    "replay_integrity_verified": true,
+    "exact_resume_verified": true,
+    "computational_feasibility_verified": true,
+    "execution_infrastructure_ready": true,
+    "ready_for_main_training": true
+  },
+  "all_scientific_readiness_flags_true": true,
+  "authorization": {
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "validation_authorized": false,
+    "paper_test_authorized": false
+  },
+  "split_integrity": {
+    "training_stream_description": "fixed canonical training streams with disclosed historical-content overlap",
+    "maximum_reachable_tasks_per_policy": 865,
+    "historical_overlap_count": 6,
+    "current_study_training_evaluation_route_collisions": 0,
+    "current_study_training_evaluation_full_task_collisions": 0,
+    "diagnostic_ordered_sha256": "cbd97f1f8f8c6a4d9fcbea1b224cd959c61a8fb680116ababbe9e1889772766c",
+    "validation_ordered_sha256": "d808fcc361be35f0c585003278f200d4013cc03718b0ceb318fbe6d55195a159",
+    "validation_state": "FROZEN_UNOPENED",
+    "paper_state": "SEALED_UNINSPECTED",
+    "paper_content_fingerprints_constructed": 0
+  },
+  "method": {
+    "state_dimension": 12,
+    "goal_dimension": 3,
+    "canonical_goal": [1.0, 1.0, 1.0],
+    "policy_parameter_count": 270338,
+    "selected_update_budget": "A_CRL_MATCHED",
+    "updates_per_policy": 7250,
+    "sampled_hindsight_tuples_per_policy": 1856000
+  },
+  "preparation_interactions": {
+    "simulator_transitions": 2000,
+    "main_training_transitions": 0,
+    "policies_trained": 0,
+    "policies_evaluated": 0,
+    "gcsl_diagnostic_episodes": 0,
+    "gcsl_validation_episodes": 0,
+    "constrained_evaluation_episodes": 0,
+    "paper_episodes": 0
+  },
+  "verification": {
+    "focused_tests_passed": 29,
+    "focused_tests_failed": 0,
+    "repository_suite_collectable_passed": 588,
+    "repository_suite_unrelated_failed": 14,
+    "repository_suite_skipped": 7,
+    "repository_suite_note": "Unrelated failures require absent historical fsrl/tianshou stacks or assert superseded LLM-reward repository state; no canonical GCSL test failed.",
+    "ruff_passed": true,
+    "resource_walltime_passed": true,
+    "resource_disk_passed": true,
+    "projected_three_policy_main_training_h": 0.20126929412905586,
+    "projected_retained_artifacts_gb_decimal": 1.551409157
+  },
+  "scientific_configuration_sha256": "c8807fd21cc2335b87bc9d1391970f89b7a2d7af7d385bb1253888185dcfedad",
+  "scientific_source_hashes": {
+    "benchmarks/gcsl_canonical/canonical.json": "0a9a40374740e97868cca53d852ee041577be2deeeeb819f39d2de40fa021c64",
+    "benchmarks/gcsl_canonical/checkpointing.py": "2a1c5a27c9eedabe3c13e42ee8dfb1bf50743aaba1c2cb4dcbd72e339379c17d",
+    "benchmarks/gcsl_canonical/cli.py": "93737557c02f4d93d0cd59ace57849c947c8a0e7c9c2de723415e79e9bc16ce3",
+    "benchmarks/gcsl_canonical/config.py": "67c94b3656554d3fb8b1925fa02d41c9509c6085b9127cc9797be8b939ab01ed",
+    "benchmarks/gcsl_canonical/diagnostics.py": "bfd0d350ad891901459f608da78c92705c1a8bf530d0a7c706904c1d5efa3de8",
+    "benchmarks/gcsl_canonical/evaluation.py": "8483235e300e7e6a91e4d1c1618d8f0e642e5fd244e0b0013231b747b4d66ebb",
+    "benchmarks/gcsl_canonical/execution.py": "6e4983e9347fa9e4158276f4e789fc5c45c505ef43b6377f3d7d01cb7678b36a",
+    "benchmarks/gcsl_canonical/goal_adapter.py": "ce7ae3b609d0b0aa08adeaa5f0d2a8e57dc531a1b034d6bf04c5ae5b25e1256a",
+    "benchmarks/gcsl_canonical/historical_overlap_ledger.json": "60d3b7039f67a2c88fbda830967178aa1b1e5ccbe4f3f122b4f8b68f84bdaeac",
+    "benchmarks/gcsl_canonical/learner.py": "69776a1c713bc3e126dddafda7423b135678362c86c967609a64de88f3bcb36d",
+    "benchmarks/gcsl_canonical/policy.py": "87adf32350cc05484b68b9dae0da30b22c8dfcb78cc672c547794f498f7efbae",
+    "benchmarks/gcsl_canonical/progress.py": "fb0c3c14b0e7d0d041b3a1b023b4b71fe80c6a3fd88d3bc1ae7cd175a017ba12",
+    "benchmarks/gcsl_canonical/reference.py": "d738ce89445f8ba757b31c1b4f250c2b2a3f10fe674868c54c9717e085019d91",
+    "benchmarks/gcsl_canonical/replay.py": "b567968025818ccd0dfaefb5c177e8ea9626e75202bf686948d64b78172b8d93",
+    "benchmarks/gcsl_canonical/resource_check.py": "a89aff824bec7b657dc012c397fdad0fabf15184277e7100a6c4cb8831a1e253",
+    "benchmarks/gcsl_canonical/runner.py": "54a4cba0d141ff28a08b27e98827cea3016d92347c710d307d5b5a0abb774d13",
+    "benchmarks/gcsl_canonical/sampling.py": "b8a108c163996388177aad8247c1c5829621f5eb31bca40379ddd5dc9da05fcd",
+    "benchmarks/gcsl_canonical/split.py": "4f3c956c3a68765e1b1e2f0d28c693b9968c60fd6c4d397d7fa476d15a79f9e0",
+    "benchmarks/gcsl_canonical/upstream.json": "8c64ff7eebfcc4528e066dcaa86a8f752f389cc2eab6cce3b39dd13db261c8bf"
+  }
+}
