@@ -29,4 +29,3 @@ four unrelated optional-dependency imports: `stable_baselines3` (three test
 modules) and `tianshou` (one). Six other optional suites skip because
 `matplotlib`, `jax` or `fsrl` is absent. The relevant suite above avoids those
 dependency-only collection failures; no Causal MPC V2 test is skipped.
-
