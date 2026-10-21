@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "v1_state": "INCIDENT_ABORTED",
+  "v2_state": "FROZEN_UNOPENED",
+  "v2_preparation_complete": true,
+  "v2_validation_authorized": false,
+  "v2_validation_enabled": false,
+  "preparation_lock": true,
+  "paper_authorized": false,
+  "paper_state": "SEALED_UNINSPECTED",
+  "paper_episodes": 0,
+  "paper_content_fingerprints": 0
+}

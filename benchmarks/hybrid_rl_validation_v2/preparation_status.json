@@ -1,0 +1,164 @@
+{
+  "acceptance_thresholds": {
+    "energy_subset": "jointly feasible trajectories only",
+    "mean_paired_saving_vs_causal_percent": 10.0,
+    "mean_paired_saving_vs_time_aware_percent": 3.0,
+    "rsr_minimum_per_hybrid_seed": "35/36",
+    "sampling_unit": "track instance; learned seeds are replications"
+  },
+  "gates": {
+    "actor_fingerprints_unchanged": true,
+    "all_pairs_pending": true,
+    "deterministic_v2_split_regeneration": true,
+    "durable_pair_registration_complete": true,
+    "five_controller_identities_frozen": true,
+    "frozen_scientific_sources": true,
+    "git_lineage": true,
+    "incident_evidence_integrity": true,
+    "pair_registration_bound_to_split_and_controllers": true,
+    "paper_fail_closed": true,
+    "preparation_tests_statically_isolated": true,
+    "three_checkpoints_read_only_verified": true,
+    "v1_permanently_incident_aborted": true,
+    "v2_execution_locked_and_unauthorized": true,
+    "v2_route_and_full_task_clean": true,
+    "zero_v2_performance_episodes": true
+  },
+  "incident": {
+    "checks": {
+      "causal_one_completed_unpersisted": true,
+      "hybrid_reset_without_action_or_episode": true,
+      "paper_zero_and_sealed": true,
+      "seed_10100000": true,
+      "state_permanent": true,
+      "time_aware_one_completed_unpersisted": true,
+      "two_completed_zero_persisted": true,
+      "v1_ordered_hash_preserved": true,
+      "zero_registered_pairs": true,
+      "zero_training_changes": true
+    },
+    "incident_json_sha256": "e79a9f6b484bd6519b1469926bfd154a26bef20be73d0eac9e4ddfd467df9d43",
+    "incident_markdown_sha256": "665f7a08aba1c7f74aa235a3fed25d817837166d8e4c1561c1d22205a1e75b2f",
+    "incident_preservation_commit": "27cff19dadebaafbcd905fd3a2ecbe4ac8f0eeaa",
+    "passed": true
+  },
+  "lineage": {
+    "branch": "research/hybrid-rl-validation-v2",
+    "incident_commit_is_ancestor": true,
+    "main_training_commit_is_ancestor": true,
+    "passed": true
+  },
+  "new_gradient_updates": 0,
+  "new_training_transitions": 0,
+  "pair_ledger": {
+    "performance_episode_count": 0,
+    "planned_pair_count": 180,
+    "run_transaction_id": "439c821bc40c0a4dd8962af0ce08ef050f3ca697af15d8960a7340c8f860ab76",
+    "states": {
+      "PENDING": 180
+    }
+  },
+  "paper_content_fingerprints": 0,
+  "paper_episodes": 0,
+  "paper_state": "SEALED_UNINSPECTED",
+  "policies": {
+    "H11": {
+      "actor_parameter_sha256": "2f574832349948dae731b57e4e85dca5ee797665865c5f332e7a7feb3612488e",
+      "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-11/step-300000/checkpoint.pkl",
+      "checkpoint_sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed",
+      "gradient_updates": 30000,
+      "loaded_read_only": true,
+      "native_training_transitions": 300000,
+      "training_seed": 11
+    },
+    "H29": {
+      "actor_parameter_sha256": "bd1de85fc0fe586e39831f2dea917fa5dd131530a625a58dd393f1e2094ace65",
+      "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-29/step-300000/checkpoint.pkl",
+      "checkpoint_sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55",
+      "gradient_updates": 30000,
+      "loaded_read_only": true,
+      "native_training_transitions": 300000,
+      "training_seed": 29
+    },
+    "H47": {
+      "actor_parameter_sha256": "135486355eb36def746f38ef20638a0fdd9aab02370e392a108cda66f87dfad6",
+      "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-47/step-300000/checkpoint.pkl",
+      "checkpoint_sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf",
+      "gradient_updates": 30000,
+      "loaded_read_only": true,
+      "native_training_transitions": 300000,
+      "training_seed": 47
+    }
+  },
+  "schema_version": 1,
+  "scientific_sources": {
+    "controller_source_unchanged": {
+      "CAUSAL60": true,
+      "HYBRID_SHIELD_CONTROLLER": true,
+      "TIME_AWARE": true
+    },
+    "expected_source_sha256": {
+      "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
+      "benchmarks/hybrid_rl_execution/canonical.json": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+      "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
+      "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
+      "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",
+      "benchmarks/hybrid_rl_execution/macro_transition.py": "494839c92ab077584b72b4de7e53511402a40daee3d304e0dc34fd2ce250461f",
+      "benchmarks/hybrid_rl_execution/prepare.py": "e884b16752acd5c78ce892f0abc802b99629a77a5b5179e7890f9911b2922bea",
+      "benchmarks/hybrid_rl_execution/replay.py": "14d990009d71d018a4b78b3afed19a17fe9efd55247d759ad36a318c75d98565",
+      "benchmarks/hybrid_rl_execution/resource.py": "b57ad15c509a34c5cb577158ca334e094270afce0d9aa7205cbeb4cf878ceed0",
+      "benchmarks/hybrid_rl_execution/runner.py": "101e51cfc2311462f4692f0d0b3f72721ef6b84c9f48372c7269ec2f60195255",
+      "benchmarks/hybrid_rl_execution/safety.py": "745183dfd6576635975f7b84cdb84e15c7b833a74950224476ae2de7682e9ceb",
+      "benchmarks/hybrid_rl_execution/verification.py": "be668dc14c9341da873cfcd885299e8d773444873ceac78b90ad986510906f46"
+    },
+    "observed_source_sha256": {
+      "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
+      "benchmarks/hybrid_rl_execution/canonical.json": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+      "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
+      "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
+      "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",
+      "benchmarks/hybrid_rl_execution/macro_transition.py": "494839c92ab077584b72b4de7e53511402a40daee3d304e0dc34fd2ce250461f",
+      "benchmarks/hybrid_rl_execution/prepare.py": "e884b16752acd5c78ce892f0abc802b99629a77a5b5179e7890f9911b2922bea",
+      "benchmarks/hybrid_rl_execution/replay.py": "14d990009d71d018a4b78b3afed19a17fe9efd55247d759ad36a318c75d98565",
+      "benchmarks/hybrid_rl_execution/resource.py": "b57ad15c509a34c5cb577158ca334e094270afce0d9aa7205cbeb4cf878ceed0",
+      "benchmarks/hybrid_rl_execution/runner.py": "101e51cfc2311462f4692f0d0b3f72721ef6b84c9f48372c7269ec2f60195255",
+      "benchmarks/hybrid_rl_execution/safety.py": "745183dfd6576635975f7b84cdb84e15c7b833a74950224476ae2de7682e9ceb",
+      "benchmarks/hybrid_rl_execution/verification.py": "be668dc14c9341da873cfcd885299e8d773444873ceac78b90ad986510906f46"
+    },
+    "original_canonical_unchanged": true,
+    "passed": true
+  },
+  "split": {
+    "accepted_count": 36,
+    "deterministic_regeneration": true,
+    "id": "HYBRID_RL_VALIDATION_V2",
+    "ordered_sha256": "99a863fb423e2ceb5ec0641bb940fab21ff7eb86a1466886da8707862a015e74",
+    "rejected_count": 6,
+    "route_clean_verified": true
+  },
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "test_isolation": {
+    "forbidden_runtime_tokens": [
+      "evaluate_seed(",
+      "evaluate_validation(",
+      "environment.reset(",
+      "StochasticTrack(",
+      ".step(",
+      "execute_next_v2_pair("
+    ],
+    "passed": true,
+    "test_files": [
+      "test_integrity.py",
+      "test_ledger.py",
+      "test_runner.py",
+      "test_split.py"
+    ],
+    "violations": {}
+  },
+  "v1_state": "INCIDENT_ABORTED",
+  "v2_completed_episodes": 0,
+  "v2_preparation_complete": true,
+  "v2_state": "FROZEN_UNOPENED",
+  "v2_validation_authorized": false,
+  "v2_validation_enabled": false
+}
