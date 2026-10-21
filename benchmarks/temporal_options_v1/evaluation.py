@@ -671,6 +671,7 @@ def prepare_study() -> dict[str, Any]:
 
 
 def run_calibration() -> dict[str, Any]:
+    verify_frozen_method()
     canonical = json.loads(CANONICAL.read_text(encoding="utf-8"))
     if canonical["execution"]["calibration_complete"]:
         raise PermissionError("OPTIONS_CALIBRATION_V1 is complete")
