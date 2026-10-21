@@ -1,0 +1,1476 @@
+{
+  "authorization": {
+    "authorized_scope": {
+      "diagnostic": "HYBRID_RL_DIAGNOSTIC_V1",
+      "main_training_seeds": [
+        11,
+        29,
+        47
+      ],
+      "paper": false,
+      "validation": false
+    },
+    "main_training_authorized": true,
+    "main_training_enabled": true,
+    "paper_authorized": false,
+    "preparation_only": false,
+    "ready_for_main_training": true,
+    "validation_authorized": false
+  },
+  "descriptive_interpretation": {
+    "checkpoint_selection": "final 300k only; no best-checkpoint selection",
+    "code": "FEASIBILITY_AND_ENERGY_PROGRESS",
+    "early_stopping": false,
+    "performance_based_hyperparameter_changes": false,
+    "seed_replacement": false,
+    "text": "All 18 scheduled Diagnostics achieved 18/18 feasibility. Mean feasible-only Diagnostic energy decreased from 50k to 300k for every seed. This is descriptive only and is not final acceptance."
+  },
+  "downstream_state": {
+    "HYBRID_RL_VALIDATION_V1": {
+      "authorized": false,
+      "episode_count": 0,
+      "state": "FROZEN_UNOPENED"
+    },
+    "paper": {
+      "authorized": false,
+      "content_fingerprints_constructed": 0,
+      "episode_count": 0,
+      "state": "SEALED_UNINSPECTED"
+    }
+  },
+  "frozen_scientific_contract": {
+    "comparison_arms": {
+      "causal": "unchanged frozen ObservationLimitedController",
+      "nonlearning": "frozen TimeAwareEnergyStrategy through identical shield",
+      "oracle": "context-only privileged benchmark",
+      "treatment": "three separately trained constrained SAC target-speed strategies through identical shield"
+    },
+    "diagnostic_id": "HYBRID_RL_DIAGNOSTIC_V1",
+    "diagnostic_ordered_sha256": "c8fe41d3ae100d108a6c5175ee180e023cbd431ab3a2e709d815fef66547b784",
+    "final_updates_at_300000": 30000,
+    "first_update_native_step": 10010,
+    "learner": {
+      "action_dimensions": 1,
+      "actor_hidden_sizes": [
+        256,
+        256
+      ],
+      "actor_learning_rate": 0.0003,
+      "algorithm": "shielded constrained Soft Actor-Critic",
+      "batch_size": 256,
+      "best_checkpoint_selection": false,
+      "constraint_multiplier_learning_rate": 0.001,
+      "critic_hidden_sizes": [
+        256,
+        256
+      ],
+      "critic_learning_rate": 0.0003,
+      "device": "cpu",
+      "diagnostic_checkpoints": [
+        50000,
+        100000,
+        150000,
+        200000,
+        250000,
+        300000
+      ],
+      "energy_reward_scale_per_kwh": 1000.0,
+      "entropy_learning_rate": 0.0003,
+      "gradient_updates_per_seed": 30000,
+      "intervention_regularizer_critics": 1,
+      "intervention_regularizer_weight": 0.05,
+      "observation_dimensions": 16,
+      "real_native_transitions_per_seed": 300000,
+      "replay_capacity_macro_transitions": 300000,
+      "reward_critics": 2,
+      "selected_endpoint": 300000,
+      "speed_cost_critics": 1,
+      "speed_cost_limit": 0.0,
+      "target_entropy": -1.0,
+      "tau": 0.005,
+      "terminal_cost_critics": 1,
+      "terminal_infeasibility_cost_limit": 0.0,
+      "training_seeds": [
+        11,
+        29,
+        47
+      ],
+      "update_schedule": {
+        "cumulative_target": "0 if N <= 10000 else min(30000, ((N - 10000) * 30000) // 290000)",
+        "final_update_native_transition": 300000,
+        "first_update_native_transition": 10010,
+        "id": "POST_WARMUP_LINEAR_REVISION_3"
+      },
+      "warmup_real_native_transitions": 10000
+    },
+    "signals": {
+      "critic_replay_action": "proposed normalized strategy target",
+      "macro_aggregation": "sum_i gamma_native^i * signal_i",
+      "native_energy_reward": "-1000 * signed step_energy_kwh",
+      "native_intervention_deviation": "abs(proposed_native_action - executed_native_action)",
+      "native_speed_cost": "max(0, endpoint_velocity_m_s - endpoint_limit_m_s)",
+      "terminal_infeasibility_cost": "1 for incomplete or travel_time_s > 140 at true episode end, else 0"
+    },
+    "temporal_semantics": {
+      "amendment": "SMDP_DECISION_BOUNDARY_V1",
+      "gamma_decision": 0.99,
+      "gamma_native": 0.99899547129175,
+      "native_dt_s": 0.1,
+      "native_steps_per_strategy_decision": 10,
+      "replay_unit": "completed or terminal-shortened macro transition",
+      "strategy_period_s": 1.0,
+      "terminal_bootstrap": false,
+      "truncation_bootstrap": false
+    },
+    "update_rule": "0 if N <= 10000 else min(30000, ((N - 10000) * 30000) // 290000)"
+  },
+  "generated_at_utc": "2026-10-21T06:31:26.043966+00:00",
+  "hash_methods": {
+    "actor_parameter_sha256": "SHA-256 over actor-state entries in lexicographic key order, concatenating UTF-8 key, tensor dtype, tensor shape, and contiguous raw tensor bytes",
+    "checkpoint_sha256": "SHA-256 over the complete immutable checkpoint.pkl bytes"
+  },
+  "integrity": {
+    "active_lock_absent": true,
+    "all_checkpoint_hashes_verified": true,
+    "all_deadline_bounds_valid": true,
+    "all_diagnostics_finite": true,
+    "all_replay_sizes_equal_macro_counts": true,
+    "all_update_schedules_exact": true,
+    "duplicate_seed_attempt_combinations": 0,
+    "exact_recovery_preflight_passed": true,
+    "manifest_state_completed": true,
+    "physical_fallback_verified": true,
+    "preparation_artifact_hashes_match": true,
+    "resume_event_count": 0,
+    "resume_events": [],
+    "shield_safety_audit_passed": true,
+    "source_hashes_match_execution_freeze": true
+  },
+  "protocol_revision": 3,
+  "provenance": {
+    "authorization_commit": "94beb9a140199ba0baaee214f6ab1c273f2f6a19",
+    "canonical_sha256": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+    "execution_configuration_sha256": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+    "manifest_path": "runs/hybrid-rl-execution-v1/manifest.json",
+    "manifest_sha256": "5272170534b026948a74d18bccc375cf36505b0d7c8d48c7e0fc9c97bd9f7679",
+    "pre_authorization_configuration_sha256": "54ac0314e49d125b984fa4d95ac4ae75d87bacba3ad517a425d4c4ef43c02127",
+    "preparation_artifact_hashes": {
+      "preflight_results.json": "32194709573e066ab94af22f760d48093cb8483fdc118822c04be7dd55d75e7d",
+      "recovery_probe.json": "6fb323ae513dc9676451d7891e7d2e9e24eda3753ef396e52c011314cd6a5b89",
+      "resource_measurements.json": "1b139554aaba66c579499eff1644d10da653158368f5233c9b7b48183eca19d7",
+      "safety_audit.json": "7e763a0d11443236038178903ea5752d86de76009116d54225dbe26bdbd66e29"
+    },
+    "preparation_revision_commit": "e652f547e77753ef7dd5eb0a4b9550f32975bdc2",
+    "runtime_versions": {
+      "gym-longicontrol": "1.0.0",
+      "gymnasium": "1.4.0",
+      "numpy": "2.5.4",
+      "python": "3.13.16",
+      "torch": "2.14.1"
+    },
+    "source_hashes": {
+      "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
+      "benchmarks/hybrid_rl_execution/canonical.json": "73e2bd6d960504eff120a37aaba60f9c3e17cb353408a67f7feddb97bf33253e",
+      "benchmarks/hybrid_rl_execution/checkpointing.py": "1c09495b251383e98a4b2548a566ed83040ff3edebf39225753aae4c4f3c7666",
+      "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
+      "benchmarks/hybrid_rl_execution/execution.py": "406aa17cf461130414b4f676f10eb9c8b5e62ff56ad391f0f16b2f793fa220bb",
+      "benchmarks/hybrid_rl_execution/macro_transition.py": "494839c92ab077584b72b4de7e53511402a40daee3d304e0dc34fd2ce250461f",
+      "benchmarks/hybrid_rl_execution/prepare.py": "e884b16752acd5c78ce892f0abc802b99629a77a5b5179e7890f9911b2922bea",
+      "benchmarks/hybrid_rl_execution/replay.py": "14d990009d71d018a4b78b3afed19a17fe9efd55247d759ad36a318c75d98565",
+      "benchmarks/hybrid_rl_execution/resource.py": "b57ad15c509a34c5cb577158ca334e094270afce0d9aa7205cbeb4cf878ceed0",
+      "benchmarks/hybrid_rl_execution/runner.py": "101e51cfc2311462f4692f0d0b3f72721ef6b84c9f48372c7269ec2f60195255",
+      "benchmarks/hybrid_rl_execution/safety.py": "745183dfd6576635975f7b84cdb84e15c7b833a74950224476ae2de7682e9ceb",
+      "benchmarks/hybrid_rl_execution/verification.py": "be668dc14c9341da873cfcd885299e8d773444873ceac78b90ad986510906f46"
+    }
+  },
+  "resources": {
+    "matrix_wall_clock_hours": 7.015419368055555,
+    "matrix_wall_clock_seconds": 25255.509725,
+    "note": "The matrix remained one foreground process. A host/session suspension occurred during H47; no resume path or duplicate attempt was used. Runner active walltime excludes that suspension.",
+    "retained_artifact_bytes": 1128646434,
+    "retained_file_count": 82,
+    "scientific_checkpoint_bytes": 962548055,
+    "sum_runner_active_walltime_seconds": 1010.7605084590614,
+    "sum_scientific_checkpoint_write_seconds": 1.9329805412562564,
+    "within_12_gb_limit": true,
+    "within_24_hour_limit": true
+  },
+  "schema_version": 1,
+  "seeds": {
+    "H11": {
+      "attempt_id": "5f5801d9-d98c-4ace-9b1a-34476759f60a",
+      "completed_at": "2026-10-20T20:22:31.630664+00:00",
+      "diagnostic_curve": [
+        {
+          "checkpoint_bytes": 53420980,
+          "checkpoint_sha256": "dddf1a1381084705b63dd8398944fcea4f3c38f78f33f00c17a265abd2f391bc",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.18082910559656995,
+            "mean_travel_time_seconds": 125.38888888888603,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11860877270713337,
+              "overrides": 2677,
+              "policy_influence_fraction": 0.5288879042977404,
+              "policy_influence_steps": 11937,
+              "proposals": 22570,
+              "reasons": {
+                "ACCEPTED": 11937,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7956,
+                "DEADLINE_RECOVERABILITY": 2452,
+                "KNOWN_TRANSITION_BRAKING": 216,
+                "RIGHT_ENDPOINT_SPEED": 9
+              }
+            },
+            "target_speed_mps": {
+              "count": 2268,
+              "max": 16.56439867284563,
+              "mean": 9.506402704782158,
+              "min": 5.714383390214708
+            }
+          },
+          "learner": {
+            "alpha": 0.35035383701324463,
+            "cost_multiplier_speed": 4.129757881164551,
+            "cost_multiplier_terminal": 3.958078145980835,
+            "latest_actor_loss": 31.18051528930664,
+            "latest_cost_critic_loss": 28.940980911254883,
+            "latest_reward_critic_loss": 13.803730010986328
+          },
+          "learner_updates": 4137,
+          "macro_steps": 5017,
+          "native_steps": 50000,
+          "scheduled_cumulative_updates": 4137,
+          "training_experience_cumulative": {
+            "deadline_failures": 1,
+            "episodes": 42,
+            "feasible_episodes": 41,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.23735109539432037,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53442857,
+          "checkpoint_sha256": "2d1eb188d70c9fabe16f60277cda3ebf77d83c9e1c4c5df8cb049d08c2fba2cf",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.18055335947368245,
+            "mean_travel_time_seconds": 127.0444444444415,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11981808640895575,
+              "overrides": 2740,
+              "policy_influence_fraction": 0.5533933881406332,
+              "policy_influence_steps": 12655,
+              "proposals": 22868,
+              "reasons": {
+                "ACCEPTED": 12655,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7473,
+                "DEADLINE_RECOVERABILITY": 2551,
+                "KNOWN_TRANSITION_BRAKING": 184,
+                "RIGHT_ENDPOINT_SPEED": 5
+              }
+            },
+            "target_speed_mps": {
+              "count": 2295,
+              "max": 16.639634635713367,
+              "mean": 9.196324311749713,
+              "min": 5.616330438190036
+            }
+          },
+          "learner": {
+            "alpha": 0.18971960246562958,
+            "cost_multiplier_speed": 8.910696029663086,
+            "cost_multiplier_terminal": 8.723925590515137,
+            "latest_actor_loss": 52.76353073120117,
+            "latest_cost_critic_loss": 20.33333396911621,
+            "latest_reward_critic_loss": 5.0262298583984375
+          },
+          "learner_updates": 9310,
+          "macro_steps": 10033,
+          "native_steps": 100000,
+          "scheduled_cumulative_updates": 9310,
+          "training_experience_cumulative": {
+            "deadline_failures": 4,
+            "episodes": 82,
+            "feasible_episodes": 78,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.21813242715102,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53464232,
+          "checkpoint_sha256": "bc670a347ed3677f9e0cec967ac3fc8aef0d7b3df2e20d754116e0ccc709da9c",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.178809946539921,
+            "mean_travel_time_seconds": 126.84999999999708,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.1127315727236894,
+              "overrides": 2574,
+              "policy_influence_fraction": 0.5443437130469058,
+              "policy_influence_steps": 12429,
+              "proposals": 22833,
+              "reasons": {
+                "ACCEPTED": 12429,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7830,
+                "DEADLINE_RECOVERABILITY": 2406,
+                "KNOWN_TRANSITION_BRAKING": 163,
+                "RIGHT_ENDPOINT_SPEED": 5
+              }
+            },
+            "target_speed_mps": {
+              "count": 2292,
+              "max": 16.636374923917984,
+              "mean": 8.88011744846559,
+              "min": 5.666005611419678
+            }
+          },
+          "learner": {
+            "alpha": 0.19501438736915588,
+            "cost_multiplier_speed": 13.526957511901855,
+            "cost_multiplier_terminal": 13.408807754516602,
+            "latest_actor_loss": 62.862770080566406,
+            "latest_cost_critic_loss": 13.687967300415039,
+            "latest_reward_critic_loss": 4.410473346710205
+          },
+          "learner_updates": 14482,
+          "macro_steps": 15053,
+          "native_steps": 150000,
+          "scheduled_cumulative_updates": 14482,
+          "training_experience_cumulative": {
+            "deadline_failures": 5,
+            "episodes": 121,
+            "feasible_episodes": 116,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.20908904970659298,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53485798,
+          "checkpoint_sha256": "2a9cd80b7a39735b77e1e4355b5a4d4341112c61a30758d926d71544f856e52d",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17900006006412067,
+            "mean_travel_time_seconds": 126.22777777777489,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11676422692663176,
+              "overrides": 2653,
+              "policy_influence_fraction": 0.5386646714493201,
+              "policy_influence_steps": 12239,
+              "proposals": 22721,
+              "reasons": {
+                "ACCEPTED": 12239,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7829,
+                "DEADLINE_RECOVERABILITY": 2493,
+                "KNOWN_TRANSITION_BRAKING": 157,
+                "RIGHT_ENDPOINT_SPEED": 3
+              }
+            },
+            "target_speed_mps": {
+              "count": 2280,
+              "max": 16.492192281617058,
+              "mean": 8.794443429829295,
+              "min": 5.699611041280958
+            }
+          },
+          "learner": {
+            "alpha": 0.1979345679283142,
+            "cost_multiplier_speed": 17.889211654663086,
+            "cost_multiplier_terminal": 17.997356414794922,
+            "latest_actor_loss": 64.78086853027344,
+            "latest_cost_critic_loss": 26.928142547607422,
+            "latest_reward_critic_loss": 8.337448120117188
+          },
+          "learner_updates": 19655,
+          "macro_steps": 20069,
+          "native_steps": 200000,
+          "scheduled_cumulative_updates": 19655,
+          "training_experience_cumulative": {
+            "deadline_failures": 7,
+            "episodes": 160,
+            "feasible_episodes": 153,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.2043521885755928,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53507688,
+          "checkpoint_sha256": "16ebdf259b7c6dbf179d8fb6116b66a72bc8ce2175d2b4b3fd8ed2b876cdb553",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17812174265081934,
+            "mean_travel_time_seconds": 126.47222222221932,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11095980672084339,
+              "overrides": 2526,
+              "policy_influence_fraction": 0.5362178783219855,
+              "policy_influence_steps": 12207,
+              "proposals": 22765,
+              "reasons": {
+                "ACCEPTED": 12207,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8032,
+                "DEADLINE_RECOVERABILITY": 2359,
+                "KNOWN_TRANSITION_BRAKING": 162,
+                "RIGHT_ENDPOINT_SPEED": 5
+              }
+            },
+            "target_speed_mps": {
+              "count": 2285,
+              "max": 16.346090038617454,
+              "mean": 8.9322144542523,
+              "min": 5.673837661743164
+            }
+          },
+          "learner": {
+            "alpha": 0.1981504112482071,
+            "cost_multiplier_speed": 21.622314453125,
+            "cost_multiplier_terminal": 22.455718994140625,
+            "latest_actor_loss": 67.68487548828125,
+            "latest_cost_critic_loss": 9.43436336517334,
+            "latest_reward_critic_loss": 1.7626922130584717
+          },
+          "learner_updates": 24827,
+          "macro_steps": 25090,
+          "native_steps": 250000,
+          "scheduled_cumulative_updates": 24827,
+          "training_experience_cumulative": {
+            "deadline_failures": 7,
+            "episodes": 200,
+            "feasible_episodes": 193,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.20132095599816463,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53529321,
+          "checkpoint_sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1778470373798816,
+            "mean_travel_time_seconds": 126.7722222222193,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11065340286603269,
+              "overrides": 2525,
+              "policy_influence_fraction": 0.5388930277400412,
+              "policy_influence_steps": 12297,
+              "proposals": 22819,
+              "reasons": {
+                "ACCEPTED": 12297,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7997,
+                "DEADLINE_RECOVERABILITY": 2354,
+                "KNOWN_TRANSITION_BRAKING": 165,
+                "RIGHT_ENDPOINT_SPEED": 6
+              }
+            },
+            "target_speed_mps": {
+              "count": 2290,
+              "max": 16.58450530634986,
+              "mean": 8.958262678920988,
+              "min": 5.6593828731113005
+            }
+          },
+          "learner": {
+            "alpha": 0.19303876161575317,
+            "cost_multiplier_speed": 22.874963760375977,
+            "cost_multiplier_terminal": 26.862995147705078,
+            "latest_actor_loss": 65.77383422851562,
+            "latest_cost_critic_loss": 15.35887622833252,
+            "latest_reward_critic_loss": 4.028173923492432
+          },
+          "learner_updates": 30000,
+          "macro_steps": 30108,
+          "native_steps": 300000,
+          "scheduled_cumulative_updates": 30000,
+          "training_experience_cumulative": {
+            "deadline_failures": 9,
+            "episodes": 240,
+            "feasible_episodes": 231,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.19908515169668278,
+            "right_endpoint_speed_failures": 0
+          }
+        }
+      ],
+      "final_counts": {
+        "learner_updates": 30000,
+        "macro_steps": 30108,
+        "native_steps": 300000,
+        "pending_macro_native_steps": 0,
+        "replay_size": 30108,
+        "scheduled_cumulative_updates": 30000
+      },
+      "final_policy": {
+        "actor_parameter_sha256": "2f574832349948dae731b57e4e85dca5ee797665865c5f332e7a7feb3612488e",
+        "checkpoint_path": "runs/hybrid-rl-execution-v1/seed-11/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed",
+        "frozen": true
+      },
+      "final_training_shield": {
+        "override_fraction": 0.14324666666666666,
+        "overrides": 42974,
+        "policy_influence_fraction": 0.5555266666666666,
+        "policy_influence_steps": 166658,
+        "proposals": 300000,
+        "reasons": {
+          "ACCEPTED": 166658,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 90368,
+          "DEADLINE_RECOVERABILITY": 40952,
+          "KNOWN_TRANSITION_BRAKING": 1940,
+          "RIGHT_ENDPOINT_SPEED": 82
+        }
+      },
+      "resume_count": 0,
+      "runner_active_walltime_seconds": 324.7224930829834,
+      "seed": 11,
+      "started_at": "2026-10-20T20:16:59.952702+00:00",
+      "state": "COMPLETED",
+      "stream": {
+        "final_cursor": 241,
+        "ordered_sha256": "08e8e5b0f03dd7caae95b3f1175edaa22a29608cbc9a554fea6e3be3e24cfe3c",
+        "rows": 865
+      },
+      "update_schedule_observed": {
+        "first_update": {
+          "learner_updates": 1,
+          "native_steps": 10010
+        },
+        "last_update": {
+          "learner_updates": 30000,
+          "native_steps": 300000
+        }
+      }
+    },
+    "H29": {
+      "attempt_id": "97a40dfa-c8ed-4334-b2c3-0351e71697a8",
+      "completed_at": "2026-10-20T20:28:08.017851+00:00",
+      "diagnostic_curve": [
+        {
+          "checkpoint_bytes": 53420876,
+          "checkpoint_sha256": "b3c40b752c9431e64a6f3a53a864a39654f07902795852f8b6ce8bc9cf021357",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.18033393131095632,
+            "mean_travel_time_seconds": 124.6499999999972,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.17297321388777465,
+              "overrides": 3881,
+              "policy_influence_fraction": 0.5035432544457815,
+              "policy_influence_steps": 11298,
+              "proposals": 22437,
+              "reasons": {
+                "ACCEPTED": 11298,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7258,
+                "DEADLINE_RECOVERABILITY": 3676,
+                "KNOWN_TRANSITION_BRAKING": 196,
+                "RIGHT_ENDPOINT_SPEED": 9
+              }
+            },
+            "target_speed_mps": {
+              "count": 2252,
+              "max": 15.429134501351252,
+              "mean": 8.661788278878634,
+              "min": 5.597099330690172
+            }
+          },
+          "learner": {
+            "alpha": 0.3239592909812927,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 0.0,
+            "latest_actor_loss": 28.511520385742188,
+            "latest_cost_critic_loss": 22.741165161132812,
+            "latest_reward_critic_loss": 7.059653282165527
+          },
+          "learner_updates": 4137,
+          "macro_steps": 5018,
+          "native_steps": 50000,
+          "scheduled_cumulative_updates": 4137,
+          "training_experience_cumulative": {
+            "deadline_failures": 1,
+            "episodes": 42,
+            "feasible_episodes": 41,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.23983047360176132,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53442543,
+          "checkpoint_sha256": "186a07b4681bf43d032669a385eae9f0a191b32d02b7fa9ec9f7ae2dbc527ddf",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1798781837128442,
+            "mean_travel_time_seconds": 126.50555555555265,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11580519081287603,
+              "overrides": 2637,
+              "policy_influence_fraction": 0.5196961046945676,
+              "policy_influence_steps": 11834,
+              "proposals": 22771,
+              "reasons": {
+                "ACCEPTED": 11834,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8300,
+                "DEADLINE_RECOVERABILITY": 2385,
+                "KNOWN_TRANSITION_BRAKING": 244,
+                "RIGHT_ENDPOINT_SPEED": 8
+              }
+            },
+            "target_speed_mps": {
+              "count": 2286,
+              "max": 16.649090250333153,
+              "mean": 9.386735925782824,
+              "min": 5.660001768006219
+            }
+          },
+          "learner": {
+            "alpha": 0.16533610224723816,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 0.0,
+            "latest_actor_loss": 48.50827407836914,
+            "latest_cost_critic_loss": 9.93100643157959,
+            "latest_reward_critic_loss": 3.832491636276245
+          },
+          "learner_updates": 9310,
+          "macro_steps": 10034,
+          "native_steps": 100000,
+          "scheduled_cumulative_updates": 9310,
+          "training_experience_cumulative": {
+            "deadline_failures": 1,
+            "episodes": 81,
+            "feasible_episodes": 80,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.21655277010856047,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53464069,
+          "checkpoint_sha256": "957809ba1f86c5f869d263237426bc34e6e1e6b3612a4f51885b0e4782295b19",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1799653461404357,
+            "mean_travel_time_seconds": 124.83888888888607,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.12068888789995995,
+              "overrides": 2712,
+              "policy_influence_fraction": 0.511192203284233,
+              "policy_influence_steps": 11487,
+              "proposals": 22471,
+              "reasons": {
+                "ACCEPTED": 11487,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8272,
+                "DEADLINE_RECOVERABILITY": 2514,
+                "KNOWN_TRANSITION_BRAKING": 190,
+                "RIGHT_ENDPOINT_SPEED": 8
+              }
+            },
+            "target_speed_mps": {
+              "count": 2254,
+              "max": 16.295947631200157,
+              "mean": 9.513309565111827,
+              "min": 5.644762184884813
+            }
+          },
+          "learner": {
+            "alpha": 0.19333384931087494,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 0.0,
+            "latest_actor_loss": 61.64582061767578,
+            "latest_cost_critic_loss": 15.147330284118652,
+            "latest_reward_critic_loss": 3.846310615539551
+          },
+          "learner_updates": 14482,
+          "macro_steps": 15047,
+          "native_steps": 150000,
+          "scheduled_cumulative_updates": 14482,
+          "training_experience_cumulative": {
+            "deadline_failures": 3,
+            "episodes": 120,
+            "feasible_episodes": 117,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.20707995368354212,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53485598,
+          "checkpoint_sha256": "afc849c28dc20791538fb8ec116526353f6ae05d1b921f7e5ff1d8d53384e516",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17829161038525107,
+            "mean_travel_time_seconds": 126.15555555555267,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11304386119429276,
+              "overrides": 2567,
+              "policy_influence_fraction": 0.5209177382420292,
+              "policy_influence_steps": 11829,
+              "proposals": 22708,
+              "reasons": {
+                "ACCEPTED": 11829,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8312,
+                "DEADLINE_RECOVERABILITY": 2378,
+                "KNOWN_TRANSITION_BRAKING": 183,
+                "RIGHT_ENDPOINT_SPEED": 6
+              }
+            },
+            "target_speed_mps": {
+              "count": 2280,
+              "max": 16.447002689043682,
+              "mean": 9.52185698097402,
+              "min": 5.690400799115499
+            }
+          },
+          "learner": {
+            "alpha": 0.19490794837474823,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 1.6577174663543701,
+            "latest_actor_loss": 69.33555603027344,
+            "latest_cost_critic_loss": 26.689912796020508,
+            "latest_reward_critic_loss": 6.1210832595825195
+          },
+          "learner_updates": 19655,
+          "macro_steps": 20063,
+          "native_steps": 200000,
+          "scheduled_cumulative_updates": 19655,
+          "training_experience_cumulative": {
+            "deadline_failures": 4,
+            "episodes": 159,
+            "feasible_episodes": 155,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.2021847195978469,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53507431,
+          "checkpoint_sha256": "a05b9b5cdab3c5454d98a2ced5bbc21c1ded1b7ae36512a1a3eb9f686fca0a80",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17802338799538067,
+            "mean_travel_time_seconds": 126.69999999999709,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11632903621853898,
+              "overrides": 2653,
+              "policy_influence_fraction": 0.5203016749978076,
+              "policy_influence_steps": 11866,
+              "proposals": 22806,
+              "reasons": {
+                "ACCEPTED": 11866,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8287,
+                "DEADLINE_RECOVERABILITY": 2490,
+                "KNOWN_TRANSITION_BRAKING": 155,
+                "RIGHT_ENDPOINT_SPEED": 8
+              }
+            },
+            "target_speed_mps": {
+              "count": 2291,
+              "max": 16.517380873362224,
+              "mean": 9.407268028374741,
+              "min": 5.673454536332025
+            }
+          },
+          "learner": {
+            "alpha": 0.20077472925186157,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 6.648282051086426,
+            "latest_actor_loss": 67.40119171142578,
+            "latest_cost_critic_loss": 18.914411544799805,
+            "latest_reward_critic_loss": 4.10294246673584
+          },
+          "learner_updates": 24827,
+          "macro_steps": 25079,
+          "native_steps": 250000,
+          "scheduled_cumulative_updates": 24827,
+          "training_experience_cumulative": {
+            "deadline_failures": 5,
+            "episodes": 199,
+            "feasible_episodes": 194,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.19919044768055363,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53529080,
+          "checkpoint_sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1778338684664962,
+            "mean_travel_time_seconds": 126.13333333333046,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11900986610288936,
+              "overrides": 2702,
+              "policy_influence_fraction": 0.5178823114869626,
+              "policy_influence_steps": 11758,
+              "proposals": 22704,
+              "reasons": {
+                "ACCEPTED": 11758,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8244,
+                "DEADLINE_RECOVERABILITY": 2528,
+                "KNOWN_TRANSITION_BRAKING": 165,
+                "RIGHT_ENDPOINT_SPEED": 9
+              }
+            },
+            "target_speed_mps": {
+              "count": 2278,
+              "max": 16.313662131627403,
+              "mean": 9.357465716298366,
+              "min": 5.697180165184869
+            }
+          },
+          "learner": {
+            "alpha": 0.20863819122314453,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 11.848896026611328,
+            "latest_actor_loss": 65.3042221069336,
+            "latest_cost_critic_loss": 13.586203575134277,
+            "latest_reward_critic_loss": 3.7483103275299072
+          },
+          "learner_updates": 30000,
+          "macro_steps": 30097,
+          "native_steps": 300000,
+          "scheduled_cumulative_updates": 30000,
+          "training_experience_cumulative": {
+            "deadline_failures": 6,
+            "episodes": 239,
+            "feasible_episodes": 233,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.19662977106450305,
+            "right_endpoint_speed_failures": 0
+          }
+        }
+      ],
+      "final_counts": {
+        "learner_updates": 30000,
+        "macro_steps": 30097,
+        "native_steps": 300000,
+        "pending_macro_native_steps": 0,
+        "replay_size": 30097,
+        "scheduled_cumulative_updates": 30000
+      },
+      "final_policy": {
+        "actor_parameter_sha256": "bd1de85fc0fe586e39831f2dea917fa5dd131530a625a58dd393f1e2094ace65",
+        "checkpoint_path": "runs/hybrid-rl-execution-v1/seed-29/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55",
+        "frozen": true
+      },
+      "final_training_shield": {
+        "override_fraction": 0.14429666666666666,
+        "overrides": 43289,
+        "policy_influence_fraction": 0.5398766666666667,
+        "policy_influence_steps": 161963,
+        "proposals": 300000,
+        "reasons": {
+          "ACCEPTED": 161963,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 94748,
+          "DEADLINE_RECOVERABILITY": 41284,
+          "KNOWN_TRANSITION_BRAKING": 1916,
+          "RIGHT_ENDPOINT_SPEED": 89
+        }
+      },
+      "resume_count": 0,
+      "runner_active_walltime_seconds": 328.94508883403614,
+      "seed": 29,
+      "started_at": "2026-10-20T20:22:31.674445+00:00",
+      "state": "COMPLETED",
+      "stream": {
+        "final_cursor": 240,
+        "ordered_sha256": "ca8912845c1293e86fd326a7415901c9beb0c70ae6a32db5e78263fceb355312",
+        "rows": 865
+      },
+      "update_schedule_observed": {
+        "first_update": {
+          "learner_updates": 1,
+          "native_steps": 10010
+        },
+        "last_update": {
+          "learner_updates": 30000,
+          "native_steps": 300000
+        }
+      }
+    },
+    "H47": {
+      "attempt_id": "4553b298-5797-493f-88fe-075de3786dff",
+      "completed_at": "2026-10-21T03:17:50.507301+00:00",
+      "diagnostic_curve": [
+        {
+          "checkpoint_bytes": 53421003,
+          "checkpoint_sha256": "bb9cb9ef5331ad462e24b2b30eb62f5475baa1ba8396c0229e199810517494a2",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1800302462047636,
+            "mean_travel_time_seconds": 124.19444444444167,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11594721538805636,
+              "overrides": 2592,
+              "policy_influence_fraction": 0.49308879445314246,
+              "policy_influence_steps": 11023,
+              "proposals": 22355,
+              "reasons": {
+                "ACCEPTED": 11023,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8740,
+                "DEADLINE_RECOVERABILITY": 2440,
+                "KNOWN_TRANSITION_BRAKING": 148,
+                "RIGHT_ENDPOINT_SPEED": 4
+              }
+            },
+            "target_speed_mps": {
+              "count": 2245,
+              "max": 15.76303972138299,
+              "mean": 9.307864046128055,
+              "min": 5.617104967435201
+            }
+          },
+          "learner": {
+            "alpha": 0.32480180263519287,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 3.8321046829223633,
+            "latest_actor_loss": 30.054344177246094,
+            "latest_cost_critic_loss": 16.86341667175293,
+            "latest_reward_critic_loss": 13.100458145141602
+          },
+          "learner_updates": 4137,
+          "macro_steps": 5019,
+          "native_steps": 50000,
+          "scheduled_cumulative_updates": 4137,
+          "training_experience_cumulative": {
+            "deadline_failures": 0,
+            "episodes": 42,
+            "feasible_episodes": 42,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.23275770268255302,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53442497,
+          "checkpoint_sha256": "100d77d44e75564cc750c05d2b3b8fe426d010a2f6fc85ed14dec37ec3f3c593",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17810225385812709,
+            "mean_travel_time_seconds": 130.04444444444135,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.13162166780587833,
+              "overrides": 3081,
+              "policy_influence_fraction": 0.5634825700615175,
+              "policy_influence_steps": 13190,
+              "proposals": 23408,
+              "reasons": {
+                "ACCEPTED": 13190,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7137,
+                "DEADLINE_RECOVERABILITY": 3033,
+                "KNOWN_TRANSITION_BRAKING": 45,
+                "RIGHT_ENDPOINT_SPEED": 3
+              }
+            },
+            "target_speed_mps": {
+              "count": 2349,
+              "max": 16.50641328758664,
+              "mean": 8.525279017047868,
+              "min": 5.622157785627577
+            }
+          },
+          "learner": {
+            "alpha": 0.18623805046081543,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 8.75393009185791,
+            "latest_actor_loss": 50.73509216308594,
+            "latest_cost_critic_loss": 24.8632755279541,
+            "latest_reward_critic_loss": 8.36090087890625
+          },
+          "learner_updates": 9310,
+          "macro_steps": 10036,
+          "native_steps": 100000,
+          "scheduled_cumulative_updates": 9310,
+          "training_experience_cumulative": {
+            "deadline_failures": 1,
+            "episodes": 81,
+            "feasible_episodes": 80,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.21331886573091205,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53463569,
+          "checkpoint_sha256": "aa22d2477eebebeb0c191b9f6eabd6c730e13c3909d67f52208ae2a9471550d9",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17722549005486654,
+            "mean_travel_time_seconds": 129.5277777777747,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.1604117520909286,
+              "overrides": 3740,
+              "policy_influence_fraction": 0.5554364143255415,
+              "policy_influence_steps": 12950,
+              "proposals": 23315,
+              "reasons": {
+                "ACCEPTED": 12950,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 6625,
+                "DEADLINE_RECOVERABILITY": 3676,
+                "KNOWN_TRANSITION_BRAKING": 62,
+                "RIGHT_ENDPOINT_SPEED": 2
+              }
+            },
+            "target_speed_mps": {
+              "count": 2341,
+              "max": 16.333508491516113,
+              "mean": 8.214230973480328,
+              "min": 5.630206730630663
+            }
+          },
+          "learner": {
+            "alpha": 0.16684862971305847,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 13.802544593811035,
+            "latest_actor_loss": 59.77597427368164,
+            "latest_cost_critic_loss": 7.909323692321777,
+            "latest_reward_critic_loss": 6.624300003051758
+          },
+          "learner_updates": 14482,
+          "macro_steps": 15054,
+          "native_steps": 150000,
+          "scheduled_cumulative_updates": 14482,
+          "training_experience_cumulative": {
+            "deadline_failures": 4,
+            "episodes": 119,
+            "feasible_episodes": 115,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.20529758746085838,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53485178,
+          "checkpoint_sha256": "64ebf1229f7ea0a37d7641e8b5fb9fc09583fdb8c0843e1d7c10cac654cadab4",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17680696367218157,
+            "mean_travel_time_seconds": 127.96111111110811,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.11427082881083662,
+              "overrides": 2632,
+              "policy_influence_fraction": 0.5409629661789607,
+              "policy_influence_steps": 12460,
+              "proposals": 23033,
+              "reasons": {
+                "ACCEPTED": 12460,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 7941,
+                "DEADLINE_RECOVERABILITY": 2522,
+                "KNOWN_TRANSITION_BRAKING": 105,
+                "RIGHT_ENDPOINT_SPEED": 5
+              }
+            },
+            "target_speed_mps": {
+              "count": 2312,
+              "max": 16.57892531818814,
+              "mean": 9.01612808853243,
+              "min": 5.630380908648172
+            }
+          },
+          "learner": {
+            "alpha": 0.17597727477550507,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 18.300748825073242,
+            "latest_actor_loss": 66.16732025146484,
+            "latest_cost_critic_loss": 10.246434211730957,
+            "latest_reward_critic_loss": 4.706826686859131
+          },
+          "learner_updates": 19655,
+          "macro_steps": 20072,
+          "native_steps": 200000,
+          "scheduled_cumulative_updates": 19655,
+          "training_experience_cumulative": {
+            "deadline_failures": 6,
+            "episodes": 158,
+            "feasible_episodes": 152,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.20066401418963808,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53506908,
+          "checkpoint_sha256": "71a31dbbb4e81bceb59f12f51ee82dbf29af27deb31d5044bf60748413925f25",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.17792093426981526,
+            "mean_travel_time_seconds": 127.21666666666371,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.0997860168566313,
+              "overrides": 2285,
+              "policy_influence_fraction": 0.5310712258177213,
+              "policy_influence_steps": 12161,
+              "proposals": 22899,
+              "reasons": {
+                "ACCEPTED": 12161,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8453,
+                "DEADLINE_RECOVERABILITY": 2182,
+                "KNOWN_TRANSITION_BRAKING": 101,
+                "RIGHT_ENDPOINT_SPEED": 2
+              }
+            },
+            "target_speed_mps": {
+              "count": 2299,
+              "max": 16.589886612362335,
+              "mean": 9.25203185361706,
+              "min": 5.616612566841973
+            }
+          },
+          "learner": {
+            "alpha": 0.18341168761253357,
+            "cost_multiplier_speed": 0.0,
+            "cost_multiplier_terminal": 22.976293563842773,
+            "latest_actor_loss": 66.68672180175781,
+            "latest_cost_critic_loss": 8.136144638061523,
+            "latest_reward_critic_loss": 3.239197254180908
+          },
+          "learner_updates": 24827,
+          "macro_steps": 25093,
+          "native_steps": 250000,
+          "scheduled_cumulative_updates": 24827,
+          "training_experience_cumulative": {
+            "deadline_failures": 8,
+            "episodes": 197,
+            "feasible_episodes": 189,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.197613059739259,
+            "right_endpoint_speed_failures": 0
+          }
+        },
+        {
+          "checkpoint_bytes": 53528427,
+          "checkpoint_sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf",
+          "diagnostic": {
+            "all_finite": true,
+            "completion_successes": 18,
+            "deadline_bound_falsifications": 0,
+            "deadline_successes": 18,
+            "episodes": 18,
+            "failure_modes": {
+              "deadline": 0,
+              "incomplete": 0,
+              "infeasible": 0,
+              "right_endpoint_speed": 0
+            },
+            "mean_normalized_energy": 0.1776941850423127,
+            "mean_travel_time_seconds": 127.22777777777485,
+            "right_endpoint_speed_successes": 18,
+            "rsr": 18,
+            "shield": {
+              "override_fraction": 0.10270293873629972,
+              "overrides": 2352,
+              "policy_influence_fraction": 0.525086240775512,
+              "policy_influence_steps": 12025,
+              "proposals": 22901,
+              "reasons": {
+                "ACCEPTED": 12025,
+                "ACCEPTED_IDENTICAL_TO_FALLBACK": 8524,
+                "DEADLINE_RECOVERABILITY": 2242,
+                "KNOWN_TRANSITION_BRAKING": 107,
+                "RIGHT_ENDPOINT_SPEED": 3
+              }
+            },
+            "target_speed_mps": {
+              "count": 2299,
+              "max": 16.156953242090015,
+              "mean": 9.105425387038641,
+              "min": 5.6719621022542315
+            }
+          },
+          "learner": {
+            "alpha": 0.19665777683258057,
+            "cost_multiplier_speed": 0.407787024974823,
+            "cost_multiplier_terminal": 27.990886688232422,
+            "latest_actor_loss": 62.86943054199219,
+            "latest_cost_critic_loss": 6.732901096343994,
+            "latest_reward_critic_loss": 2.245011806488037
+          },
+          "learner_updates": 30000,
+          "macro_steps": 30110,
+          "native_steps": 300000,
+          "scheduled_cumulative_updates": 30000,
+          "training_experience_cumulative": {
+            "deadline_failures": 8,
+            "episodes": 237,
+            "feasible_episodes": 229,
+            "incomplete_failures": 0,
+            "mean_normalized_energy_feasible": 0.1956138143677246,
+            "right_endpoint_speed_failures": 0
+          }
+        }
+      ],
+      "final_counts": {
+        "learner_updates": 30000,
+        "macro_steps": 30110,
+        "native_steps": 300000,
+        "pending_macro_native_steps": 0,
+        "replay_size": 30110,
+        "scheduled_cumulative_updates": 30000
+      },
+      "final_policy": {
+        "actor_parameter_sha256": "135486355eb36def746f38ef20638a0fdd9aab02370e392a108cda66f87dfad6",
+        "checkpoint_path": "runs/hybrid-rl-execution-v1/seed-47/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf",
+        "frozen": true
+      },
+      "final_training_shield": {
+        "override_fraction": 0.14570333333333332,
+        "overrides": 43711,
+        "policy_influence_fraction": 0.5197566666666666,
+        "policy_influence_steps": 155927,
+        "proposals": 300000,
+        "reasons": {
+          "ACCEPTED": 155927,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 100362,
+          "DEADLINE_RECOVERABILITY": 41800,
+          "KNOWN_TRANSITION_BRAKING": 1830,
+          "RIGHT_ENDPOINT_SPEED": 81
+        }
+      },
+      "resume_count": 0,
+      "runner_active_walltime_seconds": 357.0929265420418,
+      "seed": 47,
+      "started_at": "2026-10-20T20:28:08.051938+00:00",
+      "state": "COMPLETED",
+      "stream": {
+        "final_cursor": 238,
+        "ordered_sha256": "2b1323d664f8ca470975ce4238f33a1883bf6d88eb43d035681b5c1520b15255",
+        "rows": 865
+      },
+      "update_schedule_observed": {
+        "first_update": {
+          "learner_updates": 1,
+          "native_steps": 10010
+        },
+        "last_update": {
+          "learner_updates": 30000,
+          "native_steps": 300000
+        }
+      }
+    }
+  },
+  "state": "COMPLETED",
+  "study": "HYBRID_RL_MAIN_V1",
+  "totals": {
+    "learner_updates": 90000,
+    "macro_steps": 90315,
+    "native_steps": 900000,
+    "scheduled_diagnostic_episodes": 324,
+    "scientific_checkpoints": 18,
+    "seeds_completed": 3,
+    "training_deadline_failures": 23,
+    "training_episodes": 716,
+    "training_feasible_episodes": 693,
+    "training_incomplete_failures": 0,
+    "training_right_endpoint_speed_failures": 0
+  }
+}
