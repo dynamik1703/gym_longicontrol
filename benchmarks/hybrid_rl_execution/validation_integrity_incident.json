@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study": "HYBRID_RL_VALIDATION_V1",
+  "state": "INTEGRITY_STOPPED_BEFORE_REGISTERED_TRANSACTION",
+  "detected_on_date_europe_berlin": "2026-10-21",
+  "trigger": {
+    "command": ".venv/bin/python -m pytest -q -p no:cacheprovider benchmarks/hybrid_rl_execution/tests/test_validation.py benchmarks/hybrid_rl_execution/tests/test_runner.py tests/benchmark/test_hybrid_rl_execution.py",
+    "test": "test_frozen_split_hashes_and_fail_closed_boundaries",
+    "cause": "The historical fail-closed test called evaluate_validation(None) after validation_authorized had been changed to true. The convenience function evaluates baseline arms before checking that the Hybrid agent is non-null."
+  },
+  "affected_validation_task": {
+    "numeric_seed": 10100000,
+    "route_sha256": "dbfc385ad0d64f915f6ceeddfdeeec68c4cbfa13679d2027eae87cc9f1020dc9",
+    "full_task_sha256": "c98e55c90b05189f14c9c7dd27afd635bf3ebc754fcddb7e7fa3de7c97038879"
+  },
+  "known_environment_interactions": [
+    {
+      "controller_id": "CAUSAL60",
+      "status": "COMPLETED_RESULT_NOT_PERSISTED",
+      "performance_episode_count": 1
+    },
+    {
+      "controller_id": "TIME_AWARE",
+      "status": "COMPLETED_RESULT_NOT_PERSISTED",
+      "performance_episode_count": 1
+    },
+    {
+      "controller_id": "UNBOUND_HYBRID_AGENT_NONE",
+      "status": "ENVIRONMENT_RESET_THEN_ABORTED_BEFORE_FIRST_ACTION",
+      "performance_episode_count": 0
+    }
+  ],
+  "known_completed_performance_episodes": 2,
+  "persisted_episode_results": 0,
+  "registered_validation_transaction": false,
+  "validation_pair_ledger_created": false,
+  "paper": {
+    "state": "SEALED_UNINSPECTED",
+    "episode_count": 0,
+    "content_fingerprints_constructed": 0
+  },
+  "training_or_adaptation": {
+    "occurred": false,
+    "gradient_updates": 0,
+    "checkpoint_changes": 0
+  },
+  "containment": {
+    "validation_authorized": false,
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "paper_authorized": false,
+    "further_validation_execution_prohibited": true
+  },
+  "continuation_blocker": "Completing the planned 180-pair matrix would require repeating at least the completed CAUSAL60 and TIME_AWARE pairs for numeric seed 10100000, contrary to the authorized exactly-once protocol. The lost results cannot be reconstructed without another environment interaction.",
+  "required_next_step": "Explicit user and scientific-protocol direction is required. Do not rerun, aggregate, commit a completed Validation, or push final results under the current authorization."
+}
