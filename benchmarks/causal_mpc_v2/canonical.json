@@ -1,0 +1,40 @@
+{
+  "authorization": {
+    "paper_authorized": false,
+    "rl_training_authorized": false,
+    "validation_authorized": false
+  },
+  "execution": {
+    "calibration_complete": false,
+    "capability_opened": false,
+    "capability_complete": false
+  },
+  "frozen_method_sha256": null,
+  "gates": {
+    "adaptive_vs_fixed_mean_paired_saving_minimum_percent": 1.0,
+    "adaptive_vs_time_aware_mean_paired_saving_minimum_percent": 3.0,
+    "calibration_counterfactual_distinct_first_action_minimum_fraction": 0.1,
+    "calibration_executed_influence_minimum_fraction": 0.02,
+    "projected_retained_artifacts_maximum_gb": 12.0,
+    "projected_three_seed_runtime_maximum_hours": 24.0
+  },
+  "lambda_kwh_per_s": {
+    "maximum": 0.01,
+    "minimum": 1e-05,
+    "mapping": "logarithmic"
+  },
+  "paper_state": "SEALED_UNINSPECTED",
+  "planner": {
+    "horizon_m": 100.0,
+    "native_dt_s": 0.1,
+    "planning_frequency_hz": 1.0,
+    "profile_lattice_version": 1
+  },
+  "privileged_reference": {
+    "capability_execution_registered": false,
+    "reason": "not information-matched; optional and omitted before execution"
+  },
+  "schema_version": 1,
+  "source_commit": "303fc16c95845579ad461873af790204b5e933a4"
+}
+
