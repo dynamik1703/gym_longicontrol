@@ -13,6 +13,8 @@
    duplicates. Paper 4000–4017 is numeric exclusion only.
 6. Calibration is limited to 48 episodes. Capability opens only if projected
    active compute is at most 8 h and retained artifacts at most 4 GB.
+   The compute projection uses measured process time; any pre-Capability metadata
+   correction is aggregation-only from the retained 48 records and is recorded.
 7. All 72 pair identities are frozen first. One exclusive writer persists
    `STARTED` before reset and writes each completed record atomically. Completed
    pairs cannot rerun; an uncertain STARTED pair stops unless its exact full-state
@@ -28,4 +30,3 @@ Full-state checkpoints contain the environment and RNG, causal controller memory
 option anchor/profile/phase, held strategy action/clock, partial transition sums
 and counters. Focused tests resume across active option execution and require exact
 subsequent actions, position, energy and controller state.
-

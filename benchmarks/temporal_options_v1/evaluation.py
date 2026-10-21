@@ -688,8 +688,9 @@ def run_calibration() -> dict[str, Any]:
         for controller in CONTROLLER_ORDER
     ]
     total_wall = sum(float(row["episode_wall_time_s"]) for row in records)
+    total_active_process = sum(float(row["active_process_time_s"]) for row in records)
     serialized = json.dumps(records, allow_nan=False).encode("utf-8")
-    projected_hours = total_wall * 72.0 / 48.0 / 3600.0
+    projected_hours = total_active_process * 72.0 / 48.0 / 3600.0
     projected_bytes = len(serialized) * 72 // 48
     result = {
         "schema_version": 1,
@@ -698,10 +699,9 @@ def run_calibration() -> dict[str, Any]:
         "records": records,
         "resource_measurement": {
             "wall_time_s": total_wall,
-            "active_process_time_s": sum(
-                float(row["active_process_time_s"]) for row in records
-            ),
+            "active_process_time_s": total_active_process,
             "host_sleep_time_s": 0.0,
+            "projection_basis": "measured active process time",
             "projected_capability_active_compute_hours": projected_hours,
             "projected_retained_artifacts_bytes": projected_bytes,
             "active_compute_gate_pass": projected_hours <= 8.0,
@@ -750,6 +750,34 @@ def _preflight_capability() -> tuple[dict[str, Any], dict[str, Any]]:
     return canonical, ledger
 
 
+def refreeze_after_calibration() -> dict[str, Any]:
+    """Aggregation-only resource correction and final Capability freeze."""
+
+    canonical = json.loads(CANONICAL.read_text(encoding="utf-8"))
+    if not canonical["execution"]["calibration_complete"]:
+        raise PermissionError("completed Calibration is required for refreeze")
+    if canonical["execution"]["capability_opened"]:
+        raise PermissionError("cannot refreeze after Capability opens")
+    calibration = json.loads(CALIBRATION_JSON.read_text(encoding="utf-8"))
+    if calibration["episode_count"] != 48:
+        raise RuntimeError("aggregation-only correction requires all 48 records")
+    records = calibration["records"]
+    active_process = sum(float(row["active_process_time_s"]) for row in records)
+    projected_hours = active_process * 72.0 / 48.0 / 3600.0
+    resource = calibration["resource_measurement"]
+    resource["active_process_time_s"] = active_process
+    resource["projected_capability_active_compute_hours"] = projected_hours
+    resource["active_compute_gate_pass"] = projected_hours <= 8.0
+    resource["projection_basis"] = "measured active process time"
+    resource["aggregation_only_correction_before_capability"] = True
+    atomic_json(CALIBRATION_JSON, calibration)
+    canonical["frozen_method_sha256"] = method_hashes()
+    canonical["execution"]["analysis_refrozen_after_calibration"] = True
+    canonical["resource_projection_basis"] = "measured active process time"
+    atomic_json(CANONICAL, canonical)
+    return calibration
+
+
 def run_capability() -> dict[str, Any]:
     canonical, split_ledger = _preflight_capability()
     if canonical["execution"]["capability_complete"]:
@@ -789,12 +817,16 @@ def run_capability() -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("stage", choices=("prepare", "calibration", "capability"))
+    parser.add_argument(
+        "stage", choices=("prepare", "calibration", "refreeze", "capability")
+    )
     args = parser.parse_args()
     if args.stage == "prepare":
         result = prepare_study()
     elif args.stage == "calibration":
         result = run_calibration()
+    elif args.stage == "refreeze":
+        result = refreeze_after_calibration()
     else:
         result = run_capability()
     print(
