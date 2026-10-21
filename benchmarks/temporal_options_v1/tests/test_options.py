@@ -33,6 +33,21 @@ def profile(profile_id: str):
     return next(value for value in PROFILES if value.profile_id == profile_id)
 
 
+def ordinary_observation(state: VehicleState, limit_m_s: float = 100.0 / 3.6):
+    return np.array(
+        [
+            state.velocity_m_s / 37.0,
+            (state.acceleration_m_s2 + 3.0) / 6.0,
+            limit_m_s / 37.0,
+            limit_m_s / 37.0,
+            limit_m_s / 37.0,
+            1.0,
+            1.0,
+            0.2,
+        ]
+    )
+
+
 def test_inherited_lattice_has_seventeen_untuned_profiles():
     assert len(PROFILES) == 17
     assert len({value.profile_id for value in PROFILES}) == 17
@@ -274,6 +289,148 @@ def test_continue_scoring_excludes_sunk_energy_and_retains_anchor():
     ).candidates[0]
     assert candidate.instance.start_position_m == 300.0
     assert abs(candidate.future_option_energy_kwh) < 1.0
+
+
+def test_planner_and_executor_first_step_parity_without_hidden_information():
+    selected = profile("accel_coast_brake_50_-0.5")
+    selector = StatefulOptionSelector(profiles=(selected,))
+    state = VehicleState(position_m=340.0, velocity_m_s=12.0, elapsed_time_s=10.0)
+    option = OptionState.start(
+        instance_id=1,
+        profile=selected,
+        state=VehicleState(position_m=300.0, velocity_m_s=12.0, elapsed_time_s=6.0),
+        route_length_m=1000.0,
+    )
+    candidate = selector.solve(
+        state,
+        active_option=option,
+        allow_continue=True,
+        next_instance_id=2,
+        current_limit_m_s=100.0 / 3.6,
+        transitions=(),
+        price_kwh_per_s=1.0e-3,
+    ).candidates[0]
+    fallback = frozen_fallback_action(
+        state,
+        current_limit_m_s=100.0 / 3.6,
+        transitions=(),
+        vehicle=selector.vehicle,
+        config=selector.config,
+    )
+    execution_option = option.copy()
+    execution_option.update_physical_state(selected, state, count_step=False)
+    decision = selector.executor.decide(
+        execution_option,
+        selected,
+        state,
+        current_limit_m_s=100.0 / 3.6,
+        transitions=(),
+        fallback_action=fallback,
+    )
+    assert candidate.actions[0] == pytest.approx(decision.executed_action)
+    assert candidate.phases[0] == decision.phase
+
+
+def test_lifetime_timeout_is_distinct_and_holds_fallback():
+    controller = TemporalOptionController(
+        OptionArm.CONTINUE_FEEDBACK, profiles=(profile("cruise_50"),)
+    )
+    controller.reference.state = VehicleState(
+        position_m=300.0, velocity_m_s=10.0, elapsed_time_s=10.0
+    )
+    controller._start("cruise_50")
+    controller.active_option.native_steps_elapsed = 399
+    observation = ordinary_observation(controller.state)
+    action = controller.action(observation, 0.0)
+    controller.observe_executed_action(action)
+    assert controller.active_option is None
+    assert controller.option_history[-1].termination_reason == "LIFETIME_TIMEOUT"
+    assert controller._fallback_until_boundary
+
+
+def test_completion_between_boundaries_holds_fallback_until_next_boundary():
+    controller = TemporalOptionController(
+        OptionArm.CONTINUE_FEEDBACK, profiles=(profile("cruise_50"),)
+    )
+    controller.reference.state = VehicleState(
+        position_m=399.5, velocity_m_s=10.0, elapsed_time_s=10.0
+    )
+    controller.active_option = OptionState.start(
+        instance_id=1,
+        profile=profile("cruise_50"),
+        state=VehicleState(position_m=300.0, velocity_m_s=10.0),
+        route_length_m=1000.0,
+    )
+    observation = ordinary_observation(controller.state)
+    action = controller.action(observation, 0.0)
+    controller.observe_executed_action(action)
+    assert controller.active_option is None
+    assert controller.option_history[-1].termination_reason == "WAYPOINT_REACHED"
+    next_observation = ordinary_observation(controller.state)
+    fallback_action = controller.action(next_observation, 0.0)
+    assert controller.last_decision.phase == "fallback"
+    assert fallback_action == controller.last_decision.fallback_action
+
+
+@pytest.mark.parametrize("position_m", [339.99, 340.01])
+def test_snapshot_restore_exact_immediately_around_phase_boundary(position_m: float):
+    selected = profile("accel_coast_brake_50_-0.5")
+    controller = TemporalOptionController(
+        OptionArm.CONTINUE_FEEDBACK, profiles=(selected,)
+    )
+    controller.reference.state = VehicleState(
+        position_m=position_m, velocity_m_s=12.0, elapsed_time_s=10.0
+    )
+    controller.active_option = OptionState.start(
+        instance_id=1,
+        profile=selected,
+        state=VehicleState(position_m=300.0, velocity_m_s=12.0),
+        route_length_m=1000.0,
+    )
+    controller.active_option.update_physical_state(
+        selected, controller.state, count_step=False
+    )
+    clone = TemporalOptionController(OptionArm.CONTINUE_FEEDBACK, profiles=(selected,))
+    clone.restore(controller.snapshot())
+    observation = ordinary_observation(controller.state)
+    clone_observation = ordinary_observation(clone.state)
+    action = controller.action(observation, 0.0)
+    clone_action = clone.action(clone_observation, 0.0)
+    assert action == clone_action
+    controller.observe_executed_action(action)
+    clone.observe_executed_action(clone_action)
+    assert controller.snapshot() == clone.snapshot()
+
+
+def test_snapshot_restore_exact_during_safety_interruption():
+    selected = profile("accel_coast_60_0.5")
+    controller = TemporalOptionController(
+        OptionArm.CONTINUE_FEEDBACK, profiles=(selected,)
+    )
+    controller.reference.state = VehicleState(
+        position_m=300.0, velocity_m_s=16.0, elapsed_time_s=10.0
+    )
+    controller.reference._known_transitions = {305.0: 20.0 / 3.6}
+    controller.active_option = OptionState.start(
+        instance_id=1,
+        profile=selected,
+        state=VehicleState(position_m=240.0, velocity_m_s=16.0),
+        route_length_m=1000.0,
+    )
+    clone = TemporalOptionController(OptionArm.CONTINUE_FEEDBACK, profiles=(selected,))
+    clone.restore(controller.snapshot())
+    observation = ordinary_observation(controller.state)
+    action = controller.action(observation, 0.0)
+    clone_action = clone.action(observation.copy(), 0.0)
+    assert action == clone_action
+    assert controller.last_decision.intervention_reason in {
+        "KNOWN_TRANSITION_BRAKING",
+        "RIGHT_ENDPOINT_SPEED",
+    }
+    controller.observe_executed_action(action)
+    clone.observe_executed_action(clone_action)
+    assert controller.snapshot() == clone.snapshot()
+    assert controller.option_history[-1].termination_reason == "SAFETY_INTERRUPTION"
 
 
 def test_time_consistent_discount_uses_actual_native_duration():

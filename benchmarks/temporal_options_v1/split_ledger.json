@@ -622,7 +622,7 @@
     "candidate_start": 10800000,
     "id": "OPTIONS_CAPABILITY_V1",
     "ordered_sha256": "1ba0701dc34a25c2fecb86686d968a2ed17be91ab58fe21e1c0cc8d0f6f4310e",
-    "performance_episode_count": 0,
+    "performance_episode_count": 72,
     "rejected_candidates": [
       {
         "accepted": false,
@@ -855,7 +855,7 @@
     ],
     "selection_inputs": "numeric seed and fingerprints only; no controller outcome",
     "selection_order": "ascending numeric seed; first passing Policy R",
-    "state": "FROZEN_UNOPENED"
+    "state": "COMPLETE"
   },
   "checks": {
     "all_full_tasks_unique": true,

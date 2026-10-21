@@ -1,514 +1,732 @@
 {
-  "attempt_id": null,
+  "attempt_id": "7b089b16-d3c9-4970-9058-664d843b0ade",
+  "completed_utc": "2026-10-21T18:10:51.445307+00:00",
   "expected_pair_count": 72,
   "identities_sha256": "a986482f10be8f9da15c027f0ab0661fa94eb2edb453b57b6a1f55e4d35009b6",
+  "opened_utc": "2026-10-21T17:43:59.291105+00:00",
   "pairs": {
     "COMMIT_FEEDBACK:10800000": {
+      "completed_utc": "2026-10-21T17:44:05.025199+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800000,
       "pair_id": "COMMIT_FEEDBACK:10800000",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800000.json",
+      "record_sha256": "1a946d171fc213f02d72c969ed174208bf553f62f66405d33b4b42634afe9511",
+      "started_utc": "2026-10-21T17:43:59.313245+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800001": {
+      "completed_utc": "2026-10-21T17:44:13.179347+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800001,
       "pair_id": "COMMIT_FEEDBACK:10800001",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800001.json",
+      "record_sha256": "313b3774471bd2349e95f1b7e35f1285b34c1a116404152a3726c2cf500ef4fe",
+      "started_utc": "2026-10-21T17:44:05.066442+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800002": {
+      "completed_utc": "2026-10-21T17:44:24.246038+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800002,
       "pair_id": "COMMIT_FEEDBACK:10800002",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800002.json",
+      "record_sha256": "e2203ade0ba18562a11f5564ac606063af7081f2945309029e4661030149b85f",
+      "started_utc": "2026-10-21T17:44:13.201823+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800003": {
+      "completed_utc": "2026-10-21T17:44:27.686590+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800003,
       "pair_id": "COMMIT_FEEDBACK:10800003",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800003.json",
+      "record_sha256": "8006be66c34223d4c8910ff5b8c460c0d74df75b438ffdaf6826894d28d27776",
+      "started_utc": "2026-10-21T17:44:24.305477+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800004": {
+      "completed_utc": "2026-10-21T17:44:32.568922+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800004,
       "pair_id": "COMMIT_FEEDBACK:10800004",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800004.json",
+      "record_sha256": "6c0fe880c00b9c01a986d804cd63bae50297cc13cf269c592ec217cd05a39079",
+      "started_utc": "2026-10-21T17:44:27.784614+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800005": {
+      "completed_utc": "2026-10-21T17:44:37.363414+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800005,
       "pair_id": "COMMIT_FEEDBACK:10800005",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800005.json",
+      "record_sha256": "25df36a19e8d6a57ae9486023523d8e888fdc18418c8eb7dedb1c6a98b236215",
+      "started_utc": "2026-10-21T17:44:32.668463+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800006": {
+      "completed_utc": "2026-10-21T17:44:48.637092+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800006,
       "pair_id": "COMMIT_FEEDBACK:10800006",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800006.json",
+      "record_sha256": "e0c41723f25fbf8000de6755eefc60806fae8c1f5272b38e7aa69f46384ffba9",
+      "started_utc": "2026-10-21T17:44:37.381954+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800007": {
+      "completed_utc": "2026-10-21T17:44:53.493842+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800007,
       "pair_id": "COMMIT_FEEDBACK:10800007",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800007.json",
+      "record_sha256": "8f374d6cb11c048a804868f8cb30314cc22b5825122ee1e133c3e30fca319ce6",
+      "started_utc": "2026-10-21T17:44:48.657319+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800008": {
+      "completed_utc": "2026-10-21T17:44:59.223021+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800008,
       "pair_id": "COMMIT_FEEDBACK:10800008",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800008.json",
+      "record_sha256": "9636fa2b547de3be06e990c7f9fb380947a6903070fec2f44d0b5c27526dc9ba",
+      "started_utc": "2026-10-21T17:44:53.560163+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800009": {
+      "completed_utc": "2026-10-21T17:45:04.245219+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800009,
       "pair_id": "COMMIT_FEEDBACK:10800009",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800009.json",
+      "record_sha256": "1808281fe9fb1ccd5e5dc833af93f9273b573f5dc20397f5e0e98522cc2d6a2b",
+      "started_utc": "2026-10-21T17:44:59.282842+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800010": {
+      "completed_utc": "2026-10-21T17:45:10.773479+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800010,
       "pair_id": "COMMIT_FEEDBACK:10800010",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800010.json",
+      "record_sha256": "5692c6a7ce55c6336dc90fa5d2474efdb9b8647bcde43d400926096bc802c93b",
+      "started_utc": "2026-10-21T17:45:04.296366+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800011": {
+      "completed_utc": "2026-10-21T17:45:15.407239+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800011,
       "pair_id": "COMMIT_FEEDBACK:10800011",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800011.json",
+      "record_sha256": "8d140f3568ef782329ffdeafc22c56522cb5583344d8adc1fafb9f4ce7616f4c",
+      "started_utc": "2026-10-21T17:45:10.847508+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800012": {
+      "completed_utc": "2026-10-21T17:45:22.794536+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800012,
       "pair_id": "COMMIT_FEEDBACK:10800012",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800012.json",
+      "record_sha256": "ac1bd2176d6e9cdc78a8563c54cd2005a6baceb3f4b07f21b13729955703390c",
+      "started_utc": "2026-10-21T17:45:15.468565+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800013": {
+      "completed_utc": "2026-10-21T17:45:30.190695+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800013,
       "pair_id": "COMMIT_FEEDBACK:10800013",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800013.json",
+      "record_sha256": "2c3abd2d1bbdf7fa8df132882f46e5b6f3ef97581e0807968e574949f52f7a14",
+      "started_utc": "2026-10-21T17:45:22.843570+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800014": {
+      "completed_utc": "2026-10-21T17:45:42.135661+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800014,
       "pair_id": "COMMIT_FEEDBACK:10800014",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800014.json",
+      "record_sha256": "21c44486142dd26c381649af0103ecbb123dcc9046c0f72f0caa6c0672c0ea07",
+      "started_utc": "2026-10-21T17:45:30.217408+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800015": {
+      "completed_utc": "2026-10-21T17:45:47.587845+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800015,
       "pair_id": "COMMIT_FEEDBACK:10800015",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800015.json",
+      "record_sha256": "fb34f782275f2de716b6593be7eab4cabade18a1133d0c749eaf8e439382ab9c",
+      "started_utc": "2026-10-21T17:45:42.176160+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800017": {
+      "completed_utc": "2026-10-21T17:45:52.571174+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800017,
       "pair_id": "COMMIT_FEEDBACK:10800017",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800017.json",
+      "record_sha256": "a42673f3749bc8ed26d6a76de8497d4fed602f00cae82427bdedc706a6399e20",
+      "started_utc": "2026-10-21T17:45:47.635753+00:00",
+      "state": "COMPLETE"
     },
     "COMMIT_FEEDBACK:10800018": {
+      "completed_utc": "2026-10-21T17:45:59.646752+00:00",
       "controller_id": "COMMIT_FEEDBACK",
       "numeric_seed": 10800018,
       "pair_id": "COMMIT_FEEDBACK:10800018",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/COMMIT_FEEDBACK__10800018.json",
+      "record_sha256": "8a2d93e64bdd33dccc97066c35330a78422e988913223a5fc88c00ff41a79510",
+      "started_utc": "2026-10-21T17:45:52.640032+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800000": {
+      "completed_utc": "2026-10-21T17:46:51.633347+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800000,
       "pair_id": "CONTINUE_FEEDBACK:10800000",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800000.json",
+      "record_sha256": "0e1faf3161d2db05b81ed535f6b65467e6c0d3556ea2c3549163b9ea781af418",
+      "started_utc": "2026-10-21T17:45:59.692958+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800001": {
+      "completed_utc": "2026-10-21T17:47:43.944435+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800001,
       "pair_id": "CONTINUE_FEEDBACK:10800001",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800001.json",
+      "record_sha256": "ec32aafb6af7e5359d40dc9ff6c135cf1c5168b7e6ba5a14f836bf9cd5888323",
+      "started_utc": "2026-10-21T17:46:51.655844+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800002": {
+      "completed_utc": "2026-10-21T17:48:32.449186+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800002,
       "pair_id": "CONTINUE_FEEDBACK:10800002",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800002.json",
+      "record_sha256": "3e69c4fd01b1be92881ffe04839b02ab4f0b0defa46019fb8f87fd648ba50ea6",
+      "started_utc": "2026-10-21T17:47:43.963245+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800003": {
+      "completed_utc": "2026-10-21T17:49:13.100079+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800003,
       "pair_id": "CONTINUE_FEEDBACK:10800003",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800003.json",
+      "record_sha256": "d65c521accb9efaa5fb0327e1cdea7afa0494a6347563e8b1fc05aa9518c14ce",
+      "started_utc": "2026-10-21T17:48:32.459609+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800004": {
+      "completed_utc": "2026-10-21T17:49:44.337305+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800004,
       "pair_id": "CONTINUE_FEEDBACK:10800004",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800004.json",
+      "record_sha256": "420e59757bbc631933389dc56c17ebec09299513b91f5608d2c2d023c4b6175e",
+      "started_utc": "2026-10-21T17:49:13.109441+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800005": {
+      "completed_utc": "2026-10-21T17:50:15.425383+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800005,
       "pair_id": "CONTINUE_FEEDBACK:10800005",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800005.json",
+      "record_sha256": "3c4a372f9beeec685c9a64c89e248d6746fbe103d1c8072bf45e5f9ade24a730",
+      "started_utc": "2026-10-21T17:49:44.346571+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800006": {
+      "completed_utc": "2026-10-21T17:50:47.981691+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800006,
       "pair_id": "CONTINUE_FEEDBACK:10800006",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800006.json",
+      "record_sha256": "8fb405f4b59a217e4182e033064efd06bbb6cf4109a10c2fb0657f6705a4e3aa",
+      "started_utc": "2026-10-21T17:50:15.431333+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800007": {
+      "completed_utc": "2026-10-21T17:51:18.853284+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800007,
       "pair_id": "CONTINUE_FEEDBACK:10800007",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800007.json",
+      "record_sha256": "81b720e199accaf5fb3b90ad0cde511655a35fba515aa641704ac62b4ac188cd",
+      "started_utc": "2026-10-21T17:50:47.991958+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800008": {
+      "completed_utc": "2026-10-21T17:51:51.518037+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800008,
       "pair_id": "CONTINUE_FEEDBACK:10800008",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800008.json",
+      "record_sha256": "e3dfe8e047bf42f3f6453c03420a797005c522552a345bf3827609c86770a9c2",
+      "started_utc": "2026-10-21T17:51:18.862391+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800009": {
+      "completed_utc": "2026-10-21T17:52:26.644707+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800009,
       "pair_id": "CONTINUE_FEEDBACK:10800009",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800009.json",
+      "record_sha256": "2c12b5c4eb8526177ddc569f3a27bbbeaf31877b12f3ffe45c3ca2b6e637855f",
+      "started_utc": "2026-10-21T17:51:51.526958+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800010": {
+      "completed_utc": "2026-10-21T17:53:03.789007+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800010,
       "pair_id": "CONTINUE_FEEDBACK:10800010",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800010.json",
+      "record_sha256": "05710f62570a03b98dadf4a473440bde7b05d266b0198380193bdd42f287b4ee",
+      "started_utc": "2026-10-21T17:52:26.655089+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800011": {
+      "completed_utc": "2026-10-21T17:53:34.901257+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800011,
       "pair_id": "CONTINUE_FEEDBACK:10800011",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800011.json",
+      "record_sha256": "e98b2c94bd4417762e85ab41b343aa7bc6287d8dafe8ae301ce36642c5c48ee9",
+      "started_utc": "2026-10-21T17:53:03.798371+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800012": {
+      "completed_utc": "2026-10-21T17:54:15.131101+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800012,
       "pair_id": "CONTINUE_FEEDBACK:10800012",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800012.json",
+      "record_sha256": "9ab498b9b734ac0fa923d4dea626de490b345d9a3a4e8e4a2db6ecb7fd29c36d",
+      "started_utc": "2026-10-21T17:53:34.911139+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800013": {
+      "completed_utc": "2026-10-21T17:54:50.609451+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800013,
       "pair_id": "CONTINUE_FEEDBACK:10800013",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800013.json",
+      "record_sha256": "c04a807eddd61567be58b6c8e79c7a7597bc301e53456ebe6c8e71360d7f9ee0",
+      "started_utc": "2026-10-21T17:54:15.140345+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800014": {
+      "completed_utc": "2026-10-21T17:55:30.692817+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800014,
       "pair_id": "CONTINUE_FEEDBACK:10800014",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800014.json",
+      "record_sha256": "daa7ae54e2088958773aa623d7b29fee87fe8edc7532bd48a0db94b3a6b7a626",
+      "started_utc": "2026-10-21T17:54:50.615049+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800015": {
+      "completed_utc": "2026-10-21T17:56:12.040481+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800015,
       "pair_id": "CONTINUE_FEEDBACK:10800015",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800015.json",
+      "record_sha256": "7603c9e54ab02c17bf796a414fc1fbdb3ae69e692d9268869ff3c85fbc0b6c30",
+      "started_utc": "2026-10-21T17:55:30.703032+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800017": {
+      "completed_utc": "2026-10-21T17:56:44.554789+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800017,
       "pair_id": "CONTINUE_FEEDBACK:10800017",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800017.json",
+      "record_sha256": "519c859e8b274f37ec953d3b56daa2656f8881b0bdc07decd16d9a00019f985e",
+      "started_utc": "2026-10-21T17:56:12.050389+00:00",
+      "state": "COMPLETE"
     },
     "CONTINUE_FEEDBACK:10800018": {
+      "completed_utc": "2026-10-21T17:57:19.224742+00:00",
       "controller_id": "CONTINUE_FEEDBACK",
       "numeric_seed": 10800018,
       "pair_id": "CONTINUE_FEEDBACK:10800018",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/CONTINUE_FEEDBACK__10800018.json",
+      "record_sha256": "b6dc2d018d1c68d5394b48d753085b7b337d47a2e27b21864c5fb1dbe8f6d65f",
+      "started_utc": "2026-10-21T17:56:44.564565+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800000": {
+      "completed_utc": "2026-10-21T17:57:28.001493+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800000,
       "pair_id": "FROZEN_MPC_V2:10800000",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800000.json",
+      "record_sha256": "bbfdbc759f1f4afac3381d949b25ef6efa8d9c4e7239755196aca44a91046b6f",
+      "started_utc": "2026-10-21T17:57:19.230688+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800001": {
+      "completed_utc": "2026-10-21T17:57:37.393731+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800001,
       "pair_id": "FROZEN_MPC_V2:10800001",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800001.json",
+      "record_sha256": "6536d091dd1b584e0cc41fe42ebabefcdbb4e30313b837133b2359fa36921387",
+      "started_utc": "2026-10-21T17:57:28.010299+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800002": {
+      "completed_utc": "2026-10-21T17:57:50.311694+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800002,
       "pair_id": "FROZEN_MPC_V2:10800002",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800002.json",
+      "record_sha256": "7bc7b0c9476185bf03d129686cebb0a16a54f9c5fd09681b53c600204bdf3a44",
+      "started_utc": "2026-10-21T17:57:37.402980+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800003": {
+      "completed_utc": "2026-10-21T17:58:06.427001+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800003,
       "pair_id": "FROZEN_MPC_V2:10800003",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800003.json",
+      "record_sha256": "4f309622af713b9b5ef2f14bfd2846968e9ccef377d2b13c4815a186f0e92ada",
+      "started_utc": "2026-10-21T17:57:50.320672+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800004": {
+      "completed_utc": "2026-10-21T17:58:10.895658+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800004,
       "pair_id": "FROZEN_MPC_V2:10800004",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800004.json",
+      "record_sha256": "ac76ac3afe9f983437cda2c5132c8a2948eae75a2444aebca9376f963edb3651",
+      "started_utc": "2026-10-21T17:58:06.436488+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800005": {
+      "completed_utc": "2026-10-21T17:58:16.337213+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800005,
       "pair_id": "FROZEN_MPC_V2:10800005",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800005.json",
+      "record_sha256": "939cf2d849057ca764ce67cfadf08e9046b49998a98275ba2cd96e8e91b654d4",
+      "started_utc": "2026-10-21T17:58:10.905183+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800006": {
+      "completed_utc": "2026-10-21T17:58:32.184002+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800006,
       "pair_id": "FROZEN_MPC_V2:10800006",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800006.json",
+      "record_sha256": "b680ac1d303b9e3b2e0810e047fe1254c80c5937b45aefafecb9c8c840b88eee",
+      "started_utc": "2026-10-21T17:58:16.350638+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800007": {
+      "completed_utc": "2026-10-21T17:58:36.573477+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800007,
       "pair_id": "FROZEN_MPC_V2:10800007",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800007.json",
+      "record_sha256": "15601b252d7c6dc603f5645391b85a7c0cb4f6fc397d10abd996f43c9a5d0691",
+      "started_utc": "2026-10-21T17:58:32.194560+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800008": {
+      "completed_utc": "2026-10-21T17:58:45.678098+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800008,
       "pair_id": "FROZEN_MPC_V2:10800008",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800008.json",
+      "record_sha256": "f32492af3f8186567d5fd8efef829e682cd012d5fe880794266188431c74e7dc",
+      "started_utc": "2026-10-21T17:58:36.582712+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800009": {
+      "completed_utc": "2026-10-21T17:58:52.717823+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800009,
       "pair_id": "FROZEN_MPC_V2:10800009",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800009.json",
+      "record_sha256": "b732f2aca6c148705689df248180e10bbae7c5e7c5f76f8ffa550c7295fbd935",
+      "started_utc": "2026-10-21T17:58:45.687533+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800010": {
+      "completed_utc": "2026-10-21T17:59:10.627155+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800010,
       "pair_id": "FROZEN_MPC_V2:10800010",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800010.json",
+      "record_sha256": "0dab1ee465b01911550d275543d0621ecc311f20a73dd1dd284d506ac70c5776",
+      "started_utc": "2026-10-21T17:58:52.727532+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800011": {
+      "completed_utc": "2026-10-21T17:59:15.958761+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800011,
       "pair_id": "FROZEN_MPC_V2:10800011",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800011.json",
+      "record_sha256": "454e8eed296bcf30953a6855bf268ea82a49f450a77b307b5e7d25e1e97d0721",
+      "started_utc": "2026-10-21T17:59:10.636245+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800012": {
+      "completed_utc": "2026-10-21T17:59:31.554739+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800012,
       "pair_id": "FROZEN_MPC_V2:10800012",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800012.json",
+      "record_sha256": "6f118e7542da3639b1d4bd978b6ef62db97b7ee30bbd0bba518b038169cc3bfa",
+      "started_utc": "2026-10-21T17:59:15.968735+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800013": {
+      "completed_utc": "2026-10-21T17:59:43.897797+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800013,
       "pair_id": "FROZEN_MPC_V2:10800013",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800013.json",
+      "record_sha256": "ba06535e7db3b86d6b781220790ea0a9f4f5e021abd47082484fc6c04afc24b5",
+      "started_utc": "2026-10-21T17:59:31.563914+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800014": {
+      "completed_utc": "2026-10-21T17:59:58.119629+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800014,
       "pair_id": "FROZEN_MPC_V2:10800014",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800014.json",
+      "record_sha256": "2617aabc2de2e950badd551cd96df58fca5eed43f7f3324216a8190d0a1e775e",
+      "started_utc": "2026-10-21T17:59:43.907153+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800015": {
+      "completed_utc": "2026-10-21T18:00:10.781412+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800015,
       "pair_id": "FROZEN_MPC_V2:10800015",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800015.json",
+      "record_sha256": "36fea2b8b450d7d9b8692425914ce3dae00b81d870f6c17336fa3d6156b0e744",
+      "started_utc": "2026-10-21T17:59:58.128618+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800017": {
+      "completed_utc": "2026-10-21T18:00:16.409332+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800017,
       "pair_id": "FROZEN_MPC_V2:10800017",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800017.json",
+      "record_sha256": "2d63028bd4c13421964bad966b417464852b329aab916b4bf40e1503dea61245",
+      "started_utc": "2026-10-21T18:00:10.790970+00:00",
+      "state": "COMPLETE"
     },
     "FROZEN_MPC_V2:10800018": {
+      "completed_utc": "2026-10-21T18:00:29.790062+00:00",
       "controller_id": "FROZEN_MPC_V2",
       "numeric_seed": 10800018,
       "pair_id": "FROZEN_MPC_V2:10800018",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/FROZEN_MPC_V2__10800018.json",
+      "record_sha256": "3be4121a87f04c319b8c4d5e618eee188684a1b1e95a3e1e3a2197b0b87385fb",
+      "started_utc": "2026-10-21T18:00:16.418972+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800000": {
+      "completed_utc": "2026-10-21T18:01:09.268018+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800000,
       "pair_id": "RESET_FEEDBACK:10800000",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800000.json",
+      "record_sha256": "402447f91f58518c0475b8c5614786adc88a9e27a7cd61be4435628d63d63eac",
+      "started_utc": "2026-10-21T18:00:29.799348+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800001": {
+      "completed_utc": "2026-10-21T18:01:47.013506+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800001,
       "pair_id": "RESET_FEEDBACK:10800001",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800001.json",
+      "record_sha256": "53022c5aebf6d8a96e95df3878eecb875b10cf30026debb568cfac90589054a1",
+      "started_utc": "2026-10-21T18:01:09.277764+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800002": {
+      "completed_utc": "2026-10-21T18:02:28.528896+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800002,
       "pair_id": "RESET_FEEDBACK:10800002",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800002.json",
+      "record_sha256": "2af968b8f84e803fbb270041df86b7aa9f64bc339767f970195df0300481ac73",
+      "started_utc": "2026-10-21T18:01:47.024195+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800003": {
+      "completed_utc": "2026-10-21T18:03:02.050804+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800003,
       "pair_id": "RESET_FEEDBACK:10800003",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800003.json",
+      "record_sha256": "9a6f7230bc6252756c323bdb7a3b899fee477d47014ff1869acd4339aa66ddf8",
+      "started_utc": "2026-10-21T18:02:28.539452+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800004": {
+      "completed_utc": "2026-10-21T18:03:31.622195+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800004,
       "pair_id": "RESET_FEEDBACK:10800004",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800004.json",
+      "record_sha256": "d7f8ed8c8bced7a0186c65d6b484a1d8c83f91509a7c17b2f647a8e75c801283",
+      "started_utc": "2026-10-21T18:03:02.060740+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800005": {
+      "completed_utc": "2026-10-21T18:04:01.882371+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800005,
       "pair_id": "RESET_FEEDBACK:10800005",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800005.json",
+      "record_sha256": "0556593c613cfb2301765643598466575c142752724b7b6c59d8e26a92d98d6c",
+      "started_utc": "2026-10-21T18:03:31.631730+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800006": {
+      "completed_utc": "2026-10-21T18:04:34.537365+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800006,
       "pair_id": "RESET_FEEDBACK:10800006",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800006.json",
+      "record_sha256": "95f67b901296d9e0f94d479e9a0da6eccc33221a32ca155ab890d509724054c4",
+      "started_utc": "2026-10-21T18:04:01.892618+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800007": {
+      "completed_utc": "2026-10-21T18:05:04.847720+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800007,
       "pair_id": "RESET_FEEDBACK:10800007",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800007.json",
+      "record_sha256": "34ea61235bba723afa2f3158682b4b888981ed57536fb63a7a6bdeb696bf3944",
+      "started_utc": "2026-10-21T18:04:34.546904+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800008": {
+      "completed_utc": "2026-10-21T18:05:35.553329+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800008,
       "pair_id": "RESET_FEEDBACK:10800008",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800008.json",
+      "record_sha256": "0aec3b12d7d3fb055fa1ee727d25d16e706e52a82a482d7a803f2cd5af1a82f6",
+      "started_utc": "2026-10-21T18:05:04.857584+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800009": {
+      "completed_utc": "2026-10-21T18:06:09.703130+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800009,
       "pair_id": "RESET_FEEDBACK:10800009",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800009.json",
+      "record_sha256": "8b7d10a64f0bb0f0085b4d1b53d4e612b95da780c5865f26a6738409ad2b326d",
+      "started_utc": "2026-10-21T18:05:35.562569+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800010": {
+      "completed_utc": "2026-10-21T18:06:46.515963+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800010,
       "pair_id": "RESET_FEEDBACK:10800010",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800010.json",
+      "record_sha256": "d4eb50bee857f39e78900aa28672e439292446b557c9bbfccea1a3f00176d626",
+      "started_utc": "2026-10-21T18:06:09.714248+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800011": {
+      "completed_utc": "2026-10-21T18:07:16.960602+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800011,
       "pair_id": "RESET_FEEDBACK:10800011",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800011.json",
+      "record_sha256": "b39fafffd418ddaaaa8f1559f8fc56f30c83454882f5ecf2b720ab776c6ee8e0",
+      "started_utc": "2026-10-21T18:06:46.522899+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800012": {
+      "completed_utc": "2026-10-21T18:07:54.410741+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800012,
       "pair_id": "RESET_FEEDBACK:10800012",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800012.json",
+      "record_sha256": "f9047b26d98f3d7e0cfc4941a170dbddc9cee3661519d05bf67880d8d4f12208",
+      "started_utc": "2026-10-21T18:07:16.970220+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800013": {
+      "completed_utc": "2026-10-21T18:08:28.229294+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800013,
       "pair_id": "RESET_FEEDBACK:10800013",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800013.json",
+      "record_sha256": "7c0f2cb3d102880f84251506f52b62d0490cc95285e2e7d970faee117109a3ed",
+      "started_utc": "2026-10-21T18:07:54.420113+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800014": {
+      "completed_utc": "2026-10-21T18:09:06.981708+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800014,
       "pair_id": "RESET_FEEDBACK:10800014",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800014.json",
+      "record_sha256": "1102d00ba56f56fb0e075f2d04e099389396854d154d5ae20a90df31c13203ec",
+      "started_utc": "2026-10-21T18:08:28.238740+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800015": {
+      "completed_utc": "2026-10-21T18:09:48.146918+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800015,
       "pair_id": "RESET_FEEDBACK:10800015",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800015.json",
+      "record_sha256": "04c8460a274242d1e79cef532d7d4195f1a3deb7c83bc6c8f4d8093c8b99bc36",
+      "started_utc": "2026-10-21T18:09:07.000517+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800017": {
+      "completed_utc": "2026-10-21T18:10:19.120622+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800017,
       "pair_id": "RESET_FEEDBACK:10800017",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800017.json",
+      "record_sha256": "20ecf884bd8b59e4b8414e582247dc43f5100c3b39ae7ce1db97e7c7b068689b",
+      "started_utc": "2026-10-21T18:09:48.158780+00:00",
+      "state": "COMPLETE"
     },
     "RESET_FEEDBACK:10800018": {
+      "completed_utc": "2026-10-21T18:10:51.430010+00:00",
       "controller_id": "RESET_FEEDBACK",
       "numeric_seed": 10800018,
       "pair_id": "RESET_FEEDBACK:10800018",
-      "record_path": null,
-      "state": "PENDING"
+      "record_path": "capability_records/RESET_FEEDBACK__10800018.json",
+      "record_sha256": "2d267d3cab8ce6d95a8ad4bdf21e878163e271d4e09981a717f93068739f6618",
+      "started_utc": "2026-10-21T18:10:19.131059+00:00",
+      "state": "COMPLETE"
     }
   },
   "panel_id": "OPTIONS_CAPABILITY_V1",
   "schema_version": 1,
-  "state": "PREPARED_UNOPENED"
+  "state": "COMPLETE"
 }

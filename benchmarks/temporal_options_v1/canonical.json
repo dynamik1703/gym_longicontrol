@@ -13,8 +13,9 @@
   "execution": {
     "analysis_refrozen_after_calibration": true,
     "calibration_complete": true,
-    "capability_complete": false,
-    "capability_opened": false
+    "capability_complete": true,
+    "capability_opened": true,
+    "integrity_stop": "OPTIONS_V1_DEADLINE_BOUND_RETENTION_20261021"
   },
   "frozen_arms": [
     "FROZEN_MPC_V2",

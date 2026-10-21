@@ -1,0 +1,12 @@
+{
+  "affected_metric": "deadline-bound falsifications",
+  "aggregation_action": "fail closed",
+  "corrected_classification": "SEMANTIC_OR_INTEGRITY_STOP",
+  "detected_utc": "2026-10-21T18:11:42.861357+00:00",
+  "finding": "Per-step completion_bound_s was computed online but omitted from immutable Capability records, so empty falsification lists cannot be independently recomputed after execution.",
+  "id": "OPTIONS_V1_DEADLINE_BOUND_RETENTION_20261021",
+  "original_automatic_classification": "OPTIONS_VALID_EFFECT_UNCLEAR",
+  "pair_reruns": 0,
+  "physics_or_controller_changes": 0,
+  "raw_pair_records_modified": false
+}
