@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "name": "SLACKTRADER_V1_PREPARATION",
+  "research_question": "Can a causal RL policy learn a state-dependent shadow price of remaining travel time that improves feasible energy over the same MPC with a strong deterministic adaptive price?",
+  "lineage": {
+    "repository": "dynamik1703/gym_longicontrol",
+    "source_commit": "1c63ec85673ad0f3bf4afb4b05aa4f182c353ecc",
+    "source_branch": "research/hybrid-rl-validation-v2",
+    "study_branch": "research/slacktrader-v1",
+    "physical_environment": "StochasticTrack-v1",
+    "frozen_fallback": "benchmarks.physical_feasibility_reference.causal_controller.ObservationLimitedController",
+    "smdp_source": "benchmarks.hybrid_rl_execution"
+  },
+  "task": {
+    "track_length_m": 1000.0,
+    "deadline_s": 140.0,
+    "speed_tolerance_m_s": 0.0,
+    "native_dt_s": 0.1,
+    "maximum_native_steps": 1800,
+    "native_action_bounds": [-1.0, 1.0],
+    "evaluator": "is_feasible(EpisodeMetrics, TaskSpecification)"
+  },
+  "planner": {
+    "algorithm": "deterministic bounded one-dimensional target-speed lattice",
+    "planning_distance_m": 100.0,
+    "preview_limit_m": 150.0,
+    "candidate_speeds_km_h": [20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0],
+    "objective": "horizon_energy_kwh + terminal_continuation_energy_kwh + lambda_kwh_per_s * horizon_time_s",
+    "terminal_value": "exact-production-dynamics positive-traction energy to the common causal terminal-limit/cap speed; no future route input",
+    "control_segment_native_steps": 10,
+    "tie_breaking": "objective quantized at 1e-12 kWh, then shorter time, lower total energy, lower target speed",
+    "complexity": "O(9 * native_steps_to_100m)",
+    "numerical_precision": "IEEE-754 float64",
+    "maximum_candidate_native_steps": 1800
+  },
+  "time_price": {
+    "units": "kWh/s",
+    "minimum": 1e-05,
+    "maximum": 0.01,
+    "mapping": "log-linear from normalized [-1,1] to positive lambda bounds",
+    "fixed_price_normalized_action": 1.0,
+    "adaptive_high_reserve_s": 24.0,
+    "adaptive_low_reserve_s": 2.0
+  },
+  "temporal_semantics": {
+    "strategy_period_s": 1.0,
+    "native_steps_per_decision": 10,
+    "gamma_decision": 0.99,
+    "gamma_native": 0.99899547129175,
+    "terminal_bootstrap": false,
+    "truncation_bootstrap": false,
+    "replay_action": "proposed normalized lambda action"
+  },
+  "learner": {
+    "algorithm": "constrained Soft Actor-Critic",
+    "observation_dimensions": 16,
+    "action_dimensions": 1,
+    "actor_hidden_sizes": [256, 256],
+    "critic_hidden_sizes": [256, 256],
+    "reward_critics": 2,
+    "speed_cost_critics": 1,
+    "terminal_cost_critics": 1,
+    "intervention_regularizer_critics": 1,
+    "energy_reward_scale_per_kwh": 1000.0,
+    "training_seeds": [11, 29, 47],
+    "native_transitions_per_seed": 300000,
+    "gradient_updates_per_seed": 30000,
+    "warmup_native_transitions": 10000,
+    "diagnostic_checkpoints": [50000, 100000, 150000, 200000, 250000, 300000],
+    "final_endpoint": 300000,
+    "best_checkpoint_selection": false,
+    "update_schedule": "0 if N <= 10000 else min(30000, ((N - 10000) * 30000) // 290000)"
+  },
+  "splits": {
+    "development": {"id": "SLACKTRADER_MPC_DEVELOPMENT_V1", "candidate_start": 10250000, "accepted_count": 8},
+    "diagnostic": {"id": "SLACKTRADER_DIAGNOSTIC_V1", "candidate_start": 10300000, "accepted_count": 18},
+    "validation": {"id": "SLACKTRADER_VALIDATION_V1", "candidate_start": 10400000, "accepted_count": 36},
+    "paper_numeric_seeds": [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017]
+  },
+  "resource_limits": {"projected_runtime_hours": 24.0, "retained_artifacts_gb": 12.0},
+  "authorization": {
+    "main_training_authorized": false,
+    "main_training_enabled": false,
+    "validation_authorized": false,
+    "paper_authorized": false
+  },
+  "status": {
+    "mpc_development_complete": true,
+    "time_price_action_non_degenerate": true,
+    "strong_nonlearning_baselines_frozen": false,
+    "training_infrastructure_ready": false,
+    "ready_for_main_training": false,
+    "scientific_stop": "RL_NOT_JUSTIFIED_BY_MPC_PREFLIGHT",
+    "blocker": "AdaptivePrice MPC is feasible but not a strong energy baseline: -9.301% savings versus TIME_AWARE, and only 8.594% of native proposals differ from fallback on the independent Development capability partition."
+  }
+}

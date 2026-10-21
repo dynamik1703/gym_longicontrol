@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "bounded_preparation_only": true,
+  "development_capability_tasks": 4,
+  "adaptive_price_mpc": {
+    "native_proposals": 3037,
+    "native_action_influence_count": 261,
+    "native_action_influence_fraction": 0.0859400724399078,
+    "planner_solves": 355,
+    "planner_solve_time_s": 10.145440885564312,
+    "weighted_mean_planner_solve_time_s": 0.02857870671989947,
+    "physics_prediction_calls": 445123,
+    "shield_overrides": 20
+  },
+  "fixed_price_mpc": {
+    "native_proposals": 2989,
+    "native_action_influence_count": 70,
+    "native_action_influence_fraction": 0.0234192037470726,
+    "planner_solves": 352,
+    "planner_solve_time_s": 9.538355789496563,
+    "weighted_mean_planner_solve_time_s": 0.027097601674706145,
+    "physics_prediction_calls": 440881,
+    "shield_overrides": 20
+  },
+  "future_three_seed_projection": {
+    "real_native_transitions": 900000,
+    "base_strategy_decisions": 90000,
+    "projected_planner_solves_with_observation_replans": 104754,
+    "projected_planner_time_s": 2993.7,
+    "inherited_collection_overhead_s": 480.9,
+    "inherited_sac_update_time_s": 1034.6,
+    "projected_diagnostic_planner_time_s": 821.8,
+    "checkpoint_and_other_overhead_s": 100.0,
+    "raw_projected_runtime_hours": 1.5086,
+    "uncertainty_factor": 2.0,
+    "projected_total_runtime_hours": 3.0172,
+    "projected_retained_disk_gb": 2.1
+  },
+  "limits": {"runtime_hours": 24.0, "retained_disk_gb": 12.0},
+  "runtime_gate_passed": true,
+  "disk_gate_passed": true,
+  "scientific_gate_passed": false,
+  "main_training_episodes": 0,
+  "main_training_gradient_updates": 0,
+  "validation_performance_episodes": 0,
+  "paper_episodes": 0
+}
