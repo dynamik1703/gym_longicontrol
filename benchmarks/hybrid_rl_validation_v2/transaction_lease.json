@@ -1,0 +1,18 @@
+{
+  "acquired_at_utc": "2026-10-21T07:27:51.985951+00:00",
+  "acquisition": {
+    "automatic_stale_reclaim": false,
+    "directory_fsync": true,
+    "file_fsync": true,
+    "mechanism": "os.open(O_CREAT|O_EXCL)"
+  },
+  "completed_at_utc": "2026-10-21T07:29:18.026055+00:00",
+  "completed_pair_count": 180,
+  "host": "bwpm-RLXWFHTGV7",
+  "owner_token": "88e5546fe0ef4dd9921784f90e5999de",
+  "pid": 16378,
+  "schema_version": 1,
+  "state": "COMPLETED_SEALED",
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "transaction_id": "439c821bc40c0a4dd8962af0ce08ef050f3ca697af15d8960a7340c8f860ab76"
+}

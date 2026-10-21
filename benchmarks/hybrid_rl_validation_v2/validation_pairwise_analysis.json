@@ -1,0 +1,2338 @@
+{
+  "hybrid": {
+    "H11": {
+      "vs_causal60": {
+        "baseline": "CAUSAL60",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.049679559276728125,
+            "mean": 0.0192103087073399,
+            "median": 0.017767073354638063,
+            "minimum": 0.0031667308898175317
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 6732956578079370034,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.01326885976837613,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.022202373172006115
+          },
+          "count": 35,
+          "maximum": 0.049679559276728125,
+          "mean": 0.017724403306711364,
+          "median": 0.017767073354638063,
+          "minimum": -0.007892428955797809
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.00489874354232811,
+            "baseline_energy_kwh": 0.17052918738106898,
+            "energy_difference_kwh": -0.00489874354232811,
+            "numeric_seed": 10200001,
+            "saving_percent": -2.8726716039414706,
+            "treatment_energy_kwh": 0.1754279309233971
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01216812413995022,
+            "baseline_energy_kwh": 0.20444833068480983,
+            "energy_difference_kwh": 0.01216812413995022,
+            "numeric_seed": 10200002,
+            "saving_percent": 5.951686716733017,
+            "treatment_energy_kwh": 0.1922802065448596
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01776137546438719,
+            "baseline_energy_kwh": 0.18826537106622973,
+            "energy_difference_kwh": 0.01776137546438719,
+            "numeric_seed": 10200003,
+            "saving_percent": 9.434223279510563,
+            "treatment_energy_kwh": 0.17050399560184254
+          },
+          {
+            "absolute_energy_difference_kwh": 0.04588761278379391,
+            "baseline_energy_kwh": 0.23519861886875715,
+            "energy_difference_kwh": 0.04588761278379391,
+            "numeric_seed": 10200004,
+            "saving_percent": 19.510154015572514,
+            "treatment_energy_kwh": 0.18931100608496323
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0031667308898175317,
+            "baseline_energy_kwh": 0.16704638318608742,
+            "energy_difference_kwh": -0.0031667308898175317,
+            "numeric_seed": 10200005,
+            "saving_percent": -1.8957195177879644,
+            "treatment_energy_kwh": 0.17021311407590495
+          },
+          {
+            "absolute_energy_difference_kwh": 0.017767073354638063,
+            "baseline_energy_kwh": 0.18779686365634396,
+            "energy_difference_kwh": 0.017767073354638063,
+            "numeric_seed": 10200006,
+            "saving_percent": 9.460793438569162,
+            "treatment_energy_kwh": 0.1700297903017059
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01747057940787966,
+            "baseline_energy_kwh": 0.19191374791968702,
+            "energy_difference_kwh": 0.01747057940787966,
+            "numeric_seed": 10200007,
+            "saving_percent": 9.103349602234246,
+            "treatment_energy_kwh": 0.17444316851180736
+          },
+          {
+            "absolute_energy_difference_kwh": 0.010063470162788302,
+            "baseline_energy_kwh": 0.18459196787386897,
+            "energy_difference_kwh": 0.010063470162788302,
+            "numeric_seed": 10200008,
+            "saving_percent": 5.451737840329344,
+            "treatment_energy_kwh": 0.17452849771108067
+          },
+          {
+            "absolute_energy_difference_kwh": 0.021114059622924147,
+            "baseline_energy_kwh": 0.1931380394648064,
+            "energy_difference_kwh": 0.021114059622924147,
+            "numeric_seed": 10200009,
+            "saving_percent": 10.932108289714492,
+            "treatment_energy_kwh": 0.17202397984188225
+          },
+          {
+            "absolute_energy_difference_kwh": 0.022204892379796393,
+            "baseline_energy_kwh": 0.21628042403395692,
+            "energy_difference_kwh": 0.022204892379796393,
+            "numeric_seed": 10200010,
+            "saving_percent": 10.266713910413886,
+            "treatment_energy_kwh": 0.19407553165416053
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0179178469955871,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.0179178469955871,
+            "numeric_seed": 10200011,
+            "saving_percent": 9.566170208557544,
+            "treatment_energy_kwh": 0.1693864409791183
+          },
+          {
+            "absolute_energy_difference_kwh": 0.027785874600894267,
+            "baseline_energy_kwh": 0.19818604900140982,
+            "energy_difference_kwh": 0.027785874600894267,
+            "numeric_seed": 10200012,
+            "saving_percent": 14.020096137390887,
+            "treatment_energy_kwh": 0.17040017440051555
+          },
+          {
+            "absolute_energy_difference_kwh": 0.015504636402332322,
+            "baseline_energy_kwh": 0.18503891953673168,
+            "energy_difference_kwh": 0.015504636402332322,
+            "numeric_seed": 10200014,
+            "saving_percent": 8.379121776732235,
+            "treatment_energy_kwh": 0.16953428313439936
+          },
+          {
+            "absolute_energy_difference_kwh": 0.028943229195903974,
+            "baseline_energy_kwh": 0.2013564471097996,
+            "energy_difference_kwh": 0.028943229195903974,
+            "numeric_seed": 10200015,
+            "saving_percent": 14.374125890352664,
+            "treatment_energy_kwh": 0.17241321791389563
+          },
+          {
+            "absolute_energy_difference_kwh": 0.011805478566459138,
+            "baseline_energy_kwh": 0.18082889668953048,
+            "energy_difference_kwh": 0.011805478566459138,
+            "numeric_seed": 10200016,
+            "saving_percent": 6.528535418057795,
+            "treatment_energy_kwh": 0.16902341812307134
+          },
+          {
+            "absolute_energy_difference_kwh": 0.049679559276728125,
+            "baseline_energy_kwh": 0.2503897528443433,
+            "energy_difference_kwh": 0.049679559276728125,
+            "numeric_seed": 10200018,
+            "saving_percent": 19.84089153505088,
+            "treatment_energy_kwh": 0.20071019356761516
+          },
+          {
+            "absolute_energy_difference_kwh": 0.039120897958335316,
+            "baseline_energy_kwh": 0.21097186044108115,
+            "energy_difference_kwh": 0.039120897958335316,
+            "numeric_seed": 10200019,
+            "saving_percent": 18.54318290436688,
+            "treatment_energy_kwh": 0.17185096248274584
+          },
+          {
+            "absolute_energy_difference_kwh": 0.028130359893878965,
+            "baseline_energy_kwh": 0.220669361029708,
+            "energy_difference_kwh": 0.028130359893878965,
+            "numeric_seed": 10200020,
+            "saving_percent": 12.747741581619872,
+            "treatment_energy_kwh": 0.19253900113582903
+          },
+          {
+            "absolute_energy_difference_kwh": 0.018024941652734744,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.018024941652734744,
+            "numeric_seed": 10200022,
+            "saving_percent": 9.62334704006826,
+            "treatment_energy_kwh": 0.16927934632197067
+          },
+          {
+            "absolute_energy_difference_kwh": 0.018253138328118895,
+            "baseline_energy_kwh": 0.2065669297889829,
+            "energy_difference_kwh": 0.018253138328118895,
+            "numeric_seed": 10200023,
+            "saving_percent": 8.836428147896312,
+            "treatment_energy_kwh": 0.188313791460864
+          },
+          {
+            "absolute_energy_difference_kwh": 0.018973858422168866,
+            "baseline_energy_kwh": 0.1894835381658739,
+            "energy_difference_kwh": 0.018973858422168866,
+            "numeric_seed": 10200024,
+            "saving_percent": 10.01346006403952,
+            "treatment_energy_kwh": 0.17050967974370504
+          },
+          {
+            "absolute_energy_difference_kwh": 0.008710805455637599,
+            "baseline_energy_kwh": 0.22048156598831428,
+            "energy_difference_kwh": 0.008710805455637599,
+            "numeric_seed": 10200025,
+            "saving_percent": 3.9508089561098636,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01676478307235102,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.01676478307235102,
+            "numeric_seed": 10200026,
+            "saving_percent": 8.950560210674423,
+            "treatment_energy_kwh": 0.1705395049023544
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005048254099270955,
+            "baseline_energy_kwh": 0.16375242376045965,
+            "energy_difference_kwh": -0.005048254099270955,
+            "numeric_seed": 10200027,
+            "saving_percent": -3.0828576355337756,
+            "treatment_energy_kwh": 0.1688006778597306
+          },
+          {
+            "absolute_energy_difference_kwh": 0.041801499718874646,
+            "baseline_energy_kwh": 0.22833761106879452,
+            "energy_difference_kwh": 0.041801499718874646,
+            "numeric_seed": 10200028,
+            "saving_percent": 18.306883181974133,
+            "treatment_energy_kwh": 0.18653611134991988
+          },
+          {
+            "absolute_energy_difference_kwh": 0.030912191258275018,
+            "baseline_energy_kwh": 0.17896741145496947,
+            "energy_difference_kwh": 0.030912191258275018,
+            "numeric_seed": 10200030,
+            "saving_percent": 17.272525208341033,
+            "treatment_energy_kwh": 0.14805522019669445
+          },
+          {
+            "absolute_energy_difference_kwh": 0.022952674525079653,
+            "baseline_energy_kwh": 0.2004221072707733,
+            "energy_difference_kwh": 0.022952674525079653,
+            "numeric_seed": 10200032,
+            "saving_percent": 11.452167047655198,
+            "treatment_energy_kwh": 0.17746943274569366
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004997187023784988,
+            "baseline_energy_kwh": 0.1642449994420982,
+            "energy_difference_kwh": -0.004997187023784988,
+            "numeric_seed": 10200033,
+            "saving_percent": -3.0425200406461457,
+            "treatment_energy_kwh": 0.16924218646588318
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01873235325071751,
+            "baseline_energy_kwh": 0.19001080565774073,
+            "energy_difference_kwh": 0.01873235325071751,
+            "numeric_seed": 10200035,
+            "saving_percent": 9.858572614264574,
+            "treatment_energy_kwh": 0.17127845240702322
+          },
+          {
+            "absolute_energy_difference_kwh": 0.007892428955797809,
+            "baseline_energy_kwh": 0.1615567783161403,
+            "energy_difference_kwh": -0.007892428955797809,
+            "numeric_seed": 10200036,
+            "saving_percent": -4.8852354188158,
+            "treatment_energy_kwh": 0.1694492072719381
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01714413340251908,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.01714413340251908,
+            "numeric_seed": 10200037,
+            "saving_percent": 9.153091788712448,
+            "treatment_energy_kwh": 0.17016015457218633
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01005841462033108,
+            "baseline_energy_kwh": 0.18004980486685104,
+            "energy_difference_kwh": 0.01005841462033108,
+            "numeric_seed": 10200038,
+            "saving_percent": 5.58646238343296,
+            "treatment_energy_kwh": 0.16999139024651996
+          },
+          {
+            "absolute_energy_difference_kwh": 0.009402982577191604,
+            "baseline_energy_kwh": 0.1703240287939323,
+            "energy_difference_kwh": 0.009402982577191604,
+            "numeric_seed": 10200039,
+            "saving_percent": 5.520643589618155,
+            "treatment_energy_kwh": 0.1609210462167407
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01956807286770798,
+            "baseline_energy_kwh": 0.20769319270735026,
+            "energy_difference_kwh": 0.01956807286770798,
+            "numeric_seed": 10200040,
+            "saving_percent": 9.421624566810113,
+            "treatment_energy_kwh": 0.18812511983964228
+          },
+          {
+            "absolute_energy_difference_kwh": 0.011732540887912285,
+            "baseline_energy_kwh": 0.1877847439250327,
+            "energy_difference_kwh": 0.011732540887912285,
+            "numeric_seed": 10200041,
+            "saving_percent": 6.247866915427456,
+            "treatment_energy_kwh": 0.1760522030371204
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "H11"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 13445969998009125132,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 6.5493575914272375,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 10.677592782471661
+          },
+          "count": 35,
+          "maximum": 19.84089153505088,
+          "mean": 8.643602001243009,
+          "median": 9.421624566810113,
+          "minimum": -4.8852354188158
+        },
+        "treatment": "H11"
+      },
+      "vs_time_aware": {
+        "baseline": "TIME_AWARE",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.0039908003401399605,
+            "mean": 0.00210530779752814,
+            "median": 0.002087077940336579,
+            "minimum": 0.0
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 2231121237429709837,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.0012902853277837701,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.00229211115283239
+          },
+          "count": 35,
+          "maximum": 0.0039908003401399605,
+          "mean": 0.0018122197470415871,
+          "median": 0.002085983983314943,
+          "minimum": -0.0028024420377277537
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.0028024420377277537,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": -0.0028024420377277537,
+            "numeric_seed": 10200001,
+            "saving_percent": -1.6234230853265383,
+            "treatment_energy_kwh": 0.1754279309233971
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0018778220105143684,
+            "baseline_energy_kwh": 0.19415802855537398,
+            "energy_difference_kwh": 0.0018778220105143684,
+            "numeric_seed": 10200002,
+            "saving_percent": 0.9671616592351279,
+            "treatment_energy_kwh": 0.1922802065448596
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002087077940336579,
+            "baseline_energy_kwh": 0.17259107354217912,
+            "energy_difference_kwh": 0.002087077940336579,
+            "numeric_seed": 10200003,
+            "saving_percent": 1.2092618103024448,
+            "treatment_energy_kwh": 0.17050399560184254
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0018454538783649888,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.0018454538783649888,
+            "numeric_seed": 10200004,
+            "saving_percent": 0.9654153873319393,
+            "treatment_energy_kwh": 0.18931100608496323
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0024123748097643893,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0024123748097643893,
+            "numeric_seed": 10200005,
+            "saving_percent": 1.3974615367271264,
+            "treatment_energy_kwh": 0.17021311407590495
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002993078570360075,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.002993078570360075,
+            "numeric_seed": 10200006,
+            "saving_percent": 1.729874547724193,
+            "treatment_energy_kwh": 0.1700297903017059
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00042758362188566323,
+            "baseline_energy_kwh": 0.17487075213369302,
+            "energy_difference_kwh": 0.00042758362188566323,
+            "numeric_seed": 10200007,
+            "saving_percent": 0.24451408635719996,
+            "treatment_energy_kwh": 0.17444316851180736
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0032864378735698863,
+            "baseline_energy_kwh": 0.17781493558465056,
+            "energy_difference_kwh": 0.0032864378735698863,
+            "numeric_seed": 10200008,
+            "saving_percent": 1.8482349993627758,
+            "treatment_energy_kwh": 0.17452849771108067
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0005518344930268704,
+            "baseline_energy_kwh": 0.17257581433490912,
+            "energy_difference_kwh": 0.0005518344930268704,
+            "numeric_seed": 10200009,
+            "saving_percent": 0.3197635167787493,
+            "treatment_energy_kwh": 0.17202397984188225
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00031922959375560445,
+            "baseline_energy_kwh": 0.19375630206040492,
+            "energy_difference_kwh": -0.00031922959375560445,
+            "numeric_seed": 10200010,
+            "saving_percent": -0.16475830223890334,
+            "treatment_energy_kwh": 0.19407553165416053
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0032390479065510236,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0032390479065510236,
+            "numeric_seed": 10200011,
+            "saving_percent": 1.8763439440257053,
+            "treatment_energy_kwh": 0.1693864409791183
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0022253144851537843,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0022253144851537843,
+            "numeric_seed": 10200012,
+            "saving_percent": 1.2890995990908507,
+            "treatment_energy_kwh": 0.17040017440051555
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0010654773379715765,
+            "baseline_energy_kwh": 0.17059976047237094,
+            "energy_difference_kwh": 0.0010654773379715765,
+            "numeric_seed": 10200014,
+            "saving_percent": 0.6245479683097992,
+            "treatment_energy_kwh": 0.16953428313439936
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0016624092547300184,
+            "baseline_energy_kwh": 0.17407562716862565,
+            "energy_difference_kwh": 0.0016624092547300184,
+            "numeric_seed": 10200015,
+            "saving_percent": 0.9549925407533681,
+            "treatment_energy_kwh": 0.17241321791389563
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0036020707625979975,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0036020707625979975,
+            "numeric_seed": 10200016,
+            "saving_percent": 2.0866389927988362,
+            "treatment_energy_kwh": 0.16902341812307134
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0006780711715189958,
+            "baseline_energy_kwh": 0.20003212239609616,
+            "energy_difference_kwh": -0.0006780711715189958,
+            "numeric_seed": 10200018,
+            "saving_percent": -0.3389811413270437,
+            "treatment_energy_kwh": 0.20071019356761516
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0039908003401399605,
+            "baseline_energy_kwh": 0.1758417628228858,
+            "energy_difference_kwh": 0.0039908003401399605,
+            "numeric_seed": 10200019,
+            "saving_percent": 2.269540680253325,
+            "treatment_energy_kwh": 0.17185096248274584
+          },
+          {
+            "absolute_energy_difference_kwh": 0.000914441340146871,
+            "baseline_energy_kwh": 0.1934534424759759,
+            "energy_difference_kwh": 0.000914441340146871,
+            "numeric_seed": 10200020,
+            "saving_percent": 0.4726932374234856,
+            "treatment_energy_kwh": 0.19253900113582903
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0033461425636986675,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0033461425636986675,
+            "numeric_seed": 10200022,
+            "saving_percent": 1.938382671816694,
+            "treatment_energy_kwh": 0.16927934632197067
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0028426685024642295,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.0028426685024642295,
+            "numeric_seed": 10200023,
+            "saving_percent": 1.487089948730779,
+            "treatment_energy_kwh": 0.188313791460864
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0020487789362588216,
+            "baseline_energy_kwh": 0.17255845867996386,
+            "energy_difference_kwh": 0.0020487789362588216,
+            "numeric_seed": 10200024,
+            "saving_percent": 1.1872955704006354,
+            "treatment_energy_kwh": 0.17050967974370504
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0,
+            "baseline_energy_kwh": 0.21177076053267668,
+            "energy_difference_kwh": 0.0,
+            "numeric_seed": 10200025,
+            "saving_percent": 0.0,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002085983983314943,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.002085983983314943,
+            "numeric_seed": 10200026,
+            "saving_percent": 1.2083870098097158,
+            "treatment_energy_kwh": 0.1705395049023544
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0038248110259387347,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0038248110259387347,
+            "numeric_seed": 10200027,
+            "saving_percent": 2.2156699167826397,
+            "treatment_energy_kwh": 0.1688006778597306
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0016124052928860044,
+            "baseline_energy_kwh": 0.18814851664280588,
+            "energy_difference_kwh": 0.0016124052928860044,
+            "numeric_seed": 10200028,
+            "saving_percent": 0.8569853866810472,
+            "treatment_energy_kwh": 0.18653611134991988
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0013507495559235416,
+            "baseline_energy_kwh": 0.149405969752618,
+            "energy_difference_kwh": 0.0013507495559235416,
+            "numeric_seed": 10200030,
+            "saving_percent": 0.9040800432272371,
+            "treatment_energy_kwh": 0.14805522019669445
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0004890626307358092,
+            "baseline_energy_kwh": 0.17795849537642947,
+            "energy_difference_kwh": 0.0004890626307358092,
+            "numeric_seed": 10200032,
+            "saving_percent": 0.27481836689016276,
+            "treatment_energy_kwh": 0.17746943274569366
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0037806824061827893,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.0037806824061827893,
+            "numeric_seed": 10200033,
+            "saving_percent": 2.1850767073907704,
+            "treatment_energy_kwh": 0.16924218646588318
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002368889344883468,
+            "baseline_energy_kwh": 0.1736473417519067,
+            "energy_difference_kwh": 0.002368889344883468,
+            "numeric_seed": 10200035,
+            "saving_percent": 1.3641955707378153,
+            "treatment_energy_kwh": 0.17127845240702322
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0031762816137312355,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0031762816137312355,
+            "numeric_seed": 10200036,
+            "saving_percent": 1.8399841380521167,
+            "treatment_energy_kwh": 0.1694492072719381
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002465334313483003,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.002465334313483003,
+            "numeric_seed": 10200037,
+            "saving_percent": 1.4281403803095414,
+            "treatment_energy_kwh": 0.17016015457218633
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0026340986391493737,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0026340986391493737,
+            "numeric_seed": 10200038,
+            "saving_percent": 1.5259036519768814,
+            "treatment_energy_kwh": 0.16999139024651996
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0018466048769756327,
+            "baseline_energy_kwh": 0.16276765109371633,
+            "energy_difference_kwh": 0.0018466048769756327,
+            "numeric_seed": 10200039,
+            "saving_percent": 1.1345036096345813,
+            "treatment_energy_kwh": 0.1609210462167407
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002503013719229924,
+            "baseline_energy_kwh": 0.1906281335588722,
+            "energy_difference_kwh": 0.002503013719229924,
+            "numeric_seed": 10200040,
+            "saving_percent": 1.3130347931864483,
+            "treatment_energy_kwh": 0.18812511983964228
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0013292980805123256,
+            "baseline_energy_kwh": 0.17472290495660808,
+            "energy_difference_kwh": -0.0013292980805123256,
+            "numeric_seed": 10200041,
+            "saving_percent": -0.7608035596949655,
+            "treatment_energy_kwh": 0.1760522030371204
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "TIME_AWARE",
+          "H11"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 2854385139520301431,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.7343988975181809,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 1.3138196590531779
+          },
+          "count": 35,
+          "maximum": 2.269540680253325,
+          "mean": 1.0351750338147012,
+          "median": 1.2083870098097158,
+          "minimum": -1.6234230853265383
+        },
+        "treatment": "H11"
+      }
+    },
+    "H29": {
+      "vs_causal60": {
+        "baseline": "CAUSAL60",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.05164618796088863,
+            "mean": 0.01994792215893731,
+            "median": 0.019155447835592226,
+            "minimum": 0.004208134588004814
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 17177522741780005979,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.01343801288816511,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.022728524014050133
+          },
+          "count": 35,
+          "maximum": 0.05164618796088863,
+          "mean": 0.01806499250459213,
+          "median": 0.019155447835592226,
+          "minimum": -0.00934619894059388
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.004208134588004814,
+            "baseline_energy_kwh": 0.17052918738106898,
+            "energy_difference_kwh": -0.004208134588004814,
+            "numeric_seed": 10200001,
+            "saving_percent": -2.467691691159711,
+            "treatment_energy_kwh": 0.1747373219690738
+          },
+          {
+            "absolute_energy_difference_kwh": 0.013648482324940037,
+            "baseline_energy_kwh": 0.20444833068480983,
+            "energy_difference_kwh": 0.013648482324940037,
+            "numeric_seed": 10200002,
+            "saving_percent": 6.675761195615424,
+            "treatment_energy_kwh": 0.1907998483598698
+          },
+          {
+            "absolute_energy_difference_kwh": 0.02004665979143369,
+            "baseline_energy_kwh": 0.18826537106622973,
+            "energy_difference_kwh": 0.02004665979143369,
+            "numeric_seed": 10200003,
+            "saving_percent": 10.648086622569316,
+            "treatment_energy_kwh": 0.16821871127479604
+          },
+          {
+            "absolute_energy_difference_kwh": 0.04858233873684345,
+            "baseline_energy_kwh": 0.23519861886875715,
+            "energy_difference_kwh": 0.04858233873684345,
+            "numeric_seed": 10200004,
+            "saving_percent": 20.6558775602134,
+            "treatment_energy_kwh": 0.1866162801319137
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00934619894059388,
+            "baseline_energy_kwh": 0.16704638318608742,
+            "energy_difference_kwh": -0.00934619894059388,
+            "numeric_seed": 10200005,
+            "saving_percent": -5.59497234380845,
+            "treatment_energy_kwh": 0.1763925821266813
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019474863778715684,
+            "baseline_energy_kwh": 0.18779686365634396,
+            "energy_difference_kwh": 0.019474863778715684,
+            "numeric_seed": 10200006,
+            "saving_percent": 10.370175198640919,
+            "treatment_energy_kwh": 0.16832199987762828
+          },
+          {
+            "absolute_energy_difference_kwh": 0.017964455360288678,
+            "baseline_energy_kwh": 0.19191374791968702,
+            "energy_difference_kwh": 0.017964455360288678,
+            "numeric_seed": 10200007,
+            "saving_percent": 9.360692266718969,
+            "treatment_energy_kwh": 0.17394929255939834
+          },
+          {
+            "absolute_energy_difference_kwh": 0.007517453202490171,
+            "baseline_energy_kwh": 0.18459196787386897,
+            "energy_difference_kwh": 0.007517453202490171,
+            "numeric_seed": 10200008,
+            "saving_percent": 4.072470372939964,
+            "treatment_energy_kwh": 0.1770745146713788
+          },
+          {
+            "absolute_energy_difference_kwh": 0.023272277998539037,
+            "baseline_energy_kwh": 0.1931380394648064,
+            "energy_difference_kwh": 0.023272277998539037,
+            "numeric_seed": 10200009,
+            "saving_percent": 12.049556919510778,
+            "treatment_energy_kwh": 0.16986576146626736
+          },
+          {
+            "absolute_energy_difference_kwh": 0.024507885724558504,
+            "baseline_energy_kwh": 0.21628042403395692,
+            "energy_difference_kwh": 0.024507885724558504,
+            "numeric_seed": 10200010,
+            "saving_percent": 11.331532122717988,
+            "treatment_energy_kwh": 0.19177253830939842
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019342854885353478,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.019342854885353478,
+            "numeric_seed": 10200011,
+            "saving_percent": 10.326968535800761,
+            "treatment_energy_kwh": 0.16796143308935194
+          },
+          {
+            "absolute_energy_difference_kwh": 0.030450705722331772,
+            "baseline_energy_kwh": 0.19818604900140982,
+            "energy_difference_kwh": 0.030450705722331772,
+            "numeric_seed": 10200012,
+            "saving_percent": 15.364706989095462,
+            "treatment_energy_kwh": 0.16773534327907805
+          },
+          {
+            "absolute_energy_difference_kwh": 0.015884745625618785,
+            "baseline_energy_kwh": 0.18503891953673168,
+            "energy_difference_kwh": 0.015884745625618785,
+            "numeric_seed": 10200014,
+            "saving_percent": 8.584543006081237,
+            "treatment_energy_kwh": 0.1691541739111129
+          },
+          {
+            "absolute_energy_difference_kwh": 0.031334931315954634,
+            "baseline_energy_kwh": 0.2013564471097996,
+            "energy_difference_kwh": 0.031334931315954634,
+            "numeric_seed": 10200015,
+            "saving_percent": 15.56192104386293,
+            "treatment_energy_kwh": 0.17002151579384497
+          },
+          {
+            "absolute_energy_difference_kwh": 0.013017151445645053,
+            "baseline_energy_kwh": 0.18082889668953048,
+            "energy_difference_kwh": 0.013017151445645053,
+            "numeric_seed": 10200016,
+            "saving_percent": 7.198601376191836,
+            "treatment_energy_kwh": 0.16781174524388542
+          },
+          {
+            "absolute_energy_difference_kwh": 0.05164618796088863,
+            "baseline_energy_kwh": 0.2503897528443433,
+            "energy_difference_kwh": 0.05164618796088863,
+            "numeric_seed": 10200018,
+            "saving_percent": 20.626318519110836,
+            "treatment_energy_kwh": 0.19874356488345465
+          },
+          {
+            "absolute_energy_difference_kwh": 0.03193136974419061,
+            "baseline_energy_kwh": 0.21097186044108115,
+            "energy_difference_kwh": 0.03193136974419061,
+            "numeric_seed": 10200019,
+            "saving_percent": 15.135369085446445,
+            "treatment_energy_kwh": 0.17904049069689054
+          },
+          {
+            "absolute_energy_difference_kwh": 0.015549741114520177,
+            "baseline_energy_kwh": 0.220669361029708,
+            "energy_difference_kwh": 0.015549741114520177,
+            "numeric_seed": 10200020,
+            "saving_percent": 7.04662443483795,
+            "treatment_energy_kwh": 0.20511961991518782
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019420862889170526,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.019420862889170526,
+            "numeric_seed": 10200022,
+            "saving_percent": 10.368616276309288,
+            "treatment_energy_kwh": 0.1678834250855349
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01996226830343928,
+            "baseline_energy_kwh": 0.2065669297889829,
+            "energy_difference_kwh": 0.01996226830343928,
+            "numeric_seed": 10200023,
+            "saving_percent": 9.663825823345297,
+            "treatment_energy_kwh": 0.1866046614855436
+          },
+          {
+            "absolute_energy_difference_kwh": 0.021113516753519107,
+            "baseline_energy_kwh": 0.1894835381658739,
+            "energy_difference_kwh": 0.021113516753519107,
+            "numeric_seed": 10200024,
+            "saving_percent": 11.142665456793578,
+            "treatment_energy_kwh": 0.1683700214123548
+          },
+          {
+            "absolute_energy_difference_kwh": 0.008710805455637599,
+            "baseline_energy_kwh": 0.22048156598831428,
+            "energy_difference_kwh": 0.008710805455637599,
+            "numeric_seed": 10200025,
+            "saving_percent": 3.9508089561098636,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019155447835592226,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.019155447835592226,
+            "numeric_seed": 10200026,
+            "saving_percent": 10.226913672248166,
+            "treatment_energy_kwh": 0.1681488401391132
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005622257063549296,
+            "baseline_energy_kwh": 0.16375242376045965,
+            "energy_difference_kwh": -0.005622257063549296,
+            "numeric_seed": 10200027,
+            "saving_percent": -3.433388608509177,
+            "treatment_energy_kwh": 0.16937468082400894
+          },
+          {
+            "absolute_energy_difference_kwh": 0.04184864886766762,
+            "baseline_energy_kwh": 0.22833761106879452,
+            "energy_difference_kwh": 0.04184864886766762,
+            "numeric_seed": 10200028,
+            "saving_percent": 18.327532057370647,
+            "treatment_energy_kwh": 0.1864889622011269
+          },
+          {
+            "absolute_energy_difference_kwh": 0.03247479390363048,
+            "baseline_energy_kwh": 0.17896741145496947,
+            "energy_difference_kwh": 0.03247479390363048,
+            "numeric_seed": 10200030,
+            "saving_percent": 18.14564653956654,
+            "treatment_energy_kwh": 0.146492617551339
+          },
+          {
+            "absolute_energy_difference_kwh": 0.024368721401184457,
+            "baseline_energy_kwh": 0.2004221072707733,
+            "energy_difference_kwh": 0.024368721401184457,
+            "numeric_seed": 10200032,
+            "saving_percent": 12.158699323653925,
+            "treatment_energy_kwh": 0.17605338586958885
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005917590097866354,
+            "baseline_energy_kwh": 0.1642449994420982,
+            "energy_difference_kwh": -0.005917590097866354,
+            "numeric_seed": 10200033,
+            "saving_percent": -3.602904269820708,
+            "treatment_energy_kwh": 0.17016258953996455
+          },
+          {
+            "absolute_energy_difference_kwh": 0.02070633631445859,
+            "baseline_energy_kwh": 0.19001080565774073,
+            "energy_difference_kwh": 0.02070633631445859,
+            "numeric_seed": 10200035,
+            "saving_percent": 10.897451985839233,
+            "treatment_energy_kwh": 0.16930446934328214
+          },
+          {
+            "absolute_energy_difference_kwh": 0.007857088261026351,
+            "baseline_energy_kwh": 0.1615567783161403,
+            "energy_difference_kwh": -0.007857088261026351,
+            "numeric_seed": 10200036,
+            "saving_percent": -4.863360326269511,
+            "treatment_energy_kwh": 0.16941386657716664
+          },
+          {
+            "absolute_energy_difference_kwh": 0.018843666009865923,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.018843666009865923,
+            "numeric_seed": 10200037,
+            "saving_percent": 10.060456284060445,
+            "treatment_energy_kwh": 0.1684606219648395
+          },
+          {
+            "absolute_energy_difference_kwh": 0.012048879077828978,
+            "baseline_energy_kwh": 0.18004980486685104,
+            "energy_difference_kwh": 0.012048879077828978,
+            "numeric_seed": 10200038,
+            "saving_percent": 6.691970083910541,
+            "treatment_energy_kwh": 0.16800092578902207
+          },
+          {
+            "absolute_energy_difference_kwh": 0.009295216855682742,
+            "baseline_energy_kwh": 0.1703240287939323,
+            "energy_difference_kwh": 0.009295216855682742,
+            "numeric_seed": 10200039,
+            "saving_percent": 5.457372586535412,
+            "treatment_energy_kwh": 0.16102881193824956
+          },
+          {
+            "absolute_energy_difference_kwh": 0.017439118442628604,
+            "baseline_energy_kwh": 0.20769319270735026,
+            "energy_difference_kwh": 0.017439118442628604,
+            "numeric_seed": 10200040,
+            "saving_percent": 8.396576804132991,
+            "treatment_energy_kwh": 0.19025407426472166
+          },
+          {
+            "absolute_energy_difference_kwh": 0.015665619769146655,
+            "baseline_energy_kwh": 0.1877847439250327,
+            "energy_difference_kwh": 0.015665619769146655,
+            "numeric_seed": 10200041,
+            "saving_percent": 8.342328264643625,
+            "treatment_energy_kwh": 0.17211912415588604
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "H29"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 12410470531216838913,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 6.581519745302608,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 10.960992436744254
+          },
+          "count": 35,
+          "maximum": 20.6558775602134,
+          "mean": 8.825078632123034,
+          "median": 10.060456284060445,
+          "minimum": -5.59497234380845
+        },
+        "treatment": "H29"
+      },
+      "vs_time_aware": {
+        "baseline": "TIME_AWARE",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.011666177439211917,
+            "mean": 0.0033381707527871,
+            "median": 0.003250808061660393,
+            "minimum": 0.0
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 18206395579251162921,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.0009834517913797963,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.003118840108720587
+          },
+          "count": 35,
+          "maximum": 0.00489014560659129,
+          "mean": 0.0021528089449223526,
+          "median": 0.0029133522012790014,
+          "minimum": -0.011666177439211917
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.0021118330834044574,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": -0.0021118330834044574,
+            "numeric_seed": 10200001,
+            "saving_percent": -1.22336110213894,
+            "treatment_energy_kwh": 0.1747373219690738
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0033581801955041846,
+            "baseline_energy_kwh": 0.19415802855537398,
+            "energy_difference_kwh": 0.0033581801955041846,
+            "numeric_seed": 10200002,
+            "saving_percent": 1.7296118118269983,
+            "treatment_energy_kwh": 0.1907998483598698
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004372362267383079,
+            "baseline_energy_kwh": 0.17259107354217912,
+            "energy_difference_kwh": 0.004372362267383079,
+            "numeric_seed": 10200003,
+            "saving_percent": 2.533365241693411,
+            "treatment_energy_kwh": 0.16821871127479604
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004540179831414526,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.004540179831414526,
+            "numeric_seed": 10200004,
+            "saving_percent": 2.375111901677569,
+            "treatment_energy_kwh": 0.1866162801319137
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0037670932410119595,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": -0.0037670932410119595,
+            "numeric_seed": 10200005,
+            "saving_percent": -2.182234654528291,
+            "treatment_energy_kwh": 0.1763925821266813
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004700868994437696,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.004700868994437696,
+            "numeric_seed": 10200006,
+            "saving_percent": 2.71690616684523,
+            "treatment_energy_kwh": 0.16832199987762828
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0009214595742946807,
+            "baseline_energy_kwh": 0.17487075213369302,
+            "energy_difference_kwh": 0.0009214595742946807,
+            "numeric_seed": 10200007,
+            "saving_percent": 0.5269375027278445,
+            "treatment_energy_kwh": 0.17394929255939834
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0007404209132717554,
+            "baseline_energy_kwh": 0.17781493558465056,
+            "energy_difference_kwh": 0.0007404209132717554,
+            "numeric_seed": 10200008,
+            "saving_percent": 0.4163997308984603,
+            "treatment_energy_kwh": 0.1770745146713788
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00271005286864176,
+            "baseline_energy_kwh": 0.17257581433490912,
+            "energy_difference_kwh": 0.00271005286864176,
+            "numeric_seed": 10200009,
+            "saving_percent": 1.5703549649097979,
+            "treatment_energy_kwh": 0.16986576146626736
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0019837637510065065,
+            "baseline_energy_kwh": 0.19375630206040492,
+            "energy_difference_kwh": 0.0019837637510065065,
+            "numeric_seed": 10200010,
+            "saving_percent": 1.0238447626792824,
+            "treatment_energy_kwh": 0.19177253830939842
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004664055796317401,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004664055796317401,
+            "numeric_seed": 10200011,
+            "saving_percent": 2.701834952894139,
+            "treatment_energy_kwh": 0.16796143308935194
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00489014560659129,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.00489014560659129,
+            "numeric_seed": 10200012,
+            "saving_percent": 2.8328062316626115,
+            "treatment_energy_kwh": 0.16773534327907805
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0014455865612580387,
+            "baseline_energy_kwh": 0.17059976047237094,
+            "energy_difference_kwh": 0.0014455865612580387,
+            "numeric_seed": 10200014,
+            "saving_percent": 0.847355563252479,
+            "treatment_energy_kwh": 0.1691541739111129
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004054111374780678,
+            "baseline_energy_kwh": 0.17407562716862565,
+            "energy_difference_kwh": 0.004054111374780678,
+            "numeric_seed": 10200015,
+            "saving_percent": 2.328936819428198,
+            "treatment_energy_kwh": 0.17002151579384497
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004813743641783913,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004813743641783913,
+            "numeric_seed": 10200016,
+            "saving_percent": 2.7885474345981884,
+            "treatment_energy_kwh": 0.16781174524388542
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0012885575126415083,
+            "baseline_energy_kwh": 0.20003212239609616,
+            "energy_difference_kwh": 0.0012885575126415083,
+            "numeric_seed": 10200018,
+            "saving_percent": 0.6441752940509998,
+            "treatment_energy_kwh": 0.19874356488345465
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003198727874004742,
+            "baseline_energy_kwh": 0.1758417628228858,
+            "energy_difference_kwh": -0.003198727874004742,
+            "numeric_seed": 10200019,
+            "saving_percent": -1.8190945214912437,
+            "treatment_energy_kwh": 0.17904049069689054
+          },
+          {
+            "absolute_energy_difference_kwh": 0.011666177439211917,
+            "baseline_energy_kwh": 0.1934534424759759,
+            "energy_difference_kwh": -0.011666177439211917,
+            "numeric_seed": 10200020,
+            "saving_percent": -6.030483246975916,
+            "treatment_energy_kwh": 0.20511961991518782
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0047420638001344495,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0047420638001344495,
+            "numeric_seed": 10200022,
+            "saving_percent": 2.747024110254738,
+            "treatment_energy_kwh": 0.1678834250855349
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004551798477784613,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.004551798477784613,
+            "numeric_seed": 10200023,
+            "saving_percent": 2.3811899836698367,
+            "treatment_energy_kwh": 0.1866046614855436
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004188437267609063,
+            "baseline_energy_kwh": 0.17255845867996386,
+            "energy_difference_kwh": 0.004188437267609063,
+            "numeric_seed": 10200024,
+            "saving_percent": 2.4272570001202682,
+            "treatment_energy_kwh": 0.1683700214123548
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0,
+            "baseline_energy_kwh": 0.21177076053267668,
+            "energy_difference_kwh": 0.0,
+            "numeric_seed": 10200025,
+            "saving_percent": 0.0,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00447664874655615,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.00447664874655615,
+            "numeric_seed": 10200026,
+            "saving_percent": 2.5932721612861327,
+            "treatment_energy_kwh": 0.1681488401391132
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003250808061660393,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.003250808061660393,
+            "numeric_seed": 10200027,
+            "saving_percent": 1.8831564693284768,
+            "treatment_energy_kwh": 0.16937468082400894
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0016595544416789787,
+            "baseline_energy_kwh": 0.18814851664280588,
+            "energy_difference_kwh": 0.0016595544416789787,
+            "numeric_seed": 10200028,
+            "saving_percent": 0.882044924557971,
+            "treatment_energy_kwh": 0.1864889622011269
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0029133522012790014,
+            "baseline_energy_kwh": 0.149405969752618,
+            "energy_difference_kwh": 0.0029133522012790014,
+            "numeric_seed": 10200030,
+            "saving_percent": 1.9499570238745105,
+            "treatment_energy_kwh": 0.146492617551339
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0019051095068406132,
+            "baseline_energy_kwh": 0.17795849537642947,
+            "energy_difference_kwh": 0.0019051095068406132,
+            "numeric_seed": 10200032,
+            "saving_percent": 1.0705358588309037,
+            "treatment_energy_kwh": 0.17605338586958885
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002860279332101423,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.002860279332101423,
+            "numeric_seed": 10200033,
+            "saving_percent": 1.653122128160023,
+            "treatment_energy_kwh": 0.17016258953996455
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0043428724086245485,
+            "baseline_energy_kwh": 0.1736473417519067,
+            "energy_difference_kwh": 0.0043428724086245485,
+            "numeric_seed": 10200035,
+            "saving_percent": 2.5009725831733687,
+            "treatment_energy_kwh": 0.16930446934328214
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003211622308502693,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.003211622308502693,
+            "numeric_seed": 10200036,
+            "saving_percent": 1.8604566041981003,
+            "treatment_energy_kwh": 0.16941386657716664
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004164866920829846,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004164866920829846,
+            "numeric_seed": 10200037,
+            "saving_percent": 2.4126604638253952,
+            "treatment_energy_kwh": 0.1684606219648395
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004624563096647272,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004624563096647272,
+            "numeric_seed": 10200038,
+            "saving_percent": 2.678957277108794,
+            "treatment_energy_kwh": 0.16800092578902207
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0017388391554667704,
+            "baseline_energy_kwh": 0.16276765109371633,
+            "energy_difference_kwh": 0.0017388391554667704,
+            "numeric_seed": 10200039,
+            "saving_percent": 1.0682952931879586,
+            "treatment_energy_kwh": 0.16102881193824956
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00037405929415054717,
+            "baseline_energy_kwh": 0.1906281335588722,
+            "energy_difference_kwh": 0.00037405929415054717,
+            "numeric_seed": 10200040,
+            "saving_percent": 0.19622460083260765,
+            "treatment_energy_kwh": 0.19025407426472166
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002603780800722044,
+            "baseline_energy_kwh": 0.17472290495660808,
+            "energy_difference_kwh": 0.002603780800722044,
+            "numeric_seed": 10200041,
+            "saving_percent": 1.4902343807577407,
+            "treatment_energy_kwh": 0.17211912415588604
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "TIME_AWARE",
+          "H29"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 1776096581474469383,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.6080937992911966,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 1.7832205754520039
+          },
+          "count": 35,
+          "maximum": 2.8328062316626115,
+          "mean": 1.2450393062050755,
+          "median": 1.7296118118269983,
+          "minimum": -6.030483246975916
+        },
+        "treatment": "H29"
+      }
+    },
+    "H47": {
+      "vs_causal60": {
+        "baseline": "CAUSAL60",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.05227310400235938,
+            "mean": 0.020313484820252015,
+            "median": 0.019719276028728805,
+            "minimum": 0.0024973166714100103
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 7127328176349830006,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.014317135719147826,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.023512452556704908
+          },
+          "count": 35,
+          "maximum": 0.05227310400235938,
+          "mean": 0.018907286247927767,
+          "median": 0.019719276028728805,
+          "minimum": -0.00702428906845487
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.00429099154480761,
+            "baseline_energy_kwh": 0.17052918738106898,
+            "energy_difference_kwh": -0.00429099154480761,
+            "numeric_seed": 10200001,
+            "saving_percent": -2.5162798291056463,
+            "treatment_energy_kwh": 0.1748201789258766
+          },
+          {
+            "absolute_energy_difference_kwh": 0.012947338961063898,
+            "baseline_energy_kwh": 0.20444833068480983,
+            "energy_difference_kwh": 0.012947338961063898,
+            "numeric_seed": 10200002,
+            "saving_percent": 6.332817156147054,
+            "treatment_energy_kwh": 0.19150099172374593
+          },
+          {
+            "absolute_energy_difference_kwh": 0.020399553130936,
+            "baseline_energy_kwh": 0.18826537106622973,
+            "energy_difference_kwh": 0.020399553130936,
+            "numeric_seed": 10200003,
+            "saving_percent": 10.835531258565684,
+            "treatment_energy_kwh": 0.16786581793529373
+          },
+          {
+            "absolute_energy_difference_kwh": 0.048030685311801075,
+            "baseline_energy_kwh": 0.23519861886875715,
+            "energy_difference_kwh": 0.048030685311801075,
+            "numeric_seed": 10200004,
+            "saving_percent": 20.42132965865867,
+            "treatment_energy_kwh": 0.18716793355695607
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0024973166714100103,
+            "baseline_energy_kwh": 0.16704638318608742,
+            "energy_difference_kwh": -0.0024973166714100103,
+            "numeric_seed": 10200005,
+            "saving_percent": -1.4949839821602322,
+            "treatment_energy_kwh": 0.16954369985749743
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019324690708687198,
+            "baseline_energy_kwh": 0.18779686365634396,
+            "energy_difference_kwh": 0.019324690708687198,
+            "numeric_seed": 10200006,
+            "saving_percent": 10.290209502140634,
+            "treatment_energy_kwh": 0.16847217294765676
+          },
+          {
+            "absolute_energy_difference_kwh": 0.021409723643395828,
+            "baseline_energy_kwh": 0.19191374791968702,
+            "energy_difference_kwh": 0.021409723643395828,
+            "numeric_seed": 10200007,
+            "saving_percent": 11.155909295438008,
+            "treatment_energy_kwh": 0.1705040242762912
+          },
+          {
+            "absolute_energy_difference_kwh": 0.010499301628932423,
+            "baseline_energy_kwh": 0.18459196787386897,
+            "energy_difference_kwh": 0.010499301628932423,
+            "numeric_seed": 10200008,
+            "saving_percent": 5.687843165584842,
+            "treatment_energy_kwh": 0.17409266624493655
+          },
+          {
+            "absolute_energy_difference_kwh": 0.022941699938395094,
+            "baseline_energy_kwh": 0.1931380394648064,
+            "energy_difference_kwh": 0.022941699938395094,
+            "numeric_seed": 10200009,
+            "saving_percent": 11.878395370465345,
+            "treatment_energy_kwh": 0.1701963395264113
+          },
+          {
+            "absolute_energy_difference_kwh": 0.024199716945012828,
+            "baseline_energy_kwh": 0.21628042403395692,
+            "energy_difference_kwh": 0.024199716945012828,
+            "numeric_seed": 10200010,
+            "saving_percent": 11.189046374910644,
+            "treatment_energy_kwh": 0.1920807070889441
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01952251991608628,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.01952251991608628,
+            "numeric_seed": 10200011,
+            "saving_percent": 10.422890008114873,
+            "treatment_energy_kwh": 0.16778176805861914
+          },
+          {
+            "absolute_energy_difference_kwh": 0.030277483989001402,
+            "baseline_energy_kwh": 0.19818604900140982,
+            "energy_difference_kwh": 0.030277483989001402,
+            "numeric_seed": 10200012,
+            "saving_percent": 15.277303393230278,
+            "treatment_energy_kwh": 0.16790856501240842
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01574854994868946,
+            "baseline_energy_kwh": 0.18503891953673168,
+            "energy_difference_kwh": 0.01574854994868946,
+            "numeric_seed": 10200014,
+            "saving_percent": 8.510939205718422,
+            "treatment_energy_kwh": 0.16929036958804222
+          },
+          {
+            "absolute_energy_difference_kwh": 0.031088390604786048,
+            "baseline_energy_kwh": 0.2013564471097996,
+            "energy_difference_kwh": 0.031088390604786048,
+            "numeric_seed": 10200015,
+            "saving_percent": 15.439481104786061,
+            "treatment_energy_kwh": 0.17026805650501356
+          },
+          {
+            "absolute_energy_difference_kwh": 0.012928406471220955,
+            "baseline_energy_kwh": 0.18082889668953048,
+            "energy_difference_kwh": 0.012928406471220955,
+            "numeric_seed": 10200016,
+            "saving_percent": 7.149524610227562,
+            "treatment_energy_kwh": 0.16790049021830952
+          },
+          {
+            "absolute_energy_difference_kwh": 0.05227310400235938,
+            "baseline_energy_kwh": 0.2503897528443433,
+            "energy_difference_kwh": 0.05227310400235938,
+            "numeric_seed": 10200018,
+            "saving_percent": 20.876694596545793,
+            "treatment_energy_kwh": 0.1981166488419839
+          },
+          {
+            "absolute_energy_difference_kwh": 0.03993339369776863,
+            "baseline_energy_kwh": 0.21097186044108115,
+            "energy_difference_kwh": 0.03993339369776863,
+            "numeric_seed": 10200019,
+            "saving_percent": 18.928303335942267,
+            "treatment_energy_kwh": 0.17103846674331252
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0271094495882655,
+            "baseline_energy_kwh": 0.220669361029708,
+            "energy_difference_kwh": 0.0271094495882655,
+            "numeric_seed": 10200020,
+            "saving_percent": 12.285099055784118,
+            "treatment_energy_kwh": 0.1935599114414425
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01909750489402981,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.01909750489402981,
+            "numeric_seed": 10200022,
+            "saving_percent": 10.195978480006204,
+            "treatment_energy_kwh": 0.1682067830806756
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019719276028728805,
+            "baseline_energy_kwh": 0.2065669297889829,
+            "energy_difference_kwh": 0.019719276028728805,
+            "numeric_seed": 10200023,
+            "saving_percent": 9.546192146474223,
+            "treatment_energy_kwh": 0.18684765376025408
+          },
+          {
+            "absolute_energy_difference_kwh": 0.020904257326659875,
+            "baseline_energy_kwh": 0.1894835381658739,
+            "energy_difference_kwh": 0.020904257326659875,
+            "numeric_seed": 10200024,
+            "saving_percent": 11.032228724988387,
+            "treatment_energy_kwh": 0.16857928083921403
+          },
+          {
+            "absolute_energy_difference_kwh": 0.008710805455637599,
+            "baseline_energy_kwh": 0.22048156598831428,
+            "energy_difference_kwh": 0.008710805455637599,
+            "numeric_seed": 10200025,
+            "saving_percent": 3.9508089561098636,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.019797251352865558,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.019797251352865558,
+            "numeric_seed": 10200026,
+            "saving_percent": 10.569566541658185,
+            "treatment_energy_kwh": 0.16750703662183986
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005106886332626098,
+            "baseline_energy_kwh": 0.16375242376045965,
+            "energy_difference_kwh": -0.005106886332626098,
+            "numeric_seed": 10200027,
+            "saving_percent": -3.118663049590371,
+            "treatment_energy_kwh": 0.16885931009308575
+          },
+          {
+            "absolute_energy_difference_kwh": 0.04127550317135112,
+            "baseline_energy_kwh": 0.22833761106879452,
+            "energy_difference_kwh": 0.04127550317135112,
+            "numeric_seed": 10200028,
+            "saving_percent": 18.076524046192052,
+            "treatment_energy_kwh": 0.1870621078974434
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0302453112824482,
+            "baseline_energy_kwh": 0.17896741145496947,
+            "energy_difference_kwh": 0.0302453112824482,
+            "numeric_seed": 10200030,
+            "saving_percent": 16.899898722655614,
+            "treatment_energy_kwh": 0.14872210017252127
+          },
+          {
+            "absolute_energy_difference_kwh": 0.023936317330814944,
+            "baseline_energy_kwh": 0.2004221072707733,
+            "energy_difference_kwh": 0.023936317330814944,
+            "numeric_seed": 10200032,
+            "saving_percent": 11.942952629709962,
+            "treatment_energy_kwh": 0.17648578993995837
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005688991398375698,
+            "baseline_energy_kwh": 0.1642449994420982,
+            "energy_difference_kwh": -0.005688991398375698,
+            "numeric_seed": 10200033,
+            "saving_percent": -3.463722742062084,
+            "treatment_energy_kwh": 0.1699339908404739
+          },
+          {
+            "absolute_energy_difference_kwh": 0.020022701255499098,
+            "baseline_energy_kwh": 0.19001080565774073,
+            "energy_difference_kwh": 0.020022701255499098,
+            "numeric_seed": 10200035,
+            "saving_percent": 10.53766452186158,
+            "treatment_energy_kwh": 0.16998810440224163
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00702428906845487,
+            "baseline_energy_kwh": 0.1615567783161403,
+            "energy_difference_kwh": -0.00702428906845487,
+            "numeric_seed": 10200036,
+            "saving_percent": -4.347876419465038,
+            "treatment_energy_kwh": 0.16858106738459516
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01885275931874536,
+            "baseline_energy_kwh": 0.1873042879747054,
+            "energy_difference_kwh": 0.01885275931874536,
+            "numeric_seed": 10200037,
+            "saving_percent": 10.065311116257702,
+            "treatment_energy_kwh": 0.16845152865596005
+          },
+          {
+            "absolute_energy_difference_kwh": 0.01209795147085177,
+            "baseline_energy_kwh": 0.18004980486685104,
+            "energy_difference_kwh": 0.01209795147085177,
+            "numeric_seed": 10200038,
+            "saving_percent": 6.719224983219698,
+            "treatment_energy_kwh": 0.16795185339599927
+          },
+          {
+            "absolute_energy_difference_kwh": 0.009304106171775461,
+            "baseline_energy_kwh": 0.1703240287939323,
+            "energy_difference_kwh": 0.009304106171775461,
+            "numeric_seed": 10200039,
+            "saving_percent": 5.462591648200207,
+            "treatment_energy_kwh": 0.16101992262215684
+          },
+          {
+            "absolute_energy_difference_kwh": 0.020775897025490875,
+            "baseline_energy_kwh": 0.20769319270735026,
+            "energy_difference_kwh": 0.020775897025490875,
+            "numeric_seed": 10200040,
+            "saving_percent": 10.003167053609271,
+            "treatment_energy_kwh": 0.18691729568185939
+          },
+          {
+            "absolute_energy_difference_kwh": 0.012989843121845729,
+            "baseline_energy_kwh": 0.1877847439250327,
+            "energy_difference_kwh": 0.012989843121845729,
+            "numeric_seed": 10200041,
+            "saving_percent": 6.917411313792097,
+            "treatment_energy_kwh": 0.17479490080318696
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "H47"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 1386522375000234897,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 7.078660143062416,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 11.336034581791127
+          },
+          "count": 35,
+          "maximum": 20.876694596545793,
+          "mean": 9.247408912988913,
+          "median": 10.290209502140634,
+          "minimum": -4.347876419465038
+        },
+        "treatment": "H47"
+      },
+      "vs_time_aware": {
+        "baseline": "TIME_AWARE",
+        "energy_difference_kwh": {
+          "absolute_magnitude": {
+            "count": 35,
+            "maximum": 0.005118452263829482,
+            "mean": 0.00313071153695815,
+            "median": 0.003722269339714007,
+            "minimum": 0.0
+          },
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 14445531105487464753,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 0.0023803979289150337,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 0.003560700775536704
+          },
+          "count": 35,
+          "maximum": 0.005118452263829482,
+          "mean": 0.002995102688257994,
+          "median": 0.003722269339714007,
+          "minimum": -0.0021946900402072533
+        },
+        "paired_track_count": 35,
+        "per_track": [
+          {
+            "absolute_energy_difference_kwh": 0.0021946900402072533,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": -0.0021946900402072533,
+            "numeric_seed": 10200001,
+            "saving_percent": -1.2713592033102403,
+            "treatment_energy_kwh": 0.1748201789258766
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0026570368316280457,
+            "baseline_energy_kwh": 0.19415802855537398,
+            "energy_difference_kwh": 0.0026570368316280457,
+            "numeric_seed": 10200002,
+            "saving_percent": 1.3684918678859872,
+            "treatment_energy_kwh": 0.19150099172374593
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004725255606885387,
+            "baseline_energy_kwh": 0.17259107354217912,
+            "energy_difference_kwh": 0.004725255606885387,
+            "numeric_seed": 10200003,
+            "saving_percent": 2.73783313928492,
+            "treatment_energy_kwh": 0.16786581793529373
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00398852640637215,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.00398852640637215,
+            "numeric_seed": 10200004,
+            "saving_percent": 2.0865245187828423,
+            "treatment_energy_kwh": 0.18716793355695607
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0030817890281719107,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.0030817890281719107,
+            "numeric_seed": 10200005,
+            "saving_percent": 1.7852456482906727,
+            "treatment_energy_kwh": 0.16954369985749743
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004550695924409209,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.004550695924409209,
+            "numeric_seed": 10200006,
+            "saving_percent": 2.630112397323627,
+            "treatment_energy_kwh": 0.16847217294765676
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004366727857401831,
+            "baseline_energy_kwh": 0.17487075213369302,
+            "energy_difference_kwh": 0.004366727857401831,
+            "numeric_seed": 10200007,
+            "saving_percent": 2.497117330440347,
+            "treatment_energy_kwh": 0.1705040242762912
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003722269339714007,
+            "baseline_energy_kwh": 0.17781493558465056,
+            "energy_difference_kwh": 0.003722269339714007,
+            "numeric_seed": 10200008,
+            "saving_percent": 2.0933389692352273,
+            "treatment_energy_kwh": 0.17409266624493655
+          },
+          {
+            "absolute_energy_difference_kwh": 0.002379474808497817,
+            "baseline_energy_kwh": 0.17257581433490912,
+            "energy_difference_kwh": 0.002379474808497817,
+            "numeric_seed": 10200009,
+            "saving_percent": 1.3787996989428024,
+            "treatment_energy_kwh": 0.1701963395264113
+          },
+          {
+            "absolute_energy_difference_kwh": 0.001675594971460831,
+            "baseline_energy_kwh": 0.19375630206040492,
+            "energy_difference_kwh": 0.001675594971460831,
+            "numeric_seed": 10200010,
+            "saving_percent": 0.8647950820915503,
+            "treatment_energy_kwh": 0.1920807070889441
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004843720827050202,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004843720827050202,
+            "numeric_seed": 10200011,
+            "saving_percent": 2.805912880141484,
+            "treatment_energy_kwh": 0.16778176805861914
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00471692387326092,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.00471692387326092,
+            "numeric_seed": 10200012,
+            "saving_percent": 2.732460833976239,
+            "treatment_energy_kwh": 0.16790856501240842
+          },
+          {
+            "absolute_energy_difference_kwh": 0.001309390884328715,
+            "baseline_energy_kwh": 0.17059976047237094,
+            "energy_difference_kwh": 0.001309390884328715,
+            "numeric_seed": 10200014,
+            "saving_percent": 0.7675221118149074,
+            "treatment_energy_kwh": 0.16929036958804222
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003807570663612092,
+            "baseline_energy_kwh": 0.17407562716862565,
+            "energy_difference_kwh": 0.003807570663612092,
+            "numeric_seed": 10200015,
+            "saving_percent": 2.187308312796558,
+            "treatment_energy_kwh": 0.17026805650501356
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004724998667359814,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004724998667359814,
+            "numeric_seed": 10200016,
+            "saving_percent": 2.7371384711844047,
+            "treatment_energy_kwh": 0.16790049021830952
+          },
+          {
+            "absolute_energy_difference_kwh": 0.001915473554112257,
+            "baseline_energy_kwh": 0.20003212239609616,
+            "energy_difference_kwh": 0.001915473554112257,
+            "numeric_seed": 10200018,
+            "saving_percent": 0.9575829777575962,
+            "treatment_energy_kwh": 0.1981166488419839
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004803296079573277,
+            "baseline_energy_kwh": 0.1758417628228858,
+            "energy_difference_kwh": 0.004803296079573277,
+            "numeric_seed": 10200019,
+            "saving_percent": 2.731601413943587,
+            "treatment_energy_kwh": 0.17103846674331252
+          },
+          {
+            "absolute_energy_difference_kwh": 0.00010646896546659401,
+            "baseline_energy_kwh": 0.1934534424759759,
+            "energy_difference_kwh": -0.00010646896546659401,
+            "numeric_seed": 10200020,
+            "saving_percent": -0.05503596322914538,
+            "treatment_energy_kwh": 0.1935599114414425
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004418705804993733,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004418705804993733,
+            "numeric_seed": 10200022,
+            "saving_percent": 2.559706468330562,
+            "treatment_energy_kwh": 0.1682067830806756
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004308806203074139,
+            "baseline_energy_kwh": 0.19115645996332822,
+            "energy_difference_kwh": 0.004308806203074139,
+            "numeric_seed": 10200023,
+            "saving_percent": 2.254073026828781,
+            "treatment_energy_kwh": 0.18684765376025408
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003979177840749831,
+            "baseline_energy_kwh": 0.17255845867996386,
+            "energy_difference_kwh": 0.003979177840749831,
+            "numeric_seed": 10200024,
+            "saving_percent": 2.3059882843122903,
+            "treatment_energy_kwh": 0.16857928083921403
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0,
+            "baseline_energy_kwh": 0.21177076053267668,
+            "energy_difference_kwh": 0.0,
+            "numeric_seed": 10200025,
+            "saving_percent": 0.0,
+            "treatment_energy_kwh": 0.21177076053267668
+          },
+          {
+            "absolute_energy_difference_kwh": 0.005118452263829482,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.005118452263829482,
+            "numeric_seed": 10200026,
+            "saving_percent": 2.965061704890786,
+            "treatment_energy_kwh": 0.16750703662183986
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003766178792583591,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.003766178792583591,
+            "numeric_seed": 10200027,
+            "saving_percent": 2.181704924860748,
+            "treatment_energy_kwh": 0.16885931009308575
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0010864087453624771,
+            "baseline_energy_kwh": 0.18814851664280588,
+            "energy_difference_kwh": 0.0010864087453624771,
+            "numeric_seed": 10200028,
+            "saving_percent": 0.5774208400616787,
+            "treatment_energy_kwh": 0.1870621078974434
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0006838695800967243,
+            "baseline_energy_kwh": 0.149405969752618,
+            "energy_difference_kwh": 0.0006838695800967243,
+            "numeric_seed": 10200030,
+            "saving_percent": 0.45772573962677354,
+            "treatment_energy_kwh": 0.14872210017252127
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0014727054364711,
+            "baseline_energy_kwh": 0.17795849537642947,
+            "energy_difference_kwh": 0.0014727054364711,
+            "numeric_seed": 10200032,
+            "saving_percent": 0.8275555675810459,
+            "treatment_energy_kwh": 0.17648578993995837
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0030888780315920794,
+            "baseline_energy_kwh": 0.17302286887206597,
+            "energy_difference_kwh": 0.0030888780315920794,
+            "numeric_seed": 10200033,
+            "saving_percent": 1.785242639732215,
+            "treatment_energy_kwh": 0.1699339908404739
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0036592373496650565,
+            "baseline_energy_kwh": 0.1736473417519067,
+            "energy_difference_kwh": 0.0036592373496650565,
+            "numeric_seed": 10200035,
+            "saving_percent": 2.107280948125932,
+            "treatment_energy_kwh": 0.16998810440224163
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004044421501074175,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004044421501074175,
+            "numeric_seed": 10200036,
+            "saving_percent": 2.3428877897358564,
+            "treatment_energy_kwh": 0.16858106738459516
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004173960229709284,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004173960229709284,
+            "numeric_seed": 10200037,
+            "saving_percent": 2.4179281151659575,
+            "treatment_energy_kwh": 0.16845152865596005
+          },
+          {
+            "absolute_energy_difference_kwh": 0.004673635489670064,
+            "baseline_energy_kwh": 0.17262548888566934,
+            "energy_difference_kwh": 0.004673635489670064,
+            "numeric_seed": 10200038,
+            "saving_percent": 2.707384361277861,
+            "treatment_energy_kwh": 0.16795185339599927
+          },
+          {
+            "absolute_energy_difference_kwh": 0.0017477284715594898,
+            "baseline_energy_kwh": 0.16276765109371633,
+            "energy_difference_kwh": 0.0017477284715594898,
+            "numeric_seed": 10200039,
+            "saving_percent": 1.0737566462473582,
+            "treatment_energy_kwh": 0.16101992262215684
+          },
+          {
+            "absolute_energy_difference_kwh": 0.003710837877012818,
+            "baseline_energy_kwh": 0.1906281335588722,
+            "energy_difference_kwh": 0.003710837877012818,
+            "numeric_seed": 10200040,
+            "saving_percent": 1.9466370507513728,
+            "treatment_energy_kwh": 0.18691729568185939
+          },
+          {
+            "absolute_energy_difference_kwh": 7.19958465788817e-05,
+            "baseline_energy_kwh": 0.17472290495660808,
+            "energy_difference_kwh": -7.19958465788817e-05,
+            "numeric_seed": 10200041,
+            "saving_percent": -0.0412057289207512,
+            "treatment_energy_kwh": 0.17479490080318696
+          }
+        ],
+        "required_feasible_controllers": [
+          "CAUSAL60",
+          "TIME_AWARE",
+          "H47"
+        ],
+        "saving_percent": {
+          "bootstrap_95_percent_interval_for_mean": {
+            "confidence_level": 0.95,
+            "deterministic_rng_seed": 3319085686942736550,
+            "interpretation": "descriptive_percentile_interval",
+            "lower": 1.340369570450702,
+            "replicates": 20000,
+            "sampling_unit": "track",
+            "upper": 2.0309923014981637
+          },
+          "count": 35,
+          "maximum": 2.965061704890786,
+          "mean": 1.7001296818846239,
+          "median": 2.0933389692352273,
+          "minimum": -1.2713592033102403
+        },
+        "treatment": "H47"
+      }
+    }
+  },
+  "method": {
+    "bootstrap": {
+      "confidence_level": 0.95,
+      "deterministic_seed": "SHA-256 derived separately for each comparison and statistic",
+      "kind": "descriptive percentile bootstrap",
+      "replicates": 20000
+    },
+    "energy_subset": "registered tracks satisfying the stated joint-feasibility filter",
+    "sampling_unit": "track; learned policy seeds are replications",
+    "statistic": "arithmetic mean of per-track saving percentages"
+  },
+  "schema_version": 1,
+  "split_sha256": "99a863fb423e2ceb5ec0641bb940fab21ff7eb86a1466886da8707862a015e74",
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "time_aware_vs_causal60": {
+    "baseline": "CAUSAL60",
+    "energy_difference_kwh": {
+      "absolute_magnitude": {
+        "count": 35,
+        "maximum": 0.05035763044824712,
+        "mean": 0.017991900835606277,
+        "median": 0.014773994784277988,
+        "minimum": 0.0020963015046003564
+      },
+      "bootstrap_95_percent_interval_for_mean": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 9508670984941008542,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 0.01140955520390953,
+        "replicates": 20000,
+        "sampling_unit": "track",
+        "upper": 0.02058825425629236
+      },
+      "count": 35,
+      "maximum": 0.05035763044824712,
+      "mean": 0.015912183559669776,
+      "median": 0.014773994784277988,
+      "minimum": -0.011068710569529044
+    },
+    "paired_track_count": 35,
+    "per_track": [
+      {
+        "absolute_energy_difference_kwh": 0.0020963015046003564,
+        "baseline_energy_kwh": 0.17052918738106898,
+        "energy_difference_kwh": -0.0020963015046003564,
+        "numeric_seed": 10200001,
+        "saving_percent": -1.2292919099625486,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.010290302129435852,
+        "baseline_energy_kwh": 0.20444833068480983,
+        "energy_difference_kwh": 0.010290302129435852,
+        "numeric_seed": 10200002,
+        "saving_percent": 5.033204279520392,
+        "treatment_energy_kwh": 0.19415802855537398
+      },
+      {
+        "absolute_energy_difference_kwh": 0.015674297524050612,
+        "baseline_energy_kwh": 0.18826537106622973,
+        "energy_difference_kwh": 0.015674297524050612,
+        "numeric_seed": 10200003,
+        "saving_percent": 8.325640257302847,
+        "treatment_energy_kwh": 0.17259107354217912
+      },
+      {
+        "absolute_energy_difference_kwh": 0.044042158905428924,
+        "baseline_energy_kwh": 0.23519861886875715,
+        "energy_difference_kwh": 0.044042158905428924,
+        "numeric_seed": 10200004,
+        "saving_percent": 18.725517657059385,
+        "treatment_energy_kwh": 0.19115645996332822
+      },
+      {
+        "absolute_energy_difference_kwh": 0.005579105699581921,
+        "baseline_energy_kwh": 0.16704638318608742,
+        "energy_difference_kwh": -0.005579105699581921,
+        "numeric_seed": 10200005,
+        "saving_percent": -3.339854232801241,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014773994784277988,
+        "baseline_energy_kwh": 0.18779686365634396,
+        "energy_difference_kwh": 0.014773994784277988,
+        "numeric_seed": 10200006,
+        "saving_percent": 7.8670082644795585,
+        "treatment_energy_kwh": 0.17302286887206597
+      },
+      {
+        "absolute_energy_difference_kwh": 0.017042995785993997,
+        "baseline_energy_kwh": 0.19191374791968702,
+        "energy_difference_kwh": 0.017042995785993997,
+        "numeric_seed": 10200007,
+        "saving_percent": 8.880549710866067,
+        "treatment_energy_kwh": 0.17487075213369302
+      },
+      {
+        "absolute_energy_difference_kwh": 0.006777032289218415,
+        "baseline_energy_kwh": 0.18459196787386897,
+        "energy_difference_kwh": 0.006777032289218415,
+        "numeric_seed": 10200008,
+        "saving_percent": 3.671358167571591,
+        "treatment_energy_kwh": 0.17781493558465056
+      },
+      {
+        "absolute_energy_difference_kwh": 0.020562225129897277,
+        "baseline_energy_kwh": 0.1931380394648064,
+        "energy_difference_kwh": 0.020562225129897277,
+        "numeric_seed": 10200009,
+        "saving_percent": 10.646388037735116,
+        "treatment_energy_kwh": 0.17257581433490912
+      },
+      {
+        "absolute_energy_difference_kwh": 0.022524121973551997,
+        "baseline_energy_kwh": 0.21628042403395692,
+        "energy_difference_kwh": 0.022524121973551997,
+        "numeric_seed": 10200010,
+        "saving_percent": 10.414313766101928,
+        "treatment_energy_kwh": 0.19375630206040492
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014678799089036076,
+        "baseline_energy_kwh": 0.1873042879747054,
+        "energy_difference_kwh": 0.014678799089036076,
+        "numeric_seed": 10200011,
+        "saving_percent": 7.836872955635902,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.025560560115740483,
+        "baseline_energy_kwh": 0.19818604900140982,
+        "energy_difference_kwh": 0.025560560115740483,
+        "numeric_seed": 10200012,
+        "saving_percent": 12.897255000809192,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014439159064360746,
+        "baseline_energy_kwh": 0.18503891953673168,
+        "energy_difference_kwh": 0.014439159064360746,
+        "numeric_seed": 10200014,
+        "saving_percent": 7.8033092176019005,
+        "treatment_energy_kwh": 0.17059976047237094
+      },
+      {
+        "absolute_energy_difference_kwh": 0.027280819941173956,
+        "baseline_energy_kwh": 0.2013564471097996,
+        "energy_difference_kwh": 0.027280819941173956,
+        "numeric_seed": 10200015,
+        "saving_percent": 13.548520711779211,
+        "treatment_energy_kwh": 0.17407562716862565
+      },
+      {
+        "absolute_energy_difference_kwh": 0.00820340780386114,
+        "baseline_energy_kwh": 0.18082889668953048,
+        "energy_difference_kwh": 0.00820340780386114,
+        "numeric_seed": 10200016,
+        "saving_percent": 4.536558013703845,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.05035763044824712,
+        "baseline_energy_kwh": 0.2503897528443433,
+        "energy_difference_kwh": 0.05035763044824712,
+        "numeric_seed": 10200018,
+        "saving_percent": 20.111697813589174,
+        "treatment_energy_kwh": 0.20003212239609616
+      },
+      {
+        "absolute_energy_difference_kwh": 0.035130097618195355,
+        "baseline_energy_kwh": 0.21097186044108115,
+        "energy_difference_kwh": 0.035130097618195355,
+        "numeric_seed": 10200019,
+        "saving_percent": 16.651556062855246,
+        "treatment_energy_kwh": 0.1758417628228858
+      },
+      {
+        "absolute_energy_difference_kwh": 0.027215918553732094,
+        "baseline_energy_kwh": 0.220669361029708,
+        "energy_difference_kwh": 0.027215918553732094,
+        "numeric_seed": 10200020,
+        "saving_percent": 12.333347242559924,
+        "treatment_energy_kwh": 0.1934534424759759
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014678799089036076,
+        "baseline_energy_kwh": 0.1873042879747054,
+        "energy_difference_kwh": 0.014678799089036076,
+        "numeric_seed": 10200022,
+        "saving_percent": 7.836872955635902,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.015410469825654666,
+        "baseline_energy_kwh": 0.2065669297889829,
+        "energy_difference_kwh": 0.015410469825654666,
+        "numeric_seed": 10200023,
+        "saving_percent": 7.460279262221271,
+        "treatment_energy_kwh": 0.19115645996332822
+      },
+      {
+        "absolute_energy_difference_kwh": 0.016925079485910044,
+        "baseline_energy_kwh": 0.1894835381658739,
+        "energy_difference_kwh": 0.016925079485910044,
+        "numeric_seed": 10200024,
+        "saving_percent": 8.93221630213271,
+        "treatment_energy_kwh": 0.17255845867996386
+      },
+      {
+        "absolute_energy_difference_kwh": 0.008710805455637599,
+        "baseline_energy_kwh": 0.22048156598831428,
+        "energy_difference_kwh": 0.008710805455637599,
+        "numeric_seed": 10200025,
+        "saving_percent": 3.9508089561098636,
+        "treatment_energy_kwh": 0.21177076053267668
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014678799089036076,
+        "baseline_energy_kwh": 0.1873042879747054,
+        "energy_difference_kwh": 0.014678799089036076,
+        "numeric_seed": 10200026,
+        "saving_percent": 7.836872955635902,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.00887306512520969,
+        "baseline_energy_kwh": 0.16375242376045965,
+        "energy_difference_kwh": -0.00887306512520969,
+        "numeric_seed": 10200027,
+        "saving_percent": -5.418585521634409,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.04018909442598864,
+        "baseline_energy_kwh": 0.22833761106879452,
+        "energy_difference_kwh": 0.04018909442598864,
+        "numeric_seed": 10200028,
+        "saving_percent": 17.600733509417466,
+        "treatment_energy_kwh": 0.18814851664280588
+      },
+      {
+        "absolute_energy_difference_kwh": 0.029561441702351476,
+        "baseline_energy_kwh": 0.17896741145496947,
+        "energy_difference_kwh": 0.029561441702351476,
+        "numeric_seed": 10200030,
+        "saving_percent": 16.517779109628304,
+        "treatment_energy_kwh": 0.149405969752618
+      },
+      {
+        "absolute_energy_difference_kwh": 0.022463611894343843,
+        "baseline_energy_kwh": 0.2004221072707733,
+        "energy_difference_kwh": 0.022463611894343843,
+        "numeric_seed": 10200032,
+        "saving_percent": 11.208150737580642,
+        "treatment_energy_kwh": 0.17795849537642947
+      },
+      {
+        "absolute_energy_difference_kwh": 0.008777869429967777,
+        "baseline_energy_kwh": 0.1642449994420982,
+        "energy_difference_kwh": -0.008777869429967777,
+        "numeric_seed": 10200033,
+        "saving_percent": -5.3443754511760755,
+        "treatment_energy_kwh": 0.17302286887206597
+      },
+      {
+        "absolute_energy_difference_kwh": 0.01636346390583404,
+        "baseline_energy_kwh": 0.19001080565774073,
+        "energy_difference_kwh": 0.01636346390583404,
+        "numeric_seed": 10200035,
+        "saving_percent": 8.611859651449997,
+        "treatment_energy_kwh": 0.1736473417519067
+      },
+      {
+        "absolute_energy_difference_kwh": 0.011068710569529044,
+        "baseline_energy_kwh": 0.1615567783161403,
+        "energy_difference_kwh": -0.011068710569529044,
+        "numeric_seed": 10200036,
+        "saving_percent": -6.851282060025598,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.014678799089036076,
+        "baseline_energy_kwh": 0.1873042879747054,
+        "energy_difference_kwh": 0.014678799089036076,
+        "numeric_seed": 10200037,
+        "saving_percent": 7.836872955635902,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.007424315981181706,
+        "baseline_energy_kwh": 0.18004980486685104,
+        "energy_difference_kwh": 0.007424315981181706,
+        "numeric_seed": 10200038,
+        "saving_percent": 4.123479048850998,
+        "treatment_energy_kwh": 0.17262548888566934
+      },
+      {
+        "absolute_energy_difference_kwh": 0.0075563777002159715,
+        "baseline_energy_kwh": 0.1703240287939323,
+        "energy_difference_kwh": 0.0075563777002159715,
+        "numeric_seed": 10200039,
+        "saving_percent": 4.4364719139881945,
+        "treatment_energy_kwh": 0.16276765109371633
+      },
+      {
+        "absolute_energy_difference_kwh": 0.017065059148478057,
+        "baseline_energy_kwh": 0.20769319270735026,
+        "energy_difference_kwh": 0.017065059148478057,
+        "numeric_seed": 10200040,
+        "saving_percent": 8.21647494847053,
+        "treatment_energy_kwh": 0.1906281335588722
+      },
+      {
+        "absolute_energy_difference_kwh": 0.01306183896842461,
+        "baseline_energy_kwh": 0.1877847439250327,
+        "energy_difference_kwh": 0.01306183896842461,
+        "numeric_seed": 10200041,
+        "saving_percent": 6.955750874862949,
+        "treatment_energy_kwh": 0.17472290495660808
+      }
+    ],
+    "required_feasible_controllers": [
+      "CAUSAL60",
+      "TIME_AWARE"
+    ],
+    "saving_percent": {
+      "bootstrap_95_percent_interval_for_mean": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 12353769353229268880,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 5.515263894427512,
+        "replicates": 20000,
+        "sampling_unit": "track",
+        "upper": 9.79669092150053
+      },
+      "count": 35,
+      "maximum": 20.111697813589174,
+      "mean": 7.674980890434058,
+      "median": 7.836872955635902,
+      "minimum": -6.851282060025598
+    },
+    "treatment": "TIME_AWARE"
+  },
+  "transaction_id": "439c821bc40c0a4dd8962af0ce08ef050f3ca697af15d8960a7340c8f860ab76"
+}

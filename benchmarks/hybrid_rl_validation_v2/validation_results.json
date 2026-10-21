@@ -1,0 +1,424 @@
+{
+  "acceptance": {
+    "causal_energy_target_passed_all_hybrid_seeds": false,
+    "classification": "FEASIBILITY_PRESERVED_WITHOUT_TARGET_ENERGY_GAIN",
+    "feasibility_minimum_per_seed": "35/36",
+    "feasibility_passed_all_hybrid_seeds": true,
+    "incremental_time_aware_target_passed_all_hybrid_seeds": false,
+    "influence_gate_passed_all_hybrid_seeds": true,
+    "mean_paired_saving_vs_causal_minimum_percent": 10.0,
+    "mean_paired_saving_vs_time_aware_minimum_percent": 3.0,
+    "rl_incremental_benefit_over_nonlearning": false
+  },
+  "completed_pairs": 180,
+  "controller_summaries": {
+    "CAUSAL60": {
+      "completion_count": 36,
+      "deadline_bound_falsifications": [],
+      "deadline_compliant_count": 35,
+      "episode_count": 36,
+      "failure_modes": {
+        "deadline_only": 1,
+        "feasible": 35
+      },
+      "feasible_signed_net_energy_kwh": {
+        "count": 35,
+        "maximum": 0.2503897528443433,
+        "mean": 0.1938726661112673,
+        "median": 0.18826537106622973,
+        "minimum": 0.1615567783161403
+      },
+      "rsr": 35,
+      "shield": {
+        "influenced_episode_count": 0,
+        "intervention_reasons": {},
+        "native_action_influence_count": 0,
+        "native_action_influence_fraction": 0.0,
+        "override_count": 0,
+        "override_fraction": 0.0,
+        "proposal_count": 0
+      },
+      "speed_compliant_count": 36,
+      "target_speed_m_s": {
+        "count": 0,
+        "maximum": null,
+        "mean": null,
+        "median": null,
+        "minimum": null
+      },
+      "travel_time_s": {
+        "count": 36,
+        "maximum": 145.999999999996,
+        "mean": 85.87499999999939,
+        "median": 78.04999999999984,
+        "minimum": 63.10000000000063
+      }
+    },
+    "H11": {
+      "completion_count": 36,
+      "deadline_bound_falsifications": [],
+      "deadline_compliant_count": 35,
+      "episode_count": 36,
+      "failure_modes": {
+        "deadline_only": 1,
+        "feasible": 35
+      },
+      "feasible_signed_net_energy_kwh": {
+        "count": 35,
+        "maximum": 0.21177076053267668,
+        "mean": 0.17614826280455592,
+        "median": 0.17127845240702322,
+        "minimum": 0.14805522019669445
+      },
+      "rsr": 35,
+      "shield": {
+        "influenced_episode_count": 35,
+        "intervention_reasons": {
+          "ACCEPTED": 26206,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 14961,
+          "DEADLINE_RECOVERABILITY": 5122,
+          "KNOWN_TRANSITION_BRAKING": 276,
+          "RIGHT_ENDPOINT_SPEED": 16
+        },
+        "native_action_influence_count": 26206,
+        "native_action_influence_fraction": 0.5625898971683734,
+        "override_count": 5414,
+        "override_fraction": 0.11622764646529701,
+        "proposal_count": 46581
+      },
+      "speed_compliant_count": 36,
+      "target_speed_m_s": {
+        "count": 4674,
+        "maximum": 16.570979687902664,
+        "mean": 8.691342764373998,
+        "median": 6.0630066527260675,
+        "minimum": 5.661937263276842
+      },
+      "travel_time_s": {
+        "count": 36,
+        "maximum": 145.999999999996,
+        "mean": 129.39166666666358,
+        "median": 129.59999999999692,
+        "minimum": 109.49999999999805
+      }
+    },
+    "H29": {
+      "completion_count": 36,
+      "deadline_bound_falsifications": [],
+      "deadline_compliant_count": 35,
+      "episode_count": 36,
+      "failure_modes": {
+        "deadline_only": 1,
+        "feasible": 35
+      },
+      "feasible_signed_net_energy_kwh": {
+        "count": 35,
+        "maximum": 0.21177076053267668,
+        "mean": 0.17580767360667518,
+        "median": 0.17002151579384497,
+        "minimum": 0.146492617551339
+      },
+      "rsr": 35,
+      "shield": {
+        "influenced_episode_count": 35,
+        "intervention_reasons": {
+          "ACCEPTED": 25342,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 15777,
+          "DEADLINE_RECOVERABILITY": 4997,
+          "KNOWN_TRANSITION_BRAKING": 280,
+          "RIGHT_ENDPOINT_SPEED": 15
+        },
+        "native_action_influence_count": 25342,
+        "native_action_influence_fraction": 0.5460343453060696,
+        "override_count": 5292,
+        "override_fraction": 0.11402469242205511,
+        "proposal_count": 46411
+      },
+      "speed_compliant_count": 36,
+      "target_speed_m_s": {
+        "count": 4657,
+        "maximum": 16.231017642551,
+        "mean": 9.183625271310408,
+        "median": 5.985663996802436,
+        "minimum": 5.6898534297943115
+      },
+      "travel_time_s": {
+        "count": 36,
+        "maximum": 145.999999999996,
+        "mean": 128.9194444444414,
+        "median": 130.0999999999969,
+        "minimum": 108.5999999999981
+      }
+    },
+    "H47": {
+      "completion_count": 36,
+      "deadline_bound_falsifications": [],
+      "deadline_compliant_count": 35,
+      "episode_count": 36,
+      "failure_modes": {
+        "deadline_only": 1,
+        "feasible": 35
+      },
+      "feasible_signed_net_energy_kwh": {
+        "count": 35,
+        "maximum": 0.21177076053267668,
+        "mean": 0.17496537986333954,
+        "median": 0.16998810440224163,
+        "minimum": 0.14872210017252127
+      },
+      "rsr": 35,
+      "shield": {
+        "influenced_episode_count": 35,
+        "intervention_reasons": {
+          "ACCEPTED": 26280,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 15593,
+          "DEADLINE_RECOVERABILITY": 4694,
+          "KNOWN_TRANSITION_BRAKING": 174,
+          "RIGHT_ENDPOINT_SPEED": 12
+        },
+        "native_action_influence_count": 26280,
+        "native_action_influence_fraction": 0.5621029666545463,
+        "override_count": 4880,
+        "override_fraction": 0.10437832866340128,
+        "proposal_count": 46753
+      },
+      "speed_compliant_count": 36,
+      "target_speed_m_s": {
+        "count": 4693,
+        "maximum": 16.236650943756104,
+        "mean": 8.805967936905269,
+        "median": 5.853013528717889,
+        "minimum": 5.580512682596842
+      },
+      "travel_time_s": {
+        "count": 36,
+        "maximum": 145.999999999996,
+        "mean": 129.86944444444134,
+        "median": 130.1999999999969,
+        "minimum": 108.19999999999813
+      }
+    },
+    "TIME_AWARE": {
+      "completion_count": 36,
+      "deadline_bound_falsifications": [],
+      "deadline_compliant_count": 35,
+      "episode_count": 36,
+      "failure_modes": {
+        "deadline_only": 1,
+        "feasible": 35
+      },
+      "feasible_signed_net_energy_kwh": {
+        "count": 35,
+        "maximum": 0.21177076053267668,
+        "mean": 0.17796048255159752,
+        "median": 0.17302286887206597,
+        "minimum": 0.149405969752618
+      },
+      "rsr": 35,
+      "shield": {
+        "influenced_episode_count": 35,
+        "intervention_reasons": {
+          "ACCEPTED": 26920,
+          "ACCEPTED_IDENTICAL_TO_FALLBACK": 10026,
+          "DEADLINE_RECOVERABILITY": 9148,
+          "KNOWN_TRANSITION_BRAKING": 131,
+          "RIGHT_ENDPOINT_SPEED": 8
+        },
+        "native_action_influence_count": 26920,
+        "native_action_influence_fraction": 0.5822680769147579,
+        "override_count": 9287,
+        "override_fraction": 0.20087383470681114,
+        "proposal_count": 46233
+      },
+      "speed_compliant_count": 36,
+      "target_speed_m_s": {
+        "count": 4639,
+        "maximum": 16.666666666666668,
+        "mean": 6.997018035496155,
+        "median": 6.666666666666666,
+        "minimum": 5.555555555555555
+      },
+      "travel_time_s": {
+        "count": 36,
+        "maximum": 145.999999999996,
+        "mean": 128.42499999999697,
+        "median": 126.74999999999707,
+        "minimum": 125.39999999999715
+      }
+    }
+  },
+  "diagnostic_to_validation": {
+    "H11": {
+      "diagnostic": {
+        "episodes": 18,
+        "mean_energy_kwh": 0.177847,
+        "rsr": 18
+      },
+      "validation": {
+        "completion_count": 36,
+        "deadline_compliant_count": 35,
+        "episodes": 36,
+        "mean_feasible_energy_kwh": 0.17614826280455592,
+        "mean_travel_time_s": 129.39166666666358,
+        "rsr": 35,
+        "shield": {
+          "influenced_episode_count": 35,
+          "intervention_reasons": {
+            "ACCEPTED": 26206,
+            "ACCEPTED_IDENTICAL_TO_FALLBACK": 14961,
+            "DEADLINE_RECOVERABILITY": 5122,
+            "KNOWN_TRANSITION_BRAKING": 276,
+            "RIGHT_ENDPOINT_SPEED": 16
+          },
+          "native_action_influence_count": 26206,
+          "native_action_influence_fraction": 0.5625898971683734,
+          "override_count": 5414,
+          "override_fraction": 0.11622764646529701,
+          "proposal_count": 46581
+        },
+        "speed_compliant_count": 36,
+        "target_speed_m_s": {
+          "count": 4674,
+          "maximum": 16.570979687902664,
+          "mean": 8.691342764373998,
+          "median": 6.0630066527260675,
+          "minimum": 5.661937263276842
+        }
+      }
+    },
+    "H29": {
+      "diagnostic": {
+        "episodes": 18,
+        "mean_energy_kwh": 0.177834,
+        "rsr": 18
+      },
+      "validation": {
+        "completion_count": 36,
+        "deadline_compliant_count": 35,
+        "episodes": 36,
+        "mean_feasible_energy_kwh": 0.17580767360667518,
+        "mean_travel_time_s": 128.9194444444414,
+        "rsr": 35,
+        "shield": {
+          "influenced_episode_count": 35,
+          "intervention_reasons": {
+            "ACCEPTED": 25342,
+            "ACCEPTED_IDENTICAL_TO_FALLBACK": 15777,
+            "DEADLINE_RECOVERABILITY": 4997,
+            "KNOWN_TRANSITION_BRAKING": 280,
+            "RIGHT_ENDPOINT_SPEED": 15
+          },
+          "native_action_influence_count": 25342,
+          "native_action_influence_fraction": 0.5460343453060696,
+          "override_count": 5292,
+          "override_fraction": 0.11402469242205511,
+          "proposal_count": 46411
+        },
+        "speed_compliant_count": 36,
+        "target_speed_m_s": {
+          "count": 4657,
+          "maximum": 16.231017642551,
+          "mean": 9.183625271310408,
+          "median": 5.985663996802436,
+          "minimum": 5.6898534297943115
+        }
+      }
+    },
+    "H47": {
+      "diagnostic": {
+        "episodes": 18,
+        "mean_energy_kwh": 0.177694,
+        "rsr": 18
+      },
+      "validation": {
+        "completion_count": 36,
+        "deadline_compliant_count": 35,
+        "episodes": 36,
+        "mean_feasible_energy_kwh": 0.17496537986333954,
+        "mean_travel_time_s": 129.86944444444134,
+        "rsr": 35,
+        "shield": {
+          "influenced_episode_count": 35,
+          "intervention_reasons": {
+            "ACCEPTED": 26280,
+            "ACCEPTED_IDENTICAL_TO_FALLBACK": 15593,
+            "DEADLINE_RECOVERABILITY": 4694,
+            "KNOWN_TRANSITION_BRAKING": 174,
+            "RIGHT_ENDPOINT_SPEED": 12
+          },
+          "native_action_influence_count": 26280,
+          "native_action_influence_fraction": 0.5621029666545463,
+          "override_count": 4880,
+          "override_fraction": 0.10437832866340128,
+          "proposal_count": 46753
+        },
+        "speed_compliant_count": 36,
+        "target_speed_m_s": {
+          "count": 4693,
+          "maximum": 16.236650943756104,
+          "mean": 8.805967936905269,
+          "median": 5.853013528717889,
+          "minimum": 5.580512682596842
+        }
+      }
+    }
+  },
+  "hybrid_pooled_descriptive_rsr": {
+    "caveat": "36 track instances under three learned-seed replications, not 108 independent tracks",
+    "episodes": 108,
+    "successes": 105
+  },
+  "influence_gate": {
+    "H11": {
+      "checks": {
+        "at_least_four_influenced_episodes": true,
+        "influence_fraction_at_least_0_10": true,
+        "override_fraction_at_most_0_85": true
+      },
+      "passed": true,
+      "thresholds": {
+        "maximum_override_fraction": 0.85,
+        "minimum_influence_fraction": 0.1,
+        "minimum_influenced_episode_count": 4
+      }
+    },
+    "H29": {
+      "checks": {
+        "at_least_four_influenced_episodes": true,
+        "influence_fraction_at_least_0_10": true,
+        "override_fraction_at_most_0_85": true
+      },
+      "passed": true,
+      "thresholds": {
+        "maximum_override_fraction": 0.85,
+        "minimum_influence_fraction": 0.1,
+        "minimum_influenced_episode_count": 4
+      }
+    },
+    "H47": {
+      "checks": {
+        "at_least_four_influenced_episodes": true,
+        "influence_fraction_at_least_0_10": true,
+        "override_fraction_at_most_0_85": true
+      },
+      "passed": true,
+      "thresholds": {
+        "maximum_override_fraction": 0.85,
+        "minimum_influence_fraction": 0.1,
+        "minimum_influenced_episode_count": 4
+      }
+    }
+  },
+  "integrity_sha256": "d9e50c00573ac1144f96db2f1e1d984645cb0041085e8f107308572791244a86",
+  "interrupted_unrecoverable_pairs": 0,
+  "pairwise_analysis_sha256": "11fcdef909dc36f23d9a535af1db1ba7971868135a84e8c15013c2b43b6cae24",
+  "pending_pairs": 0,
+  "planned_pairs": 180,
+  "post_incident_amendment": true,
+  "schema_version": 1,
+  "split_sha256": "99a863fb423e2ceb5ec0641bb940fab21ff7eb86a1466886da8707862a015e74",
+  "started_pairs": 0,
+  "state": "COMPLETED_SEALED",
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "transaction_id": "439c821bc40c0a4dd8962af0ce08ef050f3ca697af15d8960a7340c8f860ab76"
+}

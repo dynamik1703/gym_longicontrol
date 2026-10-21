@@ -504,8 +504,8 @@ def _results_markdown(results: Mapping[str, Any], pairwise: Mapping[str, Any]) -
             "reset without an action. V1 was not replayed or relabeled."
         ),
         "",
-        f"Transaction: `{V2_TRANSACTION_ID}`  ",
-        f"Ordered split SHA-256: `{V2_ORDERED_SHA256}`  ",
+        f"Transaction: `{V2_TRANSACTION_ID}`",
+        f"Ordered split SHA-256: `{V2_ORDERED_SHA256}`",
         (
             "Ledger: `COMPLETED_SEALED` — 180 completed, 0 pending, "
             "0 started, 0 interrupted."
@@ -604,8 +604,8 @@ def _integrity_markdown(integrity: Mapping[str, Any]) -> str:
             "`INCIDENT_ABORTED`; Paper remains `SEALED_UNINSPECTED`."
         ),
         "",
-        f"Transaction: `{integrity['transaction_id']}`  ",
-        f"Split: `{integrity['split_sha256']}`  ",
+        f"Transaction: `{integrity['transaction_id']}`",
+        f"Split: `{integrity['split_sha256']}`",
         f"Result set: `{integrity['result_set_sha256']}`",
         "",
         "## Final checks",
