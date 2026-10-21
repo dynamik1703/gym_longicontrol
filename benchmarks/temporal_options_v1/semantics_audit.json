@@ -1,0 +1,719 @@
+{
+  "hypothesis_status": "verified for listed distance-triggered fixtures; not universal",
+  "native_action_zero": {
+    "acceleration_m_s2": -0.21172172557172556,
+    "meaning": "production coasting action; it follows the vehicle zero-power acceleration curve",
+    "next_velocity_m_s": 14.978827827442828,
+    "predicted_power_kw": 2.172829603496759,
+    "signed_step_energy_kwh": 6.0356377874909975e-05,
+    "start_velocity_m_s": 15.0
+  },
+  "native_fixture_steps": 1103,
+  "profiles": {
+    "accel_coast_40_0.5": {
+      "persistent": {
+        "action_zero_count": 90,
+        "anchor_m": 300.0,
+        "final_position_m": 400.5124771738836,
+        "final_progress": 1.0,
+        "interventions": {},
+        "native_fixture_steps": 90,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "coast": 46,
+          "traction": 44
+        },
+        "physics_prediction_calls": 1908,
+        "profile_id": "accel_coast_40_0.5",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 87,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "traction": 90
+        },
+        "physics_prediction_calls": 1581,
+        "plans": [
+          {
+            "brake_threshold_m": 400.0,
+            "coast_threshold_m": 350.0,
+            "distance_executed_before_replan_m": 11.905939105751372,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 411.9059391057514,
+            "coast_threshold_m": 361.9059391057514,
+            "distance_executed_before_replan_m": 11.718641070552167,
+            "native_step": 10,
+            "origin_m": 311.9059391057514,
+            "waypoint_m": 411.9059391057514
+          },
+          {
+            "brake_threshold_m": 423.62458017630354,
+            "coast_threshold_m": 373.62458017630354,
+            "distance_executed_before_replan_m": 11.532575661290707,
+            "native_step": 20,
+            "origin_m": 323.62458017630354,
+            "waypoint_m": 423.62458017630354
+          },
+          {
+            "brake_threshold_m": 435.15715583759425,
+            "coast_threshold_m": 385.15715583759425,
+            "distance_executed_before_replan_m": 11.347734765940402,
+            "native_step": 30,
+            "origin_m": 335.15715583759425,
+            "waypoint_m": 435.15715583759425
+          },
+          {
+            "brake_threshold_m": 446.50489060353465,
+            "coast_threshold_m": 396.50489060353465,
+            "distance_executed_before_replan_m": 11.211838763477488,
+            "native_step": 40,
+            "origin_m": 346.50489060353465,
+            "waypoint_m": 446.50489060353465
+          },
+          {
+            "brake_threshold_m": 457.71672936701214,
+            "coast_threshold_m": 407.71672936701214,
+            "distance_executed_before_replan_m": 11.298696174111683,
+            "native_step": 50,
+            "origin_m": 357.71672936701214,
+            "waypoint_m": 457.71672936701214
+          },
+          {
+            "brake_threshold_m": 469.0154255411238,
+            "coast_threshold_m": 419.0154255411238,
+            "distance_executed_before_replan_m": 11.226688027011278,
+            "native_step": 60,
+            "origin_m": 369.0154255411238,
+            "waypoint_m": 469.0154255411238
+          },
+          {
+            "brake_threshold_m": 480.2421135681351,
+            "coast_threshold_m": 430.2421135681351,
+            "distance_executed_before_replan_m": 11.249874603769058,
+            "native_step": 70,
+            "origin_m": 380.2421135681351,
+            "waypoint_m": 480.2421135681351
+          },
+          {
+            "brake_threshold_m": 491.49198817190415,
+            "coast_threshold_m": 441.49198817190415,
+            "distance_executed_before_replan_m": 11.273382674669563,
+            "native_step": 80,
+            "origin_m": 391.49198817190415,
+            "waypoint_m": 491.49198817190415
+          }
+        ],
+        "profile_id": "accel_coast_40_0.5"
+      }
+    },
+    "accel_coast_60_0.5": {
+      "persistent": {
+        "action_zero_count": 30,
+        "anchor_m": 300.0,
+        "final_position_m": 400.35425613503213,
+        "final_progress": 1.0,
+        "interventions": {},
+        "native_fixture_steps": 63,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "coast": 30,
+          "traction": 33
+        },
+        "physics_prediction_calls": 2477,
+        "profile_id": "accel_coast_60_0.5",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 0,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "traction": 90
+        },
+        "physics_prediction_calls": 2081,
+        "plans": [
+          {
+            "brake_threshold_m": 400.0,
+            "coast_threshold_m": 350.0,
+            "distance_executed_before_replan_m": 13.499999999999943,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 413.49999999999994,
+            "coast_threshold_m": 363.49999999999994,
+            "distance_executed_before_replan_m": 16.199654084408564,
+            "native_step": 10,
+            "origin_m": 313.49999999999994,
+            "waypoint_m": 413.49999999999994
+          },
+          {
+            "brake_threshold_m": 429.6996540844085,
+            "coast_threshold_m": 379.6996540844085,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 20,
+            "origin_m": 329.6996540844085,
+            "waypoint_m": 429.6996540844085
+          },
+          {
+            "brake_threshold_m": 446.36631975107514,
+            "coast_threshold_m": 396.36631975107514,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 30,
+            "origin_m": 346.36631975107514,
+            "waypoint_m": 446.36631975107514
+          },
+          {
+            "brake_threshold_m": 463.03298541774177,
+            "coast_threshold_m": 413.03298541774177,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 40,
+            "origin_m": 363.03298541774177,
+            "waypoint_m": 463.03298541774177
+          },
+          {
+            "brake_threshold_m": 479.6996510844084,
+            "coast_threshold_m": 429.6996510844084,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 50,
+            "origin_m": 379.6996510844084,
+            "waypoint_m": 479.6996510844084
+          },
+          {
+            "brake_threshold_m": 496.36631675107503,
+            "coast_threshold_m": 446.36631675107503,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 60,
+            "origin_m": 396.36631675107503,
+            "waypoint_m": 496.36631675107503
+          },
+          {
+            "brake_threshold_m": 513.0329824177417,
+            "coast_threshold_m": 463.03298241774166,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 70,
+            "origin_m": 413.03298241774166,
+            "waypoint_m": 513.0329824177417
+          },
+          {
+            "brake_threshold_m": 529.6996480844083,
+            "coast_threshold_m": 479.6996480844083,
+            "distance_executed_before_replan_m": 16.66666566666663,
+            "native_step": 80,
+            "origin_m": 429.6996480844083,
+            "waypoint_m": 529.6996480844083
+          }
+        ],
+        "profile_id": "accel_coast_60_0.5"
+      }
+    },
+    "accel_coast_brake_50_-0.5": {
+      "persistent": {
+        "action_zero_count": 52,
+        "anchor_m": 300.0,
+        "final_position_m": 400.628161029007,
+        "final_progress": 1.0,
+        "interventions": {},
+        "native_fixture_steps": 75,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "brake": 15,
+          "coast": 30,
+          "traction": 30
+        },
+        "physics_prediction_calls": 2171,
+        "profile_id": "accel_coast_brake_50_-0.5",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 78,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "traction": 90
+        },
+        "physics_prediction_calls": 1508,
+        "plans": [
+          {
+            "brake_threshold_m": 382.0,
+            "coast_threshold_m": 340.0,
+            "distance_executed_before_replan_m": 13.35581383537891,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 395.3558138353789,
+            "coast_threshold_m": 353.3558138353789,
+            "distance_executed_before_replan_m": 13.985177010078075,
+            "native_step": 10,
+            "origin_m": 313.3558138353789,
+            "waypoint_m": 413.3558138353789
+          },
+          {
+            "brake_threshold_m": 409.340990845457,
+            "coast_threshold_m": 367.340990845457,
+            "distance_executed_before_replan_m": 14.053667670358038,
+            "native_step": 20,
+            "origin_m": 327.340990845457,
+            "waypoint_m": 427.340990845457
+          },
+          {
+            "brake_threshold_m": 423.394658515815,
+            "coast_threshold_m": 381.394658515815,
+            "distance_executed_before_replan_m": 14.026362887513642,
+            "native_step": 30,
+            "origin_m": 341.394658515815,
+            "waypoint_m": 441.394658515815
+          },
+          {
+            "brake_threshold_m": 437.42102140332867,
+            "coast_threshold_m": 395.42102140332867,
+            "distance_executed_before_replan_m": 13.982749772477632,
+            "native_step": 40,
+            "origin_m": 355.42102140332867,
+            "waypoint_m": 455.42102140332867
+          },
+          {
+            "brake_threshold_m": 451.4037711758063,
+            "coast_threshold_m": 409.4037711758063,
+            "distance_executed_before_replan_m": 14.083278299174424,
+            "native_step": 50,
+            "origin_m": 369.4037711758063,
+            "waypoint_m": 469.4037711758063
+          },
+          {
+            "brake_threshold_m": 465.4870494749807,
+            "coast_threshold_m": 423.4870494749807,
+            "distance_executed_before_replan_m": 14.023832063544262,
+            "native_step": 60,
+            "origin_m": 383.4870494749807,
+            "waypoint_m": 483.4870494749807
+          },
+          {
+            "brake_threshold_m": 479.510881538525,
+            "coast_threshold_m": 437.510881538525,
+            "distance_executed_before_replan_m": 13.99613630207034,
+            "native_step": 70,
+            "origin_m": 397.510881538525,
+            "waypoint_m": 497.510881538525
+          },
+          {
+            "brake_threshold_m": 493.5070178405953,
+            "coast_threshold_m": 451.5070178405953,
+            "distance_executed_before_replan_m": 14.064861504469945,
+            "native_step": 80,
+            "origin_m": 411.5070178405953,
+            "waypoint_m": 511.5070178405953
+          }
+        ],
+        "profile_id": "accel_coast_brake_50_-0.5"
+      }
+    },
+    "accel_coast_brake_50_-1.0": {
+      "persistent": {
+        "action_zero_count": 52,
+        "anchor_m": 300.0,
+        "final_position_m": 400.7881255223879,
+        "final_progress": 1.0,
+        "interventions": {},
+        "native_fixture_steps": 77,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "brake": 17,
+          "coast": 30,
+          "traction": 30
+        },
+        "physics_prediction_calls": 2145,
+        "profile_id": "accel_coast_brake_50_-1.0",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 78,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "traction": 90
+        },
+        "physics_prediction_calls": 1302,
+        "plans": [
+          {
+            "brake_threshold_m": 382.0,
+            "coast_threshold_m": 340.0,
+            "distance_executed_before_replan_m": 13.35581383537891,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 395.3558138353789,
+            "coast_threshold_m": 353.3558138353789,
+            "distance_executed_before_replan_m": 13.985177010078075,
+            "native_step": 10,
+            "origin_m": 313.3558138353789,
+            "waypoint_m": 413.3558138353789
+          },
+          {
+            "brake_threshold_m": 409.340990845457,
+            "coast_threshold_m": 367.340990845457,
+            "distance_executed_before_replan_m": 14.053667670358038,
+            "native_step": 20,
+            "origin_m": 327.340990845457,
+            "waypoint_m": 427.340990845457
+          },
+          {
+            "brake_threshold_m": 423.394658515815,
+            "coast_threshold_m": 381.394658515815,
+            "distance_executed_before_replan_m": 14.026362887513642,
+            "native_step": 30,
+            "origin_m": 341.394658515815,
+            "waypoint_m": 441.394658515815
+          },
+          {
+            "brake_threshold_m": 437.42102140332867,
+            "coast_threshold_m": 395.42102140332867,
+            "distance_executed_before_replan_m": 13.982749772477632,
+            "native_step": 40,
+            "origin_m": 355.42102140332867,
+            "waypoint_m": 455.42102140332867
+          },
+          {
+            "brake_threshold_m": 451.4037711758063,
+            "coast_threshold_m": 409.4037711758063,
+            "distance_executed_before_replan_m": 14.083278299174424,
+            "native_step": 50,
+            "origin_m": 369.4037711758063,
+            "waypoint_m": 469.4037711758063
+          },
+          {
+            "brake_threshold_m": 465.4870494749807,
+            "coast_threshold_m": 423.4870494749807,
+            "distance_executed_before_replan_m": 14.023832063544262,
+            "native_step": 60,
+            "origin_m": 383.4870494749807,
+            "waypoint_m": 483.4870494749807
+          },
+          {
+            "brake_threshold_m": 479.510881538525,
+            "coast_threshold_m": 437.510881538525,
+            "distance_executed_before_replan_m": 13.99613630207034,
+            "native_step": 70,
+            "origin_m": 397.510881538525,
+            "waypoint_m": 497.510881538525
+          },
+          {
+            "brake_threshold_m": 493.5070178405953,
+            "coast_threshold_m": 451.5070178405953,
+            "distance_executed_before_replan_m": 14.064861504469945,
+            "native_step": 80,
+            "origin_m": 411.5070178405953,
+            "waypoint_m": 511.5070178405953
+          }
+        ],
+        "profile_id": "accel_coast_brake_50_-1.0"
+      }
+    },
+    "coast_partial_35": {
+      "persistent": {
+        "action_zero_count": 26,
+        "anchor_m": 300.0,
+        "final_position_m": 393.32406639934266,
+        "final_progress": 0.9332406639934265,
+        "interventions": {},
+        "native_fixture_steps": 90,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "coast": 26,
+          "partial_traction": 64
+        },
+        "physics_prediction_calls": 1641,
+        "profile_id": "coast_partial_35",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 90,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "coast": 90
+        },
+        "physics_prediction_calls": 1595,
+        "plans": [
+          {
+            "brake_threshold_m": 400.0,
+            "coast_threshold_m": 330.0,
+            "distance_executed_before_replan_m": 11.905939105751372,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 411.9059391057514,
+            "coast_threshold_m": 341.9059391057514,
+            "distance_executed_before_replan_m": 11.718641070552167,
+            "native_step": 10,
+            "origin_m": 311.9059391057514,
+            "waypoint_m": 411.9059391057514
+          },
+          {
+            "brake_threshold_m": 423.62458017630354,
+            "coast_threshold_m": 353.62458017630354,
+            "distance_executed_before_replan_m": 11.532575661290707,
+            "native_step": 20,
+            "origin_m": 323.62458017630354,
+            "waypoint_m": 423.62458017630354
+          },
+          {
+            "brake_threshold_m": 435.15715583759425,
+            "coast_threshold_m": 365.15715583759425,
+            "distance_executed_before_replan_m": 11.347734765940402,
+            "native_step": 30,
+            "origin_m": 335.15715583759425,
+            "waypoint_m": 435.15715583759425
+          },
+          {
+            "brake_threshold_m": 446.50489060353465,
+            "coast_threshold_m": 376.50489060353465,
+            "distance_executed_before_replan_m": 11.164110325860179,
+            "native_step": 40,
+            "origin_m": 346.50489060353465,
+            "waypoint_m": 446.50489060353465
+          },
+          {
+            "brake_threshold_m": 457.6690009293948,
+            "coast_threshold_m": 387.6690009293948,
+            "distance_executed_before_replan_m": 10.981691450527876,
+            "native_step": 50,
+            "origin_m": 357.6690009293948,
+            "waypoint_m": 457.6690009293948
+          },
+          {
+            "brake_threshold_m": 468.6506923799227,
+            "coast_threshold_m": 398.6506923799227,
+            "distance_executed_before_replan_m": 10.800417156765434,
+            "native_step": 60,
+            "origin_m": 368.6506923799227,
+            "waypoint_m": 468.6506923799227
+          },
+          {
+            "brake_threshold_m": 479.45110953668814,
+            "coast_threshold_m": 409.45110953668814,
+            "distance_executed_before_replan_m": 10.620233941687104,
+            "native_step": 70,
+            "origin_m": 379.45110953668814,
+            "waypoint_m": 479.45110953668814
+          },
+          {
+            "brake_threshold_m": 490.07134347837524,
+            "coast_threshold_m": 420.07134347837524,
+            "distance_executed_before_replan_m": 10.44113369550837,
+            "native_step": 80,
+            "origin_m": 390.07134347837524,
+            "waypoint_m": 490.07134347837524
+          }
+        ],
+        "profile_id": "coast_partial_35"
+      }
+    },
+    "coast_partial_50": {
+      "persistent": {
+        "action_zero_count": 26,
+        "anchor_m": 300.0,
+        "final_position_m": 400.78181501493225,
+        "final_progress": 1.0,
+        "interventions": {},
+        "native_fixture_steps": 78,
+        "original_length_m": 100.0,
+        "phase_counts": {
+          "coast": 26,
+          "partial_traction": 52
+        },
+        "physics_prediction_calls": 2142,
+        "profile_id": "coast_partial_50",
+        "waypoint_m": 400.0
+      },
+      "restart": {
+        "action_zero_count": 90,
+        "native_fixture_steps": 90,
+        "phase_counts": {
+          "coast": 90
+        },
+        "physics_prediction_calls": 1797,
+        "plans": [
+          {
+            "brake_threshold_m": 400.0,
+            "coast_threshold_m": 330.0,
+            "distance_executed_before_replan_m": 11.905939105751372,
+            "native_step": 0,
+            "origin_m": 300.0,
+            "waypoint_m": 400.0
+          },
+          {
+            "brake_threshold_m": 411.9059391057514,
+            "coast_threshold_m": 341.9059391057514,
+            "distance_executed_before_replan_m": 11.718641070552167,
+            "native_step": 10,
+            "origin_m": 311.9059391057514,
+            "waypoint_m": 411.9059391057514
+          },
+          {
+            "brake_threshold_m": 423.62458017630354,
+            "coast_threshold_m": 353.62458017630354,
+            "distance_executed_before_replan_m": 11.532575661290707,
+            "native_step": 20,
+            "origin_m": 323.62458017630354,
+            "waypoint_m": 423.62458017630354
+          },
+          {
+            "brake_threshold_m": 435.15715583759425,
+            "coast_threshold_m": 365.15715583759425,
+            "distance_executed_before_replan_m": 11.347734765940402,
+            "native_step": 30,
+            "origin_m": 335.15715583759425,
+            "waypoint_m": 435.15715583759425
+          },
+          {
+            "brake_threshold_m": 446.50489060353465,
+            "coast_threshold_m": 376.50489060353465,
+            "distance_executed_before_replan_m": 11.164110325860179,
+            "native_step": 40,
+            "origin_m": 346.50489060353465,
+            "waypoint_m": 446.50489060353465
+          },
+          {
+            "brake_threshold_m": 457.6690009293948,
+            "coast_threshold_m": 387.6690009293948,
+            "distance_executed_before_replan_m": 10.981691450527876,
+            "native_step": 50,
+            "origin_m": 357.6690009293948,
+            "waypoint_m": 457.6690009293948
+          },
+          {
+            "brake_threshold_m": 468.6506923799227,
+            "coast_threshold_m": 398.6506923799227,
+            "distance_executed_before_replan_m": 10.800417156765434,
+            "native_step": 60,
+            "origin_m": 368.6506923799227,
+            "waypoint_m": 468.6506923799227
+          },
+          {
+            "brake_threshold_m": 479.45110953668814,
+            "coast_threshold_m": 409.45110953668814,
+            "distance_executed_before_replan_m": 10.620233941687104,
+            "native_step": 70,
+            "origin_m": 379.45110953668814,
+            "waypoint_m": 479.45110953668814
+          },
+          {
+            "brake_threshold_m": 490.07134347837524,
+            "coast_threshold_m": 420.07134347837524,
+            "distance_executed_before_replan_m": 10.44113369550837,
+            "native_step": 80,
+            "origin_m": 390.07134347837524,
+            "waypoint_m": 490.07134347837524
+          }
+        ],
+        "profile_id": "coast_partial_50"
+      }
+    }
+  },
+  "remaining_hypotheses": [
+    "episode-level energy consequences depend on selection, Shield interventions and route content",
+    "receding-horizon restart may be beneficial on some tasks",
+    "speed clipping or safety intervention can prevent a planned phase legitimately"
+  ],
+  "schema_version": 1,
+  "shortened_final_option": {
+    "anchor_m": 950.0,
+    "brake_threshold_m": 991.0,
+    "coast_threshold_m": 970.0,
+    "length_m": 50.0,
+    "waypoint_m": 1000.0
+  },
+  "source_commit": "c7c6175b22e373f476aa60c10a755cb7072d9d5f",
+  "velocity_triggered_pulse_restart_control": {
+    "action_zero_count": 83,
+    "native_fixture_steps": 90,
+    "phase_counts": {
+      "velocity_triggered": 90
+    },
+    "physics_prediction_calls": 1684,
+    "plans": [
+      {
+        "brake_threshold_m": 400.0,
+        "coast_threshold_m": 400.0,
+        "distance_executed_before_replan_m": 12.52627473632981,
+        "native_step": 0,
+        "origin_m": 300.0,
+        "waypoint_m": 400.0
+      },
+      {
+        "brake_threshold_m": 412.5262747363298,
+        "coast_threshold_m": 412.5262747363298,
+        "distance_executed_before_replan_m": 12.668343718203744,
+        "native_step": 10,
+        "origin_m": 312.5262747363298,
+        "waypoint_m": 412.5262747363298
+      },
+      {
+        "brake_threshold_m": 425.19461845453355,
+        "coast_threshold_m": 425.19461845453355,
+        "distance_executed_before_replan_m": 12.650970907574333,
+        "native_step": 20,
+        "origin_m": 325.19461845453355,
+        "waypoint_m": 425.19461845453355
+      },
+      {
+        "brake_threshold_m": 437.8455893621079,
+        "coast_threshold_m": 437.8455893621079,
+        "distance_executed_before_replan_m": 12.601345520932341,
+        "native_step": 30,
+        "origin_m": 337.8455893621079,
+        "waypoint_m": 437.8455893621079
+      },
+      {
+        "brake_threshold_m": 450.4469348830402,
+        "coast_threshold_m": 450.4469348830402,
+        "distance_executed_before_replan_m": 12.679761470239441,
+        "native_step": 40,
+        "origin_m": 350.4469348830402,
+        "waypoint_m": 450.4469348830402
+      },
+      {
+        "brake_threshold_m": 463.12669635327967,
+        "coast_threshold_m": 463.12669635327967,
+        "distance_executed_before_replan_m": 12.61436920297831,
+        "native_step": 50,
+        "origin_m": 363.12669635327967,
+        "waypoint_m": 463.12669635327967
+      },
+      {
+        "brake_threshold_m": 475.741065556258,
+        "coast_threshold_m": 475.741065556258,
+        "distance_executed_before_replan_m": 12.660526810238366,
+        "native_step": 60,
+        "origin_m": 375.741065556258,
+        "waypoint_m": 475.741065556258
+      },
+      {
+        "brake_threshold_m": 488.40159236649635,
+        "coast_threshold_m": 488.40159236649635,
+        "distance_executed_before_replan_m": 12.643206842624693,
+        "native_step": 70,
+        "origin_m": 388.40159236649635,
+        "waypoint_m": 488.40159236649635
+      },
+      {
+        "brake_threshold_m": 501.04479920912104,
+        "coast_threshold_m": 501.04479920912104,
+        "distance_executed_before_replan_m": 12.593634486283577,
+        "native_step": 80,
+        "origin_m": 401.04479920912104,
+        "waypoint_m": 501.04479920912104
+      }
+    ],
+    "profile_id": "pulse_45_1.0"
+  }
+}

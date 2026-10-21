@@ -1,0 +1,73 @@
+{
+  "adaptive_price": {
+    "high_reserve_s": 24.0,
+    "low_reserve_s": 2.0,
+    "source": "inherited Causal MPC V2 selected setting"
+  },
+  "authorization": {
+    "capability_authorized": true,
+    "historical_validation_authorized": false,
+    "paper_authorized": false,
+    "rl_training_authorized": false
+  },
+  "execution": {
+    "calibration_complete": false,
+    "capability_complete": false,
+    "capability_opened": false
+  },
+  "frozen_arms": [
+    "FROZEN_MPC_V2",
+    "RESET_FEEDBACK",
+    "CONTINUE_FEEDBACK",
+    "COMMIT_FEEDBACK"
+  ],
+  "frozen_method_sha256": {
+    "checkpointing.py": "6959f20083cd09234d6be767656f1577205bbe991ab0bdabf01e0755e1f98f42",
+    "controller.py": "d1c3fdb28a9111d74061331fb892ad5b36c42d6ae12431cd58f17ebed482c26c",
+    "evaluation.py": "68637504ca29384589b9a5bb5dd57335f62fa7e6610fef44251398051262cb4f",
+    "execution.py": "a371395f07de65a81c259c3e8f18c220a6119c3bfb3b3c432bddbe01bad0fa9f",
+    "feedback_executor.py": "b403e22d5f5fbbe0edd5fccf738cde618696cfe7a90a1b4888405d785425890c",
+    "integrity.py": "7e8e8f37d6c0bc7d47cec00db713dc113c9a640a51a4d6c23c6acc2d2a2c0952",
+    "observation_adapter.py": "696d7595ba96117ff9c7ed092fceea4fdad82e84b5d75aff3e21ea941ec6aa11",
+    "option_selector.py": "fe84e4ec8723efef47be0a93b9ffbdd3d4fbbd57cb6ffe43625b45e96fd4d0a2",
+    "option_state.py": "ad08c37aa571e761250cf81fcf00955e8a6a45a3f2b1719c24aaa265f7636ef6",
+    "report.py": "0b3cf788644eba2acf03ece0f896ab71ce9e8ca41c63d3710fa9f0cfda95ed49",
+    "semantics_audit.py": "b3eabca3483cb9776944c5c577762e6ad96877c8a0b14a2e8fe4b47a6326eba1",
+    "split.py": "c763bde630b1a5a2723d4f1a6d4cbdf239568e712679c6ce1f57d4c917b6c957"
+  },
+  "inherited_source_sha256": {
+    "benchmarks/causal_mpc_v2/adaptive_price.py": "5c185e7d5fac40e4a98fca460b8650ff590a2b59bd8a06432ceef798b8b14fcf",
+    "benchmarks/causal_mpc_v2/controller.py": "2c135a9f31c02ee2f1b55bbb51cf7c497e7e90e16987a10e507aa903bc29348a",
+    "benchmarks/causal_mpc_v2/fixed_price.py": "0e460267abff6429d44427c4bd8a951e8346d7e69e66600a7b6bf2c00ddff6b4",
+    "benchmarks/causal_mpc_v2/planner.py": "22204ce8e141ee65b1896b1db708d54ad6a3fe0efea4654cf1ee2e9b578b64f5",
+    "benchmarks/causal_mpc_v2/terminal_value.py": "f3f573f0bb26b0074ecdf2c447427c3bca4c635d9c5501a4223f40ee1c9061f0",
+    "benchmarks/hybrid_rl_design/controller.py": "99f38f33d69267d9e204e99ad1e7116735fa48ce5367907c73c197edec4363ef",
+    "benchmarks/hybrid_rl_design/viability.py": "3303459dccfe9a6d48118c83db41c59ed1c1396ac019d6a8e0f8f7ff60c61c6f",
+    "benchmarks/physical_feasibility_reference/causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+    "benchmarks/physical_feasibility_reference/oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+    "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+    "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9"
+  },
+  "pair_identities_sha256": "a986482f10be8f9da15c027f0ab0661fa94eb2edb453b57b6a1f55e4d35009b6",
+  "paper_state": "SEALED_UNINSPECTED",
+  "physical_assumptions": {
+    "deadline_s": 140.0,
+    "maximum_option_native_steps": 400,
+    "native_dt_s": 0.1,
+    "option_distance_m": 100.0,
+    "outer_episode_steps": 1800,
+    "route_length_m": 1000.0,
+    "shield_status": "empirically supported; not a global theorem",
+    "speed_tolerance_m_s": 0.0,
+    "strategy_interval_native_steps": 10,
+    "unknown_tail": "inherited heuristic; unseen route never modeled as known"
+  },
+  "resource_gates": {
+    "active_compute_hours_maximum": 8.0,
+    "calibration_episode_maximum": 48,
+    "fixture_native_step_maximum": 30000,
+    "retained_artifacts_gb_maximum": 4.0
+  },
+  "schema_version": 1,
+  "source_commit": "c7c6175b22e373f476aa60c10a755cb7072d9d5f"
+}
