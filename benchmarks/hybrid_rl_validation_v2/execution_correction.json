@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "study": "HYBRID_RL_VALIDATION_V2",
+  "kind": "PRE_AUTHORIZATION_EXECUTION_ONLY_CORRECTION",
+  "preparation_commit": "11d61ae33a758bd76982ddb0c683f45578ca39ce",
+  "main_training_commit": "7676f2c77b82fd8273e8c38722082ffb7afd5c60",
+  "incident_preservation_commit": "27cff19dadebaafbcd905fd3a2ecbe4ac8f0eeaa",
+  "transaction_id": "439c821bc40c0a4dd8962af0ce08ef050f3ca697af15d8960a7340c8f860ab76",
+  "split_ordered_sha256": "99a863fb423e2ceb5ec0641bb940fab21ff7eb86a1466886da8707862a015e74",
+  "initial_artifact_sha256": {
+    "authorization.json": "63c00e4061102bfae7e3d19d7207f2d5c7b8bd199f08192725610dfdd897bf13",
+    "pair_ledger.json": "2489f581349ad5e16f72d2e6d2d0203119ae26fead67180d5662f783b4e8b09c",
+    "preparation_status.json": "7e59b8811c30fa9edcf170a2b27fc152b0ba91126ba55f2ece54660783b4d8da",
+    "split_ledger.json": "7dbf93112b7035b0d08aadb3a227b4c6cbb06e68f60bbe73349e84c69e89fcf6"
+  },
+  "execution_source_sha256": {
+    "analysis.py": "7dcbb2d2b70c5eda57dbe21a0afb99c64a8733c206e6edc32108b48fbd673507",
+    "constants.py": "8a36edbcb43f39aafc1e734dc0bc34a8e1e6102902a8a16dabe82ca760634bea",
+    "integrity.py": "2f719dee7039709f26b68db4e1db11c4752fe814b9b1c7e39303a7c2a40069aa",
+    "lease.py": "84aaf0e6f5d472e903ac5f76396cdc34eea035d0c6963ad76e2e460757663edf",
+    "ledger.py": "a158b7af886be52c9c3be0ad32142b934cf65047e8e5c24bbb338ec91109835a",
+    "validation_runner.py": "69cad9096525310f82ac0645cdac5ec16c7a5ad5c9c647e870fe2093102fcba7"
+  },
+  "frozen_scientific_source_sha256": {
+    "benchmarks/hybrid_rl_execution/agent.py": "feffe8168e72d4d8bd7c87cfb303e5e6ad0b3cc5ef92658cf8b31375e18c2520",
+    "benchmarks/hybrid_rl_execution/evaluation.py": "a14419ab934193584b92aa1284930564b64c1d208794158ab531b8d502f9dcac",
+    "benchmarks/hybrid_rl_design/baseline.py": "7e37329c2bca7e70b461c9c2f13aedfba1f6ce1b961f4bc08bdc56d016aeef4d",
+    "benchmarks/hybrid_rl_design/controller.py": "99f38f33d69267d9e204e99ad1e7116735fa48ce5367907c73c197edec4363ef",
+    "benchmarks/physical_feasibility_reference/causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7"
+  },
+  "verification": {
+    "synthetic_v2_tests": "23 passed",
+    "combined_hybrid_tests": "51 passed",
+    "ruff": "passed",
+    "git_diff_check": "passed",
+    "all_readiness_gates": true,
+    "initial_pair_states": {
+      "PENDING": 180,
+      "STARTED": 0,
+      "COMPLETED": 0,
+      "INTERRUPTED_UNRECOVERABLE": 0
+    },
+    "lease_absent_before_authorization": true,
+    "real_v2_evaluator_calls": 0,
+    "paper_episodes": 0,
+    "paper_content_fingerprints": 0
+  },
+  "scientific_non_interference": {
+    "controller_or_simulator_source_changed": false,
+    "checkpoint_or_actor_changed": false,
+    "split_or_pair_identity_changed": false,
+    "reward_cost_smdp_or_shield_changed": false,
+    "explanation": "The correction gates evaluator entry and records durable provenance; it does not transform observations, actions, controller state, simulator state, or scientific outcomes."
+  }
+}

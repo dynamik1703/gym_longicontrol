@@ -267,6 +267,7 @@ def verify_test_isolation() -> dict[str, Any]:
         "StochasticTrack(",
         ".step(",
         "execute_next_v2_pair(",
+        "execute_v2_transaction(",
     )
     violations = {
         path.name: [token for token in forbidden if token in path.read_text()]

@@ -144,10 +144,12 @@
       "environment.reset(",
       "StochasticTrack(",
       ".step(",
-      "execute_next_v2_pair("
+      "execute_next_v2_pair(",
+      "execute_v2_transaction("
     ],
     "passed": true,
     "test_files": [
+      "test_analysis.py",
       "test_integrity.py",
       "test_ledger.py",
       "test_runner.py",

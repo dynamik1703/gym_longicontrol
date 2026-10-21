@@ -50,6 +50,14 @@ becomes `INTERRUPTED_UNRECOVERABLE`; the pair is never silently rerun. A
 completed pair contains an immutable result hash and can never start again.
 Aggregation recovery reads completed results only and invokes no evaluator.
 
+The full read–select–mark–evaluate–persist matrix is additionally protected by
+one durable transaction lease created with `O_CREAT|O_EXCL`. The lease binds
+the existing transaction ID to one PID, host, acquisition time, and random
+ownership token. It is never deleted or automatically reclaimed: a stale or
+incomplete lease is an integrity stop, while a successful lease becomes the
+permanent `COMPLETED_SEALED` execution record. Every evaluator entry verifies
+the on-disk ownership record before selecting, starting, and evaluating a pair.
+
 ## Frozen acceptance hierarchy
 
 For each Hybrid seed:
