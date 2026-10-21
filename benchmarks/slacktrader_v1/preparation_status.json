@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "state": "SCIENTIFICALLY_STOPPED_BEFORE_MAIN_TRAINING",
+  "stop_code": "RL_NOT_JUSTIFIED_BY_MPC_PREFLIGHT",
+  "mpc_development_complete": true,
+  "time_price_action_non_degenerate": true,
+  "strong_nonlearning_baselines_frozen": false,
+  "training_infrastructure_ready": false,
+  "ready_for_main_training": false,
+  "main_training_authorized": false,
+  "main_training_enabled": false,
+  "validation_authorized": false,
+  "paper_authorized": false,
+  "main_training_episodes": 0,
+  "main_training_gradient_updates": 0,
+  "validation_performance_episodes": 0,
+  "paper_episodes": 0,
+  "development_capability": {
+    "tasks": 4,
+    "fixed_price_mpc_rsr": "4/4",
+    "adaptive_price_mpc_rsr": "4/4",
+    "adaptive_price_mean_feasible_energy_kwh": 0.19628811657796214,
+    "causal60_mean_feasible_energy_kwh": 0.19715283293530295,
+    "time_aware_mean_feasible_energy_kwh": 0.1793548451315211,
+    "adaptive_savings_vs_causal60_percent": 0.4533924608739563,
+    "adaptive_savings_vs_time_aware_percent": -9.30104846843717,
+    "adaptive_native_action_influence_fraction": 0.0859400724399078
+  },
+  "reason": "The price action is physically non-degenerate and feasibility passed, but the shared MPC does not establish the required strong non-learning foundation and is mostly fallback-equivalent. Main RL training would not support the intended scientific comparison."
+}
