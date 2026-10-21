@@ -1,0 +1,181 @@
+{
+  "candidate_selected_travel_time_distribution_s": {
+    "count": 12,
+    "maximum": 7.200000000000102,
+    "median": 7.100000000000038,
+    "minimum": 6.3000000000000895
+  },
+  "executed_action_sequences": {
+    "distinct_sha256": 6,
+    "episodes": 8,
+    "hash_multiplicity": {
+      "19f7f6d2975c1463479e9f1a09e51fb732f2eec6cca4aa909db60b2a6f723bb9": 1,
+      "41797e8083a70be42b023d144872f34d9f3002cc81c4061e697660f3be12def1": 1,
+      "84e238937dc929c91915bef6c9b57247657a08e6b55e677d0e4507c9a9f7968e": 1,
+      "b6d0b743b0806da56e2dc27b3ce6667f0f4ce902dd321ceee4bdf60c39bfd707": 2,
+      "c6be0b7110b642ac1b969225b56d6dfc57ecd0c2972d91909be415f09235f8b1": 2,
+      "e6dfb0a6fcf1429115f45ab414d34b8def7eb65c41f1541cf7a1ab67834724dc": 1
+    }
+  },
+  "fallback_identity": {
+    "fraction": 0.9384334550282111,
+    "identical_proposals": 5655,
+    "native_proposals": 6026
+  },
+  "maximum_target_selection": {
+    "count": 322,
+    "fraction": 0.45544554455445546,
+    "total": 707
+  },
+  "mechanism_conclusion": {
+    "H1": "supported: only nine regulated constant-target candidates",
+    "H2": "mechanistically active in deterministic fixtures; existing capability sensitivity endpoints happened to have zero charge",
+    "H3": "supported: 5655/6026 proposals were identical to fallback before counting overrides"
+  },
+  "objective_sensitivity_to_lambda": {
+    "duration_monotonic_all": true,
+    "observed_marginal_prices_kwh_per_s": [
+      0.0016245169813686145,
+      0.004993288095601274,
+      0.004656197203949541,
+      0.007256986220327646
+    ],
+    "states": 4,
+    "states_with_distinct_duration": 4
+  },
+  "replanning": {
+    "native_proposals": 6026,
+    "planner_solves": 707,
+    "solve_per_proposal_fraction": 0.11732492532359774
+  },
+  "schema_version": 1,
+  "shield": {
+    "fraction": 0.006637902422834384,
+    "native_proposals": 6026,
+    "overrides": 40
+  },
+  "source": "benchmarks/slacktrader_v1/mpc_development_results.json",
+  "source_state": "immutable existing V1 Development data",
+  "terminal_acceleration_energy": {
+    "maximum_kwh": 0.0,
+    "mean_kwh": 0.0,
+    "nonzero_count": 0,
+    "sensitivity_point_count": 12,
+    "sum_kwh": 0.0
+  },
+  "terminal_first_action_fixture": {
+    "changed_count": 5,
+    "fixture_count": 12,
+    "rows": [
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 0.0,
+        "price_kwh_per_s": 1e-05,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 0.0,
+        "price_kwh_per_s": 0.001,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 0.0,
+        "price_kwh_per_s": 0.01,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 12.5
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 5.0,
+        "price_kwh_per_s": 1e-05,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 5.0,
+        "price_kwh_per_s": 0.001,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 5.0,
+        "price_kwh_per_s": 0.01,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 12.5
+      },
+      {
+        "first_action_changed": true,
+        "initial_velocity_m_s": 10.0,
+        "price_kwh_per_s": 1e-05,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": -1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": true,
+        "initial_velocity_m_s": 10.0,
+        "price_kwh_per_s": 0.001,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": -1.0,
+        "without_terminal_target_m_s": 8.333333333333334
+      },
+      {
+        "first_action_changed": false,
+        "initial_velocity_m_s": 10.0,
+        "price_kwh_per_s": 0.01,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 1.0,
+        "without_terminal_target_m_s": 12.5
+      },
+      {
+        "first_action_changed": true,
+        "initial_velocity_m_s": 15.0,
+        "price_kwh_per_s": 1e-05,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": -1.0,
+        "without_terminal_target_m_s": 5.555555555555555
+      },
+      {
+        "first_action_changed": true,
+        "initial_velocity_m_s": 15.0,
+        "price_kwh_per_s": 0.001,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": -1.0,
+        "without_terminal_target_m_s": 8.333333333333334
+      },
+      {
+        "first_action_changed": true,
+        "initial_velocity_m_s": 15.0,
+        "price_kwh_per_s": 0.01,
+        "with_terminal_first_action": 1.0,
+        "with_terminal_target_m_s": 16.666666666666668,
+        "without_terminal_first_action": 0.9308058912910132,
+        "without_terminal_target_m_s": 15.277777777777777
+      }
+    ]
+  },
+  "v1_stop_code": "RL_NOT_JUSTIFIED_BY_MPC_PREFLIGHT"
+}

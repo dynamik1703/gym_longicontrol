@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any
 
 import numpy as np
 
@@ -258,14 +259,21 @@ def render_markdown(ledger: dict[str, Any]) -> str:
         "Both panels were selected before controller evaluation, in ascending",
         "numeric-seed order, using only numeric and canonical content fingerprints.",
     ]
-    for label, key in (("Calibration", "calibration_panel"), ("Capability", "capability_panel")):
+    panels = (
+        ("Calibration", "calibration_panel"),
+        ("Capability", "capability_panel"),
+    )
+    for label, key in panels:
         split = ledger[key]
         lines.extend(
             [
                 "",
                 f"## {label}: {split['id']}",
                 "",
-                f"State: `{split['state']}`. Ordered SHA-256: `{split['ordered_sha256']}`.",
+                (
+                    f"State: `{split['state']}`. Ordered SHA-256: "
+                    f"`{split['ordered_sha256']}`."
+                ),
                 "",
                 "| Seed | Route SHA-256 | Full-task SHA-256 | Selection metadata |",
                 "| ---: | --- | --- | --- |",
@@ -282,7 +290,10 @@ def render_markdown(ledger: dict[str, Any]) -> str:
             "",
             "## Integrity",
             "",
-            f"Protected unique historical rows: {ledger['provenance']['protected_historical_unique_rows']}.",
+            (
+                "Protected unique historical rows: "
+                f"{ledger['provenance']['protected_historical_unique_rows']}."
+            ),
             "All checks pass. Paper seeds 4000–4017 remain `SEALED_UNINSPECTED`;",
             "they were excluded numerically and never instantiated or fingerprinted.",
             "",
@@ -296,4 +307,3 @@ if __name__ == "__main__":
     (HERE / "SPLIT_LEDGER.md").write_text(
         render_markdown(frozen), encoding="utf-8"
     )
-
