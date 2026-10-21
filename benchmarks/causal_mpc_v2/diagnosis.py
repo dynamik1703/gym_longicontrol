@@ -49,6 +49,9 @@ def diagnose_v1() -> dict[str, Any]:
     planner = FixedDistancePlanner()
     fixture_rows = []
     changed_first = 0
+    fixture_candidate_times: list[float] = []
+    fixture_terminal_energies: list[float] = []
+    fixture_action_sequences: set[tuple[float, ...]] = set()
     for velocity in (0.0, 5.0, 10.0, 15.0):
         state = VehicleState(velocity_m_s=velocity)
         for price in (1.0e-5, 1.0e-3, 1.0e-2):
@@ -58,6 +61,13 @@ def diagnose_v1() -> dict[str, Any]:
                 transitions=(),
                 price_kwh_per_s=price,
             )
+            for candidate in plan.candidates:
+                if candidate.feasible:
+                    fixture_candidate_times.append(candidate.travel_time_s)
+                    fixture_terminal_energies.append(
+                        candidate.terminal_energy_kwh
+                    )
+                    fixture_action_sequences.add(candidate.actions)
             without_terminal = min(
                 (candidate for candidate in plan.candidates if candidate.feasible),
                 key=lambda candidate: (
@@ -79,6 +89,9 @@ def diagnose_v1() -> dict[str, Any]:
                     "without_terminal_target_m_s": without_terminal.target_speed_m_s,
                     "with_terminal_first_action": plan.selected.actions[0],
                     "without_terminal_first_action": without_terminal.actions[0],
+                    "selected_terminal_energy_kwh": (
+                        plan.selected.terminal_energy_kwh
+                    ),
                     "first_action_changed": changed,
                 }
             )
@@ -105,6 +118,23 @@ def diagnose_v1() -> dict[str, Any]:
             "median": statistics.median(travel_times),
             "maximum": max(travel_times),
         },
+        "fixture_all_candidate_travel_time_distribution_s": {
+            "count": len(fixture_candidate_times),
+            "minimum": min(fixture_candidate_times),
+            "median": statistics.median(fixture_candidate_times),
+            "maximum": max(fixture_candidate_times),
+        },
+        "fixture_terminal_acceleration_energy_distribution_kwh": {
+            "count": len(fixture_terminal_energies),
+            "nonzero_count": sum(
+                value > 0.0 for value in fixture_terminal_energies
+            ),
+            "mean": statistics.fmean(fixture_terminal_energies),
+            "maximum": max(fixture_terminal_energies),
+        },
+        "fixture_distinct_candidate_action_sequences": len(
+            fixture_action_sequences
+        ),
         "objective_sensitivity_to_lambda": {
             "states": len(sensitivity),
             "states_with_distinct_duration": sum(
@@ -162,6 +192,10 @@ def render_markdown(result: dict[str, Any]) -> str:
     maximum = result["maximum_target_selection"]
     terminal = result["terminal_acceleration_energy"]
     travel = result["candidate_selected_travel_time_distribution_s"]
+    all_travel = result["fixture_all_candidate_travel_time_distribution_s"]
+    fixture_terminal = result[
+        "fixture_terminal_acceleration_energy_distribution_kwh"
+    ]
     fallback = result["fallback_identity"]
     shield = result["shield"]
     fixture = result["terminal_first_action_fixture"]
@@ -182,6 +216,14 @@ deterministic exact-dynamics fixtures. The historical outcome remains
   that the formulation was inactive for discarded candidates.
 - Recorded selected candidate time: {travel['minimum']:.3f}–
   {travel['maximum']:.3f} s (median {travel['median']:.3f} s).
+- All feasible fixture-candidate times: {all_travel['minimum']:.3f}–
+  {all_travel['maximum']:.3f} s (median {all_travel['median']:.3f} s), with
+  {result['fixture_distinct_candidate_action_sequences']} distinct candidate
+  action sequences.
+- Across all fixture candidates, the V1 terminal-acceleration term was nonzero
+  for {fixture_terminal['nonzero_count']}/{fixture_terminal['count']}, mean
+  {fixture_terminal['mean']:.6f} kWh and maximum
+  {fixture_terminal['maximum']:.6f} kWh.
 - Lambda changed selected duration on all
   {result['objective_sensitivity_to_lambda']['states']} recorded causal states;
   selected duration was non-increasing throughout.

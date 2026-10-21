@@ -137,7 +137,7 @@
     "candidate_start": 10500000,
     "id": "MPC_V2_CALIBRATION",
     "ordered_sha256": "24a5bdfdab2d8cf2afa4083e977ef49a24b5f1d2b35965c68a002d7a70e76500",
-    "performance_episode_count": 0,
+    "performance_episode_count": 96,
     "policy": "R: numeric, route and full-task clean",
     "rejected_candidates": [
       {
@@ -305,7 +305,7 @@
     ],
     "selection_inputs": "numeric seed and fingerprints only; no performance",
     "selection_order": "ascending numeric seed; first passing Policy R",
-    "state": "FROZEN"
+    "state": "COMPLETE"
   },
   "capability_panel": {
     "accepted_tasks": [
@@ -511,7 +511,7 @@
     "candidate_start": 10600000,
     "id": "MPC_V2_CAPABILITY",
     "ordered_sha256": "0744c1962d7f85c4625183ab247ebc2c97b15c4c5ed1439ce4bb46eb0c6520c8",
-    "performance_episode_count": 0,
+    "performance_episode_count": 72,
     "policy": "R: numeric, route and full-task clean",
     "rejected_candidates": [
       {
@@ -745,7 +745,7 @@
     ],
     "selection_inputs": "numeric seed and fingerprints only; no performance",
     "selection_order": "ascending numeric seed; first passing Policy R",
-    "state": "FROZEN_UNOPENED"
+    "state": "COMPLETE"
   },
   "checks": {
     "all_full_tasks_unique": true,

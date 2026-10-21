@@ -148,6 +148,28 @@ def build_results() -> dict[str, Any]:
         },
         "capability": capability,
         "resource": resource,
+        "mechanism_decomposition": {
+            "combined_richer_candidates_and_terminal_vs_time_aware_percent": (
+                comparisons["fixed_vs_time_aware"][
+                    "arithmetic_mean_saving_percent"
+                ]
+            ),
+            "state_dependent_lambda_vs_fixed_percent": adaptive_vs_fixed,
+            "adaptive_shield_overrides": adaptive["override_count"],
+            "adaptive_proposals": adaptive["proposal_count"],
+            "adaptive_executed_influence_fraction": adaptive[
+                "native_action_influence_fraction"
+            ],
+            "adaptive_counterfactual_first_action_difference_fraction": adaptive[
+                "counterfactual_different_first_action_fraction"
+            ],
+            "interpretation": (
+                "Fixed V2 versus TIME_AWARE identifies the combined V2 stack, "
+                "not separate causal effects of the profile family and terminal "
+                "heuristic. Adaptive versus Fixed isolates price selection. No "
+                "post-Capability mechanistic ablation was run."
+            ),
+        },
         "gates": {
             "hard_integrity": hard_integrity,
             "A_hard_feasibility": gate_a,
@@ -270,6 +292,25 @@ def render_capability(result: dict[str, Any], final: dict[str, Any]) -> str:
     fixed_time = comparisons["fixed_vs_time_aware"][
         "arithmetic_mean_saving_percent"
     ]
+    fixed_episodes = result["arms"]["FIXED_PRICE_V2"]["episodes"]
+    adaptive_episodes = result["arms"]["ADAPTIVE_PRICE_V2"]["episodes"]
+    fixed = result["arms"]["FIXED_PRICE_V2"]["summary"]
+    adaptive = result["arms"]["ADAPTIVE_PRICE_V2"]["summary"]
+    fixed_identical = sum(
+        row["planner_proposal_identical_to_fallback_count"]
+        for row in fixed_episodes
+    )
+    adaptive_identical = sum(
+        row["planner_proposal_identical_to_fallback_count"]
+        for row in adaptive_episodes
+    )
+    fixed_hashes = len({row["native_action_sha256"] for row in fixed_episodes})
+    adaptive_hashes = len(
+        {row["native_action_sha256"] for row in adaptive_episodes}
+    )
+    terminal_energy = sum(
+        row["selected_terminal_energy_sum_kwh"] for row in adaptive_episodes
+    ) / adaptive["planner_solve_count"]
     rows.extend(
         [
             "",
@@ -287,6 +328,35 @@ def render_capability(result: dict[str, Any], final: dict[str, Any]) -> str:
                 "FixedPrice V2 versus TIME_AWARE: "
                 f"{_fmt(fixed_time, 3)}%."
             ),
+            "",
+            "## Executed authority and Shield",
+            "",
+            f"FixedPrice: {fixed['native_action_influence_count']}/"
+            f"{fixed['proposal_count']} influenced native actions, "
+            f"{fixed['override_count']} overrides, {fixed_identical} "
+            "fallback-identical proposals and "
+            f"{100 * fixed['counterfactual_different_first_action_fraction']:.3f}% "
+            "counterfactual first-action differences.",
+            f"AdaptivePrice: {adaptive['native_action_influence_count']}/"
+            f"{adaptive['proposal_count']} influenced native actions, "
+            f"{adaptive['override_count']} overrides, {adaptive_identical} "
+            "fallback-identical proposals and "
+            f"{100 * adaptive['counterfactual_different_first_action_fraction']:.3f}% "
+            "counterfactual first-action differences.",
+            f"Distinct executed native-action hashes were {fixed_hashes}/18 and "
+            f"{adaptive_hashes}/18. Mean selected Adaptive terminal-energy "
+            f"contribution per solve was {terminal_energy:.6f} kWh; this is a "
+            "receding-horizon diagnostic, not episode energy.",
+            "",
+            "## Mechanism interpretation",
+            "",
+            f"Fixed V2's {_fmt(fixed_time, 3)}% saving versus TIME_AWARE is the "
+            "combined effect of the richer profiles and corrected terminal "
+            "heuristic; those two changes were not separately identified. "
+            f"Adaptive's {_fmt(adaptive_fixed, 3)}% over Fixed isolates the "
+            "state-dependent price rule and missed its 1% gate. Shield "
+            "interventions quantify blocked proposals but do not identify an "
+            "energy counterfactual. No post-Capability ablation was performed.",
             "",
             "The privileged reference was preregistered as omitted, so no new",
             "privileged-reference gap is claimed.",

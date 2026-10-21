@@ -15,10 +15,19 @@ deterministic exact-dynamics fixtures. The historical outcome remains
   that the formulation was inactive for discarded candidates.
 - Recorded selected candidate time: 6.300–
   7.200 s (median 7.100 s).
+- All feasible fixture-candidate times: 6.100–
+  19.200 s (median 9.800 s), with
+  36 distinct candidate
+  action sequences.
+- Across all fixture candidates, the V1 terminal-acceleration term was nonzero
+  for 96/108, mean
+  0.035884 kWh and maximum
+  0.062684 kWh.
 - Lambda changed selected duration on all
   4 recorded causal states;
   selected duration was non-increasing throughout.
-- Executed physical action hashes: 6
+- Executed physical action hashes:
+  6
   distinct sequences across 8 MPC
   episodes.
 - Replanning: 707 solves over

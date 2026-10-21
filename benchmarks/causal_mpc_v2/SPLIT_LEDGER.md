@@ -5,7 +5,7 @@ numeric-seed order, using only numeric and canonical content fingerprints.
 
 ## Calibration: MPC_V2_CALIBRATION
 
-State: `FROZEN`. Ordered SHA-256: `24a5bdfdab2d8cf2afa4083e977ef49a24b5f1d2b35965c68a002d7a70e76500`.
+State: `COMPLETE`. Ordered SHA-256: `24a5bdfdab2d8cf2afa4083e977ef49a24b5f1d2b35965c68a002d7a70e76500`.
 
 | Seed | Route SHA-256 | Full-task SHA-256 | Selection metadata |
 | ---: | --- | --- | --- |
@@ -24,7 +24,7 @@ State: `FROZEN`. Ordered SHA-256: `24a5bdfdab2d8cf2afa4083e977ef49a24b5f1d2b3596
 
 ## Capability: MPC_V2_CAPABILITY
 
-State: `FROZEN_UNOPENED`. Ordered SHA-256: `0744c1962d7f85c4625183ab247ebc2c97b15c4c5ed1439ce4bb46eb0c6520c8`.
+State: `COMPLETE`. Ordered SHA-256: `0744c1962d7f85c4625183ab247ebc2c97b15c4c5ed1439ce4bb46eb0c6520c8`.
 
 | Seed | Route SHA-256 | Full-task SHA-256 | Selection metadata |
 | ---: | --- | --- | --- |

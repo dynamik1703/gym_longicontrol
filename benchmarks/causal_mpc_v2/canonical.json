@@ -12,8 +12,8 @@
   },
   "execution": {
     "calibration_complete": true,
-    "capability_complete": false,
-    "capability_opened": false
+    "capability_complete": true,
+    "capability_opened": true
   },
   "frozen_method_sha256": {
     "adaptive_price.py": "5c185e7d5fac40e4a98fca460b8650ff590a2b59bd8a06432ceef798b8b14fcf",

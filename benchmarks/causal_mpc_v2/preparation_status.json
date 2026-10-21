@@ -1,12 +1,13 @@
 {
+  "decision": "MPC_IMPROVED_BUT_RL_VALUE_UNCLEAR",
   "dynamic_time_price_useful": false,
   "mpc_v2_calibration_complete": true,
-  "mpc_v2_capability_complete": false,
+  "mpc_v2_capability_complete": true,
   "paper_state": "SEALED_UNINSPECTED",
   "schema_version": 1,
   "slacktrader_training_authorized": false,
   "slacktrader_training_enabled": false,
   "slacktrader_v2_recommended": false,
-  "state": "CALIBRATION_COMPLETE_METHOD_FROZEN",
+  "state": "SCIENTIFIC_DECISION_COMPLETE",
   "strong_causal_mpc_found": false
 }

@@ -106,7 +106,35 @@ def test_calibration_is_complete_and_method_is_frozen() -> None:
     canonical = json.loads((HERE / "canonical.json").read_text(encoding="utf-8"))
     assert canonical["execution"] == {
         "calibration_complete": True,
-        "capability_complete": False,
-        "capability_opened": False,
+        "capability_complete": True,
+        "capability_opened": True,
     }
     verify_frozen_method()
+
+
+def test_capability_exactly_once_and_final_decision() -> None:
+    progress = json.loads(
+        (HERE / "capability_progress.json").read_text(encoding="utf-8")
+    )
+    assert progress["state"] == "COMPLETE"
+    assert len(progress["episodes"]) == 72
+    assert len(set(progress["episodes"])) == 72
+    assert all(
+        sum(key.startswith(f"{controller}:") for key in progress["episodes"])
+        == 18
+        for controller in progress["controller_order"]
+    )
+    result = json.loads((HERE / "results.json").read_text(encoding="utf-8"))
+    assert result["decision"] == "MPC_IMPROVED_BUT_RL_VALUE_UNCLEAR"
+    assert result["gates"] == {
+        "A_hard_feasibility": True,
+        "B_strong_mpc_energy": True,
+        "C_dynamic_price_advantage": False,
+        "D_executed_control_authority": True,
+        "E_resources": True,
+        "all_mandatory": False,
+        "hard_integrity": True,
+    }
+    assert not result["slacktrader_v2_recommended"]
+    assert not result["slacktrader_training_authorized"]
+    assert not result["slacktrader_training_enabled"]
