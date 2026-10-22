@@ -1,0 +1,66 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 32.3633549999995,
+  "actual_first_high_level_action": "START(cruise_20)",
+  "branch_id": "CF_OPTION_TEST_V1__11100003__0180m::START(cruise_20)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.1673240789725422,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 94.4999999999989
+  },
+  "first_block_action_sha256": "f1852c3f7b557d1e278e473fff1c4cfba9f8ffa3e845cfd8bbf3892f2d50046a",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "first_block_option_memory_sha256": "76d453698e7bb55483f3cc8608b30446416a1d7c70c85d243a5404558c32c825",
+  "injected_action_id": "START(cruise_20)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 140,
+    "last_native_step": 944,
+    "native_record_count": 805,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.07940100510930341
+  },
+  "intervention_count": 2,
+  "intervention_reasons": {
+    "KNOWN_TRANSITION_BRAKING": 1,
+    "RIGHT_ENDPOINT_SPEED": 1
+  },
+  "native_action_sha256": "7412f5d63aedbe3c0c1e3ea5c9a2424b909ba553839dbcf043efbce9cd7af835",
+  "native_step_count": 805,
+  "native_step_end_exclusive": 945,
+  "native_step_start": 140,
+  "natural_first_high_level_action": "START(cruise_50)",
+  "option_memory_sha256": "1f6957be268c8a1e52bb076eb4259b41f7983e9b97c1db9439002a4a97a45311",
+  "physics_prediction_calls": 1450701,
+  "remaining_signed_energy_kwh": 0.07940100510930341,
+  "remaining_travel_time_s": 80.49999999999893,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 805,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/f2e5fb2d1ea28a95086a3a1a03655e52ca9e234c27478d42b42944dbdfc27b38.json.gz",
+    "sha256": "44b555354543f39386733678c58a8836224461421de7c8b7bcfc8de83d62b516",
+    "size_bytes": 82356,
+    "uncompressed_sha256": "0b3b44e808e594ccc865a60dbd9a26b2ec4f1401952cfbdd7839ad48eae5565b"
+  },
+  "wall_time_s": 32.49247291707434
+}

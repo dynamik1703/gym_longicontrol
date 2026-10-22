@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 1.7666359999984707,
+  "actual_first_high_level_action": "START(cruise_30)",
+  "branch_id": "CF_OPTION_FIT_V1__11900014__0930m::START(cruise_30)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.17494794335300343,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 116.29999999999767
+  },
+  "first_block_action_sha256": "1c4d2905fcd79b76542256f4fafb75c2ae83d66067e84ece35cf658ebfe06aff",
+  "first_block_actions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.2982671522706845
+  ],
+  "first_block_option_memory_sha256": "e9bca95c1245145aed9e9100c5931b7c45ef7c7feb8101b17cdeaf22c8c6c085",
+  "injected_action_id": "START(cruise_30)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 1050,
+    "last_native_step": 1162,
+    "native_record_count": 113,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.013580520393163154
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "f0ae91d41fdf25c680951fa6fb0b8933f5036ba2db7add173a1048dd9c105e11",
+  "native_step_count": 113,
+  "native_step_end_exclusive": 1163,
+  "native_step_start": 1050,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "883760785f32cc22b3702b69fc49ccc82ed3a029ffe267fa5e40ffa794ff333e",
+  "physics_prediction_calls": 109584,
+  "remaining_signed_energy_kwh": 0.013580520393163154,
+  "remaining_travel_time_s": 11.299999999999358,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 113,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/6884c07a8877c62f2916618bbdd8c80c7e6455de50a7ee1a00b29e10796c0135.json.gz",
+    "sha256": "246feed6877eb88bd0d9ad60563c1d463c19ec21b8a7fe22c749b49bf1e9d4e1",
+    "size_bytes": 8286,
+    "uncompressed_sha256": "a87ffc1303e2a7f12073941b4b811bb0c9a1dc368a23cc922d070e991106ebb7"
+  },
+  "wall_time_s": 1.7735370420850813
+}

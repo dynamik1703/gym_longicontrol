@@ -1,0 +1,66 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 31.84073400000034,
+  "actual_first_high_level_action": "START(cruise_20)",
+  "branch_id": "CF_OPTION_FIT_V1__11900009__0180m::START(cruise_20)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.19351752079502998,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 127.59999999999702
+  },
+  "first_block_action_sha256": "f1852c3f7b557d1e278e473fff1c4cfba9f8ffa3e845cfd8bbf3892f2d50046a",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "first_block_option_memory_sha256": "076327b0680b82183e1b31169a10b32e1d7a5a3a69a152452f1d265f0f036188",
+  "injected_action_id": "START(cruise_20)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 170,
+    "last_native_step": 1275,
+    "native_record_count": 1106,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.12126776207098769
+  },
+  "intervention_count": 35,
+  "intervention_reasons": {
+    "DEADLINE_RECOVERABILITY": 33,
+    "KNOWN_TRANSITION_BRAKING": 2
+  },
+  "native_action_sha256": "ae3f3a87ecad0bd8d5335d4879d8c56d6e145ae233d672accb80788f96331ad1",
+  "native_step_count": 1106,
+  "native_step_end_exclusive": 1276,
+  "native_step_start": 170,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "c906b30c0f25f5faecceaf466d69c074e029f3f430af712c812af365b0894fa2",
+  "physics_prediction_calls": 1374343,
+  "remaining_signed_energy_kwh": 0.1212677620709877,
+  "remaining_travel_time_s": 110.59999999999705,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 1106,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/7d28fe643e734fa674653e43fef0fa8b3b42950bb48708b012efd1e5930b00ec.json.gz",
+    "sha256": "e7a1e0e1afc56c49f08288dd51d3520fc912271eeac745e07fb0f0bd0ef77f68",
+    "size_bytes": 77383,
+    "uncompressed_sha256": "57f601ddcccaf9ecf142b62624fb1f0dab3206dfa4b389bed2f30ac82b784f9d"
+  },
+  "wall_time_s": 32.03600833402015
+}

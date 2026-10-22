@@ -1,0 +1,65 @@
+{
+  "action_injected": false,
+  "active_process_time_s": 27.534582000000228,
+  "actual_first_high_level_action": "CONTINUE",
+  "branch_id": "CF_OPTION_TEST_V1__11100002__0080m::REFERENCE",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.1902813662989844,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 90.89999999999911
+  },
+  "first_block_action_sha256": "f1852c3f7b557d1e278e473fff1c4cfba9f8ffa3e845cfd8bbf3892f2d50046a",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "first_block_option_memory_sha256": "d5baad3b6359634741255cb33f6233997f44c3874d75a0ce8fa6556499bc8083",
+  "injected_action_id": null,
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 90,
+    "last_native_step": 908,
+    "native_record_count": 819,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.13496709690605627
+  },
+  "intervention_count": 1,
+  "intervention_reasons": {
+    "DEADLINE_RECOVERABILITY": 1
+  },
+  "native_action_sha256": "db5c3aaa18444df64be23a5f80bf86acce11397ecc6fa2d06c6da34d7a656e27",
+  "native_step_count": 819,
+  "native_step_end_exclusive": 909,
+  "native_step_start": 90,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "ca6419892f9a21b528be6f4d2a76a23e98d00b4a286309819b8d29fa89414f06",
+  "physics_prediction_calls": 1767651,
+  "remaining_signed_energy_kwh": 0.13496709690605627,
+  "remaining_travel_time_s": 81.89999999999912,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 819,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/a7aeaa96d5e7616d31f3cb7e3512ce536bbb9f4f8dd684bf18baa96ceafe6f52.json.gz",
+    "sha256": "884c45dd69aba59429f5d7a176e8b24b0d150cfb841f1cd459bcf4172bc06928",
+    "size_bytes": 83875,
+    "uncompressed_sha256": "aa60ed2252cab744c7492a9e1761d948267bf1e94353bd72dddd38b46a5cc1bf"
+  },
+  "wall_time_s": 27.683646542020142
+}

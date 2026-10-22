@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 13.059362999999394,
+  "actual_first_high_level_action": "CONTINUE",
+  "branch_id": "CF_OPTION_FIT_V1__11900000__0700m::CONTINUE",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.16038864788979795,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 79.99999999999973
+  },
+  "first_block_action_sha256": "06b88a66a323125590370eb5d97d3930b63294d645760320861585d23c5202b0",
+  "first_block_actions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "357305a255d6debfc8ccf0dd0b66da6a537cac6cd54662b34e08fbd541d6374c",
+  "injected_action_id": "CONTINUE",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 470,
+    "last_native_step": 799,
+    "native_record_count": 330,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.022246452841797326
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "c8414c22d1841593c2f4289b2ce7a797a826133ba9f6ebfb39ac603fb5646fe2",
+  "native_step_count": 330,
+  "native_step_end_exclusive": 800,
+  "native_step_start": 470,
+  "natural_first_high_level_action": "START(accel_coast_brake_50_-0.5)",
+  "option_memory_sha256": "b517548d7ffab61ebf687d94398fb8a311f288ea579f6e0471643e9d578bee3d",
+  "physics_prediction_calls": 856686,
+  "remaining_signed_energy_kwh": 0.022246452841797326,
+  "remaining_travel_time_s": 32.99999999999933,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 330,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/aaaa7343b1836ccb91ca16fa781ccbe96e630462118b97791d349dceb4d12194.json.gz",
+    "sha256": "9064a134d9ad8d4f1d22f4a93ee229dcbac5cdc99d7172f4b9d47031788db107",
+    "size_bytes": 34564,
+    "uncompressed_sha256": "a3158fc972f084f4cba6bf92a96c89698c634a79cde49efa8ea440d5e27c7bcb"
+  },
+  "wall_time_s": 13.13404645898845
+}

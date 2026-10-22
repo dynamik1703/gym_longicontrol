@@ -1,0 +1,65 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 27.267987999999605,
+  "actual_first_high_level_action": "START(cruise_40)",
+  "branch_id": "CF_OPTION_CALIBRATION_V1__11000008__0180m::START(cruise_40)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.17840265758371196,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 83.39999999999954
+  },
+  "first_block_action_sha256": "cf26c169cce173ae259f2a0514618e9d0e9be5408de0acf5d6159da11b4c7bf5",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    0.1671762696193456
+  ],
+  "first_block_option_memory_sha256": "65394d348429a99dec37becbf98f62f66c2888ef8b81043e0172857f1256e276",
+  "injected_action_id": "START(cruise_40)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 170,
+    "last_native_step": 833,
+    "native_record_count": 664,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.10118573107863751
+  },
+  "intervention_count": 2,
+  "intervention_reasons": {
+    "DEADLINE_RECOVERABILITY": 2
+  },
+  "native_action_sha256": "f178c1ec9bdecded3e071dba82cbaff4d0484fd97eea059f1786be667a2d6a17",
+  "native_step_count": 664,
+  "native_step_end_exclusive": 834,
+  "native_step_start": 170,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "ec5e441823f7bdd0a22e94bd377e330ba3770651670eda1b6bab9266919817df",
+  "physics_prediction_calls": 1706734,
+  "remaining_signed_energy_kwh": 0.10118573107863751,
+  "remaining_travel_time_s": 66.39999999999957,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 664,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/cea29f123f1548aaaa08ebc604cb07f9b30d3292eeec14455b6ebe22bdb48d64.json.gz",
+    "sha256": "248e8fc6c64f01e1090f8d1f415de9caf41f1f7271ee0003ebb9bb74dd32e663",
+    "size_bytes": 76261,
+    "uncompressed_sha256": "e632fea82fb1ca448591668dd4d26990af5db5ba92e61d2fe960f16b5a012107"
+  },
+  "wall_time_s": 28.104607999906875
+}

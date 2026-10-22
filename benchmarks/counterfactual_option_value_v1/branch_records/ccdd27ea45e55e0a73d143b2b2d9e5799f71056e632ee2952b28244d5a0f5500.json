@@ -1,0 +1,63 @@
+{
+  "action_injected": false,
+  "active_process_time_s": 1.593307999999979,
+  "actual_first_high_level_action": "CONTINUE",
+  "branch_id": "CF_OPTION_CALIBRATION_V1__11000001__0930m::REFERENCE",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.18715845451271904,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 129.9999999999969
+  },
+  "first_block_action_sha256": "75f309b20ec5d748c77d6a1a551bd9b4aeb6a204c52448974931b6e650ba36ed",
+  "first_block_actions": [
+    0.06324301910336477,
+    0.06324301910336477,
+    0.06324301910336477,
+    0.06324301910336477,
+    0.06324301910336477,
+    0.06324301910336477,
+    0.06324301910336477,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "57f47ceda6bca5ef65e9251fd9daeb5a1ddea540adfddd1fe67ae5e09d3d61bf",
+  "injected_action_id": null,
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 1240,
+    "last_native_step": 1299,
+    "native_record_count": 60,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": -0.010001299331010044
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "d6bfb8ec52b212d4885ac55a812683721fe98185065d2e7af4b82ef68375cab3",
+  "native_step_count": 60,
+  "native_step_end_exclusive": 1300,
+  "native_step_start": 1240,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "6fc215ecedde59edc12a16fe1a0c32401ac7aab9f0fd6d04280377b87d9559d8",
+  "physics_prediction_calls": 80501,
+  "remaining_signed_energy_kwh": -0.010001299331010044,
+  "remaining_travel_time_s": 5.999999999999673,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 60,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/ccdd27ea45e55e0a73d143b2b2d9e5799f71056e632ee2952b28244d5a0f5500.json.gz",
+    "sha256": "476383c64bd2261777a54768b216f5a7a499e26f65e84cc4abbdf9b306dab97b",
+    "size_bytes": 8739,
+    "uncompressed_sha256": "9e63070019676bbf4eb6ef866baeba547d3addaa5f0800361e423138b4524648"
+  },
+  "wall_time_s": 1.7646169170038775
+}

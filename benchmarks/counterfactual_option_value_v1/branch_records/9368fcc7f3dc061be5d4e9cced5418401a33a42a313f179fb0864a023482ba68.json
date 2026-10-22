@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 13.10366299999987,
+  "actual_first_high_level_action": "START(accel_coast_40_0.5)",
+  "branch_id": "CF_OPTION_FIT_V1__11900017__0700m::START(accel_coast_40_0.5)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.16936667720022286,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 81.79999999999963
+  },
+  "first_block_action_sha256": "06b88a66a323125590370eb5d97d3930b63294d645760320861585d23c5202b0",
+  "first_block_actions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "0fdb9424e90137f0b34865e12d25e374b1008034e5d3e9003cf8912cf0004637",
+  "injected_action_id": "START(accel_coast_40_0.5)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 490,
+    "last_native_step": 817,
+    "native_record_count": 328,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.019141252525205904
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "74d0a669a7e0b898a5481294bf89a925d6cf5e469f08e6e22e120b867763de97",
+  "native_step_count": 328,
+  "native_step_end_exclusive": 818,
+  "native_step_start": 490,
+  "natural_first_high_level_action": "START(accel_coast_brake_50_-0.5)",
+  "option_memory_sha256": "6dc19a1e4b30290bcc5b7626055a8c589f8a43219c506d451c75d9185cb53100",
+  "physics_prediction_calls": 847842,
+  "remaining_signed_energy_kwh": 0.019141252525205904,
+  "remaining_travel_time_s": 32.7999999999992,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 328,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/9368fcc7f3dc061be5d4e9cced5418401a33a42a313f179fb0864a023482ba68.json.gz",
+    "sha256": "225f829ccfc77aacced7ff0d829a38d4dd3c2d96440c14dca8f5d86c64fc880e",
+    "size_bytes": 33616,
+    "uncompressed_sha256": "8aa2eb312dfee9adf7cdb062c98cd7dcd669cb43529cd0e55f9276ea717587f6"
+  },
+  "wall_time_s": 13.202361459028907
+}

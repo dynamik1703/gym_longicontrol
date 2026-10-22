@@ -1,0 +1,47 @@
+{
+  "actual_position_m": 82.62489279108354,
+  "alternatives": [
+    {
+      "action_id": "CONTINUE",
+      "active_process_time_s": 29.919667999999547,
+      "branch_id": "CF_OPTION_FIT_V1__11900000__0080m::CONTINUE",
+      "delta_arrival_time_s": 0.0,
+      "delta_energy_kwh": 0.0,
+      "feasible": true,
+      "first_block_executed_behavior_differs": false,
+      "first_block_option_memory_differs": true,
+      "intervention_count": 0,
+      "introduced_infeasibility": false,
+      "native_step_count": 720,
+      "physics_prediction_calls": 1997466,
+      "remaining_signed_energy_kwh": 0.0834158277991327,
+      "remaining_travel_time_s": 71.99999999999974
+    },
+    {
+      "action_id": "START(pulse_60_0.5)",
+      "active_process_time_s": 31.00626800000009,
+      "branch_id": "CF_OPTION_FIT_V1__11900000__0080m::START(pulse_60_0.5)",
+      "delta_arrival_time_s": 0.0,
+      "delta_energy_kwh": 0.0,
+      "feasible": true,
+      "first_block_executed_behavior_differs": false,
+      "first_block_option_memory_differs": true,
+      "intervention_count": 0,
+      "introduced_infeasibility": false,
+      "native_step_count": 720,
+      "physics_prediction_calls": 1997896,
+      "remaining_signed_energy_kwh": 0.0834158277991327,
+      "remaining_travel_time_s": 71.99999999999974
+    }
+  ],
+  "nominal_target_m": 80.0,
+  "numeric_seed": 11900000,
+  "panel_id": "CF_OPTION_FIT_V1",
+  "reference_action_id": "START(cruise_60)",
+  "reference_feasible": true,
+  "reference_remaining_signed_energy_kwh": 0.0834158277991327,
+  "reference_remaining_travel_time_s": 71.99999999999974,
+  "route_sha256": "32aca91feadaee39c188d8d35f129789b3eb8dfc9f26b6352fa4211154102b62",
+  "schema_version": 1,
+  "snapshot_id": "CF_OPTION_FIT_V1__11900000__0080m"
+}

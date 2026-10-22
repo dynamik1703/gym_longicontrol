@@ -1,0 +1,186 @@
+{
+  "authorization": {
+    "actor_critic_authorized": false,
+    "bounded_supervised_training_authorized": true,
+    "full_rl_training_authorized": false,
+    "historical_validation_authorized": false,
+    "paper_authorized": false,
+    "scientific_labels_authorized": true
+  },
+  "deadline_falsification_definition": "retained completion_bound_s and deadline_viable must exactly match a fresh inherited pessimistic_completion_bound evaluation on the proposed-action successor at every retained native step",
+  "execution": {
+    "dataset_complete": true,
+    "panels_opened": true,
+    "preflight_complete": true,
+    "scientific_labels_opened": true,
+    "snapshots_frozen": true,
+    "test_labels_opened": false,
+    "test_predictions_frozen": false
+  },
+  "frozen_method_sha256": {
+    "alternative_selector.py": "835cf21cd53d93e6be0708524eea6bfa0fe8fcdcba40e3f2315fb2257fdc0d59",
+    "branch_runner.py": "8b8004ae7aa3a76f7b1ae5e7b088b9c1c9f0880e1665a87a17426ba5b54633d9",
+    "dataset.py": "076d427d9263eb9e2591dbf6b4869c343b42d6dc721d9e16e5459b9dcde61f14",
+    "execution.py": "34a609c8f52ee21e69dbf4ad43e8bc153d3250538e99cf210ff08a1c92da5b44",
+    "instrumented_controller.py": "ea0ade43297080bb8c732b23f626b68be7ea3d1d6539ec3edec91c4581d45503",
+    "integrity.py": "019fa3a6f993b7c4c30387e52c6e05996e43f3682b1f4f51254e37d7cd34c5c2",
+    "opportunity_analysis.py": "53edf5bcbb0958b49c3f1a07da32a555053d4fd5ab1450f9f001cebef6c3d06d",
+    "predictor.py": "7f39681826d16649c70920e9934f5e4383321313461bfc8c51e59a0d9bcd550e",
+    "predictor_evaluation.py": "f553fb6907498eef562fb3dad52283de129112f118883045a6bdf0be07490463",
+    "snapshot.py": "7ea040feed123a6f374ca29440797d6422d410a0848443f8115de9745263d90e",
+    "split.py": "f459c7cd439ea77c9d19458e424339c1ebf527c69d90d574b113d8aa65f1de07"
+  },
+  "frozen_source_commit": "29b31837984b654e9011d3e180a8e33926345489",
+  "go_no_go": {
+    "maximum_single_route_share_of_selected_saving": 0.5,
+    "meaningful_saving_wh": 0.2,
+    "minimum_routes_with_useful_selected_deviation": 3,
+    "minimum_valid_test_routes": 10,
+    "minimum_valid_test_snapshots": 72,
+    "new_hard_failures_allowed": 0,
+    "regret_must_improve_vs_reference": true,
+    "selected_net_energy_benefit_required": true,
+    "test_opportunity_fraction_minimum": 0.2
+  },
+  "inherited_source_sha256": {
+    "benchmarks/causal_mpc_v2/adaptive_price.py": "5c185e7d5fac40e4a98fca460b8650ff590a2b59bd8a06432ceef798b8b14fcf",
+    "benchmarks/causal_mpc_v2/controller.py": "2c135a9f31c02ee2f1b55bbb51cf7c497e7e90e16987a10e507aa903bc29348a",
+    "benchmarks/causal_mpc_v2/fixed_price.py": "0e460267abff6429d44427c4bd8a951e8346d7e69e66600a7b6bf2c00ddff6b4",
+    "benchmarks/causal_mpc_v2/planner.py": "22204ce8e141ee65b1896b1db708d54ad6a3fe0efea4654cf1ee2e9b578b64f5",
+    "benchmarks/causal_mpc_v2/terminal_value.py": "f3f573f0bb26b0074ecdf2c447427c3bca4c635d9c5501a4223f40ee1c9061f0",
+    "benchmarks/hybrid_rl_design/controller.py": "99f38f33d69267d9e204e99ad1e7116735fa48ce5367907c73c197edec4363ef",
+    "benchmarks/hybrid_rl_design/viability.py": "3303459dccfe9a6d48118c83db41c59ed1c1396ac019d6a8e0f8f7ff60c61c6f",
+    "benchmarks/physical_feasibility_reference/causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+    "benchmarks/physical_feasibility_reference/oracle_controller.py": "47cdec5bd38b27f2a0f39df74019f6f71b953d9421d36f12e68d4435e86e8d5c",
+    "benchmarks/temporal_options_v1/checkpointing.py": "6959f20083cd09234d6be767656f1577205bbe991ab0bdabf01e0755e1f98f42",
+    "benchmarks/temporal_options_v1/controller.py": "d1c3fdb28a9111d74061331fb892ad5b36c42d6ae12431cd58f17ebed482c26c",
+    "benchmarks/temporal_options_v1/feedback_executor.py": "b403e22d5f5fbbe0edd5fccf738cde618696cfe7a90a1b4888405d785425890c",
+    "benchmarks/temporal_options_v1/observation_adapter.py": "696d7595ba96117ff9c7ed092fceea4fdad82e84b5d75aff3e21ea941ec6aa11",
+    "benchmarks/temporal_options_v1/option_selector.py": "fe84e4ec8723efef47be0a93b9ffbdd3d4fbbd57cb6ffe43625b45e96fd4d0a2",
+    "benchmarks/temporal_options_v1/option_state.py": "ad08c37aa571e761250cf81fcf00955e8a6a45a3f2b1719c24aaa265f7636ef6",
+    "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+    "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+    "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+  },
+  "panel_hashes": {
+    "calibration_panel": "434f55107f03242db0131ef547275b6c70bf5ca2826a18d3fbd44a80e580710b",
+    "fit_panel": "79c91349266a88b3e1023ba977b9fb5b7fa9b7d9b785a1c880aaceff462c88f1",
+    "test_panel": "4e0f1bcf32ad095cc8842b2f45a9d7630b144bebe50294786d9e2e1a83e4ac95"
+  },
+  "paper_state": "SEALED_UNINSPECTED",
+  "physical_task": {
+    "deadline_s": 140.0,
+    "environment": "StochasticTrack-v1",
+    "feasibility_authority": "is_feasible(EpisodeMetrics, TaskSpecification)",
+    "maximum_native_steps": 1800,
+    "native_action_range": [
+      -1.0,
+      1.0
+    ],
+    "native_dt_s": 0.1,
+    "route_length_m": 1000.0,
+    "safety_claim": "empirical causal Shield; not a global theorem",
+    "speed_tolerance_m_s": 0.0
+  },
+  "predictor_preregistration": {
+    "calibration_only_selection": true,
+    "energy_margin_wh": [
+      0.2,
+      0.5,
+      1.0
+    ],
+    "families": [
+      "ridge_plus_logistic",
+      "two_by_64_neural_ensemble"
+    ],
+    "fit_only_updates": true,
+    "learning_rate": 0.001,
+    "neural_epochs": 300,
+    "neural_seeds": [
+      11,
+      29,
+      47
+    ],
+    "optimizer": "Adam",
+    "risk_threshold": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "weight_decay": 0.0001
+  },
+  "preflight": {
+    "alternative_action_id": "CONTINUE",
+    "branch_active_process_time_s": [
+      29.280883000000003,
+      29.353316,
+      28.86881799999999,
+      28.815797000000003
+    ],
+    "branch_native_steps": [
+      660,
+      660,
+      660,
+      660
+    ],
+    "branch_physics_prediction_calls": [
+      1612444,
+      1612444,
+      1612444,
+      1611805
+    ],
+    "checks": {
+      "active_compute_projection_pass": true,
+      "all_native_audits_pass": true,
+      "alternative_injection_isolated": true,
+      "baseline_action_injection_exact": true,
+      "option_memory_survives_restore": true,
+      "retained_artifact_projection_pass": true,
+      "snapshot_restore_exact": true,
+      "snapshot_serialization_deterministic": true,
+      "two_reference_continuations_identical": true
+    },
+    "fixture_seed": 12345678,
+    "fixture_snapshot_sha256": "1a20df0b2c79e2a30696391139b05a9aecb1a3a5319a16f433ffa0a8e17cefbd",
+    "fixture_target_m": 430.0,
+    "paper_episode_count": 0,
+    "projection": {
+      "active_compute_hours": 7.04479584,
+      "active_compute_limit_hours": 12.0,
+      "conservative_basis": "maximum observed fixture branch process time",
+      "maximum_scientific_branches": 864,
+      "retained_artifact_bytes": 76837410,
+      "retained_artifact_limit_bytes": 4000000000
+    },
+    "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+    "schema_version": 1,
+    "scientific_panel_episode_count": 0
+  },
+  "preparation_commit": "6b87c4894948d750f248577828f8b843def11043",
+  "prepared_utc": "2026-10-21T18:40:34.140846+00:00",
+  "resource_limits": {
+    "active_compute_hours_maximum": 12.0,
+    "alternative_branch_maximum_per_state": 2,
+    "retained_artifacts_bytes_maximum": 4000000000,
+    "sampled_state_maximum": 288
+  },
+  "sampling": {
+    "maximum_alternatives_per_snapshot": 2,
+    "maximum_snapshots": 288,
+    "route_group_partitioning": true,
+    "targets_m": [
+      80,
+      180,
+      300,
+      430,
+      560,
+      700,
+      820,
+      930
+    ]
+  },
+  "schema_version": 1,
+  "split_ledger_sha256": "d5e284cc09acec22528f1fcd1cf9ea8bf4ed37bc0102331b9bb7def239daddd2",
+  "study": "COUNTERFACTUAL_OPTION_VALUE_V1",
+  "temporal_options_v1_classification": "SEMANTIC_OR_INTEGRITY_STOP"
+}

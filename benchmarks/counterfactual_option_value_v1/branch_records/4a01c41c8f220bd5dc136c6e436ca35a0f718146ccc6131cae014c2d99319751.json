@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 31.538941000000705,
+  "actual_first_high_level_action": "START(cruise_20)",
+  "branch_id": "CF_OPTION_TEST_V1__11100001__0560m::START(cruise_20)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.1709776706168336,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 112.2999999999979
+  },
+  "first_block_action_sha256": "f1852c3f7b557d1e278e473fff1c4cfba9f8ffa3e845cfd8bbf3892f2d50046a",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "first_block_option_memory_sha256": "2b9677adc73e4fb34d5785e1cfce2f2dc3adb5e943dbf66307eb0d8d23574a25",
+  "injected_action_id": "START(cruise_20)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 430,
+    "last_native_step": 1122,
+    "native_record_count": 693,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.05957558253906252
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "79a41951f446d058cc85edb70bb584aa9ae296c31bc6e8654f8defd452061fcc",
+  "native_step_count": 693,
+  "native_step_end_exclusive": 1123,
+  "native_step_start": 430,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "30ad62239d76a3e87fdfcb377fbae18b92aab52de2fae0a6d5434a8540d98b3f",
+  "physics_prediction_calls": 1363497,
+  "remaining_signed_energy_kwh": 0.05957558253906252,
+  "remaining_travel_time_s": 69.29999999999755,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 693,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/4a01c41c8f220bd5dc136c6e436ca35a0f718146ccc6131cae014c2d99319751.json.gz",
+    "sha256": "05edd02c81e33659df6b12f2a07a25981bc4bbd139a326e02fda9cfa3ae73c0a",
+    "size_bytes": 53317,
+    "uncompressed_sha256": "0d3f46ed5483803abacbafc7171395f7d3aab5251c5d8aa132413e2d8afd3e68"
+  },
+  "wall_time_s": 31.673533292021602
+}

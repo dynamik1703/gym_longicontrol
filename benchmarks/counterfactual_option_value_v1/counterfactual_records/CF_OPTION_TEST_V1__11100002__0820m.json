@@ -1,0 +1,47 @@
+{
+  "actual_position_m": 823.1923336032553,
+  "alternatives": [
+    {
+      "action_id": "START(accel_coast_brake_50_-0.5)",
+      "active_process_time_s": 6.452697999999145,
+      "branch_id": "CF_OPTION_TEST_V1__11100002__0820m::START(accel_coast_brake_50_-0.5)",
+      "delta_arrival_time_s": -1.299999999999926,
+      "delta_energy_kwh": -0.004885405495803491,
+      "feasible": true,
+      "first_block_executed_behavior_differs": false,
+      "first_block_option_memory_differs": true,
+      "intervention_count": 0,
+      "introduced_infeasibility": false,
+      "native_step_count": 206,
+      "physics_prediction_calls": 425163,
+      "remaining_signed_energy_kwh": 0.0007051260037683471,
+      "remaining_travel_time_s": 20.59999999999883
+    },
+    {
+      "action_id": "START(accel_coast_brake_50_-1.0)",
+      "active_process_time_s": 6.670910999999251,
+      "branch_id": "CF_OPTION_TEST_V1__11100002__0820m::START(accel_coast_brake_50_-1.0)",
+      "delta_arrival_time_s": -0.6999999999999602,
+      "delta_energy_kwh": -0.0026010775186809665,
+      "feasible": true,
+      "first_block_executed_behavior_differs": false,
+      "first_block_option_memory_differs": true,
+      "intervention_count": 0,
+      "introduced_infeasibility": false,
+      "native_step_count": 212,
+      "physics_prediction_calls": 436015,
+      "remaining_signed_energy_kwh": 0.0029894539808908716,
+      "remaining_travel_time_s": 21.199999999998795
+    }
+  ],
+  "nominal_target_m": 820.0,
+  "numeric_seed": 11100002,
+  "panel_id": "CF_OPTION_TEST_V1",
+  "reference_action_id": "CONTINUE",
+  "reference_feasible": true,
+  "reference_remaining_signed_energy_kwh": 0.005590531499571838,
+  "reference_remaining_travel_time_s": 21.899999999998755,
+  "route_sha256": "c8e4fd3fd974e0f1e19f3f8116f3d3191cfc51d697192f893b89b93eb4fbb1f9",
+  "schema_version": 1,
+  "snapshot_id": "CF_OPTION_TEST_V1__11100002__0820m"
+}

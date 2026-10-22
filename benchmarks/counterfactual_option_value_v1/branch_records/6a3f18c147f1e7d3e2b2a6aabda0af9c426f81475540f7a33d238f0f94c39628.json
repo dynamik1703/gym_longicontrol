@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 27.229153999998744,
+  "actual_first_high_level_action": "START(pulse_60_0.5)",
+  "branch_id": "CF_OPTION_FIT_V1__11900017__0300m::START(pulse_60_0.5)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.169363028449568,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 81.79999999999963
+  },
+  "first_block_action_sha256": "a3d1e657256f982574314fa672eefb3899adb7fab2ed14ac82be3ebd0ab1520a",
+  "first_block_actions": [
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589,
+    0.07292680375054589
+  ],
+  "first_block_option_memory_sha256": "50f0dd5f14c1684ea92da4e3fedf32fa0da7e267f279c1aa3417482f23c0b979",
+  "injected_action_id": "START(pulse_60_0.5)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 230,
+    "last_native_step": 817,
+    "native_record_count": 588,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.05427855763633907
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "0e13fe932bbdeabba62d4f0cc2182535f6a5cbb4de0b9c648d14f1d90ccdaf5a",
+  "native_step_count": 588,
+  "native_step_end_exclusive": 818,
+  "native_step_start": 230,
+  "natural_first_high_level_action": "START(cruise_60)",
+  "option_memory_sha256": "6f3b2d8ec42669c6423f0fbf733dd90156e44a0b71bf6b162ed5235220443224",
+  "physics_prediction_calls": 1797506,
+  "remaining_signed_energy_kwh": 0.05427855763633907,
+  "remaining_travel_time_s": 58.79999999999957,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 588,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/6a3f18c147f1e7d3e2b2a6aabda0af9c426f81475540f7a33d238f0f94c39628.json.gz",
+    "sha256": "d8452bd23c86ba5348d8da28e5fcbfde85973e7b0f8f98eb29bc5df616ab3829",
+    "size_bytes": 67810,
+    "uncompressed_sha256": "b2a52bf445e7550bb3ad7a5bc14046a7d2f0aa49d268ecfdd2dad4897c2b3e68"
+  },
+  "wall_time_s": 27.414850250002928
+}

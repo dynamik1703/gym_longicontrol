@@ -1,0 +1,65 @@
+{
+  "action_injected": false,
+  "active_process_time_s": 14.466475999999602,
+  "actual_first_high_level_action": "CONTINUE",
+  "branch_id": "CF_OPTION_TEST_V1__11100003__0700m::REFERENCE",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.1673240789725422,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 94.4999999999989
+  },
+  "first_block_action_sha256": "06b88a66a323125590370eb5d97d3930b63294d645760320861585d23c5202b0",
+  "first_block_actions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "d1f7b5f0e30dc43f237a60b00f51693b5184aa987f91f2bd52b84f871420b866",
+  "injected_action_id": null,
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 490,
+    "last_native_step": 944,
+    "native_record_count": 455,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.02124646269983016
+  },
+  "intervention_count": 1,
+  "intervention_reasons": {
+    "RIGHT_ENDPOINT_SPEED": 1
+  },
+  "native_action_sha256": "bdaa361c586a3553e279f25e8c5527a6a4ea2f5a1917a001bef3d37ff623a9a7",
+  "native_step_count": 455,
+  "native_step_end_exclusive": 945,
+  "native_step_start": 490,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "fee0c62eca834cb63993596d9faef402cf32c9563a01d6aba05aa1b605a527aa",
+  "physics_prediction_calls": 409215,
+  "remaining_signed_energy_kwh": 0.02124646269983016,
+  "remaining_travel_time_s": 45.49999999999848,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 455,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/e50aabd7d0a3c068a95ca45aa3afcf269dcb94d8895156d5bc39a8b2d78da7e5.json.gz",
+    "sha256": "5f5ce7c757f3ac94d21d6821783097efea64cf559958aafc88206d974672a0c1",
+    "size_bytes": 39965,
+    "uncompressed_sha256": "71bc69d3f7f79862124e940c03a2bc67afdfbdca260022e18e7d4d9d2e073770"
+  },
+  "wall_time_s": 14.525631416938268
+}

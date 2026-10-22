@@ -1,0 +1,63 @@
+{
+  "action_injected": false,
+  "active_process_time_s": 24.553078000000824,
+  "actual_first_high_level_action": "START(accel_coast_40_0.5)",
+  "branch_id": "CF_OPTION_FIT_V1__11900017__0430m::REFERENCE",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.169363028449568,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 81.79999999999963
+  },
+  "first_block_action_sha256": "06b88a66a323125590370eb5d97d3930b63294d645760320861585d23c5202b0",
+  "first_block_actions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "b36bc8888410d6339c0ce4187bb05d16b42614d38d5f08bd14f4930d95902ae3",
+  "injected_action_id": null,
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 310,
+    "last_native_step": 817,
+    "native_record_count": 508,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.038258976298858244
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "4e2a03b8d1121018edde8fad353af9ef8533a1bdb29c3632bdc9fc8b3845d842",
+  "native_step_count": 508,
+  "native_step_end_exclusive": 818,
+  "native_step_start": 310,
+  "natural_first_high_level_action": "START(accel_coast_40_0.5)",
+  "option_memory_sha256": "73b2ca099e3d47117333a50a4b192732a4e59de623dfb6818dbdfab6ff147ed7",
+  "physics_prediction_calls": 1588684,
+  "remaining_signed_energy_kwh": 0.038258976298858244,
+  "remaining_travel_time_s": 50.79999999999946,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 508,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/54c5f367171177c6e2cd62c2b69f81554134476cbff290475f028c0ad6e2ad54.json.gz",
+    "sha256": "4868c3b30316edb2dd6134eb3f5ad804ec02922ff60c468c5ba2308a22f0917e",
+    "size_bytes": 62958,
+    "uncompressed_sha256": "8975fd81f742745459ab84eb783fcc2f4f501b7362a65f2a5934cafc05f40c5b"
+  },
+  "wall_time_s": 25.603372916928492
+}

@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 12.899828999999954,
+  "actual_first_high_level_action": "START(accel_coast_brake_50_-0.5)",
+  "branch_id": "CF_OPTION_FIT_V1__11900005__0700m::START(accel_coast_brake_50_-0.5)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.16125260418693305,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 82.79999999999957
+  },
+  "first_block_action_sha256": "ec9bae6f9735931964124b482174f6d37a33d2420e0530a583e43474b3975d43",
+  "first_block_actions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "first_block_option_memory_sha256": "c16d13e60e8166dbc86da1a9e249a7821a9586e109de467cfb968629bf8877f3",
+  "injected_action_id": "START(accel_coast_brake_50_-0.5)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 500,
+    "last_native_step": 827,
+    "native_record_count": 328,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.021975665967877228
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "1c5d90344ee22186ae35562d7c84fc5387641516c769d67491d27456cd9728fd",
+  "native_step_count": 328,
+  "native_step_end_exclusive": 828,
+  "native_step_start": 500,
+  "natural_first_high_level_action": "CONTINUE",
+  "option_memory_sha256": "a2db446f98cba3f4dfa2758fc9e47bf6183fe24bb78520bb923614fb9d3d2874",
+  "physics_prediction_calls": 775884,
+  "remaining_signed_energy_kwh": 0.021975665967877228,
+  "remaining_travel_time_s": 32.79999999999913,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 328,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/9a8c663cd37c5ae2bba969aacf0a2fe10ee998fd0ea7dae4481b759b07928245.json.gz",
+    "sha256": "79e3bea0a558bbc92b078f22634b328ad73fd970d5a80961f89d3c2681da9263",
+    "size_bytes": 33838,
+    "uncompressed_sha256": "639d9b74de900d8048dd9aba274860774c2d503d5d97123991d199d371ae146b"
+  },
+  "wall_time_s": 13.702535125077702
+}

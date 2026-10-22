@@ -1,0 +1,63 @@
+{
+  "action_injected": true,
+  "active_process_time_s": 9.099213999999847,
+  "actual_first_high_level_action": "START(cruise_20)",
+  "branch_id": "CF_OPTION_FIT_V1__11900001__0820m::START(cruise_20)",
+  "completed": true,
+  "deadline_compliant": true,
+  "feasible": true,
+  "final_episode_metrics": {
+    "completed": true,
+    "energy_kwh": 0.17406291253395964,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 108.5999999999981
+  },
+  "first_block_action_sha256": "e141241da7ab0c5a2c1a32a7d1cb198e2ccfa92ad77e199625316beb33310ce1",
+  "first_block_actions": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -0.218538892155518
+  ],
+  "first_block_option_memory_sha256": "301cb8e9635baf56818a5778d2566d4126fe92f677b13a684ceda205a4e883ff",
+  "injected_action_id": "START(cruise_20)",
+  "integrity_audit": {
+    "acceptance_flags_verified": true,
+    "deadline_bound_falsifications": [],
+    "exact_native_replay_verified": true,
+    "first_native_step": 770,
+    "last_native_step": 1085,
+    "native_record_count": 316,
+    "record_completeness_verified": true,
+    "signed_energy_kwh": 0.021276923636604134
+  },
+  "intervention_count": 0,
+  "intervention_reasons": {},
+  "native_action_sha256": "ee52f9b038f0d8bf5227e39242317159ad9056ff8a06202e0e39170364c31879",
+  "native_step_count": 316,
+  "native_step_end_exclusive": 1086,
+  "native_step_start": 770,
+  "natural_first_high_level_action": "START(cruise_30)",
+  "option_memory_sha256": "8538ef9fe33500d627dfe1e9135ec52a7fa12b60ea20d6636c774adef99f35e0",
+  "physics_prediction_calls": 531494,
+  "remaining_signed_energy_kwh": 0.021276923636604134,
+  "remaining_travel_time_s": 31.599999999998204,
+  "schema_version": 1,
+  "speed_compliant": true,
+  "trace": {
+    "native_record_count": 316,
+    "path": "/Users/romanliessner/gitlab/gym_longicontrol_counterfactual_options/benchmarks/counterfactual_option_value_v1/native_traces/dc47d62d4f5ff4b12f9d19f804c4ecac1ecedf0e9b80b801c102e3ee6b0ff817.json.gz",
+    "sha256": "8ae8c78230c838658ffe1150b16999cc6050e8e0d79259be98b801fd89b3eb92",
+    "size_bytes": 20556,
+    "uncompressed_sha256": "3580435e299d79a672a4e763e09057721ef098c2a31411b72df9a52232d080c2"
+  },
+  "wall_time_s": 9.151387416990474
+}
