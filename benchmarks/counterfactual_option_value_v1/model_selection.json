@@ -1,0 +1,1750 @@
+{
+  "all_candidates": [
+    {
+      "abstention_count": 36,
+      "accepted_count": 28,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 5,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.030309296435968913,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.030309296435968913,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.0024613574953837036,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 31,
+      "accepted_count": 33,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 6,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.029725814479698215,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.029725814479698215,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0180m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0930m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0180m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0080m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.003044839451654402,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 28,
+      "accepted_count": 36,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 7,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.028345914335293126,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.028345914335293126,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0180m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0930m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0180m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0080m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(cruise_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0080m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0430m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.00442473959605949,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 47,
+      "accepted_count": 17,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 3,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.02504002343068043,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.02504002343068043,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.0077306305006721865,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 44,
+      "accepted_count": 20,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 4,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.024456541474409732,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.024456541474409732,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0080m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.008314112456942885,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 41,
+      "accepted_count": 23,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 5,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.023076641330004644,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.023076641330004644,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0560m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0080m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0080m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.009694012601347973,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 55,
+      "accepted_count": 9,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 2,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.023171746249631364,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.023171746249631364,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        }
+      ],
+      "selected_regret_kwh": 0.009598907681721253,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 54,
+      "accepted_count": 10,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 2,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.023171746249631364,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.023171746249631364,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        }
+      ],
+      "selected_regret_kwh": 0.009598907681721253,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 52,
+      "accepted_count": 12,
+      "false_safe_count": 0,
+      "family": "linear",
+      "harmful_count": 3,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.021791846105226276,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.021791846105226276,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0080m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        }
+      ],
+      "selected_regret_kwh": 0.010978807826126341,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 45,
+      "accepted_count": 19,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 3,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.0256831261631551,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0256831261631551,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.007087527768197516,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 44,
+      "accepted_count": 20,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 3,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.0256831261631551,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0256831261631551,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.007087527768197516,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 43,
+      "accepted_count": 21,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 3,
+      "margin_wh": 0.2,
+      "net_delta_energy_kwh": -0.02577947151537366,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.02577947151537366,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0700m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0700m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0560m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.006991182415978958,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 50,
+      "accepted_count": 14,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.0262666081194258,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0262666081194258,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.006504045811926817,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 49,
+      "accepted_count": 15,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.0262666081194258,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0262666081194258,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.006504045811926817,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 48,
+      "accepted_count": 16,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 0.5,
+      "net_delta_energy_kwh": -0.026362953471644357,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.026362953471644357,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0180m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0300m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.00640770045970826,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 53,
+      "accepted_count": 11,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.0262666081194258,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0262666081194258,
+      "risk_threshold": 0.05,
+      "selected": [
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.006504045811926817,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 53,
+      "accepted_count": 11,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.0262666081194258,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.0262666081194258,
+      "risk_threshold": 0.1,
+      "selected": [
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.006504045811926817,
+      "snapshot_count": 64
+    },
+    {
+      "abstention_count": 52,
+      "accepted_count": 12,
+      "false_safe_count": 0,
+      "family": "neural",
+      "harmful_count": 2,
+      "margin_wh": 1.0,
+      "net_delta_energy_kwh": -0.026362953471644357,
+      "reference_regret_kwh": 0.03277065393135262,
+      "regret_improvement_kwh": 0.026362953471644357,
+      "risk_threshold": 0.2,
+      "selected": [
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0300m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+        },
+        {
+          "action_id": "CONTINUE",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+        }
+      ],
+      "selected_regret_kwh": 0.00640770045970826,
+      "snapshot_count": 64
+    }
+  ],
+  "artifact_sha256": "f4223932abfbf085962a6f0642240212f9870e097d1d059a284e86ed3f576bb1",
+  "neural_initialization_seeds": [
+    11,
+    29,
+    47
+  ],
+  "predefined_family_count": 2,
+  "schema_version": 1,
+  "selected": {
+    "abstention_count": 36,
+    "accepted_count": 28,
+    "false_safe_count": 0,
+    "family": "linear",
+    "harmful_count": 5,
+    "margin_wh": 0.2,
+    "net_delta_energy_kwh": -0.030309296435968913,
+    "reference_regret_kwh": 0.03277065393135262,
+    "regret_improvement_kwh": 0.030309296435968913,
+    "risk_threshold": 0.05,
+    "selected": [
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000001__0820m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-1.0)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0700m"
+      },
+      {
+        "action_id": "START(accel_coast_60_0.5)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0820m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000002__0930m"
+      },
+      {
+        "action_id": "START(cruise_30)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0820m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000003__0930m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0430m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-1.0)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0560m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0700m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-1.0)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0820m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000004__0930m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0180m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0300m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0430m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-1.0)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0560m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0700m"
+      },
+      {
+        "action_id": "START(cruise_30)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0820m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000005__0930m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0180m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0430m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000006__0930m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0430m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0560m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000007__0930m"
+      },
+      {
+        "action_id": "CONTINUE",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0430m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-0.5)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0700m"
+      },
+      {
+        "action_id": "START(accel_coast_brake_50_-0.5)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0820m"
+      },
+      {
+        "action_id": "START(cruise_20)",
+        "snapshot_id": "CF_OPTION_CALIBRATION_V1__11000008__0930m"
+      }
+    ],
+    "selected_regret_kwh": 0.0024613574953837036,
+    "snapshot_count": 64
+  },
+  "selection_rule": "zero false-safe and negative net delta required; maximize calibration regret improvement with frozen tie-breaks",
+  "test_labels_loaded": false,
+  "threshold_grid": {
+    "energy_margin_wh": [
+      0.2,
+      0.5,
+      1.0
+    ],
+    "risk": [
+      0.05,
+      0.1,
+      0.2
+    ]
+  }
+}

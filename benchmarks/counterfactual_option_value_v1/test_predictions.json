@@ -1,0 +1,2027 @@
+{
+  "family": "linear",
+  "margin_wh": 0.2,
+  "panel_id": "CF_OPTION_TEST_V1",
+  "prediction_count": 96,
+  "predictions": [
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": -0.000692071468291052,
+          "predicted_infeasibility_risk": 0.05695295670093005
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.0005254381428496273,
+          "predicted_infeasibility_risk": 0.0720441434107689
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0010254622971906152,
+          "predicted_infeasibility_risk": 0.09350970858155555
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0001744942520718762,
+          "predicted_infeasibility_risk": 0.07665076880475412
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "START(cruise_50)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 1.4415926851663307e-05,
+          "predicted_infeasibility_risk": 0.013935482447206196
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "predicted_delta_energy_kwh": -0.0002044775415095315,
+          "predicted_infeasibility_risk": 0.013585943652342398
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_1.0)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "START(pulse_60_1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -9.925875095073345e-05,
+          "predicted_infeasibility_risk": 0.014984480651503545
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -3.0135315847680243e-05,
+          "predicted_infeasibility_risk": 0.0154036940716318
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00020653108628431469,
+          "predicted_infeasibility_risk": 0.009242379893427133
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": 0.00012167513297310429,
+          "predicted_infeasibility_risk": 0.02369613613196217
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0560m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.0005046553434842817,
+          "predicted_infeasibility_risk": 0.00544126110348699
+        },
+        {
+          "action_id": "START(cruise_40)",
+          "predicted_delta_energy_kwh": -0.001756253099864525,
+          "predicted_infeasibility_risk": 0.0013919026920071519
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_40)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(pulse_30_0.5)",
+          "predicted_delta_energy_kwh": -0.00048370519244877167,
+          "predicted_infeasibility_risk": 0.0031440966127139042
+        },
+        {
+          "action_id": "START(pulse_30_1.0)",
+          "predicted_delta_energy_kwh": -0.0005500851140220977,
+          "predicted_infeasibility_risk": 0.0027239653227554964
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_30_0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(pulse_30_1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0020926164683878435,
+          "predicted_infeasibility_risk": 0.0050845796364515795
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0012416484232691042,
+          "predicted_infeasibility_risk": 0.004095844057273605
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100000,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100000__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00046110036514040173,
+          "predicted_infeasibility_risk": 0.02655283730328781
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0005302238002434551,
+          "predicted_infeasibility_risk": 0.027286727448618164
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.000278989115065221,
+          "predicted_infeasibility_risk": 0.022798210599523472
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0003481125501682743,
+          "predicted_infeasibility_risk": 0.02343082496952445
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": 5.794838468151537e-05,
+          "predicted_infeasibility_risk": 0.06690959504982646
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": 0.00022458171012294,
+          "predicted_infeasibility_risk": 0.08440292935926544
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0300m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0005303431998804852,
+          "predicted_infeasibility_risk": 0.0013604312599349085
+        },
+        {
+          "action_id": "START(cruise_50)",
+          "predicted_delta_energy_kwh": -0.0012509962601426135,
+          "predicted_infeasibility_risk": 0.0009210339218138549
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_50)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(cruise_40)",
+      "selected_action_id": "START(cruise_50)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.00016522772629532168,
+          "predicted_infeasibility_risk": 0.023347140372450316
+        },
+        {
+          "action_id": "START(pulse_30_0.5)",
+          "predicted_delta_energy_kwh": 0.00014901267280678675,
+          "predicted_infeasibility_risk": 0.023683590802729616
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0004125748265484884,
+          "predicted_infeasibility_risk": 0.0012348295639208545
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0003691034379156967,
+          "predicted_infeasibility_risk": 0.002519899515351702
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_60_0.5)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.000891882660810065,
+          "predicted_infeasibility_risk": 0.007884664813361258
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.0009679055068138244,
+          "predicted_infeasibility_risk": 0.01026572751225417
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "START(cruise_30)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0820m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 9.369558430955948e-06,
+          "predicted_infeasibility_risk": 0.05111129323376985
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0008603376035496952,
+          "predicted_infeasibility_risk": 0.04154605740873238
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100001,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100001__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0010043026675359379,
+          "predicted_infeasibility_risk": 0.21672676634585342
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.00015333462241719846,
+          "predicted_infeasibility_risk": 0.18211594908528136
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0080m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00013301232731605513,
+          "predicted_infeasibility_risk": 0.016353718273751167
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "predicted_delta_energy_kwh": -0.0003519057956772502,
+          "predicted_infeasibility_risk": 0.015944504515748404
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_1.0)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "START(pulse_60_1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00042573500524001876,
+          "predicted_infeasibility_risk": 0.03015382096576175
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00035661157013696553,
+          "predicted_infeasibility_risk": 0.03098407032332966
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 8.247372821138255e-05,
+          "predicted_infeasibility_risk": 0.010684228379989936
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.00015159716331443566,
+          "predicted_infeasibility_risk": 0.010984477366690984
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0008868178996534876,
+          "predicted_infeasibility_risk": 0.07897800035211892
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.001307648494238582,
+          "predicted_infeasibility_risk": 0.16820111441441393
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0560m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00015360712668157538,
+          "predicted_infeasibility_risk": 0.004202218508205574
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.0002384630799927859,
+          "predicted_infeasibility_risk": 0.010860285689794026
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "START(accel_coast_brake_50_-1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": -0.0009804690979663892,
+          "predicted_infeasibility_risk": 0.017602855461595696
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.0008138357725249652,
+          "predicted_infeasibility_risk": 0.022516146779585453
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(accel_coast_brake_50_-0.5)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.001473259607189112,
+          "predicted_infeasibility_risk": 0.006653424854106089
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0006222915620703729,
+          "predicted_infeasibility_risk": 0.005361259207241398
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100002,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100002__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": 0.0003493646793735101,
+          "predicted_infeasibility_risk": 0.08528583858421243
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": 0.0005159980048149345,
+          "predicted_infeasibility_risk": 0.1070324894414024
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0009027509812032561,
+          "predicted_infeasibility_risk": 0.07440790858780721
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -5.1782936084516914e-05,
+          "predicted_infeasibility_risk": 0.060762004493634086
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "START(cruise_50)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00019010591057505398,
+          "predicted_infeasibility_risk": 0.007972858692264332
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "predicted_delta_energy_kwh": -2.8787557786140885e-05,
+          "predicted_infeasibility_risk": 0.00777169953829268
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_1.0)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 6.225024508955273e-05,
+          "predicted_infeasibility_risk": 0.0056438389927813675
+        },
+        {
+          "action_id": "START(pulse_30_0.5)",
+          "predicted_delta_energy_kwh": 0.00012205803760477738,
+          "predicted_infeasibility_risk": 0.007460944227966022
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_30_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0430m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0004060215023777053,
+          "predicted_infeasibility_risk": 0.010654256397450743
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.0004908774556889161,
+          "predicted_infeasibility_risk": 0.027255244730426023
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "START(accel_coast_brake_50_-1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0560m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0008679980996132582,
+          "predicted_infeasibility_risk": 0.007017888141259497
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0017189661447319978,
+          "predicted_infeasibility_risk": 0.00870583813807109
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_30)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.00040036398547069635,
+          "predicted_infeasibility_risk": 0.0071453648928132005
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0007451717340520311,
+          "predicted_infeasibility_risk": 0.012836662320155396
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.00013630329615260607,
+          "predicted_infeasibility_risk": 0.01993675954783511
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00032799868706527964,
+          "predicted_infeasibility_risk": 0.01732100517768505
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100003,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(accel_coast_60_0.5)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100003__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0005107518674238071,
+          "predicted_infeasibility_risk": 0.014930575852268998
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0005798753025268606,
+          "predicted_infeasibility_risk": 0.01534830470282979
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": 0.00021559641131442406,
+          "predicted_infeasibility_risk": 0.145348556447111
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": 0.00038222973675584865,
+          "predicted_infeasibility_risk": 0.17940651309925493
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_60)",
+          "predicted_delta_energy_kwh": 1.8650091256299737e-05,
+          "predicted_infeasibility_risk": 0.027912523375119173
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00014880448612970864,
+          "predicted_infeasibility_risk": 0.026693275084896197
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_60)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "START(cruise_50)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0300m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.0014083446975744105,
+          "predicted_infeasibility_risk": 0.019359525235369116
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.00030559977856759715,
+          "predicted_infeasibility_risk": 0.018701057784701852
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_30)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0002620790679922633,
+          "predicted_infeasibility_risk": 0.15686267498796916
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.0002022229152256224,
+          "predicted_infeasibility_risk": 0.13882664636321904
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0560m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -9.595630112562315e-05,
+          "predicted_infeasibility_risk": 0.012907348423205466
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0009469243462443625,
+          "predicted_infeasibility_risk": 0.01598902857582727
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_30)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0009254548030532838,
+          "predicted_infeasibility_risk": 0.003661331723496909
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.0010014776490570433,
+          "predicted_infeasibility_risk": 0.004773140642043166
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "START(cruise_30)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.00046093016374211017,
+          "predicted_infeasibility_risk": 0.034387625592849906
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0003900378813766291,
+          "predicted_infeasibility_risk": 0.027860252245604327
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100005,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100005__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00015580062071641007,
+          "predicted_infeasibility_risk": 0.020857829449875034
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.00022492405581946335,
+          "predicted_infeasibility_risk": 0.021437782497991834
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": -3.0986200862026845e-05,
+          "predicted_infeasibility_risk": 0.09323116506186838
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": 0.00013564712457939777,
+          "predicted_infeasibility_risk": 0.1167451872594885
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_50)",
+          "predicted_delta_energy_kwh": -0.00035368257239701343,
+          "predicted_infeasibility_risk": 0.00870592507368293
+        },
+        {
+          "action_id": "START(cruise_60)",
+          "predicted_delta_energy_kwh": 0.0006035485003541765,
+          "predicted_infeasibility_risk": 0.013781211051654505
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_50)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(cruise_40)",
+      "selected_action_id": "START(cruise_50)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0300m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0015921076600926448,
+          "predicted_infeasibility_risk": 0.023306697292154996
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": -0.0014021823671704426,
+          "predicted_infeasibility_risk": 0.02734332320263622
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_50)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(pulse_60_0.5)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(pulse_30_0.5)",
+          "predicted_delta_energy_kwh": -4.068709872814015e-05,
+          "predicted_infeasibility_risk": 0.015131617233717988
+        },
+        {
+          "action_id": "START(pulse_30_1.0)",
+          "predicted_delta_energy_kwh": -0.00010706702030146575,
+          "predicted_infeasibility_risk": 0.013130747905396895
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_30_0.5)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0009161825898424686,
+          "predicted_infeasibility_risk": 0.010070362052091273
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.000992205435846228,
+          "predicted_infeasibility_risk": 0.01310275868877179
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(cruise_30)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00019349297072798912,
+          "predicted_infeasibility_risk": 0.0065288310404678215
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00023696435936078065,
+          "predicted_infeasibility_risk": 0.013250203847801541
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_60_0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": "START(accel_coast_60_0.5)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0011174608317736914,
+          "predicted_infeasibility_risk": 0.01500625973176985
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.00026649278665495175,
+          "predicted_infeasibility_risk": 0.012111664245778232
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100008,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100008__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0002698318593186268,
+          "predicted_infeasibility_risk": 0.027996599340207155
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.00033895529442168034,
+          "predicted_infeasibility_risk": 0.0287692141027818
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0080m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0003626188445545776,
+          "predicted_infeasibility_risk": 0.04922104897131867
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00029349540945152434,
+          "predicted_infeasibility_risk": 0.050548928677150023
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00013155393308572505,
+          "predicted_infeasibility_risk": 0.013107509145936079
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -6.243049798267175e-05,
+          "predicted_infeasibility_risk": 0.013474929808091096
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -6.17878076245955e-05,
+          "predicted_infeasibility_risk": 0.015572261365398975
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0003590427869604988,
+          "predicted_infeasibility_risk": 0.035961406342236615
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 4.169088439319266e-05,
+          "predicted_infeasibility_risk": 0.013927616906019938
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -4.316506891801814e-05,
+          "predicted_infeasibility_risk": 0.03544627269228444
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -3.0245548298220787e-05,
+          "predicted_infeasibility_risk": 0.008451003159229415
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0003905850462868733,
+          "predicted_infeasibility_risk": 0.019702724522156486
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": -0.0021926396359295258,
+          "predicted_infeasibility_risk": 0.02802438911468525
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.002026006310488101,
+          "predicted_infeasibility_risk": 0.03574070130085307
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_brake_50_-0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(accel_coast_brake_50_-0.5)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.00028712684410495397,
+          "predicted_infeasibility_risk": 0.011412591465650872
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0005638412010137855,
+          "predicted_infeasibility_risk": 0.00920470992537142
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100010,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100010__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00023200842703440422,
+          "predicted_infeasibility_risk": 0.03988920389990834
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0003011318621374575,
+          "predicted_infeasibility_risk": 0.04097618011927262
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00027093170180866915,
+          "predicted_infeasibility_risk": 0.022308851975561716
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.00034005513691172243,
+          "predicted_infeasibility_risk": 0.022928206020024385
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0005744253738830018,
+          "predicted_infeasibility_risk": 0.011420063532732937
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.0005053019387799485,
+          "predicted_infeasibility_risk": 0.011740745611160753
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0300m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0002740547757552709,
+          "predicted_infeasibility_risk": 0.008851120921802175
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0001467758188298232,
+          "predicted_infeasibility_risk": 0.020624481008837757
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0430m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0006523217981325599,
+          "predicted_infeasibility_risk": 0.017805504579421615
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.0007371777514437708,
+          "predicted_infeasibility_risk": 0.045041953289540436
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "START(accel_coast_brake_50_-1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 3.813909379209914e-05,
+          "predicted_infeasibility_risk": 0.004813209023994166
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0004589696883771934,
+          "predicted_infeasibility_risk": 0.011276629815534362
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": -0.0012262371979316982,
+          "predicted_infeasibility_risk": 0.007628759998744856
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.002940181674073705,
+          "predicted_infeasibility_risk": 0.007366289044084833
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_30)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.002761526873521599,
+          "predicted_infeasibility_risk": 0.002802358930764531
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0019105588284028601,
+          "predicted_infeasibility_risk": 0.002256412201032632
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100011,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100011__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00029766439667340636,
+          "predicted_infeasibility_risk": 0.026824379799509957
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "predicted_delta_energy_kwh": 7.877092831221165e-05,
+          "predicted_infeasibility_risk": 0.02616013010377912
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_1.0)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00030068165008354355,
+          "predicted_infeasibility_risk": 0.01003545087624431
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.0003698050851865971,
+          "predicted_infeasibility_risk": 0.010317658011920897
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0006568901934886051,
+          "predicted_infeasibility_risk": 0.024037126008164565
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.0005877667583855517,
+          "predicted_infeasibility_risk": 0.024703249265801384
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -5.811245852853157e-05,
+          "predicted_infeasibility_risk": 0.00839135180836006
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0008688784325939674,
+          "predicted_infeasibility_risk": 0.008809590909324306
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_30)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(coast_partial_35)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0006455760116788133,
+          "predicted_infeasibility_risk": 0.12830108021322262
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.000205392033439926,
+          "predicted_infeasibility_risk": 0.1546179318079404
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_30)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0011306256491773645,
+          "predicted_infeasibility_risk": 0.007993790321673853
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.0012066484951811238,
+          "predicted_infeasibility_risk": 0.010407461758242116
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_30)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.0010411775500871483,
+          "predicted_infeasibility_risk": 0.004926589154001215
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.0011172003960909075,
+          "predicted_infeasibility_risk": 0.006420133477504127
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_30)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0820m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00023585338645191442,
+          "predicted_infeasibility_risk": 0.025833909813205855
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0011628442775744132,
+          "predicted_infeasibility_risk": 0.027097758132391788
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100012,
+      "reference_action_id": "START(cruise_20)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100012__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.0012235365886839164,
+          "predicted_infeasibility_risk": 0.06003125471852324
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": -0.0012274734856583878,
+          "predicted_infeasibility_risk": 0.06467949032438886
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": 0.0001242169466278504,
+          "predicted_infeasibility_risk": 0.10166061361999802
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 1.0314499709407544e-05,
+          "predicted_infeasibility_risk": 0.11140324947130972
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_50)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "START(coast_partial_35)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.004919072570515542,
+          "predicted_infeasibility_risk": 0.33369979184940746
+        },
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": 0.0024680624961732392,
+          "predicted_infeasibility_risk": 0.35161168019182076
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0012895716890173811,
+          "predicted_infeasibility_risk": 0.41481728601226076
+        },
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.003509676461696794,
+          "predicted_infeasibility_risk": 0.24645054626455823
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0430m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0002449481640274171,
+          "predicted_infeasibility_risk": 0.3153809086945091
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.0002193538191904686,
+          "predicted_infeasibility_risk": 0.28528561115612133
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": -0.0006192012036996402,
+          "predicted_infeasibility_risk": 0.6410184710404642
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.001083503186917526,
+          "predicted_infeasibility_risk": 0.6074191610696618
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.0009600178195069202,
+          "predicted_infeasibility_risk": 0.18525214313480265
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0008405235848703691,
+          "predicted_infeasibility_risk": 0.12681254001563377
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_60_0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "START(accel_coast_40_0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0820m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.00010437477708960791,
+          "predicted_infeasibility_risk": 0.6253179156749273
+        },
+        {
+          "action_id": "START(accel_coast_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00035992720612827787,
+          "predicted_infeasibility_risk": 0.5911862844143199
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100013,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100013__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": 0.00015580062071641007,
+          "predicted_infeasibility_risk": 0.020857829449875034
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 0.00022492405581946335,
+          "predicted_infeasibility_risk": 0.021437782497991834
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -2.6310629358770384e-05,
+          "predicted_infeasibility_risk": 0.017893686176170164
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": 4.281280574428272e-05,
+          "predicted_infeasibility_risk": 0.01839276925428685
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0180m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0002842038052977213,
+          "predicted_infeasibility_risk": 0.01160098939408638
+        },
+        {
+          "action_id": "START(pulse_60_0.5)",
+          "predicted_delta_energy_kwh": -0.00021508037019466798,
+          "predicted_infeasibility_risk": 0.011926690683180325
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_0.5)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.0001916427991398178,
+          "predicted_infeasibility_risk": 0.011440935717155721
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.00022918779544527643,
+          "predicted_infeasibility_risk": 0.026566814042255308
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(accel_coast_40_0.5)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0430m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00014902823339165257,
+          "predicted_infeasibility_risk": 0.00629934822461683
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-1.0)",
+          "predicted_delta_energy_kwh": -0.00023388418670286336,
+          "predicted_infeasibility_risk": 0.016226001636611035
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "START(accel_coast_brake_50_-1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0560m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00028346060083346065,
+          "predicted_infeasibility_risk": 0.005662372520516051
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0001373699937516336,
+          "predicted_infeasibility_risk": 0.013250909963534292
+        }
+      ],
+      "heuristic_runner_up_action_id": "CONTINUE",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "START(accel_coast_brake_50_-0.5)",
+      "selected_action_id": "CONTINUE",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0700m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": -0.0012282693355575225,
+          "predicted_infeasibility_risk": 0.01164003756757374
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.0029422138116995287,
+          "predicted_infeasibility_risk": 0.011241120096399366
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_35)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_30)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0820m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": -0.0024562271290976072,
+          "predicted_infeasibility_risk": 0.003585566004808997
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": -0.001605259083978868,
+          "predicted_infeasibility_risk": 0.0028874791580076288
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100014,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": "START(cruise_20)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100014__0930m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0005378491465827062,
+          "predicted_infeasibility_risk": 0.21826187167050107
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 3.168885004530132e-05,
+          "predicted_infeasibility_risk": 0.38532626600056624
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_30)",
+      "nominal_target_m": 80.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "START(cruise_20)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0080m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": 0.00011934165919716729,
+          "predicted_infeasibility_risk": 0.056502860729875835
+        },
+        {
+          "action_id": "START(accel_coast_brake_50_-0.5)",
+          "predicted_delta_energy_kwh": -0.00032207291247767037,
+          "predicted_infeasibility_risk": 0.09328642605416727
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_50)",
+      "nominal_target_m": 180.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "START(coast_partial_35)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0180m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(pulse_45_1.0)",
+          "predicted_delta_energy_kwh": -0.0006353514730934733,
+          "predicted_infeasibility_risk": 0.12438340136553502
+        },
+        {
+          "action_id": "START(cruise_50)",
+          "predicted_delta_energy_kwh": -0.0015977179005106834,
+          "predicted_infeasibility_risk": 0.08830455467515479
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_45_1.0)",
+      "nominal_target_m": 300.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0300m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(coast_partial_50)",
+          "predicted_delta_energy_kwh": 0.00013227588451714052,
+          "predicted_infeasibility_risk": 0.08925905279886776
+        },
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 1.837343759869767e-05,
+          "predicted_infeasibility_risk": 0.09794276439284366
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(coast_partial_50)",
+      "nominal_target_m": 430.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "START(coast_partial_35)",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0430m"
+    },
+    {
+      "abstained": false,
+      "candidate_predictions": [
+        {
+          "action_id": "CONTINUE",
+          "predicted_delta_energy_kwh": -0.00018248437041684608,
+          "predicted_infeasibility_risk": 0.015686238453908645
+        },
+        {
+          "action_id": "START(pulse_60_1.0)",
+          "predicted_delta_energy_kwh": -0.0004013778387780411,
+          "predicted_infeasibility_risk": 0.015293467145504443
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_60_1.0)",
+      "nominal_target_m": 560.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "START(cruise_60)",
+      "selected_action_id": "START(pulse_60_1.0)",
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0560m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_40)",
+          "predicted_delta_energy_kwh": 1.7229329136199043e-05,
+          "predicted_infeasibility_risk": 0.02079181505251131
+        },
+        {
+          "action_id": "START(coast_partial_35)",
+          "predicted_delta_energy_kwh": 0.002278137772485006,
+          "predicted_infeasibility_risk": 0.07693189831100171
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_40)",
+      "nominal_target_m": 700.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0700m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(pulse_30_0.5)",
+          "predicted_delta_energy_kwh": -0.0001309744822510793,
+          "predicted_infeasibility_risk": 0.014526915153787325
+        },
+        {
+          "action_id": "START(cruise_30)",
+          "predicted_delta_energy_kwh": 0.0007362086163561952,
+          "predicted_infeasibility_risk": 0.01155512299532169
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(pulse_30_0.5)",
+      "nominal_target_m": 820.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0820m"
+    },
+    {
+      "abstained": true,
+      "candidate_predictions": [
+        {
+          "action_id": "START(cruise_20)",
+          "predicted_delta_energy_kwh": 0.0007789272523724438,
+          "predicted_infeasibility_risk": 0.010337185030584438
+        },
+        {
+          "action_id": "START(accel_coast_40_0.5)",
+          "predicted_delta_energy_kwh": 0.0011237350009537786,
+          "predicted_infeasibility_risk": 0.018523342941514462
+        }
+      ],
+      "heuristic_runner_up_action_id": "START(cruise_20)",
+      "nominal_target_m": 930.0,
+      "numeric_seed": 11100015,
+      "reference_action_id": "CONTINUE",
+      "selected_action_id": null,
+      "snapshot_id": "CF_OPTION_TEST_V1__11100015__0930m"
+    }
+  ],
+  "risk_threshold": 0.05,
+  "schema_version": 1,
+  "test_outcome_labels_loaded": false
+}

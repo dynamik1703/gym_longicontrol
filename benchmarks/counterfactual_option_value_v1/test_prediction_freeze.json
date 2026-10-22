@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-22T18:19:57.114210+00:00",
+  "model_selection_sha256": "1b0e4506ed906ee0b96d82a86700016ab905371bf43492ac8f26e6a3c108d598",
+  "normalization_frozen": true,
+  "predictor_artifact_sha256": "f4223932abfbf085962a6f0642240212f9870e097d1d059a284e86ed3f576bb1",
+  "schema_version": 1,
+  "test_labels_opened": false,
+  "test_predictions_sha256": "c19445bbe46af51b5ba149228a1321f18c8b634bacded3339de67f79d9e4f051",
+  "thresholds_frozen": true,
+  "weights_frozen": true
+}
