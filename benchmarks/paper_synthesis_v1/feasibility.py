@@ -226,7 +226,7 @@ def verified_witness(record: dict[str, Any], task: dict[str, Any]) -> bool:
         <= requirements["max_speed_violation_m_s"]
         and record["route_sha256"] == task["route_sha256"]
         and record["full_task_sha256"]
-        == hashlib.sha256(canonical_json_from_encoded(task).encode()).hexdigest()
+        == task.get("_audit_full_task_sha256")
     )
 
 
@@ -261,6 +261,9 @@ def load_historical_tasks(root: Path = REPOSITORY_ROOT) -> dict[str, dict[str, A
             if route_hash != row["route_sha256"]:
                 raise RuntimeError(f"route fingerprint mismatch in {relative}")
             task = decode_float_markers(encoded)
+            # This audit-only identity is added only after the canonical bytes
+            # above have independently reproduced both committed hashes.
+            task["_audit_full_task_sha256"] = row["full_task_sha256"]
             key = row["full_task_sha256"]
             entry = tasks.setdefault(
                 key,
@@ -388,6 +391,14 @@ def load_verified_witnesses(
 def build_audit(root: Path = REPOSITORY_ROOT) -> dict[str, Any]:
     tasks = load_historical_tasks(root)
     witnesses = load_verified_witnesses(tasks, root)
+    record_counts_by_source: dict[str, int] = defaultdict(int)
+    verified_counts_by_source: dict[str, int] = defaultdict(int)
+    for full_hash, records in witnesses.items():
+        task = tasks[full_hash]["canonical_task"]
+        for record in records:
+            record_counts_by_source[record["source"]] += 1
+            if verified_witness(record, task):
+                verified_counts_by_source[record["source"]] += 1
     rows: list[dict[str, Any]] = []
     for full_hash, entry in sorted(tasks.items()):
         task = entry["canonical_task"]
@@ -474,6 +485,15 @@ def build_audit(root: Path = REPOSITORY_ROOT) -> dict[str, Any]:
             "classification_accepted_tasks": dict(sorted(accepted_counts.items())),
             "trusted_historical_controller_task_records": sum(
                 len(records) for records in witnesses.values()
+            ),
+            "verified_feasible_trajectory_records": sum(
+                verified_counts_by_source.values()
+            ),
+            "controller_task_records_by_source": dict(
+                sorted(record_counts_by_source.items())
+            ),
+            "verified_witness_records_by_source": dict(
+                sorted(verified_counts_by_source.items())
             ),
         },
         "tasks": rows,

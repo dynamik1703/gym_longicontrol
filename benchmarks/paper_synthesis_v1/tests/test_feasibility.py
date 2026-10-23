@@ -1,4 +1,3 @@
-import hashlib
 import json
 
 import pytest
@@ -8,7 +7,6 @@ from benchmarks.paper_synthesis_v1.feasibility import (
     PaperSeedAccessError,
     assert_not_paper_seed,
     build_audit,
-    canonical_json_from_encoded,
     classify_task,
     conservative_discrete_lower_bound,
     load_historical_tasks,
@@ -47,9 +45,7 @@ def test_missing_content_and_failed_episode_remain_unresolved():
         "travel_time_s": 180.0,
         "max_speed_violation_m_s": 0.0,
         "route_sha256": task["route_sha256"],
-        "full_task_sha256": hashlib.sha256(
-            canonical_json_from_encoded(task).encode()
-        ).hexdigest(),
+        "full_task_sha256": task["_audit_full_task_sha256"],
         "source": "synthetic-test-record",
     }
     assert classify_task(task, witness_records=[failure])[0] != "FEASIBLE_WITNESS"
@@ -63,9 +59,7 @@ def test_aggregate_outcome_is_not_promoted_to_witness():
         "travel_time_s": 100.0,
         "max_speed_violation_m_s": 0.0,
         "route_sha256": task["route_sha256"],
-        "full_task_sha256": hashlib.sha256(
-            canonical_json_from_encoded(task).encode()
-        ).hexdigest(),
+        "full_task_sha256": task["_audit_full_task_sha256"],
         "source": "aggregate-only-test",
         "aggregate_only": True,
     }
