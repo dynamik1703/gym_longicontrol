@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "study": "FEEDBACK_CORRECTED_RESIDUAL_ACTION_CHUNKING_RL_V1",
+  "source": {
+    "frozen_commit": "b1613e62ec381932cca3fb43ae698d2f75ffaa5e",
+    "frozen_tree": "c1bc3f4eab0eb3a6d96966df25fe99a518493967",
+    "branch": "research/feedback-chunk-rl-v1",
+    "verified_remote": "gym_longicontrol_origin",
+    "verified_remote_url": "https://github.com/dynamik1703/gym_longicontrol.git"
+  },
+  "methods": {
+    "CHUNK3_RESIDUAL_SAC": {
+      "action_dim": 3,
+      "actor_interval_native_steps": 30,
+      "target_entropy": -3.0
+    },
+    "RESIDUAL1S_SAC": {
+      "action_dim": 1,
+      "actor_interval_native_steps": 10,
+      "target_entropy": -1.0
+    }
+  },
+  "controller": {
+    "observation_dim": 16,
+    "mpc_interval_native_steps": 10,
+    "safety_interval_native_steps": 1,
+    "residual_scale": 0.25,
+    "adaptive_high_reserve_s": 24.0,
+    "adaptive_low_reserve_s": 2.0
+  },
+  "learner": {
+    "hidden_sizes": [256, 256],
+    "batch_size": 256,
+    "tau": 0.005,
+    "gamma_decision": 0.99,
+    "reward_scale": -1000.0,
+    "actor_learning_rate": 0.0003,
+    "critic_learning_rate": 0.0003,
+    "entropy_learning_rate": 0.0003,
+    "multiplier_learning_rate": 0.001,
+    "intervention_regularizer_weight": 0.05,
+    "initial_log_std_bias": -1.6094379124341003,
+    "initial_mean_output_scale": 0.001
+  },
+  "training": {
+    "seeds": [11, 29, 47],
+    "native_transitions_per_run": 300000,
+    "gradient_updates_per_run": 30000,
+    "warmup_native_transitions": 10000,
+    "replay_capacity": 300000,
+    "technical_checkpoint_interval": 10000,
+    "scientific_checkpoint_interval": 50000,
+    "heartbeat_interval": 250,
+    "diagnostic_steps": [100000, 200000, 300000]
+  },
+  "splits": {
+    "diagnostic": {
+      "id": "CHUNK_RL_DIAGNOSTIC_V1",
+      "candidate_start": 11200000,
+      "accepted_count": 36
+    },
+    "validation": {
+      "id": "CHUNK_RL_VALIDATION_V1",
+      "candidate_start": 11300000,
+      "accepted_count": 36
+    }
+  },
+  "authorization": {
+    "implementation_authorized": true,
+    "preflight_authorized": true,
+    "main_training_authorized_after_gates": true,
+    "diagnostic_authorized_after_freeze": true,
+    "validation_authorized": false,
+    "paper_authorized": false
+  },
+  "limits": {
+    "active_compute_hours": 24.0,
+    "retained_artifacts_gb": 12.0
+  },
+  "success_levels": {
+    "A": "Preserve strongest non-learning feasible coverage and meaningfully improve beyond frozen Hybrid RL.",
+    "B": "No added failures versus RESIDUAL1S and at least 1% three-seed mean paired feasible-only saving.",
+    "C": "Preserve AdaptivePrice coverage and at least 3% paired feasible-only saving for every seed."
+  }
+}
+
