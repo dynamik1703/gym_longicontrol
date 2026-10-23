@@ -1,0 +1,71 @@
+{
+  "checkpoint": {
+    "attempt_id": "resource-CHUNK3_RESIDUAL_SAC",
+    "gradient_update_count": 0,
+    "macro_transition_count": 34,
+    "native_transition_count": 1000,
+    "path": "/var/folders/pn/_9sq_kc17dn3cj810f9lkfx40000gn/T/feedback-chunk-preflight-ts82favd/resource-checkpoint.pkl",
+    "restore_s": 0.05334533299901523,
+    "schema_version": 1,
+    "sha256": "58c309f397d0a92f6b86b0acaaa99c6cd078189144e5a63dec43fb06f8d08d14",
+    "size_bytes": 52715292,
+    "write_s": 0.05985300000247662
+  },
+  "disk_gate_passed": true,
+  "gradient_updates": {
+    "count": 50,
+    "mean_process_time_s": 0.005561919999999531,
+    "mean_wall_time_s": 0.005517929160050699,
+    "process_time_s": 0.2780959999999766,
+    "wall_time_s": 0.27589645800253493
+  },
+  "host": {
+    "maximum_rss_platform_units": 526024704,
+    "mean_native_process_time_s": 0.008432942499999995,
+    "mean_update_process_time_s": 0.005561919999999531
+  },
+  "limits": {
+    "active_compute_hours": 24.0,
+    "retained_artifacts_gb": 12.0
+  },
+  "measurements": [
+    {
+      "method": "CHUNK3_RESIDUAL_SAC",
+      "native_transitions": 1000,
+      "process_time_per_native_s": 0.008226798000000002,
+      "process_time_s": 8.226798000000002,
+      "wall_time_per_native_s": 0.008255829875000927,
+      "wall_time_s": 8.255829875000927
+    },
+    {
+      "method": "RESIDUAL1S_SAC",
+      "native_transitions": 1000,
+      "process_time_per_native_s": 0.00863908699999999,
+      "process_time_s": 8.63908699999999,
+      "wall_time_per_native_s": 0.00890380658399954,
+      "wall_time_s": 8.90380658399954
+    }
+  ],
+  "native_evidence": {
+    "compressed_bytes_per_row": 161.9485,
+    "sample_rows": 2000,
+    "sample_sha256": "46ea21ad15663693981a645e52fde22a366635798870eae856a03573d637254e"
+  },
+  "neural_inference": {
+    "count": 1000,
+    "mean_wall_time_s": 4.854962500030524e-05,
+    "wall_time_s": 0.04854962500030524
+  },
+  "projection": {
+    "checkpoint_s": 10.773540000445792,
+    "diagnostic_s": 9266.203687860252,
+    "projected_active_compute_hours": 14.285487383205691,
+    "projected_retained_bytes": 3680453944.0,
+    "projected_retained_gb": 3.680453944,
+    "raw_total_s": 25713.877289770244,
+    "training_collection_s": 15443.672813100422,
+    "training_updates_s": 993.2272488091257,
+    "uncertainty_factor": 2.0
+  },
+  "runtime_gate_passed": true
+}

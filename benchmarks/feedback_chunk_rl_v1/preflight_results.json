@@ -1,0 +1,257 @@
+{
+  "gates": {
+    "A_zero_residual_parity": true,
+    "B_action_chunk_timing": true,
+    "C_distinct_phase_influence": true,
+    "D_physical_shield_unchanged": true,
+    "E_exact_native_speed_compliance": true,
+    "F_new_speed_limit_response": true,
+    "G_mid_chunk_intervention": true,
+    "H_partial_chunk_recovery": true,
+    "I_smdp_targets": true,
+    "J_route_clean_split": true,
+    "K_numerical_stability": true,
+    "L_resource_projection": true
+  },
+  "generated_at": "2026-10-23T14:55:55.450292+00:00",
+  "influence_and_timing": {
+    "actor_boundaries": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330,
+      360,
+      390,
+      420,
+      450,
+      480
+    ],
+    "checks": {
+      "actor_boundaries_exactly_30_native_steps": true,
+      "all_three_phases_influenced": true,
+      "all_three_phases_requested": true,
+      "distinct_scaled_influence": true,
+      "residual_scale_frozen": true
+    },
+    "influenced_native_steps": 221,
+    "native_steps": 500,
+    "passed": true
+  },
+  "interruption": {
+    "checks": {
+      "new_visibility_cancelled": true,
+      "new_visibility_mid_chunk_observed": true,
+      "no_mid_chunk_regeneration": true,
+      "phase_two_residual_rejected": true
+    },
+    "passed": true
+  },
+  "passed": true,
+  "physical_safety": {
+    "passed": true,
+    "rows": [
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "constant_100_km_h",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 110.79999999999798
+      },
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "upward_changes",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 116.29999999999767
+      },
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "maximum_legal_downward_change",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 106.09999999999825
+      },
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "consecutive_downward_changes",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 115.7999999999977
+      },
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "short_braking_window",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 110.79999999999798
+      },
+      {
+        "completed": true,
+        "completion_bound_retained_every_step": true,
+        "feasible": true,
+        "fixture": "route_endpoint_at_speed_boundary",
+        "max_speed_violation_m_s": 0.0,
+        "travel_time_s": 110.79999999999798
+      }
+    ]
+  },
+  "recovery": {
+    "passed": true,
+    "rows": [
+      {
+        "checkpoint_sha256": "d2295fe8acf1cee52df185725a275c6be59ac5ee19fc52eaeadbcff2b63c565d",
+        "checkpoint_step": 12,
+        "chunk_phase": 1,
+        "exact_future_records": true
+      },
+      {
+        "checkpoint_sha256": "c96e50b395ce3904c25837bfa1f67e07935d1ddff20813c15809515429b340e5",
+        "checkpoint_step": 22,
+        "chunk_phase": 2,
+        "exact_future_records": true
+      }
+    ]
+  },
+  "schema_version": 1,
+  "scientific_activity": {
+    "diagnostic_performance_episodes": 0,
+    "paper_content_fingerprints_constructed": 0,
+    "paper_performance_episodes": 0,
+    "validation_performance_episodes": 0
+  },
+  "scope": "synthetic/unreserved fixtures only; zero Diagnostic, Validation or Paper episodes",
+  "smdp": {
+    "gamma_native": 0.99899547129175,
+    "passed": true,
+    "rows": [
+      {
+        "continuation_discount": 0.9899999999999999,
+        "duration": 10,
+        "expected_discount": 0.99,
+        "independent_reward": 1.2329005627986327,
+        "passed": true,
+        "reward": 1.2329005627986325
+      },
+      {
+        "continuation_discount": 0.9702989999999996,
+        "duration": 30,
+        "expected_discount": 0.970299,
+        "independent_reward": 3.5999311763339623,
+        "passed": true,
+        "reward": 3.5999311763339605
+      }
+    ]
+  },
+  "split_checks": {
+    "diagnostic_count_36": true,
+    "paper_uninspected": true,
+    "route_clean_verified": true,
+    "validation_count_36": true,
+    "validation_performance_episodes_zero": true
+  },
+  "stability": {
+    "passed": true,
+    "rows": [
+      {
+        "action_dim": 1,
+        "final": {
+          "actor_loss": 0.06328758597373962,
+          "alpha": 0.9938897490501404,
+          "alpha_loss": -0.007009885739535093,
+          "cost_critic_loss": 0.011675962246954441,
+          "mean_intervention_target": 0.25928229093551636,
+          "mean_reward_target": 0.02796841785311699,
+          "mean_speed_target": 0.03925035893917084,
+          "mean_terminal_target": 0.0707995742559433,
+          "reward_critic_loss": 2.382150888442993,
+          "speed_multiplier": 0.018780117854475975,
+          "terminal_multiplier": 0.01995907723903656
+        },
+        "finite": true,
+        "method": "RESIDUAL1S_SAC",
+        "target_entropy": -1.0,
+        "updates": 20
+      },
+      {
+        "action_dim": 3,
+        "final": {
+          "actor_loss": -0.4265004098415375,
+          "alpha": 0.9938772320747375,
+          "alpha_loss": -0.02119726501405239,
+          "cost_critic_loss": 0.009584835730493069,
+          "mean_intervention_target": 0.03728833794593811,
+          "mean_reward_target": 0.7486976981163025,
+          "mean_speed_target": -0.05233820527791977,
+          "mean_terminal_target": 0.01646132953464985,
+          "reward_critic_loss": 5.1463623046875,
+          "speed_multiplier": 0.0,
+          "terminal_multiplier": 0.019237205386161804
+        },
+        "finite": true,
+        "method": "CHUNK3_RESIDUAL_SAC",
+        "target_entropy": -3.0,
+        "updates": 20
+      }
+    ]
+  },
+  "zero_residual_parity": {
+    "fixtures": [
+      {
+        "baseline_sha256": "fbf81036ecee32e49cba43e1a93e09062a0adf7c5fe2cdfa0e6c5d1067ee8aeb",
+        "exact": true,
+        "fixture": "constant_100_km_h",
+        "native_steps": 804,
+        "residual_sha256": "fbf81036ecee32e49cba43e1a93e09062a0adf7c5fe2cdfa0e6c5d1067ee8aeb"
+      },
+      {
+        "baseline_sha256": "4d5900264643023aac29f06ef0a98aa38ed1d2eefea83317447c0826cc8e520e",
+        "exact": true,
+        "fixture": "upward_changes",
+        "native_steps": 1094,
+        "residual_sha256": "4d5900264643023aac29f06ef0a98aa38ed1d2eefea83317447c0826cc8e520e"
+      },
+      {
+        "baseline_sha256": "85d18db49c019eaf192fb0363f3b8dec4999b2af920741fd65d12d07db633db9",
+        "exact": true,
+        "fixture": "maximum_legal_downward_change",
+        "native_steps": 804,
+        "residual_sha256": "85d18db49c019eaf192fb0363f3b8dec4999b2af920741fd65d12d07db633db9"
+      },
+      {
+        "baseline_sha256": "480f62cee201eaccff97eda0058f165be28bd1811082ccd797e532d0cd12305c",
+        "exact": true,
+        "fixture": "consecutive_downward_changes",
+        "native_steps": 1139,
+        "residual_sha256": "480f62cee201eaccff97eda0058f165be28bd1811082ccd797e532d0cd12305c"
+      },
+      {
+        "baseline_sha256": "94af6cee369c2c5ff28c2c08f43d6e6cdfd335dd6a91d2412ffaa85299329373",
+        "exact": true,
+        "fixture": "short_braking_window",
+        "native_steps": 804,
+        "residual_sha256": "94af6cee369c2c5ff28c2c08f43d6e6cdfd335dd6a91d2412ffaa85299329373"
+      },
+      {
+        "baseline_sha256": "fd41745bed55adffaf03cf2ade02b4936c202f340f236cea3ef1f707c45041c9",
+        "exact": true,
+        "fixture": "route_endpoint_at_speed_boundary",
+        "native_steps": 721,
+        "residual_sha256": "fd41745bed55adffaf03cf2ade02b4936c202f340f236cea3ef1f707c45041c9"
+      }
+    ],
+    "passed": true
+  }
+}

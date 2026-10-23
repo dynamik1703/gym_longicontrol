@@ -1,6 +1,7 @@
 # Feedback-Corrected Residual Action Chunking RL V1
 
-Status: **protocol frozen; implementation/preflight in progress**.
+Status: **method/source frozen; all preflight and resource gates passed; main
+training and scheduled Diagnostic authorized**.
 
 This isolated study compares a jointly generated three-second residual action
 chunk (`CHUNK3_RESIDUAL_SAC`) with an equally trained one-second residual SAC

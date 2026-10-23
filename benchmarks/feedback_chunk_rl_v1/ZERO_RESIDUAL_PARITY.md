@@ -1,7 +1,6 @@
 # Zero-Residual Parity
 
-Status: **deterministic implementation test passed; full preflight artifact
-pending**.
+Status: **full deterministic preflight passed**.
 
 For `CHUNK3_RESIDUAL_SAC` with actor action `[0, 0, 0]`, the wrapper calls the
 frozen AdaptivePrice MPC V2 at its original one-second boundaries, applies no
@@ -12,10 +11,12 @@ The deterministic test compares the baseline and wrapper with exact Python
 numeric equality for every native actuator, environment position, velocity,
 acceleration, cumulative signed energy, elapsed time, current speed limit, full
 MPC decision (including replanning and every safety predicate), and terminal
-metric. The initial suite covers constant high limit, maximum legal downward
-change, consecutive downward changes, and a transition at the route endpoint.
+metric. The final suite covers constant high limit, upward changes, maximum
+legal downward change, consecutive downward changes, a short braking window,
+and a transition at the route endpoint.
 
-The test command completed with 7/7 tests passing. The final preflight will
-materialize per-fixture hashes and extend the physical gate report before main
-training is enabled.
+All six baseline/wrapper trace hashes matched across 5,366 native steps. The
+complete per-fixture hashes are retained in `preflight_results.json`. The full
+test command completed with 13/13 tests passing. Main training was enabled only
+after parity and every other mandatory preflight/resource gate passed.
 

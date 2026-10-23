@@ -1,0 +1,33 @@
+{
+  "authorization": {
+    "diagnostic_authorized": true,
+    "main_training_authorized": true,
+    "main_training_enabled": true,
+    "paper_authorized": false,
+    "validation_authorized": false
+  },
+  "canonical_sha256": "b25b90d65987b2cd6aebf0946976c08346eba7c802a0c60edae3c8263c9c578d",
+  "generated_at": "2026-10-23T14:55:55.452956+00:00",
+  "preflight_passed": true,
+  "preflight_results_sha256": "c8c3b10945cca7ca740de31856278a92dae052cc31b25cffdf07fc5496cc8664",
+  "ready_for_main_training": true,
+  "resource_gate_passed": true,
+  "resource_measurements_sha256": "1b49904012e8f04197f4bbf91e6b5ed26723807d6bd5c5814ca9857aea509517",
+  "schema_version": 1,
+  "scientific_source_sha256": {
+    "benchmarks/feedback_chunk_rl_v1/canonical.json": "b25b90d65987b2cd6aebf0946976c08346eba7c802a0c60edae3c8263c9c578d",
+    "benchmarks/feedback_chunk_rl_v1/checkpointing.py": "c8c4d1dc9e349bc1ec382bffd1af5d125339653c435441277662ae536a54027d",
+    "benchmarks/feedback_chunk_rl_v1/chunk_decoder.py": "4a658fc0bda19102fd827420143aa6b83c2f53779eb6f733469a05a529d84072",
+    "benchmarks/feedback_chunk_rl_v1/evaluation.py": "0f1998b30688511cb3c58d07b526deda3ba3285ce28f30c9bb7f41f57eec55fc",
+    "benchmarks/feedback_chunk_rl_v1/execution.py": "108d6fa8718c5cbf21edbc5b8f635a7a1567cd93402842bb00b3ce25485318ed",
+    "benchmarks/feedback_chunk_rl_v1/integrity.py": "742ea58b47571e45d82bf66e7906c9e13f4b1c695937151d2874906381cef1a4",
+    "benchmarks/feedback_chunk_rl_v1/macro_transition.py": "4b382b022dac7d7975497a16b4146597a96163d476dd17b2ec9e3c26b6000dfd",
+    "benchmarks/feedback_chunk_rl_v1/preflight.py": "3cdbbb23dd75de232d4f18cc0bc8f5e2d3fcd5916e25f8320c15e8faa8a414cf",
+    "benchmarks/feedback_chunk_rl_v1/replay.py": "b8d4f1b1168a5c9329aea5adfb721a1218638514e6ffcc830998c33156c74574",
+    "benchmarks/feedback_chunk_rl_v1/residual_controller.py": "1fb97ac82e6f4fa89fafe8d4b2b766ec660994d768c3a8518383f37335bc51d9",
+    "benchmarks/feedback_chunk_rl_v1/sac_agent.py": "8b66b0e3ffa0e984ddc8f5649011e8316518c54cacf77e6840d947a272d7e3cf",
+    "benchmarks/feedback_chunk_rl_v1/split_ledger.json": "2940bc34df82dd71e66c0641000e78c5b37f3659b27dfe9552184bc42bfc964e",
+    "benchmarks/feedback_chunk_rl_v1/training.py": "885a378e0cc8c0ae96dfb6576f397044aa9729f62ebd9154ca23501593dfa214"
+  },
+  "split_ledger_sha256": "2940bc34df82dd71e66c0641000e78c5b37f3659b27dfe9552184bc42bfc964e"
+}
