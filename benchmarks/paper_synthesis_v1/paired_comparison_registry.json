@@ -1,0 +1,272 @@
+{
+  "comparison_count": 9,
+  "comparisons": [
+    {
+      "absolute_energy_difference_range_kwh": [
+        -0.0028024420377277537,
+        0.0039908003401399605
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 1.0351750338147012,
+      "baseline": "TIME_AWARE",
+      "comparable_population": "35 jointly feasible Hybrid Validation V2 tasks",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "h11_vs_time_aware",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 2854385139520301431,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 0.7343988975181809,
+        "replicates": 20000,
+        "sampling_unit": "track",
+        "upper": 1.3138196590531779
+      },
+      "distinct_task_count": 35,
+      "mean_absolute_energy_difference_kwh": 0.0018122197470415871,
+      "median_percentage_saving": 1.2083870098097158,
+      "paired_count": 35,
+      "percentage_saving_range": [
+        -1.6234230853265383,
+        2.269540680253325
+      ],
+      "qualification": "three trained seeds share the same routes; intervals are descriptive and correlated across seed comparisons",
+      "source": "benchmarks/hybrid_rl_validation_v2/validation_pairwise_analysis.json",
+      "treatment": "H11"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        -0.011666177439211917,
+        0.00489014560659129
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 1.2450393062050755,
+      "baseline": "TIME_AWARE",
+      "comparable_population": "35 jointly feasible Hybrid Validation V2 tasks",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "h29_vs_time_aware",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 1776096581474469383,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 0.6080937992911966,
+        "replicates": 20000,
+        "sampling_unit": "track",
+        "upper": 1.7832205754520039
+      },
+      "distinct_task_count": 35,
+      "mean_absolute_energy_difference_kwh": 0.0021528089449223526,
+      "median_percentage_saving": 1.7296118118269983,
+      "paired_count": 35,
+      "percentage_saving_range": [
+        -6.030483246975916,
+        2.8328062316626115
+      ],
+      "qualification": "three trained seeds share the same routes; intervals are descriptive and correlated across seed comparisons",
+      "source": "benchmarks/hybrid_rl_validation_v2/validation_pairwise_analysis.json",
+      "treatment": "H29"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        -0.0021946900402072533,
+        0.005118452263829482
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 1.7001296818846239,
+      "baseline": "TIME_AWARE",
+      "comparable_population": "35 jointly feasible Hybrid Validation V2 tasks",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "h47_vs_time_aware",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 3319085686942736550,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 1.340369570450702,
+        "replicates": 20000,
+        "sampling_unit": "track",
+        "upper": 2.0309923014981637
+      },
+      "distinct_task_count": 35,
+      "mean_absolute_energy_difference_kwh": 0.002995102688257994,
+      "median_percentage_saving": 2.0933389692352273,
+      "paired_count": 35,
+      "percentage_saving_range": [
+        -1.2713592033102403,
+        2.965061704890786
+      ],
+      "qualification": "three trained seeds share the same routes; intervals are descriptive and correlated across seed comparisons",
+      "source": "benchmarks/hybrid_rl_validation_v2/validation_pairwise_analysis.json",
+      "treatment": "H47"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        0.00014309555366898152,
+        0.019431232358676026
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 4.64373230411012,
+      "baseline": "TIME_AWARE",
+      "comparable_population": "18 Capability tasks; all four arms feasible",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "fixed_vs_time_aware",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 20261033,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 3.4493192770567007,
+        "replicates": 20000,
+        "sampling_unit": "task",
+        "upper": 5.908535187445722
+      },
+      "distinct_task_count": 18,
+      "mean_absolute_energy_difference_kwh": 0.008324505023538443,
+      "median_percentage_saving": 4.550812828339568,
+      "paired_count": 18,
+      "percentage_saving_range": [
+        0.07200370742086136,
+        11.24816195234809
+      ],
+      "qualification": "non-learning comparison; Fixed versus TIME_AWARE changes candidate richness and terminal treatment together",
+      "source": "benchmarks/causal_mpc_v2/capability_results.json",
+      "treatment": "FIXED_PRICE_V2"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        0.0007682761710838537,
+        0.017855249057551842
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 5.421834807082291,
+      "baseline": "TIME_AWARE",
+      "comparable_population": "18 Capability tasks; all four arms feasible",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "adaptive_vs_time_aware",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 20261034,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 3.9532779204595405,
+        "replicates": 20000,
+        "sampling_unit": "task",
+        "upper": 6.898343850223158
+      },
+      "distinct_task_count": 18,
+      "mean_absolute_energy_difference_kwh": 0.009659897591255817,
+      "median_percentage_saving": 5.439876856059226,
+      "paired_count": 18,
+      "percentage_saving_range": [
+        0.3865859645723761,
+        10.45815588269587
+      ],
+      "qualification": "non-learning comparison; Fixed versus TIME_AWARE changes candidate richness and terminal treatment together",
+      "source": "benchmarks/causal_mpc_v2/capability_results.json",
+      "treatment": "ADAPTIVE_PRICE_V2"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        -0.004566080214485346,
+        0.01064783145806461
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 0.8011839951300701,
+      "baseline": "FIXED_PRICE_V2",
+      "comparable_population": "18 Capability tasks; all four arms feasible",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "adaptive_vs_fixed",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 20261035,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": -0.26520377482896107,
+        "replicates": 20000,
+        "sampling_unit": "task",
+        "upper": 2.0458346378038317
+      },
+      "distinct_task_count": 18,
+      "mean_absolute_energy_difference_kwh": 0.0013353925677173748,
+      "median_percentage_saving": 0.16303873936061322,
+      "paired_count": 18,
+      "percentage_saving_range": [
+        -2.978155679826402,
+        6.671255228074096
+      ],
+      "qualification": "non-learning comparison; Fixed versus TIME_AWARE changes candidate richness and terminal treatment together",
+      "source": "benchmarks/causal_mpc_v2/capability_results.json",
+      "treatment": "ADAPTIVE_PRICE_V2"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        -0.0036491714609278303,
+        0.004814565641162449
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": -0.5620832885179694,
+      "baseline": "RESET_FEEDBACK",
+      "comparable_population": "18 Temporal Options Capability tasks; both arms feasible",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "continue_vs_reset",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 20261040,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": -1.0787759983979466,
+        "replicates": 20000,
+        "sampling_unit": "task",
+        "upper": 0.03403199733805917
+      },
+      "distinct_task_count": 18,
+      "mean_absolute_energy_difference_kwh": -0.0009569028862745169,
+      "median_percentage_saving": -0.6053189838917894,
+      "paired_count": 18,
+      "percentage_saving_range": [
+        -2.304587674150191,
+        2.982112623446665
+      ],
+      "qualification": "architectural non-learning effect; integrity stop limits independent deadline-bound audit",
+      "source": "benchmarks/temporal_options_v1/results.json",
+      "treatment": "CONTINUE_FEEDBACK"
+    },
+    {
+      "absolute_energy_difference_range_kwh": [
+        0.011605061385894094,
+        0.08866886143729363
+      ],
+      "arithmetic_mean_of_per_task_percentage_saving": 24.91107999609196,
+      "baseline": "CAUSAL_REFERENCE",
+      "comparable_population": "36 independent physical-reference holdout tasks",
+      "comparison_basis": "PAIRED_SAME_TASKS",
+      "comparison_id": "privileged_oracle_vs_causal_reference",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": {
+        "confidence_level": 0.95,
+        "deterministic_rng_seed": 20261041,
+        "interpretation": "descriptive_percentile_interval",
+        "lower": 22.108055808426275,
+        "replicates": 20000,
+        "sampling_unit": "task",
+        "upper": 27.55512943895113
+      },
+      "distinct_task_count": 36,
+      "mean_absolute_energy_difference_kwh": 0.05319522562651883,
+      "median_percentage_saving": 27.800210012717315,
+      "paired_count": 36,
+      "percentage_saving_range": [
+        7.131900791144109,
+        37.2172965219402
+      ],
+      "qualification": "paired but not information-matched; Oracle is contextual and not certified globally optimal",
+      "source": "benchmarks/physical_feasibility_reference/holdout_results.json",
+      "treatment": "FULL_ROUTE_ORACLE"
+    },
+    {
+      "absolute_energy_difference_range_kwh": null,
+      "arithmetic_mean_of_per_task_percentage_saving": null,
+      "baseline": "SAME_INFORMATION_SCALAR",
+      "comparable_population": "18 Validation tasks for each of three matched training-seed pairs",
+      "comparison_basis": "PAIRED_SAME_STREAM",
+      "comparison_id": "sameinfo_constrained_vs_scalar",
+      "descriptive_95_percent_interval_for_mean_percentage_saving": null,
+      "distinct_task_count": 18,
+      "mean_absolute_energy_difference_kwh": null,
+      "median_percentage_saving": null,
+      "paired_count": 54,
+      "percentage_saving_range": null,
+      "qualification": "Scalar has no feasible episode, so no paired energy statistic exists; algorithmic mechanisms differ beyond scalarization",
+      "rsr_count_difference": 23,
+      "source": "benchmarks/same_information_scalar_vs_constrained/results.json",
+      "treatment": "MATCHED_CONSTRAINED"
+    }
+  ],
+  "schema_version": 1
+}
