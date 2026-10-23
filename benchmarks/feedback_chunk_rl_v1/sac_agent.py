@@ -1,0 +1,452 @@
+"""Dimension-matched constrained SAC for residual action chunks."""
+
+from __future__ import annotations
+
+import copy
+import math
+from collections.abc import Mapping
+from dataclasses import asdict, dataclass
+from typing import Any
+
+import numpy as np
+import torch
+from torch import nn
+from torch.optim import Adam
+
+from .chunk_decoder import MethodSpec, method_spec
+
+OBSERVATION_DIM = 16
+HIDDEN_SIZES = (256, 256)
+TAU = 0.005
+ACTOR_LEARNING_RATE = 3e-4
+CRITIC_LEARNING_RATE = 3e-4
+ENTROPY_LEARNING_RATE = 3e-4
+MULTIPLIER_LEARNING_RATE = 1e-3
+INTERVENTION_REGULARIZER_WEIGHT = 0.05
+INITIAL_LOG_STD_BIAS = math.log(0.2)
+INITIAL_MEAN_OUTPUT_SCALE = 0.001
+LOG_STD_MIN = -20.0
+LOG_STD_MAX = 2.0
+TANH_EPSILON = 1e-6
+
+
+def _mlp(input_dim: int, output_dim: int) -> nn.Sequential:
+    return nn.Sequential(
+        nn.Linear(input_dim, HIDDEN_SIZES[0]),
+        nn.ReLU(),
+        nn.Linear(HIDDEN_SIZES[0], HIDDEN_SIZES[1]),
+        nn.ReLU(),
+        nn.Linear(HIDDEN_SIZES[1], output_dim),
+    )
+
+
+class GaussianActor(nn.Module):
+    def __init__(self, action_dim: int) -> None:
+        super().__init__()
+        self.action_dim = int(action_dim)
+        self.trunk = nn.Sequential(
+            nn.Linear(OBSERVATION_DIM, HIDDEN_SIZES[0]),
+            nn.ReLU(),
+            nn.Linear(HIDDEN_SIZES[0], HIDDEN_SIZES[1]),
+            nn.ReLU(),
+        )
+        self.mean = nn.Linear(HIDDEN_SIZES[1], self.action_dim)
+        self.log_std = nn.Linear(HIDDEN_SIZES[1], self.action_dim)
+        with torch.no_grad():
+            self.mean.weight.uniform_(
+                -INITIAL_MEAN_OUTPUT_SCALE, INITIAL_MEAN_OUTPUT_SCALE
+            )
+            self.mean.bias.zero_()
+            self.log_std.weight.zero_()
+            self.log_std.bias.fill_(INITIAL_LOG_STD_BIAS)
+
+    def distribution_parameters(
+        self, observation: torch.Tensor
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        hidden = self.trunk(observation)
+        mean = self.mean(hidden)
+        log_std = self.log_std(hidden).clamp(LOG_STD_MIN, LOG_STD_MAX)
+        return mean, log_std
+
+    def sample(
+        self,
+        observation: torch.Tensor,
+        *,
+        generator: torch.Generator,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        mean, log_std = self.distribution_parameters(observation)
+        noise = torch.randn(
+            mean.shape,
+            dtype=mean.dtype,
+            device=mean.device,
+            generator=generator,
+        )
+        raw_action = mean + log_std.exp() * noise
+        action = torch.tanh(raw_action)
+        gaussian_log_probability = -0.5 * (
+            noise.square() + 2.0 * log_std + math.log(2.0 * math.pi)
+        )
+        log_probability = gaussian_log_probability.sum(dim=-1, keepdim=True)
+        log_probability -= torch.log(1.0 - action.square() + TANH_EPSILON).sum(
+            dim=-1, keepdim=True
+        )
+        return action, log_probability
+
+    def deterministic(self, observation: torch.Tensor) -> torch.Tensor:
+        mean, _ = self.distribution_parameters(observation)
+        return torch.tanh(mean)
+
+
+class Critic(nn.Module):
+    def __init__(self, action_dim: int) -> None:
+        super().__init__()
+        self.network = _mlp(OBSERVATION_DIM + int(action_dim), 1)
+
+    def forward(self, observation: torch.Tensor, action: torch.Tensor) -> torch.Tensor:
+        return self.network(torch.cat((observation, action), dim=-1))
+
+
+@dataclass(frozen=True)
+class AgentConfig:
+    method: str
+    observation_dim: int
+    action_dim: int
+    hidden_sizes: tuple[int, int]
+    tau: float
+    target_entropy: float
+    actor_learning_rate: float
+    critic_learning_rate: float
+    entropy_learning_rate: float
+    multiplier_learning_rate: float
+    intervention_regularizer_weight: float
+    initial_log_std_bias: float
+    initial_mean_output_scale: float
+
+    @classmethod
+    def for_method(cls, spec: MethodSpec) -> AgentConfig:
+        return cls(
+            method=spec.name,
+            observation_dim=OBSERVATION_DIM,
+            action_dim=spec.action_dim,
+            hidden_sizes=HIDDEN_SIZES,
+            tau=TAU,
+            target_entropy=spec.target_entropy,
+            actor_learning_rate=ACTOR_LEARNING_RATE,
+            critic_learning_rate=CRITIC_LEARNING_RATE,
+            entropy_learning_rate=ENTROPY_LEARNING_RATE,
+            multiplier_learning_rate=MULTIPLIER_LEARNING_RATE,
+            intervention_regularizer_weight=INTERVENTION_REGULARIZER_WEIGHT,
+            initial_log_std_bias=INITIAL_LOG_STD_BIAS,
+            initial_mean_output_scale=INITIAL_MEAN_OUTPUT_SCALE,
+        )
+
+
+class ConstrainedResidualSAC:
+    """Twin reward critics and three physically defined cost critics."""
+
+    def __init__(
+        self, method: str, seed: int, device: str | torch.device = "cpu"
+    ) -> None:
+        self.spec = method_spec(method)
+        self.seed = int(seed)
+        self.device = torch.device(device)
+        self.config = AgentConfig.for_method(self.spec)
+        if self.device.type != "cpu":
+            raise ValueError("canonical Feedback Chunk RL V1 uses deterministic CPU")
+        torch.set_num_threads(1)
+        with torch.random.fork_rng(devices=[]):
+            torch.manual_seed(self.seed)
+            self.actor = GaussianActor(self.spec.action_dim).to(self.device)
+            self.reward_critic_1 = Critic(self.spec.action_dim).to(self.device)
+            self.reward_critic_2 = Critic(self.spec.action_dim).to(self.device)
+            self.speed_critic = Critic(self.spec.action_dim).to(self.device)
+            self.terminal_critic = Critic(self.spec.action_dim).to(self.device)
+            self.intervention_critic = Critic(self.spec.action_dim).to(self.device)
+        self.target_reward_critic_1 = copy.deepcopy(self.reward_critic_1)
+        self.target_reward_critic_2 = copy.deepcopy(self.reward_critic_2)
+        self.target_speed_critic = copy.deepcopy(self.speed_critic)
+        self.target_terminal_critic = copy.deepcopy(self.terminal_critic)
+        self.target_intervention_critic = copy.deepcopy(self.intervention_critic)
+        self.actor_optimizer = Adam(
+            self.actor.parameters(), lr=self.config.actor_learning_rate
+        )
+        self.reward_optimizer = Adam(
+            [*self.reward_critic_1.parameters(), *self.reward_critic_2.parameters()],
+            lr=self.config.critic_learning_rate,
+        )
+        self.cost_optimizer = Adam(
+            [
+                *self.speed_critic.parameters(),
+                *self.terminal_critic.parameters(),
+                *self.intervention_critic.parameters(),
+            ],
+            lr=self.config.critic_learning_rate,
+        )
+        self.log_alpha = nn.Parameter(torch.zeros(1, device=self.device))
+        self.alpha_optimizer = Adam(
+            [self.log_alpha], lr=self.config.entropy_learning_rate
+        )
+        self.speed_multiplier = nn.Parameter(torch.zeros(1, device=self.device))
+        self.terminal_multiplier = nn.Parameter(torch.zeros(1, device=self.device))
+        self.multiplier_optimizer = Adam(
+            [self.speed_multiplier, self.terminal_multiplier],
+            lr=self.config.multiplier_learning_rate,
+        )
+        self.update_count = 0
+
+    @property
+    def alpha(self) -> float:
+        return float(self.log_alpha.detach().exp().cpu().item())
+
+    @property
+    def parameter_count(self) -> int:
+        return sum(
+            parameter.numel()
+            for module in self._online_modules().values()
+            for parameter in module.parameters()
+        )
+
+    def act(
+        self,
+        observation: np.ndarray,
+        *,
+        deterministic: bool,
+        generator: torch.Generator | None = None,
+    ) -> np.ndarray:
+        value = torch.as_tensor(
+            np.asarray(observation, dtype=np.float32), device=self.device
+        ).reshape(1, OBSERVATION_DIM)
+        with torch.no_grad():
+            if deterministic:
+                action = self.actor.deterministic(value)
+            else:
+                if generator is None:
+                    raise ValueError("stochastic action requires an explicit RNG")
+                action, _ = self.actor.sample(value, generator=generator)
+        result = action.cpu().numpy().reshape(self.spec.action_dim).astype(np.float64)
+        if not np.isfinite(result).all():
+            raise FloatingPointError("actor produced nonfinite action")
+        return result
+
+    @staticmethod
+    def _set_gradient(module: nn.Module, enabled: bool) -> None:
+        for parameter in module.parameters():
+            parameter.requires_grad_(enabled)
+
+    @staticmethod
+    def _soft_update(source: nn.Module, target: nn.Module, tau: float) -> None:
+        with torch.no_grad():
+            for source_parameter, target_parameter in zip(
+                source.parameters(), target.parameters(), strict=True
+            ):
+                target_parameter.mul_(1.0 - tau)
+                target_parameter.add_(tau * source_parameter)
+
+    def _tensor_batch(self, batch: Mapping[str, np.ndarray]) -> dict[str, torch.Tensor]:
+        fields = (
+            "observation",
+            "action",
+            "reward",
+            "speed_cost",
+            "terminal_cost",
+            "intervention_cost",
+            "next_observation",
+            "continuation_discount",
+        )
+        tensors = {
+            name: torch.as_tensor(
+                np.asarray(batch[name], dtype=np.float32), device=self.device
+            )
+            for name in fields
+        }
+        if tensors["action"].shape[-1] != self.spec.action_dim:
+            raise ValueError("replay action dimension changed")
+        return tensors
+
+    def update(
+        self,
+        batch: Mapping[str, np.ndarray],
+        *,
+        generator: torch.Generator,
+    ) -> dict[str, float]:
+        tensors = self._tensor_batch(batch)
+        observation = tensors["observation"]
+        action = tensors["action"]
+        discount = tensors["continuation_discount"]
+        with torch.no_grad():
+            next_action, next_log_probability = self.actor.sample(
+                tensors["next_observation"], generator=generator
+            )
+            next_reward_q = torch.minimum(
+                self.target_reward_critic_1(tensors["next_observation"], next_action),
+                self.target_reward_critic_2(tensors["next_observation"], next_action),
+            )
+            alpha = self.log_alpha.exp()
+            reward_target = tensors["reward"] + discount * (
+                next_reward_q - alpha * next_log_probability
+            )
+            speed_target = tensors["speed_cost"] + discount * self.target_speed_critic(
+                tensors["next_observation"], next_action
+            )
+            terminal_target = tensors["terminal_cost"] + discount * (
+                self.target_terminal_critic(tensors["next_observation"], next_action)
+            )
+            intervention_target = tensors["intervention_cost"] + discount * (
+                self.target_intervention_critic(
+                    tensors["next_observation"], next_action
+                )
+            )
+
+        reward_prediction_1 = self.reward_critic_1(observation, action)
+        reward_prediction_2 = self.reward_critic_2(observation, action)
+        reward_loss = nn.functional.mse_loss(
+            reward_prediction_1, reward_target
+        ) + nn.functional.mse_loss(reward_prediction_2, reward_target)
+        self.reward_optimizer.zero_grad(set_to_none=True)
+        reward_loss.backward()
+        self.reward_optimizer.step()
+
+        speed_prediction = self.speed_critic(observation, action)
+        terminal_prediction = self.terminal_critic(observation, action)
+        intervention_prediction = self.intervention_critic(observation, action)
+        cost_loss = (
+            nn.functional.mse_loss(speed_prediction, speed_target)
+            + nn.functional.mse_loss(terminal_prediction, terminal_target)
+            + nn.functional.mse_loss(intervention_prediction, intervention_target)
+        )
+        self.cost_optimizer.zero_grad(set_to_none=True)
+        cost_loss.backward()
+        self.cost_optimizer.step()
+
+        critics = tuple(self._online_modules().values())[1:]
+        for critic in critics:
+            self._set_gradient(critic, False)
+        policy_action, log_probability = self.actor.sample(
+            observation, generator=generator
+        )
+        reward_q = torch.minimum(
+            self.reward_critic_1(observation, policy_action),
+            self.reward_critic_2(observation, policy_action),
+        )
+        speed_q = self.speed_critic(observation, policy_action)
+        terminal_q = self.terminal_critic(observation, policy_action)
+        intervention_q = self.intervention_critic(observation, policy_action)
+        actor_loss = (
+            self.log_alpha.detach().exp() * log_probability
+            - reward_q
+            + self.speed_multiplier.detach() * speed_q
+            + self.terminal_multiplier.detach() * terminal_q
+            + self.config.intervention_regularizer_weight * intervention_q
+        ).mean()
+        self.actor_optimizer.zero_grad(set_to_none=True)
+        actor_loss.backward()
+        self.actor_optimizer.step()
+        for critic in critics:
+            self._set_gradient(critic, True)
+
+        alpha_loss = -(
+            self.log_alpha * (log_probability + self.config.target_entropy).detach()
+        ).mean()
+        self.alpha_optimizer.zero_grad(set_to_none=True)
+        alpha_loss.backward()
+        self.alpha_optimizer.step()
+
+        multiplier_loss = -(
+            self.speed_multiplier * speed_q.detach().mean()
+            + self.terminal_multiplier * terminal_q.detach().mean()
+        )
+        self.multiplier_optimizer.zero_grad(set_to_none=True)
+        multiplier_loss.backward()
+        self.multiplier_optimizer.step()
+        with torch.no_grad():
+            self.speed_multiplier.clamp_(min=0.0)
+            self.terminal_multiplier.clamp_(min=0.0)
+
+        pairs = (
+            (self.reward_critic_1, self.target_reward_critic_1),
+            (self.reward_critic_2, self.target_reward_critic_2),
+            (self.speed_critic, self.target_speed_critic),
+            (self.terminal_critic, self.target_terminal_critic),
+            (self.intervention_critic, self.target_intervention_critic),
+        )
+        for source, target in pairs:
+            self._soft_update(source, target, self.config.tau)
+        self.update_count += 1
+        values = {
+            "reward_critic_loss": float(reward_loss.detach().cpu()),
+            "cost_critic_loss": float(cost_loss.detach().cpu()),
+            "actor_loss": float(actor_loss.detach().cpu()),
+            "alpha_loss": float(alpha_loss.detach().cpu()),
+            "alpha": self.alpha,
+            "speed_multiplier": float(self.speed_multiplier.detach().cpu()),
+            "terminal_multiplier": float(self.terminal_multiplier.detach().cpu()),
+            "mean_reward_target": float(reward_target.mean().cpu()),
+            "mean_speed_target": float(speed_target.mean().cpu()),
+            "mean_terminal_target": float(terminal_target.mean().cpu()),
+            "mean_intervention_target": float(intervention_target.mean().cpu()),
+        }
+        if not all(np.isfinite(value) for value in values.values()):
+            raise FloatingPointError("nonfinite SAC update diagnostic")
+        return values
+
+    def _online_modules(self) -> dict[str, nn.Module]:
+        return {
+            "actor": self.actor,
+            "reward_critic_1": self.reward_critic_1,
+            "reward_critic_2": self.reward_critic_2,
+            "speed_critic": self.speed_critic,
+            "terminal_critic": self.terminal_critic,
+            "intervention_critic": self.intervention_critic,
+        }
+
+    def _all_modules(self) -> dict[str, nn.Module]:
+        return {
+            **self._online_modules(),
+            "target_reward_critic_1": self.target_reward_critic_1,
+            "target_reward_critic_2": self.target_reward_critic_2,
+            "target_speed_critic": self.target_speed_critic,
+            "target_terminal_critic": self.target_terminal_critic,
+            "target_intervention_critic": self.target_intervention_critic,
+        }
+
+    def state_dict(self) -> dict[str, Any]:
+        return {
+            "seed": self.seed,
+            "config": asdict(self.config),
+            "update_count": self.update_count,
+            "modules": {
+                name: module.state_dict()
+                for name, module in self._all_modules().items()
+            },
+            "optimizers": {
+                "actor": self.actor_optimizer.state_dict(),
+                "reward": self.reward_optimizer.state_dict(),
+                "cost": self.cost_optimizer.state_dict(),
+                "alpha": self.alpha_optimizer.state_dict(),
+                "multiplier": self.multiplier_optimizer.state_dict(),
+            },
+            "log_alpha": self.log_alpha.detach().clone(),
+            "speed_multiplier": self.speed_multiplier.detach().clone(),
+            "terminal_multiplier": self.terminal_multiplier.detach().clone(),
+        }
+
+    def load_state_dict(self, state: Mapping[str, Any]) -> None:
+        if int(state["seed"]) != self.seed:
+            raise RuntimeError("agent seed changed across recovery")
+        if dict(state["config"]) != asdict(self.config):
+            raise RuntimeError("agent configuration changed across recovery")
+        modules = self._all_modules()
+        if set(state["modules"]) != set(modules):
+            raise RuntimeError("agent module set changed across recovery")
+        for name, module_state in state["modules"].items():
+            modules[name].load_state_dict(module_state)
+        with torch.no_grad():
+            self.log_alpha.copy_(state["log_alpha"].to(self.device))
+            self.speed_multiplier.copy_(state["speed_multiplier"].to(self.device))
+            self.terminal_multiplier.copy_(state["terminal_multiplier"].to(self.device))
+        self.actor_optimizer.load_state_dict(state["optimizers"]["actor"])
+        self.reward_optimizer.load_state_dict(state["optimizers"]["reward"])
+        self.cost_optimizer.load_state_dict(state["optimizers"]["cost"])
+        self.alpha_optimizer.load_state_dict(state["optimizers"]["alpha"])
+        self.multiplier_optimizer.load_state_dict(state["optimizers"]["multiplier"])
+        self.update_count = int(state["update_count"])

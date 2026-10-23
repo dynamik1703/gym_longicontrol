@@ -15,9 +15,25 @@ ROOT = HERE.parents[1]
 CANONICAL = HERE / "canonical.json"
 SPLIT_LEDGER = HERE / "split_ledger.json"
 AUTHORIZATION = HERE / "authorization.json"
+PREPARATION_STATUS = HERE / "preparation_status.json"
 EXPECTED_BRANCH = "research/feedback-chunk-rl-v1"
 BASE_COMMIT = "b1613e62ec381932cca3fb43ae698d2f75ffaa5e"
 EXPECTED_TREE = "c1bc3f4eab0eb3a6d96966df25fe99a518493967"
+HASHED_SOURCE_FILES = (
+    "canonical.json",
+    "split_ledger.json",
+    "chunk_decoder.py",
+    "residual_controller.py",
+    "sac_agent.py",
+    "macro_transition.py",
+    "replay.py",
+    "training.py",
+    "checkpointing.py",
+    "evaluation.py",
+    "execution.py",
+    "integrity.py",
+    "preflight.py",
+)
 
 
 def sha256_file(path: str | Path) -> str:
@@ -89,6 +105,40 @@ def canonical_hashes() -> dict[str, str]:
     return {
         "canonical_sha256": sha256_file(CANONICAL),
         "split_ledger_sha256": sha256_file(SPLIT_LEDGER),
+    }
+
+
+def scientific_source_hashes() -> dict[str, str]:
+    return {
+        f"benchmarks/feedback_chunk_rl_v1/{name}": sha256_file(HERE / name)
+        for name in HASHED_SOURCE_FILES
+    }
+
+
+def verify_execution_preconditions() -> dict[str, Any]:
+    repository = verify_repository(require_clean=True)
+    authorization = json.loads(AUTHORIZATION.read_text(encoding="utf-8"))
+    if not authorization.get("main_training_enabled"):
+        raise PermissionError("main training has not passed its gates")
+    if authorization.get("validation_authorized"):
+        raise PermissionError("Validation must remain unauthorized")
+    if authorization.get("paper_authorized"):
+        raise PermissionError("Paper must remain unauthorized")
+    status = json.loads(PREPARATION_STATUS.read_text(encoding="utf-8"))
+    if not status.get("ready_for_main_training"):
+        raise RuntimeError("preparation gates are incomplete")
+    hashes = scientific_source_hashes()
+    if status.get("scientific_source_sha256") != hashes:
+        raise RuntimeError("frozen scientific source hashes changed")
+    if status.get("canonical_sha256") != sha256_file(CANONICAL):
+        raise RuntimeError("canonical configuration changed")
+    if status.get("split_ledger_sha256") != sha256_file(SPLIT_LEDGER):
+        raise RuntimeError("frozen split ledger changed")
+    return {
+        **repository,
+        "canonical_sha256": sha256_file(CANONICAL),
+        "split_ledger_sha256": sha256_file(SPLIT_LEDGER),
+        "source_hashes": hashes,
     }
 
 
