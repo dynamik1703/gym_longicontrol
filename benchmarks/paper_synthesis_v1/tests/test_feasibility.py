@@ -26,9 +26,9 @@ def test_track_10200029_has_formal_discrete_proof():
 
 def test_continuous_only_bound_is_not_a_classifier():
     tasks = load_historical_tasks()
-    task = tasks[
-        "6f0d03873d9039e863cb40cecfb024aac0341f95e878272a86b1f1805801b883"
-    ]["canonical_task"]
+    task = tasks["6f0d03873d9039e863cb40cecfb024aac0341f95e878272a86b1f1805801b883"][
+        "canonical_task"
+    ]
     altered = json.loads(json.dumps(task))
     altered["environment_parameters"]["integration"]["name"] = "unknown"
     bound = conservative_discrete_lower_bound(altered)
@@ -71,9 +71,10 @@ def test_route_duplicates_do_not_create_independent_tasks():
     assert audit["coverage"]["unique_routes"] == len(
         {row["route_sha256"] for row in audit["tasks"]}
     )
-    assert audit["coverage"]["study_task_occurrences"] >= audit["coverage"][
-        "unique_routes"
-    ]
+    assert (
+        audit["coverage"]["study_task_occurrences"]
+        >= audit["coverage"]["unique_routes"]
+    )
 
 
 @pytest.mark.parametrize("seed", sorted(PAPER_NUMERIC_SEEDS))

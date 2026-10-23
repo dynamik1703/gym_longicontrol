@@ -39,3 +39,16 @@ The machine audit records only tasks whose exact content was already committed.
 
 File byte hashes and result reconciliation are checked by `verify.py` and
 reported in `INTEGRITY_REPORT.md`.
+
+## Machine manifest and local checkpoint audit
+
+`source_registry.json` freezes the source commit/tree and SHA-256 values for
+the production semantics plus the immutable files behind mandatory headline
+results. Because the base tree identifies the entire historical snapshot, the
+verifier also rejects every branch change outside this synthesis directory.
+
+The same manifest records a byte-only availability audit for Hybrid and
+Constrained V2 checkpoint candidates. Hybrid hashes were already embedded in
+the historical Validation provenance. Constrained V2 hashes were measured from
+the locally retained final files during synthesis but were not embedded in the
+original results; this distinction is preserved and no model is deserialized.

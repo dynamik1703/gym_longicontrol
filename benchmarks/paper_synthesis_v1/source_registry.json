@@ -1,0 +1,53 @@
+{
+  "base_commit": "9802f9262ea7f753365fc4bdd20b1fe08379291d",
+  "base_tree": "1452612428175196d218c2e55af24812dd82a0d8",
+  "historical_file_sha256": {
+    "benchmarks/causal_mpc_v2/capability_results.json": "ff1195170e815b5a79a60f70ea15ddc3ef3d3de309ad48dcf2655c5bd0edf288",
+    "benchmarks/content_split_audit/fingerprints.py": "fc8667c24671b104b1739c0595e9ee7bc99c7c329723cfd13d4939bf00192bc2",
+    "benchmarks/counterfactual_option_value_v1/results.json": "f5f09d802251195d4aa24d60e5a0ebb2d7014b706d485e120fe10aef1a67448d",
+    "benchmarks/gcsl_canonical/results.json": "921a8e1ff418cafd3b5120e715fb403d76c22c6f27b4d786beb672d3f97b447f",
+    "benchmarks/hybrid_rl_validation_v2/validation_pairwise_analysis.json": "7f58f098570cd8a6f832a44fc73f321765da201bef0b37a33bbc7ed868b743d8",
+    "benchmarks/hybrid_rl_validation_v2/validation_results.json": "dc649601d171f6b412474399c45c1b913b642de3f76584bfb427c50b6b307e5e",
+    "benchmarks/physical_feasibility_reference/holdout_results.json": "dbfc7ea9b4f726aaa0698d4b0a9c82980fa9bd84550109718db4a38a59ff71a3",
+    "benchmarks/same_information_scalar_vs_constrained/results.json": "f2b5edee5e039ec9d334cfed0acf3bbca8a5760bbb9004bf7c431c534ed1f27d",
+    "benchmarks/temporal_options_v1/capability_results.json": "64ba1e809195b89923170edccd5bef4163475138c7811fd943440283c8583f3b",
+    "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+    "src/gym_longicontrol/domain/metrics.py": "1957806bd7a3d16f9b9c982fcb790e43863d2327bae06f09aea8bc5b34c86d9c",
+    "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+    "src/gym_longicontrol/domain/track.py": "3e52f69686b1484353470e9349a0ff1e79c2ab03a2d71e5764f6f566b611d99b",
+    "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+  },
+  "local_checkpoint_byte_audit": {
+    "constrained_v2_seed_11": {
+      "original_result_embedded_hash": false,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_task/runs/constrained-rl-v2-20261002/training-seed-11/target-300000/policy.pt",
+      "sha256": "0fd0984dc49e26d159e1a251b84d400eb420285676fe6978365740796668dfc5"
+    },
+    "constrained_v2_seed_29": {
+      "original_result_embedded_hash": false,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_task/runs/constrained-rl-v2-20261002/training-seed-29/target-300000/policy.pt",
+      "sha256": "97c42e52044f8313a05542a655fced6f47a50d0f9b5465452765b39a42fe20fa"
+    },
+    "constrained_v2_seed_47": {
+      "original_result_embedded_hash": false,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_task/runs/constrained-rl-v2-20261002/training-seed-47/target-300000/policy.pt",
+      "sha256": "98b67166bd95b309330b96d32184fcb7c8b2c07c33fec2d2f4e8c3bc1062bbf1"
+    },
+    "hybrid_h11": {
+      "original_result_embedded_hash": true,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-11/step-300000/checkpoint.pkl",
+      "sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed"
+    },
+    "hybrid_h29": {
+      "original_result_embedded_hash": true,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-29/step-300000/checkpoint.pkl",
+      "sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55"
+    },
+    "hybrid_h47": {
+      "original_result_embedded_hash": true,
+      "path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-47/step-300000/checkpoint.pkl",
+      "sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf"
+    }
+  },
+  "schema_version": 1
+}

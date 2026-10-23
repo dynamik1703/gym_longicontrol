@@ -17,7 +17,9 @@ def test_method_registry_does_not_conflate_checkpoints_with_seeds():
     rows = method_rows()
     assert len({row["method_id"] for row in rows}) == len(rows)
     assert all("checkpoint" not in str(row["training_seeds"]).lower() for row in rows)
-    predictor = next(row for row in rows if row["method_id"] == "counterfactual_predictor")
+    predictor = next(
+        row for row in rows if row["method_id"] == "counterfactual_predictor"
+    )
     assert predictor["algorithm_family"] == "diagnostic supervised predictor"
     assert predictor["real_native_training_transitions"] == 0
 
@@ -32,7 +34,9 @@ def test_hybrid_paired_savings_and_shared_route_denominator():
     for key, value in expected.items():
         assert rows[key]["distinct_task_count"] == 35
         assert rows[key]["paired_count"] == 35
-        assert rows[key]["arithmetic_mean_of_per_task_percentage_saving"] == pytest.approx(value)
+        assert rows[key][
+            "arithmetic_mean_of_per_task_percentage_saving"
+        ] == pytest.approx(value)
 
 
 def test_causal_mpc_and_temporal_headlines_are_recomputed():

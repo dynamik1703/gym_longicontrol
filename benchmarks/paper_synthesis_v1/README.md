@@ -10,6 +10,21 @@ evaluate a controller.
 The authoritative numerical records are JSON/CSV. Markdown files explain and
 render those records; they are not independent result sources.
 
+## Artifact map
+
+- `FEASIBILITY_PROOF.md`, `FEASIBILITY_AUDIT.md`,
+  `feasibility_audit.json`, and `historical_task_status.csv` contain the
+  historical physical-feasibility method and results.
+- `method_registry.json`, `METHOD_REGISTRY.md`,
+  `paired_comparison_registry.json`, and the master evidence matrix reconcile
+  completed methods and comparisons.
+- `CLAIM_EVIDENCE_MATRIX.md`, `PAPER_TITLE_ABSTRACT.md`, `PAPER_OUTLINE.md`,
+  and the figure/threat/literature registers form the manuscript draft.
+- `PAPER_EVAL_ARM_PROPOSAL.md` and `PAPER_EVAL_PROTOCOL_DRAFT.md` are a
+  non-executable proposal requiring later human authorization.
+- `source_registry.json`, `preparation_status.json`, `verify.py`, and focused
+  tests provide machine-checkable provenance and safeguards.
+
 ## Authorization boundary
 
 - Historical task serializations already present in committed ledgers may be
@@ -34,3 +49,7 @@ ruff check benchmarks/paper_synthesis_v1
 
 Only the explicit `--write` mode of the two analysis modules updates generated
 artifacts in this directory. Neither mode invokes a scientific runner.
+
+`verify.py` also audits locally available checkpoint bytes, but never imports
+or deserializes a checkpoint. Missing optional local run storage is reported as
+unavailable; a present hash mismatch fails verification.

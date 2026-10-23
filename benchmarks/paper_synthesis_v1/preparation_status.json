@@ -1,0 +1,72 @@
+{
+  "branch": "research/longicontrol-paper-synthesis-v1",
+  "evidence": {
+    "comparison_families": 8,
+    "evidence_groups": 16,
+    "method_configurations": 34,
+    "paired_comparisons": 9
+  },
+  "feasibility_audit": {
+    "accepted_unique_tasks": 356,
+    "all_inspectable": {
+      "FEASIBLE_WITNESS": 187,
+      "PROVEN_INFEASIBLE": 9,
+      "UNRESOLVED": 215
+    },
+    "study_task_occurrences": 424,
+    "unique_full_tasks": 411,
+    "unique_routes": 411,
+    "verified_feasible_trajectory_records": 621
+  },
+  "final_evaluation": {
+    "authorization_required": true,
+    "executable_runner_created": false,
+    "state": "DRAFT_PROTOCOL_ONLY"
+  },
+  "new_scientific_activity": {
+    "controller_evaluation_episodes": 0,
+    "environment_resets": 0,
+    "environment_steps": 0,
+    "gradient_updates": 0,
+    "training_episodes": 0
+  },
+  "paper": {
+    "authorized": false,
+    "content_fingerprints_constructed": 0,
+    "episodes": 0,
+    "numeric_exclusion_only": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017
+    ],
+    "state": "SEALED_UNINSPECTED"
+  },
+  "schema_version": 1,
+  "source_commit": "9802f9262ea7f753365fc4bdd20b1fe08379291d",
+  "state": "DRAFT_COMPLETE_FOR_PROTOCOL_REVIEW",
+  "verification": {
+    "diff_check": "PASS",
+    "focused_tests": {
+      "failed": 0,
+      "passed": 36
+    },
+    "integrity_verifier": "PASS",
+    "local_checkpoint_hash_matches": 6,
+    "ruff": "PASS"
+  }
+}

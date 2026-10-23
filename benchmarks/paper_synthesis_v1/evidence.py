@@ -1,3 +1,4 @@
+# ruff: noqa: E501
 """Reconcile immutable study records into paper-synthesis registries."""
 
 from __future__ import annotations
@@ -127,7 +128,10 @@ def method_rows() -> list[dict[str, Any]]:
             config_hash="8b2e631873810b9a7b054b12e94060697b606eb34db98b9949b0a39937035d87",
             classification="ALMOST_ALL_REWARD_SETTINGS_FAIL",
             limitations="24 policies share nine evaluation routes; sparse feasible energy",
-            evidence_paths=["benchmarks/scalar_sac/RESULTS.md", "benchmarks/scalar_sac/results-140s.json"],
+            evidence_paths=[
+                "benchmarks/scalar_sac/RESULTS.md",
+                "benchmarks/scalar_sac/results-140s.json",
+            ],
         ),
         method(
             "sb3_sac_v2b",
@@ -151,7 +155,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="WEAK_SEED_DEPENDENT_SCALAR_BASELINE",
             basis="PAIRED_SAME_TASKS",
             limitations="one seed contributes four of five successes",
-            evidence_paths=["benchmarks/scalar_sb3/RESULTS.md", "benchmarks/scalar_sb3/results.json"],
+            evidence_paths=[
+                "benchmarks/scalar_sb3/RESULTS.md",
+                "benchmarks/scalar_sb3/results.json",
+            ],
         ),
         method(
             "sb3_ppo_v2b",
@@ -174,7 +181,10 @@ def method_rows() -> list[dict[str, Any]]:
             objective="fixed shaped scalar reward",
             classification="ZERO_FULL_BRAKING",
             basis="PAIRED_SAME_TASKS",
-            evidence_paths=["benchmarks/scalar_sb3/RESULTS.md", "benchmarks/scalar_sb3/results.json"],
+            evidence_paths=[
+                "benchmarks/scalar_sb3/RESULTS.md",
+                "benchmarks/scalar_sb3/results.json",
+            ],
         ),
         method(
             "scalar_action_repeat_5",
@@ -200,7 +210,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="NO_MATERIAL_ROBUSTNESS_IMPROVEMENT",
             basis="PAIRED_SAME_TASKS",
             limitations="decision frequency and update count both change",
-            evidence_paths=["benchmarks/credit_assignment/RESULTS.md", "benchmarks/credit_assignment/results.json"],
+            evidence_paths=[
+                "benchmarks/credit_assignment/RESULTS.md",
+                "benchmarks/credit_assignment/results.json",
+            ],
         ),
         method(
             "binary_success_sac",
@@ -222,7 +235,10 @@ def method_rows() -> list[dict[str, Any]]:
             objective="terminal 1 iff exact task feasibility, otherwise 0",
             classification="GATE_D_NO_ESCAPE_FROM_ZERO",
             basis="PAIRED_SAME_TASKS",
-            evidence_paths=["benchmarks/binary_reward/RESULTS.md", "benchmarks/binary_reward/results.json"],
+            evidence_paths=[
+                "benchmarks/binary_reward/RESULTS.md",
+                "benchmarks/binary_reward/results.json",
+            ],
         ),
         method(
             "llm_reward_sac",
@@ -248,7 +264,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="SPARSE_NONROBUST_SUCCESS",
             basis="PAIRED_SAME_TASKS",
             limitations="one reward search; screening used seed 11; one feasible episode",
-            evidence_paths=["benchmarks/llm_reward/FINAL_RESULTS.md", "benchmarks/llm_reward/final-results.json"],
+            evidence_paths=[
+                "benchmarks/llm_reward/FINAL_RESULTS.md",
+                "benchmarks/llm_reward/final-results.json",
+            ],
         ),
         method(
             "constrained_v1",
@@ -271,7 +290,10 @@ def method_rows() -> list[dict[str, Any]]:
             objective="negative signed energy; speed integral and sparse task-failure costs",
             classification="CONSTRAINTS_SATISFIED_BY_STANDSTILL",
             basis="PAIRED_SAME_TASKS",
-            evidence_paths=["benchmarks/constrained_rl/RESULTS.md", "benchmarks/constrained_rl/results.json"],
+            evidence_paths=[
+                "benchmarks/constrained_rl/RESULTS.md",
+                "benchmarks/constrained_rl/results.json",
+            ],
         ),
         method(
             "constrained_v2",
@@ -297,7 +319,10 @@ def method_rows() -> list[dict[str, Any]]:
             basis="PAIRED_SAME_TASKS",
             checkpoint="LOCAL_PRESENT; SHA-256 newly audited, not recorded in original result",
             limitations="speed compliance misses preregistered robustness criterion",
-            evidence_paths=["benchmarks/constrained_rl_v2/RESULTS.md", "benchmarks/constrained_rl_v2/results.json"],
+            evidence_paths=[
+                "benchmarks/constrained_rl_v2/RESULTS.md",
+                "benchmarks/constrained_rl_v2/results.json",
+            ],
         ),
         method(
             "sameinfo_scalar",
@@ -323,7 +348,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="CONSTRAINT_AVOIDING_CRAWL",
             basis="PAIRED_SAME_STREAM",
             checkpoint="LOCAL_PRESENT_HASH_MATCHES_RECORDED",
-            evidence_paths=["benchmarks/same_information_scalar_vs_constrained/RESULTS.md", "benchmarks/same_information_scalar_vs_constrained/results.json"],
+            evidence_paths=[
+                "benchmarks/same_information_scalar_vs_constrained/RESULTS.md",
+                "benchmarks/same_information_scalar_vs_constrained/results.json",
+            ],
         ),
         method(
             "sameinfo_constrained",
@@ -350,7 +378,10 @@ def method_rows() -> list[dict[str, Any]]:
             basis="PAIRED_SAME_STREAM",
             checkpoint="REFERENCE_HASHES_RECORDED; executable copies not present in this worktree",
             limitations="algorithmic differences extend beyond scalar vs multipliers",
-            evidence_paths=["benchmarks/same_information_scalar_vs_constrained/RESULTS.md", "benchmarks/same_information_scalar_vs_constrained/results.json"],
+            evidence_paths=[
+                "benchmarks/same_information_scalar_vs_constrained/RESULTS.md",
+                "benchmarks/same_information_scalar_vs_constrained/results.json",
+            ],
         ),
         method(
             "requirement_conditioned",
@@ -370,7 +401,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="RESPONSIVE_BUT_UNRELIABLE",
             basis="PAIRED_SAME_TASKS",
             limitations="canonical 140 s subset is 12/27; matrix tasks differ by requirement",
-            evidence_paths=["benchmarks/requirement_conditioned/RESULTS.md", "benchmarks/requirement_conditioned/results.json"],
+            evidence_paths=[
+                "benchmarks/requirement_conditioned/RESULTS.md",
+                "benchmarks/requirement_conditioned/results.json",
+            ],
         ),
         method(
             "goal_sac_no_her",
@@ -392,7 +426,10 @@ def method_rows() -> list[dict[str, Any]]:
             objective="goal-conditioned reward",
             classification="ZERO",
             basis="PAIRED_SAME_TASKS",
-            evidence_paths=["benchmarks/goal_conditioned/RESULTS.md", "benchmarks/goal_conditioned/results.json"],
+            evidence_paths=[
+                "benchmarks/goal_conditioned/RESULTS.md",
+                "benchmarks/goal_conditioned/results.json",
+            ],
         ),
         method(
             "goal_sac_her",
@@ -415,7 +452,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="ZERO",
             basis="PAIRED_SAME_TASKS",
             limitations="virtual relabels are not independent physical successes",
-            evidence_paths=["benchmarks/goal_conditioned/RESULTS.md", "benchmarks/goal_conditioned/results.json"],
+            evidence_paths=[
+                "benchmarks/goal_conditioned/RESULTS.md",
+                "benchmarks/goal_conditioned/results.json",
+            ],
         ),
         method(
             "gcsl",
@@ -442,7 +482,10 @@ def method_rows() -> list[dict[str, Any]]:
             basis="PAIRED_SAME_TASKS",
             checkpoint="LOCAL_PRESENT; recorded hashes available",
             limitations="constrained reference is contextual, not algorithm-matched",
-            evidence_paths=["benchmarks/gcsl_canonical/RESULTS.md", "benchmarks/gcsl_canonical/results.json"],
+            evidence_paths=[
+                "benchmarks/gcsl_canonical/RESULTS.md",
+                "benchmarks/gcsl_canonical/results.json",
+            ],
         ),
         method(
             "contrastive_depth4",
@@ -466,7 +509,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="NO_ROBUST_TRANSFER",
             basis="PAIRED_SAME_TASKS",
             checkpoint="LOCAL_PRESENT_HASH_MATCHES_RECORDED",
-            evidence_paths=["benchmarks/contrastive_rl/RESULTS.md", "benchmarks/contrastive_rl/results.json"],
+            evidence_paths=[
+                "benchmarks/contrastive_rl/RESULTS.md",
+                "benchmarks/contrastive_rl/results.json",
+            ],
         ),
         method(
             "contrastive_depth16",
@@ -491,7 +537,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="NO_REPEATABLE_DEPTH_GAIN",
             basis="PAIRED_SAME_TASKS",
             checkpoint="LOCAL_PRESENT_HASH_MATCHES_RECORDED",
-            evidence_paths=["benchmarks/contrastive_rl/RESULTS.md", "benchmarks/contrastive_rl/results.json"],
+            evidence_paths=[
+                "benchmarks/contrastive_rl/RESULTS.md",
+                "benchmarks/contrastive_rl/results.json",
+            ],
         ),
         method(
             "learned_dynamics_mbrl",
@@ -516,7 +565,10 @@ def method_rows() -> list[dict[str, Any]]:
             timing="ABORTED_BEFORE_FINAL_ENDPOINT",
             basis="NOT_COMPARABLE",
             limitations="no 300k endpoint; five planned policies not started",
-            evidence_paths=["benchmarks/model_based_rl/TERMINATION.md", "benchmarks/model_based_rl/termination.json"],
+            evidence_paths=[
+                "benchmarks/model_based_rl/TERMINATION.md",
+                "benchmarks/model_based_rl/termination.json",
+            ],
         ),
         method(
             "physics_model_mbrl",
@@ -542,7 +594,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="NO_MATERIAL_IMPROVEMENT",
             basis="CONTEXTUAL_ONLY",
             limitations="not a one-factor control against Constrained V2",
-            evidence_paths=["benchmarks/physics_model_mbrl/RESULTS.md", "benchmarks/physics_model_mbrl/results.json"],
+            evidence_paths=[
+                "benchmarks/physics_model_mbrl/RESULTS.md",
+                "benchmarks/physics_model_mbrl/results.json",
+            ],
         ),
         method(
             "mve_real_only",
@@ -566,7 +621,10 @@ def method_rows() -> list[dict[str, Any]]:
             objective="matched real-only constrained targets",
             classification="MATCHED_CONTROL",
             basis="PAIRED_SAME_STREAM",
-            evidence_paths=["benchmarks/multistep_physics_mbrl/RESULTS.md", "benchmarks/multistep_physics_mbrl/results.json"],
+            evidence_paths=[
+                "benchmarks/multistep_physics_mbrl/RESULTS.md",
+                "benchmarks/multistep_physics_mbrl/results.json",
+            ],
         ),
         method(
             "physics_mve",
@@ -590,7 +648,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="DEGRADATION_AND_UNSTABLE",
             basis="PAIRED_SAME_STREAM",
             limitations="seed 47 crossed numerical-stability threshold",
-            evidence_paths=["benchmarks/multistep_physics_mbrl/RESULTS.md", "benchmarks/multistep_physics_mbrl/results.json"],
+            evidence_paths=[
+                "benchmarks/multistep_physics_mbrl/RESULTS.md",
+                "benchmarks/multistep_physics_mbrl/results.json",
+            ],
         ),
         method(
             "physical_oracle",
@@ -621,7 +682,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="PHYSICALLY_SOLVABLE_REFERENCE",
             basis="PAIRED_SAME_TASKS",
             limitations="privileged contextual reference; not globally optimal",
-            evidence_paths=["benchmarks/physical_feasibility_reference/RESULTS.md", "benchmarks/physical_feasibility_reference/holdout_results.json"],
+            evidence_paths=[
+                "benchmarks/physical_feasibility_reference/RESULTS.md",
+                "benchmarks/physical_feasibility_reference/holdout_results.json",
+            ],
         ),
         method(
             "physical_causal",
@@ -651,7 +715,10 @@ def method_rows() -> list[dict[str, Any]]:
             classification="CAUSAL_REFERENCE_STRONG_ON_TESTED_TASKS",
             basis="PAIRED_SAME_TASKS",
             limitations="36-route panel does not prove population-wide reliability",
-            evidence_paths=["benchmarks/physical_feasibility_reference/RESULTS.md", "benchmarks/physical_feasibility_reference/holdout_results.json"],
+            evidence_paths=[
+                "benchmarks/physical_feasibility_reference/RESULTS.md",
+                "benchmarks/physical_feasibility_reference/holdout_results.json",
+            ],
         ),
     ]
 
@@ -681,7 +748,11 @@ def method_rows() -> list[dict[str, Any]]:
         incidents="V1 remains INCIDENT_ABORTED",
         checkpoint="LOCAL_PRESENT_HASH_MATCHES_RECORDED",
         limitations="one task now proven infeasible; raw RSR remains 35/36",
-        evidence_paths=["benchmarks/hybrid_rl_validation_v2/VALIDATION_RESULTS.md", "benchmarks/hybrid_rl_validation_v2/validation_results.json", "benchmarks/hybrid_rl_validation_v2/pair_ledger.json"],
+        evidence_paths=[
+            "benchmarks/hybrid_rl_validation_v2/VALIDATION_RESULTS.md",
+            "benchmarks/hybrid_rl_validation_v2/validation_results.json",
+            "benchmarks/hybrid_rl_validation_v2/pair_ledger.json",
+        ],
     )
     for seed, energy, time in (
         (11, 0.17614826280455592, 129.39166666666358),
@@ -723,13 +794,31 @@ def method_rows() -> list[dict[str, Any]]:
         privileged_critic=False,
         safety="physical Shield and deadline recoverability checks",
         basis="PAIRED_SAME_TASKS",
-        evidence_paths=["benchmarks/causal_mpc_v2/RESULTS.md", "benchmarks/causal_mpc_v2/capability_results.json"],
+        evidence_paths=[
+            "benchmarks/causal_mpc_v2/RESULTS.md",
+            "benchmarks/causal_mpc_v2/capability_results.json",
+        ],
     )
     for method_id, name, energy, objective in (
         ("causal60_capability", "CAUSAL60", 0.196323, "fixed causal speed policy"),
-        ("time_aware_capability", "TIME_AWARE", 0.180326, "deterministic pace-aware target speed"),
-        ("fixed_price_mpc_v2", "FixedPrice MPC V2", 0.172002, "fixed time-price MPC V2"),
-        ("adaptive_price_mpc_v2", "AdaptivePrice MPC V2", 0.17066648205049648, "reserve-feedback time-price MPC V2"),
+        (
+            "time_aware_capability",
+            "TIME_AWARE",
+            0.180326,
+            "deterministic pace-aware target speed",
+        ),
+        (
+            "fixed_price_mpc_v2",
+            "FixedPrice MPC V2",
+            0.172002,
+            "fixed time-price MPC V2",
+        ),
+        (
+            "adaptive_price_mpc_v2",
+            "AdaptivePrice MPC V2",
+            0.17066648205049648,
+            "reserve-feedback time-price MPC V2",
+        ),
     ):
         rows.append(
             method(
@@ -766,7 +855,10 @@ def method_rows() -> list[dict[str, Any]]:
                 basis="PAIRED_SAME_TASKS",
                 limitations="not a completed RL method; Validation has zero episodes",
                 checkpoint="NO_MODEL_TRAINED",
-                evidence_paths=["benchmarks/slacktrader_v1/README.md", "benchmarks/slacktrader_v1/mpc_development_results.json"],
+                evidence_paths=[
+                    "benchmarks/slacktrader_v1/README.md",
+                    "benchmarks/slacktrader_v1/mpc_development_results.json",
+                ],
             ),
             method(
                 "temporal_continue",
@@ -799,7 +891,10 @@ def method_rows() -> list[dict[str, Any]]:
                 basis="PAIRED_SAME_TASKS",
                 incidents="completion_bound_s was not retained",
                 limitations="non-learning; no independently recomputable bound-falsification audit",
-                evidence_paths=["benchmarks/temporal_options_v1/RESULTS.md", "benchmarks/temporal_options_v1/results.json"],
+                evidence_paths=[
+                    "benchmarks/temporal_options_v1/RESULTS.md",
+                    "benchmarks/temporal_options_v1/results.json",
+                ],
             ),
             method(
                 "temporal_reset",
@@ -828,7 +923,10 @@ def method_rows() -> list[dict[str, Any]]:
                 classification="SEMANTIC_OR_INTEGRITY_STOP",
                 basis="PAIRED_SAME_TASKS",
                 incidents="completion_bound_s was not retained",
-                evidence_paths=["benchmarks/temporal_options_v1/RESULTS.md", "benchmarks/temporal_options_v1/results.json"],
+                evidence_paths=[
+                    "benchmarks/temporal_options_v1/RESULTS.md",
+                    "benchmarks/temporal_options_v1/results.json",
+                ],
             ),
             method(
                 "temporal_commit",
@@ -857,7 +955,10 @@ def method_rows() -> list[dict[str, Any]]:
                 classification="SEMANTIC_OR_INTEGRITY_STOP",
                 basis="PAIRED_SAME_TASKS",
                 incidents="completion_bound_s was not retained",
-                evidence_paths=["benchmarks/temporal_options_v1/RESULTS.md", "benchmarks/temporal_options_v1/results.json"],
+                evidence_paths=[
+                    "benchmarks/temporal_options_v1/RESULTS.md",
+                    "benchmarks/temporal_options_v1/results.json",
+                ],
             ),
             method(
                 "counterfactual_predictor",
@@ -880,7 +981,10 @@ def method_rows() -> list[dict[str, Any]]:
                 basis="PAIRED_SAME_TASKS",
                 limitations="not a controller evaluation and not reinforcement learning",
                 checkpoint="SUPERVISED_PREDICTOR_ARTIFACT_ONLY",
-                evidence_paths=["benchmarks/counterfactual_option_value_v1/RESULTS.md", "benchmarks/counterfactual_option_value_v1/results.json"],
+                evidence_paths=[
+                    "benchmarks/counterfactual_option_value_v1/RESULTS.md",
+                    "benchmarks/counterfactual_option_value_v1/results.json",
+                ],
             ),
         ]
     )
@@ -898,28 +1002,44 @@ def assert_headlines() -> None:
     gcsl = read_json("benchmarks/gcsl_canonical/results.json")
     assert gcsl["pooled"]["GCSL"]["rsr"] == 0
     assert gcsl["pooled"]["GCSL"]["episodes"] == 54
-    physical = read_json("benchmarks/physical_feasibility_reference/holdout_results.json")
+    physical = read_json(
+        "benchmarks/physical_feasibility_reference/holdout_results.json"
+    )
     assert physical["causal"]["summary"]["requirement_satisfaction_count"] == 36
     assert physical["oracle"]["summary"]["requirement_satisfaction_count"] == 36
     hybrid = read_json("benchmarks/hybrid_rl_validation_v2/validation_results.json")
-    assert all(summary["rsr"] == 35 for summary in hybrid["controller_summaries"].values())
+    assert all(
+        summary["rsr"] == 35 for summary in hybrid["controller_summaries"].values()
+    )
     causal = read_json("benchmarks/causal_mpc_v2/capability_results.json")
     assert all(arm["summary"]["rsr"] == 18 for arm in causal["arms"].values())
-    assert causal["paired_feasible_energy"]["adaptive_vs_time_aware"][
-        "arithmetic_mean_saving_percent"
-    ] == 5.421834807082291
-    assert causal["paired_feasible_energy"]["adaptive_vs_fixed"][
-        "arithmetic_mean_saving_percent"
-    ] == 0.8011839951300701
+    assert (
+        causal["paired_feasible_energy"]["adaptive_vs_time_aware"][
+            "arithmetic_mean_saving_percent"
+        ]
+        == 5.421834807082291
+    )
+    assert (
+        causal["paired_feasible_energy"]["adaptive_vs_fixed"][
+            "arithmetic_mean_saving_percent"
+        ]
+        == 0.8011839951300701
+    )
     temporal = read_json("benchmarks/temporal_options_v1/results.json")
     assert all(arm["summary"]["rsr"] == 18 for arm in temporal["arms"].values())
-    assert temporal["comparisons"]["primary_continue_vs_reset"][
-        "arithmetic_mean_saving_percent"
-    ] == -0.5620832885179694
+    assert (
+        temporal["comparisons"]["primary_continue_vs_reset"][
+            "arithmetic_mean_saving_percent"
+        ]
+        == -0.5620832885179694
+    )
     counterfactual = read_json("benchmarks/counterfactual_option_value_v1/results.json")
-    assert counterfactual["opportunity_test"]["distinguishable_behavior"][
-        "saving_0_2wh_count"
-    ] == 16
+    assert (
+        counterfactual["opportunity_test"]["distinguishable_behavior"][
+            "saving_0_2wh_count"
+        ]
+        == 16
+    )
     assert counterfactual["opportunity_test"]["valid_reference_snapshot_count"] == 88
 
 
@@ -1126,23 +1246,227 @@ def paired_rows() -> list[dict[str, Any]]:
 
 def evidence_rows() -> list[dict[str, Any]]:
     return [
-        {"evidence_id": "sameinfo", "comparison_family": "B_EXPLICIT_CONSTRAINTS", "methods": "Matched Constrained vs Same-Information Scalar", "population": "18 routes x three matched seed pairs", "comparison_basis": "PAIRED_SAME_STREAM", "distinct_routes": 18, "controller_task_pairs": 108, "result": "23/54 vs 0/54 RSR", "classification": "CONSTRAINED_ROBUST_ADVANTAGE", "qualification": "not an algorithm-only ablation", "source": "benchmarks/same_information_scalar_vs_constrained/results.json"},
-        {"evidence_id": "gcsl", "comparison_family": "C_FUTURE_GOAL_CONDITIONED", "methods": "GCSL", "population": "GCSL_VALIDATION_V1", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 18, "controller_task_pairs": 54, "result": "0/54 RSR; 52/54 completion/deadline; 1/54 speed compliance", "classification": "GCSL_ZERO", "qualification": "constrained reference is contextual", "source": "benchmarks/gcsl_canonical/results.json"},
-        {"evidence_id": "physical_reference", "comparison_family": "E_PHYSICS_REFERENCE", "methods": "full-route Oracle and causal physical reference", "population": "independent 36-route holdout", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 36, "controller_task_pairs": 72, "result": "36/36 RSR for both", "classification": "PHYSICALLY_SOLVABLE_REFERENCE", "qualification": "Oracle privileged; neither 36/36 proves population-wide 100%", "source": "benchmarks/physical_feasibility_reference/holdout_results.json"},
-        {"evidence_id": "hybrid_v1", "comparison_family": "F_PHYSICS_SHIELDED_LEARNING", "methods": "Hybrid Validation V1", "population": "aborted transaction", "comparison_basis": "NOT_COMPARABLE", "distinct_routes": NOT_RECORDED, "controller_task_pairs": 0, "result": "no valid performance result", "classification": "INCIDENT_ABORTED", "qualification": "two completed episodes lacked persisted results; one environment reset without action", "source": "benchmarks/hybrid_rl_execution/VALIDATION_INTEGRITY_INCIDENT.md"},
-        {"evidence_id": "hybrid_v2", "comparison_family": "F_PHYSICS_SHIELDED_LEARNING", "methods": "CAUSAL60, TIME_AWARE, H11, H29, H47", "population": "amended post-incident 36-route Validation", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 36, "controller_task_pairs": 180, "result": "35/36 RSR for every arm; H11/H29/H47 save 1.035/1.245/1.700% vs TIME_AWARE on 35 jointly feasible tasks", "classification": "FEASIBILITY_PRESERVED_WITHOUT_TARGET_ENERGY_GAIN", "qualification": "task 10200029 is now proven infeasible; raw RSR remains 35/36", "source": "benchmarks/hybrid_rl_validation_v2/validation_results.json"},
-        {"evidence_id": "causal_mpc_v2", "comparison_family": "G_IMPROVED_NONLEARNING_CONTROL", "methods": "CAUSAL60, TIME_AWARE, FixedPrice V2, AdaptivePrice V2", "population": "18-route Capability", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 18, "controller_task_pairs": 72, "result": "18/18 each; Adaptive saves 5.422% vs TIME_AWARE and 0.801% vs Fixed", "classification": "MPC_IMPROVED_BUT_RL_VALUE_UNCLEAR", "qualification": "Fixed vs TIME_AWARE mixes profile-family and terminal-treatment changes", "source": "benchmarks/causal_mpc_v2/capability_results.json"},
-        {"evidence_id": "slacktrader", "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP", "methods": "SlackTrader V1 preflight", "population": "four Development tasks", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 4, "controller_task_pairs": 16, "result": "AdaptivePrice preflight 9.301% worse than TIME_AWARE", "classification": "RL_NOT_JUSTIFIED_BY_MPC_PREFLIGHT", "qualification": "main RL training never started", "source": "benchmarks/slacktrader_v1/mpc_development_results.json"},
-        {"evidence_id": "temporal_options", "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP", "methods": "FROZEN_MPC, RESET, CONTINUE, COMMIT", "population": "18-route Capability", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 18, "controller_task_pairs": 72, "result": "18/18 each; CONTINUE uses 0.562% more energy than RESET", "classification": "SEMANTIC_OR_INTEGRITY_STOP", "qualification": "non-learning; completion bounds not retained", "source": "benchmarks/temporal_options_v1/results.json"},
-        {"evidence_id": "counterfactual", "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP", "methods": "Counterfactual supervised predictor pilot", "population": "88 valid Test states", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 11, "controller_task_pairs": 88, "result": "16/88 states have feasible sampled improvement >=0.2 Wh", "classification": "INSUFFICIENT_IMPROVEMENT_OPPORTUNITY", "qualification": "not a completed RL method or controller evaluation", "source": "benchmarks/counterfactual_option_value_v1/results.json"},
-        {"evidence_id": "constrained_v2", "comparison_family": "B_EXPLICIT_CONSTRAINTS", "methods": "Constrained V2", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 9, "controller_task_pairs": 27, "result": "21/27 RSR; 27/27 completion/deadline; 21/27 speed", "classification": "LEARNABLE_NOT_SEED_ROBUST", "qualification": "same nine routes reused across three trained seeds", "source": "benchmarks/constrained_rl_v2/results.json"},
-        {"evidence_id": "reward_family", "comparison_family": "A_STANDARD_REWARD_RL", "methods": "SB3 SAC, PPO, Binary, LLM reward", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 9, "controller_task_pairs": 108, "result": "5/27, 0/27, 0/27, 1/27 RSR", "classification": "MULTIPLE_NEGATIVE_OR_WEAK_RESULTS", "qualification": "not all reward implementations are one-factor matched", "source": "benchmarks/llm_reward/FINAL_RESULTS.md"},
-        {"evidence_id": "requirement_conditioning", "comparison_family": "C_FUTURE_GOAL_CONDITIONED", "methods": "Requirement-Conditioned SAC", "population": "five requirements x nine routes x three seeds", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 9, "controller_task_pairs": 135, "result": "48/135 overall; canonical 140 s subset 12/27", "classification": "RESPONSIVE_BUT_UNRELIABLE", "qualification": "full matrix contains distinct task requirements on shared routes", "source": "benchmarks/requirement_conditioned/results.json"},
-        {"evidence_id": "goal_sac", "comparison_family": "C_FUTURE_GOAL_CONDITIONED", "methods": "Goal SAC without/with HER", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "PAIRED_SAME_TASKS", "distinct_routes": 9, "controller_task_pairs": 54, "result": "0/27 and 0/27 RSR", "classification": "NO_HER_BENEFIT", "qualification": "virtual relabels are not physical successes", "source": "benchmarks/goal_conditioned/results.json"},
-        {"evidence_id": "contrastive", "comparison_family": "C_FUTURE_GOAL_CONDITIONED", "methods": "Projected-goal CRL depth 4/16", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "PAIRED_SAME_STREAM", "distinct_routes": 9, "controller_task_pairs": 54, "result": "0/27 vs 1/27 RSR", "classification": "NO_REPEATABLE_DEPTH_GAIN", "qualification": "300k scale only", "source": "benchmarks/contrastive_rl/results.json"},
-        {"evidence_id": "learned_mbrl", "comparison_family": "D_MODEL_BASED_RL", "methods": "mixed learned-dynamics MBRL", "population": "one seed, partial Development", "comparison_basis": "NOT_COMPARABLE", "distinct_routes": 9, "controller_task_pairs": 9, "result": "0/9 at 50k; no final endpoint", "classification": "TERMINATED_RESOURCE_INFEASIBLE", "qualification": "termination was compute-based, not performance-based", "source": "benchmarks/model_based_rl/termination.json"},
-        {"evidence_id": "physics_mbrl", "comparison_family": "D_MODEL_BASED_RL", "methods": "exact one-step Physics MBRL", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "CONTEXTUAL_ONLY", "distinct_routes": 9, "controller_task_pairs": 27, "result": "9/27 RSR", "classification": "NO_MATERIAL_IMPROVEMENT", "qualification": "mixes one-step augmentation with a different real-data target", "source": "benchmarks/physics_model_mbrl/results.json"},
-        {"evidence_id": "mve", "comparison_family": "D_MODEL_BASED_RL", "methods": "Physics MVE vs matched real-only", "population": "Validation 3000-3008 x three seeds", "comparison_basis": "PAIRED_SAME_STREAM", "distinct_routes": 9, "controller_task_pairs": 54, "result": "0/27 vs 10/27 RSR", "classification": "DEGRADATION_AND_UNSTABLE", "qualification": "one MVE seed crossed stability threshold", "source": "benchmarks/multistep_physics_mbrl/results.json"},
+        {
+            "evidence_id": "sameinfo",
+            "comparison_family": "B_EXPLICIT_CONSTRAINTS",
+            "methods": "Matched Constrained vs Same-Information Scalar",
+            "population": "18 routes x three matched seed pairs",
+            "comparison_basis": "PAIRED_SAME_STREAM",
+            "distinct_routes": 18,
+            "controller_task_pairs": 108,
+            "result": "23/54 vs 0/54 RSR",
+            "classification": "CONSTRAINED_ROBUST_ADVANTAGE",
+            "qualification": "not an algorithm-only ablation",
+            "source": "benchmarks/same_information_scalar_vs_constrained/results.json",
+        },
+        {
+            "evidence_id": "gcsl",
+            "comparison_family": "C_FUTURE_GOAL_CONDITIONED",
+            "methods": "GCSL",
+            "population": "GCSL_VALIDATION_V1",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 18,
+            "controller_task_pairs": 54,
+            "result": "0/54 RSR; 52/54 completion/deadline; 1/54 speed compliance",
+            "classification": "GCSL_ZERO",
+            "qualification": "constrained reference is contextual",
+            "source": "benchmarks/gcsl_canonical/results.json",
+        },
+        {
+            "evidence_id": "physical_reference",
+            "comparison_family": "E_PHYSICS_REFERENCE",
+            "methods": "full-route Oracle and causal physical reference",
+            "population": "independent 36-route holdout",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 36,
+            "controller_task_pairs": 72,
+            "result": "36/36 RSR for both",
+            "classification": "PHYSICALLY_SOLVABLE_REFERENCE",
+            "qualification": "Oracle privileged; neither 36/36 proves population-wide 100%",
+            "source": "benchmarks/physical_feasibility_reference/holdout_results.json",
+        },
+        {
+            "evidence_id": "hybrid_v1",
+            "comparison_family": "F_PHYSICS_SHIELDED_LEARNING",
+            "methods": "Hybrid Validation V1",
+            "population": "aborted transaction",
+            "comparison_basis": "NOT_COMPARABLE",
+            "distinct_routes": NOT_RECORDED,
+            "controller_task_pairs": 0,
+            "result": "no valid performance result",
+            "classification": "INCIDENT_ABORTED",
+            "qualification": "two completed episodes lacked persisted results; one environment reset without action",
+            "source": "benchmarks/hybrid_rl_execution/VALIDATION_INTEGRITY_INCIDENT.md",
+        },
+        {
+            "evidence_id": "hybrid_v2",
+            "comparison_family": "F_PHYSICS_SHIELDED_LEARNING",
+            "methods": "CAUSAL60, TIME_AWARE, H11, H29, H47",
+            "population": "amended post-incident 36-route Validation",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 36,
+            "controller_task_pairs": 180,
+            "result": "35/36 RSR for every arm; H11/H29/H47 save 1.035/1.245/1.700% vs TIME_AWARE on 35 jointly feasible tasks",
+            "classification": "FEASIBILITY_PRESERVED_WITHOUT_TARGET_ENERGY_GAIN",
+            "qualification": "task 10200029 is now proven infeasible; raw RSR remains 35/36",
+            "source": "benchmarks/hybrid_rl_validation_v2/validation_results.json",
+        },
+        {
+            "evidence_id": "causal_mpc_v2",
+            "comparison_family": "G_IMPROVED_NONLEARNING_CONTROL",
+            "methods": "CAUSAL60, TIME_AWARE, FixedPrice V2, AdaptivePrice V2",
+            "population": "18-route Capability",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 18,
+            "controller_task_pairs": 72,
+            "result": "18/18 each; Adaptive saves 5.422% vs TIME_AWARE and 0.801% vs Fixed",
+            "classification": "MPC_IMPROVED_BUT_RL_VALUE_UNCLEAR",
+            "qualification": "Fixed vs TIME_AWARE mixes profile-family and terminal-treatment changes",
+            "source": "benchmarks/causal_mpc_v2/capability_results.json",
+        },
+        {
+            "evidence_id": "slacktrader",
+            "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP",
+            "methods": "SlackTrader V1 preflight",
+            "population": "four Development tasks",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 4,
+            "controller_task_pairs": 16,
+            "result": "AdaptivePrice preflight 9.301% worse than TIME_AWARE",
+            "classification": "RL_NOT_JUSTIFIED_BY_MPC_PREFLIGHT",
+            "qualification": "main RL training never started",
+            "source": "benchmarks/slacktrader_v1/mpc_development_results.json",
+        },
+        {
+            "evidence_id": "temporal_options",
+            "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP",
+            "methods": "FROZEN_MPC, RESET, CONTINUE, COMMIT",
+            "population": "18-route Capability",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 18,
+            "controller_task_pairs": 72,
+            "result": "18/18 each; CONTINUE uses 0.562% more energy than RESET",
+            "classification": "SEMANTIC_OR_INTEGRITY_STOP",
+            "qualification": "non-learning; completion bounds not retained",
+            "source": "benchmarks/temporal_options_v1/results.json",
+        },
+        {
+            "evidence_id": "counterfactual",
+            "comparison_family": "H_UNSUCCESSFUL_FOLLOWUP",
+            "methods": "Counterfactual supervised predictor pilot",
+            "population": "88 valid Test states",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 11,
+            "controller_task_pairs": 88,
+            "result": "16/88 states have feasible sampled improvement >=0.2 Wh",
+            "classification": "INSUFFICIENT_IMPROVEMENT_OPPORTUNITY",
+            "qualification": "not a completed RL method or controller evaluation",
+            "source": "benchmarks/counterfactual_option_value_v1/results.json",
+        },
+        {
+            "evidence_id": "constrained_v2",
+            "comparison_family": "B_EXPLICIT_CONSTRAINTS",
+            "methods": "Constrained V2",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 9,
+            "controller_task_pairs": 27,
+            "result": "21/27 RSR; 27/27 completion/deadline; 21/27 speed",
+            "classification": "LEARNABLE_NOT_SEED_ROBUST",
+            "qualification": "same nine routes reused across three trained seeds",
+            "source": "benchmarks/constrained_rl_v2/results.json",
+        },
+        {
+            "evidence_id": "reward_family",
+            "comparison_family": "A_STANDARD_REWARD_RL",
+            "methods": "SB3 SAC, PPO, Binary, LLM reward",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 9,
+            "controller_task_pairs": 108,
+            "result": "5/27, 0/27, 0/27, 1/27 RSR",
+            "classification": "MULTIPLE_NEGATIVE_OR_WEAK_RESULTS",
+            "qualification": "not all reward implementations are one-factor matched",
+            "source": "benchmarks/llm_reward/FINAL_RESULTS.md",
+        },
+        {
+            "evidence_id": "requirement_conditioning",
+            "comparison_family": "C_FUTURE_GOAL_CONDITIONED",
+            "methods": "Requirement-Conditioned SAC",
+            "population": "five requirements x nine routes x three seeds",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 9,
+            "controller_task_pairs": 135,
+            "result": "48/135 overall; canonical 140 s subset 12/27",
+            "classification": "RESPONSIVE_BUT_UNRELIABLE",
+            "qualification": "full matrix contains distinct task requirements on shared routes",
+            "source": "benchmarks/requirement_conditioned/results.json",
+        },
+        {
+            "evidence_id": "goal_sac",
+            "comparison_family": "C_FUTURE_GOAL_CONDITIONED",
+            "methods": "Goal SAC without/with HER",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "PAIRED_SAME_TASKS",
+            "distinct_routes": 9,
+            "controller_task_pairs": 54,
+            "result": "0/27 and 0/27 RSR",
+            "classification": "NO_HER_BENEFIT",
+            "qualification": "virtual relabels are not physical successes",
+            "source": "benchmarks/goal_conditioned/results.json",
+        },
+        {
+            "evidence_id": "contrastive",
+            "comparison_family": "C_FUTURE_GOAL_CONDITIONED",
+            "methods": "Projected-goal CRL depth 4/16",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "PAIRED_SAME_STREAM",
+            "distinct_routes": 9,
+            "controller_task_pairs": 54,
+            "result": "0/27 vs 1/27 RSR",
+            "classification": "NO_REPEATABLE_DEPTH_GAIN",
+            "qualification": "300k scale only",
+            "source": "benchmarks/contrastive_rl/results.json",
+        },
+        {
+            "evidence_id": "learned_mbrl",
+            "comparison_family": "D_MODEL_BASED_RL",
+            "methods": "mixed learned-dynamics MBRL",
+            "population": "one seed, partial Development",
+            "comparison_basis": "NOT_COMPARABLE",
+            "distinct_routes": 9,
+            "controller_task_pairs": 9,
+            "result": "0/9 at 50k; no final endpoint",
+            "classification": "TERMINATED_RESOURCE_INFEASIBLE",
+            "qualification": "termination was compute-based, not performance-based",
+            "source": "benchmarks/model_based_rl/termination.json",
+        },
+        {
+            "evidence_id": "physics_mbrl",
+            "comparison_family": "D_MODEL_BASED_RL",
+            "methods": "exact one-step Physics MBRL",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "CONTEXTUAL_ONLY",
+            "distinct_routes": 9,
+            "controller_task_pairs": 27,
+            "result": "9/27 RSR",
+            "classification": "NO_MATERIAL_IMPROVEMENT",
+            "qualification": "mixes one-step augmentation with a different real-data target",
+            "source": "benchmarks/physics_model_mbrl/results.json",
+        },
+        {
+            "evidence_id": "mve",
+            "comparison_family": "D_MODEL_BASED_RL",
+            "methods": "Physics MVE vs matched real-only",
+            "population": "Validation 3000-3008 x three seeds",
+            "comparison_basis": "PAIRED_SAME_STREAM",
+            "distinct_routes": 9,
+            "controller_task_pairs": 54,
+            "result": "0/27 vs 10/27 RSR",
+            "classification": "DEGRADATION_AND_UNSTABLE",
+            "qualification": "one MVE seed crossed stability threshold",
+            "source": "benchmarks/multistep_physics_mbrl/results.json",
+        },
     ]
 
 

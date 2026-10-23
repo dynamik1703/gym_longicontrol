@@ -13,12 +13,12 @@ import csv
 import hashlib
 import io
 import json
-import math
 from collections import defaultdict
+from collections.abc import Iterable
 from dataclasses import dataclass
 from decimal import Decimal, localcontext
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 PACKAGE_DIR = Path(__file__).resolve().parent
 REPOSITORY_ROOT = PACKAGE_DIR.parents[1]
@@ -136,9 +136,7 @@ def conservative_discrete_lower_bound(task: dict[str, Any]) -> BoundResult:
         if dt <= 0:
             raise UnsupportedTaskSemantics("non-positive native timestep")
         low_v, high_v = parameters["vehicle"]["specifications"]["velocity_limits"]
-        low_a, high_a = parameters["vehicle"]["specifications"][
-            "acceleration_limits"
-        ]
+        low_a, high_a = parameters["vehicle"]["specifications"]["acceleration_limits"]
         if low_v < 0.0 or high_v <= 0.0 or high_a < 0.0 or low_a > 0.0:
             raise UnsupportedTaskSemantics("unsupported vehicle bounds")
         vmax = decimal_from_float(high_v)
@@ -147,9 +145,7 @@ def conservative_discrete_lower_bound(task: dict[str, Any]) -> BoundResult:
         # directly bounds the exact source expression v*dt + 0.5*a*dt**2 and
         # adds 1 nm per step, far above the relevant binary64 roundoff.
         step_upper = (
-            vmax * dt
-            + Decimal("0.5") * amax * dt * dt
-            + NUMERICAL_DISTANCE_MARGIN_M
+            vmax * dt + Decimal("0.5") * amax * dt * dt + NUMERICAL_DISTANCE_MARGIN_M
         )
         continuous = Decimal(0)
         terms: list[Decimal] = []
@@ -161,9 +157,7 @@ def conservative_discrete_lower_bound(task: dict[str, Any]) -> BoundResult:
                 if length <= 0 or limit <= 0:
                     raise UnsupportedTaskSemantics("invalid segment")
                 effective_limit = (
-                    limit
-                    + decimal_from_float(tolerance)
-                    + NUMERICAL_SPEED_MARGIN_M_S
+                    limit + decimal_from_float(tolerance) + NUMERICAL_SPEED_MARGIN_M_S
                 )
                 continuous += length / (limit + decimal_from_float(tolerance))
                 interior_distance = max(Decimal(0), length - 2 * step_upper)
@@ -222,11 +216,9 @@ def verified_witness(record: dict[str, Any], task: dict[str, Any]) -> bool:
     return bool(
         record["completed"] is True
         and record["travel_time_s"] <= requirements["max_time_s"]
-        and record["max_speed_violation_m_s"]
-        <= requirements["max_speed_violation_m_s"]
+        and record["max_speed_violation_m_s"] <= requirements["max_speed_violation_m_s"]
         and record["route_sha256"] == task["route_sha256"]
-        and record["full_task_sha256"]
-        == task.get("_audit_full_task_sha256")
+        and record["full_task_sha256"] == task.get("_audit_full_task_sha256")
     )
 
 
@@ -280,7 +272,9 @@ def load_historical_tasks(root: Path = REPOSITORY_ROOT) -> dict[str, dict[str, A
             if occurrence_key in per_source_seen:
                 continue
             per_source_seen.add(occurrence_key)
-            path_text = "/".join(str(part) for part in path if not isinstance(part, int))
+            path_text = "/".join(
+                str(part) for part in path if not isinstance(part, int)
+            )
             entry["occurrences"].append(
                 {
                     "source": relative,
@@ -336,9 +330,7 @@ def load_verified_witnesses(
                 {
                     "completed": outcome["completed"],
                     "travel_time_s": outcome["travel_time_s"],
-                    "max_speed_violation_m_s": outcome[
-                        "max_speed_violation_m_s"
-                    ],
+                    "max_speed_violation_m_s": outcome["max_speed_violation_m_s"],
                     "route_sha256": outcome["route_sha256"],
                     "full_task_sha256": outcome["full_task_sha256"],
                     "source": hybrid_source,
@@ -372,7 +364,6 @@ def load_verified_witnesses(
         add_seed_record(row["numeric_seed"], metrics, manifest_source)
 
     for full_hash, entry in tasks.items():
-        task = entry["canonical_task"]
         route_hash = entry["route_sha256"]
         for seed in entry["numeric_seeds"]:
             for record in by_seed.get(seed, ()):
@@ -478,9 +469,7 @@ def build_audit(root: Path = REPOSITORY_ROOT) -> dict[str, Any]:
             "unique_routes": len({row["route_sha256"] for row in rows}),
             "unique_full_tasks": len(rows),
             "study_task_occurrences": occurrence_count,
-            "accepted_unique_tasks": sum(
-                row["accepted_in_any_study"] for row in rows
-            ),
+            "accepted_unique_tasks": sum(row["accepted_in_any_study"] for row in rows),
             "classification_all_inspectable": dict(sorted(counts.items())),
             "classification_accepted_tasks": dict(sorted(accepted_counts.items())),
             "trusted_historical_controller_task_records": sum(
