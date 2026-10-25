@@ -1,0 +1,70 @@
+{
+  "evidence_path": "runs/feedback-chunk-diagnostic-v2/pairs/013-cb0a6591386ea8ae.jsonl.gz",
+  "evidence_sha256": "2343d6bbef58810f1e012b1819bcbd7ea4550c8c71558fa32c4d3f361b05095a",
+  "execution_manifest_sha256": "aec4da955fe19bae2202ac89408faca7e600df13f0e9f3ea0e6952d87124fd3a",
+  "identity": {
+    "attempt_id": null,
+    "checkpoint_sha256": null,
+    "controller_id": "CAUSAL60",
+    "full_task_sha256": "0701b3e71098b372b323c4b2ce15212aec07cc2274a58b2808ec6ed9cf060760",
+    "numeric_seed": 11400015,
+    "pair_ordinal": 13,
+    "route_sha256": "ae7978e66169f4e672b0360ae24c855932dfd6d8423ae63f16b77df010394d10",
+    "task_ordinal": 13,
+    "worker_runtime": "C"
+  },
+  "independent_reconstruction": {
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.17953408799972032,
+    "feasible": true,
+    "feasible_energy_kwh": 0.17953408799972032,
+    "final_position_m": 1000.7399600190996,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "native_step_count": 1153,
+    "reconstruction_sha256": "1618c9fa5b0bc490ecb8e13ad2614435cd6c7957056d9c2b2f6fbed9e6ba9812",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 115.29999999999772
+  },
+  "independent_verification": {
+    "outcome_sha256": "5a58e68cb930722c285593049833a2f801f2ddc844d56e70b56a9ea14657554c",
+    "reconstruction_sha256": "1618c9fa5b0bc490ecb8e13ad2614435cd6c7957056d9c2b2f6fbed9e6ba9812",
+    "verified": true
+  },
+  "native_evidence_sha256": "b5ed2e902e5e62312843b0a29552a826da26a63d2ff1b6e58a8e598c08d43304",
+  "outcome": {
+    "actor_actions": [],
+    "actor_component_correlation": null,
+    "actor_decision_count": 0,
+    "cancelled_chunk_count": 0,
+    "chunk_count": 0,
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.17953408799972032,
+    "executed_action_distribution": {
+      "braking": 43,
+      "coasting": 0,
+      "traction": 1110
+    },
+    "failure_reasons": [],
+    "feasible": true,
+    "feasible_energy_kwh": 0.17953408799972032,
+    "full_chunk_count": 0,
+    "full_chunk_fraction": null,
+    "integrated_speed_violation_m": 0.0,
+    "intervention_or_cancellation_reasons": {},
+    "max_speed_violation_m_s": 0.0,
+    "native_action_influence_count": 0,
+    "override_count": 0,
+    "proposal_count": 0,
+    "signed_energy_on_influenced_steps_kwh": 0,
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 115.29999999999772
+  },
+  "pair_id": "cb0a6591386ea8ae4dcbf9a10f4762489d5f87958ccd600332b900a7367d0a1d",
+  "result_sha256": "86b87c7bc8d0b29011c5113dd4353d8bfdc44979f330ba5a87c23bc14493f6b7",
+  "schema_version": 1
+}

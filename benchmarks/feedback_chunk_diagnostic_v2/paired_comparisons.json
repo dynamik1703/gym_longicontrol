@@ -1,0 +1,3629 @@
+{
+  "analysis_sha256": "be37b4fc4a4678ceb5c3db317b479bbfb6e1200efbd6f29a19f0a37869896fcb",
+  "classification": "CHUNK_V2_NO_INCREMENTAL_GAIN",
+  "comparisons": {
+    "chunk_vs_adaptive": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "CHUNK3",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": -0.0018204310647540745,
+      "mean_per_task_percentage_saving": -1.1040030940438335,
+      "median_absolute_energy_difference_kwh": -0.0015611755517581372,
+      "median_per_task_percentage_saving": -0.9307851177058665,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 1.9561926634616775,
+        "11400001": 1.5656502467887807,
+        "11400002": 2.5780031508588444,
+        "11400003": 0.3520619337748808,
+        "11400004": -6.119520432016574,
+        "11400006": -3.389135374128255,
+        "11400007": -4.22416133654369,
+        "11400008": -1.8488960833964552,
+        "11400009": -5.013986180068586,
+        "11400010": 0.5375595653341511,
+        "11400012": -2.566587344912317,
+        "11400013": -2.7906021357910955,
+        "11400014": -2.563904008483304,
+        "11400015": -0.9307851177058665,
+        "11400016": 2.003512899811749,
+        "11400017": -0.20403535014199195,
+        "11400018": -0.5618074929186668,
+        "11400019": -0.6381647513325779,
+        "11400020": -1.097435497876646,
+        "11400021": -0.5745306428952133,
+        "11400022": -1.6919943093194536,
+        "11400023": 2.497846061842575,
+        "11400024": -2.793588195281074,
+        "11400025": -2.235484930165608,
+        "11400027": 2.606827916674537,
+        "11400028": 2.556970373200918,
+        "11400030": 1.189163148498848,
+        "11400031": -6.369676893257622,
+        "11400032": -3.4664755993976004,
+        "11400034": 0.6713127252219216,
+        "11400035": -5.962905547455482,
+        "11400036": -1.5034793505104156,
+        "11400037": 2.2752543165289327,
+        "11400038": 0.0,
+        "11400039": -2.8833067199334863
+      },
+      "right": "ADAPTIVE_PRICE_MPC_V2",
+      "route_bootstrap_95": {
+        "lower_95": -1.959781482795231,
+        "resamples": 10000,
+        "upper_95": -0.25187826764941834
+      },
+      "route_is_independent_unit": true
+    },
+    "chunk_vs_fixed": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "CHUNK3",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": -0.0005342822280951851,
+      "mean_per_task_percentage_saving": -0.343207739723059,
+      "median_absolute_energy_difference_kwh": -0.001204962807649479,
+      "median_per_task_percentage_saving": -0.7075453715320144,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 2.8626156422803617,
+        "11400001": 2.383694501916787,
+        "11400002": -4.227109726266365,
+        "11400003": 0.26135870535084327,
+        "11400004": -0.1422075473773748,
+        "11400006": -3.0983709184230612,
+        "11400007": -4.2427475905473555,
+        "11400008": -1.809055648470898,
+        "11400009": 2.943664103959854,
+        "11400010": 1.6468367724927973,
+        "11400012": -3.642624466380968,
+        "11400013": 3.2981403975061037,
+        "11400014": 0.24996989557546362,
+        "11400015": -0.7168857844039322,
+        "11400016": 2.6516585444174647,
+        "11400017": -0.906480087706146,
+        "11400018": -0.9879322621558555,
+        "11400019": -0.7075453715320144,
+        "11400020": -1.8332268425377154,
+        "11400021": -1.0865887190382255,
+        "11400022": -1.9350322101792343,
+        "11400023": 3.25685871990683,
+        "11400024": -2.8892852354318794,
+        "11400025": -2.591345279871685,
+        "11400027": 3.1207677579181343,
+        "11400028": 0.6202023858688704,
+        "11400030": 1.7509712834091304,
+        "11400031": -2.502924361385877,
+        "11400032": -3.4664755993976004,
+        "11400034": 0.5306852940091649,
+        "11400035": 2.201452528844967,
+        "11400036": -2.5026550430533745,
+        "11400037": 2.7084515990819025,
+        "11400038": 0.0,
+        "11400039": -3.21110632868618
+      },
+      "right": "FIXED_PRICE_MPC_V2",
+      "route_bootstrap_95": {
+        "lower_95": -1.1243578220528954,
+        "resamples": 10000,
+        "upper_95": 0.44642419358424645
+      },
+      "route_is_independent_unit": true
+    },
+    "chunk_vs_hybrid": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "CHUNK3",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": 0.00614658064426662,
+      "mean_per_task_percentage_saving": 3.489218516435669,
+      "median_absolute_energy_difference_kwh": 0.0056003263453341945,
+      "median_per_task_percentage_saving": 3.3153385541915212,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 6.274323373064846,
+        "11400001": 6.589238913797095,
+        "11400002": 0.7343585470170001,
+        "11400003": 0.8298557246834699,
+        "11400004": 2.085897774335634,
+        "11400006": -0.8946228798170256,
+        "11400007": -0.9429660662549958,
+        "11400008": 1.6857067369523357,
+        "11400009": 3.3153385541915212,
+        "11400010": 6.17492685521101,
+        "11400012": -3.146738395181836,
+        "11400013": 3.6805083599514017,
+        "11400014": 7.804273358522324,
+        "11400015": 5.707089216344693,
+        "11400016": 6.8988624523389985,
+        "11400017": 7.325486890015144,
+        "11400018": 6.9145082554703725,
+        "11400019": 0.07521060551180891,
+        "11400020": 1.7316393223385405,
+        "11400021": 7.092620122519254,
+        "11400022": 2.265466803346562,
+        "11400023": 7.75039419282117,
+        "11400024": -2.2833932613464785,
+        "11400025": 2.551703138086853,
+        "11400027": 6.877221274148667,
+        "11400028": 7.601516009056405,
+        "11400030": 6.409838999404667,
+        "11400031": 2.0200668866947824,
+        "11400032": -0.6113469442131872,
+        "11400034": 5.717093555332031,
+        "11400035": 1.9022726022837253,
+        "11400036": 2.3907123518579017,
+        "11400037": 7.373007642295756,
+        "11400038": -2.3582610940186197,
+        "11400039": 4.580838198486591
+      },
+      "right": "HYBRID",
+      "route_bootstrap_95": {
+        "lower_95": 2.3646036354157682,
+        "resamples": 10000,
+        "upper_95": 4.575833601480866
+      },
+      "route_is_independent_unit": true
+    },
+    "chunk_vs_residual": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "CHUNK3",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": 0.000547844272764747,
+      "mean_per_task_percentage_saving": 0.3032943000258818,
+      "median_absolute_energy_difference_kwh": 0.0008225595604351987,
+      "median_per_task_percentage_saving": 0.5170570957529913,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 0.649344427366238,
+        "11400001": 0.5170570957529913,
+        "11400002": 0.05904612546339787,
+        "11400003": 1.9492195429879584,
+        "11400004": 0.6265668153845255,
+        "11400006": 3.761119759741557,
+        "11400007": 1.2923117046332464,
+        "11400008": -1.0101397780384143,
+        "11400009": 1.8419805411641827,
+        "11400010": -0.26745644518817735,
+        "11400012": 0.822279139016628,
+        "11400013": 0.5848629705218407,
+        "11400014": 1.0909790403267472,
+        "11400015": 1.3380858423394861,
+        "11400016": 1.400096805574851,
+        "11400017": -0.6795647883188881,
+        "11400018": -2.4210161870445663,
+        "11400019": -1.9311730512777499,
+        "11400020": 0.3044872644245742,
+        "11400021": 0.6830962220264678,
+        "11400022": 0.9221248975516267,
+        "11400023": 2.3104143081905604,
+        "11400024": 0.2373549565346462,
+        "11400025": -0.5440331648184831,
+        "11400027": 0.7017406230902345,
+        "11400028": 0.46656384510816185,
+        "11400030": 0.6087560980103405,
+        "11400031": 0.14313716598448417,
+        "11400032": 0.4309578203875133,
+        "11400034": -0.4092274029313066,
+        "11400035": -0.19818799535164075,
+        "11400036": -3.7465520436644812,
+        "11400037": 0.8693745186407567,
+        "11400038": 0.029723549958260147,
+        "11400039": -1.8180297226417048
+      },
+      "right": "RESIDUAL1S",
+      "route_bootstrap_95": {
+        "lower_95": -0.15610021907555247,
+        "resamples": 10000,
+        "upper_95": 0.7563457890159343
+      },
+      "route_is_independent_unit": true
+    },
+    "hybrid_vs_time_aware": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "HYBRID",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": 0.0016827617672620309,
+      "mean_per_task_percentage_saving": 0.9373901921915482,
+      "median_absolute_energy_difference_kwh": 0.002448820390973966,
+      "median_per_task_percentage_saving": 1.3093396025270028,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 1.1521154290209732,
+        "11400001": 1.9746171764872005,
+        "11400002": 0.5477232348891669,
+        "11400003": 1.3093396025270028,
+        "11400004": 2.357025949558871,
+        "11400006": 0.990788678112882,
+        "11400007": 2.2456842713065797,
+        "11400008": 0.6069380707581378,
+        "11400009": 2.145561427996675,
+        "11400010": 1.9049740411720708,
+        "11400012": 0.8911131188888266,
+        "11400013": 1.1731462991390351,
+        "11400014": -3.4179201847975964,
+        "11400015": -3.23777607418802,
+        "11400016": 2.291137290836255,
+        "11400017": -1.3961291527020454,
+        "11400018": -1.8986032667095907,
+        "11400019": 0.16434757464336916,
+        "11400020": 0.024907225924105186,
+        "11400021": 0.5321065085666156,
+        "11400022": 0.45224823889203974,
+        "11400023": 2.3055901246148083,
+        "11400024": 1.872737355455195,
+        "11400025": 1.7444789060445813,
+        "11400027": 1.3459506808820578,
+        "11400028": 1.3774796711278272,
+        "11400030": 2.194868292515843,
+        "11400031": 2.192610465420001,
+        "11400032": -0.3131836434539979,
+        "11400034": 1.4107298706380287,
+        "11400035": 2.883787491012177,
+        "11400036": 2.1724182233773934,
+        "11400037": 2.0767971902043647,
+        "11400038": -0.30582531360091936,
+        "11400039": 1.0368719521442693
+      },
+      "right": "TIME_AWARE",
+      "route_bootstrap_95": {
+        "lower_95": 0.4129560742814948,
+        "resamples": 10000,
+        "upper_95": 1.4015660232023437
+      },
+      "route_is_independent_unit": true
+    },
+    "residual_vs_adaptive": {
+      "jointly_feasible_numeric_seeds": [
+        11400000,
+        11400001,
+        11400002,
+        11400003,
+        11400004,
+        11400006,
+        11400007,
+        11400008,
+        11400009,
+        11400010,
+        11400012,
+        11400013,
+        11400014,
+        11400015,
+        11400016,
+        11400017,
+        11400018,
+        11400019,
+        11400020,
+        11400021,
+        11400022,
+        11400023,
+        11400024,
+        11400025,
+        11400027,
+        11400028,
+        11400030,
+        11400031,
+        11400032,
+        11400034,
+        11400035,
+        11400036,
+        11400037,
+        11400038,
+        11400039
+      ],
+      "jointly_feasible_route_count": 35,
+      "left": "RESIDUAL1S",
+      "left_additional_failure_numeric_seeds": [],
+      "mean_absolute_energy_difference_kwh": -0.0023682753375188215,
+      "mean_per_task_percentage_saving": -1.429810207667606,
+      "median_absolute_energy_difference_kwh": -0.0016699554875099498,
+      "median_per_task_percentage_saving": -1.0462557566608375,
+      "no_additional_failures": true,
+      "per_task_percentage_savings": {
+        "11400000": 1.315389645456363,
+        "11400001": 1.0540431559660104,
+        "11400002": 2.5204452506603876,
+        "11400003": -1.628908614259641,
+        "11400004": -6.788622503228052,
+        "11400006": -7.42969485515557,
+        "11400007": -5.588696419137874,
+        "11400008": -0.8303684236069171,
+        "11400009": -6.984622101210926,
+        "11400010": 0.8028686864739562,
+        "11400012": -3.4169634616620126,
+        "11400013": -3.3953230938182557,
+        "11400014": -3.6951968721843924,
+        "11400015": -2.299642146025796,
+        "11400016": 0.6119844692413601,
+        "11400017": 0.4723197196737071,
+        "11400018": 1.8152609330984888,
+        "11400019": 1.2685111543793457,
+        "11400020": -1.4062044758419272,
+        "11400021": -1.2662767535858253,
+        "11400022": -2.6384490020279827,
+        "11400023": 0.19186462131523765,
+        "11400024": -3.0381543617805797,
+        "11400025": -1.6822994981456378,
+        "11400027": 1.918550542112826,
+        "11400028": 2.1002053268207375,
+        "11400030": 0.5839619544965657,
+        "11400031": -6.522149679454543,
+        "11400032": -3.914302412143865,
+        "11400034": 1.0761362835879,
+        "11400035": -5.753315172097999,
+        "11400036": 2.162069629273086,
+        "11400037": 1.4182093485857619,
+        "11400038": -0.02973238747930634,
+        "11400039": -1.0462557566608375
+      },
+      "right": "ADAPTIVE_PRICE_MPC_V2",
+      "route_bootstrap_95": {
+        "lower_95": -2.408400498302768,
+        "resamples": 10000,
+        "upper_95": -0.4873877468556742
+      },
+      "route_is_independent_unit": true
+    }
+  },
+  "controller_results": {
+    "ADAPTIVE_PRICE_MPC_V2": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17120060036786572,
+      "median_feasible_energy_kwh": 0.1627702539098316,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 15779,
+        "override_count": 285,
+        "proposal_count": 38716
+      },
+      "speed_compliant_count": 36
+    },
+    "CAUSAL60": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.20275862808141262,
+      "median_feasible_energy_kwh": 0.19818604900141076,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 0,
+        "override_count": 0,
+        "proposal_count": 0
+      },
+      "speed_compliant_count": 36
+    },
+    "CHUNK3_S11_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 816,
+        "chunk_count": 1456,
+        "full_chunk_count": 608
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17371652071410995,
+      "median_feasible_energy_kwh": 0.16672056788140793,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 21162,
+        "override_count": 21066,
+        "proposal_count": 43142
+      },
+      "speed_compliant_count": 36
+    },
+    "CHUNK3_S29_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 853,
+        "chunk_count": 1442,
+        "full_chunk_count": 559
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17264727355221185,
+      "median_feasible_energy_kwh": 0.16573068367864366,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 18714,
+        "override_count": 23287,
+        "proposal_count": 42733
+      },
+      "speed_compliant_count": 36
+    },
+    "CHUNK3_S47_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 830,
+        "chunk_count": 1439,
+        "full_chunk_count": 578
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.1726993000315376,
+      "median_feasible_energy_kwh": 0.1658640291828697,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 19554,
+        "override_count": 22072,
+        "proposal_count": 42636
+      },
+      "speed_compliant_count": 36
+    },
+    "FIXED_PRICE_MPC_V2": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17248674920452461,
+      "median_feasible_energy_kwh": 0.16659883384452367,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 14668,
+        "override_count": 945,
+        "proposal_count": 37625
+      },
+      "speed_compliant_count": 36
+    },
+    "HYBRID_H11": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.1795777785692949,
+      "median_feasible_energy_kwh": 0.17223579086828533,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 23092,
+        "override_count": 5647,
+        "proposal_count": 45639
+      },
+      "speed_compliant_count": 36
+    },
+    "HYBRID_H29": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17899652523378073,
+      "median_feasible_energy_kwh": 0.1726607605094481,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 22569,
+        "override_count": 5298,
+        "proposal_count": 45761
+      },
+      "speed_compliant_count": 36
+    },
+    "HYBRID_H47": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17892853242758364,
+      "median_feasible_energy_kwh": 0.1735582132204885,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 22842,
+        "override_count": 5211,
+        "proposal_count": 45801
+      },
+      "speed_compliant_count": 36
+    },
+    "RESIDUAL1S_S11_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 1877,
+        "chunk_count": 4500,
+        "full_chunk_count": 2591
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17364787511988888,
+      "median_feasible_energy_kwh": 0.16681661861213665,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 25315,
+        "override_count": 17892,
+        "proposal_count": 44815
+      },
+      "speed_compliant_count": 36
+    },
+    "RESIDUAL1S_S29_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 1969,
+        "chunk_count": 4487,
+        "full_chunk_count": 2485
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.1729632386719507,
+      "median_feasible_energy_kwh": 0.16691695411714366,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 24542,
+        "override_count": 18827,
+        "proposal_count": 44695
+      },
+      "speed_compliant_count": 36
+    },
+    "RESIDUAL1S_S47_300K": {
+      "chunk": {
+        "cancelled_chunk_count": 1781,
+        "chunk_count": 4511,
+        "full_chunk_count": 2699
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.17409551332431403,
+      "median_feasible_energy_kwh": 0.16716167156313375,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 26310,
+        "override_count": 16823,
+        "proposal_count": 44947
+      },
+      "speed_compliant_count": 36
+    },
+    "TIME_AWARE": {
+      "chunk": {
+        "cancelled_chunk_count": 0,
+        "chunk_count": 0,
+        "full_chunk_count": 0
+      },
+      "completed_count": 36,
+      "deadline_compliant_count": 35,
+      "failed_numeric_seeds": [
+        11400026
+      ],
+      "feasible_count": 35,
+      "mean_feasible_energy_kwh": 0.18085037384414845,
+      "median_feasible_energy_kwh": 0.17386866791487443,
+      "raw_rsr": 0.9722222222222222,
+      "route_count": 36,
+      "shield": {
+        "native_action_influence_count": 26679,
+        "override_count": 9626,
+        "proposal_count": 46527
+      },
+      "speed_compliant_count": 36
+    }
+  },
+  "frozen_targets": {
+    "chunk_vs_adaptive_no_extra_failures_and_3_percent": false,
+    "chunk_vs_residual_no_extra_failures_and_1_percent": false
+  },
+  "limitations": [
+    "Diagnostic panel, not an independently authorized final Validation",
+    "36 routes; route bootstrap intervals are descriptive",
+    "three fixed training seeds per learned method",
+    "method-level route means keep three seeds grouped; 108 outcomes are not treated as independent routes"
+  ],
+  "method_route_results": {
+    "ADAPTIVE_PRICE_MPC_V2": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2009775621275751,
+        "method_mean_feasible_energy_kwh": 0.2009775621275751,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16077954648993475,
+        "method_mean_feasible_energy_kwh": 0.16077954648993475,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1594775690792264,
+        "method_mean_feasible_energy_kwh": 0.1594775690792264,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1836932984819056,
+        "method_mean_feasible_energy_kwh": 0.1836932984819056,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15552345223412875,
+        "method_mean_feasible_energy_kwh": 0.15552345223412875,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1672193171733643,
+        "method_mean_feasible_energy_kwh": 0.1672193171733643,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1666285433495256,
+        "method_mean_feasible_energy_kwh": 0.1666285433495256,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16814665755292355,
+        "method_mean_feasible_energy_kwh": 0.16814665755292355,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15552345223412875,
+        "method_mean_feasible_energy_kwh": 0.15552345223412875,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16068484807683003,
+        "method_mean_feasible_energy_kwh": 0.16068484807683003,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20283192900681785,
+        "method_mean_feasible_energy_kwh": 0.20283192900681785,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19049312797071552,
+        "method_mean_feasible_energy_kwh": 0.19049312797071552,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16140914340472323,
+        "method_mean_feasible_energy_kwh": 0.16140914340472323,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16772674187206738,
+        "method_mean_feasible_energy_kwh": 0.16772674187206738,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16039043056427862,
+        "method_mean_feasible_energy_kwh": 0.16039043056427862,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1618830577284893,
+        "method_mean_feasible_energy_kwh": 0.1618830577284893,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16399797463035418,
+        "method_mean_feasible_energy_kwh": 0.16399797463035418,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1972093233980535,
+        "method_mean_feasible_energy_kwh": 0.1972093233980535,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1901182317076371,
+        "method_mean_feasible_energy_kwh": 0.1901182317076371,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15941599948581547,
+        "method_mean_feasible_energy_kwh": 0.15941599948581547,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15747171812836058,
+        "method_mean_feasible_energy_kwh": 0.15747171812836058,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15992764118375014,
+        "method_mean_feasible_energy_kwh": 0.15992764118375014,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17109076311703816,
+        "method_mean_feasible_energy_kwh": 0.17109076311703816,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17950306993626627,
+        "method_mean_feasible_energy_kwh": 0.17950306993626627,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19268366289793393,
+        "method_mean_feasible_energy_kwh": 0.19268366289793393,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16192507566044367,
+        "method_mean_feasible_energy_kwh": 0.16192507566044367,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15991609667170806,
+        "method_mean_feasible_energy_kwh": 0.15991609667170806,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15552345223412875,
+        "method_mean_feasible_energy_kwh": 0.15552345223412875,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17903828255305548,
+        "method_mean_feasible_energy_kwh": 0.17903828255305548,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17703099140136852,
+        "method_mean_feasible_energy_kwh": 0.17703099140136852,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1577995005891007,
+        "method_mean_feasible_energy_kwh": 0.1577995005891007,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1627702539098316,
+        "method_mean_feasible_energy_kwh": 0.1627702539098316,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16019057246974605,
+        "method_mean_feasible_energy_kwh": 0.16019057246974605,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.22340717605282423,
+        "method_mean_feasible_energy_kwh": 0.22340717605282423,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1596125495012493,
+        "method_mean_feasible_energy_kwh": 0.1596125495012493,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      }
+    },
+    "CAUSAL60": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21504445623978624,
+        "method_mean_feasible_energy_kwh": 0.21504445623978624,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18902216481921374,
+        "method_mean_feasible_energy_kwh": 0.18902216481921374,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1935638551573317,
+        "method_mean_feasible_energy_kwh": 0.1935638551573317,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18480645713928406,
+        "method_mean_feasible_energy_kwh": 0.18480645713928406,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20130241629212905,
+        "method_mean_feasible_energy_kwh": 0.20130241629212905,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17197062980312747,
+        "method_mean_feasible_energy_kwh": 0.17197062980312747,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21288299820547174,
+        "method_mean_feasible_energy_kwh": 0.21288299820547174,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.22508758120477532,
+        "method_mean_feasible_energy_kwh": 0.22508758120477532,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19818604900141076,
+        "method_mean_feasible_energy_kwh": 0.19818604900141076,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19001080565774073,
+        "method_mean_feasible_energy_kwh": 0.19001080565774073,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.26083428871326814,
+        "method_mean_feasible_energy_kwh": 0.26083428871326814,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2328508843270555,
+        "method_mean_feasible_energy_kwh": 0.2328508843270555,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18553482266984658,
+        "method_mean_feasible_energy_kwh": 0.18553482266984658,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17953408799972032,
+        "method_mean_feasible_energy_kwh": 0.17953408799972032,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1879054495189112,
+        "method_mean_feasible_energy_kwh": 0.1879054495189112,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18514963236648146,
+        "method_mean_feasible_energy_kwh": 0.18514963236648146,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1989671056990667,
+        "method_mean_feasible_energy_kwh": 0.1989671056990667,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.23430645717932302,
+        "method_mean_feasible_energy_kwh": 0.23430645717932302,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19660368348008742,
+        "method_mean_feasible_energy_kwh": 0.19660368348008742,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20345537102786201,
+        "method_mean_feasible_energy_kwh": 0.20345537102786201,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17010146993724762,
+        "method_mean_feasible_energy_kwh": 0.17010146993724762,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18779686365634396,
+        "method_mean_feasible_energy_kwh": 0.18779686365634396,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.22074994989566343,
+        "method_mean_feasible_energy_kwh": 0.22074994989566343,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21193842916549294,
+        "method_mean_feasible_energy_kwh": 0.21193842916549294,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2227482151230316,
+        "method_mean_feasible_energy_kwh": 0.2227482151230316,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.22069330763559308,
+        "method_mean_feasible_energy_kwh": 0.22069330763559308,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1873042879747054,
+        "method_mean_feasible_energy_kwh": 0.1873042879747054,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18265111945399395,
+        "method_mean_feasible_energy_kwh": 0.18265111945399395,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.23567325935849315,
+        "method_mean_feasible_energy_kwh": 0.23567325935849315,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21043124105891958,
+        "method_mean_feasible_energy_kwh": 0.21043124105891958,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19974423264677163,
+        "method_mean_feasible_energy_kwh": 0.19974423264677163,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19766657731602622,
+        "method_mean_feasible_energy_kwh": 0.19766657731602622,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18826537106622973,
+        "method_mean_feasible_energy_kwh": 0.18826537106622973,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2275872002065102,
+        "method_mean_feasible_energy_kwh": 0.2275872002065102,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18618126185252631,
+        "method_mean_feasible_energy_kwh": 0.18618126185252631,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      }
+    },
+    "CHUNK3": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19704605380203133,
+        "method_mean_feasible_energy_kwh": 0.19704605380203133,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003590551074577796
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1582623011235292,
+        "method_mean_feasible_energy_kwh": 0.1582623011235292,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008545841774341654
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15536623232345084,
+        "method_mean_feasible_energy_kwh": 0.15536623232345084,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009314361767271671
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18304658430305534,
+        "method_mean_feasible_energy_kwh": 0.18304658430305534,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0004034742035100839
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1650407416701738,
+        "method_mean_feasible_energy_kwh": 0.1650407416701738,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0012082850665231116
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17288660620406252,
+        "method_mean_feasible_energy_kwh": 0.17288660620406252,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0033481609787242104
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1736672018533422,
+        "method_mean_feasible_energy_kwh": 0.1736672018533422,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006842553285378397
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1712555145187816,
+        "method_mean_feasible_energy_kwh": 0.1712555145187816,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006523167067974643
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16332137663591353,
+        "method_mean_feasible_energy_kwh": 0.16332137663591353,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.000519219986376097
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15982107130595039,
+        "method_mean_feasible_energy_kwh": 0.15982107130595039,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007841291784078359
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.20803778762814837,
+        "method_mean_feasible_energy_kwh": 0.20803778762814837,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003140154898576106
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19580903326840157,
+        "method_mean_feasible_energy_kwh": 0.19580903326840157,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010052217321153555
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1655475189025355,
+        "method_mean_feasible_energy_kwh": 0.1655475189025355,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0004874320343216698
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1692879174238255,
+        "method_mean_feasible_energy_kwh": 0.1692879174238255,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.003980635161928093
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1571769875978597,
+        "method_mean_feasible_energy_kwh": 0.1571769875978597,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003730314870387751
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16221335639214618,
+        "method_mean_feasible_energy_kwh": 0.16221335639214618,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0023730915390808823
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16491932754006236,
+        "method_mean_feasible_energy_kwh": 0.16491932754006236,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.001839746185667234
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19846784378632135,
+        "method_mean_feasible_energy_kwh": 0.19846784378632135,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008142813624794699
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19220465667033207,
+        "method_mean_feasible_energy_kwh": 0.19220465667033207,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0014733303486978398
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16033189325253916,
+        "method_mean_feasible_energy_kwh": 0.16033189325253916,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003370845688282605
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16013613063788001,
+        "method_mean_feasible_energy_kwh": 0.16013613063788001,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008126667827438557
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1559328948966441,
+        "method_mean_feasible_energy_kwh": 0.1559328948966441,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008061492839313641
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17587033447869205,
+        "method_mean_feasible_energy_kwh": 0.17587033447869205,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010296003525523628
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18351583401387614,
+        "method_mean_feasible_energy_kwh": 0.18351583401387614,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010925218678140927
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false,
+          false,
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18766073138263953,
+        "method_mean_feasible_energy_kwh": 0.18766073138263953,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0004919757354293144
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15778469944902296,
+        "method_mean_feasible_energy_kwh": 0.15778469944902296,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007013104246811148
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1580144333815703,
+        "method_mean_feasible_energy_kwh": 0.1580144333815703,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007818909786859099
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1654297936346826,
+        "method_mean_feasible_energy_kwh": 0.1654297936346826,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008419720531282526
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18524460093133768,
+        "method_mean_feasible_energy_kwh": 0.18524460093133768,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0012330370706746829
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1758425598285046,
+        "method_mean_feasible_energy_kwh": 0.1758425598285046,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0016259618452087346
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16720893576358523,
+        "method_mean_feasible_energy_kwh": 0.16720893576358523,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0011786449420462838
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1652174710661393,
+        "method_mean_feasible_energy_kwh": 0.1652174710661393,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0004679443010847384
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15654582955495575,
+        "method_mean_feasible_energy_kwh": 0.15654582955495575,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0004950638268314855
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.22340717605282423,
+        "method_mean_feasible_energy_kwh": 0.22340717605282423,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.164214668866876,
+        "method_mean_feasible_energy_kwh": 0.164214668866876,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.002945641968725884
+      }
+    },
+    "FIXED_PRICE_MPC_V2": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2028529541997821,
+        "method_mean_feasible_energy_kwh": 0.2028529541997821,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1621269113966179,
+        "method_mean_feasible_energy_kwh": 0.1621269113966179,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.14906508751081377,
+        "method_mean_feasible_energy_kwh": 0.14906508751081377,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18352624612390378,
+        "method_mean_feasible_energy_kwh": 0.18352624612390378,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16480637456698052,
+        "method_mean_feasible_energy_kwh": 0.16480637456698052,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.167690919520794,
+        "method_mean_feasible_energy_kwh": 0.167690919520794,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16659883384452367,
+        "method_mean_feasible_energy_kwh": 0.16659883384452367,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1682124575539698,
+        "method_mean_feasible_energy_kwh": 0.1682124575539698,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16827482217219883,
+        "method_mean_feasible_energy_kwh": 0.16827482217219883,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16249713386061382,
+        "method_mean_feasible_energy_kwh": 0.16249713386061382,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20072608996468488,
+        "method_mean_feasible_energy_kwh": 0.20072608996468488,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20248735037082136,
+        "method_mean_feasible_energy_kwh": 0.20248735037082136,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16596237487771187,
+        "method_mean_feasible_energy_kwh": 0.16596237487771187,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16808295461617603,
+        "method_mean_feasible_energy_kwh": 0.16808295461617603,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1614583106889144,
+        "method_mean_feasible_energy_kwh": 0.1614583106889144,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16075613404724173,
+        "method_mean_feasible_energy_kwh": 0.16075613404724173,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1633059751257667,
+        "method_mean_feasible_energy_kwh": 0.1633059751257667,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19707345964409156,
+        "method_mean_feasible_energy_kwh": 0.19707345964409156,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18874454107943917,
+        "method_mean_feasible_energy_kwh": 0.18874454107943917,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15860847149384805,
+        "method_mean_feasible_energy_kwh": 0.15860847149384805,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15709626726530707,
+        "method_mean_feasible_energy_kwh": 0.15709626726530707,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16118237720355108,
+        "method_mean_feasible_energy_kwh": 0.16118237720355108,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17093163207059364,
+        "method_mean_feasible_energy_kwh": 0.17093163207059364,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1788804245750365,
+        "method_mean_feasible_energy_kwh": 0.1788804245750365,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19370584080777273,
+        "method_mean_feasible_energy_kwh": 0.19370584080777273,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.15876939100003465,
+        "method_mean_feasible_energy_kwh": 0.15876939100003465,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16083052977284765,
+        "method_mean_feasible_energy_kwh": 0.16083052977284765,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1613903160961933,
+        "method_mean_feasible_energy_kwh": 0.1613903160961933,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17903828255305548,
+        "method_mean_feasible_energy_kwh": 0.17903828255305548,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17678070905409984,
+        "method_mean_feasible_energy_kwh": 0.17678070905409984,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17097282126087024,
+        "method_mean_feasible_energy_kwh": 0.17097282126087024,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16118360153377911,
+        "method_mean_feasible_energy_kwh": 0.16118360153377911,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.16090383196479016,
+        "method_mean_feasible_energy_kwh": 0.16090383196479016,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.22340717605282423,
+        "method_mean_feasible_energy_kwh": 0.22340717605282423,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1591056182887119,
+        "method_mean_feasible_energy_kwh": 0.1591056182887119,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      }
+    },
+    "HYBRID": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.21023700323482505,
+        "method_mean_feasible_energy_kwh": 0.21023700323482505,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00047984243369233087
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16942619809882387,
+        "method_mean_feasible_energy_kwh": 0.16942619809882387,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0011437684322369353
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15651561814269824,
+        "method_mean_feasible_energy_kwh": 0.15651561814269824,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0012472286124915139
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1845783180418501,
+        "method_mean_feasible_energy_kwh": 0.1845783180418501,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003226374056986977
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16855666131708125,
+        "method_mean_feasible_energy_kwh": 0.16855666131708125,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.000871961461514015
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17135363735885153,
+        "method_mean_feasible_energy_kwh": 0.17135363735885153,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006534279694812938
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17204487704408633,
+        "method_mean_feasible_energy_kwh": 0.17204487704408633,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00176605762066316
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1741918787541644,
+        "method_mean_feasible_energy_kwh": 0.1741918787541644,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0003834280169285178
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16892170298124773,
+        "method_mean_feasible_energy_kwh": 0.16892170298124773,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009549590283948211
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1703394049683475,
+        "method_mean_feasible_energy_kwh": 0.1703394049683475,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008566099700328155
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.2016910964562949,
+        "method_mean_feasible_energy_kwh": 0.2016910964562949,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00032667780050213435
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.20329118222524578,
+        "method_mean_feasible_energy_kwh": 0.20329118222524578,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0017427238987683465
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.179560945971283,
+        "method_mean_feasible_energy_kwh": 0.179560945971283,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0027980947319048532
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17953408799972034,
+        "method_mean_feasible_energy_kwh": 0.17953408799972034,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16882391744934,
+        "method_mean_feasible_energy_kwh": 0.16882391744934,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.000631746223965336
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1750355636609966,
+        "method_mean_feasible_energy_kwh": 0.1750355636609966,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006543200226375042
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1771697441236907,
+        "method_mean_feasible_energy_kwh": 0.1771697441236907,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0023272025298505384
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19861722500389753,
+        "method_mean_feasible_energy_kwh": 0.19861722500389753,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010484324477007434
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1955915976870716,
+        "method_mean_feasible_energy_kwh": 0.1955915976870716,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0027343011090938995
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17257175206530717,
+        "method_mean_feasible_energy_kwh": 0.17257175206530717,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00019537937046534614
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16384805390707416,
+        "method_mean_feasible_energy_kwh": 0.16384805390707416,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.004427603513982021
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1690336706940264,
+        "method_mean_feasible_energy_kwh": 0.1690336706940264,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009534609952818713
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17194417282316984,
+        "method_mean_feasible_energy_kwh": 0.17194417282316984,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0011684963795003406
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18832123282146532,
+        "method_mean_feasible_energy_kwh": 0.18832123282146532,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008938831538411947
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false,
+          false,
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.2015196861072016,
+        "method_mean_feasible_energy_kwh": 0.2015196861072016,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007460162963679292
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17076546349449648,
+        "method_mean_feasible_energy_kwh": 0.17076546349449648,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0005998993387293576
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16883658676531732,
+        "method_mean_feasible_energy_kwh": 0.16883658676531732,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008185037204983361
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1688404843503797,
+        "method_mean_feasible_energy_kwh": 0.1688404843503797,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008244229503326654
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18411899508119278,
+        "method_mean_feasible_energy_kwh": 0.18411899508119278,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008815479170737747
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18650523881728417,
+        "method_mean_feasible_energy_kwh": 0.18650523881728417,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006890676277435288
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17045138577540367,
+        "method_mean_feasible_energy_kwh": 0.17045138577540367,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00019637772643467039
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16926408853807884,
+        "method_mean_feasible_energy_kwh": 0.16926408853807884,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010450847341214515
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1690067069763116,
+        "method_mean_feasible_energy_kwh": 0.1690067069763116,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009432050194413636
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.2182600345736815,
+        "method_mean_feasible_energy_kwh": 0.2182600345736815,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009411015562832331
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17209820938111767,
+        "method_mean_feasible_energy_kwh": 0.17209820938111767,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0014996600821862562
+      }
+    },
+    "RESIDUAL1S": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19833392408565834,
+        "method_mean_feasible_energy_kwh": 0.19833392408565834,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0006080300747092194
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1590848606839644,
+        "method_mean_feasible_energy_kwh": 0.1590848606839644,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010203264945493529
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1554580242635004,
+        "method_mean_feasible_energy_kwh": 0.1554580242635004,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00126713585578395
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18668549444469504,
+        "method_mean_feasible_energy_kwh": 0.18668549444469504,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0018887157307844018
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16608135231029195,
+        "method_mean_feasible_energy_kwh": 0.16608135231029195,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0014234052684454208
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17964320217822002,
+        "method_mean_feasible_energy_kwh": 0.17964320217822002,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0011003737178433438
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17594090678496213,
+        "method_mean_feasible_energy_kwh": 0.17594090678496213,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0012373718191426401
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16954289430259348,
+        "method_mean_feasible_energy_kwh": 0.16954289430259348,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0021686432636004965
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16638617765143993,
+        "method_mean_feasible_energy_kwh": 0.16638617765143993,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00044961977982296397
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15939475974771292,
+        "method_mean_feasible_energy_kwh": 0.15939475974771292,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00047382793212943583
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.20976262190956504,
+        "method_mean_feasible_energy_kwh": 0.20976262190956504,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010939339773103796
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.196960985136842,
+        "method_mean_feasible_energy_kwh": 0.196960985136842,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0025701965355782687
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16737352902323419,
+        "method_mean_feasible_energy_kwh": 0.16737352902323419,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0009509117861508635
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17158385671831333,
+        "method_mean_feasible_energy_kwh": 0.17158385671831333,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0023536348003786473
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1594088660390759,
+        "method_mean_feasible_energy_kwh": 0.1594088660390759,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00033023936014246036
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16111845212402687,
+        "method_mean_feasible_energy_kwh": 0.16111845212402687,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0016084067413000573
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1610209834658166,
+        "method_mean_feasible_energy_kwh": 0.1610209834658166,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007160128318643087
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.19470770113327315,
+        "method_mean_feasible_energy_kwh": 0.19470770113327315,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0032315366715124317
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1927916827913014,
+        "method_mean_feasible_energy_kwh": 0.1927916827913014,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0012643670038362618
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16143464722880085,
+        "method_mean_feasible_energy_kwh": 0.16143464722880085,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0014095334084473759
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16162652910379463,
+        "method_mean_feasible_energy_kwh": 0.16162652910379463,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0013178144965820563
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15962079662061454,
+        "method_mean_feasible_energy_kwh": 0.15962079662061454,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 8.398938028036918e-05
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17628876459928214,
+        "method_mean_feasible_energy_kwh": 0.17628876459928214,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.001268814024641307
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1825228491809601,
+        "method_mean_feasible_energy_kwh": 0.1825228491809601,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0005212838062981674
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false,
+          false,
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18898692943884277,
+        "method_mean_feasible_energy_kwh": 0.18898692943884277,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00042197652788289794
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15852431659596453,
+        "method_mean_feasible_energy_kwh": 0.15852431659596453,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.000964513054985075
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15898224750802933,
+        "method_mean_feasible_energy_kwh": 0.15898224750802933,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0005428863155327727
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16566692457549362,
+        "method_mean_feasible_energy_kwh": 0.16566692457549362,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0008226848062562939
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.18604638236569068,
+        "method_mean_feasible_energy_kwh": 0.18604638236569068,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0018664571021935249
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.17512589666970302,
+        "method_mean_feasible_energy_kwh": 0.17512589666970302,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0007779545164710045
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.1668782031979883,
+        "method_mean_feasible_energy_kwh": 0.1668782031979883,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0010326251401172582
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15925104768455645,
+        "method_mean_feasible_energy_kwh": 0.15925104768455645,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0014931012416709555
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.15791873479542706,
+        "method_mean_feasible_energy_kwh": 0.15791873479542706,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00034314992028750815
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.22347360034006483,
+        "method_mean_feasible_energy_kwh": 0.22347360034006483,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 9.393812788662518e-05
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 3,
+        "method_mean_energy_kwh": 0.16128250498875926,
+        "method_mean_feasible_energy_kwh": 0.16128250498875926,
+        "seed_feasibility": [
+          true,
+          true,
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.00038997824055219456
+      }
+    },
+    "TIME_AWARE": {
+      "11400000": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21268740767422453,
+        "method_mean_feasible_energy_kwh": 0.21268740767422453,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400001": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17283910882945774,
+        "method_mean_feasible_energy_kwh": 0.17283910882945774,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400002": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1573776118895309,
+        "method_mean_feasible_energy_kwh": 0.1573776118895309,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400003": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18702713843282406,
+        "method_mean_feasible_energy_kwh": 0.18702713843282406,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400004": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17262548888566934,
+        "method_mean_feasible_energy_kwh": 0.17262548888566934,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400006": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17306837926601265,
+        "method_mean_feasible_energy_kwh": 0.17306837926601265,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400007": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17599721890701825,
+        "method_mean_feasible_energy_kwh": 0.17599721890701825,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400008": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1752555715389591,
+        "method_mean_feasible_energy_kwh": 0.1752555715389591,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400009": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17262548888566934,
+        "method_mean_feasible_energy_kwh": 0.17262548888566934,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400010": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1736473417519067,
+        "method_mean_feasible_energy_kwh": 0.1736473417519067,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400012": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20350455221865127,
+        "method_mean_feasible_energy_kwh": 0.20350455221865127,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400013": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.2057043957309295,
+        "method_mean_feasible_energy_kwh": 0.2057043957309295,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400014": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1736265297643052,
+        "method_mean_feasible_energy_kwh": 0.1736265297643052,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400015": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.173903482646415,
+        "method_mean_feasible_energy_kwh": 0.173903482646415,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400016": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17278260412451474,
+        "method_mean_feasible_energy_kwh": 0.17278260412451474,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400017": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17262548888566934,
+        "method_mean_feasible_energy_kwh": 0.17262548888566934,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400018": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17386866791487443,
+        "method_mean_feasible_energy_kwh": 0.17386866791487443,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400019": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19894418494675153,
+        "method_mean_feasible_energy_kwh": 0.19894418494675153,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400020": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1956403262651331,
+        "method_mean_feasible_energy_kwh": 0.1956403262651331,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400021": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17349492987922763,
+        "method_mean_feasible_energy_kwh": 0.17349492987922763,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400022": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1645924202289092,
+        "method_mean_feasible_energy_kwh": 0.1645924202289092,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400023": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17302286887206597,
+        "method_mean_feasible_energy_kwh": 0.17302286887206597,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400024": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1752256897718819,
+        "method_mean_feasible_energy_kwh": 0.1752256897718819,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400025": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.19166478455840244,
+        "method_mean_feasible_energy_kwh": 0.19166478455840244,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400026": {
+        "all_seed_outcomes_feasible": false,
+        "feasible_seed_count": 0,
+        "method_mean_energy_kwh": 0.1614325050359934,
+        "method_mean_feasible_energy_kwh": null,
+        "seed_feasibility": [
+          false
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400027": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.20426904673252938,
+        "method_mean_feasible_energy_kwh": 0.20426904673252938,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400028": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1731505774999994,
+        "method_mean_feasible_energy_kwh": 0.1731505774999994,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400030": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17262548888566934,
+        "method_mean_feasible_energy_kwh": 0.17262548888566934,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400031": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17262548888566934,
+        "method_mean_feasible_energy_kwh": 0.17262548888566934,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400032": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.18354416477859198,
+        "method_mean_feasible_energy_kwh": 0.18354416477859198,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400034": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.1891739725555986,
+        "method_mean_feasible_energy_kwh": 0.1891739725555986,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400035": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17551280200474137,
+        "method_mean_feasible_energy_kwh": 0.17551280200474137,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400036": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17302286887206597,
+        "method_mean_feasible_energy_kwh": 0.17302286887206597,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400037": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.17259107354217912,
+        "method_mean_feasible_energy_kwh": 0.17259107354217912,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400038": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.21759457528144843,
+        "method_mean_feasible_energy_kwh": 0.21759457528144843,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      },
+      "11400039": {
+        "all_seed_outcomes_feasible": true,
+        "feasible_seed_count": 1,
+        "method_mean_energy_kwh": 0.173901343637699,
+        "method_mean_feasible_energy_kwh": 0.173901343637699,
+        "seed_feasibility": [
+          true
+        ],
+        "training_seed_energy_population_sd_kwh": 0.0
+      }
+    }
+  },
+  "raw_feasibility_reported_first": true,
+  "schema_version": 1,
+  "seed_specific_feasibility_regressions": [],
+  "training_seed_variability": {
+    "CHUNK3": {
+      "mean_per_route_population_sd_kwh": 0.001034643562612473
+    },
+    "HYBRID": {
+      "mean_per_route_population_sd_kwh": 0.0010490869471622443
+    },
+    "RESIDUAL1S": {
+      "mean_per_route_population_sd_kwh": 0.001086316382082508
+    }
+  }
+}

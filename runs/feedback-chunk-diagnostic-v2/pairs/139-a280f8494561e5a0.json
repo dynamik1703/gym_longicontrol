@@ -1,0 +1,369 @@
+{
+  "evidence_path": "runs/feedback-chunk-diagnostic-v2/pairs/139-a280f8494561e5a0.jsonl.gz",
+  "evidence_sha256": "47366cc8afa8012691f8890a452156e1c673b908642f922e138f42e35e19be96",
+  "execution_manifest_sha256": "aec4da955fe19bae2202ac89408faca7e600df13f0e9f3ea0e6952d87124fd3a",
+  "identity": {
+    "attempt_id": null,
+    "checkpoint_sha256": null,
+    "controller_id": "ADAPTIVE_PRICE_MPC_V2",
+    "full_task_sha256": "7fa2b627e4a0d1f132770412195665132f9c8e603a9f52a9c923b452a90f688d",
+    "numeric_seed": 11400035,
+    "pair_ordinal": 139,
+    "route_sha256": "b02fd660b37f31a9bc8a0ba6e3012862d4f853434e7e47ce66a53d07ee916bae",
+    "task_ordinal": 31,
+    "worker_runtime": "C"
+  },
+  "independent_reconstruction": {
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.1577995005891007,
+    "feasible": true,
+    "feasible_energy_kwh": 0.1577995005891007,
+    "final_position_m": 1000.3203906161339,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "native_step_count": 973,
+    "reconstruction_sha256": "333063325101987134f7b358c88c36936bd7bba937bab086f5bd94a63ae48389",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 97.29999999999875
+  },
+  "independent_verification": {
+    "outcome_sha256": "f2aa4c68ead5d5af0f0bafaffe1a4c90134699932f57aa08c97c81152b614849",
+    "reconstruction_sha256": "333063325101987134f7b358c88c36936bd7bba937bab086f5bd94a63ae48389",
+    "verified": true
+  },
+  "native_evidence_sha256": "74e153015ffb89038b55dad373ed3f054478910207981f56bdf2946e6c8a2027",
+  "outcome": {
+    "actor_actions": [
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        0.9003484861191566
+      ],
+      [
+        0.7639848252100592
+      ],
+      [
+        0.6276211643009695
+      ],
+      [
+        0.491257503391872
+      ],
+      [
+        0.35489384248277966
+      ],
+      [
+        0.22018365830166953
+      ],
+      [
+        0.08876343577874224
+      ],
+      [
+        -0.039392229000051016
+      ],
+      [
+        -0.16430854378877124
+      ],
+      [
+        -0.28601048575900734
+      ],
+      [
+        -0.40452197923016797
+      ],
+      [
+        -0.5198658826802112
+      ],
+      [
+        -0.6320648491814647
+      ],
+      [
+        -0.7411413698024205
+      ],
+      [
+        -0.8471177678521102
+      ],
+      [
+        -0.9500156148269214
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ]
+    ],
+    "actor_component_correlation": null,
+    "actor_decision_count": 98,
+    "cancelled_chunk_count": 0,
+    "chunk_count": 0,
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.1577995005891007,
+    "executed_action_distribution": {
+      "braking": 26,
+      "coasting": 260,
+      "traction": 687
+    },
+    "failure_reasons": [],
+    "feasible": true,
+    "feasible_energy_kwh": 0.1577995005891007,
+    "full_chunk_count": 0,
+    "full_chunk_fraction": null,
+    "integrated_speed_violation_m": 0.0,
+    "intervention_or_cancellation_reasons": {
+      "ACCEPTED": 633,
+      "ACCEPTED_IDENTICAL_TO_FALLBACK": 330,
+      "DEADLINE_RECOVERABILITY": 10
+    },
+    "max_speed_violation_m_s": 0.0,
+    "native_action_influence_count": 633,
+    "override_count": 10,
+    "proposal_count": 973,
+    "signed_energy_on_influenced_steps_kwh": 0.04279848378116359,
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 97.29999999999875
+  },
+  "pair_id": "a280f8494561e5a04896dfbad5d0f12df61e5203cbd0d68fd3a39a1e3224cc26",
+  "result_sha256": "dbb88fcd887377dde5881ef5bacda24da5049c1d846416c941cda62c0521708a",
+  "schema_version": 1
+}

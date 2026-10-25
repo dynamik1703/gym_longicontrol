@@ -1,0 +1,309 @@
+{
+  "evidence_path": "runs/feedback-chunk-diagnostic-v2/pairs/093-9683234f952ea4eb.jsonl.gz",
+  "evidence_sha256": "9528e9f62cfca6c6d3c08eaed9c7d51ab34e8df9bed4d666915373416a024c9f",
+  "execution_manifest_sha256": "aec4da955fe19bae2202ac89408faca7e600df13f0e9f3ea0e6952d87124fd3a",
+  "identity": {
+    "attempt_id": null,
+    "checkpoint_sha256": null,
+    "controller_id": "FIXED_PRICE_MPC_V2",
+    "full_task_sha256": "c549fbf0ff883c71be1b52ef915ee57035bbb2382c20c26476ccd47f2a7a3029",
+    "numeric_seed": 11400023,
+    "pair_ordinal": 93,
+    "route_sha256": "9c2a4ca16d03d084714d343af45108d7f0bb45db8107cacdc72ea1ad7616320e",
+    "task_ordinal": 21,
+    "worker_runtime": "C"
+  },
+  "independent_reconstruction": {
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.16118237720355108,
+    "feasible": true,
+    "feasible_energy_kwh": 0.16118237720355108,
+    "final_position_m": 1000.3517659917184,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "native_step_count": 775,
+    "reconstruction_sha256": "35f894fc62a6e76bf5935941ec92350a69a8cc31e8bf21a180bf541c9efe65be",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 77.49999999999987
+  },
+  "independent_verification": {
+    "outcome_sha256": "438914b8a3ba6df27e2a18cee1f8c25ceccb06c874da9a833d1b42ca8b594d35",
+    "reconstruction_sha256": "35f894fc62a6e76bf5935941ec92350a69a8cc31e8bf21a180bf541c9efe65be",
+    "verified": true
+  },
+  "native_evidence_sha256": "53e8b2fcb96dff5d21f89d72e73d5fd914c544b466dabc779e21273bfa5714d9",
+  "outcome": {
+    "actor_actions": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "actor_component_correlation": null,
+    "actor_decision_count": 78,
+    "cancelled_chunk_count": 0,
+    "chunk_count": 0,
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.16118237720355108,
+    "executed_action_distribution": {
+      "braking": 29,
+      "coasting": 351,
+      "traction": 395
+    },
+    "failure_reasons": [],
+    "feasible": true,
+    "feasible_energy_kwh": 0.16118237720355108,
+    "full_chunk_count": 0,
+    "full_chunk_fraction": null,
+    "integrated_speed_violation_m": 0.0,
+    "intervention_or_cancellation_reasons": {
+      "ACCEPTED": 490,
+      "ACCEPTED_IDENTICAL_TO_FALLBACK": 261,
+      "DEADLINE_RECOVERABILITY": 24
+    },
+    "max_speed_violation_m_s": 0.0,
+    "native_action_influence_count": 490,
+    "override_count": 24,
+    "proposal_count": 775,
+    "signed_energy_on_influenced_steps_kwh": 0.015276807176473641,
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 77.49999999999987
+  },
+  "pair_id": "9683234f952ea4ebc01cd3f87af7eaee226d41e78085b3059163ad7d04b9c1c0",
+  "result_sha256": "5ba43dc1411385250479fe9f07dd2536990636e89ce547bb26da571474363d0b",
+  "schema_version": 1
+}

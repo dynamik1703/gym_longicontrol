@@ -1,0 +1,19 @@
+{
+  "active_evaluation_seconds": 4106.763427124999,
+  "analysis_content_sha256": "be37b4fc4a4678ceb5c3db317b479bbfb6e1200efbd6f29a19f0a37869896fcb",
+  "classification": "CHUNK_V2_NO_INCREMENTAL_GAIN",
+  "completed_pairs": 468,
+  "execution_manifest_file_sha256": "0ba9091a68e584824c372167a0399bb67149591d454eefa9b398c6547be2f6e4",
+  "gradient_updates": 0,
+  "old_v1_ledger_sha256": "38cc54368e7b8795af47192f3cadf9d1da0620a2ad7b5d453dfd7a8c1f48e8c2",
+  "pair_ledger_file_sha256": "b1ed9695ae978f580eb92e9119a16b32fb0ca060007eb2aaaf98dd3931383fc4",
+  "paired_comparisons_file_sha256": "deb41c8c046defedfb70b944deaece464ff4bd52d9ae9d73261b79eb847cf8b6",
+  "paper_performance_episodes": 0,
+  "results_content_sha256": "95cbc308f435eb18c6606301ff69778aa1ec8776f2bebd98acaa36d652a0e246",
+  "results_file_sha256": "d805a7b40775425da651e3efb6c65b45c540d8270de1a81ee0f33e9b424bdbc6",
+  "retained_pair_artifact_bytes": 76131337,
+  "schema_version": 1,
+  "state": "COMPLETED_INDEPENDENTLY_VERIFIED",
+  "training_transitions": 0,
+  "validation_performance_episodes": 0
+}

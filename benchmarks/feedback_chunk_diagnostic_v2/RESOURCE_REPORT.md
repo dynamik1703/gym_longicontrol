@@ -11,3 +11,8 @@ H. With the frozen 2× uncertainty factor and 10% write/verification allowance,
 the projected active evaluation time is 5,863.35 s (1.63 h), below 43,200 s.
 Projected retained data is 85,659,680 bytes, below 4,294,967,296 bytes. Both
 hard gates pass.
+
+Actual active evaluation plus final verification took 4,106.763 s (1.141 h).
+Retained pair result/evidence artifacts total 76,131,337 bytes; the complete
+local V2 run directory occupies about 74 MiB. Both actual values remain below
+their hard gates.

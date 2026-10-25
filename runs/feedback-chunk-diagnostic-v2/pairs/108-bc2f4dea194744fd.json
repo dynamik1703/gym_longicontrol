@@ -1,0 +1,369 @@
+{
+  "evidence_path": "runs/feedback-chunk-diagnostic-v2/pairs/108-bc2f4dea194744fd.jsonl.gz",
+  "evidence_sha256": "fa1b689c287bd7e1e996044f87c425fd1eb79a093f7930483f97722e7ea4b94d",
+  "execution_manifest_sha256": "aec4da955fe19bae2202ac89408faca7e600df13f0e9f3ea0e6952d87124fd3a",
+  "identity": {
+    "attempt_id": null,
+    "checkpoint_sha256": null,
+    "controller_id": "ADAPTIVE_PRICE_MPC_V2",
+    "full_task_sha256": "4caeb97d6f84c2f307f48ac7b64bdfcd14346582fa6f2f58dfc7e87c4a6eb684",
+    "numeric_seed": 11400000,
+    "pair_ordinal": 108,
+    "route_sha256": "09c876c295ff6564d0a0656a0754a79f11fbe18b7987e2bb45c5555f78245270",
+    "task_ordinal": 0,
+    "worker_runtime": "C"
+  },
+  "independent_reconstruction": {
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.2009775621275751,
+    "feasible": true,
+    "feasible_energy_kwh": 0.2009775621275751,
+    "final_position_m": 1000.1040743410953,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "native_step_count": 980,
+    "reconstruction_sha256": "51f5fbae14d880f112855eaa0834acd28fe612ef9420ee73e59d5c7877821e9b",
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 97.9999999999987
+  },
+  "independent_verification": {
+    "outcome_sha256": "c3d1867393ed370b8581e8fb94f37f4825d93b8221cbe092ada999391f5474f4",
+    "reconstruction_sha256": "51f5fbae14d880f112855eaa0834acd28fe612ef9420ee73e59d5c7877821e9b",
+    "verified": true
+  },
+  "native_evidence_sha256": "9fa0b7f7c4e1b77890986ae0e0a99c6f6f6c3cc70eaec97d17cc85ecc6a359d5",
+  "outcome": {
+    "actor_actions": [
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        1.0
+      ],
+      [
+        0.9964584160658826
+      ],
+      [
+        0.8146402015204253
+      ],
+      [
+        0.6328219869749679
+      ],
+      [
+        0.4510037724295082
+      ],
+      [
+        0.2691855578840484
+      ],
+      [
+        0.08921905710676403
+      ],
+      [
+        -0.08706725908177115
+      ],
+      [
+        -0.25970809578157117
+      ],
+      [
+        -0.428737513845612
+      ],
+      [
+        -0.5941878889518777
+      ],
+      [
+        -0.7560909350585803
+      ],
+      [
+        -0.914478085106021
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ],
+      [
+        -1.0
+      ]
+    ],
+    "actor_component_correlation": null,
+    "actor_decision_count": 98,
+    "cancelled_chunk_count": 0,
+    "chunk_count": 0,
+    "completed": true,
+    "deadline_compliant": true,
+    "energy_kwh": 0.2009775621275751,
+    "executed_action_distribution": {
+      "braking": 82,
+      "coasting": 174,
+      "traction": 724
+    },
+    "failure_reasons": [],
+    "feasible": true,
+    "feasible_energy_kwh": 0.2009775621275751,
+    "full_chunk_count": 0,
+    "full_chunk_fraction": null,
+    "integrated_speed_violation_m": 0.0,
+    "intervention_or_cancellation_reasons": {
+      "ACCEPTED": 346,
+      "ACCEPTED_IDENTICAL_TO_FALLBACK": 616,
+      "DEADLINE_RECOVERABILITY": 18
+    },
+    "max_speed_violation_m_s": 0.0,
+    "native_action_influence_count": 346,
+    "override_count": 18,
+    "proposal_count": 980,
+    "signed_energy_on_influenced_steps_kwh": 0.015334110351167956,
+    "speed_compliant": true,
+    "speed_violation_count": 0,
+    "travel_time_s": 97.9999999999987
+  },
+  "pair_id": "bc2f4dea194744fd20091010779f8c213546574876e841ae890880875e8e828d",
+  "result_sha256": "0d56a9e209529f449c03a15e0d5641dee653aa95ad4dfa1add35a6ec50170216",
+  "schema_version": 1
+}
