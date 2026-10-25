@@ -1,0 +1,629 @@
+{
+  "canonical_sha256": "e436f3cc88b0b79d4a186ca3152fb282acf376150f6bc44b61a14e27400d33c6",
+  "checkpoint_metadata": {
+    "C": {
+      "CHUNK3_S11_300K": {
+        "actor_parameter_sha256": "b5cf4f86030bb172e1e2bbb846ed6c0efb84855609676efb7b889b414e7d1faa",
+        "attempt_id": "ba67e42e-5372-4f47-943e-75f4a8c84516",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-11/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "de59e6435e93f81b08931f414b8615226c424e025c44090e31d107d2e61770e0",
+        "deterministic_probe": [
+          -0.2698659300804138,
+          0.463171124458313,
+          -0.38124239444732666
+        ],
+        "deterministic_probe_sha256": "24ad15ab8c7fdfa41471a6bc58c8fb0cac1927b587ad3b371d34dcf204f1abc2",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "CHUNK3_RESIDUAL_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 11,
+        "worker_runtime": "C"
+      },
+      "CHUNK3_S29_300K": {
+        "actor_parameter_sha256": "9f3640adeb3654c2b0fde3f5b6d2f2a8e66a197307a5999a792d5f809613d383",
+        "attempt_id": "bb5b2a79-46bf-44dc-bdb5-715081b168da",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-29/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "7b71c9c2206e0e3a5e96486812a8a85925b4ceef73bc7bdfce7a00482410939d",
+        "deterministic_probe": [
+          -0.6813195943832397,
+          0.25845056772232056,
+          0.6837563514709473
+        ],
+        "deterministic_probe_sha256": "4a64c4bfe564417f44b2a866ee1b18193b6fb1dbdf0da597c0e6f4d985ef969b",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "CHUNK3_RESIDUAL_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 29,
+        "worker_runtime": "C"
+      },
+      "CHUNK3_S47_300K": {
+        "actor_parameter_sha256": "c61bf59f132096ee82ca011e56e5c3317354b003af53523089aeefa5256b50ea",
+        "attempt_id": "c2d827a4-0214-4a5e-9abb-4a7cb4cc8970",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-47/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "207a5cc0feae49bab0a2027fcf1ab8432a073c7776a468f7d1af5f2d73ed813f",
+        "deterministic_probe": [
+          -0.24077878892421722,
+          -0.4334461987018585,
+          -0.997001051902771
+        ],
+        "deterministic_probe_sha256": "954753d8aeb0cde81b375c461031fcad315f04783aa5b9e17cf527a5ef8d250b",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "CHUNK3_RESIDUAL_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 47,
+        "worker_runtime": "C"
+      },
+      "RESIDUAL1S_S11_300K": {
+        "actor_parameter_sha256": "d58e24c5b199696940a2bc3c6e77fd2d303f0382ef0cb6da8ddcd95e653e2088",
+        "attempt_id": "86d9b5cb-7482-4d1b-bcbd-ea83aa90a028",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-11/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "90a832a9839a6a7f22298c91e45d61d8e2d3f47a508dcd6f4a1475cd9a056591",
+        "deterministic_probe": [
+          -0.9191682934761047
+        ],
+        "deterministic_probe_sha256": "e3fc25d1ce06378966580f03f05a008b1d2b9cc284be7243b891160c20ebc5b4",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "RESIDUAL1S_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 11,
+        "worker_runtime": "C"
+      },
+      "RESIDUAL1S_S29_300K": {
+        "actor_parameter_sha256": "9b8ca59e39e20594f2c0a9474db89d18306f869a46ebffed3ef230d71e2e9f24",
+        "attempt_id": "09f0cac3-f2db-4918-8d22-b28a26f7fe5a",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-29/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "46e5aa9ce633a88dbca012db352f1d923daf68de7ced29c2c0a2aa1d8167bead",
+        "deterministic_probe": [
+          -0.9945468902587891
+        ],
+        "deterministic_probe_sha256": "15f0a992d11774d738dc026116edec63dfb6814e4abb5cedfb982f2f5c76b04f",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "RESIDUAL1S_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 29,
+        "worker_runtime": "C"
+      },
+      "RESIDUAL1S_S47_300K": {
+        "actor_parameter_sha256": "22bcbceef6217173b28b6fdfa927358fd29f9228910c4c1ebc3b2e06f7f21e35",
+        "attempt_id": "2e5ad03c-6ce5-4bba-9001-284625ecaf04",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-47/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "282544146f0ece5a6b37b9032907149fe808100d5955bb933129538ecd363424",
+        "deterministic_probe": [
+          -0.19607892632484436
+        ],
+        "deterministic_probe_sha256": "5a5903d0bdb06d19a8db179cf78df05bff312f4fd282606c1ec76e3b3e994152",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "method": "RESIDUAL1S_SAC",
+        "native_training_transitions": 300000,
+        "training_seed": 47,
+        "worker_runtime": "C"
+      }
+    },
+    "H": {
+      "HYBRID_H11": {
+        "actor_parameter_sha256": "2f574832349948dae731b57e4e85dca5ee797665865c5f332e7a7feb3612488e",
+        "attempt_id": "5f5801d9-d98c-4ace-9b1a-34476759f60a",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-11/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed",
+        "deterministic_probe": [
+          -0.3566187620162964
+        ],
+        "deterministic_probe_sha256": "fca02185af6958ca8f91af950c35af5a11cd40346e9f011e61eca6a3d73c490e",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "native_training_transitions": 300000,
+        "training_seed": 11,
+        "worker_runtime": "H"
+      },
+      "HYBRID_H29": {
+        "actor_parameter_sha256": "bd1de85fc0fe586e39831f2dea917fa5dd131530a625a58dd393f1e2094ace65",
+        "attempt_id": "97a40dfa-c8ed-4334-b2c3-0351e71697a8",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-29/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55",
+        "deterministic_probe": [
+          -0.7060492038726807
+        ],
+        "deterministic_probe_sha256": "8940c91ab2c853d0dcf901138667c6bf6b6f37110a5a64b8e99454ab8a957b18",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "native_training_transitions": 300000,
+        "training_seed": 29,
+        "worker_runtime": "H"
+      },
+      "HYBRID_H47": {
+        "actor_parameter_sha256": "135486355eb36def746f38ef20638a0fdd9aab02370e392a108cda66f87dfad6",
+        "attempt_id": "4553b298-5797-493f-88fe-075de3786dff",
+        "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-47/step-300000/checkpoint.pkl",
+        "checkpoint_sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf",
+        "deterministic_probe": [
+          -0.8609166145324707
+        ],
+        "deterministic_probe_sha256": "ecb4c13b141fe70a9869c1a7d242a2202690d426c6b5d2681259681ff994973c",
+        "gradient_updates": 30000,
+        "loaded_read_only": true,
+        "native_training_transitions": 300000,
+        "training_seed": 47,
+        "worker_runtime": "H"
+      }
+    }
+  },
+  "controller_order": [
+    "CAUSAL60",
+    "TIME_AWARE",
+    "FIXED_PRICE_MPC_V2",
+    "ADAPTIVE_PRICE_MPC_V2",
+    "HYBRID_H11",
+    "HYBRID_H29",
+    "HYBRID_H47",
+    "CHUNK3_S11_300K",
+    "CHUNK3_S29_300K",
+    "CHUNK3_S47_300K",
+    "RESIDUAL1S_S11_300K",
+    "RESIDUAL1S_S29_300K",
+    "RESIDUAL1S_S47_300K"
+  ],
+  "cross_runtime_parity_sha256": "d4c3becb7ea0231c7bf9628989f30e4fed83c9ca0f646a7b79333495b296bdf7",
+  "gradient_updates": 0,
+  "ordered_task_sha256": "d39fa351907c570fb47c3ba19805a434d480c32d5947a5b801364fc7a8175d6a",
+  "pair_schedule_sha256": "dcedc3e5cba89038c4e56bd9504b63a2361326cbf60c9787283ef685c275829a",
+  "paper_performance_episodes": 0,
+  "repository": {
+    "base_commit": "39e7b3c5edb435af2540a912633a966222bf96be",
+    "base_tree": "bca7eb626eae696e0aeea970f62e69a539c10d0c",
+    "branch": "research/feedback-chunk-diagnostic-v2",
+    "checks": {
+      "base_is_ancestor": true,
+      "base_tree": true,
+      "branch": true,
+      "verified_remote": true
+    },
+    "head": "39e7b3c5edb435af2540a912633a966222bf96be",
+    "verified_remote": "gym_longicontrol_origin",
+    "verified_remote_url": "https://github.com/dynamik1703/gym_longicontrol.git"
+  },
+  "runtime_manifests": {
+    "C": {
+      "distributions": [
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/build-1.6.1.dist-info",
+          "name": "build",
+          "version": "1.6.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/cloudpickle-3.1.2.dist-info",
+          "name": "cloudpickle",
+          "version": "3.1.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/coverage-7.17.0.dist-info",
+          "name": "coverage",
+          "version": "7.17.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/farama_notifications-0.0.6.dist-info",
+          "name": "Farama-Notifications",
+          "version": "0.0.6"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/filelock-4.2.4.dist-info",
+          "name": "filelock",
+          "version": "4.2.4"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/fsspec-2026.9.0.dist-info",
+          "name": "fsspec",
+          "version": "2026.9.0"
+        },
+        {
+          "direct_url": "{\"url\":\"file:///Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl\",\"dir_info\":{\"editable\":true}}",
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/gym_longicontrol-1.0.0.dist-info",
+          "name": "gym-longicontrol",
+          "version": "1.0.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".egg-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/src/gym_longicontrol.egg-info",
+          "name": "gym-longicontrol",
+          "version": "1.0.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/gymnasium-1.4.0.dist-info",
+          "name": "gymnasium",
+          "version": "1.4.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/iniconfig-2.3.1.dist-info",
+          "name": "iniconfig",
+          "version": "2.3.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/jinja2-3.1.6.dist-info",
+          "name": "Jinja2",
+          "version": "3.1.6"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/markupsafe-3.0.4.dist-info",
+          "name": "MarkupSafe",
+          "version": "3.0.4"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/mpmath-1.3.0.dist-info",
+          "name": "mpmath",
+          "version": "1.3.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/networkx-3.6.1.dist-info",
+          "name": "networkx",
+          "version": "3.6.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/numpy-2.4.6.dist-info",
+          "name": "numpy",
+          "version": "2.4.6"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/packaging-26.3.dist-info",
+          "name": "packaging",
+          "version": "26.3"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pluggy-1.7.0.dist-info",
+          "name": "pluggy",
+          "version": "1.7.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pygments-2.21.0.dist-info",
+          "name": "Pygments",
+          "version": "2.21.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pyproject_hooks-1.3.3.dist-info",
+          "name": "pyproject_hooks",
+          "version": "1.3.3"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pytest-8.4.2.dist-info",
+          "name": "pytest",
+          "version": "8.4.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pytest_cov-6.3.0.dist-info",
+          "name": "pytest-cov",
+          "version": "6.3.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/ruff-0.17.2.dist-info",
+          "name": "ruff",
+          "version": "0.17.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/setuptools-84.2.1.dist-info",
+          "name": "setuptools",
+          "version": "84.2.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/sympy-1.14.0.dist-info",
+          "name": "sympy",
+          "version": "1.14.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/torch-2.14.1.dist-info",
+          "name": "torch",
+          "version": "2.14.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/typing_extensions-4.16.0.dist-info",
+          "name": "typing_extensions",
+          "version": "4.16.0"
+        }
+      ],
+      "executable": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/bin/python",
+      "executable_sha256": "1110a74ed5e281d9d89b0e0bf0b5be5e36e4b3301f424cfa8ec4f8eae8ec6295",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "manifest_sha256": "9d6936205dfe530f380bdf67212adf3b172aaa980e337e80f650e237f6a66406",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "python": "3.11.13",
+      "resolved_executable": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/bin/python3.11"
+    },
+    "H": {
+      "distributions": [
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/build-1.6.1.dist-info",
+          "name": "build",
+          "version": "1.6.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/cloudpickle-3.1.2.dist-info",
+          "name": "cloudpickle",
+          "version": "3.1.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/coverage-7.16.2.dist-info",
+          "name": "coverage",
+          "version": "7.16.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/farama_notifications-0.0.6.dist-info",
+          "name": "Farama-Notifications",
+          "version": "0.0.6"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/filelock-4.2.4.dist-info",
+          "name": "filelock",
+          "version": "4.2.4"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/fsspec-2026.9.0.dist-info",
+          "name": "fsspec",
+          "version": "2026.9.0"
+        },
+        {
+          "direct_url": "{\"url\":\"file:///Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution\",\"dir_info\":{\"editable\":true}}",
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/gym_longicontrol-1.0.0.dist-info",
+          "name": "gym-longicontrol",
+          "version": "1.0.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".egg-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/src/gym_longicontrol.egg-info",
+          "name": "gym-longicontrol",
+          "version": "1.0.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/gymnasium-1.4.0.dist-info",
+          "name": "gymnasium",
+          "version": "1.4.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/iniconfig-2.3.1.dist-info",
+          "name": "iniconfig",
+          "version": "2.3.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/jinja2-3.1.6.dist-info",
+          "name": "Jinja2",
+          "version": "3.1.6"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/markupsafe-3.0.4.dist-info",
+          "name": "MarkupSafe",
+          "version": "3.0.4"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/mpmath-1.3.0.dist-info",
+          "name": "mpmath",
+          "version": "1.3.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/networkx-3.7.dist-info",
+          "name": "networkx",
+          "version": "3.7"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/numpy-2.5.4.dist-info",
+          "name": "numpy",
+          "version": "2.5.4"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/packaging-26.3.dist-info",
+          "name": "packaging",
+          "version": "26.3"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pluggy-1.7.0.dist-info",
+          "name": "pluggy",
+          "version": "1.7.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pygments-2.21.0.dist-info",
+          "name": "Pygments",
+          "version": "2.21.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pyproject_hooks-1.3.3.dist-info",
+          "name": "pyproject_hooks",
+          "version": "1.3.3"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pytest-8.4.2.dist-info",
+          "name": "pytest",
+          "version": "8.4.2"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pytest_cov-6.3.0.dist-info",
+          "name": "pytest-cov",
+          "version": "6.3.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/ruff-0.17.1.dist-info",
+          "name": "ruff",
+          "version": "0.17.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/setuptools-84.2.0.dist-info",
+          "name": "setuptools",
+          "version": "84.2.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/sympy-1.14.0.dist-info",
+          "name": "sympy",
+          "version": "1.14.0"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/torch-2.14.1.dist-info",
+          "name": "torch",
+          "version": "2.14.1"
+        },
+        {
+          "direct_url": null,
+          "metadata_kind": ".dist-info",
+          "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/typing_extensions-4.16.0.dist-info",
+          "name": "typing_extensions",
+          "version": "4.16.0"
+        }
+      ],
+      "executable": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/bin/python",
+      "executable_sha256": "b898474cdfda938c1dd25af22d1b066d4808ba8b7e2d14e20033781d7787f87f",
+      "implementation": "CPython",
+      "machine": "arm64",
+      "manifest_sha256": "3cbc5cb651eb21839b71a7eceea4337fb627d511d9f676f210203faadc1f462f",
+      "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+      "python": "3.13.16",
+      "resolved_executable": "/Users/romanliessner/.local/share/uv/python/cpython-3.13.16-macos-aarch64-none/bin/python3.13"
+    }
+  },
+  "schema_version": 1,
+  "scientific_source_bundle": {
+    "files": {
+      "benchmarks/causal_mpc_v2/controller.py": "2c135a9f31c02ee2f1b55bbb51cf7c497e7e90e16987a10e507aa903bc29348a",
+      "benchmarks/causal_mpc_v2/planner.py": "22204ce8e141ee65b1896b1db708d54ad6a3fe0efea4654cf1ee2e9b578b64f5",
+      "benchmarks/feedback_chunk_diagnostic_v2/__init__.py": "9f8859f24bbe33d9d8c18b46c7a8f72e367c64e42ae1d2d10ad0dfd96013c2ac",
+      "benchmarks/feedback_chunk_diagnostic_v2/analysis.py": "9ed1330c9a86b346adf916adb3f532647795938082a049faacb95c275545cc49",
+      "benchmarks/feedback_chunk_diagnostic_v2/checkpoint_audit.py": "5ba43bafe88abff19f82afd775f5333b4268eaaf67380d23f60da94f1af079d8",
+      "benchmarks/feedback_chunk_diagnostic_v2/constants.py": "01941994279f316019e5fe5022a7daa5403f4203f85258caed512108eb709c7d",
+      "benchmarks/feedback_chunk_diagnostic_v2/evaluation.py": "835dad012cc974f7262ad350e8db4d26b487507112adf47acbe9cbf4dd32e72f",
+      "benchmarks/feedback_chunk_diagnostic_v2/fixtures.py": "0ebbba417f56cd17d84d0d47d88d15eceade7b5bd6615bb1ca2189ee52940195",
+      "benchmarks/feedback_chunk_diagnostic_v2/integrity.py": "e7754102d13444e69ff0b55602d94add0679178c6374be2ab658a81bed436e39",
+      "benchmarks/feedback_chunk_diagnostic_v2/ledger.py": "2adef72bce8e23fc31f023f48709b6866d059816ac4f67ace1973262f879fc37",
+      "benchmarks/feedback_chunk_diagnostic_v2/master.py": "0c739af564786f65b8367bb5c126b29f1b6a1fae23ae98b8d8b9e2436ae07324",
+      "benchmarks/feedback_chunk_diagnostic_v2/preflight.py": "4c98b87ba863148c73292f876a711a1dcf126641b6e6402a82b02a0f3c2b67fc",
+      "benchmarks/feedback_chunk_diagnostic_v2/split.py": "ce8b06f089a1459877b7948366a7a84a04253eef1502112d879d5e4122643cbc",
+      "benchmarks/feedback_chunk_diagnostic_v2/utils.py": "18e076514d983ba1c43572214e97d1deeb0a4f9a4f354922d4580da880933b9e",
+      "benchmarks/feedback_chunk_diagnostic_v2/verifier.py": "df568287497c0416332316f390268842b8fc87ac7150f23099f6389955b8c2fa",
+      "benchmarks/feedback_chunk_diagnostic_v2/worker.py": "116a7833bf178c5fd8d3d5d51b9bae76b12a6fdd724b9056982c47579f4e8e35",
+      "benchmarks/feedback_chunk_rl_v1/checkpointing.py": "c8c4d1dc9e349bc1ec382bffd1af5d125339653c435441277662ae536a54027d",
+      "benchmarks/feedback_chunk_rl_v1/chunk_decoder.py": "4a658fc0bda19102fd827420143aa6b83c2f53779eb6f733469a05a529d84072",
+      "benchmarks/feedback_chunk_rl_v1/evaluation.py": "0f1998b30688511cb3c58d07b526deda3ba3285ce28f30c9bb7f41f57eec55fc",
+      "benchmarks/feedback_chunk_rl_v1/residual_controller.py": "1fb97ac82e6f4fa89fafe8d4b2b766ec660994d768c3a8518383f37335bc51d9",
+      "benchmarks/feedback_chunk_rl_v1/sac_agent.py": "8b66b0e3ffa0e984ddc8f5649011e8316518c54cacf77e6840d947a272d7e3cf",
+      "benchmarks/hybrid_rl_design/controller.py": "99f38f33d69267d9e204e99ad1e7116735fa48ce5367907c73c197edec4363ef",
+      "benchmarks/hybrid_rl_design/viability.py": "3303459dccfe9a6d48118c83db41c59ed1c1396ac019d6a8e0f8f7ff60c61c6f",
+      "benchmarks/physical_feasibility_reference/causal_controller.py": "6934594424a87231bfe9d9702ad2fe6ab0f9f962cf8aa6f7a730e154c425dac7",
+      "src/gym_longicontrol/assets/vehicle/BMW_electric_i3_2014.npz": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+      "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+      "src/gym_longicontrol/domain/metrics.py": "1957806bd7a3d16f9b9c982fcb790e43863d2327bae06f09aea8bc5b34c86d9c",
+      "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+      "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+      "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+    },
+    "sha256": "bebb84b0eefb103a556fd24baf091f6993367cc33702f4455169d829d37cc72e"
+  },
+  "split_ledger_sha256": "8d39d92b4100cbdf1a989f747ed4954b8c0c38686be52913d74ca6686139dad2",
+  "statistical_analysis": {
+    "bootstrap_confidence": 0.95,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 11400000,
+    "chunk_vs_adaptive_minimum_mean_saving_percent": 3.0,
+    "chunk_vs_residual_minimum_mean_saving_percent": 1.0,
+    "feasibility_regression": "any CHUNK3 seed-specific failure absent from its matched RESIDUAL1S seed, AdaptivePrice, or FixedPrice comparator",
+    "method_level_unit": "route; three training-seed outcomes grouped before route aggregation"
+  },
+  "study": "FEEDBACK_CHUNK_RUNTIME_ISOLATED_DIAGNOSTIC_V2",
+  "training_transitions": 0,
+  "validation_performance_episodes": 0
+}

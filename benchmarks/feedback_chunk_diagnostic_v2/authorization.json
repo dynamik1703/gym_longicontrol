@@ -1,0 +1,12 @@
+{
+  "diagnostic_v2_authorized": false,
+  "note": "unlock only after the frozen-protocol commit",
+  "pair_schedule_sha256": "dcedc3e5cba89038c4e56bd9504b63a2361326cbf60c9787283ef685c275829a",
+  "paper_authorized": false,
+  "preparation_lock": true,
+  "preparation_status_sha256": "7327681c7ccb1c55fcf7eb15786db7508a41ff8dcbcd49c38d40876677073b13",
+  "schema_version": 1,
+  "study": "FEEDBACK_CHUNK_RUNTIME_ISOLATED_DIAGNOSTIC_V2",
+  "training_authorized": false,
+  "validation_authorized": false
+}

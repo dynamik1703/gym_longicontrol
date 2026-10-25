@@ -1,0 +1,390 @@
+{
+  "C": {
+    "distributions": [
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/build-1.6.1.dist-info",
+        "name": "build",
+        "version": "1.6.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/cloudpickle-3.1.2.dist-info",
+        "name": "cloudpickle",
+        "version": "3.1.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/coverage-7.17.0.dist-info",
+        "name": "coverage",
+        "version": "7.17.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/farama_notifications-0.0.6.dist-info",
+        "name": "Farama-Notifications",
+        "version": "0.0.6"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/filelock-4.2.4.dist-info",
+        "name": "filelock",
+        "version": "4.2.4"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/fsspec-2026.9.0.dist-info",
+        "name": "fsspec",
+        "version": "2026.9.0"
+      },
+      {
+        "direct_url": "{\"url\":\"file:///Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl\",\"dir_info\":{\"editable\":true}}",
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/gym_longicontrol-1.0.0.dist-info",
+        "name": "gym-longicontrol",
+        "version": "1.0.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".egg-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/src/gym_longicontrol.egg-info",
+        "name": "gym-longicontrol",
+        "version": "1.0.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/gymnasium-1.4.0.dist-info",
+        "name": "gymnasium",
+        "version": "1.4.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/iniconfig-2.3.1.dist-info",
+        "name": "iniconfig",
+        "version": "2.3.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/jinja2-3.1.6.dist-info",
+        "name": "Jinja2",
+        "version": "3.1.6"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/markupsafe-3.0.4.dist-info",
+        "name": "MarkupSafe",
+        "version": "3.0.4"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/mpmath-1.3.0.dist-info",
+        "name": "mpmath",
+        "version": "1.3.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/networkx-3.6.1.dist-info",
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/numpy-2.4.6.dist-info",
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/packaging-26.3.dist-info",
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pluggy-1.7.0.dist-info",
+        "name": "pluggy",
+        "version": "1.7.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pygments-2.21.0.dist-info",
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pyproject_hooks-1.3.3.dist-info",
+        "name": "pyproject_hooks",
+        "version": "1.3.3"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pytest-8.4.2.dist-info",
+        "name": "pytest",
+        "version": "8.4.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/pytest_cov-6.3.0.dist-info",
+        "name": "pytest-cov",
+        "version": "6.3.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/ruff-0.17.2.dist-info",
+        "name": "ruff",
+        "version": "0.17.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/setuptools-84.2.1.dist-info",
+        "name": "setuptools",
+        "version": "84.2.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/sympy-1.14.0.dist-info",
+        "name": "sympy",
+        "version": "1.14.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/torch-2.14.1.dist-info",
+        "name": "torch",
+        "version": "2.14.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/lib/python3.11/site-packages/typing_extensions-4.16.0.dist-info",
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      }
+    ],
+    "executable": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/bin/python",
+    "executable_sha256": "1110a74ed5e281d9d89b0e0bf0b5be5e36e4b3301f424cfa8ec4f8eae8ec6295",
+    "implementation": "CPython",
+    "machine": "arm64",
+    "manifest_sha256": "9d6936205dfe530f380bdf67212adf3b172aaa980e337e80f650e237f6a66406",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.11.13",
+    "resolved_executable": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/bin/python3.11"
+  },
+  "H": {
+    "distributions": [
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/build-1.6.1.dist-info",
+        "name": "build",
+        "version": "1.6.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/cloudpickle-3.1.2.dist-info",
+        "name": "cloudpickle",
+        "version": "3.1.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/coverage-7.16.2.dist-info",
+        "name": "coverage",
+        "version": "7.16.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/farama_notifications-0.0.6.dist-info",
+        "name": "Farama-Notifications",
+        "version": "0.0.6"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/filelock-4.2.4.dist-info",
+        "name": "filelock",
+        "version": "4.2.4"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/fsspec-2026.9.0.dist-info",
+        "name": "fsspec",
+        "version": "2026.9.0"
+      },
+      {
+        "direct_url": "{\"url\":\"file:///Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution\",\"dir_info\":{\"editable\":true}}",
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/gym_longicontrol-1.0.0.dist-info",
+        "name": "gym-longicontrol",
+        "version": "1.0.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".egg-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/src/gym_longicontrol.egg-info",
+        "name": "gym-longicontrol",
+        "version": "1.0.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/gymnasium-1.4.0.dist-info",
+        "name": "gymnasium",
+        "version": "1.4.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/iniconfig-2.3.1.dist-info",
+        "name": "iniconfig",
+        "version": "2.3.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/jinja2-3.1.6.dist-info",
+        "name": "Jinja2",
+        "version": "3.1.6"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/markupsafe-3.0.4.dist-info",
+        "name": "MarkupSafe",
+        "version": "3.0.4"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/mpmath-1.3.0.dist-info",
+        "name": "mpmath",
+        "version": "1.3.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/networkx-3.7.dist-info",
+        "name": "networkx",
+        "version": "3.7"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/numpy-2.5.4.dist-info",
+        "name": "numpy",
+        "version": "2.5.4"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/packaging-26.3.dist-info",
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pluggy-1.7.0.dist-info",
+        "name": "pluggy",
+        "version": "1.7.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pygments-2.21.0.dist-info",
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pyproject_hooks-1.3.3.dist-info",
+        "name": "pyproject_hooks",
+        "version": "1.3.3"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pytest-8.4.2.dist-info",
+        "name": "pytest",
+        "version": "8.4.2"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/pytest_cov-6.3.0.dist-info",
+        "name": "pytest-cov",
+        "version": "6.3.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/ruff-0.17.1.dist-info",
+        "name": "ruff",
+        "version": "0.17.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/setuptools-84.2.0.dist-info",
+        "name": "setuptools",
+        "version": "84.2.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/sympy-1.14.0.dist-info",
+        "name": "sympy",
+        "version": "1.14.0"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/torch-2.14.1.dist-info",
+        "name": "torch",
+        "version": "2.14.1"
+      },
+      {
+        "direct_url": null,
+        "metadata_kind": ".dist-info",
+        "metadata_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/lib/python3.13/site-packages/typing_extensions-4.16.0.dist-info",
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      }
+    ],
+    "executable": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/bin/python",
+    "executable_sha256": "b898474cdfda938c1dd25af22d1b066d4808ba8b7e2d14e20033781d7787f87f",
+    "implementation": "CPython",
+    "machine": "arm64",
+    "manifest_sha256": "3cbc5cb651eb21839b71a7eceea4337fb627d511d9f676f210203faadc1f462f",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.16",
+    "resolved_executable": "/Users/romanliessner/.local/share/uv/python/cpython-3.13.16-macos-aarch64-none/bin/python3.13"
+  }
+}

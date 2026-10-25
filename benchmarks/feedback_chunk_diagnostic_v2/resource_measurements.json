@@ -1,0 +1,17 @@
+{
+  "active_evaluation_gate_seconds": 43200,
+  "conservative_seconds_per_rollout": 5.694781380250788,
+  "measured_elapsed_seconds": {
+    "C": 40.16894862498157,
+    "H": 45.558251042006304
+  },
+  "measured_fixture_rollouts_per_runtime": 8,
+  "projected_active_evaluation_seconds": 5863.346909106212,
+  "projected_retained_bytes": 85659680,
+  "retained_gate_bytes": 4294967296,
+  "retained_gate_passed": true,
+  "runtime_gate_passed": true,
+  "runtime_uncertainty_factor": 2.0,
+  "scope": "synthetic non-reserved physical fixtures in both native runtimes",
+  "write_and_verification_overhead_factor": 1.1
+}

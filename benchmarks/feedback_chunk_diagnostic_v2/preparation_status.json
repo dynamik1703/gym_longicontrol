@@ -1,0 +1,13 @@
+{
+  "all_mandatory_gates_passed": true,
+  "execution_manifest_sha256": "0ba9091a68e584824c372167a0399bb67149591d454eefa9b398c6547be2f6e4",
+  "pair_ledger_sha256_before_execution": "bcb7e11e5e276ddfeaebaeb7990a501ae66ad7d4a907a92dfc743c59dbb97b74",
+  "pair_schedule_sha256": "dcedc3e5cba89038c4e56bd9504b63a2361326cbf60c9787283ef685c275829a",
+  "paper_performance_episode_count": 0,
+  "performance_episode_count": 0,
+  "preflight_results_sha256": "53d607614eadbce1d3a62270e76cd7209b28ec7ad7e7378c1fd1aff33f75e674",
+  "prepared_at_utc": "2026-10-25T19:37:03.134654+00:00",
+  "schema_version": 1,
+  "study": "FEEDBACK_CHUNK_RUNTIME_ISOLATED_DIAGNOSTIC_V2",
+  "validation_performance_episode_count": 0
+}

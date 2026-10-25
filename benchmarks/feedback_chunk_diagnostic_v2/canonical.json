@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "study": "FEEDBACK_CHUNK_RUNTIME_ISOLATED_DIAGNOSTIC_V2",
+  "source": {
+    "base_commit": "39e7b3c5edb435af2540a912633a966222bf96be",
+    "base_tree": "bca7eb626eae696e0aeea970f62e69a539c10d0c",
+    "branch": "research/feedback-chunk-diagnostic-v2",
+    "verified_remote": "gym_longicontrol_origin",
+    "verified_remote_url": "https://github.com/dynamik1703/gym_longicontrol.git"
+  },
+  "runtime": {
+    "primary": "C",
+    "C": {
+      "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/.venv/bin/python",
+      "checkpoint_family": "FEEDBACK_CHUNK_V1",
+      "python": "3.11.13",
+      "numpy": "2.4.6",
+      "gymnasium": "1.4.0",
+      "torch": "2.14.1",
+      "gym-longicontrol": "1.0.0"
+    },
+    "H": {
+      "python_executable": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/.venv/bin/python",
+      "checkpoint_family": "HISTORICAL_HYBRID",
+      "python": "3.13.16",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0",
+      "torch": "2.14.1",
+      "gym-longicontrol": "1.0.0"
+    }
+  },
+  "cross_runtime_tolerance": {
+    "identity_and_hashes": "exact",
+    "discrete_values": "exact",
+    "absolute_float_tolerance": 1e-12,
+    "relative_float_tolerance": 0.0,
+    "policy": "frozen before synthetic parity; discrepancy above tolerance is an integrity stop"
+  },
+  "panel": {
+    "id": "CHUNK_RL_DIAGNOSTIC_V2",
+    "candidate_start": 11400000,
+    "accepted_count": 36,
+    "policy": "R",
+    "controller_count": 13,
+    "pair_count": 468
+  },
+  "controller_order": [
+    "CAUSAL60",
+    "TIME_AWARE",
+    "FIXED_PRICE_MPC_V2",
+    "ADAPTIVE_PRICE_MPC_V2",
+    "HYBRID_H11",
+    "HYBRID_H29",
+    "HYBRID_H47",
+    "CHUNK3_S11_300K",
+    "CHUNK3_S29_300K",
+    "CHUNK3_S47_300K",
+    "RESIDUAL1S_S11_300K",
+    "RESIDUAL1S_S29_300K",
+    "RESIDUAL1S_S47_300K"
+  ],
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_confidence": 0.95,
+    "bootstrap_seed": 11400000,
+    "chunk_vs_residual_minimum_mean_saving_percent": 1.0,
+    "chunk_vs_adaptive_minimum_mean_saving_percent": 3.0,
+    "method_level_unit": "route; three training-seed outcomes grouped before route aggregation",
+    "feasibility_regression": "any CHUNK3 seed-specific failure absent from its matched RESIDUAL1S seed, AdaptivePrice, or FixedPrice comparator"
+  },
+  "resources": {
+    "maximum_active_evaluation_hours": 12.0,
+    "maximum_retained_bytes": 4294967296,
+    "projection_uncertainty_factor": 2.0
+  },
+  "authorization": {
+    "training": false,
+    "gradient_updates": false,
+    "diagnostic_v2_after_freeze": true,
+    "validation": false,
+    "paper": false
+  }
+}

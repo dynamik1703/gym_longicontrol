@@ -1,0 +1,551 @@
+{
+  "all_mandatory_gates_passed": true,
+  "checkpoint_gate": {
+    "C": {
+      "expected_count": 6,
+      "loaded_count": 6,
+      "metadata": {
+        "CHUNK3_S11_300K": {
+          "actor_parameter_sha256": "b5cf4f86030bb172e1e2bbb846ed6c0efb84855609676efb7b889b414e7d1faa",
+          "attempt_id": "ba67e42e-5372-4f47-943e-75f4a8c84516",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-11/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "de59e6435e93f81b08931f414b8615226c424e025c44090e31d107d2e61770e0",
+          "deterministic_probe": [
+            -0.2698659300804138,
+            0.463171124458313,
+            -0.38124239444732666
+          ],
+          "deterministic_probe_sha256": "24ad15ab8c7fdfa41471a6bc58c8fb0cac1927b587ad3b371d34dcf204f1abc2",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "CHUNK3_RESIDUAL_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 11,
+          "worker_runtime": "C"
+        },
+        "CHUNK3_S29_300K": {
+          "actor_parameter_sha256": "9f3640adeb3654c2b0fde3f5b6d2f2a8e66a197307a5999a792d5f809613d383",
+          "attempt_id": "bb5b2a79-46bf-44dc-bdb5-715081b168da",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-29/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "7b71c9c2206e0e3a5e96486812a8a85925b4ceef73bc7bdfce7a00482410939d",
+          "deterministic_probe": [
+            -0.6813195943832397,
+            0.25845056772232056,
+            0.6837563514709473
+          ],
+          "deterministic_probe_sha256": "4a64c4bfe564417f44b2a866ee1b18193b6fb1dbdf0da597c0e6f4d985ef969b",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "CHUNK3_RESIDUAL_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 29,
+          "worker_runtime": "C"
+        },
+        "CHUNK3_S47_300K": {
+          "actor_parameter_sha256": "c61bf59f132096ee82ca011e56e5c3317354b003af53523089aeefa5256b50ea",
+          "attempt_id": "c2d827a4-0214-4a5e-9abb-4a7cb4cc8970",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/chunk3_residual_sac/seed-47/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "207a5cc0feae49bab0a2027fcf1ab8432a073c7776a468f7d1af5f2d73ed813f",
+          "deterministic_probe": [
+            -0.24077878892421722,
+            -0.4334461987018585,
+            -0.997001051902771
+          ],
+          "deterministic_probe_sha256": "954753d8aeb0cde81b375c461031fcad315f04783aa5b9e17cf527a5ef8d250b",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "CHUNK3_RESIDUAL_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 47,
+          "worker_runtime": "C"
+        },
+        "RESIDUAL1S_S11_300K": {
+          "actor_parameter_sha256": "d58e24c5b199696940a2bc3c6e77fd2d303f0382ef0cb6da8ddcd95e653e2088",
+          "attempt_id": "86d9b5cb-7482-4d1b-bcbd-ea83aa90a028",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-11/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "90a832a9839a6a7f22298c91e45d61d8e2d3f47a508dcd6f4a1475cd9a056591",
+          "deterministic_probe": [
+            -0.9191682934761047
+          ],
+          "deterministic_probe_sha256": "e3fc25d1ce06378966580f03f05a008b1d2b9cc284be7243b891160c20ebc5b4",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "RESIDUAL1S_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 11,
+          "worker_runtime": "C"
+        },
+        "RESIDUAL1S_S29_300K": {
+          "actor_parameter_sha256": "9b8ca59e39e20594f2c0a9474db89d18306f869a46ebffed3ef230d71e2e9f24",
+          "attempt_id": "09f0cac3-f2db-4918-8d22-b28a26f7fe5a",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-29/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "46e5aa9ce633a88dbca012db352f1d923daf68de7ced29c2c0a2aa1d8167bead",
+          "deterministic_probe": [
+            -0.9945468902587891
+          ],
+          "deterministic_probe_sha256": "15f0a992d11774d738dc026116edec63dfb6814e4abb5cedfb982f2f5c76b04f",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "RESIDUAL1S_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 29,
+          "worker_runtime": "C"
+        },
+        "RESIDUAL1S_S47_300K": {
+          "actor_parameter_sha256": "22bcbceef6217173b28b6fdfa927358fd29f9228910c4c1ebc3b2e06f7f21e35",
+          "attempt_id": "2e5ad03c-6ce5-4bba-9001-284625ecaf04",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_feedback_chunk_rl/runs/feedback-chunk-rl-v1/residual1s_sac/seed-47/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "282544146f0ece5a6b37b9032907149fe808100d5955bb933129538ecd363424",
+          "deterministic_probe": [
+            -0.19607892632484436
+          ],
+          "deterministic_probe_sha256": "5a5903d0bdb06d19a8db179cf78df05bff312f4fd282606c1ec76e3b3e994152",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "method": "RESIDUAL1S_SAC",
+          "native_training_transitions": 300000,
+          "training_seed": 47,
+          "worker_runtime": "C"
+        }
+      },
+      "passed": true
+    },
+    "H": {
+      "expected_count": 3,
+      "loaded_count": 3,
+      "metadata": {
+        "HYBRID_H11": {
+          "actor_parameter_sha256": "2f574832349948dae731b57e4e85dca5ee797665865c5f332e7a7feb3612488e",
+          "attempt_id": "5f5801d9-d98c-4ace-9b1a-34476759f60a",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-11/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "a16cd663a4cd046532490b74a414e37acee9b37ca0c0b886753fa8d767f4f7ed",
+          "deterministic_probe": [
+            -0.3566187620162964
+          ],
+          "deterministic_probe_sha256": "fca02185af6958ca8f91af950c35af5a11cd40346e9f011e61eca6a3d73c490e",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "native_training_transitions": 300000,
+          "training_seed": 11,
+          "worker_runtime": "H"
+        },
+        "HYBRID_H29": {
+          "actor_parameter_sha256": "bd1de85fc0fe586e39831f2dea917fa5dd131530a625a58dd393f1e2094ace65",
+          "attempt_id": "97a40dfa-c8ed-4334-b2c3-0351e71697a8",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-29/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "b4c6f5f484cc4a68b044b39f70db8d5f8245098729b3bb06749dbb46bdb9af55",
+          "deterministic_probe": [
+            -0.7060492038726807
+          ],
+          "deterministic_probe_sha256": "8940c91ab2c853d0dcf901138667c6bf6b6f37110a5a64b8e99454ab8a957b18",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "native_training_transitions": 300000,
+          "training_seed": 29,
+          "worker_runtime": "H"
+        },
+        "HYBRID_H47": {
+          "actor_parameter_sha256": "135486355eb36def746f38ef20638a0fdd9aab02370e392a108cda66f87dfad6",
+          "attempt_id": "4553b298-5797-493f-88fe-075de3786dff",
+          "checkpoint_path": "/Users/romanliessner/gitlab/gym_longicontrol_hybrid_rl_execution/runs/hybrid-rl-execution-v1/seed-47/step-300000/checkpoint.pkl",
+          "checkpoint_sha256": "3a67097e07360a07c8d5e5a276cf388434476943941085aea98b4a85254d82cf",
+          "deterministic_probe": [
+            -0.8609166145324707
+          ],
+          "deterministic_probe_sha256": "ecb4c13b141fe70a9869c1a7d242a2202690d426c6b5d2681259681ff994973c",
+          "gradient_updates": 30000,
+          "loaded_read_only": true,
+          "native_training_transitions": 300000,
+          "training_seed": 47,
+          "worker_runtime": "H"
+        }
+      },
+      "passed": true
+    }
+  },
+  "completed_at_utc": "2026-10-25T19:37:03.111156+00:00",
+  "cross_runtime_parity": {
+    "C_trace_sha256": "43e9aa2fc4626897baad0f2af44d58cbefd4285f8361d2fd160f97d68eafcd13",
+    "H_trace_sha256": "43e9aa2fc4626897baad0f2af44d58cbefd4285f8361d2fd160f97d68eafcd13",
+    "frozen_tolerance": {
+      "absolute": 1e-12,
+      "discrete_and_hash": "exact",
+      "relative": 0.0
+    },
+    "passed": true,
+    "production_comparison": {
+      "maximum_absolute_difference": 0.0,
+      "mismatch": null,
+      "passed": true
+    },
+    "production_identity": {
+      "C": {
+        "power_model_sha256": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+        "source_sha256": {
+          "src/gym_longicontrol/assets/vehicle/BMW_electric_i3_2014.npz": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+          "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+          "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+          "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+          "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+        }
+      },
+      "H": {
+        "power_model_sha256": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+        "source_sha256": {
+          "src/gym_longicontrol/assets/vehicle/BMW_electric_i3_2014.npz": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+          "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+          "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+          "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+          "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+        }
+      }
+    },
+    "synthetic_fixture_comparison": {
+      "maximum_absolute_difference": 0.0,
+      "mismatch": null,
+      "passed": true
+    }
+  },
+  "elapsed_seconds": 105.59374754098826,
+  "exactly_once_gate": {
+    "ambiguous_started_is_not_fresh": true,
+    "completed_cannot_repeat": true,
+    "completed_persisted": true,
+    "started_persisted_before_reset_mock": true
+  },
+  "gates": {
+    "A_checkpoint_sha_and_attempt_ids": true,
+    "B_model_optimizer_source_provenance": true,
+    "C_all_final_300k_checkpoints_native_loaded": true,
+    "D_deterministic_actor_inference": true,
+    "E_production_identity_cross_runtime": true,
+    "F_synthetic_physical_trace_parity": true,
+    "G_task_fingerprints_cross_runtime": true,
+    "H_schema_evidence_independent_verifier": true,
+    "I_exactly_once_crash_mocks": true,
+    "J_missing_completion_bound_semantics": true,
+    "K_resource_projection": true,
+    "namespace_unused_before_materialization": true,
+    "paper_sealed_uninspected": true,
+    "route_clean_panel": true,
+    "v1_incident_immutable": true,
+    "validation_unopened": true
+  },
+  "resource_gate": {
+    "active_evaluation_gate_seconds": 43200,
+    "conservative_seconds_per_rollout": 5.694781380250788,
+    "measured_elapsed_seconds": {
+      "C": 40.16894862498157,
+      "H": 45.558251042006304
+    },
+    "measured_fixture_rollouts_per_runtime": 8,
+    "projected_active_evaluation_seconds": 5863.346909106212,
+    "projected_retained_bytes": 85659680,
+    "retained_gate_bytes": 4294967296,
+    "retained_gate_passed": true,
+    "runtime_gate_passed": true,
+    "runtime_uncertainty_factor": 2.0,
+    "scope": "synthetic non-reserved physical fixtures in both native runtimes",
+    "write_and_verification_overhead_factor": 1.1
+  },
+  "schema_gate": {
+    "applicable_null_completion_bound_rejected": true,
+    "independent_accounting_matches": true,
+    "missing_completion_bound_rejected": true,
+    "normalized_schema_accepted": true,
+    "not_applicable_fields_explicit": true
+  },
+  "schema_version": 1,
+  "scientific_performance_episode_count": 0,
+  "scope": "synthetic/unreserved fixtures and pure Diagnostic task fingerprints only",
+  "task_fingerprint_gate": [
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "4caeb97d6f84c2f307f48ac7b64bdfcd14346582fa6f2f58dfc7e87c4a6eb684",
+      "numeric_seed": 11400000,
+      "route_sha256": "09c876c295ff6564d0a0656a0754a79f11fbe18b7987e2bb45c5555f78245270"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "6cf1c0fc9176632a38aac206cb089fde865190425e1ad94674058bf5d9e7d156",
+      "numeric_seed": 11400001,
+      "route_sha256": "dce9b37954b0ccf5bb0e79ff349f957f51445a9cbbffa9ea2d461c07a6286603"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "78d3ae4e9102b2af47d14e0249aea6a884bbdc715c8070c32feb9419197c6255",
+      "numeric_seed": 11400002,
+      "route_sha256": "0ffbf3a42d9733439fa1c656967e98043ccde0b81cbadef1214ae2804853eadd"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "defbac3d137b240eb95443aea27dcbcc647daaa19fe75313aefcf5777d9981a0",
+      "numeric_seed": 11400003,
+      "route_sha256": "f5caa29f246a1a7eba731620ee4d8086b57b3684f9573164c60f3adde5c05a28"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "b819141994061eb9d42677409fa76301a6e888a447d03162f12354391fded009",
+      "numeric_seed": 11400004,
+      "route_sha256": "b84bdcab1b8773cfa381236125a84801a8f5df01646e28e6bc87e2cabdf66b0e"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "a569de78488999a1f93109865947ac3799941ec1599a9a0e84edca0300f671ee",
+      "numeric_seed": 11400006,
+      "route_sha256": "142c68fc7d309dde2513b263f1f8a78fd665615fb8a30038eff516b80105a4b5"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "6f953686e457e86df6f6bb5155ee1b22aa1e4ab437c538f948d9f322625239fd",
+      "numeric_seed": 11400007,
+      "route_sha256": "bec8269341e04e972f6778c75a636de2ec74dcd781efefc5c38a92ac5f08c6a2"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "1de080f990c7f95559304c6343f3f727f256111e60cc095589ca3255f5675f4c",
+      "numeric_seed": 11400008,
+      "route_sha256": "9d50818d73a3f5ad01c5255e03ff9a32fece7f0452bf5b98c3b09ad1297d7194"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "adbd5c602fa978e62cb92334927d434c4896a272d6150e95621b1cabb84ece4e",
+      "numeric_seed": 11400009,
+      "route_sha256": "1f7914d9b7cc760201ec2e1be04450ebb7816570e7a3a761bd8c900f00dbb472"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "51b65fad8040f70074112b7f4b22f709c0e059d6b112e0a59bbe1dc5649697a5",
+      "numeric_seed": 11400010,
+      "route_sha256": "bec0d852c6efda89fa2af46eb7ef0639408e99fcc9dae6b2c2fcaec5857aa93e"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "aa5e85cfc898783c10a588e188cb8b305773e72e4c559fbba801fdfde7ae9e1b",
+      "numeric_seed": 11400012,
+      "route_sha256": "eb935456a3bfbcefc389fe035d6dcae12917b92d2610203aec27fbcee445ad1d"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "5f7af1111a0e1517bf93b0c4580b5768bb899b6349eb3528de815152142d75b0",
+      "numeric_seed": 11400013,
+      "route_sha256": "ae33f7dce22b261b0b8fb1d0ddbc24a957545f9caed206e7de5106f1d96571d3"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "c33ec51556c202c35ef76e15e919584fda3c92eb5f8acb668669e2df72fa48ed",
+      "numeric_seed": 11400014,
+      "route_sha256": "3716586c9bf6f63b0dfc947b2ede27871eca5fa7f12835796f9e97d851d15eed"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "0701b3e71098b372b323c4b2ce15212aec07cc2274a58b2808ec6ed9cf060760",
+      "numeric_seed": 11400015,
+      "route_sha256": "ae7978e66169f4e672b0360ae24c855932dfd6d8423ae63f16b77df010394d10"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "ac7dbc9f446b766a0ef2a2cbd2879cdbcba2c108ca56e547267e177330dd79fd",
+      "numeric_seed": 11400016,
+      "route_sha256": "71fab349dc8721149d093dbb6bcdd8eda9803230e8f64a66fff1be4803789737"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "1144f4c8b03e15cbbc80eabf360e98c3657c18812101f3a413c260d2f14c2de3",
+      "numeric_seed": 11400017,
+      "route_sha256": "537a720e10e3c3cff5b61151222ec251a3f2d9c5c92809a9b9370172d2d94096"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "d18b0aa7c3ccb5066ae918815369cd8736432a4e258f4d6ddf29d195412cdb4a",
+      "numeric_seed": 11400018,
+      "route_sha256": "d6762654d95db5862e13ade6fd2c3514519393f676eb6e28bf7bd945d06844af"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "9f3e091f28af2d6f17b62dac585c154f33f875946341192213a294d925ac6f54",
+      "numeric_seed": 11400019,
+      "route_sha256": "126e1a7f450faaca637b457a2eca0ec0b277834cf846403bdad7b6222d6758f0"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "1b937c88466dd274c00a02a4a1e71e6eb98b152a2af97d7c5b7bbe5f0b744597",
+      "numeric_seed": 11400020,
+      "route_sha256": "04bad2c73decf91e43769ea5f4802541f826617f8acb8654b58c29ec85ac195c"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "7f13b9a2a6e978755c089ee8fa34daaf947ba3f4b4b1a648601fc67abae0d081",
+      "numeric_seed": 11400021,
+      "route_sha256": "46b75e8d431ba1b0a73a850b13b4891cccc1716307718cdcd86b53459876b71e"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "c2af07d8a66a59077da1cdf0ce88cbd8082077be8e5bf4b9cb2b0f42fb658841",
+      "numeric_seed": 11400022,
+      "route_sha256": "1be76ec709b17ab5ef7abe4629980349fab44397cfa79ab30b7c431f86efa5ca"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "c549fbf0ff883c71be1b52ef915ee57035bbb2382c20c26476ccd47f2a7a3029",
+      "numeric_seed": 11400023,
+      "route_sha256": "9c2a4ca16d03d084714d343af45108d7f0bb45db8107cacdc72ea1ad7616320e"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "ef57f9919c3d20421b3524193d8ddd5046505f5fcbe92a42c5a11b72e4b13491",
+      "numeric_seed": 11400024,
+      "route_sha256": "5a3ae42205d6475142a0535a09feae0b1795c1ac8bf6a95a64ce5d253eb564ff"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "1c889538e8dd732da7c918d1d0e83cd81a81993101d0952d13dc573b3eef8747",
+      "numeric_seed": 11400025,
+      "route_sha256": "42831683c215daf9f464327b2354cd3b5731bb63813eb00faea4959b0c39bf97"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "d365cc589124024d56e6b30f29fc30b815ddfe58eacff0525613fb7dd37c35d0",
+      "numeric_seed": 11400026,
+      "route_sha256": "3b9523a75a9f288bcaf1cee70352f3b91c27f14e142edf6c842a353a76332229"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "b201457f197a3c4921c47ae432ba28e7d56aa3fd358bb155f321d7601f27fb34",
+      "numeric_seed": 11400027,
+      "route_sha256": "44b07a922960572a85b3da0ddbb8da8423ee650f50f346cfb445f9d1754059b8"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "449f448db8e4365e9dc8aef8de71fb709e9325fd616886d31e4987e962144897",
+      "numeric_seed": 11400028,
+      "route_sha256": "e09f28921c5cb53bac11a03d9cbd99c6529fbea2e4fec617df849b5e91b1de07"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "144b94d470ec8679ea72d981e5a547a91b30ea588e1c22b1a6575d3a5065a30b",
+      "numeric_seed": 11400030,
+      "route_sha256": "bbbd17735954951cc6552aa50d047ddf869a0da66a4dced31eac136195443221"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "b82a56f7b0695fb5e521074420254136af68bd7adbf0d56c7c27d68037b79f56",
+      "numeric_seed": 11400031,
+      "route_sha256": "8a70bafbbe724fd47520d744cd009cd13eaf5688ed488d2f429f36b9bbcb6bf3"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "4ae8a3ac40439fa928c42dab9bd6d7c0e735062f388218e9b3f167f461e6508c",
+      "numeric_seed": 11400032,
+      "route_sha256": "caf49d7735693a69663c4bcdd7ccc1160a2d7f115c5e8ae3204ce4c4d90272b5"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "95c64c54604100f6bff8fbb529a39a6ffd8ec8fd9f4e62068f755d0771769205",
+      "numeric_seed": 11400034,
+      "route_sha256": "001ce20b67c32d1eab836f6049d1230ba7277b8f015799a68d57da608cfd6ff4"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "7fa2b627e4a0d1f132770412195665132f9c8e603a9f52a9c923b452a90f688d",
+      "numeric_seed": 11400035,
+      "route_sha256": "b02fd660b37f31a9bc8a0ba6e3012862d4f853434e7e47ce66a53d07ee916bae"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "7974d97bf9806c3483ef047d589b9cb858adfbfb5f0aa8a985e2e11775684122",
+      "numeric_seed": 11400036,
+      "route_sha256": "c4a1e8958bdfb4560df2b7eef0240521f2df1e9f53503c9fde9814bb77740302"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "ebec31e0a7fe9adeb85dec94e4ed8e8ce7c8e7e7eb86f1737dbe966a97cf6204",
+      "numeric_seed": 11400037,
+      "route_sha256": "ba2cd8df148eb4d811941007be02112d5581ed97b7e47030a88b0149e2c76bd6"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "fae4dc78a9cef7bbb25d6c92e9fe34c37c27fe977d0044143666112e9e08afa9",
+      "numeric_seed": 11400038,
+      "route_sha256": "ab7c91b62efdae6bdec7b98c19f01f5fe339b217679444d77562f9f582d7d662"
+    },
+    {
+      "C_matches": true,
+      "H_matches": true,
+      "cross_runtime_exact": true,
+      "full_task_sha256": "703c42d082e6b2c1f9aee87e347039ad9f5b39a085e64477a2de84e52708ac87",
+      "numeric_seed": 11400039,
+      "route_sha256": "d103bf77bb13308c6a2b886aab5339a3fd74a442157ee4959ec831619a731f5b"
+    }
+  ]
+}

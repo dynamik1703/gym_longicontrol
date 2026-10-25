@@ -1,0 +1,42 @@
+{
+  "C_trace_sha256": "43e9aa2fc4626897baad0f2af44d58cbefd4285f8361d2fd160f97d68eafcd13",
+  "H_trace_sha256": "43e9aa2fc4626897baad0f2af44d58cbefd4285f8361d2fd160f97d68eafcd13",
+  "frozen_tolerance": {
+    "absolute": 1e-12,
+    "discrete_and_hash": "exact",
+    "relative": 0.0
+  },
+  "passed": true,
+  "production_comparison": {
+    "maximum_absolute_difference": 0.0,
+    "mismatch": null,
+    "passed": true
+  },
+  "production_identity": {
+    "C": {
+      "power_model_sha256": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+      "source_sha256": {
+        "src/gym_longicontrol/assets/vehicle/BMW_electric_i3_2014.npz": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+        "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+        "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+        "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+        "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+      }
+    },
+    "H": {
+      "power_model_sha256": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+      "source_sha256": {
+        "src/gym_longicontrol/assets/vehicle/BMW_electric_i3_2014.npz": "88a63fddfabf0f61123b3eee90fc84dba363911697d8e5cc10eb1685393d866d",
+        "src/gym_longicontrol/domain/dynamics.py": "cb137989abe9954e719f445b72dd0aa39f25408835311ac9298eb16aa38afc08",
+        "src/gym_longicontrol/domain/task.py": "56489eb5aa128608e2fa9cb37b755c0eca9efaf288965f80c5bc543ee00abdee",
+        "src/gym_longicontrol/domain/vehicle.py": "ce70255d711cb1479ab7a60f59d2c8d007e5767ac38b0c7bc3742bd2811f47b9",
+        "src/gym_longicontrol/envs/longicontrol.py": "b473e326d348a1a2de9e2f289555f0fe0c6464e32e856c3684d0a6b07862327a"
+      }
+    }
+  },
+  "synthetic_fixture_comparison": {
+    "maximum_absolute_difference": 0.0,
+    "mismatch": null,
+    "passed": true
+  }
+}
