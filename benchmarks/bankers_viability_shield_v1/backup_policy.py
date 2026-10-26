@@ -1,4 +1,5 @@
 """Exact causal state propagation and persistent observation lower bounds."""
+
 from __future__ import annotations
 
 from bisect import bisect_right
@@ -55,7 +56,7 @@ class CausalMemory:
     visible_signs: list[tuple[float, float, float]] = field(default_factory=list)
 
     def bound(self, position: float) -> float:
-        index = bisect_right(self.envelope, (position, float('inf'))) - 1
+        index = bisect_right(self.envelope, (position, float("inf"))) - 1
         return MIN_LIMIT if index < 0 else self.envelope[index][1]
 
     def ingest(self, observation) -> None:
@@ -86,6 +87,7 @@ class CausalMemory:
             previous = limit
         if any(a[0] >= b[0] for a, b in zip(visible, visible[1:])):
             raise SafetyIntegrityError("unordered visible signs")
+
         # Both slots exhaust the frozen generator's <=2 transitions / 150 m.
         def observed_bound(p):
             if p < x or p >= end:
@@ -98,12 +100,13 @@ class CausalMemory:
                     return min(limit, following)
                 limit = following
             return limit
+
         knots = {x, end}
         for low, high, _ in visible:
             # Treat the closed uncertainty interval conservatively. At high the
             # old lower value still applies; move the new segment one ulp right.
             knots.add(low)
-            knots.add(float(np.nextafter(high, float('inf'))))
+            knots.add(float(np.nextafter(high, float("inf"))))
         knots.update(p for p, _ in self.envelope if p >= x)
         merged = []
         for p in sorted(knots):
@@ -118,7 +121,9 @@ class CausalMemory:
             for i, (old_low, old_high, old_limit) in enumerate(self.remembered_signs):
                 if old_limit == limit and max(low, old_low) <= min(high, old_high):
                     self.remembered_signs[i] = (
-                        max(low, old_low), min(high, old_high), limit
+                        max(low, old_low),
+                        min(high, old_high),
+                        limit,
                     )
                     break
             else:
@@ -137,8 +142,8 @@ class CausalMemory:
     @classmethod
     def restore(cls, data: dict) -> CausalMemory:
         data = dict(data)
-        data['state'] = VehicleState(**data['state'])
-        for key in ('envelope', 'remembered_signs', 'visible_signs'):
+        data["state"] = VehicleState(**data["state"])
+        for key in ("envelope", "remembered_signs", "visible_signs"):
             data[key] = [tuple(row) for row in data[key]]
         return cls(**data)
 

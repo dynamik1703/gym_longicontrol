@@ -1,0 +1,9 @@
+# Comparison definitions
+
+The stronger supported property is a constructive robust continuation invariant for arbitrary repeated admitted native actions: the same causal braking backup remains available after every action and information update. The inherited design documents endpoint/braking checks and an empirical deadline estimate; it does not establish this inductive property globally.
+
+All 21 proposals are compared at matched B/C states. Endpoint rejection proves that proposed endpoint fails the method's conservative gate; an actual unsafe endpoint requires the independent actual route check. A failed backup witness means not certified by this inner safe set, not that every possible continuation is unsafe. Deadline-only rejections compare different guarantee definitions. Disagreement alone proves neither controller incorrect.
+
+New bounds retain old causal evidence, use the pre-action absolute frontier, evaluate every backup endpoint, expose a mask before action selection, remove the 60 km/h proposal restriction, and keep deadline logic outside the speed certificate. Smaller numerical admission margins tighten the exact task inequality and enclose sensor reconstruction; the physical task and evaluator are unchanged. These changes improve the safety argument, not an algorithmic novelty claim.
+
+Full distributions of safe action count, physically distinct position/velocity successors, velocity spread, positive acceleration availability and matched predicate disagreement are retained. Useful authority is predeclared as >=25% of BankerShield native states with >=2 distinct successors spanning >=0.05 m/s, and >=5% with an admitted positive-acceleration choice. A large mask at rest alone does not satisfy that assessment. Empirical authority does not prove future learning success.
