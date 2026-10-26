@@ -1,0 +1,19 @@
+FIXTURE START V2_FIXTURE__constant_20
+FIXTURE DONE V2_FIXTURE__constant_20 1800 {'completed': False, 'travel_time_s': 179.99999999999406, 'energy_kwh': 0.169454127688201, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__constant_100
+FIXTURE DONE V2_FIXTURE__constant_100 435 {'completed': True, 'travel_time_s': 43.50000000000035, 'energy_kwh': 0.2993397811486142, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__60_to_20
+FIXTURE DONE V2_FIXTURE__60_to_20 1487 {'completed': True, 'travel_time_s': 148.69999999999584, 'energy_kwh': 0.18789048467906017, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__consecutive_40_reductions
+FIXTURE DONE V2_FIXTURE__consecutive_40_reductions 1185 {'completed': True, 'travel_time_s': 118.49999999999754, 'energy_kwh': 0.20925431061629518, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__exact_150_preview
+FIXTURE DONE V2_FIXTURE__exact_150_preview 1668 {'completed': True, 'travel_time_s': 166.7999999999948, 'energy_kwh': 0.19411848231348341, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__two_preview_signs
+FIXTURE DONE V2_FIXTURE__two_preview_signs 1427 {'completed': True, 'travel_time_s': 142.69999999999618, 'energy_kwh': 0.201748969754289, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__final_near_1000
+FIXTURE DONE V2_FIXTURE__final_near_1000 645 {'completed': True, 'travel_time_s': 64.50000000000061, 'energy_kwh': 0.1589694609775426, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__repeated_adversarial
+FIXTURE DONE V2_FIXTURE__repeated_adversarial 1344 {'completed': True, 'travel_time_s': 134.39999999999665, 'energy_kwh': 0.2958442390122807, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+FIXTURE START V2_FIXTURE__repeated_minimal
+FIXTURE DONE V2_FIXTURE__repeated_minimal 120 {'completed': False, 'travel_time_s': 11.999999999999973, 'energy_kwh': -0.06606138605391496, 'speed_violation_count': 0, 'max_speed_violation_m_s': 0.0, 'integrated_speed_violation_m': 0.0}
+PREFLIGHT {'identity': {'base_commit': '0162477848bcfef2d1acea3e38a47b8fbd539299', 'contract': 'bankers-evidence-v2.0', 'implementation_sha256': 'a04b0b4599e666a3a2fded2192b0dbc14c3edbcbf2f6e970fcd10bf5952d37f2', 'configuration_sha256': '3b505e32d18f7d9d8dd72e831e0510477b16062f0a2af71e4136448277fb3e79', 'inherited_tree_sha256': 'b7051efaa433bf9e0116afa31b5c271d3d917a9dfbdc7bbb22ce4649d6d9bb89'}, 'gates': {'formal_semantics': True, 'serialization_synthetic_tests': True, 'synthetic_native_safety': True, 'independent_replay': True, 'backup': True, 'resource_compute': False, 'resource_storage': True}, 'all_gates_passed': False, 'preflight_cpu_s': 485.234802, 'development_episodes': 0, 'classification': 'BANKERS_V2_RESOURCE_STOP', 'training_transitions': 0, 'gradient_updates': 0} projected_s 32181.034279247055
