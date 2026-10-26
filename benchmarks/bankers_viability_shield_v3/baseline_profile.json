@@ -1,0 +1,886 @@
+{
+  "cprofile": [
+    {
+      "calls": 880,
+      "cumulative_s": 3.8734151650000004,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/certificate.py",
+      "function": "certify",
+      "line": 88,
+      "primitive_calls": 880,
+      "self_s": 0.092020375
+    },
+    {
+      "calls": 880,
+      "cumulative_s": 3.684446104,
+      "file": "/private/tmp/bankers_v3_profile.py",
+      "function": "<genexpr>",
+      "line": 41,
+      "primitive_calls": 880,
+      "self_s": 0.004957688
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 2.4604822570000002,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/backup_policy.py",
+      "function": "checked_advance",
+      "line": 38,
+      "primitive_calls": 38135,
+      "self_s": 0.051208383
+    },
+    {
+      "calls": 77985,
+      "cumulative_s": 2.0827328570000003,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "asdict",
+      "line": 1265,
+      "primitive_calls": 77985,
+      "self_s": 0.048457328
+    },
+    {
+      "calls": 564375,
+      "cumulative_s": 2.005238943,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "_asdict_inner",
+      "line": 1289,
+      "primitive_calls": 77985,
+      "self_s": 0.819669058
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 1.2514267860000001,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/src/gym_longicontrol/domain/dynamics.py",
+      "function": "advance",
+      "line": 7,
+      "primitive_calls": 38135,
+      "self_s": 0.122566953
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 1.152756777,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/backup_policy.py",
+      "function": "finite_state",
+      "line": 34,
+      "primitive_calls": 38135,
+      "self_s": 0.034650381
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 0.707622281,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/comparison.py",
+      "function": "power_kw",
+      "line": 29,
+      "primitive_calls": 38135,
+      "self_s": 0.026654077
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 0.680968204,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/src/gym_longicontrol/domain/vehicle.py",
+      "function": "power_kw",
+      "line": 131,
+      "primitive_calls": 38135,
+      "self_s": 0.061146818000000006
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 0.590980874,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/src/gym_longicontrol/domain/vehicle.py",
+      "function": "predict",
+      "line": 54,
+      "primitive_calls": 38135,
+      "self_s": 0.48344595300000004
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 0.37526596100000004,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/src/gym_longicontrol/domain/vehicle.py",
+      "function": "acceleration_from_action",
+      "line": 106,
+      "primitive_calls": 38135,
+      "self_s": 0.096613449
+    },
+    {
+      "calls": 642360,
+      "cumulative_s": 0.278707454,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "_is_dataclass_instance",
+      "line": 1253,
+      "primitive_calls": 642360,
+      "self_s": 0.14901576700000002
+    },
+    {
+      "calls": 114405,
+      "cumulative_s": 0.26279546000000004,
+      "file": "/private/tmp/bankers-v3-env/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py",
+      "function": "interp",
+      "line": 1538,
+      "primitive_calls": 114405,
+      "self_s": 0.108345298
+    },
+    {
+      "calls": 78865,
+      "cumulative_s": 0.20754298100000002,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "fields",
+      "line": 1235,
+      "primitive_calls": 78865,
+      "self_s": 0.12007413
+    },
+    {
+      "calls": 1715,
+      "cumulative_s": 0.173495111,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/certificate.py",
+      "function": "digest",
+      "line": 27,
+      "primitive_calls": 1715,
+      "self_s": 0.004301245
+    },
+    {
+      "calls": 1715,
+      "cumulative_s": 0.160299987,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/json/__init__.py",
+      "function": "dumps",
+      "line": 183,
+      "primitive_calls": 1715,
+      "self_s": 0.003421082
+    },
+    {
+      "calls": 1715,
+      "cumulative_s": 0.155635187,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/json/encoder.py",
+      "function": "encode",
+      "line": 183,
+      "primitive_calls": 1715,
+      "self_s": 0.003409276
+    },
+    {
+      "calls": 1715,
+      "cumulative_s": 0.151743748,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/json/encoder.py",
+      "function": "iterencode",
+      "line": 205,
+      "primitive_calls": 1715,
+      "self_s": 0.151743748
+    },
+    {
+      "calls": 880,
+      "cumulative_s": 0.082182086,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/backup_policy.py",
+      "function": "snapshot",
+      "line": 139,
+      "primitive_calls": 880,
+      "self_s": 0.00047950600000000004
+    },
+    {
+      "calls": 38135,
+      "cumulative_s": 0.07396620300000001,
+      "file": "/private/tmp/bankers-v3-env/lib/python3.11/site-packages/numpy/_core/_methods.py",
+      "function": "_all",
+      "line": 64,
+      "primitive_calls": 38135,
+      "self_s": 0.01368896
+    },
+    {
+      "calls": 552935,
+      "cumulative_s": 0.073241677,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "<genexpr>",
+      "line": 1250,
+      "primitive_calls": 552935,
+      "self_s": 0.073241677
+    },
+    {
+      "calls": 266945,
+      "cumulative_s": 0.072917589,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/backup_policy.py",
+      "function": "<genexpr>",
+      "line": 35,
+      "primitive_calls": 266945,
+      "self_s": 0.055817213000000004
+    },
+    {
+      "calls": 76270,
+      "cumulative_s": 0.052781473,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/backup_policy.py",
+      "function": "bound",
+      "line": 58,
+      "primitive_calls": 76270,
+      "self_s": 0.039614066
+    },
+    {
+      "calls": 114405,
+      "cumulative_s": 0.048644092,
+      "file": "/private/tmp/bankers-v3-env/lib/python3.11/site-packages/numpy/lib/_type_check_impl.py",
+      "function": "iscomplexobj",
+      "line": 270,
+      "primitive_calls": 114405,
+      "self_s": 0.039215864
+    },
+    {
+      "calls": 17600,
+      "cumulative_s": 0.036541819,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/dataclasses.py",
+      "function": "<genexpr>",
+      "line": 1321,
+      "primitive_calls": 12320,
+      "self_s": 0.003922979
+    },
+    {
+      "calls": 114405,
+      "cumulative_s": 0.01238737,
+      "file": "/private/tmp/bankers-v3-env/lib/python3.11/site-packages/numpy/lib/_function_base_impl.py",
+      "function": "_interp_dispatcher",
+      "line": 1534,
+      "primitive_calls": 114405,
+      "self_s": 0.01238737
+    },
+    {
+      "calls": 114405,
+      "cumulative_s": 0.011240712,
+      "file": "/private/tmp/bankers-v3-env/lib/python3.11/site-packages/numpy/lib/_type_check_impl.py",
+      "function": "_is_type_dispatcher",
+      "line": 171,
+      "primitive_calls": 114405,
+      "self_s": 0.011240712
+    },
+    {
+      "calls": 880,
+      "cumulative_s": 0.002527389,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/certificate.py",
+      "function": "<listcomp>",
+      "line": 104,
+      "primitive_calls": 880,
+      "self_s": 0.002527389
+    },
+    {
+      "calls": 1715,
+      "cumulative_s": 0.001243718,
+      "file": "/Users/romanliessner/.local/share/uv/python/cpython-3.11.13-macos-aarch64-none/lib/python3.11/json/encoder.py",
+      "function": "__init__",
+      "line": 105,
+      "primitive_calls": 1715,
+      "self_s": 0.001243718
+    },
+    {
+      "calls": 75,
+      "cumulative_s": 0.0008206330000000001,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/safe_action_set.py",
+      "function": "actions",
+      "line": 23,
+      "primitive_calls": 75,
+      "self_s": 0.000245203
+    },
+    {
+      "calls": 880,
+      "cumulative_s": 0.000563287,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/certificate.py",
+      "function": "<listcomp>",
+      "line": 113,
+      "primitive_calls": 880,
+      "self_s": 0.000563287
+    },
+    {
+      "calls": 75,
+      "cumulative_s": 0.00038349500000000003,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/safe_action_set.py",
+      "function": "mask",
+      "line": 19,
+      "primitive_calls": 75,
+      "self_s": 0.000195016
+    },
+    {
+      "calls": 1545,
+      "cumulative_s": 0.000191935,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/safe_action_set.py",
+      "function": "<genexpr>",
+      "line": 25,
+      "primitive_calls": 1545,
+      "self_s": 0.000191935
+    },
+    {
+      "calls": 1650,
+      "cumulative_s": 0.00018847900000000002,
+      "file": "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v3/benchmarks/bankers_viability_shield_v1/safe_action_set.py",
+      "function": "<genexpr>",
+      "line": 21,
+      "primitive_calls": 1650,
+      "self_s": 0.00018847900000000002
+    }
+  ],
+  "cpu_s": 5.079528,
+  "development_tasks_constructed": 0,
+  "identity": "V3_PROFILE_FROZEN_V2_01",
+  "measurements": [
+    {
+      "causal_ingest_s": 7.845798972994089e-05,
+      "samples": [
+        {
+          "compressed_bytes": 1494,
+          "compression_s": 0.00018462500884197652,
+          "hashing_s": 1.6292004147544503e-05,
+          "legacy_proposal_s": 0.0003266669809818268,
+          "mask_physics_calls": 21,
+          "mask_power_calls": 21,
+          "mask_s": 0.005084290984086692,
+          "online_physics_calls": 22,
+          "replay_s": 0.0022627919970545918,
+          "selected_s": 0.00023299999884329736,
+          "serialization_s": 0.0008985829772427678
+        },
+        {
+          "compressed_bytes": 1494,
+          "compression_s": 0.00017970800399780273,
+          "hashing_s": 1.7084006685763597e-05,
+          "legacy_proposal_s": 0.0003354579966980964,
+          "mask_physics_calls": 21,
+          "mask_power_calls": 21,
+          "mask_s": 0.006071749987313524,
+          "online_physics_calls": 22,
+          "replay_s": 0.002322666987311095,
+          "selected_s": 0.00022950000129640102,
+          "serialization_s": 0.0011328340042382479
+        },
+        {
+          "compressed_bytes": 1494,
+          "compression_s": 0.0001713750243652612,
+          "hashing_s": 1.6207981389015913e-05,
+          "legacy_proposal_s": 0.00032095800270326436,
+          "mask_physics_calls": 21,
+          "mask_power_calls": 21,
+          "mask_s": 0.004991417023120448,
+          "online_physics_calls": 22,
+          "replay_s": 0.0020436659979168326,
+          "selected_s": 0.00023074998171068728,
+          "serialization_s": 0.0008489169995300472
+        },
+        {
+          "compressed_bytes": 1494,
+          "compression_s": 0.00017508401651866734,
+          "hashing_s": 1.6707985196262598e-05,
+          "legacy_proposal_s": 0.00032712501706555486,
+          "mask_physics_calls": 21,
+          "mask_power_calls": 21,
+          "mask_s": 0.004618999984813854,
+          "online_physics_calls": 22,
+          "replay_s": 0.0021001249842811376,
+          "selected_s": 0.00022658301168121397,
+          "serialization_s": 0.0011385839898139238
+        },
+        {
+          "compressed_bytes": 1494,
+          "compression_s": 0.00022566699772141874,
+          "hashing_s": 1.650000922381878e-05,
+          "legacy_proposal_s": 0.0003185420064255595,
+          "mask_physics_calls": 21,
+          "mask_power_calls": 21,
+          "mask_s": 0.004683125007431954,
+          "online_physics_calls": 22,
+          "replay_s": 0.0020046250137966126,
+          "selected_s": 0.0002643340267241001,
+          "serialization_s": 0.0010358339932281524
+        }
+      ],
+      "speed_m_s": 0.0
+    },
+    {
+      "causal_ingest_s": 3.6874989746138453e-05,
+      "samples": [
+        {
+          "compressed_bytes": 3309,
+          "compression_s": 0.00024570798268541694,
+          "hashing_s": 1.812499249354005e-05,
+          "legacy_proposal_s": 7.995797204785049e-05,
+          "mask_physics_calls": 32,
+          "mask_power_calls": 32,
+          "mask_s": 0.005616167007246986,
+          "online_physics_calls": 35,
+          "replay_s": 0.0032219169952441007,
+          "selected_s": 0.00039400000241585076,
+          "serialization_s": 0.0008978330006357282
+        },
+        {
+          "compressed_bytes": 3309,
+          "compression_s": 0.000244333001319319,
+          "hashing_s": 1.7082988051697612e-05,
+          "legacy_proposal_s": 6.187500548548996e-05,
+          "mask_physics_calls": 32,
+          "mask_power_calls": 32,
+          "mask_s": 0.005606291000731289,
+          "online_physics_calls": 35,
+          "replay_s": 0.0023817909823264927,
+          "selected_s": 0.00038958300137892365,
+          "serialization_s": 0.0009927499922923744
+        },
+        {
+          "compressed_bytes": 3309,
+          "compression_s": 0.00035504100378602743,
+          "hashing_s": 1.750001683831215e-05,
+          "legacy_proposal_s": 0.0001404999929945916,
+          "mask_physics_calls": 32,
+          "mask_power_calls": 32,
+          "mask_s": 0.005947541998466477,
+          "online_physics_calls": 35,
+          "replay_s": 0.002713541005505249,
+          "selected_s": 0.0003934999986086041,
+          "serialization_s": 0.0011297909950371832
+        },
+        {
+          "compressed_bytes": 3309,
+          "compression_s": 0.00024666698300279677,
+          "hashing_s": 1.6875012079253793e-05,
+          "legacy_proposal_s": 6.575000588782132e-05,
+          "mask_physics_calls": 32,
+          "mask_power_calls": 32,
+          "mask_s": 0.006490125000709668,
+          "online_physics_calls": 35,
+          "replay_s": 0.002730875014094636,
+          "selected_s": 0.00048658400191925466,
+          "serialization_s": 0.0008886249852366745
+        },
+        {
+          "compressed_bytes": 3309,
+          "compression_s": 0.00032087499857880175,
+          "hashing_s": 1.8999999156221747e-05,
+          "legacy_proposal_s": 0.00011412502499297261,
+          "mask_physics_calls": 32,
+          "mask_power_calls": 32,
+          "mask_s": 0.00579283299157396,
+          "online_physics_calls": 35,
+          "replay_s": 0.0023960419930517673,
+          "selected_s": 0.0003910409868694842,
+          "serialization_s": 0.0013463750074151903
+        }
+      ],
+      "speed_m_s": 5.555555555555555
+    },
+    {
+      "causal_ingest_s": 3.512500552460551e-05,
+      "samples": [
+        {
+          "compressed_bytes": 4050,
+          "compression_s": 0.0002852909965440631,
+          "hashing_s": 1.7875019693747163e-05,
+          "legacy_proposal_s": 0.00027483300073072314,
+          "mask_physics_calls": 342,
+          "mask_power_calls": 342,
+          "mask_s": 0.04068149998784065,
+          "online_physics_calls": 359,
+          "replay_s": 0.019704250007634982,
+          "selected_s": 0.0015257500053849071,
+          "serialization_s": 0.0009079579904209822
+        },
+        {
+          "compressed_bytes": 4050,
+          "compression_s": 0.00028495900915004313,
+          "hashing_s": 1.6749982023611665e-05,
+          "legacy_proposal_s": 0.00024983298499137163,
+          "mask_physics_calls": 342,
+          "mask_power_calls": 342,
+          "mask_s": 0.03502433298854157,
+          "online_physics_calls": 359,
+          "replay_s": 0.013219375017797574,
+          "selected_s": 0.0014676660066470504,
+          "serialization_s": 0.0008784999954514205
+        },
+        {
+          "compressed_bytes": 4050,
+          "compression_s": 0.0003367910103406757,
+          "hashing_s": 1.8582999473437667e-05,
+          "legacy_proposal_s": 0.00025508299586363137,
+          "mask_physics_calls": 342,
+          "mask_power_calls": 342,
+          "mask_s": 0.03221254199161194,
+          "online_physics_calls": 359,
+          "replay_s": 0.013381042022956535,
+          "selected_s": 0.0020553329959511757,
+          "serialization_s": 0.0008782919903751463
+        },
+        {
+          "compressed_bytes": 4050,
+          "compression_s": 0.0002855829952750355,
+          "hashing_s": 1.6999983927235007e-05,
+          "legacy_proposal_s": 0.0002503749856259674,
+          "mask_physics_calls": 342,
+          "mask_power_calls": 342,
+          "mask_s": 0.0317337499873247,
+          "online_physics_calls": 359,
+          "replay_s": 0.012967082991963252,
+          "selected_s": 0.0016536669863853604,
+          "serialization_s": 0.0008697910234332085
+        },
+        {
+          "compressed_bytes": 4050,
+          "compression_s": 0.0002859579981304705,
+          "hashing_s": 1.7584010493010283e-05,
+          "legacy_proposal_s": 0.0002567089977674186,
+          "mask_physics_calls": 342,
+          "mask_power_calls": 342,
+          "mask_s": 0.032377875002566725,
+          "online_physics_calls": 359,
+          "replay_s": 0.013727082987315953,
+          "selected_s": 0.001642541988985613,
+          "serialization_s": 0.0010074159945361316
+        }
+      ],
+      "speed_m_s": 10.0
+    },
+    {
+      "causal_ingest_s": 3.7084013456478715e-05,
+      "samples": [
+        {
+          "compressed_bytes": 4540,
+          "compression_s": 0.0004321250016801059,
+          "hashing_s": 1.8291000742465258e-05,
+          "legacy_proposal_s": 0.0007006250089034438,
+          "mask_physics_calls": 859,
+          "mask_power_calls": 859,
+          "mask_s": 0.0763159159978386,
+          "online_physics_calls": 901,
+          "replay_s": 0.0408418329898268,
+          "selected_s": 0.006621125008678064,
+          "serialization_s": 0.0009926249913405627
+        },
+        {
+          "compressed_bytes": 4540,
+          "compression_s": 0.0003076670109294355,
+          "hashing_s": 1.7084006685763597e-05,
+          "legacy_proposal_s": 0.0008497499802615494,
+          "mask_physics_calls": 859,
+          "mask_power_calls": 859,
+          "mask_s": 0.08098425000207499,
+          "online_physics_calls": 901,
+          "replay_s": 0.03099783300422132,
+          "selected_s": 0.00411691699991934,
+          "serialization_s": 0.0008866660064086318
+        },
+        {
+          "compressed_bytes": 4540,
+          "compression_s": 0.00030574999982491136,
+          "hashing_s": 1.737498678267002e-05,
+          "legacy_proposal_s": 0.0005894580099266022,
+          "mask_physics_calls": 859,
+          "mask_power_calls": 859,
+          "mask_s": 0.08173020899994299,
+          "online_physics_calls": 901,
+          "replay_s": 0.033064999995986,
+          "selected_s": 0.004118999990168959,
+          "serialization_s": 0.0009920000156853348
+        },
+        {
+          "compressed_bytes": 4540,
+          "compression_s": 0.00030520898872055113,
+          "hashing_s": 1.7084006685763597e-05,
+          "legacy_proposal_s": 0.0005700830079149455,
+          "mask_physics_calls": 859,
+          "mask_power_calls": 859,
+          "mask_s": 0.09825329200248234,
+          "online_physics_calls": 901,
+          "replay_s": 0.030244499997934327,
+          "selected_s": 0.003620542003773153,
+          "serialization_s": 0.0008924170106183738
+        },
+        {
+          "compressed_bytes": 4540,
+          "compression_s": 0.00030616699950769544,
+          "hashing_s": 1.737498678267002e-05,
+          "legacy_proposal_s": 0.0005845410050824285,
+          "mask_physics_calls": 859,
+          "mask_power_calls": 859,
+          "mask_s": 0.07748850001371466,
+          "online_physics_calls": 901,
+          "replay_s": 0.031513166992226616,
+          "selected_s": 0.004438541975105181,
+          "serialization_s": 0.0008899160020519048
+        }
+      ],
+      "speed_m_s": 16.666666666666668
+    },
+    {
+      "causal_ingest_s": 3.0750001315027475e-05,
+      "samples": [
+        {
+          "compressed_bytes": 4423,
+          "compression_s": 0.0003029590006917715,
+          "hashing_s": 1.737498678267002e-05,
+          "legacy_proposal_s": 0.0007852499838918447,
+          "mask_physics_calls": 1188,
+          "mask_power_calls": 1188,
+          "mask_s": 0.12550387502415106,
+          "online_physics_calls": 1246,
+          "replay_s": 0.04640258298604749,
+          "selected_s": 0.005208875023527071,
+          "serialization_s": 0.0009253330063074827
+        },
+        {
+          "compressed_bytes": 4423,
+          "compression_s": 0.0003040420124307275,
+          "hashing_s": 1.737498678267002e-05,
+          "legacy_proposal_s": 0.0007791670213919133,
+          "mask_physics_calls": 1188,
+          "mask_power_calls": 1188,
+          "mask_s": 0.10926520798238926,
+          "online_physics_calls": 1246,
+          "replay_s": 0.04301166601362638,
+          "selected_s": 0.004858458007220179,
+          "serialization_s": 0.0010188330197706819
+        },
+        {
+          "compressed_bytes": 4423,
+          "compression_s": 0.00030537499696947634,
+          "hashing_s": 1.766698551364243e-05,
+          "legacy_proposal_s": 0.0007822500192560256,
+          "mask_physics_calls": 1188,
+          "mask_power_calls": 1188,
+          "mask_s": 0.12265483298688196,
+          "online_physics_calls": 1246,
+          "replay_s": 0.04522670802543871,
+          "selected_s": 0.005076417000964284,
+          "serialization_s": 0.0010125410044565797
+        },
+        {
+          "compressed_bytes": 4423,
+          "compression_s": 0.0003050840168725699,
+          "hashing_s": 1.766698551364243e-05,
+          "legacy_proposal_s": 0.0008434999908786267,
+          "mask_physics_calls": 1188,
+          "mask_power_calls": 1188,
+          "mask_s": 0.11539491699659266,
+          "online_physics_calls": 1246,
+          "replay_s": 0.04254012499586679,
+          "selected_s": 0.004956958000548184,
+          "serialization_s": 0.0009388329926878214
+        },
+        {
+          "compressed_bytes": 4423,
+          "compression_s": 0.0003060420276597142,
+          "hashing_s": 1.7999991541728377e-05,
+          "legacy_proposal_s": 0.0007865829975344241,
+          "mask_physics_calls": 1188,
+          "mask_power_calls": 1188,
+          "mask_s": 0.12197345899767242,
+          "online_physics_calls": 1246,
+          "replay_s": 0.043923749995883554,
+          "selected_s": 0.005198291997658089,
+          "serialization_s": 0.0011697499721776694
+        }
+      ],
+      "speed_m_s": 20.0
+    },
+    {
+      "causal_ingest_s": 3.208400448784232e-05,
+      "samples": [
+        {
+          "compressed_bytes": 4443,
+          "compression_s": 0.0003114580176770687,
+          "hashing_s": 1.7457990907132626e-05,
+          "legacy_proposal_s": 0.001202125014970079,
+          "mask_physics_calls": 1760,
+          "mask_power_calls": 1760,
+          "mask_s": 0.23229524999624118,
+          "online_physics_calls": 1845,
+          "replay_s": 0.09065604099305347,
+          "selected_s": 0.00834166698041372,
+          "serialization_s": 0.0008937079983297735
+        },
+        {
+          "compressed_bytes": 4443,
+          "compression_s": 0.0003584160003811121,
+          "hashing_s": 2.3667002096772194e-05,
+          "legacy_proposal_s": 0.0011797499901149422,
+          "mask_physics_calls": 1760,
+          "mask_power_calls": 1760,
+          "mask_s": 0.1897282090212684,
+          "online_physics_calls": 1845,
+          "replay_s": 0.08648266698583029,
+          "selected_s": 0.010406749992398545,
+          "serialization_s": 0.0010794170084409416
+        },
+        {
+          "compressed_bytes": 4443,
+          "compression_s": 0.0003074999840464443,
+          "hashing_s": 1.841600169427693e-05,
+          "legacy_proposal_s": 0.0012490829976741225,
+          "mask_physics_calls": 1760,
+          "mask_power_calls": 1760,
+          "mask_s": 0.177698458021041,
+          "online_physics_calls": 1845,
+          "replay_s": 0.06583062501158565,
+          "selected_s": 0.007819541002390906,
+          "serialization_s": 0.0009087079961318523
+        },
+        {
+          "compressed_bytes": 4443,
+          "compression_s": 0.00030416701338253915,
+          "hashing_s": 1.8457998521625996e-05,
+          "legacy_proposal_s": 0.0012207919789943844,
+          "mask_physics_calls": 1760,
+          "mask_power_calls": 1760,
+          "mask_s": 0.19628533301874995,
+          "online_physics_calls": 1845,
+          "replay_s": 0.07022850000066683,
+          "selected_s": 0.009855957992840558,
+          "serialization_s": 0.001121666980907321
+        },
+        {
+          "compressed_bytes": 4443,
+          "compression_s": 0.0003067090001422912,
+          "hashing_s": 1.7000013031065464e-05,
+          "legacy_proposal_s": 0.001123166992329061,
+          "mask_physics_calls": 1760,
+          "mask_power_calls": 1760,
+          "mask_s": 0.17191858400474302,
+          "online_physics_calls": 1845,
+          "replay_s": 0.07973199998377822,
+          "selected_s": 0.008559124980820343,
+          "serialization_s": 0.0008816249901428819
+        }
+      ],
+      "speed_m_s": 25.0
+    },
+    {
+      "causal_ingest_s": 4.0292012272402644e-05,
+      "samples": [
+        {
+          "compressed_bytes": 4458,
+          "compression_s": 0.00030524999601766467,
+          "hashing_s": 1.7583020962774754e-05,
+          "legacy_proposal_s": 0.0013057499891147017,
+          "mask_physics_calls": 1821,
+          "mask_power_calls": 1821,
+          "mask_s": 0.17349087502225302,
+          "online_physics_calls": 1909,
+          "replay_s": 0.07756900001550093,
+          "selected_s": 0.008265042008133605,
+          "serialization_s": 0.0009799999825190753
+        },
+        {
+          "compressed_bytes": 4458,
+          "compression_s": 0.000309833005303517,
+          "hashing_s": 1.7792015569284558e-05,
+          "legacy_proposal_s": 0.0015778749948367476,
+          "mask_physics_calls": 1821,
+          "mask_power_calls": 1821,
+          "mask_s": 0.18348595799761824,
+          "online_physics_calls": 1909,
+          "replay_s": 0.0672140410169959,
+          "selected_s": 0.008470708999084309,
+          "serialization_s": 0.0009576249867677689
+        },
+        {
+          "compressed_bytes": 4458,
+          "compression_s": 0.0003055830020457506,
+          "hashing_s": 1.7707992810755968e-05,
+          "legacy_proposal_s": 0.0012672910233959556,
+          "mask_physics_calls": 1821,
+          "mask_power_calls": 1821,
+          "mask_s": 0.18953804098418914,
+          "online_physics_calls": 1909,
+          "replay_s": 0.06581037497380748,
+          "selected_s": 0.008116875018458813,
+          "serialization_s": 0.0009446250041946769
+        },
+        {
+          "compressed_bytes": 4458,
+          "compression_s": 0.0003085839853156358,
+          "hashing_s": 1.7667014617472887e-05,
+          "legacy_proposal_s": 0.0012575000000651926,
+          "mask_physics_calls": 1821,
+          "mask_power_calls": 1821,
+          "mask_s": 0.18091087500215508,
+          "online_physics_calls": 1909,
+          "replay_s": 0.07057325000641868,
+          "selected_s": 0.009004457999253646,
+          "serialization_s": 0.0009295419731643051
+        },
+        {
+          "compressed_bytes": 4458,
+          "compression_s": 0.00030475002131424844,
+          "hashing_s": 1.7999991541728377e-05,
+          "legacy_proposal_s": 0.0011930830078199506,
+          "mask_physics_calls": 1821,
+          "mask_power_calls": 1821,
+          "mask_s": 0.18952524999622256,
+          "online_physics_calls": 1909,
+          "replay_s": 0.06966854198253714,
+          "selected_s": 0.013056542025879025,
+          "serialization_s": 0.0009025000035762787
+        }
+      ],
+      "speed_m_s": 25.5
+    },
+    {
+      "causal_ingest_s": 0.0001871249987743795,
+      "samples": [
+        {
+          "compressed_bytes": 3756,
+          "compression_s": 0.0002961670106742531,
+          "hashing_s": 1.624997821636498e-05,
+          "legacy_proposal_s": 0.0016320410068146884,
+          "mask_physics_calls": 1210,
+          "mask_power_calls": 1210,
+          "mask_s": 0.10329562501283363,
+          "online_physics_calls": 1310,
+          "replay_s": 0.04201433400157839,
+          "selected_s": 0.009078417002456263,
+          "serialization_s": 0.0008580420108046383
+        },
+        {
+          "compressed_bytes": 3756,
+          "compression_s": 0.0002547500189393759,
+          "hashing_s": 1.662501017563045e-05,
+          "legacy_proposal_s": 0.0015460419817827642,
+          "mask_physics_calls": 1210,
+          "mask_power_calls": 1210,
+          "mask_s": 0.12399504100903869,
+          "online_physics_calls": 1310,
+          "replay_s": 0.04279929201584309,
+          "selected_s": 0.008262457995442674,
+          "serialization_s": 0.0008230000094044954
+        },
+        {
+          "compressed_bytes": 3756,
+          "compression_s": 0.00025020900648087263,
+          "hashing_s": 1.7082988051697612e-05,
+          "legacy_proposal_s": 0.0013477079919539392,
+          "mask_physics_calls": 1210,
+          "mask_power_calls": 1210,
+          "mask_s": 0.11062008398585021,
+          "online_physics_calls": 1310,
+          "replay_s": 0.046883959003025666,
+          "selected_s": 0.009111166000366211,
+          "serialization_s": 0.0009468329953961074
+        },
+        {
+          "compressed_bytes": 3756,
+          "compression_s": 0.0002553329977672547,
+          "hashing_s": 1.6999983927235007e-05,
+          "legacy_proposal_s": 0.001357000001007691,
+          "mask_physics_calls": 1210,
+          "mask_power_calls": 1210,
+          "mask_s": 0.1190772500121966,
+          "online_physics_calls": 1310,
+          "replay_s": 0.04297991600469686,
+          "selected_s": 0.008313416998134926,
+          "serialization_s": 0.0008679169986862689
+        },
+        {
+          "compressed_bytes": 3756,
+          "compression_s": 0.00027395901270210743,
+          "hashing_s": 2.3125001462176442e-05,
+          "legacy_proposal_s": 0.0015957500145304948,
+          "mask_physics_calls": 1210,
+          "mask_power_calls": 1210,
+          "mask_s": 0.10702875000424683,
+          "online_physics_calls": 1310,
+          "replay_s": 0.04200974997365847,
+          "selected_s": 0.008684041997184977,
+          "serialization_s": 0.00086041702888906
+        }
+      ],
+      "speed_m_s": 27.77777777777778
+    }
+  ],
+  "numpy": "2.4.6",
+  "source_commit": "5030be8f9163b6909808626382f4a0f84c9b5d1e",
+  "workload": "8 fixed speeds, constant 100 km/h, 5 repeats, full 21 actions"
+}

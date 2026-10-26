@@ -1,0 +1,332 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/equivalence.py:3:1
+   |
+ 1 |   """Standalone frozen-V2 versus V3 comparison, synthetic identities only."""
+ 2 |
+ 3 | / import time
+ 4 | | from dataclasses import asdict, replace
+ 5 | | from pathlib import Path
+ 6 | |
+ 7 | | import numpy as np
+ 8 | | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+ 9 | | from benchmarks.bankers_viability_shield_v1.certificate import BankersShield
+10 | | from benchmarks.bankers_viability_shield_v1.comparison import MeteredVehicle
+11 | | from benchmarks.bankers_viability_shield_v1.fixtures import fixtures, make_track
+12 | | from benchmarks.bankers_viability_shield_v1.safe_action_set import ACTION_GRID
+13 | | from gym_longicontrol.domain.dynamics import advance
+14 | | from gym_longicontrol.domain.observation import observation
+15 | | from gym_longicontrol.domain.state import VehicleState
+16 | |
+17 | | from .fast_certificate import FastBankersShield, safety_view
+18 | | from .independent_verification import verify_compact
+19 | | from .serialization import atomic_json, require
+   | |_______________________________________________^
+20 |
+21 |   HERE = Path(__file__).resolve().parent
+   |
+help: Organize imports
+  |
+7 | import numpy as np
+8 +
+9 | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/execution.py:3:1
+   |
+ 1 |   """Freeze after preflight; execute exactly 72 pairs once, no recovery or learner."""
+ 2 |
+ 3 | / import argparse
+ 4 | | import json
+ 5 | | import subprocess
+ 6 | | import time
+ 7 | |
+ 8 | | import gymnasium as gym
+ 9 | | from benchmarks.content_split_audit.fingerprints import fingerprint_track
+10 | | from benchmarks.content_split_audit.generate_results import v2_semantics
+11 | | from gym_longicontrol.envs.longicontrol import StochasticTrack
+12 | |
+13 | | from .controller_adapters import METHODS
+14 | | from .evaluation import CounterexampleFound, run
+15 | | from .independent_verification import replay
+16 | | from .integrity import (
+17 | |     HERE,
+18 | |     ROOT,
+19 | |     PairLedger,
+20 | |     build_split,
+21 | |     exclusive_writer,
+22 | |     guarded_track,
+23 | |     require_committed,
+24 | |     source_identity,
+25 | |     verify_sources,
+26 | | )
+27 | | from .serialization import (
+28 | |     atomic_json,
+29 | |     file_hash,
+30 | |     native_journal,
+31 | |     read_evidence,
+32 | |     require,
+33 | |     write_evidence,
+34 | | )
+   | |_^
+help: Organize imports
+   |
+8  | import gymnasium as gym
+9  +
+10 | from benchmarks.content_split_audit.fingerprints import fingerprint_track
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/fast_kinematics.py:3:1
+   |
+ 1 |   """The production kinematic expressions in their original operation order."""
+ 2 |
+ 3 | / from dataclasses import dataclass
+ 4 | | from fractions import Fraction
+ 5 | | from math import inf, isfinite, nextafter
+ 6 | |
+ 7 | | import numpy as np
+ 8 | | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+ 9 | |     CONFIG,
+10 | |     SafetyIntegrityError,
+11 | | )
+12 | | from gym_longicontrol.domain.vehicle import NumpyPowerModel, VehicleModel, VehicleSpecs
+   | |_______________________________________________________________________________________^
+help: Organize imports
+  |
+7 | import numpy as np
+8 +
+9 | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/independent_verification.py:6:1
+   |
+ 4 |   """
+ 5 |
+ 6 | / from dataclasses import asdict
+ 7 | |
+ 8 | | import numpy as np
+ 9 | | from benchmarks.bankers_viability_shield_v1.certificate import (
+10 | |     identities as original_identities,
+11 | | )
+12 | | from benchmarks.bankers_viability_shield_v2.independent_verification import (
+13 | |     authority,
+14 | |     certificate_from_physics,
+15 | |     verify_envelope,
+16 | | )
+17 | | from benchmarks.physical_feasibility_reference.oracle_controller import Transition
+18 | | from gym_longicontrol.domain.dynamics import advance
+19 | | from gym_longicontrol.domain.metrics import EpisodeMetrics
+20 | | from gym_longicontrol.domain.observation import observation
+21 | | from gym_longicontrol.domain.state import VehicleState
+22 | | from gym_longicontrol.domain.task import TaskSpecification, is_feasible
+23 | | from gym_longicontrol.domain.vehicle import VehicleModel
+24 | |
+25 | | from .controller_adapters import (
+26 | |     ACTION_GRID,
+27 | |     BANKERS,
+28 | |     CONFIG,
+29 | |     DIAGNOSTIC_STRIDE,
+30 | |     CausalMemory,
+31 | |     MeteredVehicle,
+32 | |     _ExternalExecutionAdapter,
+33 | |     inherited_test,
+34 | |     select,
+35 | | )
+36 | | from .fast_certificate import safety_view, transcript_fields
+37 | | from .serialization import canonical_bytes, require, validate_records
+   | |_____________________________________________________________________^
+help: Organize imports
+   |
+8  | import numpy as np
+9  +
+10 | from benchmarks.bankers_viability_shield_v1.certificate import (
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/latency.py:3:1
+   |
+ 1 |   """Matched, uninstrumented old/new workloads; allocation probes kept separate."""
+ 2 |
+ 3 | / import time
+ 4 | | import tracemalloc
+ 5 | |
+ 6 | | import numpy as np
+ 7 | | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+ 8 | | from benchmarks.bankers_viability_shield_v1.certificate import BankersShield
+ 9 | | from benchmarks.bankers_viability_shield_v1.fixtures import make_track
+10 | | from benchmarks.bankers_viability_shield_v1.safe_action_set import ACTION_GRID
+11 | | from gym_longicontrol.domain.observation import observation
+12 | | from gym_longicontrol.domain.state import VehicleState
+13 | |
+14 | | from .fast_certificate import FastBankersShield, fast_backup_witness, safety_view
+15 | | from .fast_kinematics import fast_kinematic_successor
+16 | | from .integrity import HERE
+17 | | from .safe_action_mask import safe_action_mask
+18 | | from .serialization import atomic_json, require
+   | |_______________________________________________^
+help: Organize imports
+  |
+6 | import numpy as np
+7 +
+8 | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/preflight.py:3:1
+   |
+ 1 |   """Frozen resource formula, complete inherited synthetic fixtures and native replay."""
+ 2 |
+ 3 | / import json
+ 4 | | import resource
+ 5 | | import time
+ 6 | |
+ 7 | | import gymnasium as gym
+ 8 | | from benchmarks.bankers_viability_shield_v1.fixtures import fixtures, make_track
+ 9 | | from gym_longicontrol.domain.state import VehicleState
+10 | | from gym_longicontrol.envs.longicontrol import LongiControlEnv
+11 | |
+12 | | from .controller_adapters import METHODS
+13 | | from .evaluation import run
+14 | | from .independent_verification import replay
+15 | | from .integrity import (
+16 | |     HERE,
+17 | |     PairLedger,
+18 | |     exclusive_writer,
+19 | |     require_committed,
+20 | |     source_identity,
+21 | |     verify_sources,
+22 | | )
+23 | | from .serialization import (
+24 | |     atomic_json,
+25 | |     native_journal,
+26 | |     read_evidence,
+27 | |     require,
+28 | |     write_evidence,
+29 | | )
+   | |_^
+help: Organize imports
+  |
+7 | import gymnasium as gym
+8 +
+9 | from benchmarks.bankers_viability_shield_v1.fixtures import fixtures, make_track
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/profile_frozen_v2.py:3:1
+   |
+ 1 |   """Deterministic workloads; measured time is not deterministic."""
+ 2 |
+ 3 | / import cProfile
+ 4 | | import gzip
+ 5 | | import hashlib
+ 6 | | import json
+ 7 | | import pstats
+ 8 | | import time
+ 9 | | from pathlib import Path
+10 | |
+11 | | import numpy as np
+12 | | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+13 | | from benchmarks.bankers_viability_shield_v1.certificate import BankersShield
+14 | | from benchmarks.bankers_viability_shield_v1.comparison import (
+15 | |     MeteredVehicle,
+16 | |     inherited_test,
+17 | | )
+18 | | from benchmarks.bankers_viability_shield_v1.fixtures import make_track
+19 | | from benchmarks.bankers_viability_shield_v1.safe_action_set import (
+20 | |     ACTION_GRID,
+21 | |     SafeActionSet,
+22 | | )
+23 | | from benchmarks.bankers_viability_shield_v2.independent_verification import (
+24 | |     certificate_from_physics,
+25 | | )
+26 | | from benchmarks.bankers_viability_shield_v2.serialization import canonical_bytes
+27 | | from gym_longicontrol.domain.observation import observation
+28 | | from gym_longicontrol.domain.state import VehicleState
+   | |______________________________________________________^
+29 |
+30 |   OUT = Path("/private/tmp/bankers_v3_baseline_profile.json")
+   |
+help: Organize imports
+   |
+11 | import numpy as np
+12 +
+13 | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> benchmarks/bankers_viability_shield_v3/tests/test_analysis.py:3:1
+  |
+1 |   """Analysis logic against fabricated records, no task construction or episodes."""
+2 |
+3 | / import copy
+4 | | import importlib
+5 | |
+6 | | import pytest
+7 | | from benchmarks.bankers_viability_shield_v3.serialization import atomic_json, file_hash
+  | |_______________________________________________________________________________________^
+help: Organize imports
+  |
+6 | import pytest
+7 +
+8 | from benchmarks.bankers_viability_shield_v3.serialization import atomic_json, file_hash
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v3/tests/test_v3.py:1:1
+   |
+ 1 | / import copy
+ 2 | | from dataclasses import replace
+ 3 | |
+ 4 | | import gymnasium as gym
+ 5 | | import numpy as np
+ 6 | | import pytest
+ 7 | | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+ 8 | |     CONFIG,
+ 9 | |     MIN_LIMIT,
+10 | |     CausalMemory,
+11 | |     SafetyIntegrityError,
+12 | | )
+13 | | from benchmarks.bankers_viability_shield_v1.certificate import BankersShield
+14 | | from benchmarks.bankers_viability_shield_v1.fixtures import make_track
+15 | | from benchmarks.bankers_viability_shield_v3.evaluation import run
+16 | | from benchmarks.bankers_viability_shield_v3.fast_certificate import (
+17 | |     FastBankersShield,
+18 | |     safety_view,
+19 | | )
+20 | | from benchmarks.bankers_viability_shield_v3.fast_kinematics import (
+21 | |     fast_kinematic_successor,
+22 | | )
+23 | | from benchmarks.bankers_viability_shield_v3.independent_verification import (
+24 | |     replay,
+25 | |     verify_compact,
+26 | | )
+27 | | from benchmarks.bankers_viability_shield_v3.safe_action_mask import (
+28 | |     closest_certified,
+29 | |     masked_log_probabilities,
+30 | |     safe_action_mask,
+31 | | )
+32 | | from benchmarks.bankers_viability_shield_v3.serialization import (
+33 | |     EvidenceError,
+34 | |     canonical_bytes,
+35 | |     normalize,
+36 | |     read_evidence,
+37 | |     strict_load,
+38 | |     write_evidence,
+39 | | )
+40 | | from gym_longicontrol.domain.dynamics import advance
+41 | | from gym_longicontrol.domain.observation import observation
+42 | | from gym_longicontrol.domain.state import VehicleState
+43 | | from gym_longicontrol.domain.vehicle import VehicleModel
+44 | | from gym_longicontrol.envs.longicontrol import LongiControlEnv
+   | |______________________________________________________________^
+help: Organize imports
+  |
+6 | import pytest
+7 +
+8 | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+  |
+
+Found 9 errors.
+[*] 9 fixable with `--fix`.
