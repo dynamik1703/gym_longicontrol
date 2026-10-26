@@ -1,0 +1,116 @@
+{
+  "all_gates_passed": false,
+  "classification": "BANKERS_MASKED_RL_PILOT_INTEGRITY_STOP",
+  "diagnostic_allowed": false,
+  "diagnostic_pairs_started": 0,
+  "failed": 3,
+  "failed_gate": "N_INDEPENDENT_NATIVE_EVIDENCE_VERIFICATION",
+  "failure": "TypeError: verify_envelope() missing 1 required positional argument: 'track'",
+  "failure_location": "verification.py:40",
+  "full_resource_gate": "NOT_REACHED",
+  "handling": "Preserve failed sources and XML; stop under requested fail-closed protocol; no repair/rerun after gate failure.",
+  "individual_test_time_s": 8.453000000000001,
+  "inherited_location": "benchmarks/bankers_viability_shield_v2/independent_verification.py:130",
+  "original_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src /private/tmp/bankers-masked-rl-pilot-env/bin/python -m pytest benchmarks/bankers_masked_rl_pilot_v1/tests -q -p no:cacheprovider --junitxml=/private/tmp/bankers_pilot_engineering_tests.xml",
+  "passed": 9,
+  "real_training_transitions": 0,
+  "real_training_updates": 0,
+  "recovery_gate": "NOT_ACCEPTED_AS_END_TO_END_PASS",
+  "root_cause": "Pilot Auditor.verify calls inherited verify_envelope(memory, track); frozen signature is verify_envelope(memory, previous, track).",
+  "schema": 1,
+  "scientific_attempts_started": 0,
+  "scientific_training_allowed": false,
+  "stopped_before_source_protocol_freeze": true,
+  "suite_wall_s": 23.571,
+  "synthetic_learning_only": true,
+  "test_records": [
+    {
+      "message": null,
+      "name": "test_masked_distribution[1]",
+      "seconds": 0.026,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_masked_distribution[3]",
+      "seconds": 0.005,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_masked_distribution[21]",
+      "seconds": 0.006,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_synthetic_bellman",
+      "seconds": 0.047,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_schedule_and_stream",
+      "seconds": 0.017,
+      "status": "PASSED"
+    },
+    {
+      "message": "TypeError: verify_envelope() missing 1 required positional argument: 'track'",
+      "name": "test_native_evidence_and_recovery[RAW_DISCRETE_SAC]",
+      "seconds": 7.405,
+      "status": "FAILED"
+    },
+    {
+      "message": "TypeError: verify_envelope() missing 1 required positional argument: 'track'",
+      "name": "test_native_evidence_and_recovery[BANKER_POST_SAC]",
+      "seconds": 0.358,
+      "status": "FAILED"
+    },
+    {
+      "message": "TypeError: verify_envelope() missing 1 required positional argument: 'track'",
+      "name": "test_native_evidence_and_recovery[BANKER_PRE_SAC]",
+      "seconds": 0.338,
+      "status": "FAILED"
+    },
+    {
+      "message": null,
+      "name": "test_post_tie_and_stale_binding",
+      "seconds": 0.007,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_held_out_and_lock",
+      "seconds": 0.002,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_successor_corruption",
+      "seconds": 0.015,
+      "status": "PASSED"
+    },
+    {
+      "message": null,
+      "name": "test_finite_update",
+      "seconds": 0.227,
+      "status": "PASSED"
+    }
+  ],
+  "test_xml_sha256": "1143ba15426942fb30d4b224f756625a7759ea5bfb198a252419e6f9ecc0fe5c",
+  "tested_source_sha256": {
+    "__init__.py": "c431cd4c58fa3302157892e711a34547d7a092c2bc10b058cf4a58ca6a280e46",
+    "canonical.json": "15dfe3e58323879a2b6769df58cf5ec945392523aa80fb67c31f5a69be501122",
+    "checkpointing.py": "19654d17cfcf5c5962925d68af78c89bcf62e5e016e3e116bbc9e5066f912dc6",
+    "integrity.py": "1e51c5aaf799b4bef681826dee89269f685eddf196e548657e68221696318582",
+    "masked_distribution.py": "d777b8b810653225f4d42a7d7945c871d2b20de2b896bdff50fa3b1c9eb3255a",
+    "replay.py": "8dda3ab69b905da535f7b167430d1eae0c92f246a3c885bde771a33385faf0c0",
+    "sac_agent.py": "4a4592be426c679053af0d1562bc4406452bd5c18afd6fa51d6c40a5a03bd499",
+    "shield_treatments.py": "6f8037b879ede2be00101a15002b8a4bebf3350c4c60be8ab008ce05a79a6abf",
+    "tests/test_pilot.py": "79a833ff29c6bf35364f5857833af913b31009b3b055086abc66b52df973e139",
+    "training.py": "7b07454e71469648954dff00b767c1da2c67afa5cd90e022c001f5bc8e0720f7",
+    "verification.py": "f55243f540f7df3f430e01bf044469c71c3c3141c0cc380c8363abc2d75c2c5f"
+  },
+  "tests": 12,
+  "timestamp_berlin": "2026-10-26T13:38:15.130285+01:00"
+}

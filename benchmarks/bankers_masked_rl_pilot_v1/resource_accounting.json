@@ -1,0 +1,19 @@
+{
+  "actual_artifacts_within_hard_limit": true,
+  "artifact_hard_limit_bytes": 2147483648,
+  "complete_active_compute_s": null,
+  "complete_projection_gate_passed": false,
+  "dependency_storage_note": "du measurements may overlap because uv hard-links packages; no naive physical sum",
+  "diagnostic_pairs": 0,
+  "isolated_environment_du_kib": 643996,
+  "isolated_uv_cache_du_kib": 648772,
+  "new_study_bytes_before_manifest_and_seal": 98675,
+  "pilot_complete_projection_bytes": null,
+  "pilot_complete_projection_s": null,
+  "preflight_suite_wall_s": 23.571,
+  "resource_gate": "NOT_REACHED",
+  "scaleup_one_method_three_seeds_300k_s": null,
+  "scaleup_three_methods_three_seeds_300k_s": null,
+  "scientific_training_transitions": 0,
+  "scientific_training_updates": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_manifest_sha256": "07abbbb4eae83694acb2eb04c3722f04bb3dfdef0ec501673a758e8122749670",
+  "classification": "BANKERS_MASKED_RL_PILOT_INTEGRITY_STOP",
+  "diagnostic_pairs": 0,
+  "original_failed_test_count": 3,
+  "original_preflight_xml_sha256": "1143ba15426942fb30d4b224f756625a7759ea5bfb198a252419e6f9ecc0fe5c",
+  "publication": "report and failure evidence only",
+  "results_sha256": "fc230222193d548b2e7c859ad3a152547c62058fb4a03a1711c93fa9f4a9547c",
+  "schema": 1,
+  "source_protocol_scientific_freeze": false,
+  "tested_source_manifest_sha256": "ccc53549e1841d62c5370bc78fc2c539de45f75f9e37e3a040bed844bc1b8c94",
+  "training_transitions": 0,
+  "training_updates": 0
+}

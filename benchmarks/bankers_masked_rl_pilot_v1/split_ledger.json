@@ -1,0 +1,10 @@
+{
+  "accepted_tasks": [],
+  "historical_validation": "UNTOUCHED_BY_PILOT",
+  "namespace_verified_unused": false,
+  "ordered_sha256": null,
+  "panel_id": "BANKERS_MASKED_RL_PILOT_DIAGNOSTIC_V1",
+  "paper": "SEALED_UNINSPECTED",
+  "requested_candidate_start": 11900000,
+  "state": "NOT_CONSTRUCTED_GATE_FAILED"
+}

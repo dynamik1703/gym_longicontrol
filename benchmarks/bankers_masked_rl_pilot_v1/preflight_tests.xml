@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="12" time="23.571" timestamp="2026-10-26T13:31:47.341586+01:00" hostname="bwpm-RLXWFHTGV7"><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_masked_distribution[1]" time="0.026" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_masked_distribution[3]" time="0.005" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_masked_distribution[21]" time="0.006" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_synthetic_bellman" time="0.047" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_schedule_and_stream" time="0.017" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_native_evidence_and_recovery[RAW_DISCRETE_SAC]" time="7.405"><failure message="TypeError: verify_envelope() missing 1 required positional argument: 'track'">method = 'RAW_DISCRETE_SAC'
+tmp_path = PosixPath('/private/var/folders/pn/_9sq_kc17dn3cj810f9lkfx40000gn/T/pytest-of-romanliessner/pytest-29/test_native_evidence_and_recov0')
+
+    @pytest.mark.parametrize('method', METHODS)
+    def test_native_evidence_and_recovery(method, tmp_path):
+        runner = Runner(method, 'SYNTHETIC_RECOVERY_' + method, fixture_environment(), True, 512)
+        for _ in range(260):
+            row = runner.advance(full_evidence=True, learn=False)
+        # Include real optimizer states and replay RNG in a mid-episode checkpoint.
+        runner.agent.update(runner.replay.sample(runner.replay_rng))
+        path = tmp_path / 'technical.pkl'
+        meta = save(path, runner)
+        expected = []
+        for _ in range(3):
+            expected.append(runner.advance(full_evidence=True, learn=False))
+            runner.agent.update(runner.replay.sample(runner.replay_rng))
+        recovered = load(path, meta['sha256'], runner.attempt)
+        for row in expected:
+            actual = recovered.advance(full_evidence=True, learn=False)
+            assert canonical_bytes(actual) == canonical_bytes(row)
+            recovered.agent.update(recovered.replay.sample(recovered.replay_rng))
+        for k, module in runner.agent.modules().items():
+            for key, value in module.state_dict().items():
+                assert torch.equal(value, recovered.agent.modules()[k].state_dict()[key])
+        assert torch.equal(runner.agent.log_alpha, recovered.agent.log_alpha)
+        assert torch.equal(runner.agent.multipliers, recovered.agent.multipliers)
+        for k, array in runner.replay.arrays.items():
+            assert np.array_equal(array, recovered.replay.arrays[k])
+        auditor = Auditor()
+        fresh = Runner(method, 'SYNTHETIC_AUDIT_' + method, fixture_environment(), True, 512)
+        for _ in range(5):
+            row = fresh.advance(full_evidence=True, learn=False)
+&gt;           auditor.verify(row, fresh.environment.unwrapped.track, method, full=True)
+
+benchmarks/bankers_masked_rl_pilot_v1/tests/test_pilot.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;benchmarks.bankers_masked_rl_pilot_v1.verification.Auditor object at 0x116e0fd10&gt;
+row = {'contract': 'bankers-training-evidence-v1', 'attempt': 'SYNTHETIC_AUDIT_RAW_DISCRETE_SAC', 'identity': {'base': 'f149...Jun  4 2025, 17:41:03) [Clang 20.1.4 ]', 'numpy': '2.4.6', 'gymnasium': '1.4.0', 'torch': '2.14.1'}}, 'native': 0, ...}
+track = Track(positions_m=array([0.]), limits_m_s=array([5.55555556]))
+method = 'RAW_DISCRETE_SAC', full = True
+
+    def verify(self, row, track, method, full=False):
+        require(row['contract'] == 'bankers-training-evidence-v1', 'evidence contract')
+        require(row['native'] == row['replay_insertion'], 'replay insertion identity')
+        require(row['native'] == self.rows, 'missing/duplicate native evidence')
+        memory = CausalMemory.restore(row['memory'])
+        ordinary = row['observation']
+        expected_o = observation(memory.state, track.sense(memory.state.position_m, 150),
+                                 self.vehicle.specs, CONFIG, 1.0)
+        require(np.array_equal(ordinary, expected_o), 'actual current observation')
+        require(causal_binding(ordinary, memory) == row['binding'], 'current state-mask binding')
+&gt;       verify_envelope(memory, track)
+E       TypeError: verify_envelope() missing 1 required positional argument: 'track'
+
+benchmarks/bankers_masked_rl_pilot_v1/verification.py:40: TypeError</failure></testcase><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_native_evidence_and_recovery[BANKER_POST_SAC]" time="0.358"><failure message="TypeError: verify_envelope() missing 1 required positional argument: 'track'">method = 'BANKER_POST_SAC'
+tmp_path = PosixPath('/private/var/folders/pn/_9sq_kc17dn3cj810f9lkfx40000gn/T/pytest-of-romanliessner/pytest-29/test_native_evidence_and_recov1')
+
+    @pytest.mark.parametrize('method', METHODS)
+    def test_native_evidence_and_recovery(method, tmp_path):
+        runner = Runner(method, 'SYNTHETIC_RECOVERY_' + method, fixture_environment(), True, 512)
+        for _ in range(260):
+            row = runner.advance(full_evidence=True, learn=False)
+        # Include real optimizer states and replay RNG in a mid-episode checkpoint.
+        runner.agent.update(runner.replay.sample(runner.replay_rng))
+        path = tmp_path / 'technical.pkl'
+        meta = save(path, runner)
+        expected = []
+        for _ in range(3):
+            expected.append(runner.advance(full_evidence=True, learn=False))
+            runner.agent.update(runner.replay.sample(runner.replay_rng))
+        recovered = load(path, meta['sha256'], runner.attempt)
+        for row in expected:
+            actual = recovered.advance(full_evidence=True, learn=False)
+            assert canonical_bytes(actual) == canonical_bytes(row)
+            recovered.agent.update(recovered.replay.sample(recovered.replay_rng))
+        for k, module in runner.agent.modules().items():
+            for key, value in module.state_dict().items():
+                assert torch.equal(value, recovered.agent.modules()[k].state_dict()[key])
+        assert torch.equal(runner.agent.log_alpha, recovered.agent.log_alpha)
+        assert torch.equal(runner.agent.multipliers, recovered.agent.multipliers)
+        for k, array in runner.replay.arrays.items():
+            assert np.array_equal(array, recovered.replay.arrays[k])
+        auditor = Auditor()
+        fresh = Runner(method, 'SYNTHETIC_AUDIT_' + method, fixture_environment(), True, 512)
+        for _ in range(5):
+            row = fresh.advance(full_evidence=True, learn=False)
+&gt;           auditor.verify(row, fresh.environment.unwrapped.track, method, full=True)
+
+benchmarks/bankers_masked_rl_pilot_v1/tests/test_pilot.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;benchmarks.bankers_masked_rl_pilot_v1.verification.Auditor object at 0x11711e250&gt;
+row = {'contract': 'bankers-training-evidence-v1', 'attempt': 'SYNTHETIC_AUDIT_BANKER_POST_SAC', 'identity': {'base': 'f1490...Jun  4 2025, 17:41:03) [Clang 20.1.4 ]', 'numpy': '2.4.6', 'gymnasium': '1.4.0', 'torch': '2.14.1'}}, 'native': 0, ...}
+track = Track(positions_m=array([0.]), limits_m_s=array([5.55555556]))
+method = 'BANKER_POST_SAC', full = True
+
+    def verify(self, row, track, method, full=False):
+        require(row['contract'] == 'bankers-training-evidence-v1', 'evidence contract')
+        require(row['native'] == row['replay_insertion'], 'replay insertion identity')
+        require(row['native'] == self.rows, 'missing/duplicate native evidence')
+        memory = CausalMemory.restore(row['memory'])
+        ordinary = row['observation']
+        expected_o = observation(memory.state, track.sense(memory.state.position_m, 150),
+                                 self.vehicle.specs, CONFIG, 1.0)
+        require(np.array_equal(ordinary, expected_o), 'actual current observation')
+        require(causal_binding(ordinary, memory) == row['binding'], 'current state-mask binding')
+&gt;       verify_envelope(memory, track)
+E       TypeError: verify_envelope() missing 1 required positional argument: 'track'
+
+benchmarks/bankers_masked_rl_pilot_v1/verification.py:40: TypeError</failure></testcase><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_native_evidence_and_recovery[BANKER_PRE_SAC]" time="0.338"><failure message="TypeError: verify_envelope() missing 1 required positional argument: 'track'">method = 'BANKER_PRE_SAC'
+tmp_path = PosixPath('/private/var/folders/pn/_9sq_kc17dn3cj810f9lkfx40000gn/T/pytest-of-romanliessner/pytest-29/test_native_evidence_and_recov2')
+
+    @pytest.mark.parametrize('method', METHODS)
+    def test_native_evidence_and_recovery(method, tmp_path):
+        runner = Runner(method, 'SYNTHETIC_RECOVERY_' + method, fixture_environment(), True, 512)
+        for _ in range(260):
+            row = runner.advance(full_evidence=True, learn=False)
+        # Include real optimizer states and replay RNG in a mid-episode checkpoint.
+        runner.agent.update(runner.replay.sample(runner.replay_rng))
+        path = tmp_path / 'technical.pkl'
+        meta = save(path, runner)
+        expected = []
+        for _ in range(3):
+            expected.append(runner.advance(full_evidence=True, learn=False))
+            runner.agent.update(runner.replay.sample(runner.replay_rng))
+        recovered = load(path, meta['sha256'], runner.attempt)
+        for row in expected:
+            actual = recovered.advance(full_evidence=True, learn=False)
+            assert canonical_bytes(actual) == canonical_bytes(row)
+            recovered.agent.update(recovered.replay.sample(recovered.replay_rng))
+        for k, module in runner.agent.modules().items():
+            for key, value in module.state_dict().items():
+                assert torch.equal(value, recovered.agent.modules()[k].state_dict()[key])
+        assert torch.equal(runner.agent.log_alpha, recovered.agent.log_alpha)
+        assert torch.equal(runner.agent.multipliers, recovered.agent.multipliers)
+        for k, array in runner.replay.arrays.items():
+            assert np.array_equal(array, recovered.replay.arrays[k])
+        auditor = Auditor()
+        fresh = Runner(method, 'SYNTHETIC_AUDIT_' + method, fixture_environment(), True, 512)
+        for _ in range(5):
+            row = fresh.advance(full_evidence=True, learn=False)
+&gt;           auditor.verify(row, fresh.environment.unwrapped.track, method, full=True)
+
+benchmarks/bankers_masked_rl_pilot_v1/tests/test_pilot.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;benchmarks.bankers_masked_rl_pilot_v1.verification.Auditor object at 0x116e0d310&gt;
+row = {'contract': 'bankers-training-evidence-v1', 'attempt': 'SYNTHETIC_AUDIT_BANKER_PRE_SAC', 'identity': {'base': 'f1490b...Jun  4 2025, 17:41:03) [Clang 20.1.4 ]', 'numpy': '2.4.6', 'gymnasium': '1.4.0', 'torch': '2.14.1'}}, 'native': 0, ...}
+track = Track(positions_m=array([0.]), limits_m_s=array([5.55555556]))
+method = 'BANKER_PRE_SAC', full = True
+
+    def verify(self, row, track, method, full=False):
+        require(row['contract'] == 'bankers-training-evidence-v1', 'evidence contract')
+        require(row['native'] == row['replay_insertion'], 'replay insertion identity')
+        require(row['native'] == self.rows, 'missing/duplicate native evidence')
+        memory = CausalMemory.restore(row['memory'])
+        ordinary = row['observation']
+        expected_o = observation(memory.state, track.sense(memory.state.position_m, 150),
+                                 self.vehicle.specs, CONFIG, 1.0)
+        require(np.array_equal(ordinary, expected_o), 'actual current observation')
+        require(causal_binding(ordinary, memory) == row['binding'], 'current state-mask binding')
+&gt;       verify_envelope(memory, track)
+E       TypeError: verify_envelope() missing 1 required positional argument: 'track'
+
+benchmarks/bankers_masked_rl_pilot_v1/verification.py:40: TypeError</failure></testcase><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_post_tie_and_stale_binding" time="0.007" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_held_out_and_lock" time="0.002" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_successor_corruption" time="0.015" /><testcase classname="benchmarks.bankers_masked_rl_pilot_v1.tests.test_pilot" name="test_finite_update" time="0.227" /></testsuite></testsuites>

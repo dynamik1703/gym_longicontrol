@@ -1,0 +1,9 @@
+{
+  "failed": 0,
+  "failed_scientific_gate_rerun": false,
+  "passed": 2,
+  "scientific_training_allowed": false,
+  "scope": "post-stop entry point blocking and original failed source/XML preservation only",
+  "tests": 2,
+  "xml_sha256": "dbd037e291fc0ade9351a45b4e1b022def5589f50f5828712d681d73850ad143"
+}
