@@ -1,0 +1,7 @@
+{
+  "classification": "BANKERS_PRE_SHIELD_INTEGRITY_STOP",
+  "error": "verification: atomic fixture readback",
+  "error_type": "SafetyIntegrityError",
+  "mode": "preflight",
+  "rerun_started_pairs_forbidden": true
+}

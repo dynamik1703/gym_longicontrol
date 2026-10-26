@@ -1,0 +1,13 @@
+FIXTURE START constant_20
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield/benchmarks/bankers_viability_shield_v1/evaluation.py", line 634, in <module>
+    main()
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield/benchmarks/bankers_viability_shield_v1/evaluation.py", line 616, in main
+    preflight()
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield/benchmarks/bankers_viability_shield_v1/evaluation.py", line 336, in preflight
+    require(read_evidence(result["evidence"]) == rows, "atomic fixture readback")
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_shield/benchmarks/bankers_viability_shield_v1/verification.py", line 31, in require
+    raise SafetyIntegrityError("verification: " + reason)
+benchmarks.bankers_viability_shield_v1.backup_policy.SafetyIntegrityError: verification: atomic fixture readback

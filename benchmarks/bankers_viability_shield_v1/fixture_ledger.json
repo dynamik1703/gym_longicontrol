@@ -1,0 +1,27 @@
+{
+  "60_to_20": {
+    "state": "NOT_STARTED"
+  },
+  "consecutive_40_reductions": {
+    "state": "NOT_STARTED"
+  },
+  "constant_100": {
+    "state": "NOT_STARTED"
+  },
+  "constant_20": {
+    "identity": "a391073533a1b628a36bd0c3d135268ee4915fa9dd802a40cd1ecc361d5f2705",
+    "state": "STARTED"
+  },
+  "exact_150_preview": {
+    "state": "NOT_STARTED"
+  },
+  "final_near_1000": {
+    "state": "NOT_STARTED"
+  },
+  "repeated_adversarial": {
+    "state": "NOT_STARTED"
+  },
+  "two_preview_signs": {
+    "state": "NOT_STARTED"
+  }
+}

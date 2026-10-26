@@ -1,0 +1,73 @@
+{
+  "admitted_witnesses_independently_executed": 6470,
+  "candidate_certificates": 6720,
+  "classification": "EMPIRICAL_FALSIFICATION_SEARCH_ONLY",
+  "core_invariant_counterexamples": 0,
+  "inductive_successor_backups_checked": 6470,
+  "negative_control_latency_counterexample": {
+    "actual_first_bad_endpoint": {
+      "acceleration_m_s2": -3.0,
+      "elapsed_time_s": 8.799999999999985,
+      "jerk_m_s3": 0.0,
+      "position_m": 150.02593711687808,
+      "total_energy_kwh": -0.06694617692151605,
+      "velocity_m_s": 5.642955973934301
+    },
+    "braking_distance_from_successor_m": 148.00053363886332,
+    "new_certificate": {
+      "accepted": false,
+      "backup_feasible": false,
+      "backup_steps": 88,
+      "backup_terminal_state": {
+        "acceleration_m_s2": -3.0,
+        "elapsed_time_s": 8.899999999999984,
+        "jerk_m_s3": 0.0,
+        "position_m": 150.57523271427152,
+        "total_energy_kwh": -0.06721036137148052,
+        "velocity_m_s": 5.342955973934301
+      },
+      "backup_trajectory_sha256": "f3ff27c87bcbccf1e30485564c443b0c919a027d7ba2584c5a0831a6ca4f0cb1",
+      "certified_backup_identity": "MAX_BRAKE_TO_MIN_THEN_MAX_BRAKE",
+      "classification": "FORMALLY_SUPPORTED_UNDER_STATED_MODEL",
+      "distance_to_active_constraint_m": 147.4253008245918,
+      "input_sha256": "59a3fa1105e1829f4cf50f747fcf5f44aa5f133ac83548872df769c0db1e0b3b",
+      "known_transition_braking_feasible": true,
+      "minimum_velocity_slack_m_s": -0.08740041837874557,
+      "numerical_margins": {
+        "position_enclosure_m": 1e-07,
+        "velocity_margin_m_s": 1e-06
+      },
+      "physics_prediction_count": 89,
+      "predicted_next_state": {
+        "acceleration_m_s2": 1.6898150816408124,
+        "elapsed_time_s": 0.1,
+        "jerk_m_s3": 16.898150816408123,
+        "position_m": 2.5746990754082044,
+        "total_energy_kwh": 0.002138630141335842,
+        "velocity_m_s": 25.83148150816408
+      },
+      "preview_available_after_action_m": 147.4253008245918,
+      "proposed_action": 1.0,
+      "recovery_distance_m": 148.00053363886332,
+      "rejection_reason": "UNKNOWN_PREVIEW_BACKUP",
+      "right_endpoint_compliant": true,
+      "source_config_identity": {
+        "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+        "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+        "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+      },
+      "unknown_preview_recoverable": false
+    },
+    "pre_state": {
+      "acceleration_m_s2": 0.0,
+      "elapsed_time_s": 0.0,
+      "jerk_m_s3": 0.0,
+      "position_m": 0.0,
+      "total_energy_kwh": 0.0,
+      "velocity_m_s": 25.6625
+    },
+    "proposed_action": 1.0,
+    "scope": "naive refreshed-preview rule outside old 60-km/h proposal cap"
+  },
+  "synthetic_states": 320
+}

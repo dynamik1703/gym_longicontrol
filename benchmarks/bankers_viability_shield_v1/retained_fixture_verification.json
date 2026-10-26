@@ -1,0 +1,84 @@
+{
+  "actual_terminal_state": {
+    "acceleration_m_s2": -0.15607393623437923,
+    "elapsed_time_s": 179.99999999999406,
+    "jerk_m_s3": 3.15652732447677,
+    "position_m": 990.6251588490126,
+    "total_energy_kwh": 0.169454127688201,
+    "velocity_m_s": 5.538522719345409
+  },
+  "admitted_action_fraction": 0.5526719576719576,
+  "all_records_same_execution_identity": true,
+  "backup_available_fraction": 1.0,
+  "conservative_speed_safety_is_not_deadline_feasibility": true,
+  "current_source_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "deadline_failure": true,
+  "development_episodes": 0,
+  "distinct_successor_distribution": {
+    "11": 900,
+    "12": 879,
+    "13": 1,
+    "21": 20
+  },
+  "evidence": {
+    "bytes": 4310056,
+    "native_records": 1800,
+    "path": "evidence/FIXTURE__constant_20.jsonl.gz",
+    "sha256": "a9e6d83a448f38bf85e0965302411a640a9e95391d9d52e96f7d6f41caaf6ea6"
+  },
+  "execution_source_commit": "973be83",
+  "execution_source_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "execution_status": "ORIGINAL_STARTED_RETAINED_NO_RERUN",
+  "feasible": false,
+  "final_verification_predictions_mean": 1,
+  "final_verification_wall_s_mean": 7.472365640246103e-05,
+  "fixture": "constant_20",
+  "independent_full_replay": true,
+  "mask_predictions_mean": 21,
+  "mask_wall_s_mean": 0.0013957742275508482,
+  "mask_wall_s_total": 2.512393609591527,
+  "matched_comparison_counts": {
+    "BANKERS_ONLY": 20870,
+    "BANKERS_ONLY_DEADLINE": 20870,
+    "BOTH_ACCEPT": 21,
+    "BOTH_REJECT": 16909
+  },
+  "mean_safe_action_count": 11.606111111111112,
+  "meaningful_choices_fraction": 1.0,
+  "metrics": {
+    "completed": false,
+    "energy_kwh": 0.169454127688201,
+    "integrated_speed_violation_m": 0.0,
+    "max_speed_violation_m_s": 0.0,
+    "speed_violation_count": 0,
+    "travel_time_s": 179.99999999999406
+  },
+  "performance_task": false,
+  "positive_acceleration_available_fraction": 0.5005555555555555,
+  "post_json_fix_verification_cpu_s": 0.9411769999999999,
+  "post_json_fix_verification_wall_s": 0.9553365840110928,
+  "raw_RSR": null,
+  "rejected_positive_action_fraction": 0.9393888888888889,
+  "safe_action_count_distribution": {
+    "11": 899,
+    "12": 879,
+    "13": 1,
+    "21": 21
+  },
+  "steps": 1800,
+  "velocity_span_m_s_quantiles": {
+    "0": 0.1,
+    "0.25": 0.28439467193505497,
+    "0.5": 0.2843971853507252,
+    "0.75": 0.31595974098574486,
+    "1": 0.6000000000000001
+  }
+}

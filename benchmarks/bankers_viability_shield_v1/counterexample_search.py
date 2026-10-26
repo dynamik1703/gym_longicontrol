@@ -20,6 +20,10 @@ from .verification import require
 
 
 def search():
+    require(
+        not (HERE / "counterexample_search.json").exists(),
+        "immutable falsification search already exists",
+    )
     vehicle = VehicleModel()
     shield = BankersShield(vehicle)
     rng = np.random.default_rng(20261026)

@@ -302,12 +302,12 @@ def read_evidence(metadata):
 def preflight():
     verify_sources()
     started, cpu = time.perf_counter(), time.process_time()
-    search_results = search()
     fixture_ledger_path = HERE / "fixture_ledger.json"
     require(
         not fixture_ledger_path.exists(),
         "fixture preflight already started; rerun forbidden",
     )
+    search_results = search()
     fixture_ledger = {name: {"state": "NOT_STARTED"} for name in fixtures()}
     atomic_json(fixture_ledger_path, fixture_ledger)
     output = {}
@@ -333,7 +333,10 @@ def preflight():
                 CausalMemory.restore(row["memory"]),
             )
         # Readback is byte/hash/count checked before any preflight gate passes.
-        require(read_evidence(result["evidence"]) == rows, "atomic fixture readback")
+        require(
+            digest(read_evidence(result["evidence"])) == digest(rows),
+            "atomic fixture readback",
+        )
         result["max_memory_envelope_knots"] = max(
             len(r["memory"]["envelope"]) for r in rows
         )
@@ -390,6 +393,10 @@ def preflight():
 
 def develop():
     verify_sources()
+    require(
+        not (HERE / "integrity_stop.json").exists(),
+        "recorded integrity stop; Development remains closed",
+    )
     prep = json.loads((HERE / "preparation_status.json").read_text())
     require(prep["all_gates_passed"], "Development preflight gate")
     require(prep["source_identity"] == identities(), "post-preflight source change")
@@ -452,7 +459,7 @@ def develop():
                     time.perf_counter() - replay_start
                 )
                 require(
-                    read_evidence(result["evidence"]) == rows,
+                    digest(read_evidence(result["evidence"])) == digest(rows),
                     "immutable native readback",
                 )
                 result["task"] = {
@@ -617,16 +624,17 @@ def main():
         else:
             develop()
     except Exception as error:
-        atomic_json(
-            HERE / "integrity_stop.json",
-            {
-                "mode": args.mode,
-                "error_type": type(error).__name__,
-                "error": str(error),
-                "classification": "BANKERS_PRE_SHIELD_INTEGRITY_STOP",
-                "rerun_started_pairs_forbidden": True,
-            },
-        )
+        if not (HERE / "integrity_stop.json").exists():
+            atomic_json(
+                HERE / "integrity_stop.json",
+                {
+                    "mode": args.mode,
+                    "error_type": type(error).__name__,
+                    "error": str(error),
+                    "classification": "BANKERS_PRE_SHIELD_INTEGRITY_STOP",
+                    "rerun_started_pairs_forbidden": True,
+                },
+            )
         raise
 
 

@@ -94,7 +94,10 @@ def replay_records(records, track, method, expected_summary=None, full_masks=Tru
         ordinary = observation(state, sensor, vehicle.specs, CONFIG, 1.0)
         require(np.array_equal(ordinary, row["observation"]), "ordinary observation")
         memory.ingest(ordinary)
-        require(memory.snapshot() == row["memory"], "causal memory reconstruction")
+        require(
+            digest(memory.snapshot()) == digest(row["memory"]),
+            "causal memory reconstruction",
+        )
         certificates = row["certificate_summaries"]
         require(
             len(certificates) == 21 and len(row["safe_action_mask"]) == 21,
