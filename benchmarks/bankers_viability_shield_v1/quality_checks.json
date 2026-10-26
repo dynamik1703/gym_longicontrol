@@ -1,0 +1,22 @@
+{
+  "combined_passed": 150,
+  "combined_skipped": 2,
+  "git_diff_check": "PASSED",
+  "independent_disk_replay_native_records": 1800,
+  "independently_verified_mask_candidates": 37800,
+  "new_study_skipped": 0,
+  "new_study_tests": 55,
+  "original_integrity_gate": "FAILED_PRESERVED",
+  "ruff": "PASSED",
+  "skips": [
+    "unchanged optional matplotlib rendering tests; matplotlib unavailable"
+  ],
+  "test_groups": [
+    "bankers_viability_shield_v1/tests",
+    "tests/test_environment.py",
+    "tests/test_metrics.py",
+    "tests/test_episode_metrics.py",
+    "tests/test_task.py",
+    "tests/test_power_model_artifact.py"
+  ]
+}

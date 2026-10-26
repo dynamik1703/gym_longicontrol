@@ -1,0 +1,40 @@
+{
+  "all_gates_passed": false,
+  "classification": "BANKERS_PRE_SHIELD_INTEGRITY_STOP",
+  "completed_physical_fixture_executions": 1,
+  "development_performance_episodes": 0,
+  "development_tasks_generated": 0,
+  "evidence_corruption_observed": false,
+  "explanation": "Read-only verification after the parser fix does not clear the original scientific gate or rerun its STARTED pair.",
+  "final_code_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "fixture_pairs_ledger_completed": 0,
+  "fixtures_not_started": 7,
+  "formal_claim": "FORMALLY_SUPPORTED_UNDER_STATED_MODEL",
+  "gradient_updates": 0,
+  "observed_invariant_counterexamples": 0,
+  "original_fixture_ledger_preserved": true,
+  "paper_state": "SEALED_UNINSPECTED",
+  "preflight_execution_source_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "reason": "Original atomic readback compared JSON lists with pre-serialization tuples",
+  "retained_records_independently_verified": 1800,
+  "source_audit": {
+    "checked_files": 296,
+    "identity": {
+      "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+      "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+      "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+    }
+  },
+  "started_pair_rerun": false,
+  "study": "BANKERS_VIABILITY_SHIELD_V1",
+  "training_transitions": 0,
+  "validation_performance_episodes": 0
+}

@@ -1,0 +1,7 @@
+........................................................................ [ 47%]
+...........ss........................................................... [ 94%]
+........                                                                 [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_environment.py:186: could not import 'matplotlib': No module named 'matplotlib'
+SKIPPED [1] tests/test_environment.py:205: could not import 'matplotlib': No module named 'matplotlib'
+150 passed, 2 skipped in 3.75s

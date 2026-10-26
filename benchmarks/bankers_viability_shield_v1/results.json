@@ -1,0 +1,220 @@
+{
+  "all_gates_passed": false,
+  "classification": "BANKERS_PRE_SHIELD_INTEGRITY_STOP",
+  "completed_physical_fixture_executions": 1,
+  "development": {
+    "RSR": null,
+    "comparison_A_B_C": null,
+    "episodes": 0,
+    "failures": null,
+    "feasible_only_signed_energy_kwh": null,
+    "state": "NOT_OPENED"
+  },
+  "development_performance_episodes": 0,
+  "development_tasks_generated": 0,
+  "evidence_corruption_observed": false,
+  "explanation": "Read-only verification after the parser fix does not clear the original scientific gate or rerun its STARTED pair.",
+  "falsification_search": {
+    "admitted_witnesses_independently_executed": 6470,
+    "candidate_certificates": 6720,
+    "classification": "EMPIRICAL_FALSIFICATION_SEARCH_ONLY",
+    "core_invariant_counterexamples": 0,
+    "inductive_successor_backups_checked": 6470,
+    "negative_control_latency_counterexample": {
+      "actual_first_bad_endpoint": {
+        "acceleration_m_s2": -3.0,
+        "elapsed_time_s": 8.799999999999985,
+        "jerk_m_s3": 0.0,
+        "position_m": 150.02593711687808,
+        "total_energy_kwh": -0.06694617692151605,
+        "velocity_m_s": 5.642955973934301
+      },
+      "braking_distance_from_successor_m": 148.00053363886332,
+      "new_certificate": {
+        "accepted": false,
+        "backup_feasible": false,
+        "backup_steps": 88,
+        "backup_terminal_state": {
+          "acceleration_m_s2": -3.0,
+          "elapsed_time_s": 8.899999999999984,
+          "jerk_m_s3": 0.0,
+          "position_m": 150.57523271427152,
+          "total_energy_kwh": -0.06721036137148052,
+          "velocity_m_s": 5.342955973934301
+        },
+        "backup_trajectory_sha256": "f3ff27c87bcbccf1e30485564c443b0c919a027d7ba2584c5a0831a6ca4f0cb1",
+        "certified_backup_identity": "MAX_BRAKE_TO_MIN_THEN_MAX_BRAKE",
+        "classification": "FORMALLY_SUPPORTED_UNDER_STATED_MODEL",
+        "distance_to_active_constraint_m": 147.4253008245918,
+        "input_sha256": "59a3fa1105e1829f4cf50f747fcf5f44aa5f133ac83548872df769c0db1e0b3b",
+        "known_transition_braking_feasible": true,
+        "minimum_velocity_slack_m_s": -0.08740041837874557,
+        "numerical_margins": {
+          "position_enclosure_m": 1e-07,
+          "velocity_margin_m_s": 1e-06
+        },
+        "physics_prediction_count": 89,
+        "predicted_next_state": {
+          "acceleration_m_s2": 1.6898150816408124,
+          "elapsed_time_s": 0.1,
+          "jerk_m_s3": 16.898150816408123,
+          "position_m": 2.5746990754082044,
+          "total_energy_kwh": 0.002138630141335842,
+          "velocity_m_s": 25.83148150816408
+        },
+        "preview_available_after_action_m": 147.4253008245918,
+        "proposed_action": 1.0,
+        "recovery_distance_m": 148.00053363886332,
+        "rejection_reason": "UNKNOWN_PREVIEW_BACKUP",
+        "right_endpoint_compliant": true,
+        "source_config_identity": {
+          "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+          "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+          "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+        },
+        "unknown_preview_recoverable": false
+      },
+      "pre_state": {
+        "acceleration_m_s2": 0.0,
+        "elapsed_time_s": 0.0,
+        "jerk_m_s3": 0.0,
+        "position_m": 0.0,
+        "total_energy_kwh": 0.0,
+        "velocity_m_s": 25.6625
+      },
+      "proposed_action": 1.0,
+      "scope": "naive refreshed-preview rule outside old 60-km/h proposal cap"
+    },
+    "synthetic_states": 320
+  },
+  "final_code_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "fixture_pairs_ledger_completed": 0,
+  "fixtures_not_started": 7,
+  "formal_claim": "FORMALLY_SUPPORTED_UNDER_STATED_MODEL",
+  "gates": {
+    "A_physical_safety_argument": "FORMALLY_SUPPORTED_UNDER_STATED_MODEL",
+    "B_backup_availability": "CONSTRUCTIVELY_PROVED_UNDER_MODEL_AND_TESTED",
+    "C_no_observed_violations": "PASSED_ON_RETAINED_SCOPE_ONLY_FULL_PANEL_INCOMPLETE",
+    "D_useful_action_authority": "UNRESOLVED_REQUIRED_SCOPE_NOT_COMPLETED",
+    "E_integrity": "FAILED_ORIGINAL_READBACK_GATE"
+  },
+  "gradient_updates": 0,
+  "historical_classifications_modified": 0,
+  "historical_proven_infeasible_metadata_read": [
+    "10200029; paper_synthesis_v1/FEASIBILITY_PROOF.md; no new episode"
+  ],
+  "independent_record_verification_failures_after_parser_fix": 0,
+  "observed_invariant_counterexamples": 0,
+  "original_fixture_ledger_preserved": true,
+  "original_integrity_events": 1,
+  "paper_state": "SEALED_UNINSPECTED",
+  "preflight_execution_source_identity": {
+    "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+    "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+    "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+  },
+  "question_answer": "Conditional causal speed proof and useful synthetic actions exist; readiness for controlled RL design remains unestablished after integrity stop.",
+  "reason": "Original atomic readback compared JSON lists with pre-serialization tuples",
+  "resource_report": "resource_measurements.json",
+  "retained_fixture": {
+    "actual_terminal_state": {
+      "acceleration_m_s2": -0.15607393623437923,
+      "elapsed_time_s": 179.99999999999406,
+      "jerk_m_s3": 3.15652732447677,
+      "position_m": 990.6251588490126,
+      "total_energy_kwh": 0.169454127688201,
+      "velocity_m_s": 5.538522719345409
+    },
+    "admitted_action_fraction": 0.5526719576719576,
+    "all_records_same_execution_identity": true,
+    "backup_available_fraction": 1.0,
+    "conservative_speed_safety_is_not_deadline_feasibility": true,
+    "current_source_identity": {
+      "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+      "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+      "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+    },
+    "deadline_failure": true,
+    "development_episodes": 0,
+    "distinct_successor_distribution": {
+      "11": 900,
+      "12": 879,
+      "13": 1,
+      "21": 20
+    },
+    "evidence": {
+      "bytes": 4310056,
+      "native_records": 1800,
+      "path": "evidence/FIXTURE__constant_20.jsonl.gz",
+      "sha256": "a9e6d83a448f38bf85e0965302411a640a9e95391d9d52e96f7d6f41caaf6ea6"
+    },
+    "execution_source_commit": "973be83",
+    "execution_source_identity": {
+      "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+      "implementation_sha256": "ebd184692687b342439bc10a6b7043882b390fcff1a1d7eeeb754fe533a85da5",
+      "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+    },
+    "execution_status": "ORIGINAL_STARTED_RETAINED_NO_RERUN",
+    "feasible": false,
+    "final_verification_predictions_mean": 1,
+    "final_verification_wall_s_mean": 7.472365640246103e-05,
+    "fixture": "constant_20",
+    "independent_full_replay": true,
+    "mask_predictions_mean": 21,
+    "mask_wall_s_mean": 0.0013957742275508482,
+    "mask_wall_s_total": 2.512393609591527,
+    "matched_comparison_counts": {
+      "BANKERS_ONLY": 20870,
+      "BANKERS_ONLY_DEADLINE": 20870,
+      "BOTH_ACCEPT": 21,
+      "BOTH_REJECT": 16909
+    },
+    "mean_safe_action_count": 11.606111111111112,
+    "meaningful_choices_fraction": 1.0,
+    "metrics": {
+      "completed": false,
+      "energy_kwh": 0.169454127688201,
+      "integrated_speed_violation_m": 0.0,
+      "max_speed_violation_m_s": 0.0,
+      "speed_violation_count": 0,
+      "travel_time_s": 179.99999999999406
+    },
+    "performance_task": false,
+    "positive_acceleration_available_fraction": 0.5005555555555555,
+    "post_json_fix_verification_cpu_s": 0.9411769999999999,
+    "post_json_fix_verification_wall_s": 0.9553365840110928,
+    "raw_RSR": null,
+    "rejected_positive_action_fraction": 0.9393888888888889,
+    "safe_action_count_distribution": {
+      "11": 899,
+      "12": 879,
+      "13": 1,
+      "21": 21
+    },
+    "steps": 1800,
+    "velocity_span_m_s_quantiles": {
+      "0": 0.1,
+      "0.25": 0.28439467193505497,
+      "0.5": 0.2843971853507252,
+      "0.75": 0.31595974098574486,
+      "1": 0.6000000000000001
+    }
+  },
+  "retained_records_independently_verified": 1800,
+  "source_audit": {
+    "checked_files": 296,
+    "identity": {
+      "configuration_sha256": "b1c2a0b02aa2559e939040e485d71b9bc0adf140bdadb3df8ed572adca96c450",
+      "implementation_sha256": "07d5cd3b450a5dd46a2f0f330155e8da2d6eaa523edb9d01df7bc8566c43b5af",
+      "production_and_inherited_sha256": "21886a5650304452b00a7847667260ee0ba90fbad62cb24756924b0d614c8c85"
+    }
+  },
+  "started_pair_rerun": false,
+  "study": "BANKERS_VIABILITY_SHIELD_V1",
+  "training_transitions": 0,
+  "validation_performance_episodes": 0
+}
