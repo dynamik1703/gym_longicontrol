@@ -1,0 +1,3 @@
+# Final integrity
+
+All inherited source/evidence checks passed; gate/source identities match. Independently replayed native steps=69505; reconstructed grid candidates=846867, plus selected and continuous-proposal certificates. Immutable journals/STARTED/results enforce exactly-once execution. Every complete pair was independently physically replayed before COMPLETED; final analysis reads the sealed disk artifacts. No counterexample or unexplained integrity mismatch was observed. Test-injected corruptions were detected. V1/V2/V3 incidents and historical Validation remain unchanged; Paper remains SEALED_UNINSPECTED. Final artifact_manifest.json binds all deliverables except itself and seal_manifest.json.
