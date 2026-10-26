@@ -1,0 +1,34 @@
+....................................F...                                 [100%]
+=================================== FAILURES ===================================
+_____________________ test_atomic_interrupted_publication ______________________
+
+tmp_path = PosixPath('/private/var/folders/pn/_9sq_kc17dn3cj810f9lkfx40000gn/T/pytest-of-romanliessner/pytest-26/test_atomic_interrupted_public0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x104374610>
+native = ([{'actual_next_state': {'acceleration_m_s2': 3.0, 'elapsed_time_s': 0.1, 'jerk_m_s3': 30.0, 'position_m': 1.015, ...}...ate(position_m=0.0, velocity_m_s=10.0, acceleration_m_s2=0.0, jerk_m_s3=0.0, elapsed_time_s=0.0, total_energy_kwh=0.0))
+identity = {'base_commit': 'b60549e95e31601039329ca8de041977da0155fe', 'configuration_sha256': '2644e1b7ca03450d272dd47264fda65bb...nkers-evidence-v4.0', 'implementation_sha256': '712c3536168350e2144c6eb77b5de86641f0216c2f62babce0e77b66e1fa0906', ...}
+
+    def test_atomic_interrupted_publication(tmp_path, monkeypatch, native, identity):
+        import benchmarks.bankers_viability_shield_v4.serialization as serialization
+        def interrupted(*_): raise OSError("injected interrupted atomic publication")
+        rows, _, _, _ = native
+        with monkeypatch.context() as m:
+            m.setattr(serialization.os, "link", interrupted)
+            with pytest.raises(OSError): write_evidence(tmp_path / "e.gz", rows, identity, rows[0]["attempt"])
+        assert not list(tmp_path.iterdir())
+        # Existing immutable evidence survives an interrupted duplicate publication.
+        meta = write_evidence(tmp_path / "e.gz", rows, identity, rows[0]["attempt"])
+        with monkeypatch.context() as m:
+            m.setattr(serialization.os, "link", interrupted)
+            with pytest.raises(OSError): write_evidence(tmp_path / "e.gz", rows, identity, rows[0]["attempt"])
+>       assert read_evidence(tmp_path / "e.gz", meta, identity, rows[0]["attempt"]) == rows
+E       AssertionError: assert [{'actual_nex...T_ONLY', ...}] == [{'actual_nex...T_ONLY', ...}]
+E         
+E         At index 0 diff: {'actual_next_state': {'acceleration_m_s2': 3.0, 'elapsed_time_s': 0.1, 'jerk_m_s3': 30.0, 'position_m': 1.015, 'total_energy_kwh': 0.0015841166469937116, 'velocity_m_s': 10.3}, 'actual_power_kw': 57.02819929177361, 'actual_speed_limit_m_s': 27.77777777777778, 'attempt': 'V4_TEST_ONLY', 'authority': {'count': 21, 'distinct_velocities': 21, 'endpoint_rejections': 0, 'highest_action': 1.0, 'known_transition_rejections': 0, 'lowest_action': -1.0, 'negative_acceleration_choices': 11, 'numeric_integrity_rejections': 0, 'positive_acceleration_choices': 10, 'u...
+E         
+E         ...Full output truncated (2 lines hidden), use '-vv' to show
+
+benchmarks/bankers_viability_shield_v4/tests/test_v4.py:126: AssertionError
+- generated xml file: /Users/romanliessner/gitlab/gym_longicontrol_bankers_shield_v4/benchmarks/bankers_viability_shield_v4/tests.preliminary.xml -
+=========================== short test summary info ============================
+FAILED benchmarks/bankers_viability_shield_v4/tests/test_v4.py::test_atomic_interrupted_publication
+1 failed, 39 passed in 3.62s

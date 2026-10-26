@@ -1,0 +1,223 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v4/execution.py:3:1
+   |
+ 1 |   """Freeze after preflight; execute exactly 72 pairs once, no recovery or learner."""
+ 2 |
+ 3 | / import argparse
+ 4 | | import json
+ 5 | | import subprocess
+ 6 | | import time
+ 7 | |
+ 8 | | import gymnasium as gym
+ 9 | | from benchmarks.content_split_audit.fingerprints import fingerprint_track
+10 | | from benchmarks.content_split_audit.generate_results import v2_semantics
+11 | | from gym_longicontrol.envs.longicontrol import StochasticTrack
+12 | |
+13 | | from .controller_adapters import METHODS
+14 | | from .evaluation import CounterexampleFound, run
+15 | | from .independent_verification import replay
+16 | | from .integrity import (
+17 | |     HERE,
+18 | |     ROOT,
+19 | |     PairLedger,
+20 | |     build_split,
+21 | |     exclusive_writer,
+22 | |     guarded_track,
+23 | |     require_committed,
+24 | |     source_identity,
+25 | |     verify_sources,
+26 | | )
+27 | | from .serialization import (
+28 | |     atomic_json,
+29 | |     file_hash,
+30 | |     native_journal,
+31 | |     read_evidence,
+32 | |     require,
+33 | |     write_evidence,
+34 | | )
+   | |_^
+help: Organize imports
+   |
+8  | import gymnasium as gym
+9  +
+10 | from benchmarks.content_split_audit.fingerprints import fingerprint_track
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v4/independent_verification.py:3:1
+   |
+ 1 |   """Independent full-production reconstruction. Never invokes the fast classifier."""
+ 2 |
+ 3 | / import hashlib
+ 4 | | import math
+ 5 | | import struct
+ 6 | | from dataclasses import asdict
+ 7 | |
+ 8 | | import numpy as np
+ 9 | | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+10 | |     BACKUP_ID,
+11 | |     MIN_LIMIT,
+12 | |     POSITION_MARGIN,
+13 | |     VELOCITY_MARGIN,
+14 | | )
+15 | | from benchmarks.bankers_viability_shield_v1.certificate import (
+16 | |     BankersShield,
+17 | | )
+18 | | from benchmarks.bankers_viability_shield_v1.certificate import (
+19 | |     identities as original_identities,
+20 | | )
+21 | | from benchmarks.bankers_viability_shield_v2.independent_verification import (
+22 | |     authority,
+23 | |     lower,
+24 | |     verify_envelope,
+25 | | )
+26 | | from benchmarks.bankers_viability_shield_v3.fast_certificate import safety_view
+27 | | from benchmarks.physical_feasibility_reference.oracle_controller import Transition
+28 | | from gym_longicontrol.domain.dynamics import advance
+29 | | from gym_longicontrol.domain.metrics import EpisodeMetrics
+30 | | from gym_longicontrol.domain.observation import observation
+31 | | from gym_longicontrol.domain.state import VehicleState
+32 | | from gym_longicontrol.domain.task import TaskSpecification, is_feasible
+33 | | from gym_longicontrol.domain.vehicle import VehicleModel
+34 | |
+35 | | from .controller_adapters import (
+36 | |     ACTION_GRID,
+37 | |     BANKERS,
+38 | |     CONFIG,
+39 | |     DIAGNOSTIC_STRIDE,
+40 | |     CausalMemory,
+41 | |     MeteredVehicle,
+42 | |     _ExternalExecutionAdapter,
+43 | |     inherited_test,
+44 | |     select,
+45 | | )
+46 | | from .serialization import canonical_bytes, digest, require, validate_records
+   | |_____________________________________________________________________________^
+help: Organize imports
+   |
+8  | import numpy as np
+9  +
+10 | from benchmarks.bankers_viability_shield_v1.backup_policy import (
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v4/integrity.py:3:1
+   |
+ 1 |   """Isolated V4 provenance, exclusive ownership and immutable STARTED records."""
+ 2 |
+ 3 | / import json
+ 4 | | import os
+ 5 | | import platform
+ 6 | | import subprocess
+ 7 | | import sys
+ 8 | | import time
+ 9 | | from contextlib import contextmanager
+10 | | from pathlib import Path
+11 | |
+12 | | import gymnasium
+13 | | import numpy as np
+14 | | from benchmarks.bankers_viability_shield_v2.integrity import PairLedger as OldPairLedger
+15 | |
+16 | | from .serialization import atomic_json, digest, file_hash, require
+   | |__________________________________________________________________^
+17 |
+18 |   HERE = Path(__file__).resolve().parent
+   |
+help: Organize imports
+   |
+13 | import numpy as np
+14 +
+15 | from benchmarks.bankers_viability_shield_v2.integrity import PairLedger as OldPairLedger
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v4/preflight.py:3:1
+   |
+ 1 |   """Frozen resource formula, complete inherited synthetic fixtures and native replay."""
+ 2 |
+ 3 | / import json
+ 4 | | import resource
+ 5 | | import time
+ 6 | |
+ 7 | | import gymnasium as gym
+ 8 | | from benchmarks.bankers_viability_shield_v1.fixtures import fixtures, make_track
+ 9 | | from gym_longicontrol.domain.state import VehicleState
+10 | | from gym_longicontrol.envs.longicontrol import LongiControlEnv
+11 | |
+12 | | from .controller_adapters import METHODS
+13 | | from .evaluation import run
+14 | | from .independent_verification import replay
+15 | | from .integrity import (
+16 | |     HERE,
+17 | |     PairLedger,
+18 | |     exclusive_writer,
+19 | |     require_committed,
+20 | |     source_identity,
+21 | |     verify_sources,
+22 | | )
+23 | | from .serialization import (
+24 | |     atomic_json,
+25 | |     native_journal,
+26 | |     read_evidence,
+27 | |     require,
+28 | |     write_evidence,
+29 | | )
+   | |_^
+help: Organize imports
+  |
+7 | import gymnasium as gym
+8 +
+9 | from benchmarks.bankers_viability_shield_v1.fixtures import fixtures, make_track
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> benchmarks/bankers_viability_shield_v4/tests/test_v4.py:1:1
+   |
+ 1 | / import copy
+ 2 | | from dataclasses import replace
+ 3 | |
+ 4 | | import gymnasium as gym
+ 5 | | import numpy as np
+ 6 | | import pytest
+ 7 | | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+ 8 | | from benchmarks.bankers_viability_shield_v1.certificate import BankersShield
+ 9 | | from benchmarks.bankers_viability_shield_v1.fixtures import make_track
+10 | | from benchmarks.bankers_viability_shield_v3.fast_certificate import (
+11 | |     FastBankersShield,
+12 | |     safety_view,
+13 | | )
+14 | | from benchmarks.bankers_viability_shield_v4.compact_certificate import CompactShield
+15 | | from benchmarks.bankers_viability_shield_v4.evaluation import run
+16 | | from benchmarks.bankers_viability_shield_v4.independent_verification import (
+17 | |     replay,
+18 | |     verify_compact,
+19 | | )
+20 | | from benchmarks.bankers_viability_shield_v4.integrity import (
+21 | |     PairLedger,
+22 | |     exclusive_writer,
+23 | |     guarded_track,
+24 | |     source_identity,
+25 | | )
+26 | | from benchmarks.bankers_viability_shield_v4.serialization import (
+27 | |     EvidenceError,
+28 | |     atomic_json,
+29 | |     canonical_bytes,
+30 | |     native_journal,
+31 | |     read_evidence,
+32 | |     strict_load,
+33 | |     write_evidence,
+34 | | )
+35 | | from gym_longicontrol.domain.observation import observation
+36 | | from gym_longicontrol.domain.state import VehicleState
+37 | | from gym_longicontrol.domain.vehicle import VehicleModel
+38 | | from gym_longicontrol.envs.longicontrol import LongiControlEnv
+   | |______________________________________________________________^
+help: Organize imports
+  |
+6 | import pytest
+7 +
+8 | from benchmarks.bankers_viability_shield_v1.backup_policy import CONFIG, CausalMemory
+  |
+
+Found 5 errors.
+[*] 5 fixable with `--fix`.
