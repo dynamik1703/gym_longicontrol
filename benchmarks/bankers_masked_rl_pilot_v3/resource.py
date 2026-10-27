@@ -74,13 +74,18 @@ def replay_equal(row,runner):
             'synthetic full replay verification '+k)
 
 
+def verify_mpc_profile(rows, environment, state):
+    return mpc_verify(rows,environment.unwrapped.track,initial_state=state,complete=False,
+        max_steps=environment._max_episode_steps)
+
+
 def measure():
     require(not (HERE/'profile_raw.json').exists(),'profiling already sealed')
     config=read_config(); n=config['resource_probe_steps']
     begin=time.perf_counter(),time.process_time()
     child_begin=resource.getrusage(resource.RUSAGE_CHILDREN)
     result=dict(identity=identity(),protocol_sha256=file_hash(HERE/'RESOURCE_PROTOCOL.md'),
-        formula_commit=verify_sources(),native={},diagnostic={},components={},checkpoints={},updates={},resets={},source_checks=[])
+        formula_commit=verify_sources(),prior_failed_profile_active_upper_s=sum(json.loads(p.read_text())['wall_upper_s'] for p in (HERE/'engineering').glob('failed_profile_*.json')),native={},diagnostic={},components={},checkpoints={},updates={},resets={},source_checks=[])
     for _ in range(3):
         _,cost=timed(verify_sources);result['source_checks'].append(cost)
     with tempfile.TemporaryDirectory(prefix='bankers-masked-v3-profile-',dir='/private/tmp') as temp:
@@ -215,7 +220,7 @@ def measure():
                     disk=[f['row']['evidence'] for f in journal.records()]
                     if method in REFERENCES[:2]:
                         v4_replay(disk,env.unwrapped.track,method,out,complete=False,initial_state=state,attempt=journal.attempt,evidence_identity=identity())
-                    else:mpc_verify(disk,env.unwrapped.track,initial_state=state,complete=False,max_steps=n)
+                    else:verify_mpc_profile(disk,env,state)
                     verification=block_cost(start,n)
                     result['diagnostic'][method].append(dict(repeat=repeat,speed=speed,execution=execution,verification=verification,
                         steps=step_costs,audits=[],compressed_bytes_per_step=sum(p.stat().st_size for p in path.glob('*.gz'))/n,
@@ -266,13 +271,15 @@ def projection(raw, engineering, current_bytes):
     base_storage=storage+2*peak+cp_peak+32*1024*1024
     hash_rate=8*1024*1024/max(s['wall_s'] for s in raw['hash_samples'])
     overhead=250*max(s['wall_s'] for s in raw['source_checks'])+3*base_storage/hash_rate+600
-    prior=120+engineering['active_cpu_s']+raw['profile_cpu_s']
+    failed=raw.get('prior_failed_profile_active_upper_s',0)
+    prior=120+engineering['active_cpu_s']+raw['profile_cpu_s']+failed
     preflight=2*engineering['wall_s']
     upper=2*(sum(sum(p.values()) for p in pieces.values())+sum(diagnostic.values())+overhead)+prior+preflight
     retained=2*base_storage+current_bytes
     return dict(gate_passed=upper<=86400 and retained<=3*2**30,projected_active_compute_upper_s=upper,
         projected_retained_bytes=retained,active_compute_limit_s=86400,artifact_limit_bytes=3*2**30,
-        training_components_s=pieces,diagnostic_s=diagnostic,prior_active_upper_s=120+engineering['active_cpu_s'],
+        training_components_s=pieces,diagnostic_s=diagnostic,prior_active_upper_s=120+engineering['active_cpu_s']+failed,
+        failed_profiling_active_upper_s=failed,
         measured_probe_cpu_s=raw['profile_cpu_s'],sealed_preflight_upper_s=preflight,
         checkpoint_peak_bound_bytes=cp_peak,metadata_and_sealing_s=overhead,individual_maximum_stress_s=2*(stress+overhead)+prior+preflight,
         factor=2,formula='max repeated complete block wall rate; exact matrix; 2x future work; prior+probe+2x sealed preflight wall',

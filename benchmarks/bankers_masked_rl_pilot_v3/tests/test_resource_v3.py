@@ -58,3 +58,25 @@ def test_v3_resource_and_namespace_frozen_before_science():
     assert c['resource_probe_repeats']==3 and c['resource_probe_steps']==128
     assert c['diagnostic_start']==12100000
     assert not c['validation_authorized'] and not c['paper_authorized']
+
+
+def test_short_mpc_profile_keeps_actual_environment_time_limit():
+    from benchmarks.bankers_masked_rl_pilot_v3.resource import fixture, verify_mpc_profile
+    from benchmarks.bankers_masked_rl_pilot_v3.evaluation import mpc_run, mpc_verify
+    from gym_longicontrol.domain.state import VehicleState
+    env=fixture();state=VehicleState()
+    rows,_=mpc_run(env,seed=11,attempt='V3_SYNTHETIC_MPC_PROFILE_LIMIT',record_sink=lambda _:None,initial_state=state,max_steps=3)
+    assert len(rows)==3 and not rows[-1]['truncated']
+    assert verify_mpc_profile(rows,env,state)['native_steps']==3
+    with pytest.raises(RuntimeError,match='MPC TimeLimit'):
+        mpc_verify(rows,env.unwrapped.track,initial_state=state,complete=False,max_steps=3)
+    env.close()
+
+def test_failed_profiling_work_is_charged_without_changing_rates():
+    raw=raw_fixture();before=projection(raw,dict(active_cpu_s=20,wall_s=30),1000)
+    raw['prior_failed_profile_active_upper_s']=123
+    after=projection(raw,dict(active_cpu_s=20,wall_s=30),1000)
+    assert after['projected_active_compute_upper_s']==before['projected_active_compute_upper_s']+123
+    assert after['training_components_s']==before['training_components_s']
+    assert after['diagnostic_s']==before['diagnostic_s']
+    assert after['failed_profiling_active_upper_s']==123

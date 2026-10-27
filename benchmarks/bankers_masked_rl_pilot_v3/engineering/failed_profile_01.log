@@ -1,0 +1,121 @@
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 0, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 5.555555555555555, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 10, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 16.666666666666668, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 20, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 25, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 0, "speed": 25.5, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 0, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 5.555555555555555, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 10, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 16.666666666666668, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 20, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 25, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 1, "speed": 25.5, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 0, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 5.555555555555555, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 10, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 16.666666666666668, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 20, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 25, "steps": 128}
+{"profile": "RAW_DISCRETE_SAC", "repeat": 2, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 0, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 10, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 20, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 25, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 0, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 0, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 10, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 20, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 25, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 1, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 0, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 10, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 20, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 25, "steps": 128}
+{"profile": "BANKER_POST_SAC", "repeat": 2, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 0, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 10, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 20, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 25, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 0, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 0, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 10, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 20, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 25, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 1, "speed": 25.5, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 0, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 10, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 20, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 25, "steps": 128}
+{"profile": "BANKER_PRE_SAC", "repeat": 2, "speed": 25.5, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 0, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 5.555555555555555, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 10, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 16.666666666666668, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 20, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 25, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 0, "speed": 25.5, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 0, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 5.555555555555555, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 10, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 16.666666666666668, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 20, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 25, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 1, "speed": 25.5, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 0, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 5.555555555555555, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 10, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 16.666666666666668, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 20, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 25, "steps": 128}
+{"profile": "CAUSAL60", "repeat": 2, "speed": 25.5, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 0, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 10, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 20, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 25, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 0, "speed": 25.5, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 0, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 10, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 20, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 25, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 1, "speed": 25.5, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 0, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 5.555555555555555, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 10, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 16.666666666666668, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 20, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 25, "steps": 128}
+{"profile": "BANKERS_MASKED_CAUSAL60", "repeat": 2, "speed": 25.5, "steps": 128}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_masked_rl_pilot_v3/resource.py", line 300, in <module>
+    measure() if args.phase=='measure' else admit()
+    ^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_masked_rl_pilot_v3/resource.py", line 218, in measure
+    else:mpc_verify(disk,env.unwrapped.track,initial_state=state,complete=False,max_steps=n)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_masked_rl_pilot_v3/evaluation.py", line 135, in mpc_verify
+    equal(truncated, row['truncated'], 'MPC TimeLimit')
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_masked_rl_pilot_v3/verification.py", line 30, in equal
+    require(canonical_bytes(a) == canonical_bytes(b), reason)
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 27, in require
+    raise EvidenceError(message)
+benchmarks.bankers_viability_shield_v2.serialization.EvidenceError: MPC TimeLimit
