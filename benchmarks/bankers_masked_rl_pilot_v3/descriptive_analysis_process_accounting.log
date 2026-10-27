@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/private/tmp/complete_outputs_bankers_v3.py", line 95, in <module>
+    atomic_json(HERE/'detailed_analysis.json',details,immutable=True)
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 105, in atomic_json
+    payload = canonical_bytes(value) + b"\n"
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 60, in canonical_bytes
+    normalize(value),
+    ^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in normalize
+    return {k: normalize(value[k]) for k in sorted(value)}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in <dictcomp>
+    return {k: normalize(value[k]) for k in sorted(value)}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in normalize
+    return {k: normalize(value[k]) for k in sorted(value)}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in <dictcomp>
+    return {k: normalize(value[k]) for k in sorted(value)}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in normalize
+    return {k: normalize(value[k]) for k in sorted(value)}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 52, in <dictcomp>
+    return {k: normalize(value[k]) for k in sorted(value)}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 51, in normalize
+    require(all(isinstance(k, str) for k in value), "non-string mapping key")
+  File "/Users/romanliessner/gitlab/gym_longicontrol_bankers_masked_rl_pilot_v3/benchmarks/bankers_viability_shield_v2/serialization.py", line 27, in require
+    raise EvidenceError(message)
+benchmarks.bankers_viability_shield_v2.serialization.EvidenceError: non-string mapping key
+real 129.14
+user 113.80
+sys 1.92
+           235388928  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33388  page reclaims
+                3233  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1978  voluntary context switches
+              222413  involuntary context switches
+       1496010974377  instructions retired
+        313581431800  cycles elapsed
+           186696448  peak memory footprint

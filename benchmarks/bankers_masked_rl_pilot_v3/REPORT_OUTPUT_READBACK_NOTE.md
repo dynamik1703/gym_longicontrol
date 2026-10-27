@@ -1,0 +1,5 @@
+# Supplementary output encoding readback
+
+After all 150000 training transitions / 15000 updates and all 72 Diagnostic pairs were independently completed and sealed, a supplementary descriptive-output helper rejected integer keys in a mask-size histogram while publishing detailed_analysis.json. Its completed Markdown aggregates and whole-process CPU/wall/error log were preserved. This was a post-execution output-format error, not a required scientific gate failure. No frozen execution source, protocol, checkpoint, native evidence, primary comparison or classification was changed.
+
+The final supplementary JSON was recovered from the already written aggregates, with histogram keys represented as JSON strings. Counts, values, task matches and the frozen primary summarize() result were verified. No environment reset, policy execution, retraining, performance rerun or extra Diagnostic pair occurred. The final source guard passed again. The failed output job remains charged in descriptive_analysis_process_accounting.log.

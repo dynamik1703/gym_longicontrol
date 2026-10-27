@@ -1,0 +1,225 @@
+{"method": "RAW_DISCRETE_SAC", "native": 1000, "updates": 0, "cpu_s": 4.603046999999999}
+{"method": "RAW_DISCRETE_SAC", "native": 2000, "updates": 0, "cpu_s": 9.536441}
+{"method": "RAW_DISCRETE_SAC", "native": 3000, "updates": 0, "cpu_s": 15.220545000000001}
+{"method": "RAW_DISCRETE_SAC", "native": 4000, "updates": 0, "cpu_s": 20.283987}
+{"method": "RAW_DISCRETE_SAC", "native": 5000, "updates": 0, "cpu_s": 25.492061}
+{"method": "RAW_DISCRETE_SAC", "native": 6000, "updates": 0, "cpu_s": 30.537097}
+{"method": "RAW_DISCRETE_SAC", "native": 7000, "updates": 0, "cpu_s": 35.339844}
+{"method": "RAW_DISCRETE_SAC", "native": 8000, "updates": 0, "cpu_s": 42.175033}
+{"method": "RAW_DISCRETE_SAC", "native": 9000, "updates": 0, "cpu_s": 49.030443}
+{"method": "RAW_DISCRETE_SAC", "native": 10000, "updates": 0, "cpu_s": 56.924299999999995}
+{"method": "RAW_DISCRETE_SAC", "native": 11000, "updates": 125, "cpu_s": 62.843602999999995}
+{"method": "RAW_DISCRETE_SAC", "native": 12000, "updates": 250, "cpu_s": 68.991647}
+{"method": "RAW_DISCRETE_SAC", "native": 13000, "updates": 375, "cpu_s": 75.820407}
+{"method": "RAW_DISCRETE_SAC", "native": 14000, "updates": 500, "cpu_s": 83.465693}
+{"method": "RAW_DISCRETE_SAC", "native": 15000, "updates": 625, "cpu_s": 91.708033}
+{"method": "RAW_DISCRETE_SAC", "native": 16000, "updates": 750, "cpu_s": 98.511731}
+{"method": "RAW_DISCRETE_SAC", "native": 17000, "updates": 875, "cpu_s": 103.720067}
+{"method": "RAW_DISCRETE_SAC", "native": 18000, "updates": 1000, "cpu_s": 108.936367}
+{"method": "RAW_DISCRETE_SAC", "native": 19000, "updates": 1125, "cpu_s": 114.34574500000001}
+{"method": "RAW_DISCRETE_SAC", "native": 20000, "updates": 1250, "cpu_s": 120.080448}
+{"method": "RAW_DISCRETE_SAC", "native": 21000, "updates": 1375, "cpu_s": 125.55843999999999}
+{"method": "RAW_DISCRETE_SAC", "native": 22000, "updates": 1500, "cpu_s": 131.002183}
+{"method": "RAW_DISCRETE_SAC", "native": 23000, "updates": 1625, "cpu_s": 136.479749}
+{"method": "RAW_DISCRETE_SAC", "native": 24000, "updates": 1750, "cpu_s": 142.134286}
+{"method": "RAW_DISCRETE_SAC", "native": 25000, "updates": 1875, "cpu_s": 148.329251}
+{"method": "RAW_DISCRETE_SAC", "native": 26000, "updates": 2000, "cpu_s": 154.24337}
+{"method": "RAW_DISCRETE_SAC", "native": 27000, "updates": 2125, "cpu_s": 160.080908}
+{"method": "RAW_DISCRETE_SAC", "native": 28000, "updates": 2250, "cpu_s": 165.793186}
+{"method": "RAW_DISCRETE_SAC", "native": 29000, "updates": 2375, "cpu_s": 171.81109700000002}
+{"method": "RAW_DISCRETE_SAC", "native": 30000, "updates": 2500, "cpu_s": 177.862247}
+{"method": "RAW_DISCRETE_SAC", "native": 31000, "updates": 2625, "cpu_s": 183.461862}
+{"method": "RAW_DISCRETE_SAC", "native": 32000, "updates": 2750, "cpu_s": 188.58811}
+{"method": "RAW_DISCRETE_SAC", "native": 33000, "updates": 2875, "cpu_s": 193.90133}
+{"method": "RAW_DISCRETE_SAC", "native": 34000, "updates": 3000, "cpu_s": 199.318338}
+{"method": "RAW_DISCRETE_SAC", "native": 35000, "updates": 3125, "cpu_s": 204.79198300000002}
+{"method": "RAW_DISCRETE_SAC", "native": 36000, "updates": 3250, "cpu_s": 210.28050000000002}
+{"method": "RAW_DISCRETE_SAC", "native": 37000, "updates": 3375, "cpu_s": 215.364745}
+{"method": "RAW_DISCRETE_SAC", "native": 38000, "updates": 3500, "cpu_s": 220.53032100000001}
+{"method": "RAW_DISCRETE_SAC", "native": 39000, "updates": 3625, "cpu_s": 225.643289}
+{"method": "RAW_DISCRETE_SAC", "native": 40000, "updates": 3750, "cpu_s": 230.85919}
+{"method": "RAW_DISCRETE_SAC", "native": 41000, "updates": 3875, "cpu_s": 236.229347}
+{"method": "RAW_DISCRETE_SAC", "native": 42000, "updates": 4000, "cpu_s": 242.365014}
+{"method": "RAW_DISCRETE_SAC", "native": 43000, "updates": 4125, "cpu_s": 248.179397}
+{"method": "RAW_DISCRETE_SAC", "native": 44000, "updates": 4250, "cpu_s": 253.520887}
+{"method": "RAW_DISCRETE_SAC", "native": 45000, "updates": 4375, "cpu_s": 259.17425899999995}
+{"method": "RAW_DISCRETE_SAC", "native": 46000, "updates": 4500, "cpu_s": 264.830657}
+{"method": "RAW_DISCRETE_SAC", "native": 47000, "updates": 4625, "cpu_s": 270.167494}
+{"method": "RAW_DISCRETE_SAC", "native": 48000, "updates": 4750, "cpu_s": 275.328824}
+{"method": "RAW_DISCRETE_SAC", "native": 49000, "updates": 4875, "cpu_s": 280.620304}
+{"method": "RAW_DISCRETE_SAC", "native": 50000, "updates": 5000, "cpu_s": 286.567499}
+{"method": "RAW_DISCRETE_SAC", "state": "COMPLETED", "native": 50000, "updates": 5000}
+{"method": "BANKER_POST_SAC", "native": 1000, "updates": 0, "cpu_s": 5.328476000000023}
+{"method": "BANKER_POST_SAC", "native": 2000, "updates": 0, "cpu_s": 11.211807000000022}
+{"method": "BANKER_POST_SAC", "native": 3000, "updates": 0, "cpu_s": 16.357822}
+{"method": "BANKER_POST_SAC", "native": 4000, "updates": 0, "cpu_s": 21.515205999999978}
+{"method": "BANKER_POST_SAC", "native": 5000, "updates": 0, "cpu_s": 27.045642999999984}
+{"method": "BANKER_POST_SAC", "native": 6000, "updates": 0, "cpu_s": 32.96384499999999}
+{"method": "BANKER_POST_SAC", "native": 7000, "updates": 0, "cpu_s": 39.40429}
+{"method": "BANKER_POST_SAC", "native": 8000, "updates": 0, "cpu_s": 45.17447800000002}
+{"method": "BANKER_POST_SAC", "native": 9000, "updates": 0, "cpu_s": 50.93738999999999}
+{"method": "BANKER_POST_SAC", "native": 10000, "updates": 0, "cpu_s": 56.49953799999997}
+{"method": "BANKER_POST_SAC", "native": 11000, "updates": 125, "cpu_s": 64.01786600000003}
+{"method": "BANKER_POST_SAC", "native": 12000, "updates": 250, "cpu_s": 70.886638}
+{"method": "BANKER_POST_SAC", "native": 13000, "updates": 375, "cpu_s": 78.11803900000001}
+{"method": "BANKER_POST_SAC", "native": 14000, "updates": 500, "cpu_s": 85.178538}
+{"method": "BANKER_POST_SAC", "native": 15000, "updates": 625, "cpu_s": 92.121465}
+{"method": "BANKER_POST_SAC", "native": 16000, "updates": 750, "cpu_s": 98.50647800000002}
+{"method": "BANKER_POST_SAC", "native": 17000, "updates": 875, "cpu_s": 105.12407100000001}
+{"method": "BANKER_POST_SAC", "native": 18000, "updates": 1000, "cpu_s": 111.79571700000002}
+{"method": "BANKER_POST_SAC", "native": 19000, "updates": 1125, "cpu_s": 118.35441400000002}
+{"method": "BANKER_POST_SAC", "native": 20000, "updates": 1250, "cpu_s": 124.958531}
+{"method": "BANKER_POST_SAC", "native": 21000, "updates": 1375, "cpu_s": 131.552284}
+{"method": "BANKER_POST_SAC", "native": 22000, "updates": 1500, "cpu_s": 137.99352499999998}
+{"method": "BANKER_POST_SAC", "native": 23000, "updates": 1625, "cpu_s": 144.25023299999998}
+{"method": "BANKER_POST_SAC", "native": 24000, "updates": 1750, "cpu_s": 150.70710200000002}
+{"method": "BANKER_POST_SAC", "native": 25000, "updates": 1875, "cpu_s": 157.316259}
+{"method": "BANKER_POST_SAC", "native": 26000, "updates": 2000, "cpu_s": 163.83430200000004}
+{"method": "BANKER_POST_SAC", "native": 27000, "updates": 2125, "cpu_s": 170.41123999999996}
+{"method": "BANKER_POST_SAC", "native": 28000, "updates": 2250, "cpu_s": 177.01987300000002}
+{"method": "BANKER_POST_SAC", "native": 29000, "updates": 2375, "cpu_s": 183.71173100000004}
+{"method": "BANKER_POST_SAC", "native": 30000, "updates": 2500, "cpu_s": 190.38835699999998}
+{"method": "BANKER_POST_SAC", "native": 31000, "updates": 2625, "cpu_s": 196.90668699999998}
+{"method": "BANKER_POST_SAC", "native": 32000, "updates": 2750, "cpu_s": 202.96828599999998}
+{"method": "BANKER_POST_SAC", "native": 33000, "updates": 2875, "cpu_s": 209.836069}
+{"method": "BANKER_POST_SAC", "native": 34000, "updates": 3000, "cpu_s": 216.334358}
+{"method": "BANKER_POST_SAC", "native": 35000, "updates": 3125, "cpu_s": 223.36855399999996}
+{"method": "BANKER_POST_SAC", "native": 36000, "updates": 3250, "cpu_s": 230.412528}
+{"method": "BANKER_POST_SAC", "native": 37000, "updates": 3375, "cpu_s": 236.68664199999995}
+{"method": "BANKER_POST_SAC", "native": 38000, "updates": 3500, "cpu_s": 242.78088599999995}
+{"method": "BANKER_POST_SAC", "native": 39000, "updates": 3625, "cpu_s": 248.780505}
+{"method": "BANKER_POST_SAC", "native": 40000, "updates": 3750, "cpu_s": 254.939373}
+{"method": "BANKER_POST_SAC", "native": 41000, "updates": 3875, "cpu_s": 261.04571000000004}
+{"method": "BANKER_POST_SAC", "native": 42000, "updates": 4000, "cpu_s": 267.64335}
+{"method": "BANKER_POST_SAC", "native": 43000, "updates": 4125, "cpu_s": 274.20663299999995}
+{"method": "BANKER_POST_SAC", "native": 44000, "updates": 4250, "cpu_s": 280.44663499999996}
+{"method": "BANKER_POST_SAC", "native": 45000, "updates": 4375, "cpu_s": 286.66511999999994}
+{"method": "BANKER_POST_SAC", "native": 46000, "updates": 4500, "cpu_s": 292.72959399999996}
+{"method": "BANKER_POST_SAC", "native": 47000, "updates": 4625, "cpu_s": 299.57332}
+{"method": "BANKER_POST_SAC", "native": 48000, "updates": 4750, "cpu_s": 306.582205}
+{"method": "BANKER_POST_SAC", "native": 49000, "updates": 4875, "cpu_s": 313.05182399999995}
+{"method": "BANKER_POST_SAC", "native": 50000, "updates": 5000, "cpu_s": 319.77241399999997}
+{"method": "BANKER_POST_SAC", "state": "COMPLETED", "native": 50000, "updates": 5000}
+{"method": "BANKER_PRE_SAC", "native": 1000, "updates": 0, "cpu_s": 5.536359000000061}
+{"method": "BANKER_PRE_SAC", "native": 2000, "updates": 0, "cpu_s": 11.451606000000083}
+{"method": "BANKER_PRE_SAC", "native": 3000, "updates": 0, "cpu_s": 16.446211000000062}
+{"method": "BANKER_PRE_SAC", "native": 4000, "updates": 0, "cpu_s": 21.516871000000037}
+{"method": "BANKER_PRE_SAC", "native": 5000, "updates": 0, "cpu_s": 27.00529400000005}
+{"method": "BANKER_PRE_SAC", "native": 6000, "updates": 0, "cpu_s": 32.68676300000004}
+{"method": "BANKER_PRE_SAC", "native": 7000, "updates": 0, "cpu_s": 38.83476500000006}
+{"method": "BANKER_PRE_SAC", "native": 8000, "updates": 0, "cpu_s": 44.50164300000006}
+{"method": "BANKER_PRE_SAC", "native": 9000, "updates": 0, "cpu_s": 50.82101300000011}
+{"method": "BANKER_PRE_SAC", "native": 10000, "updates": 0, "cpu_s": 56.5410710000001}
+{"method": "BANKER_PRE_SAC", "native": 11000, "updates": 125, "cpu_s": 63.582254000000034}
+{"method": "BANKER_PRE_SAC", "native": 12000, "updates": 250, "cpu_s": 69.92107300000009}
+{"method": "BANKER_PRE_SAC", "native": 13000, "updates": 375, "cpu_s": 76.57359900000006}
+{"method": "BANKER_PRE_SAC", "native": 14000, "updates": 500, "cpu_s": 82.93004800000006}
+{"method": "BANKER_PRE_SAC", "native": 15000, "updates": 625, "cpu_s": 88.99928}
+{"method": "BANKER_PRE_SAC", "native": 16000, "updates": 750, "cpu_s": 94.98913100000004}
+{"method": "BANKER_PRE_SAC", "native": 17000, "updates": 875, "cpu_s": 101.25280400000008}
+{"method": "BANKER_PRE_SAC", "native": 18000, "updates": 1000, "cpu_s": 108.18789000000004}
+{"method": "BANKER_PRE_SAC", "native": 19000, "updates": 1125, "cpu_s": 115.08590300000003}
+{"method": "BANKER_PRE_SAC", "native": 20000, "updates": 1250, "cpu_s": 122.853384}
+{"method": "BANKER_PRE_SAC", "native": 21000, "updates": 1375, "cpu_s": 129.75412600000004}
+{"method": "BANKER_PRE_SAC", "native": 22000, "updates": 1500, "cpu_s": 136.13849000000005}
+{"method": "BANKER_PRE_SAC", "native": 23000, "updates": 1625, "cpu_s": 142.49970900000005}
+{"method": "BANKER_PRE_SAC", "native": 24000, "updates": 1750, "cpu_s": 149.43900100000008}
+{"method": "BANKER_PRE_SAC", "native": 25000, "updates": 1875, "cpu_s": 156.05247200000008}
+{"method": "BANKER_PRE_SAC", "native": 26000, "updates": 2000, "cpu_s": 162.21746100000007}
+{"method": "BANKER_PRE_SAC", "native": 27000, "updates": 2125, "cpu_s": 168.56356400000004}
+{"method": "BANKER_PRE_SAC", "native": 28000, "updates": 2250, "cpu_s": 174.87993500000005}
+{"method": "BANKER_PRE_SAC", "native": 29000, "updates": 2375, "cpu_s": 182.05545400000005}
+{"method": "BANKER_PRE_SAC", "native": 30000, "updates": 2500, "cpu_s": 189.31143400000008}
+{"method": "BANKER_PRE_SAC", "native": 31000, "updates": 2625, "cpu_s": 195.82158900000002}
+{"method": "BANKER_PRE_SAC", "native": 32000, "updates": 2750, "cpu_s": 202.11798700000008}
+{"method": "BANKER_PRE_SAC", "native": 33000, "updates": 2875, "cpu_s": 208.60326400000008}
+{"method": "BANKER_PRE_SAC", "native": 34000, "updates": 3000, "cpu_s": 214.94035700000006}
+{"method": "BANKER_PRE_SAC", "native": 35000, "updates": 3125, "cpu_s": 222.53778}
+{"method": "BANKER_PRE_SAC", "native": 36000, "updates": 3250, "cpu_s": 235.16830400000003}
+{"method": "BANKER_PRE_SAC", "native": 37000, "updates": 3375, "cpu_s": 243.56568600000003}
+{"method": "BANKER_PRE_SAC", "native": 38000, "updates": 3500, "cpu_s": 250.20158600000002}
+{"method": "BANKER_PRE_SAC", "native": 39000, "updates": 3625, "cpu_s": 257.131486}
+{"method": "BANKER_PRE_SAC", "native": 40000, "updates": 3750, "cpu_s": 264.25322700000004}
+{"method": "BANKER_PRE_SAC", "native": 41000, "updates": 3875, "cpu_s": 271.10269700000003}
+{"method": "BANKER_PRE_SAC", "native": 42000, "updates": 4000, "cpu_s": 277.87745800000016}
+{"method": "BANKER_PRE_SAC", "native": 43000, "updates": 4125, "cpu_s": 285.1203700000001}
+{"method": "BANKER_PRE_SAC", "native": 44000, "updates": 4250, "cpu_s": 291.78891}
+{"method": "BANKER_PRE_SAC", "native": 45000, "updates": 4375, "cpu_s": 298.158236}
+{"method": "BANKER_PRE_SAC", "native": 46000, "updates": 4500, "cpu_s": 304.92851799999994}
+{"method": "BANKER_PRE_SAC", "native": 47000, "updates": 4625, "cpu_s": 311.0700200000001}
+{"method": "BANKER_PRE_SAC", "native": 48000, "updates": 4750, "cpu_s": 317.359784}
+{"method": "BANKER_PRE_SAC", "native": 49000, "updates": 4875, "cpu_s": 323.827677}
+{"method": "BANKER_PRE_SAC", "native": 50000, "updates": 5000, "cpu_s": 330.416379}
+{"method": "BANKER_PRE_SAC", "state": "COMPLETED", "native": 50000, "updates": 5000}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100000, "state": "COMPLETED", "feasible": false, "completed_pairs": 1}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100001, "state": "COMPLETED", "feasible": false, "completed_pairs": 2}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100003, "state": "COMPLETED", "feasible": false, "completed_pairs": 3}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100004, "state": "COMPLETED", "feasible": false, "completed_pairs": 4}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100005, "state": "COMPLETED", "feasible": false, "completed_pairs": 5}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100006, "state": "COMPLETED", "feasible": false, "completed_pairs": 6}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100007, "state": "COMPLETED", "feasible": false, "completed_pairs": 7}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100009, "state": "COMPLETED", "feasible": false, "completed_pairs": 8}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100010, "state": "COMPLETED", "feasible": false, "completed_pairs": 9}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100011, "state": "COMPLETED", "feasible": false, "completed_pairs": 10}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100014, "state": "COMPLETED", "feasible": false, "completed_pairs": 11}
+{"method": "RAW_DISCRETE_SAC", "seed": 12100015, "state": "COMPLETED", "feasible": false, "completed_pairs": 12}
+{"method": "BANKER_POST_SAC", "seed": 12100000, "state": "COMPLETED", "feasible": false, "completed_pairs": 13}
+{"method": "BANKER_POST_SAC", "seed": 12100001, "state": "COMPLETED", "feasible": false, "completed_pairs": 14}
+{"method": "BANKER_POST_SAC", "seed": 12100003, "state": "COMPLETED", "feasible": false, "completed_pairs": 15}
+{"method": "BANKER_POST_SAC", "seed": 12100004, "state": "COMPLETED", "feasible": false, "completed_pairs": 16}
+{"method": "BANKER_POST_SAC", "seed": 12100005, "state": "COMPLETED", "feasible": false, "completed_pairs": 17}
+{"method": "BANKER_POST_SAC", "seed": 12100006, "state": "COMPLETED", "feasible": false, "completed_pairs": 18}
+{"method": "BANKER_POST_SAC", "seed": 12100007, "state": "COMPLETED", "feasible": false, "completed_pairs": 19}
+{"method": "BANKER_POST_SAC", "seed": 12100009, "state": "COMPLETED", "feasible": false, "completed_pairs": 20}
+{"method": "BANKER_POST_SAC", "seed": 12100010, "state": "COMPLETED", "feasible": false, "completed_pairs": 21}
+{"method": "BANKER_POST_SAC", "seed": 12100011, "state": "COMPLETED", "feasible": false, "completed_pairs": 22}
+{"method": "BANKER_POST_SAC", "seed": 12100014, "state": "COMPLETED", "feasible": false, "completed_pairs": 23}
+{"method": "BANKER_POST_SAC", "seed": 12100015, "state": "COMPLETED", "feasible": false, "completed_pairs": 24}
+{"method": "BANKER_PRE_SAC", "seed": 12100000, "state": "COMPLETED", "feasible": false, "completed_pairs": 25}
+{"method": "BANKER_PRE_SAC", "seed": 12100001, "state": "COMPLETED", "feasible": false, "completed_pairs": 26}
+{"method": "BANKER_PRE_SAC", "seed": 12100003, "state": "COMPLETED", "feasible": false, "completed_pairs": 27}
+{"method": "BANKER_PRE_SAC", "seed": 12100004, "state": "COMPLETED", "feasible": false, "completed_pairs": 28}
+{"method": "BANKER_PRE_SAC", "seed": 12100005, "state": "COMPLETED", "feasible": false, "completed_pairs": 29}
+{"method": "BANKER_PRE_SAC", "seed": 12100006, "state": "COMPLETED", "feasible": false, "completed_pairs": 30}
+{"method": "BANKER_PRE_SAC", "seed": 12100007, "state": "COMPLETED", "feasible": false, "completed_pairs": 31}
+{"method": "BANKER_PRE_SAC", "seed": 12100009, "state": "COMPLETED", "feasible": false, "completed_pairs": 32}
+{"method": "BANKER_PRE_SAC", "seed": 12100010, "state": "COMPLETED", "feasible": false, "completed_pairs": 33}
+{"method": "BANKER_PRE_SAC", "seed": 12100011, "state": "COMPLETED", "feasible": false, "completed_pairs": 34}
+{"method": "BANKER_PRE_SAC", "seed": 12100014, "state": "COMPLETED", "feasible": false, "completed_pairs": 35}
+{"method": "BANKER_PRE_SAC", "seed": 12100015, "state": "COMPLETED", "feasible": false, "completed_pairs": 36}
+{"method": "CAUSAL60", "seed": 12100000, "state": "COMPLETED", "feasible": true, "completed_pairs": 37}
+{"method": "CAUSAL60", "seed": 12100001, "state": "COMPLETED", "feasible": true, "completed_pairs": 38}
+{"method": "CAUSAL60", "seed": 12100003, "state": "COMPLETED", "feasible": true, "completed_pairs": 39}
+{"method": "CAUSAL60", "seed": 12100004, "state": "COMPLETED", "feasible": true, "completed_pairs": 40}
+{"method": "CAUSAL60", "seed": 12100005, "state": "COMPLETED", "feasible": true, "completed_pairs": 41}
+{"method": "CAUSAL60", "seed": 12100006, "state": "COMPLETED", "feasible": true, "completed_pairs": 42}
+{"method": "CAUSAL60", "seed": 12100007, "state": "COMPLETED", "feasible": true, "completed_pairs": 43}
+{"method": "CAUSAL60", "seed": 12100009, "state": "COMPLETED", "feasible": true, "completed_pairs": 44}
+{"method": "CAUSAL60", "seed": 12100010, "state": "COMPLETED", "feasible": true, "completed_pairs": 45}
+{"method": "CAUSAL60", "seed": 12100011, "state": "COMPLETED", "feasible": true, "completed_pairs": 46}
+{"method": "CAUSAL60", "seed": 12100014, "state": "COMPLETED", "feasible": true, "completed_pairs": 47}
+{"method": "CAUSAL60", "seed": 12100015, "state": "COMPLETED", "feasible": true, "completed_pairs": 48}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100000, "state": "COMPLETED", "feasible": true, "completed_pairs": 49}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100001, "state": "COMPLETED", "feasible": true, "completed_pairs": 50}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100003, "state": "COMPLETED", "feasible": true, "completed_pairs": 51}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100004, "state": "COMPLETED", "feasible": true, "completed_pairs": 52}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100005, "state": "COMPLETED", "feasible": true, "completed_pairs": 53}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100006, "state": "COMPLETED", "feasible": true, "completed_pairs": 54}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100007, "state": "COMPLETED", "feasible": true, "completed_pairs": 55}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100009, "state": "COMPLETED", "feasible": true, "completed_pairs": 56}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100010, "state": "COMPLETED", "feasible": true, "completed_pairs": 57}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100011, "state": "COMPLETED", "feasible": true, "completed_pairs": 58}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100014, "state": "COMPLETED", "feasible": true, "completed_pairs": 59}
+{"method": "BANKERS_MASKED_CAUSAL60", "seed": 12100015, "state": "COMPLETED", "feasible": true, "completed_pairs": 60}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100000, "state": "COMPLETED", "feasible": true, "completed_pairs": 61}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100001, "state": "COMPLETED", "feasible": true, "completed_pairs": 62}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100003, "state": "COMPLETED", "feasible": true, "completed_pairs": 63}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100004, "state": "COMPLETED", "feasible": true, "completed_pairs": 64}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100005, "state": "COMPLETED", "feasible": true, "completed_pairs": 65}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100006, "state": "COMPLETED", "feasible": true, "completed_pairs": 66}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100007, "state": "COMPLETED", "feasible": true, "completed_pairs": 67}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100009, "state": "COMPLETED", "feasible": true, "completed_pairs": 68}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100010, "state": "COMPLETED", "feasible": true, "completed_pairs": 69}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100011, "state": "COMPLETED", "feasible": true, "completed_pairs": 70}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100014, "state": "COMPLETED", "feasible": true, "completed_pairs": 71}
+{"method": "ADAPTIVE_PRICE_MPC_V2", "seed": 12100015, "state": "COMPLETED", "feasible": true, "completed_pairs": 72}
