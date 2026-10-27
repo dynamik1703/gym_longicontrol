@@ -88,10 +88,11 @@ def measure():
         for method in METHODS:
             result['native'][method]=[];result['diagnostic'][method]=[]
             components={key:[] for key in ('initialization','engine_startup','cold_inference','steady_inference','banker_mask',
-                'selected_certificate','environment_advance','replay_insertion','serialization','native_reconstruction')}
+                'successor_mask','selected_certificate','environment_advance','replay_insertion','serialization','durable_intent','intent_clear','native_reconstruction')}
             result['components'][method]=components;result['resets'][method]=[]
             for repeat in range(config['resource_probe_repeats']):
                 for speed in config['resource_probe_speeds']:
+                    offsets={k:len(v) for k,v in components.items()}
                     state=VehicleState(velocity_m_s=float(speed)); path=temp/(method+f'_{repeat}_{speed}')
                     runner,cost=timed(lambda:Runner(method,f'V3_PROFILE_{method}_{repeat}_{speed}',fixture(),True,300000,fixture_initial_state=state))
                     components['initialization'].append(cost)
@@ -102,11 +103,20 @@ def measure():
                     _,cost=timed(lambda:clone.agent.act(features(clone.ordinary,clone.memory),clone.treatment.policy_support(clone.physical_mask),clone.policy_rng))
                     components['cold_inference'].append(cost);clone.environment.close();del clone
                     restores=[]
-                    for obj,name,key in ((runner.agent,'act','steady_inference'),(runner.treatment,'mask','banker_mask'),
+                    for obj,name,key in ((runner.agent,'act','steady_inference'),
                         (runner.treatment,'execute','selected_certificate'),(runner.environment,'step','environment_advance'),
                         (runner.replay,'append','replay_insertion'),(engine.journal,'append','serialization'),
+                        (engine.journal,'intent','durable_intent'),(engine.journal,'clear_intent','intent_clear'),
                         (engine.audit,'verify','native_reconstruction')):
                         restores.append(instrument(obj,name,components[key]))
+                    original_mask=runner.treatment.mask
+                    def measured_mask(*args,**kwargs):
+                        key='banker_mask' if runner.pending_reset else 'successor_mask'
+                        value,cost=timed(lambda:original_mask(*args,**kwargs))
+                        components[key].append(cost)
+                        return value
+                    runner.treatment.mask=measured_mask
+                    restores.append(lambda:setattr(runner.treatment,'mask',original_mask))
                     costs=[]; rows=[];start=time.perf_counter(),time.process_time()
                     for _ in range(n):
                         row,cost=timed(lambda:engine.step(learn=False));rows.append(row);costs.append(cost)
@@ -125,7 +135,8 @@ def measure():
                     audit_total=block_cost(start,n)
                     _,read=timed(lambda:list(engine.journal.records()))
                     result['native'][method].append(dict(repeat=repeat,speed=speed,execution=total,verification=audit_total,
-                        steps=costs,audits=offline,read=read,compressed_bytes_per_step=compressed,raw_row_max_bytes=raw))
+                        steps=costs,audits=offline,read=read,compressed_bytes_per_step=compressed,raw_row_max_bytes=raw,
+                        component_statistics={k:stats(v[offsets[k]:]) for k,v in components.items() if len(v)>offsets[k]}))
                     if repeat==0 and speed==0:
                         source={k:v[0].copy() for k,v in runner.replay.arrays.items()}
                         while runner.replay.size<256:

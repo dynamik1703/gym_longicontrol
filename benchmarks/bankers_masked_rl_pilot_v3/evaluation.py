@@ -2,6 +2,7 @@
 
 import copy
 import json
+import time
 from dataclasses import asdict
 
 import gymnasium as gym
@@ -151,6 +152,7 @@ def summary(metrics, progress, stats):
 
 
 def pair(method, task, panel_hash, *, agent=None, checkpoint_sha256=None, budget=None):
+    start_cpu,start_wall=time.process_time(),time.perf_counter()
     guard_panel(PANEL)
     guard_seed(task['numeric_seed'])
     from .execution import ready
@@ -256,7 +258,8 @@ def pair(method, task, panel_hash, *, agent=None, checkpoint_sha256=None, budget
     else:
         raise ValueError('unknown Diagnostic arm')
     environment.close()
-    result.update(attempt=attempt, method=method, task=task, panel_sha256=panel_hash,
+    result.update(observed_execution=dict(cpu_s=time.process_time()-start_cpu,wall_s=time.perf_counter()-start_wall,includes_full_independent_verification=True),
+                  attempt=attempt, method=method, task=task, panel_sha256=panel_hash,
                   identity=identity(), checkpoint_sha256=checkpoint_sha256, journal_head=head)
     result['evidence_files'] = {p.name: file_hash(p) for p in sorted((directory / 'journal').glob('*.gz'))}
     atomic_json(directory / 'COMPLETED.json', result, immutable=True)

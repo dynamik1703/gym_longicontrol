@@ -40,7 +40,15 @@ def main():
                 marker=json.loads(path.read_text())
                 rows=[f['row'] for f in Journal(path.parent/'journal',marker['attempt'],marker['identity']).records()]
                 counts[m].update(native=len(rows),updates=rows[-1]['updates_after'] if rows else 0,completed=False)
-    result.update(identity=identity(),training=counts,diagnostic_pairs_started=len(started),diagnostic_pairs_completed=len(all_pairs),
+    observed_scaleup={}
+    if all_pairs and all(r and r.get('observed_execution',{}).get('from_native')==0 for r in runs.values()):
+        for unit in ('cpu_s','wall_s'):
+            train={m:r['observed_execution'][unit] for m,r in runs.items()}
+            diag={m:sum(r['observed_execution'][unit] for r in all_pairs if r['method']==m) for m in ARMS}
+            observed_scaleup[unit]=dict(pre_three_seeds_300k=2*(18*train[METHODS[2]]+3*diag[METHODS[2]]+sum(diag[m] for m in ARMS[3:])+600),
+                all_three_seeds_300k=2*(18*sum(train.values())+3*sum(diag[m] for m in METHODS)+sum(diag[m] for m in ARMS[3:])+600),
+                measured_training=train,measured_diagnostic=diag)
+    result.update(observed_scaleup=observed_scaleup,identity=identity(),training=counts,diagnostic_pairs_started=len(started),diagnostic_pairs_completed=len(all_pairs),
         diagnostic_split_sha256=split.get('ordered_sha256'),paper='SEALED_UNINSPECTED',
         final_validation_performance_episodes=0,full_scale_training_authorized=False,
         resource_projection=resource,engineering=engineering,sealed_preflight=gate or 'NOT_STARTED',
@@ -64,7 +72,7 @@ V3 uses all repeated complete blocks under the formula committed before profilin
 
 V2 maxima (immutable original measurements):
 '''+json.dumps(maxima,indent=2)+'\n\nV3 component distributions (CPU/wall, median/p95/p99/max):\n\n'+json.dumps(raw.get('component_statistics',{}),indent=2)+'\n\nPer-arm/band distributions: profile_raw.json. Full raw samples retained.')
-    write('RL_SCALEUP_READINESS.md','# Prospective scale-up\n\n'+json.dumps({k:v for k,v in resource.items() if k.startswith('scaleup_')},indent=2)+'\n\nForecasts include online masks, optimization, evidence, independent audits, checkpoint/recovery and physical baselines. If pilot did not execute these are synthetic forecasts, not actual pilot extrapolations. V2 110/230-hour projection remains historical. No 300k performance inference or automatic scale-up authorization.')
+    write('RL_SCALEUP_READINESS.md','# Prospective scale-up\n\n'+json.dumps(dict(synthetic_admission_forecast={k:v for k,v in resource.items() if k.startswith('scaleup_')},observed_pilot_forecast=observed_scaleup),indent=2)+'\n\nForecasts include online masks, optimization, evidence, independent audits, checkpoint/recovery and physical baselines. If pilot did not execute these are synthetic forecasts, not actual pilot extrapolations. V2 110/230-hour projection remains historical. No 300k performance inference or automatic scale-up authorization.')
     write('SCIENTIFIC_DECISION.md',f'# Scientific decision\n\n{label}\n\n'+('The stopped execution cannot answer whether PRE improves learning or merely supplies external speed compliance. This is not a negative learning result. Further training needs a new authorized resolution of the stopping gate.' if not all_pairs else 'One seed and twelve routes provide exploratory matched evidence only; no superiority proof or statistical equivalence claim. No further training is authorized.'))
     write('INTEGRITY_REPORT.md','# Integrity report\n\n'+json.dumps(dict(engineering=engineering,sealed_preflight=gate or 'NOT_STARTED',stop=stop,historical_sources_unchanged=True,paper='SEALED_UNINSPECTED',final_validation_episodes=0),indent=2)+'\n\nComplete recovery tests preserve actor/critics/optimizers/replay, all RNGs, stream cursor, partial episode, current/successor bindings and durable STARTED-before-reset. Real-process crash tests included. No silent fresh scientific Attempt. Final source/hash validation passed.')
     lines=[f'# Deutscher Abschlussbericht — {label}',
@@ -85,7 +93,7 @@ V2 maxima (immutable original measurements):
         '15. Fehleridentitäten: '+(json.dumps({m:v['failure_identities'] for m,v in result.get('methods',{}).items()}) if all_pairs else 'keine geöffneten Diagnostic-Aufgaben.'),
         f"16. Tatsächliche Profil-CPU {raw.get('profile_cpu_s')} s; Profil-Wall {raw.get('profile_wall_s')} s; Engineering-CPU {engineering.get('active_cpu_s')} s; Engineering-Wall {engineering.get('wall_s')} s. Gesamter wissenschaftlicher Ressourcen-Ledger in results.json; finale gespeicherte Bytes im final_readback.json.",
         '17. Unabhängige native Evidenzprüfung: '+('alle finalen Trainings-Replays und Diagnostic-Paare geprüft.' if all_pairs else 'synthetisch geprüft; keine wissenschaftlichen Ergebnisse vorgetäuscht.'),
-        '18. Prospektiver Vollmaßstab: '+json.dumps({k:v for k,v in resource.items() if k.startswith('scaleup_')}),
+        '18. Prospektiver Vollmaßstab: '+json.dumps(dict(synthetic={k:v for k,v in resource.items() if k.startswith('scaleup_')},observed=observed_scaleup)),
         f'19. Wissenschaftliche Klassifikation: {label}.',
         '20. Weitere Masked-RL-Trainings sind nicht automatisch autorisiert; ein Resource-/Integrity-Stop beantwortet die Lernfrage nicht.',
         '21. Genau null finale Validation-Performance-Episoden.',

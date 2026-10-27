@@ -46,6 +46,8 @@ def train_all(budget, resume=False):
         else:
             engine = Engine(directory, Runner(method, attempt))
         start = time.process_time()
+        start_wall = time.perf_counter()
+        start_native = engine.runner.native
         while engine.runner.native < 50000:
             budget.check()
             try:
@@ -84,6 +86,8 @@ def train_all(budget, resume=False):
         require(verification['journal_head'] == engine.head, 'final evidence head')
         value = dict(method=method, attempt=attempt, identity=identity(), native=50000, updates=5000,
             checkpoint=checkpoint, actor_sha256=actor_hash(restored['runner'].agent),
+            observed_execution=dict(cpu_s=time.process_time()-start,wall_s=time.perf_counter()-start_wall,
+                from_native=start_native,includes_final_independent_audit=True),
             verification=verification, tasks_exposed=engine.runner.cursor,
             completed_episodes=engine.runner.episodes, optimizer_diagnostics=engine.runner.diagnostics,
             final_partial_episode=dict(pending_reset=engine.runner.pending_reset,
