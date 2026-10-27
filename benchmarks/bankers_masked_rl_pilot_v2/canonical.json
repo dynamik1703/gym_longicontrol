@@ -1,0 +1,92 @@
+{
+  "action_grid": [
+    -1.0,
+    -0.9,
+    -0.8,
+    -0.7,
+    -0.6,
+    -0.5,
+    -0.4,
+    -0.3,
+    -0.2,
+    -0.1,
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "active_compute_limit_s": 28800,
+  "actor_lr": 0.0003,
+  "alpha_lr": 0.0003,
+  "base_commit": "4d2838e305e9c6d7037d7b2aad63f4576cfc3379",
+  "batch_size": 256,
+  "critic_lr": 0.0003,
+  "deadline_s": 140,
+  "diagnostic_count": 12,
+  "diagnostic_evaluation": "deterministic categorical argmax; lowest index ties",
+  "diagnostic_id": "BANKERS_MASKED_RL_PILOT_DIAGNOSTIC_V2",
+  "diagnostic_start": 12000000,
+  "dt_s": 0.1,
+  "energy_scale": 1000,
+  "entropy_fraction": 0.98,
+  "evidence_contract": "bankers-training-evidence-v2",
+  "full_scale_authorized": false,
+  "gamma_native": 0.99899547129175,
+  "hidden": [
+    256,
+    256
+  ],
+  "intervention_weight": 0.05,
+  "max_episode_steps": 1800,
+  "methods": [
+    "RAW_DISCRETE_SAC",
+    "BANKER_POST_SAC",
+    "BANKER_PRE_SAC"
+  ],
+  "multiplier_lr": 0.001,
+  "native_transitions_per_method": 50000,
+  "paper_authorized": false,
+  "pre_training_correctness_amendments": [
+    "GRID_TIE_INDEX_EXACT_V2: nearest native grid by integer index distance, lower index for an exact tie; fixes .2 between .1/.3 rounding upward"
+  ],
+  "replay_capacity": 300000,
+  "resource_overhead_factor": 2.0,
+  "resource_probe_speeds": [
+    0,
+    5.555555555555555,
+    10,
+    16.666666666666668,
+    20,
+    25,
+    25.5
+  ],
+  "resource_probe_steps": 5,
+  "resource_report_allowance_s": 600,
+  "retained_artifact_limit_bytes": 2147483648,
+  "schema": 2,
+  "scientific_checkpoint_native": [
+    50000
+  ],
+  "scientific_decision_rules": {
+    "no_learning": "all learned completions zero OR PRE completion zero with median progress<100m",
+    "otherwise": "INCONCLUSIVE",
+    "promising": "PRE speed12, completion>=1, median progress>=500m, RSR greater than both RAW and POST"
+  },
+  "study": "BANKERS_MASKED_RL_PILOT_V2",
+  "tau": 0.005,
+  "technical_checkpoint_interval": 1000,
+  "technical_retention_completed": 0,
+  "training_grid_audit_stride": 100,
+  "training_seed": 11,
+  "update_schedule": "max(0,min(5000,(N-10000)*5000//40000))",
+  "updates_per_method": 5000,
+  "validation_authorized": false,
+  "warmup": 10000
+}
